@@ -1,0 +1,45 @@
+name: Actualizar carreras
+
+on:
+  schedule:
+    - cron: "17 3 * * *"   # cada día a las 03:17 UTC (05:17 en Madrid en verano)
+  workflow_dispatch:        # botón "Run workflow" para lanzarlo a mano
+
+permissions:
+  contents: write
+
+concurrency:
+  group: actualizar-carreras
+  cancel-in-progress: false
+
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Ejecutar el robot
+        env:
+          # Opcional: si añades este secreto, el robot lee los reglamentos con IA (céntimos al mes).
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python -m scraper.main
+
+      - name: Guardar los datos
+        run: |
+          git config user.name "runningspain-bot"
+          git config user.email "runningspain-bot@users.noreply.github.com"
+          git add docs/data/carreras.json
+          if git diff --cached --quiet; then
+            echo "Sin cambios"
+          else
+            git commit -m "Actualizar carreras $(date -u +%Y-%m-%d)"
+            git push
+          fi

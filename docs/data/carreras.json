@@ -1,0 +1,6799 @@
+{
+ "updatedAt": "2026-10-22T00:00:00+02:00",
+ "count": 480,
+ "races": [
+  {
+   "name": "10K, 5K y Milla Ciutat de Palma",
+   "date": "2026-10-24",
+   "time": "",
+   "city": "Palma",
+   "region": "Islas Baleares",
+   "distances": [
+    "10K",
+    "5K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "10k-5k-y-milla-ciutat-de-palma-2026-1024",
+   "source": "https://sportplan.es/es/events/10k-5k-y-milla-ciutat-de-palma-palma-de-mallorca-islas-baleares-es-2026-10-24"
+  },
+  {
+   "name": "5K Ciudad de Elda",
+   "date": "2026-10-24",
+   "time": "",
+   "city": "Elda",
+   "region": "Comunidad Valenciana",
+   "distances": [
+    "5K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "5k-ciudad-de-elda-2026-1024",
+   "source": "https://sportplan.es/es/events/5k-ciudad-de-elda-elda-alicante-es-2026-10-24"
+  },
+  {
+   "name": "Carrera Popular de Fuente Álamo",
+   "date": "2026-10-24",
+   "time": "",
+   "city": "Fuente Álamo",
+   "region": "Región de Murcia",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-popular-de-fuente-alamo-2026-1024",
+   "source": "https://sportplan.es/es/events/carrera-popular-ayuntamiento-de-fuente-alamo-fuente-alamo-murcia-es-2026-10-24"
+  },
+  {
+   "name": "Carrera por la Terapia Ocupacional",
+   "date": "2026-10-24",
+   "time": "",
+   "city": "Madrid",
+   "region": "Comunidad de Madrid",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-por-la-terapia-ocupacional-2026-1024",
+   "source": "https://sportplan.es/es/events/carrera-por-la-terapia-ocupacional-madrid-es-2026-10-24"
+  },
+  {
+   "name": "Cursa Companys",
+   "date": "2026-10-24",
+   "time": "",
+   "city": "Barcelona",
+   "region": "Cataluña",
+   "distances": [
+    "10K",
+    "5K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "cursa-companys-2026-1024",
+   "source": "https://running.life/es/carrera/cursa-companys"
+  },
+  {
+   "name": "Cursa de sa Galleta",
+   "date": "2026-10-24",
+   "time": "",
+   "city": "Inca",
+   "region": "Islas Baleares",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "cursa-de-sa-galleta-2026-1024",
+   "source": "https://sportplan.es/es/events/cursa-de-sa-galleta-inca-islas-baleares-es-2026-10-24"
+  },
+  {
+   "name": "Desafío Bomberos San Sebastián de los Reyes",
+   "date": "2026-10-24",
+   "time": "",
+   "city": "San Sebastián de los Reyes",
+   "region": "Comunidad de Madrid",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "desafio-bomberos-san-sebastian-de-los-reyes-2026-1024",
+   "source": "https://running.life/es/carrera/desafio-bomberos-san-sebastian-de-los-reyes"
+  },
+  {
+   "name": "EDP Bilbao Night Marathon",
+   "date": "2026-10-24",
+   "time": "",
+   "city": "Bilbao",
+   "region": "País Vasco",
+   "distances": [
+    "42K",
+    "21K",
+    "10K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "edp-bilbao-night-marathon-2026-1024",
+   "source": "https://sportplan.es/es/events/edp-bilbao-night-marathon-2026"
+  },
+  {
+   "name": "El Tast de la Mitja",
+   "date": "2026-10-24",
+   "time": "",
+   "city": "Granollers",
+   "region": "Cataluña",
+   "distances": [
+    "21K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "el-tast-de-la-mitja-2026-1024",
+   "source": "https://sportplan.es/es/events/el-tast-de-la-mitja-granollers-barcelona-es-2026-10-24"
+  },
+  {
+   "name": "Fedola Family Run",
+   "date": "2026-10-24",
+   "time": "",
+   "city": "Costa Adeje",
+   "region": "Canarias",
+   "distances": [
+    "10K",
+    "5K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "fedola-family-run-2026-1024",
+   "source": "https://running.life/es/carrera/fedola-family-run"
+  },
+  {
+   "name": "Herbalife Metropolitana Night Run",
+   "date": "2026-10-24",
+   "time": "",
+   "city": "Madrid",
+   "region": "Comunidad de Madrid",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "herbalife-metropolitana-night-run-2026-1024",
+   "source": "https://sportplan.es/es/events/herbalife-metropolitana-night-run-madrid-es-2026-10-24"
+  },
+  {
+   "name": "Media Maratón de Cuenca",
+   "date": "2026-10-24",
+   "time": "",
+   "city": "Cuenca",
+   "region": "Castilla-La Mancha",
+   "distances": [
+    "21K",
+    "10K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "media-maraton-de-cuenca-2026-1024",
+   "source": "https://running.life/es/carrera/media-maraton-cuenca"
+  },
+  {
+   "name": "Prueba Urbana Ciudad de Fuente del Maestre",
+   "date": "2026-10-24",
+   "time": "",
+   "city": "Fuente del Maestre",
+   "region": "Extremadura",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "prueba-urbana-ciudad-de-fuente-del-maestre-2026-1024",
+   "source": "https://sportplan.es/es/events/prueba-urbana-ciudad-de-fuente-del-maestre-fuente-del-maestre-badajoz-es-2026-10-24"
+  },
+  {
+   "name": "Ruta del Barbo",
+   "date": "2026-10-24",
+   "time": "",
+   "city": "Cadreita",
+   "region": "Navarra",
+   "distances": [
+    "21K",
+    "10K"
+   ],
+   "url": "https://web.rockthesport.com/es/event/iv-ruta-del-barbo-cadreita",
+   "official": true,
+   "note": "",
+   "km": "21 km · 10 km",
+   "price": "10 €",
+   "signup": true,
+   "id": "ruta-del-barbo-2026-1024"
+  },
+  {
+   "name": "Medio Maratón Valencia Trinidad Alfonso",
+   "date": "2026-10-25",
+   "time": "08:25",
+   "city": "Valencia",
+   "region": "Comunidad Valenciana",
+   "distances": [
+    "21K"
+   ],
+   "url": "https://www.valenciaciudaddelrunning.com/medio/medio-maraton/",
+   "official": true,
+   "note": "Dorsales agotados; lista de espera.",
+   "regulation": "https://www.valenciaciudaddelrunning.com/medio/reglamento-medio-maraton-valencia/",
+   "km": "21,097 km",
+   "price": "40–80 € (agotado, lista de espera)",
+   "id": "medio-maraton-valencia-2026"
+  },
+  {
+   "name": "SALTO 15K Donostia",
+   "date": "2026-10-25",
+   "time": "10:00",
+   "city": "San Sebastián",
+   "region": "País Vasco",
+   "distances": [
+    "15K",
+    "5K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "5K a las 9:30.",
+   "id": "salto-15k-donostia-2026",
+   "source": "https://running.life/es/carrera/salto-15k-donostia-san-sebastian"
+  },
+  {
+   "name": "10K Correplayas Memorial Paco Guisado",
+   "date": "2026-10-25",
+   "time": "",
+   "city": "Chipiona",
+   "region": "Andalucía",
+   "distances": [
+    "10K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "10k-correplayas-memorial-paco-guisado-2026-1025",
+   "source": "https://running.life/es/carrera/10k-correplayas-memorial-paco-guisado"
+  },
+  {
+   "name": "10K de Carabanchel",
+   "date": "2026-10-25",
+   "time": "",
+   "city": "Madrid (Carabanchel)",
+   "region": "Comunidad de Madrid",
+   "distances": [
+    "10K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "10k-de-carabanchel-2026-1025",
+   "source": "https://sportplan.es/es/events/10k-de-carabanchel-carabanchel-madrid-es-2026-10-25"
+  },
+  {
+   "name": "10K de Salinas",
+   "date": "2026-10-25",
+   "time": "",
+   "city": "Salinas",
+   "region": "Asturias",
+   "distances": [
+    "10K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "10k-de-salinas-2026-1025",
+   "source": "https://sportplan.es/es/events/10k-de-salinas-salinas-asturias-es-2026-10-25"
+  },
+  {
+   "name": "5K Granadilla de Abona",
+   "date": "2026-10-25",
+   "time": "",
+   "city": "Granadilla de Abona",
+   "region": "Canarias",
+   "distances": [
+    "5K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "5k-granadilla-de-abona-2026-1025",
+   "source": "https://sportplan.es/es/events/5k-granadilla-de-abona-granadilla-de-abona-tenerife-es-2026-10-25"
+  },
+  {
+   "name": "5K i 10K Urbans de Manresa",
+   "date": "2026-10-25",
+   "time": "",
+   "city": "Manresa",
+   "region": "Cataluña",
+   "distances": [
+    "10K",
+    "5K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "5k-i-10k-urbans-de-manresa-2026-1025",
+   "source": "https://sportplan.es/es/events/5k-i-10k-urbans-de-manresa-manresa-barcelona-es-2026-10-25"
+  },
+  {
+   "name": "Burgos 21K Tras las Huellas del Cid",
+   "date": "2026-10-25",
+   "time": "",
+   "city": "Burgos",
+   "region": "Castilla y León",
+   "distances": [
+    "21K",
+    "10K",
+    "5K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "km": "21,097 km · 10 km · 5 km",
+   "price": "8–10 €",
+   "id": "burgos-21k-tras-las-huellas-del-cid-2026-1025",
+   "source": "https://running.life/es/carrera/burgos-tras-las-huellas-del-cid"
+  },
+  {
+   "name": "CaixaBank 10K Zaragoza",
+   "date": "2026-10-25",
+   "time": "",
+   "city": "Zaragoza",
+   "region": "Aragón",
+   "distances": [
+    "10K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "caixabank-10k-zaragoza-2026-1025",
+   "source": "https://sportplan.es/es/events/caixabank-10k-zaragoza-zaragoza-es-2026-10-25"
+  },
+  {
+   "name": "Carreira Eu Móvome pola Esclerose Múltiple",
+   "date": "2026-10-25",
+   "time": "",
+   "city": "Vigo",
+   "region": "Galicia",
+   "distances": [
+    "10K",
+    "5K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carreira-eu-movome-pola-esclerose-multiple-2026-1025",
+   "source": "https://running.life/es/carrera/carreira-solidaria-eu-movome-pola-esclerose-multiple"
+  },
+  {
+   "name": "Carreira Pedestre Popular de Santiago",
+   "date": "2026-10-25",
+   "time": "",
+   "city": "Santiago de Compostela",
+   "region": "Galicia",
+   "distances": [
+    "12K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carreira-pedestre-popular-de-santiago-2026-1025",
+   "source": "https://running.life/es/carrera/carreira-pedestre-popular-de-santiago"
+  },
+  {
+   "name": "Carreira Popular Ventorrillo",
+   "date": "2026-10-25",
+   "time": "",
+   "city": "A Coruña",
+   "region": "Galicia",
+   "distances": [
+    "6K",
+    "3K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carreira-popular-ventorrillo-2026-1025",
+   "source": "https://running.life/es/carrera/carreira-popular-ventorrillo"
+  },
+  {
+   "name": "Carrera #HazVisible22q",
+   "date": "2026-10-25",
+   "time": "",
+   "city": "Madrid",
+   "region": "Comunidad de Madrid",
+   "distances": [
+    "10K",
+    "5K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-hazvisible22q-2026-1025",
+   "source": "https://sportplan.es/es/events/vi-carrera-hazvisible22q-2026"
+  },
+  {
+   "name": "Carrera Alcobendas en Marcha Contra el Cáncer",
+   "date": "2026-10-25",
+   "time": "",
+   "city": "Alcobendas",
+   "region": "Comunidad de Madrid",
+   "distances": [
+    "5K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-alcobendas-en-marcha-contra-el-cancer-2026-1025",
+   "source": "https://running.life/es/carrera/carrera-alcobendas-en-marcha-contra-el-cancer"
+  },
+  {
+   "name": "Carrera Cruzando Miranda",
+   "date": "2026-10-25",
+   "time": "",
+   "city": "Miranda de Ebro",
+   "region": "Castilla y León",
+   "distances": [
+    "10K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-cruzando-miranda-2026-1025",
+   "source": "https://running.life/es/carrera/carrera-cruzando-miranda"
+  },
+  {
+   "name": "Carrera Getafe Contra el Cáncer",
+   "date": "2026-10-25",
+   "time": "",
+   "city": "Getafe",
+   "region": "Comunidad de Madrid",
+   "distances": [
+    "5K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-getafe-contra-el-cancer-2026-1025",
+   "source": "https://sportplan.es/es/events/vi-carrera-getafe-contra-el-cancer-2026-10-25-getafe"
+  },
+  {
+   "name": "Carrera Mes del Cerebro",
+   "date": "2026-10-25",
+   "time": "",
+   "city": "Almería",
+   "region": "Andalucía",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-mes-del-cerebro-2026-1025",
+   "source": "https://sportplan.es/es/events/carrera-mes-del-cerebro-almeria-es-2026-10-25"
+  },
+  {
+   "name": "Carrera Popular Ciudad de Aguilar",
+   "date": "2026-10-25",
+   "time": "",
+   "city": "Aguilar de la Frontera",
+   "region": "Andalucía",
+   "distances": [
+    "10K",
+    "5K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-popular-ciudad-de-aguilar-2026-1025",
+   "source": "https://running.life/es/carrera/carrera-popular-ciudad-de-aguilar"
+  },
+  {
+   "name": "Carrera Popular Ciudad de Pozuelo",
+   "date": "2026-10-25",
+   "time": "",
+   "city": "Pozuelo de Alarcón",
+   "region": "Comunidad de Madrid",
+   "distances": [
+    "10K",
+    "5K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-popular-ciudad-de-pozuelo-2026-1025",
+   "source": "https://running.life/es/carrera/carrera-ciudad-de-pozuelo"
+  },
+  {
+   "name": "Carrera Popular Costa de Ajo",
+   "date": "2026-10-25",
+   "time": "",
+   "city": "Ajo",
+   "region": "Cantabria",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-popular-costa-de-ajo-2026-1025",
+   "source": "https://sportplan.es/es/events/carrera-popular-costa-de-ajo-ajo-cantabria-es-2026-10-25"
+  },
+  {
+   "name": "Carrera Popular Día del Ictus",
+   "date": "2026-10-25",
+   "time": "",
+   "city": "Madrid (Casa de Campo)",
+   "region": "Comunidad de Madrid",
+   "distances": [
+    "10K",
+    "5K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-popular-dia-del-ictus-2026-1025",
+   "source": "https://running.life/es/carrera/carrera-popular-dia-del-ictus"
+  },
+  {
+   "name": "Carrera Popular El Diario Montañés",
+   "date": "2026-10-25",
+   "time": "",
+   "city": "Santander",
+   "region": "Cantabria",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-popular-el-diario-montanes-2026-1025",
+   "source": "https://sportplan.es/es/events/carrera-popular-el-diario-montanes-santander-cantabria-es-2026-10-25"
+  },
+  {
+   "name": "Carrera Popular Paseo de Consolación",
+   "date": "2026-10-25",
+   "time": "",
+   "city": "Utrera",
+   "region": "Andalucía",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-popular-paseo-de-consolacion-2026-1025",
+   "source": "https://sportplan.es/es/events/carrera-popular-paseo-de-consolacion-utrera-sevilla-es-2026-10-25"
+  },
+  {
+   "name": "Carrera Popular Ruta de las Norias",
+   "date": "2026-10-25",
+   "time": "",
+   "city": "Abarán",
+   "region": "Región de Murcia",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-popular-ruta-de-las-norias-2026-1025",
+   "source": "https://sportplan.es/es/events/carrera-popular-ruta-de-las-norias-abaran-murcia-es-2026-10-25"
+  },
+  {
+   "name": "Carrera Popular Solidaria Fallera",
+   "date": "2026-10-25",
+   "time": "",
+   "city": "Sagunto",
+   "region": "Comunidad Valenciana",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-popular-solidaria-fallera-2026-1025",
+   "source": "https://sportplan.es/es/events/carrera-popular-solidaria-fallera-sagunto-valencia-es-2026-10-25"
+  },
+  {
+   "name": "Carrera Popular Villa de Olivares",
+   "date": "2026-10-25",
+   "time": "",
+   "city": "Olivares",
+   "region": "Andalucía",
+   "distances": [
+    "10K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-popular-villa-de-olivares-2026-1025",
+   "source": "https://sportplan.es/es/events/carrera-popular-villa-de-olivares-olivares-sevilla-es-2026-10-25"
+  },
+  {
+   "name": "Carrera Popular de Taco",
+   "date": "2026-10-25",
+   "time": "",
+   "city": "San Cristóbal de La Laguna",
+   "region": "Canarias",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-popular-de-taco-2026-1025",
+   "source": "https://sportplan.es/es/events/carrera-popular-de-taco-la-laguna-tenerife-es-2026-10-25"
+  },
+  {
+   "name": "Carrera Solidaria Ciudad de Tomares",
+   "date": "2026-10-25",
+   "time": "",
+   "city": "Tomares",
+   "region": "Andalucía",
+   "distances": [
+    "10K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-solidaria-ciudad-de-tomares-2026-1025",
+   "source": "https://sportplan.es/es/events/carrera-solidaria-de-tomares-tomares-sevilla-es-2026-10-25"
+  },
+  {
+   "name": "Carrera Solidaria Manos Unidas",
+   "date": "2026-10-25",
+   "time": "",
+   "city": "Torrejón de Ardoz",
+   "region": "Comunidad de Madrid",
+   "distances": [
+    "10K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-solidaria-manos-unidas-2026-1025",
+   "source": "https://running.life/es/carrera/carrera-solidaria-a-favor-de-manos-unidas"
+  },
+  {
+   "name": "Carrera Solidaria Ruta 091 Badajoz",
+   "date": "2026-10-25",
+   "time": "",
+   "city": "Badajoz",
+   "region": "Extremadura",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-solidaria-ruta-091-badajoz-2026-1025",
+   "source": "https://sportplan.es/es/events/carrera-solidaria-ruta-091-badajoz-badajoz-es-2026-10-25"
+  },
+  {
+   "name": "Carrera Solidaria de los 1000 Pasos",
+   "date": "2026-10-25",
+   "time": "",
+   "city": "Salamanca",
+   "region": "Castilla y León",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-solidaria-de-los-1000-pasos-2026-1025",
+   "source": "https://sportplan.es/es/events/carrera-solidaria-de-los-1000-pasos-salamanca-es-2026-10-25"
+  },
+  {
+   "name": "Carrera de la Logística",
+   "date": "2026-10-25",
+   "time": "",
+   "city": "Coslada",
+   "region": "Comunidad de Madrid",
+   "distances": [
+    "10K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-de-la-logistica-2026-1025",
+   "source": "https://running.life/es/carrera/carrera-de-la-logistica"
+  },
+  {
+   "name": "Carrera de la Mujer de León",
+   "date": "2026-10-25",
+   "time": "",
+   "city": "León",
+   "region": "Castilla y León",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-de-la-mujer-de-leon-2026-1025",
+   "source": "https://sportplan.es/es/events/carrera-de-la-mujer-almon-drasanvi-leon-es-2026-10-25"
+  },
+  {
+   "name": "Carrera de la Prensa",
+   "date": "2026-10-25",
+   "time": "",
+   "city": "Málaga",
+   "region": "Andalucía",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-de-la-prensa-2026-1025",
+   "source": "https://sportplan.es/es/events/carrera-de-la-prensa-malaga-es-2026-10-25"
+  },
+  {
+   "name": "Carrera entre Viñedos",
+   "date": "2026-10-25",
+   "time": "",
+   "city": "Cenicero",
+   "region": "La Rioja",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-entre-vinedos-2026-1025",
+   "source": "https://sportplan.es/es/events/carrera-entre-vinedos-cenicero-la-rioja-es-2026-10-25"
+  },
+  {
+   "name": "Córdoba en Marcha Contra el Cáncer",
+   "date": "2026-10-25",
+   "time": "",
+   "city": "Córdoba",
+   "region": "Andalucía",
+   "distances": [
+    "5K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "cordoba-en-marcha-contra-el-cancer-2026-1025",
+   "source": "https://sportplan.es/es/events/cordoba-en-marcha-contra-el-cancer-2026-cordoba-cordoba-es-2026-10-25"
+  },
+  {
+   "name": "Entre Pontes Gondomar",
+   "date": "2026-10-25",
+   "time": "",
+   "city": "Gondomar",
+   "region": "Galicia",
+   "distances": [
+    "10K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "entre-pontes-gondomar-2026-1025",
+   "source": "https://running.life/es/carrera/entre-pontes-gondomar"
+  },
+  {
+   "name": "La Vicentina",
+   "date": "2026-10-25",
+   "time": "",
+   "city": "Sant Vicenç dels Horts",
+   "region": "Cataluña",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "la-vicentina-2026-1025",
+   "source": "https://sportplan.es/es/events/la-vicentina-sant-vicenc-dels-horts-barcelona-es-2026-10-25"
+  },
+  {
+   "name": "Lasarte-Oria Bai!!",
+   "date": "2026-10-25",
+   "time": "",
+   "city": "Lasarte-Oria",
+   "region": "País Vasco",
+   "distances": [
+    "10K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "lasarte-oria-bai-2026-1025",
+   "source": "https://running.life/es/carrera/lasarte-oria-bai"
+  },
+  {
+   "name": "Mallorca en Marcha contra el Cáncer",
+   "date": "2026-10-25",
+   "time": "",
+   "city": "Palma",
+   "region": "Islas Baleares",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "mallorca-en-marcha-contra-el-cancer-2026-1025",
+   "source": "https://sportplan.es/es/events/mallorca-en-marcha-contra-el-cancer-palma-de-mallorca-islas-baleares-es-2026-10-25"
+  },
+  {
+   "name": "Maratón de Valladolid",
+   "date": "2026-10-25",
+   "time": "",
+   "city": "Valladolid",
+   "region": "Castilla y León",
+   "distances": [
+    "42K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "Fecha según calendario; confirmar en la web de la organización.",
+   "id": "maraton-de-valladolid-2026-1025",
+   "source": "https://sportplan.es/es/events/marat-n-de-valladolid-2026-valladolid-2026-10-25"
+  },
+  {
+   "name": "Media Maratón AZUD Murcia",
+   "date": "2026-10-25",
+   "time": "",
+   "city": "Murcia",
+   "region": "Región de Murcia",
+   "distances": [
+    "21K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "media-maraton-azud-murcia-2026-1025",
+   "source": "https://sportplan.es/es/events/media-maraton-azud-murcia-murcia-murcia-es-2026-10-25"
+  },
+  {
+   "name": "Media Maratón Tierra y Olivo",
+   "date": "2026-10-25",
+   "time": "",
+   "city": "Dos Hermanas",
+   "region": "Andalucía",
+   "distances": [
+    "21K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "media-maraton-tierra-y-olivo-2026-1025",
+   "source": "https://sportplan.es/es/events/media-maraton-tierra-y-olivo-dos-hermanas-sevilla-es-2026-10-25"
+  },
+  {
+   "name": "Media Maratón de Jerez",
+   "date": "2026-10-25",
+   "time": "",
+   "city": "Jerez de la Frontera",
+   "region": "Andalucía",
+   "distances": [
+    "21K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "media-maraton-de-jerez-2026-1025",
+   "source": "https://sportplan.es/es/events/semi-marathon-de-xeres-jerez-2026-10-25-jerez-de-la-frontera-andalusia"
+  },
+  {
+   "name": "Media Maratón y 10K Torta del Casar",
+   "date": "2026-10-25",
+   "time": "",
+   "city": "Casar de Cáceres",
+   "region": "Extremadura",
+   "distances": [
+    "21K",
+    "10K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "media-maraton-y-10k-torta-del-casar-2026-1025",
+   "source": "https://running.life/es/carrera/media-maraton-y-10k-torta-del-casar"
+  },
+  {
+   "name": "Mitja Marató Costa Barcelona Maresme",
+   "date": "2026-10-25",
+   "time": "",
+   "city": "Pineda de Mar – Calella",
+   "region": "Cataluña",
+   "distances": [
+    "21K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "km": "21,097 km",
+   "price": "23–29 €",
+   "id": "mitja-maresme-2026",
+   "source": "https://running.life/es/carrera/mitja-marato-costa-barcelona-maresme"
+  },
+  {
+   "name": "Mitja Marató El Vendrell",
+   "date": "2026-10-25",
+   "time": "",
+   "city": "El Vendrell",
+   "region": "Cataluña",
+   "distances": [
+    "21K",
+    "10K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "mitja-marato-el-vendrell-2026-1025",
+   "source": "https://running.life/es/carrera/mitja-marato-el-vendrell"
+  },
+  {
+   "name": "Mitja Marató de Gavà",
+   "date": "2026-10-25",
+   "time": "",
+   "city": "Gavà",
+   "region": "Cataluña",
+   "distances": [
+    "21K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "mitja-marato-de-gava-2026-1025",
+   "source": "https://sportplan.es/es/events/david-lloyd-mitja-marato-de-gava-gava-barcelona-es-2026-10-25"
+  },
+  {
+   "name": "Wine Run Rioja Alavesa",
+   "date": "2026-10-25",
+   "time": "",
+   "city": "Samaniego",
+   "region": "País Vasco",
+   "distances": [
+    "10K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "wine-run-rioja-alavesa-2026-1025",
+   "source": "https://sportplan.es/es/events/wine-run-rioja-alavesa-2026-sor-felicias-kalea-samaniego-sor-felicias-kalea-samaniego-es-2026-10-25"
+  },
+  {
+   "name": "Marató i Mitja d'Olot",
+   "date": "2026-10-26",
+   "time": "",
+   "city": "Olot",
+   "region": "Cataluña",
+   "distances": [
+    "42K",
+    "21K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "marato-i-mitja-d-olot-2026-1026",
+   "source": "https://sportplan.es/es/events/marato-42-km-olot-2026-10-26-42k"
+  },
+  {
+   "name": "5K Festes del Roser",
+   "date": "2026-10-31",
+   "time": "",
+   "city": "La Vall d'Uixó",
+   "region": "Comunidad Valenciana",
+   "distances": [
+    "5K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "5k-festes-del-roser-2026-1031",
+   "source": "https://sportplan.es/es/events/5k-festes-del-roser-la-vall-d-uixo-castellon-es-2026-10-31"
+  },
+  {
+   "name": "Las Murallas Pamplona-Iruña",
+   "date": "2026-10-31",
+   "time": "",
+   "city": "Pamplona",
+   "region": "Navarra",
+   "distances": [
+    "21K",
+    "16K",
+    "11K",
+    "6K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "las-murallas-pamplona-iruna-2026-1031",
+   "source": "https://running.life/es/carrera/las-murallas-pamplona-iruna"
+  },
+  {
+   "name": "10K Solidaria Marines",
+   "date": "2026-11-01",
+   "time": "",
+   "city": "Marines",
+   "region": "Comunidad Valenciana",
+   "distances": [
+    "10K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "10k-solidaria-marines-2026-1101",
+   "source": "https://sportplan.es/es/events/10k-solidaria-marines-marines-valencia-es-2026-11-01"
+  },
+  {
+   "name": "10K de la Mel Montroi",
+   "date": "2026-11-01",
+   "time": "",
+   "city": "Montroi",
+   "region": "Comunidad Valenciana",
+   "distances": [
+    "10K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "10k-de-la-mel-montroi-2026-1101",
+   "source": "https://sportplan.es/es/events/10k-de-la-mel-montroi-montroi-montroy-valencia-es-2026-11-01"
+  },
+  {
+   "name": "21K Ciudad de Huelva",
+   "date": "2026-11-01",
+   "time": "",
+   "city": "Huelva",
+   "region": "Andalucía",
+   "distances": [
+    "21K",
+    "5K"
+   ],
+   "url": "https://runnersporthuelva.com/21k/",
+   "official": true,
+   "note": "Salida en la Plaza de la Constitución.",
+   "km": "21,097 km · 5 km",
+   "price": "26 € (5K: 9 €)",
+   "id": "21k-huelva-2026"
+  },
+  {
+   "name": "Benidorm Poniente Race",
+   "date": "2026-11-01",
+   "time": "",
+   "city": "Benidorm",
+   "region": "Comunidad Valenciana",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "benidorm-poniente-race-2026-1101",
+   "source": "https://sportplan.es/es/events/benidorm-poniente-race-benidorm-alicante-es-2026-11-01"
+  },
+  {
+   "name": "CEU Sevilla 15K Experience",
+   "date": "2026-11-01",
+   "time": "",
+   "city": "Sevilla",
+   "region": "Andalucía",
+   "distances": [
+    "15K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "ceu-sevilla-15k-experience-2026-1101",
+   "source": "https://sportplan.es/es/events/iii-ceu-sevilla-15k-experience-2026-sevilla-2026-11-01"
+  },
+  {
+   "name": "Carrera Cofrade Cuatro Millas",
+   "date": "2026-11-01",
+   "time": "",
+   "city": "Cartagena",
+   "region": "Región de Murcia",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-cofrade-cuatro-millas-2026-1101",
+   "source": "https://sportplan.es/es/events/carrera-cofrade-cuatro-millas-cartagena-murcia-es-2026-11-01"
+  },
+  {
+   "name": "Carrera Go Fit",
+   "date": "2026-11-01",
+   "time": "",
+   "city": "Madrid (Vallehermoso)",
+   "region": "Comunidad de Madrid",
+   "distances": [
+    "10K",
+    "6K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-go-fit-2026-1101",
+   "source": "https://sportplan.es/es/events/carrera-go-fit-vallehermoso-madrid-es-2026-11-01"
+  },
+  {
+   "name": "Carrera Popular Villa de Daganzo",
+   "date": "2026-11-01",
+   "time": "",
+   "city": "Daganzo",
+   "region": "Comunidad de Madrid",
+   "distances": [
+    "10K",
+    "5K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-popular-villa-de-daganzo-2026-1101",
+   "source": "https://sportplan.es/es/events/carrera-popular-villa-de-daganzo-daganzo-madrid-es-2026-11-01"
+  },
+  {
+   "name": "Carrera Popular de Brenes",
+   "date": "2026-11-01",
+   "time": "",
+   "city": "Brenes",
+   "region": "Andalucía",
+   "distances": [
+    "9K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-popular-de-brenes-2026-1101",
+   "source": "https://sportplan.es/es/events/carrera-popular-de-brenes-brenes-2026-11-01-10k"
+  },
+  {
+   "name": "Cursa de Sant Martí",
+   "date": "2026-11-01",
+   "time": "",
+   "city": "Barcelona",
+   "region": "Cataluña",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "cursa-de-sant-marti-2026-1101",
+   "source": "https://sportplan.es/es/events/cursa-de-sant-marti-barcelona-es-2026-11-01"
+  },
+  {
+   "name": "Media Maratón Menorca",
+   "date": "2026-11-01",
+   "time": "",
+   "city": "Ciutadella de Menorca",
+   "region": "Islas Baleares",
+   "distances": [
+    "21K",
+    "10K",
+    "5K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "media-maraton-menorca-2026-1101",
+   "source": "https://running.life/es/carrera/mitja-marato-menorca"
+  },
+  {
+   "name": "Cigarra Toledana Media Maratón Cigarral del Ángel",
+   "date": "2026-11-03",
+   "time": "",
+   "city": "Toledo",
+   "region": "Castilla-La Mancha",
+   "distances": [
+    "21K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "cigarra-toledana-media-maraton-cigarral-del-angel-2026-1103",
+   "source": "https://sportplan.es/es/events/cigarra-toledana-media-maraton-cigarral-del-angel-toledo-2026-11-03-21k"
+  },
+  {
+   "name": "Media Maratón Caja Rural de Teruel",
+   "date": "2026-11-07",
+   "time": "17:00",
+   "city": "Teruel",
+   "region": "Aragón",
+   "distances": [
+    "21K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "Se corre en sábado por la tarde.",
+   "id": "media-teruel-2026",
+   "source": "https://www.federacionaragonesadeatletismo.com/"
+  },
+  {
+   "name": "Carrera Nocturna Güimarera",
+   "date": "2026-11-07",
+   "time": "",
+   "city": "Güímar",
+   "region": "Canarias",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-nocturna-guimarera-2026-1107",
+   "source": "https://sportplan.es/es/events/carrera-nocturna-guimarera-guimar-tenerife-es-2026-11-07"
+  },
+  {
+   "name": "Carrera Popular de Aguas Nuevas",
+   "date": "2026-11-07",
+   "time": "",
+   "city": "Aguas Nuevas (Albacete)",
+   "region": "Castilla-La Mancha",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-popular-de-aguas-nuevas-2026-1107",
+   "source": "https://sportplan.es/es/events/carrera-popular-de-aguas-nuevas-aguas-nuevas-albacete-es-2026-11-07"
+  },
+  {
+   "name": "Cursa des Siurell",
+   "date": "2026-11-07",
+   "time": "",
+   "city": "Marratxí",
+   "region": "Islas Baleares",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "cursa-des-siurell-2026-1107",
+   "source": "https://sportplan.es/es/events/cursa-des-siurell-marratxi-islas-baleares-es-2026-11-07"
+  },
+  {
+   "name": "Volta a Peu de Sedaví",
+   "date": "2026-11-07",
+   "time": "",
+   "city": "Sedaví",
+   "region": "Comunidad Valenciana",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "volta-a-peu-de-sedavi-2026-1107",
+   "source": "https://sportplan.es/es/events/volta-a-peu-de-sedavi-sedavi-valencia-es-2026-11-07"
+  },
+  {
+   "name": "Generali Maratón Málaga",
+   "date": "2026-11-08",
+   "time": "08:30",
+   "city": "Málaga",
+   "region": "Andalucía",
+   "distances": [
+    "42K",
+    "21K"
+   ],
+   "url": "https://www.generalimaratonmalaga.com/",
+   "official": true,
+   "note": "Salida y meta en el Paseo del Parque.",
+   "regulation": "https://www.generalimaratonmalaga.com/regulations-marathon-malaga/",
+   "km": "42,195 km · 21,097 km",
+   "id": "maraton-malaga-2026"
+  },
+  {
+   "name": "Vueling Cursa Bombers Barcelona",
+   "date": "2026-11-08",
+   "time": "08:50",
+   "city": "Barcelona",
+   "region": "Cataluña",
+   "distances": [
+    "10K"
+   ],
+   "url": "https://cursadebombers.barcelona/es/",
+   "official": true,
+   "note": "Salida en Av. Marquès de l'Argentera.",
+   "regulation": "https://cursadebombers.barcelona/es/reglamento-2026/",
+   "km": "10 km",
+   "price": "16–20 € (+1,99 € gestión)",
+   "id": "cursa-bombers-2026"
+  },
+  {
+   "name": "Gran Carrera del Mediterráneo 21K",
+   "date": "2026-11-08",
+   "time": "09:00",
+   "city": "Alicante → Santa Pola",
+   "region": "Comunidad Valenciana",
+   "distances": [
+    "21K"
+   ],
+   "url": "https://lagrancarreradelmediterraneo21k.com/",
+   "official": true,
+   "note": "Algunas fuentes indican 9:30.",
+   "id": "gran-carrera-mediterraneo-2026"
+  },
+  {
+   "name": "Behobia – San Sebastián",
+   "date": "2026-11-08",
+   "time": "09:30",
+   "city": "Irún → San Sebastián",
+   "region": "País Vasco",
+   "distances": [
+    "20K"
+   ],
+   "url": "https://www.behobia-sansebastian.com/",
+   "official": true,
+   "note": "Salidas escalonadas hasta las 11:35 aprox.",
+   "regulation": "https://www.behobia-sansebastian.com/es/reglamento",
+   "km": "20 km",
+   "id": "behobia-2026"
+  },
+  {
+   "name": "Media Maratón Ciudad de Talavera",
+   "date": "2026-11-08",
+   "time": "09:30",
+   "city": "Talavera de la Reina",
+   "region": "Castilla-La Mancha",
+   "distances": [
+    "21K",
+    "10K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "media-talavera-2026",
+   "source": "https://www.festivalesdeespana.com/festival/xxxvi-media-maraton-ciudad-de-talavera-talavera-de-la-reina"
+  },
+  {
+   "name": "10K Ciudad de Mérida",
+   "date": "2026-11-08",
+   "time": "",
+   "city": "Mérida",
+   "region": "Extremadura",
+   "distances": [
+    "10K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "10k-ciudad-de-merida-2026-1108",
+   "source": "https://sportplan.es/es/events/10k-ciudad-de-merida-merida-badajoz-es-2026-11-08"
+  },
+  {
+   "name": "10K Nutrinovex Castelló",
+   "date": "2026-11-08",
+   "time": "",
+   "city": "Castellón de la Plana",
+   "region": "Comunidad Valenciana",
+   "distances": [
+    "10K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "10k-nutrinovex-castello-2026-1108",
+   "source": "https://sportplan.es/es/events/10k-nutrinovex-castellon-de-la-plana-castellon-es-2026-11-08"
+  },
+  {
+   "name": "10K Solidarios de Seseña",
+   "date": "2026-11-08",
+   "time": "",
+   "city": "Seseña",
+   "region": "Castilla-La Mancha",
+   "distances": [
+    "10K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "10k-solidarios-de-sesena-2026-1108",
+   "source": "https://sportplan.es/es/events/10k-solidarios-de-sesena-sesena-toledo-es-2026-11-08"
+  },
+  {
+   "name": "10K y 5K San Antonio de Benagéber",
+   "date": "2026-11-08",
+   "time": "",
+   "city": "San Antonio de Benagéber",
+   "region": "Comunidad Valenciana",
+   "distances": [
+    "10K",
+    "5K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "10k-y-5k-san-antonio-de-benageber-2026-1108",
+   "source": "https://sportplan.es/es/events/10k-y-5k-san-antonio-de-benageber-san-antonio-de-benageber-valencia-es-2026-11-08"
+  },
+  {
+   "name": "8K Burjassot",
+   "date": "2026-11-08",
+   "time": "",
+   "city": "Burjassot",
+   "region": "Comunidad Valenciana",
+   "distances": [
+    "8K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "8k-burjassot-2026-1108",
+   "source": "https://sportplan.es/es/events/8k-burjasot-burjassot-valencia-es-2026-11-08"
+  },
+  {
+   "name": "Alfafar Contra el Cáncer",
+   "date": "2026-11-08",
+   "time": "",
+   "city": "Alfafar",
+   "region": "Comunidad Valenciana",
+   "distances": [
+    "8K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "alfafar-contra-el-cancer-2026-1108",
+   "source": "https://sportplan.es/es/events/alfafar-contra-el-cancer-2026-alfafar-alfafar-es-2026-11-08"
+  },
+  {
+   "name": "Benemérita Urban Alcantarilla",
+   "date": "2026-11-08",
+   "time": "",
+   "city": "Alcantarilla",
+   "region": "Región de Murcia",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "benemerita-urban-alcantarilla-2026-1108",
+   "source": "https://sportplan.es/es/events/benemerita-urban-evtgc-alcantarilla-alcantarilla-murcia-es-2026-11-08"
+  },
+  {
+   "name": "Carreira Pedestre Popular do San Martiño",
+   "date": "2026-11-08",
+   "time": "",
+   "city": "Ourense",
+   "region": "Galicia",
+   "distances": [
+    "10K",
+    "5K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carreira-pedestre-popular-do-san-martino-2026-1108",
+   "source": "https://running.life/es/carrera/carreira-pedestre-popular-do-san-martino"
+  },
+  {
+   "name": "Carrera Popular Ciudad de Parquesol",
+   "date": "2026-11-08",
+   "time": "",
+   "city": "Valladolid",
+   "region": "Castilla y León",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-popular-ciudad-de-parquesol-2026-1108",
+   "source": "https://sportplan.es/es/events/carrera-popular-ciudad-de-parquesol-valladolid-es-2026-11-08"
+  },
+  {
+   "name": "Carrera Popular Ibercaja Zaragoza",
+   "date": "2026-11-08",
+   "time": "",
+   "city": "Zaragoza",
+   "region": "Aragón",
+   "distances": [
+    "10K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-popular-ibercaja-zaragoza-2026-1108",
+   "source": "https://www.correrjuntos.com/carreras/carrera-ibercaja-zaragoza"
+  },
+  {
+   "name": "Carrera Rotary Club de Oviedo",
+   "date": "2026-11-08",
+   "time": "",
+   "city": "Oviedo",
+   "region": "Asturias",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-rotary-club-de-oviedo-2026-1108",
+   "source": "https://sportplan.es/es/events/carrera-rotary-club-de-oviedo-oviedo-asturias-es-2026-11-08"
+  },
+  {
+   "name": "Carrera Solidaria Terra Mítica Park",
+   "date": "2026-11-08",
+   "time": "",
+   "city": "Benidorm",
+   "region": "Comunidad Valenciana",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-solidaria-terra-mitica-park-2026-1108",
+   "source": "https://sportplan.es/es/events/carrera-solidaria-terra-mitica-park-benidorm-alicante-es-2026-11-08"
+  },
+  {
+   "name": "Carrera Urbana Universidad Ciudad de Granada",
+   "date": "2026-11-08",
+   "time": "",
+   "city": "Granada",
+   "region": "Andalucía",
+   "distances": [
+    "10K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-urbana-universidad-ciudad-de-granada-2026-1108",
+   "source": "https://sportplan.es/es/events/carrera-urbana-universidad-granada-granada-es-2026-11-08"
+  },
+  {
+   "name": "Carrera por la Ciencia",
+   "date": "2026-11-08",
+   "time": "",
+   "city": "Zaragoza",
+   "region": "Aragón",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-por-la-ciencia-2026-1108",
+   "source": "https://sportplan.es/es/events/carrera-por-la-ciencia-zaragoza-es-2026-11-08"
+  },
+  {
+   "name": "Cursa Solidària els Lluïsos",
+   "date": "2026-11-08",
+   "time": "",
+   "city": "Vila-real",
+   "region": "Comunidad Valenciana",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "cursa-solidaria-els-lluisos-2026-1108",
+   "source": "https://sportplan.es/es/events/cursa-solidaria-els-lluisos-vila-real-castellon-es-2026-11-08"
+  },
+  {
+   "name": "Derbi de las Aficiones",
+   "date": "2026-11-08",
+   "time": "",
+   "city": "Madrid",
+   "region": "Comunidad de Madrid",
+   "distances": [
+    "10K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "derbi-de-las-aficiones-2026-1108",
+   "source": "https://sportplan.es/es/events/derbi-de-las-aficiones-madrid-es-2026-11-08"
+  },
+  {
+   "name": "El Corte Inglés 5K y 10K Castellón",
+   "date": "2026-11-08",
+   "time": "",
+   "city": "Castellón de la Plana",
+   "region": "Comunidad Valenciana",
+   "distances": [
+    "10K",
+    "5K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "el-corte-ingles-5k-y-10k-castellon-2026-1108",
+   "source": "https://sportplan.es/es/events/el-corte-ingles-5k-y-10k-castellon-es-2026-11-08"
+  },
+  {
+   "name": "Espada Toledana",
+   "date": "2026-11-08",
+   "time": "",
+   "city": "Toledo",
+   "region": "Castilla-La Mancha",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "espada-toledana-2026-1108",
+   "source": "https://sportplan.es/es/events/espada-toledana-toledo-es-2026-11-08"
+  },
+  {
+   "name": "La Pota-Roja Cervelló",
+   "date": "2026-11-08",
+   "time": "",
+   "city": "Cervelló",
+   "region": "Cataluña",
+   "distances": [
+    "10K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "la-pota-roja-cervello-2026-1108",
+   "source": "https://sportplan.es/es/events/la-pota-roja-cervello-2026-11-08-cervello"
+  },
+  {
+   "name": "Media Maratón Ciudad de Cádiz",
+   "date": "2026-11-08",
+   "time": "",
+   "city": "Cádiz",
+   "region": "Andalucía",
+   "distances": [
+    "21K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "media-maraton-ciudad-de-cadiz-2026-1108",
+   "source": "https://running.life/es/carrera/media-maraton-ciudad-de-cadiz"
+  },
+  {
+   "name": "Media Maratón Pilar de la Horadada",
+   "date": "2026-11-08",
+   "time": "",
+   "city": "Pilar de la Horadada",
+   "region": "Comunidad Valenciana",
+   "distances": [
+    "21K",
+    "10K",
+    "5K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "media-maraton-pilar-de-la-horadada-2026-1108",
+   "source": "https://running.life/es/carrera/media-maraton-pilar-de-la-horadada"
+  },
+  {
+   "name": "Media Maratón Popular de Moratalaz",
+   "date": "2026-11-08",
+   "time": "",
+   "city": "Madrid (Moratalaz)",
+   "region": "Comunidad de Madrid",
+   "distances": [
+    "21K",
+    "10K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "media-maraton-popular-de-moratalaz-2026-1108",
+   "source": "https://sportplan.es/es/events/media-maraton-de-moratalaz-madrid-es-2026-11-08"
+  },
+  {
+   "name": "Media Maratón de Fuengirola",
+   "date": "2026-11-08",
+   "time": "",
+   "city": "Fuengirola",
+   "region": "Andalucía",
+   "distances": [
+    "21K",
+    "5K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "media-maraton-de-fuengirola-2026-1108",
+   "source": "https://running.life/es/carrera/media-maraton-de-fuengirola"
+  },
+  {
+   "name": "Media Maratón de Hellín",
+   "date": "2026-11-08",
+   "time": "",
+   "city": "Hellín",
+   "region": "Castilla-La Mancha",
+   "distances": [
+    "21K",
+    "7K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "media-maraton-de-hellin-2026-1108",
+   "source": "https://running.life/es/carrera/media-maraton-de-hellin"
+  },
+  {
+   "name": "Media Maratón Ávila Monumental",
+   "date": "2026-11-08",
+   "time": "",
+   "city": "Ávila",
+   "region": "Castilla y León",
+   "distances": [
+    "21K",
+    "10K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "media-maraton-avila-monumental-2026-1108",
+   "source": "https://running.life/es/carrera/media-maraton-avila-monumental"
+  },
+  {
+   "name": "Medio Maratón Ciudad de Salamanca",
+   "date": "2026-11-08",
+   "time": "",
+   "city": "Salamanca",
+   "region": "Castilla y León",
+   "distances": [
+    "21K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "medio-maraton-ciudad-de-salamanca-2026-1108",
+   "source": "https://sportplan.es/es/events/medio-marat-n-ciudad-de-salamanca-2026-salamanca-2026-11-08"
+  },
+  {
+   "name": "Mitja Marató Ciutat de Gandia",
+   "date": "2026-11-08",
+   "time": "",
+   "city": "Gandia",
+   "region": "Comunidad Valenciana",
+   "distances": [
+    "21K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "mitja-marato-ciutat-de-gandia-2026-1108",
+   "source": "https://running.life/es/carrera/mitja-marato"
+  },
+  {
+   "name": "Mitja Marató Ciutat de Tarragona",
+   "date": "2026-11-08",
+   "time": "",
+   "city": "Tarragona",
+   "region": "Cataluña",
+   "distances": [
+    "21K",
+    "10K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "mitja-marato-ciutat-de-tarragona-2026-1108",
+   "source": "https://running.life/es/carrera/mitja-marato-ciutat-de-tarragona"
+  },
+  {
+   "name": "Murcia en Marcha contra el Cáncer",
+   "date": "2026-11-08",
+   "time": "",
+   "city": "Murcia",
+   "region": "Región de Murcia",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "murcia-en-marcha-contra-el-cancer-2026-1108",
+   "source": "https://sportplan.es/es/events/murcia-en-marcha-contra-el-cancer-murcia-es-2026-11-08"
+  },
+  {
+   "name": "Palma Beach Running Course",
+   "date": "2026-11-08",
+   "time": "",
+   "city": "Palma",
+   "region": "Islas Baleares",
+   "distances": [
+    "21K",
+    "10K",
+    "5K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "palma-beach-running-course-2026-1108",
+   "source": "https://running.life/es/carrera/palma-beach-running-course"
+  },
+  {
+   "name": "3x7K Media Maratón Palencia",
+   "date": "2026-11-14",
+   "time": "",
+   "city": "Palencia",
+   "region": "Castilla y León",
+   "distances": [
+    "21K",
+    "14K",
+    "7K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "3x7k-media-maraton-palencia-2026-1114",
+   "source": "https://running.life/es/carrera/3-x-7k-palencia"
+  },
+  {
+   "name": "Carrera Popular Nocturna de Noblejas",
+   "date": "2026-11-14",
+   "time": "",
+   "city": "Noblejas",
+   "region": "Castilla-La Mancha",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-popular-nocturna-de-noblejas-2026-1114",
+   "source": "https://sportplan.es/es/events/carrera-popular-nocturna-de-noblejas-noblejas-toledo-es-2026-11-14"
+  },
+  {
+   "name": "Carrera Tardor",
+   "date": "2026-11-14",
+   "time": "",
+   "city": "Colònia de Sant Jordi",
+   "region": "Islas Baleares",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-tardor-2026-1114",
+   "source": "https://sportplan.es/es/events/carrera-tardor-colonia-de-sant-jordi-islas-baleares-es-2026-11-14"
+  },
+  {
+   "name": "Maratón Alcarria",
+   "date": "2026-11-14",
+   "time": "",
+   "city": "Alovera",
+   "region": "Castilla-La Mancha",
+   "distances": [
+    "42K",
+    "21K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "maraton-alcarria-2026-1114",
+   "source": "https://sportplan.es/es/events/maraton-alcarria-alovera-alovera-es-2026-11-14"
+  },
+  {
+   "name": "Media Maratón Nocturna Ciudad de Móstoles",
+   "date": "2026-11-14",
+   "time": "",
+   "city": "Móstoles",
+   "region": "Comunidad de Madrid",
+   "distances": [
+    "21K",
+    "10K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "media-maraton-nocturna-ciudad-de-mostoles-2026-1114",
+   "source": "https://sportplan.es/es/events/media-maraton-y-10k-de-mostoles-mostoles-madrid-es-2026-11-14"
+  },
+  {
+   "name": "Mitja Marató Ciutat d'Alcúdia",
+   "date": "2026-11-14",
+   "time": "",
+   "city": "Alcúdia",
+   "region": "Islas Baleares",
+   "distances": [
+    "21K",
+    "10K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "mitja-marato-ciutat-d-alcudia-2026-1114",
+   "source": "https://running.life/es/carrera/mitja-marato-ciutat-dalcudia"
+  },
+  {
+   "name": "Vilanova Night Run",
+   "date": "2026-11-14",
+   "time": "",
+   "city": "Vilanova i la Geltrú",
+   "region": "Cataluña",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "vilanova-night-run-2026-1114",
+   "source": "https://sportplan.es/es/events/vilanova-night-run-vilanova-i-la-geltru-barcelona-es-2026-11-14"
+  },
+  {
+   "name": "Vitoria Night Run",
+   "date": "2026-11-14",
+   "time": "",
+   "city": "Vitoria-Gasteiz",
+   "region": "País Vasco",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "vitoria-night-run-2026-1114",
+   "source": "https://sportplan.es/es/events/vitoria-night-run-vitoria-gasteiz-alava-es-2026-11-14"
+  },
+  {
+   "name": "Media Maratón Internacional Santa Cruz de Tenerife",
+   "date": "2026-11-15",
+   "time": "09:00",
+   "city": "Santa Cruz de Tenerife",
+   "region": "Canarias",
+   "distances": [
+    "21K",
+    "8K"
+   ],
+   "url": "https://media.maratondetenerife.com/",
+   "official": true,
+   "note": "",
+   "regulation": "https://media.maratondetenerife.com/reglamento.html",
+   "km": "21,097 km · 8 km",
+   "price": "21K: 23–60 € · 8K: 16–45 €",
+   "id": "media-tenerife-2026"
+  },
+  {
+   "name": "I Maratón Imperial de Toledo",
+   "date": "2026-11-15",
+   "time": "09:30",
+   "city": "Toledo",
+   "region": "Castilla-La Mancha",
+   "distances": [
+    "42K"
+   ],
+   "url": "https://eventos.runrunsports.com/inscripcion/i-maraton-imperial-de-toledo/modalidades",
+   "official": true,
+   "note": "Primera edición; incluye relevos.",
+   "km": "42,195 km (también relevos)",
+   "price": "30–80 €",
+   "signup": true,
+   "id": "maraton-toledo-2026"
+  },
+  {
+   "name": "10K y 5K Mislata",
+   "date": "2026-11-15",
+   "time": "",
+   "city": "Mislata",
+   "region": "Comunidad Valenciana",
+   "distances": [
+    "10K",
+    "5K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "10k-y-5k-mislata-2026-1115",
+   "source": "https://sportplan.es/es/events/10k-y-5k-mislata-mislata-valencia-es-2026-11-15"
+  },
+  {
+   "name": "15K Valencia Divina Pastora",
+   "date": "2026-11-15",
+   "time": "",
+   "city": "Valencia",
+   "region": "Comunidad Valenciana",
+   "distances": [
+    "15K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "15k-valencia-divina-pastora-2026-1115",
+   "source": "https://www.correrjuntos.com/carreras/10k-divina-pastora-valencia"
+  },
+  {
+   "name": "30K Ciutat de Sagunt",
+   "date": "2026-11-15",
+   "time": "",
+   "city": "Sagunto",
+   "region": "Comunidad Valenciana",
+   "distances": [
+    "30K",
+    "21K",
+    "10K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "30k-ciutat-de-sagunt-2026-1115",
+   "source": "https://sportplan.es/es/events/30k-21k-10k-ciutat-de-sagunt-2026-2026-11-15-sagunto-sagunt"
+  },
+  {
+   "name": "CaixaBank 10K Bilbao",
+   "date": "2026-11-15",
+   "time": "",
+   "city": "Bilbao",
+   "region": "País Vasco",
+   "distances": [
+    "10K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "caixabank-10k-bilbao-2026-1115",
+   "source": "https://sportplan.es/es/events/caixabank-10k-bilbao-2026-bilbao-2026-11-15"
+  },
+  {
+   "name": "Carrera Alcalá de Henares Contra el Cáncer",
+   "date": "2026-11-15",
+   "time": "",
+   "city": "Alcalá de Henares",
+   "region": "Comunidad de Madrid",
+   "distances": [
+    "5K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-alcala-de-henares-contra-el-cancer-2026-1115",
+   "source": "https://sportplan.es/es/events/xiii-carrera-alcala-de-henares-contra-el-cancer-alcala-de-henares-alcala-de-henares-es-2026-11-15"
+  },
+  {
+   "name": "Carrera Inclusiva Metasport",
+   "date": "2026-11-15",
+   "time": "",
+   "city": "Albacete",
+   "region": "Castilla-La Mancha",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-inclusiva-metasport-2026-1115",
+   "source": "https://sportplan.es/es/events/carrera-inclusiva-metasport-albacete-es-2026-11-15"
+  },
+  {
+   "name": "Carrera Muévete por la Diabetes",
+   "date": "2026-11-15",
+   "time": "",
+   "city": "Madrid",
+   "region": "Comunidad de Madrid",
+   "distances": [
+    "10K",
+    "5K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-muevete-por-la-diabetes-2026-1115",
+   "source": "https://running.life/es/carrera/carrera-y-caminata-popular-por-la-diabetes"
+  },
+  {
+   "name": "Carrera Ponle Freno Madrid",
+   "date": "2026-11-15",
+   "time": "",
+   "city": "Madrid",
+   "region": "Comunidad de Madrid",
+   "distances": [
+    "10K",
+    "5K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "Salida y meta en Paseo de Recoletos.",
+   "km": "10 km · 5 km",
+   "price": "15 €",
+   "id": "ponle-freno-madrid-2026",
+   "source": "https://running.life/es/carrera/ponle-freno-madrid"
+  },
+  {
+   "name": "Carrera Popular Los Molinos",
+   "date": "2026-11-15",
+   "time": "",
+   "city": "Alcalá de Guadaíra",
+   "region": "Andalucía",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-popular-los-molinos-2026-1115",
+   "source": "https://sportplan.es/es/events/carrera-popular-los-molinos-alcala-de-guadaira-sevilla-es-2026-11-15"
+  },
+  {
+   "name": "Carrera Popular Madrid También Solidario",
+   "date": "2026-11-15",
+   "time": "",
+   "city": "Madrid",
+   "region": "Comunidad de Madrid",
+   "distances": [
+    "10K",
+    "5K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-popular-madrid-tambien-solidario-2026-1115",
+   "source": "https://sportplan.es/es/events/15-carrera-popular-madrid-tambien-solidario-madrid-madrid-es-2026-11-15"
+  },
+  {
+   "name": "Carrera Popular Nueva Bahía",
+   "date": "2026-11-15",
+   "time": "",
+   "city": "El Puerto de Santa María",
+   "region": "Andalucía",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-popular-nueva-bahia-2026-1115",
+   "source": "https://sportplan.es/es/events/carrera-popular-nueva-bahia-el-puerto-de-santa-maria-cadiz-es-2026-11-15"
+  },
+  {
+   "name": "Carrera Popular Running Pinto",
+   "date": "2026-11-15",
+   "time": "",
+   "city": "Pinto",
+   "region": "Comunidad de Madrid",
+   "distances": [
+    "10K",
+    "5K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-popular-running-pinto-2026-1115",
+   "source": "https://running.life/es/carrera/carrera-popular-running-pinto"
+  },
+  {
+   "name": "Carrera Popular por la Diabetes Toledo",
+   "date": "2026-11-15",
+   "time": "",
+   "city": "Toledo",
+   "region": "Castilla-La Mancha",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-popular-por-la-diabetes-toledo-2026-1115",
+   "source": "https://sportplan.es/es/events/carrera-popular-por-la-diabetes-toledo-es-2026-11-15"
+  },
+  {
+   "name": "Carrera Urbana Rafael del Riego",
+   "date": "2026-11-15",
+   "time": "",
+   "city": "Las Cabezas de San Juan",
+   "region": "Andalucía",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-urbana-rafael-del-riego-2026-1115",
+   "source": "https://sportplan.es/es/events/carrera-urbana-rafael-del-riego-las-cabezas-de-san-juan-sevilla-es-2026-11-15"
+  },
+  {
+   "name": "Carrera de Cruz Roja Granada",
+   "date": "2026-11-15",
+   "time": "",
+   "city": "Granada",
+   "region": "Andalucía",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-de-cruz-roja-granada-2026-1115",
+   "source": "https://sportplan.es/es/events/carrera-de-cruz-roja-granada-granada-es-2026-11-15"
+  },
+  {
+   "name": "Carrera de Empresas Valladolid",
+   "date": "2026-11-15",
+   "time": "",
+   "city": "Valladolid",
+   "region": "Castilla y León",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-de-empresas-valladolid-2026-1115",
+   "source": "https://sportplan.es/es/events/carrera-de-empresas-valladolid-es-2026-11-15"
+  },
+  {
+   "name": "Carrera de la Mujer de Sevilla",
+   "date": "2026-11-15",
+   "time": "",
+   "city": "Sevilla",
+   "region": "Andalucía",
+   "distances": [
+    "6.4K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-de-la-mujer-de-sevilla-2026-1115",
+   "source": "https://sportplan.es/es/events/carrera-de-la-mujer-de-sevilla-sevilla-es-2026-11-15"
+  },
+  {
+   "name": "Carrera del Teléfono de la Esperanza",
+   "date": "2026-11-15",
+   "time": "",
+   "city": "Pamplona",
+   "region": "Navarra",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-del-telefono-de-la-esperanza-2026-1115",
+   "source": "https://sportplan.es/es/events/carrera-del-telefono-de-la-esperanza-pamplona-navarra-es-2026-11-15"
+  },
+  {
+   "name": "Cursa Solidària Autoritat Portuària",
+   "date": "2026-11-15",
+   "time": "",
+   "city": "Palma",
+   "region": "Islas Baleares",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "cursa-solidaria-autoritat-portuaria-2026-1115",
+   "source": "https://sportplan.es/es/events/cursa-solidaria-autoritat-portuaria-de-balears-palma-de-mallorca-mallorca-es-2026-11-15"
+  },
+  {
+   "name": "Cursa Solidària Duchenne",
+   "date": "2026-11-15",
+   "time": "",
+   "city": "Salt",
+   "region": "Cataluña",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "cursa-solidaria-duchenne-2026-1115",
+   "source": "https://sportplan.es/es/events/cursa-solidaria-duchenne-a-salt-salt-girona-es-2026-11-15"
+  },
+  {
+   "name": "Cursa del Club Natació Sabadell",
+   "date": "2026-11-15",
+   "time": "",
+   "city": "Sabadell",
+   "region": "Cataluña",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "cursa-del-club-natacio-sabadell-2026-1115",
+   "source": "https://sportplan.es/es/events/cursa-del-club-natacio-sabadell-sabadell-barcelona-es-2026-11-15"
+  },
+  {
+   "name": "Els 10K de Les Franqueses",
+   "date": "2026-11-15",
+   "time": "",
+   "city": "Les Franqueses del Vallès",
+   "region": "Cataluña",
+   "distances": [
+    "10K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "els-10k-de-les-franqueses-2026-1115",
+   "source": "https://sportplan.es/es/events/els-10k-de-les-franqueses-les-franqueses-del-valles-barcelona-es-2026-11-15"
+  },
+  {
+   "name": "Legua Solidaria AARIF",
+   "date": "2026-11-15",
+   "time": "",
+   "city": "Illescas",
+   "region": "Castilla-La Mancha",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "legua-solidaria-aarif-2026-1115",
+   "source": "https://sportplan.es/es/events/legua-solidaria-aarif-illescas-toledo-es-2026-11-15"
+  },
+  {
+   "name": "Media Maratón Comarca de Valdejalón",
+   "date": "2026-11-15",
+   "time": "",
+   "city": "La Almunia de Doña Godina",
+   "region": "Aragón",
+   "distances": [
+    "21K",
+    "10K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "media-maraton-comarca-de-valdejalon-2026-1115",
+   "source": "https://running.life/es/carrera/media-maraton-comarca-de-valdejalon"
+  },
+  {
+   "name": "Media Maratón Marchena-Paradas",
+   "date": "2026-11-15",
+   "time": "",
+   "city": "Marchena",
+   "region": "Andalucía",
+   "distances": [
+    "21K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "media-maraton-marchena-paradas-2026-1115",
+   "source": "https://running.life/es/carrera/media-maraton-marchena-paradas"
+  },
+  {
+   "name": "Media Maratón Reserva de la Biosfera de Monfragüe",
+   "date": "2026-11-15",
+   "time": "",
+   "city": "Malpartida de Plasencia",
+   "region": "Extremadura",
+   "distances": [
+    "21K",
+    "10K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "media-maraton-reserva-de-la-biosfera-de-monfrague-2026-1115",
+   "source": "https://running.life/es/carrera/media-maraton-reserva-de-la-biosfera-de-monfrague"
+  },
+  {
+   "name": "Media Maratón de Jaén",
+   "date": "2026-11-15",
+   "time": "",
+   "city": "Jaén",
+   "region": "Andalucía",
+   "distances": [
+    "21K",
+    "10K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "media-maraton-de-jaen-2026-1115",
+   "source": "https://running.life/es/carrera/media-maraton-de-jaen"
+  },
+  {
+   "name": "Media Maratón de Melilla",
+   "date": "2026-11-15",
+   "time": "",
+   "city": "Melilla",
+   "region": "Melilla",
+   "distances": [
+    "21K",
+    "10K",
+    "5K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "media-maraton-de-melilla-2026-1115",
+   "source": "https://running.life/es/carrera/media-maraton-melilla"
+  },
+  {
+   "name": "Media Maratón de Vigo",
+   "date": "2026-11-15",
+   "time": "",
+   "city": "Vigo",
+   "region": "Galicia",
+   "distances": [
+    "21K",
+    "10K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "media-maraton-de-vigo-2026-1115",
+   "source": "https://running.life/es/carrera/media-maraton-de-vigo"
+  },
+  {
+   "name": "Medio Maratón Ciudad de Orihuela",
+   "date": "2026-11-15",
+   "time": "",
+   "city": "Orihuela",
+   "region": "Comunidad Valenciana",
+   "distances": [
+    "21K",
+    "8K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "medio-maraton-ciudad-de-orihuela-2026-1115",
+   "source": "https://running.life/es/carrera/medio-maraton-nacional-ciudad-de-orihuela"
+  },
+  {
+   "name": "Medio Maratón Elvas-Badajoz",
+   "date": "2026-11-15",
+   "time": "",
+   "city": "Badajoz",
+   "region": "Extremadura",
+   "distances": [
+    "21K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "medio-maraton-elvas-badajoz-2026-1115",
+   "source": "https://sportplan.es/es/events/medio-maraton-elvas-badajoz-badajoz-es-2026-11-15"
+  },
+  {
+   "name": "Mitja Marató Ripoll",
+   "date": "2026-11-15",
+   "time": "",
+   "city": "Ripoll",
+   "region": "Cataluña",
+   "distances": [
+    "21K",
+    "10K",
+    "5K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "mitja-marato-ripoll-2026-1115",
+   "source": "https://running.life/es/carrera/mitja-marato-ripoll"
+  },
+  {
+   "name": "Mitja Marató Roquette Benifaió",
+   "date": "2026-11-15",
+   "time": "",
+   "city": "Benifaió",
+   "region": "Comunidad Valenciana",
+   "distances": [
+    "21K",
+    "10K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "mitja-marato-roquette-benifaio-2026-1115",
+   "source": "https://sportplan.es/es/events/mitja-marato-roquette-benifaio-benifayo-valencia-es-2026-11-15"
+  },
+  {
+   "name": "Córdoba Running Series",
+   "date": "2026-11-16",
+   "time": "",
+   "city": "Córdoba",
+   "region": "Andalucía",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "cordoba-running-series-2026-1116",
+   "source": "https://sportplan.es/es/events/cordoba-running-series-cordoba-es-2026-11-16"
+  },
+  {
+   "name": "Benidorm Half",
+   "date": "2026-11-21",
+   "time": "",
+   "city": "Benidorm",
+   "region": "Comunidad Valenciana",
+   "distances": [
+    "21K",
+    "10K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "benidorm-half-2026-1121",
+   "source": "https://running.life/es/carrera/benidorm-half"
+  },
+  {
+   "name": "Cursa de Sa Sobrassada",
+   "date": "2026-11-21",
+   "time": "",
+   "city": "Santa Eulària des Riu",
+   "region": "Islas Baleares",
+   "distances": [
+    "21K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "cursa-de-sa-sobrassada-2026-1121",
+   "source": "https://running.life/es/carrera/cursa-de-sa-sobrassada-semimarato-por-relleus"
+  },
+  {
+   "name": "La Pretoriana",
+   "date": "2026-11-21",
+   "time": "",
+   "city": "Tomares",
+   "region": "Andalucía",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "la-pretoriana-2026-1121",
+   "source": "https://sportplan.es/es/events/la-pretoriana-tomares-sevilla-es-2026-11-21"
+  },
+  {
+   "name": "Zurich Maratón Donostia / San Sebastián",
+   "date": "2026-11-22",
+   "time": "09:00",
+   "city": "San Sebastián",
+   "region": "País Vasco",
+   "distances": [
+    "42K",
+    "10K"
+   ],
+   "url": "https://zurichmaratonsansebastian.com/",
+   "official": true,
+   "note": "10K a las 8:15. Salida en calle Hernani.",
+   "km": "42,195 km · 10 km",
+   "price": "59–95 €",
+   "regulation": "https://zurichmaratonsansebastian.com/soy-corredor-a/reglamento/",
+   "id": "maraton-donostia-2026"
+  },
+  {
+   "name": "Barbaño Corre 8K",
+   "date": "2026-11-22",
+   "time": "",
+   "city": "Barbaño",
+   "region": "Extremadura",
+   "distances": [
+    "8K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "barbano-corre-8k-2026-1122",
+   "source": "https://sportplan.es/es/events/barbano-corre-8k-barbano-badajoz-es-2026-11-22"
+  },
+  {
+   "name": "Barbie Run Alcobendas",
+   "date": "2026-11-22",
+   "time": "",
+   "city": "Alcobendas",
+   "region": "Comunidad de Madrid",
+   "distances": [
+    "10K",
+    "5K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "barbie-run-alcobendas-2026-1122",
+   "source": "https://running.life/es/carrera/barbie-run-alcobendas-madrid"
+  },
+  {
+   "name": "Carreira Popular Novo Mesoiro",
+   "date": "2026-11-22",
+   "time": "",
+   "city": "A Coruña",
+   "region": "Galicia",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carreira-popular-novo-mesoiro-2026-1122",
+   "source": "https://sportplan.es/es/events/carrera-popular-novo-mesoiro-a-coruna-es-2026-11-22"
+  },
+  {
+   "name": "Carrera Fundación José Luis Martín López",
+   "date": "2026-11-22",
+   "time": "",
+   "city": "Linares",
+   "region": "Andalucía",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-fundacion-jose-luis-martin-lopez-2026-1122",
+   "source": "https://sportplan.es/es/events/carrera-fundacion-jose-luis-martin-lopez-linares-jaen-es-2026-11-22"
+  },
+  {
+   "name": "Carrera Polígono San Cristóbal",
+   "date": "2026-11-22",
+   "time": "",
+   "city": "Valladolid",
+   "region": "Castilla y León",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-poligono-san-cristobal-2026-1122",
+   "source": "https://sportplan.es/es/events/carrera-poligono-san-cristobal-valladolid-es-2026-11-22"
+  },
+  {
+   "name": "Carrera Popular Jamón Veloz",
+   "date": "2026-11-22",
+   "time": "",
+   "city": "Guijuelo",
+   "region": "Castilla y León",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-popular-jamon-veloz-2026-1122",
+   "source": "https://sportplan.es/es/events/carrera-popular-jamon-veloz-guijuelo-salamanca-es-2026-11-22"
+  },
+  {
+   "name": "Carrera Popular por la No Violencia de Género",
+   "date": "2026-11-22",
+   "time": "",
+   "city": "Jaén",
+   "region": "Andalucía",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-popular-por-la-no-violencia-de-genero-2026-1122",
+   "source": "https://sportplan.es/es/events/carrera-popular-por-la-no-violencia-de-genero-jaen-es-2026-11-22"
+  },
+  {
+   "name": "Carrera Solidaria Ruta 091 Córdoba",
+   "date": "2026-11-22",
+   "time": "",
+   "city": "Córdoba",
+   "region": "Andalucía",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-solidaria-ruta-091-cordoba-2026-1122",
+   "source": "https://sportplan.es/es/events/carrera-solidaria-ruta-091-cordoba-cordoba-es-2026-11-22"
+  },
+  {
+   "name": "Carrera Urbana Vélez-Málaga",
+   "date": "2026-11-22",
+   "time": "",
+   "city": "Vélez-Málaga",
+   "region": "Andalucía",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-urbana-velez-malaga-2026-1122",
+   "source": "https://sportplan.es/es/events/carrera-urbana-velez-malaga-velez-malaga-malaga-es-2026-11-22"
+  },
+  {
+   "name": "Carrera contra el Cáncer de Mama Elche",
+   "date": "2026-11-22",
+   "time": "",
+   "city": "Elche",
+   "region": "Comunidad Valenciana",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-contra-el-cancer-de-mama-elche-2026-1122",
+   "source": "https://sportplan.es/es/events/carrera-contra-el-cancer-de-mama-elche-alicante-es-2026-11-22"
+  },
+  {
+   "name": "Carrera contra el Cáncer de Páncreas Alicante",
+   "date": "2026-11-22",
+   "time": "",
+   "city": "Alicante",
+   "region": "Comunidad Valenciana",
+   "distances": [
+    "10K",
+    "5K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-contra-el-cancer-de-pancreas-alicante-2026-1122",
+   "source": "https://sportplan.es/es/events/xii-carrera-contra-el-cancer-de-pancreas-alicante-2026-alicante-alicante-es-2026-11-22"
+  },
+  {
+   "name": "Carrera de Empresas Monzón",
+   "date": "2026-11-22",
+   "time": "",
+   "city": "Monzón",
+   "region": "Aragón",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-de-empresas-monzon-2026-1122",
+   "source": "https://sportplan.es/es/events/carrera-empresas-monzon-cm-monzon-huesca-es-2026-11-22"
+  },
+  {
+   "name": "Carrera de Fondo Peligros",
+   "date": "2026-11-22",
+   "time": "",
+   "city": "Peligros",
+   "region": "Andalucía",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-de-fondo-peligros-2026-1122",
+   "source": "https://sportplan.es/es/events/carrera-de-fondo-peligros-suena-peligros-granada-es-2026-11-22"
+  },
+  {
+   "name": "Carrera en Marcha contra el Cáncer Cádiz",
+   "date": "2026-11-22",
+   "time": "",
+   "city": "Cádiz",
+   "region": "Andalucía",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-en-marcha-contra-el-cancer-cadiz-2026-1122",
+   "source": "https://sportplan.es/es/events/carrera-en-marcha-contra-el-cancer-cadiz-cadiz-es-2026-11-22"
+  },
+  {
+   "name": "Corre por un Mundo Sostenible",
+   "date": "2026-11-22",
+   "time": "",
+   "city": "Madrid",
+   "region": "Comunidad de Madrid",
+   "distances": [
+    "10K",
+    "5K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "corre-por-un-mundo-sostenible-2026-1122",
+   "source": "https://sportplan.es/es/events/corre-por-un-mundo-sostenible-madrid-madrid-es-2026-11-22"
+  },
+  {
+   "name": "Cursa Popular Vila de Sant Boi",
+   "date": "2026-11-22",
+   "time": "",
+   "city": "Sant Boi de Llobregat",
+   "region": "Cataluña",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "cursa-popular-vila-de-sant-boi-2026-1122",
+   "source": "https://sportplan.es/es/events/cursa-popular-vila-de-sant-boi-sant-boi-de-llob-barcelona-es-2026-11-22"
+  },
+  {
+   "name": "Cursa Solidària per a la Infància",
+   "date": "2026-11-22",
+   "time": "",
+   "city": "Terrassa",
+   "region": "Cataluña",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "cursa-solidaria-per-a-la-infancia-2026-1122",
+   "source": "https://sportplan.es/es/events/xi-cursa-solidaria-per-a-la-infancia-2026-11-22-terrassa"
+  },
+  {
+   "name": "Cursa de la Dona Barcelona",
+   "date": "2026-11-22",
+   "time": "",
+   "city": "Barcelona",
+   "region": "Cataluña",
+   "distances": [
+    "7K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "Carrera femenina.",
+   "id": "cursa-dona-bcn-2026",
+   "source": "https://www.3cat.cat/esport3/maratons-i-curses-populars-a-catalunya-el-2026-dates-llocs-i-inscripcions/noticia/3387717/"
+  },
+  {
+   "name": "La Mitja del Maresme",
+   "date": "2026-11-22",
+   "time": "",
+   "city": "Premià de Mar",
+   "region": "Cataluña",
+   "distances": [
+    "21K",
+    "10K",
+    "5K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "la-mitja-del-maresme-2026-1122",
+   "source": "https://running.life/es/carrera/la-mitja-del-maresme"
+  },
+  {
+   "name": "La Palauenca",
+   "date": "2026-11-22",
+   "time": "",
+   "city": "Palau-solità i Plegamans",
+   "region": "Cataluña",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "la-palauenca-2026-1122",
+   "source": "https://sportplan.es/es/events/la-palauenca-palau-solita-i-plegamans-barcelona-es-2026-11-22"
+  },
+  {
+   "name": "Media Maratón Ciudad de Roquetas",
+   "date": "2026-11-22",
+   "time": "",
+   "city": "Roquetas de Mar",
+   "region": "Andalucía",
+   "distances": [
+    "21K",
+    "8K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "media-maraton-ciudad-de-roquetas-2026-1122",
+   "source": "https://running.life/es/carrera/media-maraton-ciudad-de-roquetas"
+  },
+  {
+   "name": "Media Maratón Holiday World Benalmádena",
+   "date": "2026-11-22",
+   "time": "",
+   "city": "Benalmádena",
+   "region": "Andalucía",
+   "distances": [
+    "21K",
+    "10K",
+    "5K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "media-maraton-holiday-world-benalmadena-2026-1122",
+   "source": "https://running.life/es/carrera/holiday-world-a-favor-de-proyecto-hombre"
+  },
+  {
+   "name": "Media Maratón Jumilla Ciudad del Vino",
+   "date": "2026-11-22",
+   "time": "",
+   "city": "Jumilla",
+   "region": "Región de Murcia",
+   "distances": [
+    "21K",
+    "10K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "media-maraton-jumilla-ciudad-del-vino-2026-1122",
+   "source": "https://running.life/es/carrera/media-maraton-jumilla-ciudad-del-vino"
+  },
+  {
+   "name": "Mitja Marató Espirall",
+   "date": "2026-11-22",
+   "time": "",
+   "city": "Vilafranca del Penedès",
+   "region": "Cataluña",
+   "distances": [
+    "21K",
+    "10K",
+    "5K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "mitja-marato-espirall-2026-1122",
+   "source": "https://running.life/es/carrera/mitja-marato-espirall"
+  },
+  {
+   "name": "Mitja Marató Samaruc",
+   "date": "2026-11-22",
+   "time": "",
+   "city": "Algemesí",
+   "region": "Comunidad Valenciana",
+   "distances": [
+    "21K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "mitja-marato-samaruc-2026-1122",
+   "source": "https://sportplan.es/es/events/mitja-marato-samaruc-algemesi-valencia-es-2026-11-22"
+  },
+  {
+   "name": "Mitja Marató de Porreres",
+   "date": "2026-11-22",
+   "time": "",
+   "city": "Porreres",
+   "region": "Islas Baleares",
+   "distances": [
+    "21K",
+    "10K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "mitja-marato-de-porreres-2026-1122",
+   "source": "https://running.life/es/carrera/mitja-marato-de-porreres"
+  },
+  {
+   "name": "Tarraco Health Race",
+   "date": "2026-11-22",
+   "time": "",
+   "city": "Tarragona",
+   "region": "Cataluña",
+   "distances": [
+    "10K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "tarraco-health-race-2026-1122",
+   "source": "https://sportplan.es/es/events/tarraco-health-race-2026-tarragona-tarragona-es-2026-11-22"
+  },
+  {
+   "name": "Animalrunizar",
+   "date": "2026-11-23",
+   "time": "",
+   "city": "Zaragoza",
+   "region": "Aragón",
+   "distances": [
+    "6.5K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "animalrunizar-2026-1123",
+   "source": "https://sportplan.es/es/events/animalrunizar-zaragoza-zaragoza-es-2026-11-23"
+  },
+  {
+   "name": "10K Dulces de Casinos",
+   "date": "2026-11-28",
+   "time": "",
+   "city": "Casinos",
+   "region": "Comunidad Valenciana",
+   "distances": [
+    "10K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "10k-dulces-de-casinos-2026-1128",
+   "source": "https://sportplan.es/es/events/10k-dulces-de-casinos-casinos-valencia-es-2026-11-28"
+  },
+  {
+   "name": "10K Sariñena",
+   "date": "2026-11-28",
+   "time": "",
+   "city": "Sariñena",
+   "region": "Aragón",
+   "distances": [
+    "10K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "10k-sarinena-2026-1128",
+   "source": "https://sportplan.es/es/events/10k-sarinena-sarinena-huesca-es-2026-11-28"
+  },
+  {
+   "name": "5K Nocturno El Rosario",
+   "date": "2026-11-28",
+   "time": "",
+   "city": "El Rosario",
+   "region": "Canarias",
+   "distances": [
+    "5K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "5k-nocturno-el-rosario-2026-1128",
+   "source": "https://sportplan.es/es/events/5k-nocturno-el-rosario-el-rosario-tenerife-es-2026-11-28"
+  },
+  {
+   "name": "Carrera Papá Noel La Florida",
+   "date": "2026-11-28",
+   "time": "",
+   "city": "Alicante",
+   "region": "Comunidad Valenciana",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-papa-noel-la-florida-2026-1128",
+   "source": "https://sportplan.es/es/events/carrera-papa-noel-la-florida-alicante-es-2026-11-28"
+  },
+  {
+   "name": "Allianz Jean Bouin",
+   "date": "2026-11-29",
+   "time": "09:00",
+   "city": "Barcelona",
+   "region": "Cataluña",
+   "distances": [
+    "10K",
+    "5K"
+   ],
+   "url": "https://www.jeanbouin.cat/",
+   "official": true,
+   "note": "103ª edición. Hora según la última edición.",
+   "id": "jean-bouin-2026"
+  },
+  {
+   "name": "Media Maratón de Córdoba",
+   "date": "2026-11-29",
+   "time": "10:00",
+   "city": "Córdoba",
+   "region": "Andalucía",
+   "distances": [
+    "21K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "40ª edición. Meta en la Puerta del Puente.",
+   "id": "media-cordoba-2026",
+   "source": "https://www.correrjuntos.com/carreras/media-maraton-cordoba"
+  },
+  {
+   "name": "10K Alfàs del Pi",
+   "date": "2026-11-29",
+   "time": "",
+   "city": "L'Alfàs del Pi",
+   "region": "Comunidad Valenciana",
+   "distances": [
+    "10K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "10k-alfas-del-pi-2026-1129",
+   "source": "https://sportplan.es/es/events/10k-alfas-del-pi-alfas-del-pi-alicante-es-2026-11-29"
+  },
+  {
+   "name": "Carrera Popular Santiponce",
+   "date": "2026-11-29",
+   "time": "",
+   "city": "Santiponce",
+   "region": "Andalucía",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-popular-santiponce-2026-1129",
+   "source": "https://sportplan.es/es/events/carrera-popular-santiponce-santiponce-sevilla-es-2026-11-29"
+  },
+  {
+   "name": "Carrera Popular de Fuentes de Ebro",
+   "date": "2026-11-29",
+   "time": "",
+   "city": "Fuentes de Ebro",
+   "region": "Aragón",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-popular-de-fuentes-de-ebro-2026-1129",
+   "source": "https://sportplan.es/es/events/carrera-popular-de-fuentes-de-ebro-fuentes-de-ebro-zaragoza-es-2026-11-29"
+  },
+  {
+   "name": "Carrera San José de Calasanz",
+   "date": "2026-11-29",
+   "time": "",
+   "city": "Getafe",
+   "region": "Comunidad de Madrid",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-san-jose-de-calasanz-2026-1129",
+   "source": "https://sportplan.es/es/events/carrera-san-jose-de-calasanz-getafe-madrid-es-2026-11-29"
+  },
+  {
+   "name": "Carrera Tecnocasa Vuela contra la Violencia de Género",
+   "date": "2026-11-29",
+   "time": "",
+   "city": "Madrid",
+   "region": "Comunidad de Madrid",
+   "distances": [
+    "21K",
+    "10K",
+    "5K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-tecnocasa-vuela-contra-la-violencia-de-genero-2026-1129",
+   "source": "https://sportplan.es/es/events/x-carrera-tecnocasa-vuela-contra-la-violencia-de-genero-2026-11-29-av-de-las-fuerzas-armadas-5-madrid"
+  },
+  {
+   "name": "Carrera de Pepe",
+   "date": "2026-11-29",
+   "time": "",
+   "city": "Puerto Real",
+   "region": "Andalucía",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-de-pepe-2026-1129",
+   "source": "https://sportplan.es/es/events/carrera-de-pepe-puerto-real-cadiz-es-2026-11-29"
+  },
+  {
+   "name": "Carrera del Hospital Nacional de Parapléjicos",
+   "date": "2026-11-29",
+   "time": "",
+   "city": "Toledo",
+   "region": "Castilla-La Mancha",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-del-hospital-nacional-de-paraplejicos-2026-1129",
+   "source": "https://sportplan.es/es/events/carrera-del-hospital-nacional-de-paraplejicos-toledo-es-2026-11-29"
+  },
+  {
+   "name": "Cursa de la Dona Vila de Castellar",
+   "date": "2026-11-29",
+   "time": "",
+   "city": "Castellar del Vallès",
+   "region": "Cataluña",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "cursa-de-la-dona-vila-de-castellar-2026-1129",
+   "source": "https://sportplan.es/es/events/cursa-de-la-dona-vila-de-castellar-castellar-del-valles-barcelona-es-2026-11-29"
+  },
+  {
+   "name": "Marató i Mitja Relleus Vinyols",
+   "date": "2026-11-29",
+   "time": "",
+   "city": "Vinyols i els Arcs",
+   "region": "Cataluña",
+   "distances": [
+    "42K",
+    "21K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "marato-i-mitja-relleus-vinyols-2026-1129",
+   "source": "https://running.life/es/carrera/marato-i-mitja-marato-relleus-vinyols"
+  },
+  {
+   "name": "Media Maratón de Guadalajara",
+   "date": "2026-11-29",
+   "time": "",
+   "city": "Guadalajara",
+   "region": "Castilla-La Mancha",
+   "distances": [
+    "21K",
+    "11K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "media-maraton-de-guadalajara-2026-1129",
+   "source": "https://running.life/es/carrera/media-maraton-de-guadalajara"
+  },
+  {
+   "name": "Mitja Marató Unión Alcoyana",
+   "date": "2026-11-29",
+   "time": "",
+   "city": "Alcoy",
+   "region": "Comunidad Valenciana",
+   "distances": [
+    "21K",
+    "11K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "mitja-marato-union-alcoyana-2026-1129",
+   "source": "https://running.life/es/carrera/media-maraton-alcoy-union-alcoyana-seguros"
+  },
+  {
+   "name": "Trofeo José Cano",
+   "date": "2026-11-29",
+   "time": "",
+   "city": "Madrid (Canillejas)",
+   "region": "Comunidad de Madrid",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "trofeo-jose-cano-2026-1129",
+   "source": "https://sportplan.es/es/events/trofeo-jose-cano-canillejas-madrid-es-2026-11-29"
+  },
+  {
+   "name": "Media Maratón Villa de San Javier",
+   "date": "2026-12-01",
+   "time": "",
+   "city": "San Javier",
+   "region": "Región de Murcia",
+   "distances": [
+    "21K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "media-maraton-villa-de-san-javier-2026-1201",
+   "source": "https://sportplan.es/es/events/media-maraton-villa-de-san-javier-san-javier-2026-12-01-21k"
+  },
+  {
+   "name": "Carrera Nocturna de Camas",
+   "date": "2026-12-04",
+   "time": "",
+   "city": "Camas",
+   "region": "Andalucía",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-nocturna-de-camas-2026-1204",
+   "source": "https://sportplan.es/es/events/carrera-nocturna-de-camas-camas-sevilla-es-2026-12-04"
+  },
+  {
+   "name": "Font Vella Lanzarote International Marathon",
+   "date": "2026-12-05",
+   "time": "08:00",
+   "city": "Costa Teguise",
+   "region": "Canarias",
+   "distances": [
+    "42K",
+    "21K",
+    "10K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "Se corre en sábado.",
+   "km": "42,195 km · 21,097 km · 10 km",
+   "price": "70–80 € maratón · 55–65 € media",
+   "id": "maraton-lanzarote-2026",
+   "source": "https://running.life/es/carrera/lanzarote-international-marathon"
+  },
+  {
+   "name": "Carrera Popular Corre con tu Médico",
+   "date": "2026-12-05",
+   "time": "",
+   "city": "Salamanca",
+   "region": "Castilla y León",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-popular-corre-con-tu-medico-2026-1205",
+   "source": "https://sportplan.es/es/events/carrera-popular-corre-con-tu-medico-salamanca-es-2026-12-05"
+  },
+  {
+   "name": "Carrera Popular Palma del Río",
+   "date": "2026-12-05",
+   "time": "",
+   "city": "Palma del Río",
+   "region": "Andalucía",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-popular-palma-del-rio-2026-1205",
+   "source": "https://sportplan.es/es/events/carrera-popular-palma-del-rio-palma-del-rio-cordoba-es-2026-12-05"
+  },
+  {
+   "name": "Carrera Solidaria Santa Bárbara Reforesta",
+   "date": "2026-12-05",
+   "time": "",
+   "city": "Gijón",
+   "region": "Asturias",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-solidaria-santa-barbara-reforesta-2026-1205",
+   "source": "https://sportplan.es/es/events/carrera-solidaria-sta-barbara-reforesta-gijon-asturias-es-2026-12-05"
+  },
+  {
+   "name": "Maratón Valencia Trinidad Alfonso",
+   "date": "2026-12-06",
+   "time": "08:15",
+   "city": "Valencia",
+   "region": "Comunidad Valenciana",
+   "distances": [
+    "42K"
+   ],
+   "url": "https://www.valenciaciudaddelrunning.com/maraton/maraton/",
+   "official": true,
+   "note": "Dorsales agotados; lista de espera.",
+   "regulation": "https://www.valenciaciudaddelrunning.com/maraton/reglamento-maraton-valencia/",
+   "km": "42,195 km",
+   "price": "200 € (agotado, lista de espera)",
+   "id": "maraton-valencia-2026"
+  },
+  {
+   "name": "10K de Laviana",
+   "date": "2026-12-06",
+   "time": "",
+   "city": "Pola de Laviana",
+   "region": "Asturias",
+   "distances": [
+    "10K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "10k-de-laviana-2026-1206",
+   "source": "https://sportplan.es/es/events/10k-de-laviana-pola-de-laviana-asturias-es-2026-12-06"
+  },
+  {
+   "name": "Carrera Popular Día de la Constitución",
+   "date": "2026-12-06",
+   "time": "",
+   "city": "Totana",
+   "region": "Región de Murcia",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-popular-dia-de-la-constitucion-2026-1206",
+   "source": "https://sportplan.es/es/events/carrera-popular-dia-de-la-constitucion-totana-murcia-es-2026-12-06"
+  },
+  {
+   "name": "Carrera Popular Productos de Lobón",
+   "date": "2026-12-06",
+   "time": "",
+   "city": "Lobón",
+   "region": "Extremadura",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-popular-productos-de-lobon-2026-1206",
+   "source": "https://sportplan.es/es/events/carrera-popular-productos-de-lobon-lobon-badajoz-es-2026-12-06"
+  },
+  {
+   "name": "Carrera Solidaria Ruta 091 Elche",
+   "date": "2026-12-06",
+   "time": "",
+   "city": "Elche",
+   "region": "Comunidad Valenciana",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-solidaria-ruta-091-elche-2026-1206",
+   "source": "https://sportplan.es/es/events/carrera-solidaria-ruta-091-elche-elche-alicante-es-2026-12-06"
+  },
+  {
+   "name": "Carrera de la Constitución de Barajas",
+   "date": "2026-12-06",
+   "time": "",
+   "city": "Madrid (Barajas)",
+   "region": "Comunidad de Madrid",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-de-la-constitucion-de-barajas-2026-1206",
+   "source": "https://sportplan.es/es/events/carrera-de-la-constitucion-de-barajas-madrid-es-2026-12-06"
+  },
+  {
+   "name": "Carrera del Aceite",
+   "date": "2026-12-06",
+   "time": "",
+   "city": "Los Navalmorales",
+   "region": "Castilla-La Mancha",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-del-aceite-2026-1206",
+   "source": "https://sportplan.es/es/events/carrera-del-aceite-los-navalmorales-toledo-es-2026-12-06"
+  },
+  {
+   "name": "Cursa de Sant Andreu",
+   "date": "2026-12-06",
+   "time": "",
+   "city": "Barcelona",
+   "region": "Cataluña",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "cursa-de-sant-andreu-2026-1206",
+   "source": "https://sportplan.es/es/events/cursa-de-sant-andreu-sant-andreu-barcelona-es-2026-12-06"
+  },
+  {
+   "name": "La Mitja Figueres",
+   "date": "2026-12-06",
+   "time": "",
+   "city": "Figueres",
+   "region": "Cataluña",
+   "distances": [
+    "21K",
+    "10K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "la-mitja-figueres-2026-1206",
+   "source": "https://running.life/es/carrera/la-mitja-figueras"
+  },
+  {
+   "name": "La Sansi de Viladecans",
+   "date": "2026-12-06",
+   "time": "",
+   "city": "Viladecans",
+   "region": "Cataluña",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "la-sansi-de-viladecans-2026-1206",
+   "source": "https://sportplan.es/es/events/la-sansi-de-viladecans-viladecans-barcelona-es-2026-12-06"
+  },
+  {
+   "name": "Media Maratón Villa de Torre Pacheco",
+   "date": "2026-12-06",
+   "time": "",
+   "city": "Torre-Pacheco",
+   "region": "Región de Murcia",
+   "distances": [
+    "21K",
+    "11K",
+    "5K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "media-maraton-villa-de-torre-pacheco-2026-1206",
+   "source": "https://running.life/es/carrera/media-maraton-villa-de-torre-pacheco"
+  },
+  {
+   "name": "Trofeo Akiles",
+   "date": "2026-12-06",
+   "time": "",
+   "city": "Madrid (Casa de Campo)",
+   "region": "Comunidad de Madrid",
+   "distances": [
+    "10K",
+    "5K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "trofeo-akiles-2026-1206",
+   "source": "https://sportplan.es/es/events/trofeo-akiles-de-atletismo-madrid-parque-casa-de-campo-madrid-es-2026-12-06"
+  },
+  {
+   "name": "Carrera de S'Hostal de Montuïri",
+   "date": "2026-12-08",
+   "time": "",
+   "city": "Montuïri",
+   "region": "Islas Baleares",
+   "distances": [
+    "21K",
+    "10K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-de-s-hostal-de-montuiri-2026-1208",
+   "source": "https://running.life/es/carrera/carrera-de-shostal-de-montuiri"
+  },
+  {
+   "name": "Cursa Popular de Porqueres",
+   "date": "2026-12-08",
+   "time": "",
+   "city": "Porqueres",
+   "region": "Cataluña",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "cursa-popular-de-porqueres-2026-1208",
+   "source": "https://sportplan.es/es/events/cursa-popular-de-porqueres-porqueres-girona-es-2026-12-08"
+  },
+  {
+   "name": "Carrera Popular Paracuellos de Jarama",
+   "date": "2026-12-12",
+   "time": "",
+   "city": "Paracuellos de Jarama",
+   "region": "Comunidad de Madrid",
+   "distances": [
+    "10K",
+    "5K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-popular-paracuellos-de-jarama-2026-1212",
+   "source": "https://sportplan.es/es/events/carrera-popular-paracuellos-de-jarama-paracuellos-de-jarama-madrid-es-2026-12-12"
+  },
+  {
+   "name": "Legua Navidad Arganda del Rey",
+   "date": "2026-12-12",
+   "time": "",
+   "city": "Arganda del Rey",
+   "region": "Comunidad de Madrid",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "legua-navidad-arganda-del-rey-2026-1212",
+   "source": "https://sportplan.es/es/events/legua-navidad-arganda-del-rey-arganda-del-rey-madrid-es-2026-12-12"
+  },
+  {
+   "name": "Maratón Corralejo Grandes Playas",
+   "date": "2026-12-12",
+   "time": "",
+   "city": "Corralejo",
+   "region": "Canarias",
+   "distances": [
+    "42K",
+    "21K",
+    "10K",
+    "5K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "maraton-corralejo-grandes-playas-2026-1212",
+   "source": "https://running.life/es/carrera/maraton-dany-sport-corralejo-grandes-playas"
+  },
+  {
+   "name": "10K Pas Ras al Port de València",
+   "date": "2026-12-13",
+   "time": "09:00",
+   "city": "Valencia",
+   "region": "Comunidad Valenciana",
+   "distances": [
+    "10K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "Salida en Moll de la Duana.",
+   "id": "pas-ras-valencia-2026",
+   "source": "https://www.visitvalencia.com/agenda-valencia/calendario-de-carreras-y-maratones-en-valencia"
+  },
+  {
+   "name": "Maratón Internacional Elche–Alicante",
+   "date": "2026-12-13",
+   "time": "09:00",
+   "city": "Elche → Alicante",
+   "region": "Comunidad Valenciana",
+   "distances": [
+    "42K"
+   ],
+   "url": "https://maratonelchealicante.com/",
+   "official": true,
+   "note": "La web oficial anuncia el 13 de diciembre; el reglamento aún dice 29 de noviembre.",
+   "regulation": "https://maratonelchealicante.com/wp-content/uploads/2026/10/REGLAMENTO-MARATON-2026.pdf",
+   "km": "42,195 km",
+   "price": "45–65 € (+5 € licencia de día)",
+   "id": "maraton-elche-alicante-2026"
+  },
+  {
+   "name": "Medio Maratón de Sevilla",
+   "date": "2026-12-13",
+   "time": "09:00",
+   "city": "Sevilla",
+   "region": "Andalucía",
+   "distances": [
+    "21K"
+   ],
+   "url": "https://www.mediomaratondesevilla.es/",
+   "official": true,
+   "note": "La organización ha trasladado la carrera al 13 de diciembre.",
+   "regulation": "https://www.mediomaratondesevilla.es/mms-reglamento",
+   "km": "21,097 km",
+   "price": "25–50 € según tramo (feria: 100 €)",
+   "id": "medio-maraton-sevilla-2026"
+  },
+  {
+   "name": "10K Alcobendas",
+   "date": "2026-12-13",
+   "time": "",
+   "city": "Alcobendas",
+   "region": "Comunidad de Madrid",
+   "distances": [
+    "10K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "10k-alcobendas-2026-1213",
+   "source": "https://sportplan.es/es/events/10k-alcobendas-alcobendas-madrid-es-2026-12-13"
+  },
+  {
+   "name": "Carrera Popular Joaquinesca",
+   "date": "2026-12-13",
+   "time": "",
+   "city": "Bigastro",
+   "region": "Comunidad Valenciana",
+   "distances": [
+    "10K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-popular-joaquinesca-2026-1213",
+   "source": "https://sportplan.es/es/events/carrera-popular-joaquinesca-bigastro-alicante-es-2026-12-13"
+  },
+  {
+   "name": "Carrera Solidaria Divina Pastora",
+   "date": "2026-12-13",
+   "time": "",
+   "city": "San Fernando",
+   "region": "Andalucía",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-solidaria-divina-pastora-2026-1213",
+   "source": "https://sportplan.es/es/events/carrera-solidaria-divina-pastora-san-fernando-cadiz-es-2026-12-13"
+  },
+  {
+   "name": "Carrera Urbana del Pavo",
+   "date": "2026-12-13",
+   "time": "",
+   "city": "Benalmádena",
+   "region": "Andalucía",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-urbana-del-pavo-2026-1213",
+   "source": "https://sportplan.es/es/events/carrera-urbana-del-pavo-benalmadena-malaga-es-2026-12-13"
+  },
+  {
+   "name": "Carrera Virgen de la Esperanza",
+   "date": "2026-12-13",
+   "time": "",
+   "city": "Logroño",
+   "region": "La Rioja",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-virgen-de-la-esperanza-2026-1213",
+   "source": "https://sportplan.es/es/events/carrera-virgen-de-la-esperanza-logrono-la-rioja-es-2026-12-13"
+  },
+  {
+   "name": "Carrera contra el Cáncer de Páncreas Barcelona",
+   "date": "2026-12-13",
+   "time": "",
+   "city": "Barcelona",
+   "region": "Cataluña",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-contra-el-cancer-de-pancreas-barcelona-2026-1213",
+   "source": "https://sportplan.es/es/events/carrera-de-las-ciudades-contra-el-cancer-de-pancreas-barcelona-barcelona-barcelona-es-2026-12-13"
+  },
+  {
+   "name": "Carrera de Navidad Siente la Huerta",
+   "date": "2026-12-13",
+   "time": "",
+   "city": "Santa Cruz (Murcia)",
+   "region": "Región de Murcia",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-de-navidad-siente-la-huerta-2026-1213",
+   "source": "https://sportplan.es/es/events/carrera-de-navidad-siente-la-huerta-santa-cruz-murcia-murcia-es-2026-12-13"
+  },
+  {
+   "name": "Carrera de Navidad Villanueva de la Cañada",
+   "date": "2026-12-13",
+   "time": "",
+   "city": "Villanueva de la Cañada",
+   "region": "Comunidad de Madrid",
+   "distances": [
+    "10K",
+    "5K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-de-navidad-villanueva-de-la-canada-2026-1213",
+   "source": "https://running.life/es/carrera/carrera-navidad-villanueva-de-la-canada"
+  },
+  {
+   "name": "Carrera de las Empresas ESIC",
+   "date": "2026-12-13",
+   "time": "",
+   "city": "Zaragoza",
+   "region": "Aragón",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-de-las-empresas-esic-2026-1213",
+   "source": "https://sportplan.es/es/events/carrera-empresas-esic-zaragoza-es-2026-12-13"
+  },
+  {
+   "name": "Carrera por la Igualdad Villamayor",
+   "date": "2026-12-13",
+   "time": "",
+   "city": "Villamayor de Gállego",
+   "region": "Aragón",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-por-la-igualdad-villamayor-2026-1213",
+   "source": "https://sportplan.es/es/events/carrera-por-la-igualdad-villamayor-villamayor-de-gallego-zaragoza-es-2026-12-13"
+  },
+  {
+   "name": "Cursa Popular de la Sagrera",
+   "date": "2026-12-13",
+   "time": "",
+   "city": "Barcelona",
+   "region": "Cataluña",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "cursa-popular-de-la-sagrera-2026-1213",
+   "source": "https://sportplan.es/es/events/cursa-popular-de-la-sagrera-la-sagrera-barcelona-barcelona-es-2026-12-13"
+  },
+  {
+   "name": "Cursa de les Empreses",
+   "date": "2026-12-13",
+   "time": "",
+   "city": "L'Hospitalet de Llobregat",
+   "region": "Cataluña",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "cursa-de-les-empreses-2026-1213",
+   "source": "https://sportplan.es/es/events/cursa-de-les-empreses-hospitalet-de-llobregat-barcelona-es-2026-12-13"
+  },
+  {
+   "name": "Media Maratón Sevilla-Los Palacios",
+   "date": "2026-12-13",
+   "time": "",
+   "city": "Los Palacios y Villafranca",
+   "region": "Andalucía",
+   "distances": [
+    "21K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "media-maraton-sevilla-los-palacios-2026-1213",
+   "source": "https://sportplan.es/es/events/media-maraton-sevilla-los-palacios-los-palacios-y-villafranca-sevilla-es-2026-12-13"
+  },
+  {
+   "name": "Medio Maratón de Navalmoral de la Mata",
+   "date": "2026-12-13",
+   "time": "",
+   "city": "Navalmoral de la Mata",
+   "region": "Extremadura",
+   "distances": [
+    "21K",
+    "10K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "medio-maraton-de-navalmoral-de-la-mata-2026-1213",
+   "source": "https://running.life/es/carrera/medio-maraton-de-navalmoral-de-la-mata"
+  },
+  {
+   "name": "Memorial Adolfo Ros Volta á Ría",
+   "date": "2026-12-13",
+   "time": "",
+   "city": "Fene",
+   "region": "Galicia",
+   "distances": [
+    "21K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "memorial-adolfo-ros-volta-a-ria-2026-1213",
+   "source": "https://running.life/es/carrera/memorial-adolfo-ros-volta-a-ria"
+  },
+  {
+   "name": "Mitja Marató i 10K Ciutat de Vilanova",
+   "date": "2026-12-13",
+   "time": "",
+   "city": "Vilanova i la Geltrú",
+   "region": "Cataluña",
+   "distances": [
+    "21K",
+    "10K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "mitja-marato-i-10k-ciutat-de-vilanova-2026-1213",
+   "source": "https://running.life/es/carrera/media-maraton-vilanova-i-la-geltru"
+  },
+  {
+   "name": "Run4Angels",
+   "date": "2026-12-13",
+   "time": "",
+   "city": "Sangonera la Verde",
+   "region": "Región de Murcia",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "run4angels-2026-1213",
+   "source": "https://sportplan.es/es/events/run4angels-sangonera-la-verde-murcia-es-2026-12-13"
+  },
+  {
+   "name": "RunCáncer Picassent",
+   "date": "2026-12-13",
+   "time": "",
+   "city": "Picassent",
+   "region": "Comunidad Valenciana",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "runcancer-picassent-2026-1213",
+   "source": "https://sportplan.es/es/events/runcancer-picassent-2026-2026-12-13-picassent"
+  },
+  {
+   "name": "San Silvestre de Alcorcón",
+   "date": "2026-12-13",
+   "time": "",
+   "city": "Alcorcón",
+   "region": "Comunidad de Madrid",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-de-alcorcon-2026-1213",
+   "source": "https://sportplan.es/es/events/san-silvestre-de-alcorcon-alcorcon-madrid-es-2026-12-13"
+  },
+  {
+   "name": "Carrera a los Puentes",
+   "date": "2026-12-17",
+   "time": "",
+   "city": "Jaén",
+   "region": "Andalucía",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-a-los-puentes-2026-1217",
+   "source": "https://sportplan.es/es/events/carrera-a-los-puentes-jaen-es-2026-12-17"
+  },
+  {
+   "name": "Legua Nocturna Daganzo",
+   "date": "2026-12-17",
+   "time": "",
+   "city": "Daganzo",
+   "region": "Comunidad de Madrid",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "legua-nocturna-daganzo-2026-1217",
+   "source": "https://sportplan.es/es/events/legua-nocturna-daganzo-daganzo-de-arriba-madrid-es-2026-12-17"
+  },
+  {
+   "name": "San Silvestre Solidaria UPV",
+   "date": "2026-12-17",
+   "time": "",
+   "city": "Valencia",
+   "region": "Comunidad Valenciana",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-solidaria-upv-2026-1217",
+   "source": "https://sportplan.es/es/events/san-silvestre-solidaria-upv-valencia-es-2026-12-17"
+  },
+  {
+   "name": "Carreira Nocturna Sada",
+   "date": "2026-12-18",
+   "time": "",
+   "city": "Sada",
+   "region": "Galicia",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carreira-nocturna-sada-2026-1218",
+   "source": "https://sportplan.es/es/events/carreira-nocturna-sada-sada-a-coruna-es-2026-12-18"
+  },
+  {
+   "name": "Carrera Nocturna de Granada",
+   "date": "2026-12-18",
+   "time": "",
+   "city": "Granada",
+   "region": "Andalucía",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-nocturna-de-granada-2026-1218",
+   "source": "https://sportplan.es/es/events/carrera-nocturna-de-granada-granada-es-2026-12-18"
+  },
+  {
+   "name": "Palamós Christmas Race",
+   "date": "2026-12-18",
+   "time": "",
+   "city": "Palamós",
+   "region": "Cataluña",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "palamos-christmas-race-2026-1218",
+   "source": "https://sportplan.es/es/events/50-palamos-christmas-race-2026-2026-12-18"
+  },
+  {
+   "name": "San Silvestre Ciudad de Motril",
+   "date": "2026-12-18",
+   "time": "",
+   "city": "Motril",
+   "region": "Andalucía",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-ciudad-de-motril-2026-1218",
+   "source": "https://sportplan.es/es/events/san-silvestre-ciudad-de-motril-motril-granada-es-2026-12-18"
+  },
+  {
+   "name": "10K y 5K Nocturno San Mateo de Gállego",
+   "date": "2026-12-19",
+   "time": "",
+   "city": "San Mateo de Gállego",
+   "region": "Aragón",
+   "distances": [
+    "10K",
+    "5K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "10k-y-5k-nocturno-san-mateo-de-gallego-2026-1219",
+   "source": "https://sportplan.es/es/events/10k-y-5k-nocturno-san-mateo-de-gallego-san-mateo-de-gallego-zaragoza-es-2026-12-19"
+  },
+  {
+   "name": "Carrera Popular Sancho Abarca",
+   "date": "2026-12-19",
+   "time": "",
+   "city": "Tauste",
+   "region": "Aragón",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-popular-sancho-abarca-2026-1219",
+   "source": "https://sportplan.es/es/events/carrera-popular-sancho-abarca-tauste-zaragoza-es-2026-12-19"
+  },
+  {
+   "name": "Carrera Popular Venta de Baños",
+   "date": "2026-12-19",
+   "time": "",
+   "city": "Venta de Baños",
+   "region": "Castilla y León",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-popular-venta-de-banos-2026-1219",
+   "source": "https://sportplan.es/es/events/carrera-popular-venta-de-banos-venta-de-banos-palencia-es-2026-12-19"
+  },
+  {
+   "name": "Carrera Solidaria de Albolote",
+   "date": "2026-12-19",
+   "time": "",
+   "city": "Albolote",
+   "region": "Andalucía",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-solidaria-de-albolote-2026-1219",
+   "source": "https://sportplan.es/es/events/carrera-solidaria-de-albolote-albolote-granada-es-2026-12-19"
+  },
+  {
+   "name": "Carrera de Navidad Tres Cantos",
+   "date": "2026-12-19",
+   "time": "",
+   "city": "Tres Cantos",
+   "region": "Comunidad de Madrid",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-de-navidad-tres-cantos-2026-1219",
+   "source": "https://sportplan.es/es/events/carrera-de-navidad-tres-cantos-tres-cantos-madrid-es-2026-12-19"
+  },
+  {
+   "name": "Carrera de Navidad de Mendavia",
+   "date": "2026-12-19",
+   "time": "",
+   "city": "Mendavia",
+   "region": "Navarra",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-de-navidad-de-mendavia-2026-1219",
+   "source": "https://sportplan.es/es/events/carrera-de-navidad-de-mendavia-mendavia-navarra-es-2026-12-19"
+  },
+  {
+   "name": "Carrera de Navidad de Soto del Real",
+   "date": "2026-12-19",
+   "time": "",
+   "city": "Soto del Real",
+   "region": "Comunidad de Madrid",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-de-navidad-de-soto-del-real-2026-1219",
+   "source": "https://sportplan.es/es/events/carrera-de-navidad-de-soto-del-real-soto-del-real-madrid-es-2026-12-19"
+  },
+  {
+   "name": "Carrera del Mazapán",
+   "date": "2026-12-19",
+   "time": "",
+   "city": "Sonseca",
+   "region": "Castilla-La Mancha",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-del-mazapan-2026-1219",
+   "source": "https://sportplan.es/es/events/carrera-del-mazapan-sonseca-toledo-es-2026-12-19"
+  },
+  {
+   "name": "Carrera del Pavo de Novelda",
+   "date": "2026-12-19",
+   "time": "",
+   "city": "Novelda",
+   "region": "Comunidad Valenciana",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-del-pavo-de-novelda-2026-1219",
+   "source": "https://sportplan.es/es/events/carrera-del-pavo-de-novelda-novelda-alicante-es-2026-12-19"
+  },
+  {
+   "name": "Cursa de Nadal de Bétera",
+   "date": "2026-12-19",
+   "time": "",
+   "city": "Bétera",
+   "region": "Comunidad Valenciana",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "cursa-de-nadal-de-betera-2026-1219",
+   "source": "https://sportplan.es/es/events/cursa-de-nadal-de-betera-betera-valencia-es-2026-12-19"
+  },
+  {
+   "name": "Guadiatón",
+   "date": "2026-12-19",
+   "time": "",
+   "city": "Guadiana",
+   "region": "Extremadura",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "guadiaton-2026-1219",
+   "source": "https://sportplan.es/es/events/guadiaton-guadiana-del-caudillo-badajoz-es-2026-12-19"
+  },
+  {
+   "name": "San Silvestre Bruja Alcantarilla",
+   "date": "2026-12-19",
+   "time": "",
+   "city": "Alcantarilla",
+   "region": "Región de Murcia",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-bruja-alcantarilla-2026-1219",
+   "source": "https://sportplan.es/es/events/san-silvestre-bruja-alcantarilla-alcantarilla-murcia-es-2026-12-19"
+  },
+  {
+   "name": "San Silvestre de Boadilla",
+   "date": "2026-12-19",
+   "time": "",
+   "city": "Boadilla del Monte",
+   "region": "Comunidad de Madrid",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-de-boadilla-2026-1219",
+   "source": "https://sportplan.es/es/events/san-silvestre-de-boadilla-boadilla-del-monte-madrid-es-2026-12-19"
+  },
+  {
+   "name": "San Silvestre de Hortaleza",
+   "date": "2026-12-19",
+   "time": "",
+   "city": "Madrid (Hortaleza)",
+   "region": "Comunidad de Madrid",
+   "distances": [
+    "10K",
+    "5K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-de-hortaleza-2026-1219",
+   "source": "https://sportplan.es/es/events/xi-san-silvestre-de-hortaleza-2026-hortaleza-hortaleza-es-2026-12-19"
+  },
+  {
+   "name": "San Silvestre de Torrelodones",
+   "date": "2026-12-19",
+   "time": "",
+   "city": "Torrelodones",
+   "region": "Comunidad de Madrid",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-de-torrelodones-2026-1219",
+   "source": "https://sportplan.es/es/events/san-silvestre-de-torrelodones-torrelodones-madrid-es-2026-12-19"
+  },
+  {
+   "name": "10K por la Fibrosis Quística",
+   "date": "2026-12-20",
+   "time": "",
+   "city": "Foios",
+   "region": "Comunidad Valenciana",
+   "distances": [
+    "10K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "10k-por-la-fibrosis-quistica-2026-1220",
+   "source": "https://sportplan.es/es/events/10k-por-la-fibrosis-quistica-foios-valencia-es-2026-12-20"
+  },
+  {
+   "name": "Carrera Popular Villa de Aranjuez",
+   "date": "2026-12-20",
+   "time": "",
+   "city": "Aranjuez",
+   "region": "Comunidad de Madrid",
+   "distances": [
+    "10K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-popular-villa-de-aranjuez-2026-1220",
+   "source": "https://sportplan.es/es/events/carrera-popular-villa-de-aranjuez-aranjuez-madrid-es-2026-12-20"
+  },
+  {
+   "name": "Carrera de Navidad Albeldense",
+   "date": "2026-12-20",
+   "time": "",
+   "city": "Albelda de Iregua",
+   "region": "La Rioja",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-de-navidad-albeldense-2026-1220",
+   "source": "https://sportplan.es/es/events/carrera-de-navidad-albeldense-albelda-de-iregua-la-rioja-es-2026-12-20"
+  },
+  {
+   "name": "Carrera de Navidad Fuengirola",
+   "date": "2026-12-20",
+   "time": "",
+   "city": "Fuengirola",
+   "region": "Andalucía",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-de-navidad-fuengirola-2026-1220",
+   "source": "https://sportplan.es/es/events/carrera-de-navidad-fuengirola-fuengirola-malaga-es-2026-12-20"
+  },
+  {
+   "name": "Carrera de Navidad de Cártama",
+   "date": "2026-12-20",
+   "time": "",
+   "city": "Cártama",
+   "region": "Andalucía",
+   "distances": [
+    "10K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-de-navidad-de-cartama-2026-1220",
+   "source": "https://sportplan.es/es/events/carrera-de-navidad-de-cartama-cartama-estacion-malaga-es-2026-12-20"
+  },
+  {
+   "name": "Carrera de Navidad de Piélagos",
+   "date": "2026-12-20",
+   "time": "",
+   "city": "Renedo de Piélagos",
+   "region": "Cantabria",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-de-navidad-de-pielagos-2026-1220",
+   "source": "https://sportplan.es/es/events/carrera-de-navidad-de-pielagos-renedo-de-pielagos-cantabria-es-2026-12-20"
+  },
+  {
+   "name": "Carrera de Papá Noel de Sevilla",
+   "date": "2026-12-20",
+   "time": "",
+   "city": "Sevilla",
+   "region": "Andalucía",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-de-papa-noel-de-sevilla-2026-1220",
+   "source": "https://sportplan.es/es/events/carrera-de-papa-noel-de-sevilla-sevilla-es-2026-12-20"
+  },
+  {
+   "name": "Carrera de la Ilusión",
+   "date": "2026-12-20",
+   "time": "",
+   "city": "Toledo",
+   "region": "Castilla-La Mancha",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-de-la-ilusion-2026-1220",
+   "source": "https://sportplan.es/es/events/carrera-de-la-ilusion-toledo-es-2026-12-20"
+  },
+  {
+   "name": "Carrera del Turrón",
+   "date": "2026-12-20",
+   "time": "",
+   "city": "Arroyo de la Encomienda",
+   "region": "Castilla y León",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-del-turron-2026-1220",
+   "source": "https://sportplan.es/es/events/carrera-del-turron-arroyo-de-la-encomienda-valladolid-es-2026-12-20"
+  },
+  {
+   "name": "Cordobaria",
+   "date": "2026-12-20",
+   "time": "",
+   "city": "Córdoba",
+   "region": "Andalucía",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "cordobaria-2026-1220",
+   "source": "https://sportplan.es/es/events/cordobaria-cordoba-es-2026-12-20"
+  },
+  {
+   "name": "La Cabrereña",
+   "date": "2026-12-20",
+   "time": "",
+   "city": "La Cabrera",
+   "region": "Comunidad de Madrid",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "la-cabrerena-2026-1220",
+   "source": "https://sportplan.es/es/events/la-cabrerena-la-cabrera-madrid-es-2026-12-20"
+  },
+  {
+   "name": "La Media de Vitoria-Gasteiz",
+   "date": "2026-12-20",
+   "time": "",
+   "city": "Vitoria-Gasteiz",
+   "region": "País Vasco",
+   "distances": [
+    "21K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "la-media-de-vitoria-gasteiz-2026-1220",
+   "source": "https://sportplan.es/es/events/la-media-de-vitoria-gasteiz-vitoria-alava-es-2026-12-20"
+  },
+  {
+   "name": "Legua Solidaria Carranque",
+   "date": "2026-12-20",
+   "time": "",
+   "city": "Carranque",
+   "region": "Castilla-La Mancha",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "legua-solidaria-carranque-2026-1220",
+   "source": "https://sportplan.es/es/events/legua-solidaria-carranque-carranque-toledo-es-2026-12-20"
+  },
+  {
+   "name": "Media Maratón Ciudad de Cieza",
+   "date": "2026-12-20",
+   "time": "",
+   "city": "Cieza",
+   "region": "Región de Murcia",
+   "distances": [
+    "21K",
+    "11K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "media-maraton-ciudad-de-cieza-2026-1220",
+   "source": "https://running.life/es/carrera/media-maraton-ciudad-de-cieza"
+  },
+  {
+   "name": "Media Maratón Ciudad de Tacoronte",
+   "date": "2026-12-20",
+   "time": "",
+   "city": "Tacoronte",
+   "region": "Canarias",
+   "distances": [
+    "21K",
+    "10K",
+    "5K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "media-maraton-ciudad-de-tacoronte-2026-1220",
+   "source": "https://running.life/es/carrera/media-maraton-ciudad-de-tacoronte"
+  },
+  {
+   "name": "Media Maratón Villa de Aspe",
+   "date": "2026-12-20",
+   "time": "",
+   "city": "Aspe",
+   "region": "Comunidad Valenciana",
+   "distances": [
+    "21K",
+    "11K",
+    "5K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "media-maraton-villa-de-aspe-2026-1220",
+   "source": "https://running.life/es/carrera/media-maraton-villa-de-aspe"
+  },
+  {
+   "name": "Quarta i Mitja Marató Paiporta-Picanya",
+   "date": "2026-12-20",
+   "time": "",
+   "city": "Paiporta",
+   "region": "Comunidad Valenciana",
+   "distances": [
+    "21K",
+    "11K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "quarta-i-mitja-marato-paiporta-picanya-2026-1220",
+   "source": "https://sportplan.es/es/events/mitja-marato-picanya-paiporta-picanya-valencia-es-2026-12-20"
+  },
+  {
+   "name": "San Silvestre Pedrezuela",
+   "date": "2026-12-20",
+   "time": "",
+   "city": "Pedrezuela",
+   "region": "Comunidad de Madrid",
+   "distances": [
+    "12K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-pedrezuela-2026-1220",
+   "source": "https://sportplan.es/es/events/san-silvestre-pedrezuela-pedrezuela-2026-12-20-12k"
+  },
+  {
+   "name": "San Silvestre Realejera",
+   "date": "2026-12-20",
+   "time": "",
+   "city": "Los Realejos",
+   "region": "Canarias",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-realejera-2026-1220",
+   "source": "https://sportplan.es/es/events/san-silvestre-realejera-realejos-tenerife-es-2026-12-20"
+  },
+  {
+   "name": "Sant Silvestre Carcaixent",
+   "date": "2026-12-20",
+   "time": "",
+   "city": "Carcaixent",
+   "region": "Comunidad Valenciana",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "sant-silvestre-carcaixent-2026-1220",
+   "source": "https://sportplan.es/es/events/sant-silvestre-carcaixent-carcaixent-valencia-es-2026-12-20"
+  },
+  {
+   "name": "Sant Silvestre Ciutat de Xirivella",
+   "date": "2026-12-20",
+   "time": "",
+   "city": "Xirivella",
+   "region": "Comunidad Valenciana",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "sant-silvestre-ciutat-de-xirivella-2026-1220",
+   "source": "https://sportplan.es/es/events/sant-silvestre-ciutat-de-xirivella-xirivella-valencia-es-2026-12-20"
+  },
+  {
+   "name": "Carrera de Navidad de Laredo",
+   "date": "2026-12-23",
+   "time": "",
+   "city": "Laredo",
+   "region": "Cantabria",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-de-navidad-de-laredo-2026-1223",
+   "source": "https://sportplan.es/es/events/carrera-de-navidad-de-laredo-laredo-cantabria-es-2026-12-23"
+  },
+  {
+   "name": "Carrera Jarama María Villota",
+   "date": "2026-12-24",
+   "time": "",
+   "city": "San Sebastián de los Reyes",
+   "region": "Comunidad de Madrid",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-jarama-maria-villota-2026-1224",
+   "source": "https://sportplan.es/es/events/jarama-maria-villota-san-sebastian-de-los-reyes-madrid-es-2026-12-24"
+  },
+  {
+   "name": "Carrera Popular de Nochebuena",
+   "date": "2026-12-24",
+   "time": "",
+   "city": "Polanco",
+   "region": "Cantabria",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-popular-de-nochebuena-2026-1224",
+   "source": "https://sportplan.es/es/events/carrera-popular-de-nochebuena-polanco-cantabria-es-2026-12-24"
+  },
+  {
+   "name": "Carrera Yepes Navirun",
+   "date": "2026-12-24",
+   "time": "",
+   "city": "Yepes",
+   "region": "Castilla-La Mancha",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-yepes-navirun-2026-1224",
+   "source": "https://sportplan.es/es/events/carrera-yepes-navirun-yepes-toledo-es-2026-12-24"
+  },
+  {
+   "name": "Carrera del Pavo",
+   "date": "2026-12-24",
+   "time": "",
+   "city": "Yunquera de Henares",
+   "region": "Castilla-La Mancha",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-del-pavo-2026-1224",
+   "source": "https://sportplan.es/es/events/carrera-del-pavo-yunquera-de-henares-guadalajara-es-2026-12-24"
+  },
+  {
+   "name": "Legua Navideña de Camarma",
+   "date": "2026-12-24",
+   "time": "",
+   "city": "Camarma de Esteruelas",
+   "region": "Comunidad de Madrid",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "legua-navidena-de-camarma-2026-1224",
+   "source": "https://sportplan.es/es/events/legua-navidena-de-camarma-camarma-de-esteruelas-madrid-es-2026-12-24"
+  },
+  {
+   "name": "San Silvestre Real Club Mediterráneo",
+   "date": "2026-12-25",
+   "time": "",
+   "city": "Málaga",
+   "region": "Andalucía",
+   "distances": [
+    "10K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-real-club-mediterraneo-2026-1225",
+   "source": "https://sportplan.es/es/events/san-silvestre-real-club-mediterraneo-malaga-es-2026-12-25"
+  },
+  {
+   "name": "San Silvestre de Humanes de Madrid",
+   "date": "2026-12-25",
+   "time": "",
+   "city": "Humanes de Madrid",
+   "region": "Comunidad de Madrid",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-de-humanes-de-madrid-2026-1225",
+   "source": "https://sportplan.es/es/events/san-silvestre-de-humanes-de-madrid-humanes-de-madrid-madrid-es-2026-12-25"
+  },
+  {
+   "name": "8K Castrillón",
+   "date": "2026-12-26",
+   "time": "",
+   "city": "Castrillón",
+   "region": "Asturias",
+   "distances": [
+    "8K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "8k-castrillon-2026-1226",
+   "source": "https://sportplan.es/es/events/8km-castrillon-castrillon-asturias-es-2026-12-26"
+  },
+  {
+   "name": "Carrera de Fin de Año de Pola de Siero",
+   "date": "2026-12-26",
+   "time": "",
+   "city": "Pola de Siero",
+   "region": "Asturias",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-de-fin-de-ano-de-pola-de-siero-2026-1226",
+   "source": "https://sportplan.es/es/events/carrera-de-fin-de-ano-de-pola-de-siero-pola-de-siero-asturias-es-2026-12-26"
+  },
+  {
+   "name": "Carrera de Navidad Consuegra",
+   "date": "2026-12-26",
+   "time": "",
+   "city": "Consuegra",
+   "region": "Castilla-La Mancha",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-de-navidad-consuegra-2026-1226",
+   "source": "https://sportplan.es/es/events/carrera-de-navidad-consuegra-consuegra-toledo-es-2026-12-26"
+  },
+  {
+   "name": "Carrera de Navidad Villa de Rota",
+   "date": "2026-12-26",
+   "time": "",
+   "city": "Rota",
+   "region": "Andalucía",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-de-navidad-villa-de-rota-2026-1226",
+   "source": "https://sportplan.es/es/events/carrera-de-navidad-villa-de-rota-rota-cadiz-es-2026-12-26"
+  },
+  {
+   "name": "San Silvestre Candelaria",
+   "date": "2026-12-26",
+   "time": "",
+   "city": "Candelaria",
+   "region": "Canarias",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-candelaria-2026-1226",
+   "source": "https://sportplan.es/es/events/san-silvestre-candelaria-candelaria-tenerife-es-2026-12-26"
+  },
+  {
+   "name": "San Silvestre Ciempozuelos",
+   "date": "2026-12-26",
+   "time": "",
+   "city": "Ciempozuelos",
+   "region": "Comunidad de Madrid",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-ciempozuelos-2026-1226",
+   "source": "https://sportplan.es/es/events/san-silvestre-ciempozuelos-ciempozuelos-madrid-es-2026-12-26"
+  },
+  {
+   "name": "San Silvestre Gaditana",
+   "date": "2026-12-26",
+   "time": "",
+   "city": "Cádiz",
+   "region": "Andalucía",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-gaditana-2026-1226",
+   "source": "https://sportplan.es/es/events/san-silvestre-gaditana-cadiz-es-2026-12-26"
+  },
+  {
+   "name": "San Silvestre Madriguerense",
+   "date": "2026-12-26",
+   "time": "",
+   "city": "Madrigueras",
+   "region": "Castilla-La Mancha",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-madriguerense-2026-1226",
+   "source": "https://sportplan.es/es/events/san-silvestre-madriguerense-madrigueras-albacete-es-2026-12-26"
+  },
+  {
+   "name": "San Silvestre Valdetorres de Jarama",
+   "date": "2026-12-26",
+   "time": "",
+   "city": "Valdetorres de Jarama",
+   "region": "Comunidad de Madrid",
+   "distances": [
+    "5K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-valdetorres-de-jarama-2026-1226",
+   "source": "https://sportplan.es/es/events/san-silvestre-valdetorres-de-jarama-valdetorres-de-jarama-madrid-es-2026-12-26"
+  },
+  {
+   "name": "San Silvestre Villa de Mieres",
+   "date": "2026-12-26",
+   "time": "",
+   "city": "Mieres",
+   "region": "Asturias",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-villa-de-mieres-2026-1226",
+   "source": "https://sportplan.es/es/events/san-silvestre-villa-de-mieres-mieres-asturias-es-2026-12-26"
+  },
+  {
+   "name": "San Silvestre Vélez-Málaga",
+   "date": "2026-12-26",
+   "time": "",
+   "city": "Vélez-Málaga",
+   "region": "Andalucía",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-velez-malaga-2026-1226",
+   "source": "https://sportplan.es/es/events/san-silvestre-velez-malaga-velez-malaga-malaga-es-2026-12-26"
+  },
+  {
+   "name": "San Silvestre de Benicàssim",
+   "date": "2026-12-26",
+   "time": "",
+   "city": "Benicàssim",
+   "region": "Comunidad Valenciana",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-de-benicassim-2026-1226",
+   "source": "https://sportplan.es/es/events/san-silvestre-de-benicassim-benicassim-castellon-es-2026-12-26"
+  },
+  {
+   "name": "San Silvestre de Navalcarnero",
+   "date": "2026-12-26",
+   "time": "",
+   "city": "Navalcarnero",
+   "region": "Comunidad de Madrid",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-de-navalcarnero-2026-1226",
+   "source": "https://sportplan.es/es/events/san-silvestre-de-navalcarnero-navalcarnero-madrid-es-2026-12-26"
+  },
+  {
+   "name": "San Silvestre de Piloña",
+   "date": "2026-12-26",
+   "time": "",
+   "city": "Infiesto",
+   "region": "Asturias",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-de-pilona-2026-1226",
+   "source": "https://sportplan.es/es/events/san-silvestre-de-pilona-pilona-infiesto-asturias-es-2026-12-26"
+  },
+  {
+   "name": "San Silvestre de Salas",
+   "date": "2026-12-26",
+   "time": "",
+   "city": "Salas",
+   "region": "Asturias",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-de-salas-2026-1226",
+   "source": "https://sportplan.es/es/events/san-silvestre-de-salas-salas-asturias-es-2026-12-26"
+  },
+  {
+   "name": "San Silvestre de Torrelavega",
+   "date": "2026-12-26",
+   "time": "",
+   "city": "Torrelavega",
+   "region": "Cantabria",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-de-torrelavega-2026-1226",
+   "source": "https://sportplan.es/es/events/san-silvestre-de-torrelavega-torrelavega-cantabria-es-2026-12-26"
+  },
+  {
+   "name": "Sant Silvestre Manresana",
+   "date": "2026-12-26",
+   "time": "",
+   "city": "Manresa",
+   "region": "Cataluña",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "sant-silvestre-manresana-2026-1226",
+   "source": "https://sportplan.es/es/events/sant-silvestre-manresana-manresa-barcelona-es-2026-12-26"
+  },
+  {
+   "name": "Sentim la Sant Silvestre",
+   "date": "2026-12-26",
+   "time": "",
+   "city": "Nules",
+   "region": "Comunidad Valenciana",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "sentim-la-sant-silvestre-2026-1226",
+   "source": "https://sportplan.es/es/events/sentim-la-sant-silvestre-nules-castellon-es-2026-12-26"
+  },
+  {
+   "name": "Carreira de Fin de Ano Mugardos-Ares",
+   "date": "2026-12-27",
+   "time": "",
+   "city": "Ares",
+   "region": "Galicia",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carreira-de-fin-de-ano-mugardos-ares-2026-1227",
+   "source": "https://sportplan.es/es/events/carreira-de-fin-de-ano-mugardos-ares-ares-a-coruna-es-2026-12-27"
+  },
+  {
+   "name": "La San Silvestre más Bestia",
+   "date": "2026-12-27",
+   "time": "",
+   "city": "Los Palacios y Villafranca",
+   "region": "Andalucía",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "la-san-silvestre-mas-bestia-2026-1227",
+   "source": "https://sportplan.es/es/events/la-san-silvestre-mas-bestia-los-palacios-y-villafranca-sevilla-es-2026-12-27"
+  },
+  {
+   "name": "San Pinteña",
+   "date": "2026-12-27",
+   "time": "",
+   "city": "Pinto",
+   "region": "Comunidad de Madrid",
+   "distances": [
+    "10K",
+    "5K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-pintena-2026-1227",
+   "source": "https://sportplan.es/es/events/san-pintena-pinto-madrid-es-2026-12-27"
+  },
+  {
+   "name": "San Silvestre Alameña",
+   "date": "2026-12-27",
+   "time": "",
+   "city": "El Álamo",
+   "region": "Comunidad de Madrid",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-alamena-2026-1227",
+   "source": "https://sportplan.es/es/events/san-silvestre-alamena-el-alamo-madrid-es-2026-12-27"
+  },
+  {
+   "name": "San Silvestre Alboraya",
+   "date": "2026-12-27",
+   "time": "",
+   "city": "Alboraya",
+   "region": "Comunidad Valenciana",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-alboraya-2026-1227",
+   "source": "https://sportplan.es/es/events/san-silvestre-alboraya-alboraya-valencia-es-2026-12-27"
+  },
+  {
+   "name": "San Silvestre Almendralejense",
+   "date": "2026-12-27",
+   "time": "",
+   "city": "Almendralejo",
+   "region": "Extremadura",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-almendralejense-2026-1227",
+   "source": "https://sportplan.es/es/events/san-silvestre-almendralejense-almendralejo-badajoz-es-2026-12-27"
+  },
+  {
+   "name": "San Silvestre Alzira",
+   "date": "2026-12-27",
+   "time": "",
+   "city": "Alzira",
+   "region": "Comunidad Valenciana",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-alzira-2026-1227",
+   "source": "https://sportplan.es/es/events/san-silvestre-alzira-alzira-valencia-es-2026-12-27"
+  },
+  {
+   "name": "San Silvestre Berciana",
+   "date": "2026-12-27",
+   "time": "",
+   "city": "Ponferrada",
+   "region": "Castilla y León",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-berciana-2026-1227",
+   "source": "https://sportplan.es/es/events/san-silvestre-berciana-ponferrada-leon-es-2026-12-27"
+  },
+  {
+   "name": "San Silvestre Ejeana",
+   "date": "2026-12-27",
+   "time": "",
+   "city": "Ejea de los Caballeros",
+   "region": "Aragón",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-ejeana-2026-1227",
+   "source": "https://sportplan.es/es/events/san-silvestre-ejeana-ejea-de-los-caballeros-zaragoza-es-2026-12-27"
+  },
+  {
+   "name": "San Silvestre El Viso de San Juan",
+   "date": "2026-12-27",
+   "time": "",
+   "city": "El Viso de San Juan",
+   "region": "Castilla-La Mancha",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-el-viso-de-san-juan-2026-1227",
+   "source": "https://sportplan.es/es/events/san-silvestre-el-viso-de-san-juan-el-viso-de-san-juan-toledo-es-2026-12-27"
+  },
+  {
+   "name": "San Silvestre Rincón de la Victoria",
+   "date": "2026-12-27",
+   "time": "",
+   "city": "Rincón de la Victoria",
+   "region": "Andalucía",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-rincon-de-la-victoria-2026-1227",
+   "source": "https://sportplan.es/es/events/san-silvestre-rincon-de-la-victoria-rincon-de-la-victoria-malaga-es-2026-12-27"
+  },
+  {
+   "name": "San Silvestre Salmantina",
+   "date": "2026-12-27",
+   "time": "",
+   "city": "Salamanca",
+   "region": "Castilla y León",
+   "distances": [
+    "10K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-salmantina-2026-1227",
+   "source": "https://sportplan.es/es/events/san-silvestre-salmantina-salamanca-es-2026-12-27"
+  },
+  {
+   "name": "San Silvestre Solidaria El Puerto",
+   "date": "2026-12-27",
+   "time": "",
+   "city": "El Puerto de Santa María",
+   "region": "Andalucía",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-solidaria-el-puerto-2026-1227",
+   "source": "https://sportplan.es/es/events/san-silvestre-solidaria-el-puerto-de-santa-maria-cadiz-es-2026-12-27"
+  },
+  {
+   "name": "San Silvestre Villasecana",
+   "date": "2026-12-27",
+   "time": "",
+   "city": "Villaseca de la Sagra",
+   "region": "Castilla-La Mancha",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-villasecana-2026-1227",
+   "source": "https://sportplan.es/es/events/san-silvestre-villasecana-villaseca-de-la-sagra-toledo-es-2026-12-27"
+  },
+  {
+   "name": "San Silvestre de Almería",
+   "date": "2026-12-27",
+   "time": "",
+   "city": "Almería",
+   "region": "Andalucía",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-de-almeria-2026-1227",
+   "source": "https://sportplan.es/es/events/san-silvestre-de-almeria-almeria-es-2026-12-27"
+  },
+  {
+   "name": "San Silvestre de Burriana",
+   "date": "2026-12-27",
+   "time": "",
+   "city": "Burriana",
+   "region": "Comunidad Valenciana",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-de-burriana-2026-1227",
+   "source": "https://sportplan.es/es/events/san-silvestre-de-burriana-burriana-castellon-es-2026-12-27"
+  },
+  {
+   "name": "San Silvestre de El Ejido",
+   "date": "2026-12-27",
+   "time": "",
+   "city": "El Ejido",
+   "region": "Andalucía",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-de-el-ejido-2026-1227",
+   "source": "https://sportplan.es/es/events/san-silvestre-de-el-ejido-el-ejido-almeria-es-2026-12-27"
+  },
+  {
+   "name": "San Silvestre de Guadalajara",
+   "date": "2026-12-27",
+   "time": "",
+   "city": "Guadalajara",
+   "region": "Castilla-La Mancha",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-de-guadalajara-2026-1227",
+   "source": "https://sportplan.es/es/events/san-silvestre-guadalajara-guadalajara-espana-guadalajara-es-2026-12-27"
+  },
+  {
+   "name": "San Silvestre de Lena",
+   "date": "2026-12-27",
+   "time": "",
+   "city": "Pola de Lena",
+   "region": "Asturias",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-de-lena-2026-1227",
+   "source": "https://sportplan.es/es/events/san-silvestre-de-lena-pola-de-lena-asturias-es-2026-12-27"
+  },
+  {
+   "name": "San Silvestre de León",
+   "date": "2026-12-27",
+   "time": "",
+   "city": "León",
+   "region": "Castilla y León",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-de-leon-2026-1227",
+   "source": "https://sportplan.es/es/events/san-silvestre-de-leon-leon-es-2026-12-27"
+  },
+  {
+   "name": "San Silvestre de Lugones",
+   "date": "2026-12-27",
+   "time": "",
+   "city": "Lugones",
+   "region": "Asturias",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-de-lugones-2026-1227",
+   "source": "https://sportplan.es/es/events/san-silvestre-de-lugones-lugones-asturias-es-2026-12-27"
+  },
+  {
+   "name": "San Silvestre de Villaverde Alto",
+   "date": "2026-12-27",
+   "time": "",
+   "city": "Madrid (Villaverde)",
+   "region": "Comunidad de Madrid",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-de-villaverde-alto-2026-1227",
+   "source": "https://sportplan.es/es/events/san-silvestre-de-villaverde-alto-madrid-es-2026-12-27"
+  },
+  {
+   "name": "San Silvestre en Mislata",
+   "date": "2026-12-27",
+   "time": "",
+   "city": "Mislata",
+   "region": "Comunidad Valenciana",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-en-mislata-2026-1227",
+   "source": "https://sportplan.es/es/events/san-silvestre-en-mislata-mislata-valencia-es-2026-12-27"
+  },
+  {
+   "name": "Sant Silvestre Illa de Menorca",
+   "date": "2026-12-27",
+   "time": "",
+   "city": "Maó",
+   "region": "Islas Baleares",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "sant-silvestre-illa-de-menorca-2026-1227",
+   "source": "https://sportplan.es/es/events/sant-silvestre-illa-de-menorca-mao-islas-baleares-es-2026-12-27"
+  },
+  {
+   "name": "Sant Silvestre RACC Badalona",
+   "date": "2026-12-27",
+   "time": "",
+   "city": "Badalona",
+   "region": "Cataluña",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "sant-silvestre-racc-badalona-2026-1227",
+   "source": "https://sportplan.es/es/events/sant-silvestre-racc-badalona-badalona-barcelona-es-2026-12-27"
+  },
+  {
+   "name": "Cursa de la Llufa",
+   "date": "2026-12-28",
+   "time": "",
+   "city": "L'Espluga de Francolí",
+   "region": "Cataluña",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "cursa-de-la-llufa-2026-1228",
+   "source": "https://sportplan.es/es/events/cursa-de-la-llufa-l-espluga-de-francoli-tarragona-es-2026-12-28"
+  },
+  {
+   "name": "San Silvestre Mostoleña",
+   "date": "2026-12-28",
+   "time": "",
+   "city": "Móstoles",
+   "region": "Comunidad de Madrid",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-mostolena-2026-1228",
+   "source": "https://sportplan.es/es/events/san-silvestre-mostolena-mostoles-madrid-es-2026-12-28"
+  },
+  {
+   "name": "San Silvestre de Rocafort",
+   "date": "2026-12-28",
+   "time": "",
+   "city": "Rocafort",
+   "region": "Comunidad Valenciana",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-de-rocafort-2026-1228",
+   "source": "https://sportplan.es/es/events/san-silvestre-de-rocafort-rocafort-valencia-es-2026-12-28"
+  },
+  {
+   "name": "San Silvestre Chiclanera",
+   "date": "2026-12-29",
+   "time": "",
+   "city": "Chiclana de la Frontera",
+   "region": "Andalucía",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-chiclanera-2026-1229",
+   "source": "https://sportplan.es/es/events/san-silvestre-chiclanera-chiclana-de-la-frontera-cadiz-es-2026-12-29"
+  },
+  {
+   "name": "Sanselvestre",
+   "date": "2026-12-29",
+   "time": "",
+   "city": "San Sebastián de los Reyes",
+   "region": "Comunidad de Madrid",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "sanselvestre-2026-1229",
+   "source": "https://sportplan.es/es/events/sanselvestre-san-sebastian-de-los-reyes-madrid-es-2026-12-29"
+  },
+  {
+   "name": "Sant Silvestre Dénia",
+   "date": "2026-12-29",
+   "time": "",
+   "city": "Dénia",
+   "region": "Comunidad Valenciana",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "sant-silvestre-denia-2026-1229",
+   "source": "https://sportplan.es/es/events/sant-silvestre-denia-denia-alicante-es-2026-12-29"
+  },
+  {
+   "name": "San Silvestre Dombenitense",
+   "date": "2026-12-30",
+   "time": "",
+   "city": "Don Benito",
+   "region": "Extremadura",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-dombenitense-2026-1230",
+   "source": "https://sportplan.es/es/events/san-silvestre-dombenitense-don-benito-badajoz-es-2026-12-30"
+  },
+  {
+   "name": "San Silvestre Huelva Onupolis",
+   "date": "2026-12-30",
+   "time": "",
+   "city": "Huelva",
+   "region": "Andalucía",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-huelva-onupolis-2026-1230",
+   "source": "https://sportplan.es/es/events/san-silvestre-huelva-onupolis-huelva-es-2026-12-30"
+  },
+  {
+   "name": "San Silvestre Melilla",
+   "date": "2026-12-30",
+   "time": "",
+   "city": "Melilla",
+   "region": "Melilla",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-melilla-2026-1230",
+   "source": "https://sportplan.es/es/events/san-silvestre-melilla-melilla-es-2026-12-30"
+  },
+  {
+   "name": "San Silvestre Popular Valenciana",
+   "date": "2026-12-30",
+   "time": "",
+   "city": "Valencia",
+   "region": "Comunidad Valenciana",
+   "distances": [
+    "5K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-popular-valenciana-2026-1230",
+   "source": "https://sportplan.es/es/events/san-silvestre-popular-valenciana-valencia-es-2026-12-30"
+  },
+  {
+   "name": "San Silvestre de Calahorra",
+   "date": "2026-12-30",
+   "time": "",
+   "city": "Calahorra",
+   "region": "La Rioja",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-de-calahorra-2026-1230",
+   "source": "https://sportplan.es/es/events/san-silvestre-de-calahorra-calahorra-la-rioja-es-2026-12-30"
+  },
+  {
+   "name": "San Silvestre de Llanera",
+   "date": "2026-12-30",
+   "time": "",
+   "city": "Llanera",
+   "region": "Asturias",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-de-llanera-2026-1230",
+   "source": "https://sportplan.es/es/events/san-silvestre-de-llanera-llanera-asturias-es-2026-12-30"
+  },
+  {
+   "name": "San Silvestre de Mérida",
+   "date": "2026-12-30",
+   "time": "",
+   "city": "Mérida",
+   "region": "Extremadura",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-de-merida-2026-1230",
+   "source": "https://sportplan.es/es/events/san-silvestre-de-merida-merida-badajoz-es-2026-12-30"
+  },
+  {
+   "name": "San Silvestre de Torremolinos",
+   "date": "2026-12-30",
+   "time": "",
+   "city": "Torremolinos",
+   "region": "Andalucía",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-de-torremolinos-2026-1230",
+   "source": "https://sportplan.es/es/events/san-silvestre-de-torremolinos-torremolinos-malaga-es-2026-12-30"
+  },
+  {
+   "name": "San Silvestre Vallecana",
+   "date": "2026-12-31",
+   "time": "16:55",
+   "city": "Madrid",
+   "region": "Comunidad de Madrid",
+   "distances": [
+    "10K"
+   ],
+   "url": "https://www.sansilvestrevallecana.com/",
+   "official": true,
+   "note": "Salidas por oleadas. Internacional a las 19:55.",
+   "regulation": "https://www.sansilvestrevallecana.com/reglamento_popular.php",
+   "price": "27 €",
+   "km": "10 km",
+   "id": "san-silvestre-vallecana-2026"
+  },
+  {
+   "name": "B100 Cursa dels Nassos",
+   "date": "2026-12-31",
+   "time": "17:15",
+   "city": "Barcelona",
+   "region": "Cataluña",
+   "distances": [
+    "10K",
+    "5K"
+   ],
+   "url": "https://cursadenassos.barcelona/es",
+   "official": true,
+   "note": "Salida en calle Selva de Mar.",
+   "km": "10 km · 5 km",
+   "price": "18,50 €",
+   "id": "cursa-nassos-2026"
+  },
+  {
+   "name": "San Silvestre de Talavera",
+   "date": "2026-12-31",
+   "time": "18:00",
+   "city": "Talavera de la Reina",
+   "region": "Castilla-La Mancha",
+   "distances": [
+    "Popular"
+   ],
+   "url": "",
+   "official": false,
+   "note": "Salida en avenida Juan Carlos I.",
+   "id": "san-silvestre-talavera-2026",
+   "source": "https://www.festivalesdeespana.com/festival/xliii-san-silvestre-de-talavera-de-la-reina-talavera-de-la-reina"
+  },
+  {
+   "name": "Cursa Sant Silvestre Ciutat d'Inca",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Inca",
+   "region": "Islas Baleares",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "cursa-sant-silvestre-ciutat-d-inca-2026-1231",
+   "source": "https://sportplan.es/es/events/cursa-sant-silvestre-ciutat-d-inca-inca-islas-baleares-es-2026-12-31"
+  },
+  {
+   "name": "Cursa Sant Silvestre de Tarragona",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Tarragona",
+   "region": "Cataluña",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "cursa-sant-silvestre-de-tarragona-2026-1231",
+   "source": "https://sportplan.es/es/events/cursa-sant-silvestre-de-tarragona-tarragona-es-2026-12-31"
+  },
+  {
+   "name": "La Sant Silvestre Torrenca",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Torredembarra",
+   "region": "Cataluña",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "la-sant-silvestre-torrenca-2026-1231",
+   "source": "https://sportplan.es/es/events/la-sant-silvestre-torrenca-torredembarra-tarragona-es-2026-12-31"
+  },
+  {
+   "name": "San Silvestre A Coruña",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "A Coruña",
+   "region": "Galicia",
+   "distances": [
+    "7.5K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-a-coruna-2026-1231",
+   "source": "https://sportplan.es/es/events/san-silvestre-a-coruna-a-coruna-es-2026-12-31"
+  },
+  {
+   "name": "San Silvestre Alcarreña",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Azuqueca de Henares",
+   "region": "Castilla-La Mancha",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-alcarrena-2026-1231",
+   "source": "https://sportplan.es/es/events/san-silvestre-alcarrena-azuqueca-de-henares-guadalajara-es-2026-12-31"
+  },
+  {
+   "name": "San Silvestre Alcoyana",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Alcoy",
+   "region": "Comunidad Valenciana",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-alcoyana-2026-1231",
+   "source": "https://sportplan.es/es/events/san-silvestre-alcoyana-alcoi-alicante-es-2026-12-31"
+  },
+  {
+   "name": "San Silvestre Alpedreteña",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Alpedrete",
+   "region": "Comunidad de Madrid",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-alpedretena-2026-1231",
+   "source": "https://sportplan.es/es/events/san-silvestre-alpedretena-alpedrete-madrid-es-2026-12-31"
+  },
+  {
+   "name": "San Silvestre Antequerana",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Antequera",
+   "region": "Andalucía",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-antequerana-2026-1231",
+   "source": "https://sportplan.es/es/events/san-silvestre-antequerana-antequera-malaga-es-2026-12-31"
+  },
+  {
+   "name": "San Silvestre Arandina",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Aranda de Duero",
+   "region": "Castilla y León",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-arandina-2026-1231",
+   "source": "https://sportplan.es/es/events/san-silvestre-arandina-aranda-de-duero-burgos-es-2026-12-31"
+  },
+  {
+   "name": "San Silvestre Barakaldesa",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Barakaldo",
+   "region": "País Vasco",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-barakaldesa-2026-1231",
+   "source": "https://sportplan.es/es/events/san-silvestre-barakaldesa-barakaldo-bizkaia-es-2026-12-31"
+  },
+  {
+   "name": "San Silvestre Bastetana",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Baza",
+   "region": "Andalucía",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-bastetana-2026-1231",
+   "source": "https://sportplan.es/es/events/san-silvestre-bastetana-baza-granada-es-2026-12-31"
+  },
+  {
+   "name": "San Silvestre Bañezana",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "La Bañeza",
+   "region": "Castilla y León",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-banezana-2026-1231",
+   "source": "https://sportplan.es/es/events/san-silvestre-banezana-la-baneza-leon-es-2026-12-31"
+  },
+  {
+   "name": "San Silvestre Burlada",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Burlada",
+   "region": "Navarra",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-burlada-2026-1231",
+   "source": "https://sportplan.es/es/events/san-silvestre-burlada-burlada-navarra-es-2026-12-31"
+  },
+  {
+   "name": "San Silvestre Cidiana",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Burgos",
+   "region": "Castilla y León",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-cidiana-2026-1231",
+   "source": "https://sportplan.es/es/events/san-silvestre-cidiana-burgos-es-2026-12-31"
+  },
+  {
+   "name": "San Silvestre Ciudad de Arrecife",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Arrecife",
+   "region": "Canarias",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-ciudad-de-arrecife-2026-1231",
+   "source": "https://sportplan.es/es/events/san-silvestre-ciudad-de-arrecife-arrecife-las-palmas-es-2026-12-31"
+  },
+  {
+   "name": "San Silvestre Colmenar Viejo",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Colmenar Viejo",
+   "region": "Comunidad de Madrid",
+   "distances": [
+    "10K",
+    "6K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-colmenar-viejo-2026-1231",
+   "source": "https://running.life/es/carrera/san-silvestre-colmenar-viejo"
+  },
+  {
+   "name": "San Silvestre Complutense",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Alcalá de Henares",
+   "region": "Comunidad de Madrid",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-complutense-2026-1231",
+   "source": "https://sportplan.es/es/events/san-silvestre-complutense-alcala-de-henares-madrid-es-2026-12-31"
+  },
+  {
+   "name": "San Silvestre Cordobesa",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Córdoba",
+   "region": "Andalucía",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-cordobesa-2026-1231",
+   "source": "https://sportplan.es/es/events/san-silvestre-cordobesa-cordoba-es-2026-12-31"
+  },
+  {
+   "name": "San Silvestre Corraliega",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Los Corrales de Buelna",
+   "region": "Cantabria",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-corraliega-2026-1231",
+   "source": "https://sportplan.es/es/events/san-silvestre-corraliega-corrales-d-buelna-cantabria-es-2026-12-31"
+  },
+  {
+   "name": "San Silvestre Cosladeña",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Coslada",
+   "region": "Comunidad de Madrid",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-cosladena-2026-1231",
+   "source": "https://sportplan.es/es/events/san-silvestre-cosladena-coslada-madrid-es-2026-12-31"
+  },
+  {
+   "name": "San Silvestre Donostiarra",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "San Sebastián",
+   "region": "País Vasco",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-donostiarra-2026-1231",
+   "source": "https://sportplan.es/es/events/san-silvestre-donostiarra-donostia-san-sebastian-gipuzkoa-es-2026-12-31"
+  },
+  {
+   "name": "San Silvestre Eldense",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Elda",
+   "region": "Comunidad Valenciana",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-eldense-2026-1231",
+   "source": "https://sportplan.es/es/events/san-silvestre-de-eldense-elda-alicante-es-2026-12-31"
+  },
+  {
+   "name": "San Silvestre Gallarda",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Marchamalo",
+   "region": "Castilla-La Mancha",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-gallarda-2026-1231",
+   "source": "https://sportplan.es/es/events/san-silvestre-gallarda-marchamalo-guadalajara-es-2026-12-31"
+  },
+  {
+   "name": "San Silvestre Golden Mile",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Arona (Las Américas)",
+   "region": "Canarias",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-golden-mile-2026-1231",
+   "source": "https://sportplan.es/es/events/san-silvestre-golden-mile-las-americas-arona-tenerife-es-2026-12-31"
+  },
+  {
+   "name": "San Silvestre Hondarribia",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Hondarribia",
+   "region": "País Vasco",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-hondarribia-2026-1231",
+   "source": "https://sportplan.es/es/events/san-silvestre-sport-mundi-hondarribia-gipuzkoa-es-2026-12-31"
+  },
+  {
+   "name": "San Silvestre Ilicitana",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Elche",
+   "region": "Comunidad Valenciana",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-ilicitana-2026-1231",
+   "source": "https://sportplan.es/es/events/san-silvestre-ilicitana-elche-alicante-es-2026-12-31"
+  },
+  {
+   "name": "San Silvestre Illescana",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Illescas",
+   "region": "Castilla-La Mancha",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-illescana-2026-1231",
+   "source": "https://sportplan.es/es/events/san-silvestre-illescana-illescas-toledo-es-2026-12-31"
+  },
+  {
+   "name": "San Silvestre Internacional Crevillentina",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Crevillent",
+   "region": "Comunidad Valenciana",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-internacional-crevillentina-2026-1231",
+   "source": "https://sportplan.es/es/events/san-silvestre-internacional-crevillentina-crevillent-alicante-es-2026-12-31"
+  },
+  {
+   "name": "San Silvestre Jerezana",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Jerez de la Frontera",
+   "region": "Andalucía",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-jerezana-2026-1231",
+   "source": "https://sportplan.es/es/events/san-silvestre-jerezana-jerez-de-la-frontera-cadiz-es-2026-12-31"
+  },
+  {
+   "name": "San Silvestre Lagunera",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "San Cristóbal de La Laguna",
+   "region": "Canarias",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-lagunera-2026-1231",
+   "source": "https://sportplan.es/es/events/san-silvestre-lagunera-la-laguna-tenerife-es-2026-12-31"
+  },
+  {
+   "name": "San Silvestre Lasarte-Oria",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Lasarte-Oria",
+   "region": "País Vasco",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-lasarte-oria-2026-1231",
+   "source": "https://sportplan.es/es/events/san-silvestre-lasarte-oria-lasarte-oria-gipuzkoa-es-2026-12-31"
+  },
+  {
+   "name": "San Silvestre Manzanares el Real",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Manzanares el Real",
+   "region": "Comunidad de Madrid",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-manzanares-el-real-2026-1231",
+   "source": "https://sportplan.es/es/events/san-silvestre-manzanares-el-real-manzanares-el-real-madrid-es-2026-12-31"
+  },
+  {
+   "name": "San Silvestre Montijana",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Montijo",
+   "region": "Extremadura",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-montijana-2026-1231",
+   "source": "https://sportplan.es/es/events/san-silvestre-montijana-montijo-badajoz-es-2026-12-31"
+  },
+  {
+   "name": "San Silvestre Naronesa",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Narón",
+   "region": "Galicia",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-naronesa-2026-1231",
+   "source": "https://sportplan.es/es/events/san-silvestre-naronesa-a-trintaeundoce-naron-a-coruna-es-2026-12-31"
+  },
+  {
+   "name": "San Silvestre Olite",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Olite",
+   "region": "Navarra",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-olite-2026-1231",
+   "source": "https://sportplan.es/es/events/san-silvestre-olite-olite-navarra-es-2026-12-31"
+  },
+  {
+   "name": "San Silvestre Ourensá",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Ourense",
+   "region": "Galicia",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-ourensa-2026-1231",
+   "source": "https://sportplan.es/es/events/san-silvestre-ourensa-ourense-es-2026-12-31"
+  },
+  {
+   "name": "San Silvestre Palentina",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Palencia",
+   "region": "Castilla y León",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-palentina-2026-1231",
+   "source": "https://sportplan.es/es/events/san-silvestre-palentina-palencia-es-2026-12-31"
+  },
+  {
+   "name": "San Silvestre Palma-Palmilla",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Málaga",
+   "region": "Andalucía",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-palma-palmilla-2026-1231",
+   "source": "https://sportplan.es/es/events/san-silvestre-palma-palmilla-malaga-es-2026-12-31"
+  },
+  {
+   "name": "San Silvestre Parleña",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Parla",
+   "region": "Comunidad de Madrid",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-parlena-2026-1231",
+   "source": "https://sportplan.es/es/events/san-silvestre-parlena-parla-madrid-es-2026-12-31"
+  },
+  {
+   "name": "San Silvestre Pola de Laviana",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Pola de Laviana",
+   "region": "Asturias",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-pola-de-laviana-2026-1231",
+   "source": "https://sportplan.es/es/events/san-silvestre-pola-de-laviana-pola-de-laviana-asturias-es-2026-12-31"
+  },
+  {
+   "name": "San Silvestre Sevillana",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Sevilla",
+   "region": "Andalucía",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-sevillana-2026-1231",
+   "source": "https://sportplan.es/es/events/san-silvestre-sevillana-sevilla-es-2026-12-31"
+  },
+  {
+   "name": "San Silvestre Toledana",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Toledo",
+   "region": "Castilla-La Mancha",
+   "distances": [
+    "8K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "Por el casco histórico.",
+   "id": "san-silvestre-toledana-2026",
+   "source": "https://www.festivalesdeespana.com/festival/san-silvestre-toledana-toledo"
+  },
+  {
+   "name": "San Silvestre Valle de Egüés",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Valle de Egüés",
+   "region": "Navarra",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-valle-de-egues-2026-1231",
+   "source": "https://sportplan.es/es/events/san-silvestre-valle-de-egues-valle-de-egues-eguesibar-navarra-es-2026-12-31"
+  },
+  {
+   "name": "San Silvestre Vicalvareña",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Madrid (Vicálvaro)",
+   "region": "Comunidad de Madrid",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-vicalvarena-2026-1231",
+   "source": "https://sportplan.es/es/events/san-silvestre-vicalvarena-vicalvaro-madrid-es-2026-12-31"
+  },
+  {
+   "name": "San Silvestre Villa de Mora",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Mora",
+   "region": "Castilla-La Mancha",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-villa-de-mora-2026-1231",
+   "source": "https://sportplan.es/es/events/san-silvestre-villa-de-mora-mora-toledo-es-2026-12-31"
+  },
+  {
+   "name": "San Silvestre Zaragozana",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Zaragoza",
+   "region": "Aragón",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-zaragozana-2026-1231",
+   "source": "https://sportplan.es/es/events/san-silvestre-zaragozana-el-rincon-zaragoza-es-2026-12-31"
+  },
+  {
+   "name": "San Silvestre de Albacete",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Albacete",
+   "region": "Castilla-La Mancha",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-de-albacete-2026-1231",
+   "source": "https://sportplan.es/es/events/san-silvestre-de-albacete-albacete-es-2026-12-31"
+  },
+  {
+   "name": "San Silvestre de Alcobendas",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Alcobendas",
+   "region": "Comunidad de Madrid",
+   "distances": [
+    "10K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-de-alcobendas-2026-1231",
+   "source": "https://sportplan.es/es/events/san-silvestre-de-alcobendas-alcobendas-madrid-es-2026-12-31"
+  },
+  {
+   "name": "San Silvestre de Arróniz",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Arróniz",
+   "region": "Navarra",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-de-arroniz-2026-1231",
+   "source": "https://sportplan.es/es/events/san-silvestre-de-arroniz-arroniz-navarra-es-2026-12-31"
+  },
+  {
+   "name": "San Silvestre de Avilés",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Avilés",
+   "region": "Asturias",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-de-aviles-2026-1231",
+   "source": "https://sportplan.es/es/events/san-silvestre-de-aviles-aviles-asturias-es-2026-12-31"
+  },
+  {
+   "name": "San Silvestre de Barbastro",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Barbastro",
+   "region": "Aragón",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-de-barbastro-2026-1231",
+   "source": "https://sportplan.es/es/events/san-silvestre-de-barbastro-barbastro-huesca-es-2026-12-31"
+  },
+  {
+   "name": "San Silvestre de Bilbao",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Bilbao",
+   "region": "País Vasco",
+   "distances": [
+    "6.6K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-de-bilbao-2026-1231",
+   "source": "https://sportplan.es/es/events/bilbao-rekalde-san-silvestre-bilbao-bizkaia-es-2026-12-31"
+  },
+  {
+   "name": "San Silvestre de Calatayud",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Calatayud",
+   "region": "Aragón",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-de-calatayud-2026-1231",
+   "source": "https://sportplan.es/es/events/san-silvestre-solidaria-de-calatayud-calatayud-zaragoza-es-2026-12-31"
+  },
+  {
+   "name": "San Silvestre de Cartagena",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Cartagena",
+   "region": "Región de Murcia",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-de-cartagena-2026-1231",
+   "source": "https://sportplan.es/es/events/san-silvestre-de-cartagena-cartagena-murcia-es-2026-12-31"
+  },
+  {
+   "name": "San Silvestre de Castro Urdiales",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Castro Urdiales",
+   "region": "Cantabria",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-de-castro-urdiales-2026-1231",
+   "source": "https://sportplan.es/es/events/san-silvestre-de-castro-urdiales-castro-urdiales-cantabria-es-2026-12-31"
+  },
+  {
+   "name": "San Silvestre de Collado Villalba",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Collado Villalba",
+   "region": "Comunidad de Madrid",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-de-collado-villalba-2026-1231",
+   "source": "https://sportplan.es/es/events/san-silvestre-de-collado-villalba-collado-villalba-madrid-es-2026-12-31"
+  },
+  {
+   "name": "San Silvestre de Galapagar",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Galapagar",
+   "region": "Comunidad de Madrid",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-de-galapagar-2026-1231",
+   "source": "https://sportplan.es/es/events/san-silvestre-de-galapagar-galapagar-madrid-es-2026-12-31"
+  },
+  {
+   "name": "San Silvestre de Galdakao",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Galdakao",
+   "region": "País Vasco",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-de-galdakao-2026-1231",
+   "source": "https://sportplan.es/es/events/san-silvestre-de-galdakao-galdakao-bizkaia-es-2026-12-31"
+  },
+  {
+   "name": "San Silvestre de Gama",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Gama",
+   "region": "Cantabria",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-de-gama-2026-1231",
+   "source": "https://sportplan.es/es/events/san-silvestre-de-gama-gama-cantabria-es-2026-12-31"
+  },
+  {
+   "name": "San Silvestre de Getafe",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Getafe",
+   "region": "Comunidad de Madrid",
+   "distances": [
+    "10K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-de-getafe-2026-1231",
+   "source": "https://sportplan.es/es/events/san-silvestre-de-getafe-getafe-madrid-es-2026-12-31"
+  },
+  {
+   "name": "San Silvestre de Gijón",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Gijón",
+   "region": "Asturias",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-de-gijon-2026-1231",
+   "source": "https://www.sansilvestregijon.es/"
+  },
+  {
+   "name": "San Silvestre de Langreo",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Langreo",
+   "region": "Asturias",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-de-langreo-2026-1231",
+   "source": "https://sportplan.es/es/events/san-silvestre-de-langreo-en-familia-langreo-asturias-es-2026-12-31"
+  },
+  {
+   "name": "San Silvestre de Lardero",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Lardero",
+   "region": "La Rioja",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-de-lardero-2026-1231",
+   "source": "https://sportplan.es/es/events/san-silvestre-de-lardero-lardero-la-rioja-es-2026-12-31"
+  },
+  {
+   "name": "San Silvestre de Las Rozas",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Las Rozas",
+   "region": "Comunidad de Madrid",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-de-las-rozas-2026-1231",
+   "source": "https://sportplan.es/es/events/san-silvestre-de-las-rozas-las-rozas-madrid-es-2026-12-31"
+  },
+  {
+   "name": "San Silvestre de Lekeitio",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Lekeitio",
+   "region": "País Vasco",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-de-lekeitio-2026-1231",
+   "source": "https://sportplan.es/es/events/san-silvestre-de-lekeitio-lekeitio-bizkaia-es-2026-12-31"
+  },
+  {
+   "name": "San Silvestre de Lerín",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Lerín",
+   "region": "Navarra",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-de-lerin-2026-1231",
+   "source": "https://sportplan.es/es/events/san-silvestre-de-lerin-lerin-navarra-es-2026-12-31"
+  },
+  {
+   "name": "San Silvestre de Llanes",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Llanes",
+   "region": "Asturias",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-de-llanes-2026-1231",
+   "source": "https://sportplan.es/es/events/san-silvestre-de-llanes-llanes-asturias-es-2026-12-31"
+  },
+  {
+   "name": "San Silvestre de Logroño",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Logroño",
+   "region": "La Rioja",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-de-logrono-2026-1231",
+   "source": "https://sportplan.es/es/events/san-silvestre-de-logrono-logrono-la-rioja-es-2026-12-31"
+  },
+  {
+   "name": "San Silvestre de Lorca",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Lorca",
+   "region": "Región de Murcia",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-de-lorca-2026-1231",
+   "source": "https://sportplan.es/es/events/san-silvestre-de-lorca-lorca-murcia-es-2026-12-31"
+  },
+  {
+   "name": "San Silvestre de Lugo",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Lugo",
+   "region": "Galicia",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-de-lugo-2026-1231",
+   "source": "https://sportplan.es/es/events/san-silvestre-club-fluvial-de-lugo-lugo-es-2026-12-31"
+  },
+  {
+   "name": "San Silvestre de Molina de Segura",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Molina de Segura",
+   "region": "Región de Murcia",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-de-molina-de-segura-2026-1231",
+   "source": "https://sportplan.es/es/events/san-silvestre-de-molina-de-segura-molina-de-segura-murcia-es-2026-12-31"
+  },
+  {
+   "name": "San Silvestre de Navacerrada",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Navacerrada",
+   "region": "Comunidad de Madrid",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-de-navacerrada-2026-1231",
+   "source": "https://sportplan.es/es/events/san-silvestre-de-navacerrada-navacerrada-madrid-es-2026-12-31"
+  },
+  {
+   "name": "San Silvestre de Oviedo",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Oviedo",
+   "region": "Asturias",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-de-oviedo-2026-1231",
+   "source": "https://sportplan.es/es/events/san-silvestre-oviedo-oviedo-asturias-es-2026-12-31"
+  },
+  {
+   "name": "San Silvestre de Pamplona",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Pamplona",
+   "region": "Navarra",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-de-pamplona-2026-1231",
+   "source": "https://sportplan.es/es/events/san-silvestre-de-pamplona-pamplona-navarra-es-2026-12-31"
+  },
+  {
+   "name": "San Silvestre de Plasencia",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Plasencia",
+   "region": "Extremadura",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-de-plasencia-2026-1231",
+   "source": "https://sportplan.es/es/events/san-silvestre-de-plasencia-plasencia-caceres-es-2026-12-31"
+  },
+  {
+   "name": "San Silvestre de Pontevedra",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Pontevedra",
+   "region": "Galicia",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-de-pontevedra-2026-1231",
+   "source": "https://sportplan.es/es/events/san-silvestre-de-pontevedra-pontevedra-es-2026-12-31"
+  },
+  {
+   "name": "San Silvestre de Santander",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Santander",
+   "region": "Cantabria",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-de-santander-2026-1231",
+   "source": "https://sportplan.es/es/events/san-silvestre-de-santander-santander-cantabria-es-2026-12-31"
+  },
+  {
+   "name": "San Silvestre de Viana",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Viana",
+   "region": "Navarra",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-de-viana-2026-1231",
+   "source": "https://sportplan.es/es/events/san-silvestre-de-viana-viana-navarra-es-2026-12-31"
+  },
+  {
+   "name": "San Silvestre de Vitoria-Gasteiz",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Vitoria-Gasteiz",
+   "region": "País Vasco",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-de-vitoria-gasteiz-2026-1231",
+   "source": "https://sportplan.es/es/events/san-silvestre-de-vitoria-gasteiz-vitoria-alava-es-2026-12-31"
+  },
+  {
+   "name": "Sant Silvestre Calvianera",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Calvià",
+   "region": "Islas Baleares",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "sant-silvestre-calvianera-2026-1231",
+   "source": "https://sportplan.es/es/events/hidrobal-sant-silvestre-calvianera-calvia-islas-baleares-es-2026-12-31"
+  },
+  {
+   "name": "Sant Silvestre Ciutat de Castelló",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Castellón de la Plana",
+   "region": "Comunidad Valenciana",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "sant-silvestre-ciutat-de-castello-2026-1231",
+   "source": "https://sportplan.es/es/events/sant-silvestre-ciutat-de-castello-castellon-de-la-plana-castellon-es-2026-12-31"
+  },
+  {
+   "name": "Sant Silvestre de Girona",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Girona",
+   "region": "Cataluña",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "sant-silvestre-de-girona-2026-1231",
+   "source": "https://sportplan.es/es/events/sant-silvestre-de-girona-girona-es-2026-12-31"
+  },
+  {
+   "name": "Sant Silvestre de Lleida",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Lleida",
+   "region": "Cataluña",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "sant-silvestre-de-lleida-2026-1231",
+   "source": "https://sportplan.es/es/events/sant-silvestre-de-lleida-lleida-es-2026-12-31"
+  },
+  {
+   "name": "Sant Silvestre de Reus",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Reus",
+   "region": "Cataluña",
+   "distances": [
+    "5K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "sant-silvestre-de-reus-2026-1231",
+   "source": "https://sportplan.es/es/events/sant-silvestre-reus-2026-reus-reus-es-2026-12-31"
+  },
+  {
+   "name": "Volta a Peu València",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "Valencia",
+   "region": "Comunidad Valenciana",
+   "distances": [
+    "10K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "volta-a-peu-valencia-2026-1231",
+   "source": "https://www.correrjuntos.com/carreras/volta-a-peu-valencia"
+  },
+  {
+   "name": "Carrera Popular Reyes Magos",
+   "date": "2027-01-02",
+   "time": "",
+   "city": "Madrid",
+   "region": "Comunidad de Madrid",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-popular-reyes-magos-2027-0102",
+   "source": "https://sportplan.es/es/events/carrera-popular-reyes-magos-madrid-es-2027-01-02"
+  },
+  {
+   "name": "Carrera de Reyes San Esteban de Pravia",
+   "date": "2027-01-02",
+   "time": "",
+   "city": "San Esteban de Pravia",
+   "region": "Asturias",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-de-reyes-san-esteban-de-pravia-2027-0102",
+   "source": "https://sportplan.es/es/events/carrera-de-reyes-san-esteban-de-pravia-muros-de-nalon-asturias-es-2027-01-02"
+  },
+  {
+   "name": "San Silvestre Chestana",
+   "date": "2027-01-02",
+   "time": "",
+   "city": "Cheste",
+   "region": "Comunidad Valenciana",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "san-silvestre-chestana-2027-0102",
+   "source": "https://sportplan.es/es/events/san-silvestre-chestana-cheste-valencia-es-2027-01-02"
+  },
+  {
+   "name": "5K de Salinas",
+   "date": "2027-01-03",
+   "time": "",
+   "city": "Salinas",
+   "region": "Asturias",
+   "distances": [
+    "5K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "5k-de-salinas-2027-0103",
+   "source": "https://sportplan.es/es/events/5k-de-salinas-salinas-asturias-es-2027-01-03"
+  },
+  {
+   "name": "Carrera de Reyes de Yuncler",
+   "date": "2027-01-03",
+   "time": "",
+   "city": "Yuncler",
+   "region": "Castilla-La Mancha",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-de-reyes-de-yuncler-2027-0103",
+   "source": "https://sportplan.es/es/events/carrera-de-reyes-de-yuncler-yuncler-toledo-es-2027-01-03"
+  },
+  {
+   "name": "Carrera del Roscón",
+   "date": "2027-01-03",
+   "time": "",
+   "city": "Cobisa",
+   "region": "Castilla-La Mancha",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-del-roscon-2027-0103",
+   "source": "https://sportplan.es/es/events/carrera-del-roscon-cobisa-toledo-es-2027-01-03"
+  },
+  {
+   "name": "Legua Urbana Nocturna La Bellota",
+   "date": "2027-01-09",
+   "time": "",
+   "city": "Baños de la Encina",
+   "region": "Andalucía",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "legua-urbana-nocturna-la-bellota-2027-0109",
+   "source": "https://sportplan.es/es/events/legua-urbana-nocturna-la-bellota-banos-de-la-encina-jaen-es-2027-01-09"
+  },
+  {
+   "name": "10K Valencia Ibercaja by Kiprun",
+   "date": "2027-01-10",
+   "time": "09:30",
+   "city": "Valencia",
+   "region": "Comunidad Valenciana",
+   "distances": [
+    "10K",
+    "5K"
+   ],
+   "url": "https://10kvalencia.com/",
+   "official": true,
+   "note": "Salida por oleadas desde las 9:30.",
+   "km": "10 km · 5 km",
+   "price": "15–25 € 10K · 8 € 5K",
+   "id": "10k-valencia-2027"
+  },
+  {
+   "name": "Carrera Popular Villa de Muel",
+   "date": "2027-01-10",
+   "time": "",
+   "city": "Muel",
+   "region": "Aragón",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "carrera-popular-villa-de-muel-2027-0110",
+   "source": "https://sportplan.es/es/events/carrera-popular-villa-de-muel-muel-zaragoza-es-2027-01-10"
+  },
+  {
+   "name": "Crematorrons",
+   "date": "2027-01-10",
+   "time": "",
+   "city": "Miami Platja",
+   "region": "Cataluña",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "crematorrons-2027-0110",
+   "source": "https://sportplan.es/es/events/crematorrons-miami-platja-montroig-tarragona-es-2027-01-10"
+  },
+  {
+   "name": "Media Maratón Paraíso Salado",
+   "date": "2027-01-10",
+   "time": "",
+   "city": "San Pedro del Pinatar",
+   "region": "Región de Murcia",
+   "distances": [
+    "21K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "media-maraton-paraiso-salado-2027-0110",
+   "source": "https://sportplan.es/es/events/media-maraton-paraiso-salado-san-pedro-del-pinatar-murcia-es-2027-01-10"
+  },
+  {
+   "name": "Mitja Badia de Roses",
+   "date": "2027-01-10",
+   "time": "",
+   "city": "Empuriabrava",
+   "region": "Cataluña",
+   "distances": [
+    "21K",
+    "8K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "mitja-badia-de-roses-2027-0110",
+   "source": "https://running.life/es/carrera/mitja-badia-de-roses"
+  },
+  {
+   "name": "Mitja Marató de Sitges",
+   "date": "2027-01-10",
+   "time": "",
+   "city": "Sitges",
+   "region": "Cataluña",
+   "distances": [
+    "21K",
+    "11K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "mitja-marato-de-sitges-2027-0110",
+   "source": "https://running.life/es/carrera/mitja-marato-de-sitges"
+  },
+  {
+   "name": "Ruta de Carlos III Ciudad del Sol",
+   "date": "2027-01-10",
+   "time": "",
+   "city": "Écija",
+   "region": "Andalucía",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "ruta-de-carlos-iii-ciudad-del-sol-2027-0110",
+   "source": "https://sportplan.es/es/events/ruta-de-carlos-iii-ciudad-del-sol-ecija-sevilla-es-2027-01-10"
+  },
+  {
+   "name": "Toruños Running Series",
+   "date": "2027-01-10",
+   "time": "",
+   "city": "El Puerto de Santa María",
+   "region": "Andalucía",
+   "distances": [
+    "21K",
+    "10K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "torunos-running-series-2027-0110",
+   "source": "https://running.life/es/carrera/running-night-los-torunos/2027-01-10"
+  },
+  {
+   "name": "Trofeo Páris",
+   "date": "2027-01-10",
+   "time": "",
+   "city": "Madrid",
+   "region": "Comunidad de Madrid",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "trofeo-paris-2027-0110",
+   "source": "https://sportplan.es/es/events/trofeo-paris-madrid-es-2027-01-10"
+  },
+  {
+   "name": "Vuelta Pedestre a Tres Cantos",
+   "date": "2027-01-10",
+   "time": "",
+   "city": "Tres Cantos",
+   "region": "Comunidad de Madrid",
+   "distances": [],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "vuelta-pedestre-a-tres-cantos-2027-0110",
+   "source": "https://sportplan.es/es/events/vuelta-pedestre-a-tres-cantos-tres-cantos-madrid-es-2027-01-10"
+  },
+  {
+   "name": "Media Maratón Los Barruecos",
+   "date": "2027-01-17",
+   "time": "",
+   "city": "Malpartida de Cáceres",
+   "region": "Extremadura",
+   "distances": [
+    "21K",
+    "10K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "media-maraton-los-barruecos-2027-0117",
+   "source": "https://running.life/es/carrera/media-maraton-los-barruecos"
+  },
+  {
+   "name": "Mitja Marató Internacional Vila de Santa Pola",
+   "date": "2027-01-24",
+   "time": "10:30",
+   "city": "Santa Pola",
+   "region": "Comunidad Valenciana",
+   "distances": [
+    "21K",
+    "10K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "mitja-santa-pola-2027",
+   "source": "https://running.life/es/carrera/mitja-marato-internacional-vila-de-santa-pola"
+  },
+  {
+   "name": "La Mitja de Granollers",
+   "date": "2027-01-24",
+   "time": "",
+   "city": "Granollers",
+   "region": "Cataluña",
+   "distances": [
+    "21K",
+    "10K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "mitja-granollers-2027",
+   "source": "https://running.life/es/carrera/la-mitja-marato-internacional-de-granollers"
+  },
+  {
+   "name": "Media Maratón Entreparques La Rinconada",
+   "date": "2027-01-24",
+   "time": "",
+   "city": "La Rinconada",
+   "region": "Andalucía",
+   "distances": [
+    "21K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "media-maraton-entreparques-la-rinconada-2027-0124",
+   "source": "https://running.life/es/carrera/media-maraton-entreparques-la-rinconada"
+  },
+  {
+   "name": "Media Maratón El Puerto",
+   "date": "2027-01-31",
+   "time": "",
+   "city": "El Puerto de Santa María",
+   "region": "Andalucía",
+   "distances": [
+    "21K",
+    "10K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "media-maraton-el-puerto-2027-0131",
+   "source": "https://running.life/es/carrera/media-maraton-el-puerto-base-naval"
+  },
+  {
+   "name": "Media Maratón La Cal y el Olivo",
+   "date": "2027-01-31",
+   "time": "",
+   "city": "Arahal",
+   "region": "Andalucía",
+   "distances": [
+    "21K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "media-maraton-la-cal-y-el-olivo-2027-0131",
+   "source": "https://running.life/es/carrera/media-maraton-solidaria-la-cal-y-el-olivo"
+  },
+  {
+   "name": "Media Maratón de Castelló",
+   "date": "2027-01-31",
+   "time": "",
+   "city": "Castellón de la Plana",
+   "region": "Comunidad Valenciana",
+   "distances": [
+    "21K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "media-maraton-de-castello-2027-0131",
+   "source": "https://running.life/es/carrera/media-maraton-de-castello"
+  },
+  {
+   "name": "Media Maratón de Getafe",
+   "date": "2027-01-31",
+   "time": "",
+   "city": "Getafe",
+   "region": "Comunidad de Madrid",
+   "distances": [
+    "21K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "Otro calendario indica el 24 de enero; confirmar fecha.",
+   "id": "media-maraton-de-getafe-2027-0131",
+   "source": "https://running.life/es/carrera/media-maraton-getafe"
+  },
+  {
+   "name": "Mitja Marató Ciutat d'Alzira",
+   "date": "2027-01-31",
+   "time": "",
+   "city": "Alzira",
+   "region": "Comunidad Valenciana",
+   "distances": [
+    "21K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "mitja-marato-ciutat-d-alzira-2027-0131",
+   "source": "https://running.life/es/carrera/mitja-marato-ciutat-dalzira"
+  },
+  {
+   "name": "Mitja Sant Cugat",
+   "date": "2027-01-31",
+   "time": "",
+   "city": "Sant Cugat del Vallès",
+   "region": "Cataluña",
+   "distances": [
+    "21K",
+    "10K",
+    "5K"
+   ],
+   "url": "",
+   "official": false,
+   "note": "",
+   "id": "mitja-sant-cugat-2027-0131",
+   "source": "https://running.life/es/carrera/mitja-sant-cugat"
+  }
+ ]
+}
