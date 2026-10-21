@@ -95,5 +95,17 @@ class FlowTests(unittest.TestCase):
         self.assertEqual(upd["banner"], "https://www.mediaejemplo.es/img/cartel-2026.jpg")
 
 
+class ChangesTests(unittest.TestCase):
+    def test_complete_records_changed_fields(self):
+        today = date(2026, 10, 22)
+        db = {"races": [{"id": "a-2026-1101", "name": "A", "date": "2026-11-01", "price": "", "url": ""}]}
+        changes = {"added": [], "updated": {}}
+        with mock.patch("scraper.enrich.needs_work", return_value=True), \
+             mock.patch("scraper.enrich.enrich", return_value={"price": "12 €", "url": "https://a.es/", "official": True, "checkedAt": "x"}):
+            main.complete(db, today, changes)
+        self.assertEqual(changes["updated"], {"a-2026-1101": ["url", "price"]})
+        self.assertEqual(db["races"][0]["changedAt"], "2026-10-22")
+
+
 if __name__ == "__main__":
     unittest.main()

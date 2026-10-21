@@ -18,6 +18,8 @@ GENERIC = {"san", "sant", "silvestre", "media", "maraton", "medio", "mitja", "ma
            "run", "half", "contra", "cancer", "mujer", "dona", "por", "de", "del", "la", "el", "los",
            "las", "y", "i", "a", "en", "carrera", "cursa", "carreira", "popular", "ciudad", "ciutat",
            "villa", "vila", "2026", "2027", "2028", "edicion"}
+# Campos cuyo cambio se anuncia en la web como "actualizada"
+TRACKED = ("url", "regulation", "banner", "price", "time", "km", "date")
 
 
 def log(msg: str) -> None:
@@ -50,7 +52,7 @@ def save(db: dict) -> None:
     DATA.write_text(json.dumps(db, ensure_ascii=False, indent=1), encoding="utf-8")
 
 
-def discover(db: dict, today: date) -> int:
+def discover(db: dict, today: date, changes: dict) -> int:
     log("Buscando carreras en los calendarios…")
     cands = sources.list_sportplan(today, log) + sources.list_runninglife(today, log)
     known_sources = {r.get("source") for r in db["races"]}
@@ -67,6 +69,8 @@ def discover(db: dict, today: date) -> int:
             for k in ("time", "city", "region"):
                 if not dup.get(k) and r.get(k):
                     dup[k] = r[k]
+                    if k in TRACKED:
+                        changes["updated"].setdefault(dup["id"], []).append(k)
             if not dup.get("distances") and r.get("distances"):
                 dup["distances"] = r["distances"]
             dup.setdefault("official_guess", r.get("official_guess"))
@@ -74,13 +78,15 @@ def discover(db: dict, today: date) -> int:
         r["id"] = parse.race_id(r["name"], r["date"])
         r["official"] = False
         r["url"] = ""
+        r["addedAt"] = today.isoformat()
         db["races"].append(r)
+        changes["added"].append(r["id"])
         added += 1
     log(f"Añadidas {added} carreras nuevas")
     return added
 
 
-def complete(db: dict, today: date) -> int:
+def complete(db: dict, today: date, changes: dict) -> int:
     todo = [r for r in db["races"] if r["date"] >= today.isoformat() and enrich.needs_work(r, today)]
     big = lambda r: 0 if set(r.get("distances") or []) & {"42K", "21K"} else 1
     todo.sort(key=lambda r: (r["date"], big(r)))
@@ -88,7 +94,13 @@ def complete(db: dict, today: date) -> int:
     done = 0
     for r in todo[: config.MAX_ENRICH]:
         upd = enrich.enrich(r, today)
+        before = {k: r.get(k) for k in TRACKED}
         r.update({k: v for k, v in upd.items() if v is not None})
+        changed = [k for k in TRACKED if r.get(k) and r.get(k) != before[k]]
+        if changed and r["id"] not in changes["added"]:
+            r["changedAt"] = today.isoformat()
+            lst = changes["updated"].setdefault(r["id"], [])
+            lst += [k for k in changed if k not in lst]
         if upd.get("official"):
             done += 1
     log(f"Fichas con web oficial nueva: {done}")
@@ -107,9 +119,17 @@ def main(argv: list[str]) -> None:
     today = date.today()
     db = load()
     removed = prune(db, today)
-    added = 0 if "--enrich-only" in argv else discover(db, today)
+    changes = {"added": [], "updated": {}}
+    added = 0 if "--enrich-only" in argv else discover(db, today, changes)
     save(db)
-    completed = complete(db, today)
+    completed = complete(db, today, changes)
+    ids = {r["id"] for r in db["races"]}
+    db["lastRun"] = {
+        "at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+        "added": [i for i in changes["added"] if i in ids],
+        "updated": {i: f for i, f in changes["updated"].items() if i in ids},
+        "removed": removed,
+    }
     save(db)
     with_site = sum(1 for r in db["races"] if r.get("official"))
     log(f"\nResumen: {len(db['races'])} carreras · {added} nuevas · {completed} completadas · "

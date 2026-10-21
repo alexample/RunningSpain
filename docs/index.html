@@ -42,6 +42,20 @@ h1 span{color:var(--accent)}
 .sub{color:var(--muted);margin:6px 0 0;max-width:60ch}
 .status{font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums}
 .status b{color:var(--ink);font-weight:600}
+.upd{display:flex;align-items:center;gap:10px;font:500 13px var(--body);color:var(--ink);background:var(--surface);
+  border:1px solid var(--line);border-radius:10px;padding:8px 12px;cursor:pointer;text-align:left;font-variant-numeric:tabular-nums}
+.upd:hover{border-color:var(--muted)}
+.upd[aria-pressed="true"]{border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent)}
+.upd .dot{width:8px;height:8px;border-radius:50%;background:var(--k10);flex:none}
+.upd .lines{display:flex;flex-direction:column;gap:1px}
+.upd .lines span{color:var(--muted);font-size:12px}
+.upd b{font-weight:600}
+.news{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;justify-content:space-between;
+  background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:10px;padding:10px 14px;margin-top:14px;font-size:14px}
+.news button{font:600 13px var(--body);color:var(--accent);background:none;border:0;cursor:pointer;padding:0}
+.badge{align-self:flex-start;font:700 11px var(--body);letter-spacing:.08em;text-transform:uppercase;padding:3px 8px;border-radius:4px}
+.badge.new{background:var(--accent);color:var(--accent-ink)}
+.badge.chg{background:transparent;color:var(--ink);border:1px solid var(--line);text-transform:none;letter-spacing:0;font-weight:600}
 
 .controls{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);
   padding-block:10px;display:flex;flex-wrap:wrap;gap:10px;align-items:center;border-bottom:1px solid var(--line);margin-bottom:8px}
@@ -92,6 +106,7 @@ input[type=search]{flex:1 1 180px}
 .up{font:600 13px var(--body);color:var(--muted);background:transparent;border:1px dashed var(--line);border-radius:8px;padding:7px 10px;cursor:pointer}
 .up:hover{color:var(--ink);border-color:var(--muted)}
 .up:disabled{cursor:default;opacity:.7}
+.upd:disabled{cursor:default}
 .empty{padding:40px 20px;text-align:center;color:var(--muted);border:1px dashed var(--line);border-radius:12px;margin-top:24px}
 footer{margin-top:40px;font-size:13px;color:var(--muted);max-width:70ch}
 @media (prefers-reduced-motion:no-preference){.race{transition:transform .15s}.race:hover{transform:translateY(-2px)}}
@@ -105,6 +120,9 @@ footer{margin-top:40px;font-size:13px;color:var(--muted);max-width:70ch}
       <h1>Running<span>Spain</span></h1>
       <p class="sub">Maratones, medias, 10K y populares de toda España en los próximos tres meses. Se actualiza cada día.</p>
     </div>
+    <button class="upd" id="upd" type="button" aria-pressed="false" hidden>
+      <span class="dot"></span><span class="lines"><b id="upd-when"></b><span id="upd-what"></span></span>
+    </button>
     <div class="status" id="status">Cargando calendario…</div>
   </header>
 
@@ -131,7 +149,8 @@ footer{margin-top:40px;font-size:13px;color:var(--muted);max-width:70ch}
 <script>
 const MONTHS=["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"];
 const DAYS=["domingo","lunes","martes","miércoles","jueves","viernes","sábado"];
-let races=[], meta=null, dist="all", region="", q="";
+let races=[], meta=null, dist="all", region="", q="", onlyNews=false, news={added:new Set(),updated:{}};
+const FIELD={url:"web oficial",regulation:"reglamento",banner:"cartel",price:"precio",time:"hora",km:"km",date:"fecha"};
 
 function kind(r){const d=(r.distances||[]).join(" ");
   if(/42/.test(d))return"42"; if(/21|20K/.test(d))return"21"; if(/10K/.test(d))return"10"; return"x";}
@@ -163,8 +182,11 @@ function card(r){
   if(r.official&&r.url)actions.append(el("a",{class:"link",href:r.url,target:"_blank",rel:"noopener"},r.signup?"Inscripción oficial ↗":"Web oficial ↗"));
   if(r.regulation)actions.append(el("a",{class:"link alt",href:r.regulation,target:"_blank",rel:"noopener"},/\.pdf(\?|$)/i.test(r.regulation)?"Reglamento (PDF) ↗":"Reglamento ↗"));
   if(!actions.childNodes.length)actions.append(el("span",{class:"pending"},r.nosite?"Sin web oficial publicada":"Web oficial en búsqueda"));
+  let badge=null;
+  if(news.added.has(r.id))badge=el("span",{class:"badge new"},"Nueva");
+  else if(news.updated[r.id])badge=el("span",{class:"badge chg"},"Actualizada: "+news.updated[r.id].map(f=>FIELD[f]||f).join(", "));
   return el("article",{class:"race",style:"--kc:"+kcolor(k)},bib,
-    el("div",{class:"info"},el("h3",{},r.name),tags,dl,r.note?el("p",{class:"note"},r.note):null,actions));
+    el("div",{class:"info"},badge,el("h3",{},r.name),tags,dl,r.note?el("p",{class:"note"},r.note):null,actions));
 }
 
 function render(){
@@ -176,10 +198,16 @@ function render(){
     if(d<today||d>end)return false;
     if(dist!=="all"&&kind(r)!==dist)return false;
     if(region&&r.region!==region)return false;
+    if(onlyNews&&!news.added.has(r.id)&&!news.updated[r.id])return false;
     if(nq&&!norm(r.name+" "+r.city+" "+r.region).includes(nq))return false;return true})
     .sort((a,b)=>(a.date+(a.time||"99")).localeCompare(b.date+(b.time||"99")));
   document.getElementById("count").textContent=list.length+(list.length===1?" carrera":" carreras");
   const main=document.getElementById("list");main.replaceChildren();
+  if(onlyNews){const na=news.added.size,nu=Object.keys(news.updated).length;
+    const all=el("button",{type:"button"},"Ver todas las carreras");all.onclick=()=>toggleNews(false);
+    main.append(el("div",{class:"news"},el("span",{},"Novedades de la última actualización: ",el("b",{},na+(na===1?" nueva":" nuevas")),
+      " y ",el("b",{},nu+(nu===1?" actualizada":" actualizadas"))),all));
+    if(!list.length){main.append(el("div",{class:"empty"},"La última actualización no trajo cambios con estos filtros."));return}}
   if(!races.length){main.append(el("div",{class:"empty"},"Todavía no hay carreras en el calendario. La actualización semanal las irá añadiendo."));return}
   if(!list.length){main.append(el("div",{class:"empty"},"Ninguna carrera coincide con estos filtros. Prueba con otra distancia o comunidad."));return}
   let cur=null,grid=null;
@@ -194,10 +222,20 @@ function fillRegions(){const sel=document.getElementById("region");const v=sel.v
   const rs=[...new Set(races.map(r=>r.region).filter(Boolean))].sort((a,b)=>a.localeCompare(b,"es"));
   sel.replaceChildren(el("option",{value:""},"Toda España"),...rs.map(x=>el("option",{value:x},x)));sel.value=rs.includes(v)?v:""}
 
-function setStatus(){const s=document.getElementById("status");
-  if(meta&&meta.updatedAt){const d=new Date(meta.updatedAt);
-    s.replaceChildren("Actualizado el ",el("b",{},d.getDate()+" de "+MONTHS[d.getMonth()]+" de "+d.getFullYear()))}
-  else s.textContent=races.length?races.length+" carreras en el calendario":""}
+function setStatus(){const s=document.getElementById("status"),b=document.getElementById("upd");
+  const when=meta&&(meta.lastRun&&meta.lastRun.at||meta.updatedAt);
+  if(!when){s.textContent=races.length?races.length+" carreras en el calendario":"";return}
+  const d=new Date(when),hh=String(d.getHours()).padStart(2,"0")+":"+String(d.getMinutes()).padStart(2,"0");
+  document.getElementById("upd-when").textContent="Última actualización: "+d.getDate()+" de "+MONTHS[d.getMonth()]+", "+hh+" h";
+  const na=news.added.size,nu=Object.keys(news.updated).length;
+  document.getElementById("upd-what").textContent=meta.lastRun
+    ?(na||nu?na+(na===1?" nueva":" nuevas")+" · "+nu+(nu===1?" actualizada":" actualizadas")+" · ver cambios":"Sin cambios en la última revisión")
+    :races.length+" carreras en el calendario";
+  b.disabled=!(na||nu);b.hidden=false;s.hidden=true}
+function toggleNews(v){onlyNews=v;document.getElementById("upd").setAttribute("aria-pressed",String(v));render();
+  if(v){const l=document.getElementById("list");l.style.scrollMarginTop=(document.querySelector(".controls").offsetHeight+8)+"px";
+    l.scrollIntoView({behavior:"smooth",block:"start"})}}
+document.getElementById("upd").addEventListener("click",()=>toggleNews(!onlyNews));
 
 document.querySelectorAll(".chip").forEach(b=>b.addEventListener("click",()=>{
   dist=b.dataset.d;document.querySelectorAll(".chip").forEach(c=>c.setAttribute("aria-pressed",String(c===b)));render()}));
@@ -210,7 +248,8 @@ document.getElementById("q").addEventListener("input",e=>{q=e.target.value;rende
     if(!res.ok)throw new Error(res.status);
     const data=await res.json();
     races=data.races||[];
-    meta={updatedAt:data.updatedAt};
+    meta={updatedAt:data.updatedAt,lastRun:data.lastRun||null};
+    if(data.lastRun)news={added:new Set(data.lastRun.added||[]),updated:data.lastRun.updated||{}};
     fillRegions();setStatus();render();
   }catch(e){
     document.getElementById("list").replaceChildren(el("div",{class:"empty"},"No se pudo cargar el calendario. Recarga la página en unos minutos."));
