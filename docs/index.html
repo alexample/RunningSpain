@@ -205,9 +205,10 @@ function render(){
   const main=document.getElementById("list");main.replaceChildren();
   if(onlyNews){const na=news.added.size,nu=Object.keys(news.updated).length;
     const all=el("button",{type:"button"},"Ver todas las carreras");all.onclick=()=>toggleNews(false);
-    main.append(el("div",{class:"news"},el("span",{},"Novedades de la última actualización: ",el("b",{},na+(na===1?" nueva":" nuevas")),
-      " y ",el("b",{},nu+(nu===1?" actualizada":" actualizadas"))),all));
-    if(!list.length){main.append(el("div",{class:"empty"},"La última actualización no trajo cambios con estos filtros."));return}}
+    main.append(el("div",{class:"news"},meta&&meta.lastRun
+      ?el("span",{},"Novedades de la última actualización: ",el("b",{},na+(na===1?" nueva":" nuevas"))," y ",el("b",{},nu+(nu===1?" actualizada":" actualizadas")))
+      :el("span",{},"El robot está revisando las carreras. Cuando termine verás aquí las nuevas y las actualizadas."),all));
+    if(!list.length){main.append(el("div",{class:"empty"},meta&&meta.lastRun?"La última actualización no trajo cambios con estos filtros.":"Todavía no hay novedades registradas."));return}}
   if(!races.length){main.append(el("div",{class:"empty"},"Todavía no hay carreras en el calendario. La actualización semanal las irá añadiendo."));return}
   if(!list.length){main.append(el("div",{class:"empty"},"Ninguna carrera coincide con estos filtros. Prueba con otra distancia o comunidad."));return}
   let cur=null,grid=null;
@@ -230,8 +231,8 @@ function setStatus(){const s=document.getElementById("status"),b=document.getEle
   const na=news.added.size,nu=Object.keys(news.updated).length;
   document.getElementById("upd-what").textContent=meta.lastRun
     ?(na||nu?na+(na===1?" nueva":" nuevas")+" · "+nu+(nu===1?" actualizada":" actualizadas")+" · ver cambios":"Sin cambios en la última revisión")
-    :races.length+" carreras en el calendario";
-  b.disabled=!(na||nu);b.hidden=false;s.hidden=true}
+    :"Novedades: disponibles tras la próxima revisión · ver";
+  b.hidden=false;s.hidden=true}
 function toggleNews(v){onlyNews=v;document.getElementById("upd").setAttribute("aria-pressed",String(v));render();
   if(v){const l=document.getElementById("list");l.style.scrollMarginTop=(document.querySelector(".controls").offsetHeight+8)+"px";
     l.scrollIntoView({behavior:"smooth",block:"start"})}}
