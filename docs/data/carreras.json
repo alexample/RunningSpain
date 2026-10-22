@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-22T06:08:27+00:00",
+ "updatedAt": "2026-10-22T08:51:34+00:00",
  "count": 653,
  "races": [
   {
@@ -6983,7 +6983,8 @@
    "note": "Salida en Moll de la Duana.",
    "id": "pas-ras-valencia-2026",
    "source": "https://www.visitvalencia.com/agenda-valencia/calendario-de-carreras-y-maratones-en-valencia",
-   "official_guess": "https://www.pasras.es/"
+   "official_guess": "https://www.pasras.es/",
+   "checkedAt": "2026-10-22"
   },
   {
    "name": "Maratón Internacional Elche–Alicante",
@@ -7027,6 +7028,75 @@
    "changedAt": "2026-10-22"
   },
   {
+   "name": "Mar Menor Running Challenge",
+   "date": "2026-12-13",
+   "time": "10:30",
+   "city": "La Manga",
+   "region": "Región de Murcia",
+   "distances": [
+    "21K"
+   ],
+   "price": "7–22 €",
+   "source": "https://running.life/en/event/mar-menor-running-challenge",
+   "official_guess": "https://www.lineadesalida.net/carreras/mar-menor-running-challenge-2026",
+   "id": "mar-menor-running-challenge-2026-1213",
+   "official": true,
+   "url": "https://www.lineadesalida.net/carreras/mar-menor-running-challenge-2026",
+   "addedAt": "2026-10-21",
+   "checkedAt": "2026-10-22",
+   "nosite": false,
+   "signup": true,
+   "regulation": "https://lineadesalida.net/storage/reglamentos/1788818515Reglamento Mar Menor Running 2026.pdf",
+   "km": "10,5 km · 10 km · 5 km",
+   "changedAt": "2026-10-22"
+  },
+  {
+   "name": "Pujada a la Seu Vella",
+   "date": "2026-12-13",
+   "time": "10:30",
+   "city": "Lleida",
+   "region": "Cataluña",
+   "distances": [
+    "21K"
+   ],
+   "price": "2 €",
+   "source": "https://running.life/en/event/pujada-a-la-seu-vella",
+   "official_guess": "https://www.pujadaseuvella.com/",
+   "id": "pujada-a-la-seu-vella-2026-1213",
+   "official": true,
+   "url": "https://www.pujadaseuvella.com/",
+   "addedAt": "2026-10-21",
+   "checkedAt": "2026-10-22",
+   "nosite": false,
+   "regulation": "https://www.pujadaseuvella.com/reglament45/",
+   "banner": "https://image.jimcdn.com/app/cms/image/transf/dimension=4000x3000:format=png/path/s38cdc63b013f465b/image/ic7b019e8d6ad9e4f/version/1789738542/45a-pujada-seu-vella-de-lleida.png",
+   "km": "10,4 km · 10 km",
+   "changedAt": "2026-10-22"
+  },
+  {
+   "name": "Trofeo Jose Cano",
+   "date": "2026-12-13",
+   "time": "11:30",
+   "city": "Madrid",
+   "region": "Comunidad de Madrid",
+   "distances": [
+    "21K"
+   ],
+   "price": "",
+   "source": "https://running.life/en/event/trofeo-jose-cano",
+   "official_guess": "https://web.rockthesport.com/es/event/xlvi-trofeo-jose-cano",
+   "id": "trofeo-jose-cano-2026-1213",
+   "official": true,
+   "url": "https://web.rockthesport.com/es/event/xlvi-trofeo-jose-cano",
+   "addedAt": "2026-10-21",
+   "checkedAt": "2026-10-22",
+   "nosite": false,
+   "signup": true,
+   "banner": "https://web.rockthesport.com/_next/image?url=https%3A%2F%2Frtsfiles.blob.core.windows.net%2Fmanager%2F2893%2Flibrary%2Froot%2F15668991-b25b-4fec-9922-c3a33521aa95.jpg&w=1200&q=75",
+   "km": "10 km",
+   "changedAt": "2026-10-22"
+  },
+  {
    "name": "10K Alcobendas",
    "date": "2026-12-13",
    "time": "",
@@ -7039,7 +7109,9 @@
    "official": false,
    "note": "",
    "id": "10k-alcobendas-2026-1213",
-   "source": "https://sportplan.es/es/events/10k-alcobendas-alcobendas-madrid-es-2026-12-13"
+   "source": "https://sportplan.es/es/events/10k-alcobendas-alcobendas-madrid-es-2026-12-13",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "10K La Vall de Segó - Quart de les Valls",
@@ -7095,12 +7167,18 @@
    "distances": [
     "10K"
    ],
-   "url": "",
-   "official": false,
+   "url": "https://www.alcanzatumeta.es/xiv-carrera-popular-la-joaquinesca-5-y-10k-bigastro/",
+   "official": true,
    "note": "",
    "id": "carrera-popular-joaquinesca-2026-1213",
    "source": "https://sportplan.es/es/events/carrera-popular-joaquinesca-bigastro-alicante-es-2026-12-13",
-   "official_guess": "http://www.alcanzatumeta.es/xiv-carrera-popular-la-joaquinesca-5-y-10k-bigastro"
+   "official_guess": "http://www.alcanzatumeta.es/xiv-carrera-popular-la-joaquinesca-5-y-10k-bigastro",
+   "checkedAt": "2026-10-22",
+   "nosite": false,
+   "regulation": "https://www.alcanzatumeta.es/uploads/Reglamento/e6f38077b212882373b6d69e38478168.pdf",
+   "price": "3–13 €",
+   "km": "10 km · 5 km",
+   "changedAt": "2026-10-22"
   },
   {
    "name": "Carrera Solidaria Divina Pastora",
@@ -7113,7 +7191,9 @@
    "official": false,
    "note": "",
    "id": "carrera-solidaria-divina-pastora-2026-1213",
-   "source": "https://sportplan.es/es/events/carrera-solidaria-divina-pastora-san-fernando-cadiz-es-2026-12-13"
+   "source": "https://sportplan.es/es/events/carrera-solidaria-divina-pastora-san-fernando-cadiz-es-2026-12-13",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "Carrera Urbana del Pavo",
@@ -7126,7 +7206,9 @@
    "official": false,
    "note": "",
    "id": "carrera-urbana-del-pavo-2026-1213",
-   "source": "https://sportplan.es/es/events/carrera-urbana-del-pavo-benalmadena-malaga-es-2026-12-13"
+   "source": "https://sportplan.es/es/events/carrera-urbana-del-pavo-benalmadena-malaga-es-2026-12-13",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "Carrera Virgen de la Esperanza",
@@ -7139,7 +7221,9 @@
    "official": false,
    "note": "",
    "id": "carrera-virgen-de-la-esperanza-2026-1213",
-   "source": "https://sportplan.es/es/events/carrera-virgen-de-la-esperanza-logrono-la-rioja-es-2026-12-13"
+   "source": "https://sportplan.es/es/events/carrera-virgen-de-la-esperanza-logrono-la-rioja-es-2026-12-13",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "Carrera contra el Cáncer de Páncreas Barcelona",
@@ -7175,7 +7259,9 @@
    "official": false,
    "note": "",
    "id": "carrera-de-navidad-siente-la-huerta-2026-1213",
-   "source": "https://sportplan.es/es/events/carrera-de-navidad-siente-la-huerta-santa-cruz-murcia-murcia-es-2026-12-13"
+   "source": "https://sportplan.es/es/events/carrera-de-navidad-siente-la-huerta-santa-cruz-murcia-murcia-es-2026-12-13",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "Carrera de Navidad Villanueva de la Cañada",
@@ -7187,12 +7273,18 @@
     "10K",
     "5K"
    ],
-   "url": "",
-   "official": false,
+   "url": "https://web.rockthesport.com/es/event/1789575263",
+   "official": true,
    "note": "",
    "id": "carrera-de-navidad-villanueva-de-la-canada-2026-1213",
    "source": "https://running.life/es/carrera/carrera-navidad-villanueva-de-la-canada",
-   "official_guess": "https://web.rockthesport.com/es/event/1789575263"
+   "official_guess": "https://web.rockthesport.com/es/event/1789575263",
+   "checkedAt": "2026-10-22",
+   "nosite": false,
+   "signup": true,
+   "banner": "https://web.rockthesport.com/_next/image?url=https%3A%2F%2Frtsfiles.blob.core.windows.net%2Fmanager%2F1160%2Flibrary%2Froot%2F2907a637-885f-47ce-9f5f-f8da97d9f508.png&w=1200&q=75",
+   "km": "10 km · 5 km · 3 km",
+   "changedAt": "2026-10-22"
   },
   {
    "name": "Carrera de las Empresas ESIC",
@@ -7205,7 +7297,9 @@
    "official": false,
    "note": "",
    "id": "carrera-de-las-empresas-esic-2026-1213",
-   "source": "https://sportplan.es/es/events/carrera-empresas-esic-zaragoza-es-2026-12-13"
+   "source": "https://sportplan.es/es/events/carrera-empresas-esic-zaragoza-es-2026-12-13",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "Carrera por la Igualdad Villamayor",
@@ -7218,7 +7312,9 @@
    "official": false,
    "note": "",
    "id": "carrera-por-la-igualdad-villamayor-2026-1213",
-   "source": "https://sportplan.es/es/events/carrera-por-la-igualdad-villamayor-villamayor-de-gallego-zaragoza-es-2026-12-13"
+   "source": "https://sportplan.es/es/events/carrera-por-la-igualdad-villamayor-villamayor-de-gallego-zaragoza-es-2026-12-13",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "Cursa Popular de la Sagrera",
@@ -7256,7 +7352,8 @@
    "note": "",
    "id": "cursa-de-les-empreses-2026-1213",
    "source": "https://sportplan.es/es/events/cursa-de-les-empreses-hospitalet-de-llobregat-barcelona-es-2026-12-13",
-   "official_guess": "https://www.deporticket.com/web-evento/12934-cursa-de-les-empreses"
+   "official_guess": "https://www.deporticket.com/web-evento/12934-cursa-de-les-empreses",
+   "checkedAt": "2026-10-22"
   },
   {
    "name": "Cursa del Club Natació Sabadell",
@@ -7267,30 +7364,20 @@
    "distances": [
     "21K"
    ],
-   "price": "",
+   "price": "3,5–19 €",
    "source": "https://running.life/en/event/cursa-del-club-natacio-sabadell",
    "official_guess": "https://sportmaniacs.com/en/races/xxxiv-cursa-del-club-nataci-sabadell",
    "id": "cursa-del-club-natacio-sabadell-2026-1213",
-   "official": false,
-   "url": "",
-   "addedAt": "2026-10-21"
-  },
-  {
-   "name": "Mar Menor Running Challenge",
-   "date": "2026-12-13",
-   "time": "",
-   "city": "La Manga",
-   "region": "Región de Murcia",
-   "distances": [
-    "21K"
-   ],
-   "price": "",
-   "source": "https://running.life/en/event/mar-menor-running-challenge",
-   "official_guess": "https://www.lineadesalida.net/carreras/mar-menor-running-challenge-2026",
-   "id": "mar-menor-running-challenge-2026-1213",
-   "official": false,
-   "url": "",
-   "addedAt": "2026-10-21"
+   "official": true,
+   "url": "https://sportmaniacs.com/en/services/inscription/xxxiv-cursa-del-club-nataci-sabadell",
+   "addedAt": "2026-10-21",
+   "checkedAt": "2026-10-22",
+   "nosite": false,
+   "signup": true,
+   "regulation": "https://sportmaniacs.com/en/races/xxxiv-cursa-del-club-nataci-sabadell#rules",
+   "banner": "https://sportmaniacs.com/images/share/sportmaniacs-race.jpg",
+   "km": "10 km · 5 km",
+   "changedAt": "2026-10-22"
   },
   {
    "name": "Media Maratón Sevilla-Los Palacios",
@@ -7305,7 +7392,9 @@
    "official": false,
    "note": "",
    "id": "media-maraton-sevilla-los-palacios-2026-1213",
-   "source": "https://sportplan.es/es/events/media-maraton-sevilla-los-palacios-los-palacios-y-villafranca-sevilla-es-2026-12-13"
+   "source": "https://sportplan.es/es/events/media-maraton-sevilla-los-palacios-los-palacios-y-villafranca-sevilla-es-2026-12-13",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "Media Maratón de Córdoba",
@@ -7322,7 +7411,8 @@
    "id": "media-maraton-de-cordoba-2026-1213",
    "official": false,
    "url": "",
-   "addedAt": "2026-10-21"
+   "addedAt": "2026-10-21",
+   "checkedAt": "2026-10-22"
   },
   {
    "name": "Medio Maratón de Navalmoral de la Mata",
@@ -7334,12 +7424,18 @@
     "21K",
     "10K"
    ],
-   "url": "",
-   "official": false,
+   "url": "https://www.chipserena.es/web-evento/13896-xvi-medio-maraton-de-navalmoral-de-la-mata-y-viii-diez-mil-de-navalmoral-de-la-mata",
+   "official": true,
    "note": "",
    "id": "medio-maraton-de-navalmoral-de-la-mata-2026-1213",
    "source": "https://running.life/es/carrera/medio-maraton-de-navalmoral-de-la-mata",
-   "official_guess": "https://www.chipserena.es/web-evento/13896-xvi-medio-maraton-de-navalmoral-de-la-mata-y-viii-diez-mil-de-navalmoral-de-la-mata"
+   "official_guess": "https://www.chipserena.es/web-evento/13896-xvi-medio-maraton-de-navalmoral-de-la-mata-y-viii-diez-mil-de-navalmoral-de-la-mata",
+   "checkedAt": "2026-10-22",
+   "nosite": false,
+   "banner": "https://deporticket.blob.core.windows.net/awebs/chipserena.-cronometraje-deportivo/logo-chipserena-blanco-2017-638853183074871968.png",
+   "price": "20,55–22,55 €",
+   "km": "21,097 km · 21 km · 10 km",
+   "changedAt": "2026-10-22"
   },
   {
    "name": "Memorial Adolfo Ros Volta á Ría",
@@ -7350,12 +7446,15 @@
    "distances": [
     "21K"
    ],
-   "url": "",
-   "official": false,
+   "url": "https://www.carreirasgalegas.com/events/xl-memorial-adolfo-ros-volta-a-ria/w95AWw9V",
+   "official": true,
    "note": "",
    "id": "memorial-adolfo-ros-volta-a-ria-2026-1213",
    "source": "https://running.life/es/carrera/memorial-adolfo-ros-volta-a-ria",
-   "official_guess": "https://www.carreirasgalegas.com/events/xl-memorial-adolfo-ros-volta-a-ria/w95AWw9V"
+   "official_guess": "https://www.carreirasgalegas.com/events/xl-memorial-adolfo-ros-volta-a-ria/w95AWw9V",
+   "checkedAt": "2026-10-22",
+   "nosite": false,
+   "changedAt": "2026-10-22"
   },
   {
    "name": "Mitja Marató i 10K Ciutat de Vilanova",
@@ -7367,29 +7466,17 @@
     "21K",
     "10K"
    ],
-   "url": "",
-   "official": false,
+   "url": "https://mitjavilanova.com/",
+   "official": true,
    "note": "",
    "id": "mitja-marato-i-10k-ciutat-de-vilanova-2026-1213",
    "source": "https://running.life/es/carrera/media-maraton-vilanova-i-la-geltru",
-   "official_guess": "https://mitjavilanova.com/"
-  },
-  {
-   "name": "Pujada a la Seu Vella",
-   "date": "2026-12-13",
-   "time": "",
-   "city": "Lleida",
-   "region": "Cataluña",
-   "distances": [
-    "21K"
-   ],
-   "price": "",
-   "source": "https://running.life/en/event/pujada-a-la-seu-vella",
-   "official_guess": "https://www.pujadaseuvella.com/",
-   "id": "pujada-a-la-seu-vella-2026-1213",
-   "official": false,
-   "url": "",
-   "addedAt": "2026-10-21"
+   "official_guess": "https://mitjavilanova.com/",
+   "checkedAt": "2026-10-22",
+   "nosite": false,
+   "regulation": "https://mitjavilanova.com/reglament",
+   "km": "10 km",
+   "changedAt": "2026-10-22"
   },
   {
    "name": "Run4Angels",
@@ -7402,7 +7489,9 @@
    "official": false,
    "note": "",
    "id": "run4angels-2026-1213",
-   "source": "https://sportplan.es/es/events/run4angels-sangonera-la-verde-murcia-es-2026-12-13"
+   "source": "https://sportplan.es/es/events/run4angels-sangonera-la-verde-murcia-es-2026-12-13",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "RunCáncer Picassent",
@@ -7413,12 +7502,18 @@
    "distances": [
     "21K"
    ],
-   "url": "",
-   "official": false,
+   "url": "https://web.rockthesport.com/es/event/picassent-contra-el-cancer-2026",
+   "official": true,
    "note": "",
    "id": "runcancer-picassent-2026-1213",
    "source": "https://sportplan.es/es/events/runcancer-picassent-2026-2026-12-13-picassent",
-   "official_guess": "https://web.rockthesport.com/es/event/picassent-contra-el-cancer-2026"
+   "official_guess": "https://web.rockthesport.com/es/event/picassent-contra-el-cancer-2026",
+   "checkedAt": "2026-10-22",
+   "nosite": false,
+   "signup": true,
+   "banner": "https://web.rockthesport.com/_next/image?url=https%3A%2F%2Frtsfiles.blob.core.windows.net%2Fmanager%2F10084%2Flibrary%2Froot%2F80ca93ab-c71f-466e-b4be-c21bf396dec3.jpg&w=1200&q=75",
+   "km": "10 km · 7,2 km",
+   "changedAt": "2026-10-22"
   },
   {
    "name": "San Silvestre de Alcorcón",
@@ -7431,7 +7526,9 @@
    "official": false,
    "note": "",
    "id": "san-silvestre-de-alcorcon-2026-1213",
-   "source": "https://sportplan.es/es/events/san-silvestre-de-alcorcon-alcorcon-madrid-es-2026-12-13"
+   "source": "https://sportplan.es/es/events/san-silvestre-de-alcorcon-alcorcon-madrid-es-2026-12-13",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "Sarria 10Km Os máis rápidos",
@@ -7447,26 +7544,15 @@
    "source": "https://running.life/en/event/sarria-10km-os-mais-rapidos",
    "official_guess": "https://sarria10kosmaisrapidos.ccnorte.com/gl/web/evento/detalle/",
    "id": "sarria-10km-os-mais-rapidos-2026-1213",
-   "official": false,
-   "url": "",
-   "addedAt": "2026-10-21"
-  },
-  {
-   "name": "Trofeo Jose Cano",
-   "date": "2026-12-13",
-   "time": "",
-   "city": "Madrid",
-   "region": "Comunidad de Madrid",
-   "distances": [
-    "21K"
-   ],
-   "price": "",
-   "source": "https://running.life/en/event/trofeo-jose-cano",
-   "official_guess": "https://web.rockthesport.com/es/event/xlvi-trofeo-jose-cano",
-   "id": "trofeo-jose-cano-2026-1213",
-   "official": false,
-   "url": "",
-   "addedAt": "2026-10-21"
+   "official": true,
+   "url": "https://sarria10kosmaisrapidos.ccnorte.com/gl/web/evento/detalle/",
+   "addedAt": "2026-10-21",
+   "checkedAt": "2026-10-22",
+   "nosite": false,
+   "regulation": "https://ccnorte.com/uploads/eventos/reglamento-6ac7d9e70bd2f4.95249356.pdf",
+   "banner": "https://sarria10kosmaisrapidos.ccnorte.com/media/sarria10kosmaisrapidos.ccnorte.com/site-logos/logo2026_0HKbqXu.png",
+   "km": "10 km · 5 km",
+   "changedAt": "2026-10-22"
   },
   {
    "name": "Carrera a los Puentes",
@@ -7479,7 +7565,9 @@
    "official": false,
    "note": "",
    "id": "carrera-a-los-puentes-2026-1217",
-   "source": "https://sportplan.es/es/events/carrera-a-los-puentes-jaen-es-2026-12-17"
+   "source": "https://sportplan.es/es/events/carrera-a-los-puentes-jaen-es-2026-12-17",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "Legua Nocturna Daganzo",
@@ -7492,7 +7580,9 @@
    "official": false,
    "note": "",
    "id": "legua-nocturna-daganzo-2026-1217",
-   "source": "https://sportplan.es/es/events/legua-nocturna-daganzo-daganzo-de-arriba-madrid-es-2026-12-17"
+   "source": "https://sportplan.es/es/events/legua-nocturna-daganzo-daganzo-de-arriba-madrid-es-2026-12-17",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "San Silvestre Solidaria UPV",
@@ -7505,7 +7595,9 @@
    "official": false,
    "note": "",
    "id": "san-silvestre-solidaria-upv-2026-1217",
-   "source": "https://sportplan.es/es/events/san-silvestre-solidaria-upv-valencia-es-2026-12-17"
+   "source": "https://sportplan.es/es/events/san-silvestre-solidaria-upv-valencia-es-2026-12-17",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "Carreira Nocturna Sada",
@@ -7518,7 +7610,9 @@
    "official": false,
    "note": "",
    "id": "carreira-nocturna-sada-2026-1218",
-   "source": "https://sportplan.es/es/events/carreira-nocturna-sada-sada-a-coruna-es-2026-12-18"
+   "source": "https://sportplan.es/es/events/carreira-nocturna-sada-sada-a-coruna-es-2026-12-18",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "Carrera Nocturna de Granada",
@@ -7531,7 +7625,9 @@
    "official": false,
    "note": "",
    "id": "carrera-nocturna-de-granada-2026-1218",
-   "source": "https://sportplan.es/es/events/carrera-nocturna-de-granada-granada-es-2026-12-18"
+   "source": "https://sportplan.es/es/events/carrera-nocturna-de-granada-granada-es-2026-12-18",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "Palamós Christmas Race",
@@ -7544,7 +7640,9 @@
    "official": false,
    "note": "",
    "id": "palamos-christmas-race-2026-1218",
-   "source": "https://sportplan.es/es/events/50-palamos-christmas-race-2026-2026-12-18"
+   "source": "https://sportplan.es/es/events/50-palamos-christmas-race-2026-2026-12-18",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "San Silvestre Ciudad de Motril",
@@ -7557,7 +7655,57 @@
    "official": false,
    "note": "",
    "id": "san-silvestre-ciudad-de-motril-2026-1218",
-   "source": "https://sportplan.es/es/events/san-silvestre-ciudad-de-motril-motril-granada-es-2026-12-18"
+   "source": "https://sportplan.es/es/events/san-silvestre-ciudad-de-motril-motril-granada-es-2026-12-18",
+   "checkedAt": "2026-10-22",
+   "nosite": true
+  },
+  {
+   "name": "San Silvestre de Hortaleza",
+   "date": "2026-12-19",
+   "time": "11:00",
+   "city": "Madrid (Hortaleza)",
+   "region": "Comunidad de Madrid",
+   "distances": [
+    "10K",
+    "5K"
+   ],
+   "url": "https://web.rockthesport.com/es/event/xi-san-silvestre-de-hortaleza-2026",
+   "official": true,
+   "note": "",
+   "id": "san-silvestre-de-hortaleza-2026-1219",
+   "source": "https://sportplan.es/es/events/xi-san-silvestre-de-hortaleza-2026-hortaleza-hortaleza-es-2026-12-19",
+   "official_guess": "https://web.rockthesport.com/es/event/xi-san-silvestre-de-hortaleza-2026",
+   "checkedAt": "2026-10-22",
+   "nosite": false,
+   "signup": true,
+   "regulation": "http://www.duatlonvaldebebas.es/web/otrasansilvestreesposible/reglamento-2021/",
+   "banner": "https://web.rockthesport.com/_next/image?url=https%3A%2F%2Frtsfiles.blob.core.windows.net%2Fmanager%2F1264%2Flibrary%2Froot%2F19039c3f-559f-4c8b-9d90-418b57e5a589.jpg&w=1200&q=75",
+   "price": "2–12 €",
+   "km": "10 km · 5 km",
+   "changedAt": "2026-10-22"
+  },
+  {
+   "name": "Carrera de Navidad de Soto del Real",
+   "date": "2026-12-19",
+   "time": "12:10",
+   "city": "Soto del Real",
+   "region": "Comunidad de Madrid",
+   "distances": [
+    "21K"
+   ],
+   "url": "https://youevent.es/sport/Tabla_FichaEventoDeportivo.asp?id_competicion=8923",
+   "official": true,
+   "note": "",
+   "id": "carrera-de-navidad-de-soto-del-real-2026-1219",
+   "source": "https://sportplan.es/es/events/carrera-de-navidad-de-soto-del-real-soto-del-real-madrid-es-2026-12-19",
+   "official_guess": "https://youevent.es/sport/Tabla_FichaEventoDeportivo.asp?id_competicion=8923",
+   "checkedAt": "2026-10-22",
+   "nosite": false,
+   "signup": true,
+   "regulation": "https://youevent.es/sport/.\\multimedia\\reglamentos\\ReglamentoCarreraPopulardeNavidaddeSotodelReal2026.pdf",
+   "price": "7–14 €",
+   "km": "11 km · 10,4 km · 10 km · 5,5 km",
+   "changedAt": "2026-10-22"
   },
   {
    "name": "10K y 5K Nocturno San Mateo de Gállego",
@@ -7569,12 +7717,17 @@
     "10K",
     "5K"
    ],
-   "url": "",
-   "official": false,
+   "url": "https://fartlecksport.com/5k-10k-san-mateo-de-gallego/",
+   "official": true,
    "note": "",
    "id": "10k-y-5k-nocturno-san-mateo-de-gallego-2026-1219",
    "source": "https://sportplan.es/es/events/10k-y-5k-nocturno-san-mateo-de-gallego-san-mateo-de-gallego-zaragoza-es-2026-12-19",
-   "official_guess": "https://fartlecksport.com/5k-10k-san-mateo-de-gallego/"
+   "official_guess": "https://fartlecksport.com/5k-10k-san-mateo-de-gallego/",
+   "checkedAt": "2026-10-22",
+   "nosite": false,
+   "regulation": "https://fartlecksport.com/5k-10k-san-mateo-de-gallego/la-carrera/reglamento/",
+   "km": "24 km · 10 km · 5 km",
+   "changedAt": "2026-10-22"
   },
   {
    "name": "BKT Zamudio",
@@ -7589,9 +7742,16 @@
    "source": "https://running.life/en/event/bkt-zamudio",
    "official_guess": "https://sportmaniacs.com/en/races/bkt-zamudio-2026",
    "id": "bkt-zamudio-2026-1219",
-   "official": false,
-   "url": "",
-   "addedAt": "2026-10-21"
+   "official": true,
+   "url": "https://sportmaniacs.com/en/services/inscription/bkt-zamudio-2026",
+   "addedAt": "2026-10-21",
+   "checkedAt": "2026-10-22",
+   "nosite": false,
+   "signup": true,
+   "regulation": "https://sportmaniacs.com/en/races/bkt-zamudio-2026#rules",
+   "banner": "https://sportmaniacs.com/images/share/sportmaniacs-race.jpg",
+   "km": "20 km · 10 km",
+   "changedAt": "2026-10-22"
   },
   {
    "name": "Carrera Popular Sancho Abarca",
@@ -7604,7 +7764,9 @@
    "official": false,
    "note": "",
    "id": "carrera-popular-sancho-abarca-2026-1219",
-   "source": "https://sportplan.es/es/events/carrera-popular-sancho-abarca-tauste-zaragoza-es-2026-12-19"
+   "source": "https://sportplan.es/es/events/carrera-popular-sancho-abarca-tauste-zaragoza-es-2026-12-19",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "Carrera Popular Venta de Baños",
@@ -7617,7 +7779,9 @@
    "official": false,
    "note": "",
    "id": "carrera-popular-venta-de-banos-2026-1219",
-   "source": "https://sportplan.es/es/events/carrera-popular-venta-de-banos-venta-de-banos-palencia-es-2026-12-19"
+   "source": "https://sportplan.es/es/events/carrera-popular-venta-de-banos-venta-de-banos-palencia-es-2026-12-19",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "Carrera Solidaria de Albolote",
@@ -7630,7 +7794,9 @@
    "official": false,
    "note": "",
    "id": "carrera-solidaria-de-albolote-2026-1219",
-   "source": "https://sportplan.es/es/events/carrera-solidaria-de-albolote-albolote-granada-es-2026-12-19"
+   "source": "https://sportplan.es/es/events/carrera-solidaria-de-albolote-albolote-granada-es-2026-12-19",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "Carrera de Navidad Tres Cantos",
@@ -7643,7 +7809,9 @@
    "official": false,
    "note": "",
    "id": "carrera-de-navidad-tres-cantos-2026-1219",
-   "source": "https://sportplan.es/es/events/carrera-de-navidad-tres-cantos-tres-cantos-madrid-es-2026-12-19"
+   "source": "https://sportplan.es/es/events/carrera-de-navidad-tres-cantos-tres-cantos-madrid-es-2026-12-19",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "Carrera de Navidad de Mendavia",
@@ -7656,23 +7824,9 @@
    "official": false,
    "note": "",
    "id": "carrera-de-navidad-de-mendavia-2026-1219",
-   "source": "https://sportplan.es/es/events/carrera-de-navidad-de-mendavia-mendavia-navarra-es-2026-12-19"
-  },
-  {
-   "name": "Carrera de Navidad de Soto del Real",
-   "date": "2026-12-19",
-   "time": "",
-   "city": "Soto del Real",
-   "region": "Comunidad de Madrid",
-   "distances": [
-    "21K"
-   ],
-   "url": "",
-   "official": false,
-   "note": "",
-   "id": "carrera-de-navidad-de-soto-del-real-2026-1219",
-   "source": "https://sportplan.es/es/events/carrera-de-navidad-de-soto-del-real-soto-del-real-madrid-es-2026-12-19",
-   "official_guess": "https://youevent.es/sport/Tabla_FichaEventoDeportivo.asp?id_competicion=8923"
+   "source": "https://sportplan.es/es/events/carrera-de-navidad-de-mendavia-mendavia-navarra-es-2026-12-19",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "Carrera del Mazapán",
@@ -7685,7 +7839,9 @@
    "official": false,
    "note": "",
    "id": "carrera-del-mazapan-2026-1219",
-   "source": "https://sportplan.es/es/events/carrera-del-mazapan-sonseca-toledo-es-2026-12-19"
+   "source": "https://sportplan.es/es/events/carrera-del-mazapan-sonseca-toledo-es-2026-12-19",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "Carrera del Pavo de Novelda",
@@ -7698,7 +7854,9 @@
    "official": false,
    "note": "",
    "id": "carrera-del-pavo-de-novelda-2026-1219",
-   "source": "https://sportplan.es/es/events/carrera-del-pavo-de-novelda-novelda-alicante-es-2026-12-19"
+   "source": "https://sportplan.es/es/events/carrera-del-pavo-de-novelda-novelda-alicante-es-2026-12-19",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "Cursa de Nadal de Bétera",
@@ -7711,7 +7869,9 @@
    "official": false,
    "note": "",
    "id": "cursa-de-nadal-de-betera-2026-1219",
-   "source": "https://sportplan.es/es/events/cursa-de-nadal-de-betera-betera-valencia-es-2026-12-19"
+   "source": "https://sportplan.es/es/events/cursa-de-nadal-de-betera-betera-valencia-es-2026-12-19",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "Guadiatón",
@@ -7724,7 +7884,9 @@
    "official": false,
    "note": "",
    "id": "guadiaton-2026-1219",
-   "source": "https://sportplan.es/es/events/guadiaton-guadiana-del-caudillo-badajoz-es-2026-12-19"
+   "source": "https://sportplan.es/es/events/guadiaton-guadiana-del-caudillo-badajoz-es-2026-12-19",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "Papanoelada Runners - Vigo",
@@ -7735,13 +7897,18 @@
    "distances": [
     "21K"
    ],
-   "price": "",
+   "price": "2–15 €",
    "source": "https://running.life/en/event/papanoelada-runners-vigo",
    "official_guess": "https://magmasports.es/es/evento/papanoelada-runners",
    "id": "papanoelada-runners-vigo-2026-1219",
-   "official": false,
-   "url": "",
-   "addedAt": "2026-10-21"
+   "official": true,
+   "url": "https://magmasports.es/es/evento/papanoelada-runners",
+   "addedAt": "2026-10-21",
+   "checkedAt": "2026-10-22",
+   "nosite": false,
+   "regulation": "https://magmasports.es/storage/mAMTpmWhPUXMdwvh5np8ASWdbtXFKrlMa109L3JD.pdf",
+   "km": "10 km · 5 km",
+   "changedAt": "2026-10-22"
   },
   {
    "name": "San Silvestre Bruja Alcantarilla",
@@ -7754,7 +7921,9 @@
    "official": false,
    "note": "",
    "id": "san-silvestre-bruja-alcantarilla-2026-1219",
-   "source": "https://sportplan.es/es/events/san-silvestre-bruja-alcantarilla-alcantarilla-murcia-es-2026-12-19"
+   "source": "https://sportplan.es/es/events/san-silvestre-bruja-alcantarilla-alcantarilla-murcia-es-2026-12-19",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "San Silvestre de Boadilla",
@@ -7767,24 +7936,9 @@
    "official": false,
    "note": "",
    "id": "san-silvestre-de-boadilla-2026-1219",
-   "source": "https://sportplan.es/es/events/san-silvestre-de-boadilla-boadilla-del-monte-madrid-es-2026-12-19"
-  },
-  {
-   "name": "San Silvestre de Hortaleza",
-   "date": "2026-12-19",
-   "time": "",
-   "city": "Madrid (Hortaleza)",
-   "region": "Comunidad de Madrid",
-   "distances": [
-    "10K",
-    "5K"
-   ],
-   "url": "",
-   "official": false,
-   "note": "",
-   "id": "san-silvestre-de-hortaleza-2026-1219",
-   "source": "https://sportplan.es/es/events/xi-san-silvestre-de-hortaleza-2026-hortaleza-hortaleza-es-2026-12-19",
-   "official_guess": "https://web.rockthesport.com/es/event/xi-san-silvestre-de-hortaleza-2026"
+   "source": "https://sportplan.es/es/events/san-silvestre-de-boadilla-boadilla-del-monte-madrid-es-2026-12-19",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "San Silvestre de Torrelodones",
@@ -7797,7 +7951,9 @@
    "official": false,
    "note": "",
    "id": "san-silvestre-de-torrelodones-2026-1219",
-   "source": "https://sportplan.es/es/events/san-silvestre-de-torrelodones-torrelodones-madrid-es-2026-12-19"
+   "source": "https://sportplan.es/es/events/san-silvestre-de-torrelodones-torrelodones-madrid-es-2026-12-19",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "10K por la Fibrosis Quística",
@@ -7812,7 +7968,9 @@
    "official": false,
    "note": "",
    "id": "10k-por-la-fibrosis-quistica-2026-1220",
-   "source": "https://sportplan.es/es/events/10k-por-la-fibrosis-quistica-foios-valencia-es-2026-12-20"
+   "source": "https://sportplan.es/es/events/10k-por-la-fibrosis-quistica-foios-valencia-es-2026-12-20",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "Carrera Popular Villa de Aranjuez",
@@ -7823,12 +7981,19 @@
    "distances": [
     "10K"
    ],
-   "url": "",
-   "official": false,
+   "url": "https://web.rockthesport.com/es/event/42-carrera-popular-caixabank-villa-de-aranjuez",
+   "official": true,
    "note": "",
    "id": "carrera-popular-villa-de-aranjuez-2026-1220",
    "source": "https://sportplan.es/es/events/carrera-popular-villa-de-aranjuez-aranjuez-madrid-es-2026-12-20",
-   "official_guess": "https://web.rockthesport.com/es/event/42-carrera-popular-caixabank-villa-de-aranjuez"
+   "official_guess": "https://web.rockthesport.com/es/event/42-carrera-popular-caixabank-villa-de-aranjuez",
+   "checkedAt": "2026-10-22",
+   "nosite": false,
+   "signup": true,
+   "banner": "https://web.rockthesport.com/_next/image?url=https%3A%2F%2Frtsfiles.blob.core.windows.net%2Fmanager%2F2048%2Fcustom%2Froot%2F7b6948fb-4dbd-4445-885d-90ddf32bdd2b_custom1.jpg&w=1200&q=75",
+   "price": "20–25 €",
+   "km": "10 km",
+   "changedAt": "2026-10-22"
   },
   {
    "name": "Carrera de Navidad Albeldense",
@@ -7841,7 +8006,9 @@
    "official": false,
    "note": "",
    "id": "carrera-de-navidad-albeldense-2026-1220",
-   "source": "https://sportplan.es/es/events/carrera-de-navidad-albeldense-albelda-de-iregua-la-rioja-es-2026-12-20"
+   "source": "https://sportplan.es/es/events/carrera-de-navidad-albeldense-albelda-de-iregua-la-rioja-es-2026-12-20",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "Carrera de Navidad Fuengirola",
@@ -7854,7 +8021,9 @@
    "official": false,
    "note": "",
    "id": "carrera-de-navidad-fuengirola-2026-1220",
-   "source": "https://sportplan.es/es/events/carrera-de-navidad-fuengirola-fuengirola-malaga-es-2026-12-20"
+   "source": "https://sportplan.es/es/events/carrera-de-navidad-fuengirola-fuengirola-malaga-es-2026-12-20",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "Carrera de Navidad de Cártama",
@@ -7865,12 +8034,16 @@
    "distances": [
     "10K"
    ],
-   "url": "",
-   "official": false,
+   "url": "https://web.faalive.com/ch/2026/14513/",
+   "official": true,
    "note": "",
    "id": "carrera-de-navidad-de-cartama-2026-1220",
    "source": "https://sportplan.es/es/events/carrera-de-navidad-de-cartama-cartama-estacion-malaga-es-2026-12-20",
-   "official_guess": "https://web.faalive.com/ch/2026/14513/"
+   "official_guess": "https://web.faalive.com/ch/2026/14513/",
+   "checkedAt": "2026-10-22",
+   "nosite": false,
+   "banner": "https://web.faalive.com/img/LogoFetriIcon.png",
+   "changedAt": "2026-10-22"
   },
   {
    "name": "Carrera de Navidad de Piélagos",
@@ -7883,7 +8056,9 @@
    "official": false,
    "note": "",
    "id": "carrera-de-navidad-de-pielagos-2026-1220",
-   "source": "https://sportplan.es/es/events/carrera-de-navidad-de-pielagos-renedo-de-pielagos-cantabria-es-2026-12-20"
+   "source": "https://sportplan.es/es/events/carrera-de-navidad-de-pielagos-renedo-de-pielagos-cantabria-es-2026-12-20",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "Carrera de Papá Noel de Sevilla",
@@ -7896,7 +8071,9 @@
    "official": false,
    "note": "",
    "id": "carrera-de-papa-noel-de-sevilla-2026-1220",
-   "source": "https://sportplan.es/es/events/carrera-de-papa-noel-de-sevilla-sevilla-es-2026-12-20"
+   "source": "https://sportplan.es/es/events/carrera-de-papa-noel-de-sevilla-sevilla-es-2026-12-20",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "Carrera de la Ilusión",
@@ -7909,7 +8086,9 @@
    "official": false,
    "note": "",
    "id": "carrera-de-la-ilusion-2026-1220",
-   "source": "https://sportplan.es/es/events/carrera-de-la-ilusion-toledo-es-2026-12-20"
+   "source": "https://sportplan.es/es/events/carrera-de-la-ilusion-toledo-es-2026-12-20",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "Carrera del Turrón",
@@ -7922,7 +8101,9 @@
    "official": false,
    "note": "",
    "id": "carrera-del-turron-2026-1220",
-   "source": "https://sportplan.es/es/events/carrera-del-turron-arroyo-de-la-encomienda-valladolid-es-2026-12-20"
+   "source": "https://sportplan.es/es/events/carrera-del-turron-arroyo-de-la-encomienda-valladolid-es-2026-12-20",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "Cordobaria",
@@ -7935,7 +8116,9 @@
    "official": false,
    "note": "",
    "id": "cordobaria-2026-1220",
-   "source": "https://sportplan.es/es/events/cordobaria-cordoba-es-2026-12-20"
+   "source": "https://sportplan.es/es/events/cordobaria-cordoba-es-2026-12-20",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "Cursa de Nadal Sant Sadurní d'Anoia",
@@ -7946,13 +8129,20 @@
    "distances": [
     "21K"
    ],
-   "price": "",
+   "price": "12–14 €",
    "source": "https://running.life/en/event/cursa-de-nadal-sant-sadurni-danoia",
    "official_guess": "https://sportmaniacs.com/en/races/cursa-de-nadal-de-sant-sadurni-drsquoanoia-2026",
    "id": "cursa-de-nadal-sant-sadurni-d-anoia-2026-1220",
-   "official": false,
-   "url": "",
-   "addedAt": "2026-10-21"
+   "official": true,
+   "url": "https://sportmaniacs.com/en/services/inscription/cursa-de-nadal-de-sant-sadurni-drsquoanoia-2026",
+   "addedAt": "2026-10-21",
+   "checkedAt": "2026-10-22",
+   "nosite": false,
+   "signup": true,
+   "regulation": "https://s3-eu-west-1.amazonaws.com/sm-fotos.sportmaniacs.com/back/Reglament i plec 2026.pdf",
+   "banner": "https://sportmaniacs.com/images/share/sportmaniacs-race.jpg",
+   "km": "10 km · 5 km",
+   "changedAt": "2026-10-22"
   },
   {
    "name": "Descoberta Run - Fontcoberta",
@@ -7963,13 +8153,18 @@
    "distances": [
     "21K"
    ],
-   "price": "",
+   "price": "10–50 €",
    "source": "https://running.life/en/event/descoberta-run-fontcoberta",
    "official_guess": "https://cursesplaestany.cat/cursa-popular-fontcoberta/",
    "id": "descoberta-run-fontcoberta-2026-1220",
-   "official": false,
-   "url": "",
-   "addedAt": "2026-10-21"
+   "official": true,
+   "url": "https://cursesplaestany.cat/cursa-popular-fontcoberta/",
+   "addedAt": "2026-10-21",
+   "checkedAt": "2026-10-22",
+   "nosite": false,
+   "regulation": "https://cursesplaestany.cat/wp-content/uploads/2026/10/Normativa-CCP-26-27.pdf",
+   "km": "10 km",
+   "changedAt": "2026-10-22"
   },
   {
    "name": "Guadiatón",
@@ -7984,9 +8179,15 @@
    "source": "https://running.life/en/event/guadiaton",
    "official_guess": "https://www.cronofinisher.com/evento/xv-guadiaton-10-km/",
    "id": "guadiaton-2026-1220",
-   "official": false,
-   "url": "",
-   "addedAt": "2026-10-21"
+   "official": true,
+   "url": "https://www.cronofinisher.com/evento/xv-guadiaton-10-km/",
+   "addedAt": "2026-10-21",
+   "checkedAt": "2026-10-22",
+   "nosite": false,
+   "regulation": "https://www.cronofinisher.com/images/biblioteca_eventos/764/reglamento-xii-circuito-runnavideno-vegas-bajas-2026-2027.pdf",
+   "banner": "https://www.cronofinisher.com/images/img-rrss1.jpg",
+   "km": "12 km · 10 km · 8 km · 7 km",
+   "changedAt": "2026-10-22"
   },
   {
    "name": "La Cabrereña",
@@ -7999,7 +8200,9 @@
    "official": false,
    "note": "",
    "id": "la-cabrerena-2026-1220",
-   "source": "https://sportplan.es/es/events/la-cabrerena-la-cabrera-madrid-es-2026-12-20"
+   "source": "https://sportplan.es/es/events/la-cabrerena-la-cabrera-madrid-es-2026-12-20",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "La Media de Vitoria-Gasteiz",
@@ -8010,12 +8213,18 @@
    "distances": [
     "21K"
    ],
-   "url": "",
-   "official": false,
+   "url": "https://www.mediamaratonvitoriagasteiz.com/",
+   "official": true,
    "note": "",
    "id": "la-media-de-vitoria-gasteiz-2026-1220",
    "source": "https://sportplan.es/es/events/la-media-de-vitoria-gasteiz-vitoria-alava-es-2026-12-20",
-   "official_guess": "https://www.mediamaratonvitoriagasteiz.com/"
+   "official_guess": "https://www.mediamaratonvitoriagasteiz.com/",
+   "checkedAt": "2026-10-22",
+   "nosite": false,
+   "regulation": "https://www.mediamaratonvitoriagasteiz.com/wp-content/uploads/2026/06/ReglamentoCtoAlavaMediaMaraton261220.pdf",
+   "price": "50 €",
+   "km": "10 km",
+   "changedAt": "2026-10-22"
   },
   {
    "name": "Legua Solidaria Carranque",
@@ -8028,7 +8237,9 @@
    "official": false,
    "note": "",
    "id": "legua-solidaria-carranque-2026-1220",
-   "source": "https://sportplan.es/es/events/legua-solidaria-carranque-carranque-toledo-es-2026-12-20"
+   "source": "https://sportplan.es/es/events/legua-solidaria-carranque-carranque-toledo-es-2026-12-20",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "Maratón Clandestino",
@@ -8045,7 +8256,8 @@
    "id": "maraton-clandestino-2026-1220",
    "official": false,
    "url": "",
-   "addedAt": "2026-10-21"
+   "addedAt": "2026-10-21",
+   "checkedAt": "2026-10-22"
   },
   {
    "name": "Media Maratón Ciudad de Cieza",
@@ -8057,12 +8269,18 @@
     "21K",
     "11K"
    ],
-   "url": "",
-   "official": false,
+   "url": "https://www.alcanzatumeta.es/xxxvii-media-maraton-ciudad-de-cieza-y-xvii-113k-solidarios-2026/",
+   "official": true,
    "note": "",
    "id": "media-maraton-ciudad-de-cieza-2026-1220",
    "source": "https://running.life/es/carrera/media-maraton-ciudad-de-cieza",
-   "official_guess": "http://www.alcanzatumeta.es/xxxvii-media-maraton-ciudad-de-cieza-y-xvii-113k-solidarios-2026"
+   "official_guess": "http://www.alcanzatumeta.es/xxxvii-media-maraton-ciudad-de-cieza-y-xvii-113k-solidarios-2026",
+   "checkedAt": "2026-10-22",
+   "nosite": false,
+   "regulation": "https://www.alcanzatumeta.es/uploads/Reglamento/255f9a242ca125c99dbf83a99182ca17.pdf",
+   "price": "14–20 €",
+   "km": "21 km · 11,3 km",
+   "changedAt": "2026-10-22"
   },
   {
    "name": "Media Maratón Ciudad de Tacoronte",
@@ -8075,12 +8293,19 @@
     "10K",
     "5K"
    ],
-   "url": "",
-   "official": false,
+   "url": "https://inscripciones.chronotrackcanarias.com/inscripcion/xxxvi-media-maraton-ciudad-de-tacoronte-2026/",
+   "official": true,
    "note": "",
    "id": "media-maraton-ciudad-de-tacoronte-2026-1220",
    "source": "https://running.life/es/carrera/media-maraton-ciudad-de-tacoronte",
-   "official_guess": "https://inscripciones.chronotrackcanarias.com/inscripcion/xxxvi-media-maraton-ciudad-de-tacoronte-2026/"
+   "official_guess": "https://inscripciones.chronotrackcanarias.com/inscripcion/xxxvi-media-maraton-ciudad-de-tacoronte-2026/",
+   "checkedAt": "2026-10-22",
+   "nosite": false,
+   "regulation": "https://inscripciones.chronotrackcanarias.com/inscripcion/xxxvi-media-maraton-ciudad-de-tacoronte-2026/reglamento/",
+   "banner": "https://inscripciones.chronotrackcanarias.com/inscripcion/xxxvi-media-maraton-ciudad-de-tacoronte-2026/ficheros/?filetype=cartel",
+   "price": "15–25 €",
+   "km": "10 km · 5 km",
+   "changedAt": "2026-10-22"
   },
   {
    "name": "Media Maratón Villa de Aspe",
@@ -8093,12 +8318,17 @@
     "11K",
     "5K"
    ],
-   "url": "",
-   "official": false,
+   "url": "https://www.chiplevante.com/es/prueba/media-maraton-11km-y-5km-villa-de-aspe-672-2026",
+   "official": true,
    "note": "",
    "id": "media-maraton-villa-de-aspe-2026-1220",
    "source": "https://running.life/es/carrera/media-maraton-villa-de-aspe",
-   "official_guess": "https://www.chiplevante.com/es/prueba/media-maraton-11km-y-5km-villa-de-aspe-672-2026"
+   "official_guess": "https://www.chiplevante.com/es/prueba/media-maraton-11km-y-5km-villa-de-aspe-672-2026",
+   "checkedAt": "2026-10-22",
+   "nosite": false,
+   "regulation": "https://www.chiplevante.com/es/prueba/files/documentacion/REGLAMENTO2026MMASPE.pdf",
+   "km": "21,097 km · 21 km · 11 km · 10 km",
+   "changedAt": "2026-10-22"
   },
   {
    "name": "Mou-Te per L'esclerosi Múltiple",
@@ -8113,9 +8343,15 @@
    "source": "https://running.life/en/event/mou-te-per-lesclerosi-multiple",
    "official_guess": "https://web.rockthesport.com/es/event/26a-edicio-del-mou-te-per-lesclerosi-multiple-2026",
    "id": "mou-te-per-l-esclerosi-multiple-2026-1220",
-   "official": false,
-   "url": "",
-   "addedAt": "2026-10-21"
+   "official": true,
+   "url": "https://web.rockthesport.com/es/event/26a-edicio-del-mou-te-per-lesclerosi-multiple-2026",
+   "addedAt": "2026-10-21",
+   "checkedAt": "2026-10-22",
+   "nosite": false,
+   "signup": true,
+   "banner": "https://web.rockthesport.com/_next/image?url=https%3A%2F%2Frtsfiles.blob.core.windows.net%2Fmanager%2F1785%2Flibrary%2Froot%2Fe7dbb5b9-432b-4c50-9f34-399370a5a4b7.jpg&w=1200&q=75",
+   "km": "20 km · 10 km · 5 km",
+   "changedAt": "2026-10-22"
   },
   {
    "name": "Quarta i Mitja Marató Paiporta-Picanya",
@@ -8127,12 +8363,18 @@
     "21K",
     "11K"
    ],
-   "url": "",
-   "official": false,
+   "url": "https://web.rockthesport.com/es/event/quarta-i-mitja-marato-paiporta-picanya-2026",
+   "official": true,
    "note": "",
    "id": "quarta-i-mitja-marato-paiporta-picanya-2026-1220",
    "source": "https://sportplan.es/es/events/mitja-marato-picanya-paiporta-picanya-valencia-es-2026-12-20",
-   "official_guess": "https://web.rockthesport.com/es/event/quarta-i-mitja-marato-paiporta-picanya-2026"
+   "official_guess": "https://web.rockthesport.com/es/event/quarta-i-mitja-marato-paiporta-picanya-2026",
+   "checkedAt": "2026-10-22",
+   "nosite": false,
+   "signup": true,
+   "banner": "https://web.rockthesport.com/_next/image?url=https%3A%2F%2Frtsfiles.blob.core.windows.net%2Fmanager%2F2048%2Fcustom%2Froot%2Fafc6775f-dcce-4b3b-9f74-cf82af226678_custom1.jpeg&w=1200&q=75",
+   "km": "10 km",
+   "changedAt": "2026-10-22"
   },
   {
    "name": "San Pinteña",
@@ -8147,9 +8389,15 @@
    "source": "https://running.life/en/event/san-pintena",
    "official_guess": "https://web.rockthesport.com/es/event/xiv-san-pintena-2026",
    "id": "san-pintena-2026-1220",
-   "official": false,
-   "url": "",
-   "addedAt": "2026-10-21"
+   "official": true,
+   "url": "https://web.rockthesport.com/es/event/xiv-san-pintena-2026",
+   "addedAt": "2026-10-21",
+   "checkedAt": "2026-10-22",
+   "nosite": false,
+   "signup": true,
+   "banner": "https://web.rockthesport.com/_next/image?url=https%3A%2F%2Frtsfiles.blob.core.windows.net%2Fmanager%2F2893%2Flibrary%2Froot%2F1adb68ed-1d26-48ad-bb75-0bfb612b6a34.png&w=1200&q=75",
+   "km": "10 km · 5 km",
+   "changedAt": "2026-10-22"
   },
   {
    "name": "San Silvestre Pedrezuela",
@@ -8164,7 +8412,9 @@
    "official": false,
    "note": "",
    "id": "san-silvestre-pedrezuela-2026-1220",
-   "source": "https://sportplan.es/es/events/san-silvestre-pedrezuela-pedrezuela-2026-12-20-12k"
+   "source": "https://sportplan.es/es/events/san-silvestre-pedrezuela-pedrezuela-2026-12-20-12k",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "San Silvestre Realejera",
@@ -8177,7 +8427,9 @@
    "official": false,
    "note": "",
    "id": "san-silvestre-realejera-2026-1220",
-   "source": "https://sportplan.es/es/events/san-silvestre-realejera-realejos-tenerife-es-2026-12-20"
+   "source": "https://sportplan.es/es/events/san-silvestre-realejera-realejos-tenerife-es-2026-12-20",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "Sant Silvestre Carcaixent",
@@ -8190,7 +8442,9 @@
    "official": false,
    "note": "",
    "id": "sant-silvestre-carcaixent-2026-1220",
-   "source": "https://sportplan.es/es/events/sant-silvestre-carcaixent-carcaixent-valencia-es-2026-12-20"
+   "source": "https://sportplan.es/es/events/sant-silvestre-carcaixent-carcaixent-valencia-es-2026-12-20",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "Sant Silvestre Ciutat de Xirivella",
@@ -8203,7 +8457,9 @@
    "official": false,
    "note": "",
    "id": "sant-silvestre-ciutat-de-xirivella-2026-1220",
-   "source": "https://sportplan.es/es/events/sant-silvestre-ciutat-de-xirivella-xirivella-valencia-es-2026-12-20"
+   "source": "https://sportplan.es/es/events/sant-silvestre-ciutat-de-xirivella-xirivella-valencia-es-2026-12-20",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "Carrera de Navidad de Laredo",
@@ -8216,7 +8472,9 @@
    "official": false,
    "note": "",
    "id": "carrera-de-navidad-de-laredo-2026-1223",
-   "source": "https://sportplan.es/es/events/carrera-de-navidad-de-laredo-laredo-cantabria-es-2026-12-23"
+   "source": "https://sportplan.es/es/events/carrera-de-navidad-de-laredo-laredo-cantabria-es-2026-12-23",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "Carrera Jarama María Villota",
@@ -8229,7 +8487,9 @@
    "official": false,
    "note": "",
    "id": "carrera-jarama-maria-villota-2026-1224",
-   "source": "https://sportplan.es/es/events/jarama-maria-villota-san-sebastian-de-los-reyes-madrid-es-2026-12-24"
+   "source": "https://sportplan.es/es/events/jarama-maria-villota-san-sebastian-de-los-reyes-madrid-es-2026-12-24",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "Carrera Popular de Nochebuena",
@@ -8242,7 +8502,9 @@
    "official": false,
    "note": "",
    "id": "carrera-popular-de-nochebuena-2026-1224",
-   "source": "https://sportplan.es/es/events/carrera-popular-de-nochebuena-polanco-cantabria-es-2026-12-24"
+   "source": "https://sportplan.es/es/events/carrera-popular-de-nochebuena-polanco-cantabria-es-2026-12-24",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "Carrera Yepes Navirun",
@@ -8255,7 +8517,9 @@
    "official": false,
    "note": "",
    "id": "carrera-yepes-navirun-2026-1224",
-   "source": "https://sportplan.es/es/events/carrera-yepes-navirun-yepes-toledo-es-2026-12-24"
+   "source": "https://sportplan.es/es/events/carrera-yepes-navirun-yepes-toledo-es-2026-12-24",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "Carrera del Pavo",
@@ -8268,7 +8532,9 @@
    "official": false,
    "note": "",
    "id": "carrera-del-pavo-2026-1224",
-   "source": "https://sportplan.es/es/events/carrera-del-pavo-yunquera-de-henares-guadalajara-es-2026-12-24"
+   "source": "https://sportplan.es/es/events/carrera-del-pavo-yunquera-de-henares-guadalajara-es-2026-12-24",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "Legua Navideña de Camarma",
@@ -8281,7 +8547,9 @@
    "official": false,
    "note": "",
    "id": "legua-navidena-de-camarma-2026-1224",
-   "source": "https://sportplan.es/es/events/legua-navidena-de-camarma-camarma-de-esteruelas-madrid-es-2026-12-24"
+   "source": "https://sportplan.es/es/events/legua-navidena-de-camarma-camarma-de-esteruelas-madrid-es-2026-12-24",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "San Silvestre Real Club Mediterráneo",
@@ -8296,7 +8564,9 @@
    "official": false,
    "note": "",
    "id": "san-silvestre-real-club-mediterraneo-2026-1225",
-   "source": "https://sportplan.es/es/events/san-silvestre-real-club-mediterraneo-malaga-es-2026-12-25"
+   "source": "https://sportplan.es/es/events/san-silvestre-real-club-mediterraneo-malaga-es-2026-12-25",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "San Silvestre de Humanes de Madrid",
@@ -8309,7 +8579,31 @@
    "official": false,
    "note": "",
    "id": "san-silvestre-de-humanes-de-madrid-2026-1225",
-   "source": "https://sportplan.es/es/events/san-silvestre-de-humanes-de-madrid-humanes-de-madrid-madrid-es-2026-12-25"
+   "source": "https://sportplan.es/es/events/san-silvestre-de-humanes-de-madrid-humanes-de-madrid-madrid-es-2026-12-25",
+   "checkedAt": "2026-10-22",
+   "nosite": true
+  },
+  {
+   "name": "Cursa de l'Indiot de Mollerussa",
+   "date": "2026-12-26",
+   "time": "10:00",
+   "city": "Mollerussa",
+   "region": "Cataluña",
+   "distances": [
+    "21K"
+   ],
+   "price": "2–21 €",
+   "source": "https://running.life/en/event/cursa-de-lindiot-de-mollerussa",
+   "official_guess": "https://iter5.cat/inscripcions/formCursa.php?id=2150",
+   "id": "cursa-de-l-indiot-de-mollerussa-2026-1226",
+   "official": true,
+   "url": "https://iter5.cat/inscripcions/formCursa.php?id=2150",
+   "addedAt": "2026-10-21",
+   "checkedAt": "2026-10-22",
+   "nosite": false,
+   "regulation": "https://sites.google.com/mollerussa.cat/indiot/cursa-atl%C3%A8tica/reglament?authuser=0",
+   "km": "10 km · 5 km",
+   "changedAt": "2026-10-22"
   },
   {
    "name": "8K Castrillón",
@@ -8324,7 +8618,9 @@
    "official": false,
    "note": "",
    "id": "8k-castrillon-2026-1226",
-   "source": "https://sportplan.es/es/events/8km-castrillon-castrillon-asturias-es-2026-12-26"
+   "source": "https://sportplan.es/es/events/8km-castrillon-castrillon-asturias-es-2026-12-26",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "Carrera de Fin de Año de Pola de Siero",
@@ -8337,7 +8633,9 @@
    "official": false,
    "note": "",
    "id": "carrera-de-fin-de-ano-de-pola-de-siero-2026-1226",
-   "source": "https://sportplan.es/es/events/carrera-de-fin-de-ano-de-pola-de-siero-pola-de-siero-asturias-es-2026-12-26"
+   "source": "https://sportplan.es/es/events/carrera-de-fin-de-ano-de-pola-de-siero-pola-de-siero-asturias-es-2026-12-26",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "Carrera de Navidad Consuegra",
@@ -8350,7 +8648,9 @@
    "official": false,
    "note": "",
    "id": "carrera-de-navidad-consuegra-2026-1226",
-   "source": "https://sportplan.es/es/events/carrera-de-navidad-consuegra-consuegra-toledo-es-2026-12-26"
+   "source": "https://sportplan.es/es/events/carrera-de-navidad-consuegra-consuegra-toledo-es-2026-12-26",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "Carrera de Navidad Villa de Rota",
@@ -8363,24 +8663,9 @@
    "official": false,
    "note": "",
    "id": "carrera-de-navidad-villa-de-rota-2026-1226",
-   "source": "https://sportplan.es/es/events/carrera-de-navidad-villa-de-rota-rota-cadiz-es-2026-12-26"
-  },
-  {
-   "name": "Cursa de l'Indiot de Mollerussa",
-   "date": "2026-12-26",
-   "time": "",
-   "city": "Mollerussa",
-   "region": "Cataluña",
-   "distances": [
-    "21K"
-   ],
-   "price": "",
-   "source": "https://running.life/en/event/cursa-de-lindiot-de-mollerussa",
-   "official_guess": "https://iter5.cat/inscripcions/formCursa.php?id=2150",
-   "id": "cursa-de-l-indiot-de-mollerussa-2026-1226",
-   "official": false,
-   "url": "",
-   "addedAt": "2026-10-21"
+   "source": "https://sportplan.es/es/events/carrera-de-navidad-villa-de-rota-rota-cadiz-es-2026-12-26",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "San Silvestre Candelaria",
@@ -8393,7 +8678,9 @@
    "official": false,
    "note": "",
    "id": "san-silvestre-candelaria-2026-1226",
-   "source": "https://sportplan.es/es/events/san-silvestre-candelaria-candelaria-tenerife-es-2026-12-26"
+   "source": "https://sportplan.es/es/events/san-silvestre-candelaria-candelaria-tenerife-es-2026-12-26",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "San Silvestre Ciempozuelos",
@@ -8406,7 +8693,9 @@
    "official": false,
    "note": "",
    "id": "san-silvestre-ciempozuelos-2026-1226",
-   "source": "https://sportplan.es/es/events/san-silvestre-ciempozuelos-ciempozuelos-madrid-es-2026-12-26"
+   "source": "https://sportplan.es/es/events/san-silvestre-ciempozuelos-ciempozuelos-madrid-es-2026-12-26",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "San Silvestre Gaditana",
@@ -8419,7 +8708,9 @@
    "official": false,
    "note": "",
    "id": "san-silvestre-gaditana-2026-1226",
-   "source": "https://sportplan.es/es/events/san-silvestre-gaditana-cadiz-es-2026-12-26"
+   "source": "https://sportplan.es/es/events/san-silvestre-gaditana-cadiz-es-2026-12-26",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "San Silvestre Madriguerense",
@@ -8432,7 +8723,9 @@
    "official": false,
    "note": "",
    "id": "san-silvestre-madriguerense-2026-1226",
-   "source": "https://sportplan.es/es/events/san-silvestre-madriguerense-madrigueras-albacete-es-2026-12-26"
+   "source": "https://sportplan.es/es/events/san-silvestre-madriguerense-madrigueras-albacete-es-2026-12-26",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "San Silvestre Valdetorres de Jarama",
@@ -8447,7 +8740,9 @@
    "official": false,
    "note": "",
    "id": "san-silvestre-valdetorres-de-jarama-2026-1226",
-   "source": "https://sportplan.es/es/events/san-silvestre-valdetorres-de-jarama-valdetorres-de-jarama-madrid-es-2026-12-26"
+   "source": "https://sportplan.es/es/events/san-silvestre-valdetorres-de-jarama-valdetorres-de-jarama-madrid-es-2026-12-26",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "San Silvestre Villa de Mieres",
@@ -8460,7 +8755,9 @@
    "official": false,
    "note": "",
    "id": "san-silvestre-villa-de-mieres-2026-1226",
-   "source": "https://sportplan.es/es/events/san-silvestre-villa-de-mieres-mieres-asturias-es-2026-12-26"
+   "source": "https://sportplan.es/es/events/san-silvestre-villa-de-mieres-mieres-asturias-es-2026-12-26",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "San Silvestre Vélez-Málaga",
@@ -8473,7 +8770,9 @@
    "official": false,
    "note": "",
    "id": "san-silvestre-velez-malaga-2026-1226",
-   "source": "https://sportplan.es/es/events/san-silvestre-velez-malaga-velez-malaga-malaga-es-2026-12-26"
+   "source": "https://sportplan.es/es/events/san-silvestre-velez-malaga-velez-malaga-malaga-es-2026-12-26",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "San Silvestre de Benicàssim",
@@ -8486,7 +8785,9 @@
    "official": false,
    "note": "",
    "id": "san-silvestre-de-benicassim-2026-1226",
-   "source": "https://sportplan.es/es/events/san-silvestre-de-benicassim-benicassim-castellon-es-2026-12-26"
+   "source": "https://sportplan.es/es/events/san-silvestre-de-benicassim-benicassim-castellon-es-2026-12-26",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "San Silvestre de Navalcarnero",
@@ -8499,7 +8800,9 @@
    "official": false,
    "note": "",
    "id": "san-silvestre-de-navalcarnero-2026-1226",
-   "source": "https://sportplan.es/es/events/san-silvestre-de-navalcarnero-navalcarnero-madrid-es-2026-12-26"
+   "source": "https://sportplan.es/es/events/san-silvestre-de-navalcarnero-navalcarnero-madrid-es-2026-12-26",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "San Silvestre de Piloña",
@@ -8512,7 +8815,9 @@
    "official": false,
    "note": "",
    "id": "san-silvestre-de-pilona-2026-1226",
-   "source": "https://sportplan.es/es/events/san-silvestre-de-pilona-pilona-infiesto-asturias-es-2026-12-26"
+   "source": "https://sportplan.es/es/events/san-silvestre-de-pilona-pilona-infiesto-asturias-es-2026-12-26",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "San Silvestre de Salas",
@@ -8525,7 +8830,9 @@
    "official": false,
    "note": "",
    "id": "san-silvestre-de-salas-2026-1226",
-   "source": "https://sportplan.es/es/events/san-silvestre-de-salas-salas-asturias-es-2026-12-26"
+   "source": "https://sportplan.es/es/events/san-silvestre-de-salas-salas-asturias-es-2026-12-26",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "San Silvestre de Torrelavega",
@@ -8538,7 +8845,9 @@
    "official": false,
    "note": "",
    "id": "san-silvestre-de-torrelavega-2026-1226",
-   "source": "https://sportplan.es/es/events/san-silvestre-de-torrelavega-torrelavega-cantabria-es-2026-12-26"
+   "source": "https://sportplan.es/es/events/san-silvestre-de-torrelavega-torrelavega-cantabria-es-2026-12-26",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "Sant Silvestre Manresana",
@@ -8551,7 +8860,9 @@
    "official": false,
    "note": "",
    "id": "sant-silvestre-manresana-2026-1226",
-   "source": "https://sportplan.es/es/events/sant-silvestre-manresana-manresa-barcelona-es-2026-12-26"
+   "source": "https://sportplan.es/es/events/sant-silvestre-manresana-manresa-barcelona-es-2026-12-26",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "Sentim la Sant Silvestre",
@@ -8564,7 +8875,9 @@
    "official": false,
    "note": "",
    "id": "sentim-la-sant-silvestre-2026-1226",
-   "source": "https://sportplan.es/es/events/sentim-la-sant-silvestre-nules-castellon-es-2026-12-26"
+   "source": "https://sportplan.es/es/events/sentim-la-sant-silvestre-nules-castellon-es-2026-12-26",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "St. Esteve Run",
@@ -8579,9 +8892,15 @@
    "source": "https://running.life/en/event/st-esteve-run",
    "official_guess": "https://web.rockthesport.com/es/event/st-esteve-run-2026",
    "id": "st-esteve-run-2026-1226",
-   "official": false,
-   "url": "",
-   "addedAt": "2026-10-21"
+   "official": true,
+   "url": "https://web.rockthesport.com/es/event/st-esteve-run-2026",
+   "addedAt": "2026-10-21",
+   "checkedAt": "2026-10-22",
+   "nosite": false,
+   "signup": true,
+   "banner": "https://web.rockthesport.com/_next/image?url=https%3A%2F%2Frtsfiles.blob.core.windows.net%2Fmanager%2F1785%2Flibrary%2Froot%2F4332a8d6-13c6-493b-9b5f-7555a17b5599.png&w=1200&q=75",
+   "km": "10 km · 5 km",
+   "changedAt": "2026-10-22"
   },
   {
    "name": "Carreira de Fin de Ano Mugardos-Ares",
@@ -8594,7 +8913,9 @@
    "official": false,
    "note": "",
    "id": "carreira-de-fin-de-ano-mugardos-ares-2026-1227",
-   "source": "https://sportplan.es/es/events/carreira-de-fin-de-ano-mugardos-ares-ares-a-coruna-es-2026-12-27"
+   "source": "https://sportplan.es/es/events/carreira-de-fin-de-ano-mugardos-ares-ares-a-coruna-es-2026-12-27",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "La San Silvestre más Bestia",
@@ -8607,7 +8928,9 @@
    "official": false,
    "note": "",
    "id": "la-san-silvestre-mas-bestia-2026-1227",
-   "source": "https://sportplan.es/es/events/la-san-silvestre-mas-bestia-los-palacios-y-villafranca-sevilla-es-2026-12-27"
+   "source": "https://sportplan.es/es/events/la-san-silvestre-mas-bestia-los-palacios-y-villafranca-sevilla-es-2026-12-27",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "RunCáncer Alcàsser",
@@ -8622,9 +8945,15 @@
    "source": "https://running.life/en/event/runcancer-alcasser",
    "official_guess": "https://web.rockthesport.com/es/event/alcasser-contra-el-cancer-2026",
    "id": "runcancer-alcasser-2026-1227",
-   "official": false,
-   "url": "",
-   "addedAt": "2026-10-21"
+   "official": true,
+   "url": "https://web.rockthesport.com/es/event/alcasser-contra-el-cancer-2026",
+   "addedAt": "2026-10-21",
+   "checkedAt": "2026-10-22",
+   "nosite": false,
+   "signup": true,
+   "banner": "https://web.rockthesport.com/_next/image?url=https%3A%2F%2Frtsfiles.blob.core.windows.net%2Fmanager%2F10084%2Flibrary%2Froot%2F82d78a36-7be5-4ef2-8704-deb38c483382.jpg&w=1200&q=75",
+   "km": "10 km · 3 km",
+   "changedAt": "2026-10-22"
   },
   {
    "name": "San Pinteña",
@@ -8640,7 +8969,9 @@
    "official": false,
    "note": "",
    "id": "san-pintena-2026-1227",
-   "source": "https://sportplan.es/es/events/san-pintena-pinto-madrid-es-2026-12-27"
+   "source": "https://sportplan.es/es/events/san-pintena-pinto-madrid-es-2026-12-27",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "San Silvestre Alameña",
@@ -8653,7 +8984,9 @@
    "official": false,
    "note": "",
    "id": "san-silvestre-alamena-2026-1227",
-   "source": "https://sportplan.es/es/events/san-silvestre-alamena-el-alamo-madrid-es-2026-12-27"
+   "source": "https://sportplan.es/es/events/san-silvestre-alamena-el-alamo-madrid-es-2026-12-27",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "San Silvestre Alboraya",
@@ -8666,7 +8999,9 @@
    "official": false,
    "note": "",
    "id": "san-silvestre-alboraya-2026-1227",
-   "source": "https://sportplan.es/es/events/san-silvestre-alboraya-alboraya-valencia-es-2026-12-27"
+   "source": "https://sportplan.es/es/events/san-silvestre-alboraya-alboraya-valencia-es-2026-12-27",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "San Silvestre Almendralejense",
@@ -8679,7 +9014,9 @@
    "official": false,
    "note": "",
    "id": "san-silvestre-almendralejense-2026-1227",
-   "source": "https://sportplan.es/es/events/san-silvestre-almendralejense-almendralejo-badajoz-es-2026-12-27"
+   "source": "https://sportplan.es/es/events/san-silvestre-almendralejense-almendralejo-badajoz-es-2026-12-27",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "San Silvestre Alzira",
@@ -8692,7 +9029,9 @@
    "official": false,
    "note": "",
    "id": "san-silvestre-alzira-2026-1227",
-   "source": "https://sportplan.es/es/events/san-silvestre-alzira-alzira-valencia-es-2026-12-27"
+   "source": "https://sportplan.es/es/events/san-silvestre-alzira-alzira-valencia-es-2026-12-27",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "San Silvestre Berciana",
@@ -8705,7 +9044,9 @@
    "official": false,
    "note": "",
    "id": "san-silvestre-berciana-2026-1227",
-   "source": "https://sportplan.es/es/events/san-silvestre-berciana-ponferrada-leon-es-2026-12-27"
+   "source": "https://sportplan.es/es/events/san-silvestre-berciana-ponferrada-leon-es-2026-12-27",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "San Silvestre Ejeana",
@@ -8718,7 +9059,9 @@
    "official": false,
    "note": "",
    "id": "san-silvestre-ejeana-2026-1227",
-   "source": "https://sportplan.es/es/events/san-silvestre-ejeana-ejea-de-los-caballeros-zaragoza-es-2026-12-27"
+   "source": "https://sportplan.es/es/events/san-silvestre-ejeana-ejea-de-los-caballeros-zaragoza-es-2026-12-27",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "San Silvestre El Viso de San Juan",
@@ -8731,7 +9074,9 @@
    "official": false,
    "note": "",
    "id": "san-silvestre-el-viso-de-san-juan-2026-1227",
-   "source": "https://sportplan.es/es/events/san-silvestre-el-viso-de-san-juan-el-viso-de-san-juan-toledo-es-2026-12-27"
+   "source": "https://sportplan.es/es/events/san-silvestre-el-viso-de-san-juan-el-viso-de-san-juan-toledo-es-2026-12-27",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "San Silvestre Praviana",
@@ -8742,13 +9087,19 @@
    "distances": [
     "21K"
    ],
-   "price": "",
+   "price": "2–11 €",
    "source": "https://running.life/en/event/san-silvestre-praviana",
    "official_guess": "https://www.321go.es/Carrera/Detail/586-sansilvestrepraviana2026",
    "id": "san-silvestre-praviana-2026-1227",
-   "official": false,
-   "url": "",
-   "addedAt": "2026-10-21"
+   "official": true,
+   "url": "https://www.321go.es/Carrera/Detail/586-sansilvestrepraviana2026",
+   "addedAt": "2026-10-21",
+   "checkedAt": "2026-10-22",
+   "nosite": false,
+   "signup": true,
+   "regulation": "https://www.321go.es/Uploads/PDF/Reglamento/41963950f32d40e2930b588afe99545c.pdf",
+   "km": "5 km · 3 km",
+   "changedAt": "2026-10-22"
   },
   {
    "name": "San Silvestre Rincón de la Victoria",
@@ -8761,7 +9112,9 @@
    "official": false,
    "note": "",
    "id": "san-silvestre-rincon-de-la-victoria-2026-1227",
-   "source": "https://sportplan.es/es/events/san-silvestre-rincon-de-la-victoria-rincon-de-la-victoria-malaga-es-2026-12-27"
+   "source": "https://sportplan.es/es/events/san-silvestre-rincon-de-la-victoria-rincon-de-la-victoria-malaga-es-2026-12-27",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "San Silvestre Salmantina",
@@ -8776,7 +9129,9 @@
    "official": false,
    "note": "",
    "id": "san-silvestre-salmantina-2026-1227",
-   "source": "https://sportplan.es/es/events/san-silvestre-salmantina-salamanca-es-2026-12-27"
+   "source": "https://sportplan.es/es/events/san-silvestre-salmantina-salamanca-es-2026-12-27",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "San Silvestre Solidaria El Puerto",
@@ -8789,7 +9144,9 @@
    "official": false,
    "note": "",
    "id": "san-silvestre-solidaria-el-puerto-2026-1227",
-   "source": "https://sportplan.es/es/events/san-silvestre-solidaria-el-puerto-de-santa-maria-cadiz-es-2026-12-27"
+   "source": "https://sportplan.es/es/events/san-silvestre-solidaria-el-puerto-de-santa-maria-cadiz-es-2026-12-27",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "San Silvestre Villasecana",
@@ -8802,7 +9159,9 @@
    "official": false,
    "note": "",
    "id": "san-silvestre-villasecana-2026-1227",
-   "source": "https://sportplan.es/es/events/san-silvestre-villasecana-villaseca-de-la-sagra-toledo-es-2026-12-27"
+   "source": "https://sportplan.es/es/events/san-silvestre-villasecana-villaseca-de-la-sagra-toledo-es-2026-12-27",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "San Silvestre de Almería",
@@ -8815,7 +9174,9 @@
    "official": false,
    "note": "",
    "id": "san-silvestre-de-almeria-2026-1227",
-   "source": "https://sportplan.es/es/events/san-silvestre-de-almeria-almeria-es-2026-12-27"
+   "source": "https://sportplan.es/es/events/san-silvestre-de-almeria-almeria-es-2026-12-27",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "San Silvestre de Burriana",
@@ -8828,7 +9189,9 @@
    "official": false,
    "note": "",
    "id": "san-silvestre-de-burriana-2026-1227",
-   "source": "https://sportplan.es/es/events/san-silvestre-de-burriana-burriana-castellon-es-2026-12-27"
+   "source": "https://sportplan.es/es/events/san-silvestre-de-burriana-burriana-castellon-es-2026-12-27",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "San Silvestre de El Ejido",
@@ -8841,7 +9204,9 @@
    "official": false,
    "note": "",
    "id": "san-silvestre-de-el-ejido-2026-1227",
-   "source": "https://sportplan.es/es/events/san-silvestre-de-el-ejido-el-ejido-almeria-es-2026-12-27"
+   "source": "https://sportplan.es/es/events/san-silvestre-de-el-ejido-el-ejido-almeria-es-2026-12-27",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "San Silvestre de Guadalajara",
@@ -8852,12 +9217,18 @@
    "distances": [
     "21K"
    ],
-   "url": "",
-   "official": false,
+   "url": "https://web.rockthesport.com/es/event/x-san-silvestre-ciudad-de-guadalajara",
+   "official": true,
    "note": "",
    "id": "san-silvestre-de-guadalajara-2026-1227",
    "source": "https://sportplan.es/es/events/san-silvestre-guadalajara-guadalajara-espana-guadalajara-es-2026-12-27",
-   "official_guess": "https://web.rockthesport.com/es/event/x-san-silvestre-ciudad-de-guadalajara"
+   "official_guess": "https://web.rockthesport.com/es/event/x-san-silvestre-ciudad-de-guadalajara",
+   "checkedAt": "2026-10-22",
+   "nosite": false,
+   "signup": true,
+   "banner": "https://web.rockthesport.com/_next/image?url=https%3A%2F%2Frtsfiles.blob.core.windows.net%2Fmanager%2F2893%2Flibrary%2Froot%2F3606f719-8a77-43fb-a803-9af3a1211d94.jpg&w=1200&q=75",
+   "km": "10 km · 5 km",
+   "changedAt": "2026-10-22"
   },
   {
    "name": "San Silvestre de Lena",
@@ -8870,7 +9241,9 @@
    "official": false,
    "note": "",
    "id": "san-silvestre-de-lena-2026-1227",
-   "source": "https://sportplan.es/es/events/san-silvestre-de-lena-pola-de-lena-asturias-es-2026-12-27"
+   "source": "https://sportplan.es/es/events/san-silvestre-de-lena-pola-de-lena-asturias-es-2026-12-27",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "San Silvestre de León",
@@ -8883,7 +9256,9 @@
    "official": false,
    "note": "",
    "id": "san-silvestre-de-leon-2026-1227",
-   "source": "https://sportplan.es/es/events/san-silvestre-de-leon-leon-es-2026-12-27"
+   "source": "https://sportplan.es/es/events/san-silvestre-de-leon-leon-es-2026-12-27",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "San Silvestre de Lugones",
@@ -8896,7 +9271,9 @@
    "official": false,
    "note": "",
    "id": "san-silvestre-de-lugones-2026-1227",
-   "source": "https://sportplan.es/es/events/san-silvestre-de-lugones-lugones-asturias-es-2026-12-27"
+   "source": "https://sportplan.es/es/events/san-silvestre-de-lugones-lugones-asturias-es-2026-12-27",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "San Silvestre de Villaverde Alto",
@@ -8909,7 +9286,9 @@
    "official": false,
    "note": "",
    "id": "san-silvestre-de-villaverde-alto-2026-1227",
-   "source": "https://sportplan.es/es/events/san-silvestre-de-villaverde-alto-madrid-es-2026-12-27"
+   "source": "https://sportplan.es/es/events/san-silvestre-de-villaverde-alto-madrid-es-2026-12-27",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "San Silvestre en Mislata",
@@ -8922,7 +9301,9 @@
    "official": false,
    "note": "",
    "id": "san-silvestre-en-mislata-2026-1227",
-   "source": "https://sportplan.es/es/events/san-silvestre-en-mislata-mislata-valencia-es-2026-12-27"
+   "source": "https://sportplan.es/es/events/san-silvestre-en-mislata-mislata-valencia-es-2026-12-27",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "Sant Silvestre Illa de Menorca",
@@ -8935,7 +9316,9 @@
    "official": false,
    "note": "",
    "id": "sant-silvestre-illa-de-menorca-2026-1227",
-   "source": "https://sportplan.es/es/events/sant-silvestre-illa-de-menorca-mao-islas-baleares-es-2026-12-27"
+   "source": "https://sportplan.es/es/events/sant-silvestre-illa-de-menorca-mao-islas-baleares-es-2026-12-27",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "Sant Silvestre RACC Badalona",
@@ -8946,12 +9329,18 @@
    "distances": [
     "21K"
    ],
-   "url": "",
-   "official": false,
+   "url": "https://www.zonavipevents.com/sant-silvestre-badalona/",
+   "official": true,
    "note": "",
    "id": "sant-silvestre-racc-badalona-2026-1227",
    "source": "https://sportplan.es/es/events/sant-silvestre-racc-badalona-badalona-barcelona-es-2026-12-27",
-   "official_guess": "https://www.zonavipevents.com/sant-silvestre-badalona/"
+   "official_guess": "https://www.zonavipevents.com/sant-silvestre-badalona/",
+   "checkedAt": "2026-10-22",
+   "nosite": false,
+   "regulation": "https://www.zonavipevents.com/reglament-sant-silvestre-badalona/",
+   "price": "3–18 €",
+   "km": "10 km · 5 km",
+   "changedAt": "2026-10-22"
   },
   {
    "name": "Cursa de la Llufa",
@@ -8964,7 +9353,9 @@
    "official": false,
    "note": "",
    "id": "cursa-de-la-llufa-2026-1228",
-   "source": "https://sportplan.es/es/events/cursa-de-la-llufa-l-espluga-de-francoli-tarragona-es-2026-12-28"
+   "source": "https://sportplan.es/es/events/cursa-de-la-llufa-l-espluga-de-francoli-tarragona-es-2026-12-28",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "San Silvestre Mostoleña",
@@ -8977,7 +9368,9 @@
    "official": false,
    "note": "",
    "id": "san-silvestre-mostolena-2026-1228",
-   "source": "https://sportplan.es/es/events/san-silvestre-mostolena-mostoles-madrid-es-2026-12-28"
+   "source": "https://sportplan.es/es/events/san-silvestre-mostolena-mostoles-madrid-es-2026-12-28",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "San Silvestre de Rocafort",
@@ -8990,7 +9383,9 @@
    "official": false,
    "note": "",
    "id": "san-silvestre-de-rocafort-2026-1228",
-   "source": "https://sportplan.es/es/events/san-silvestre-de-rocafort-rocafort-valencia-es-2026-12-28"
+   "source": "https://sportplan.es/es/events/san-silvestre-de-rocafort-rocafort-valencia-es-2026-12-28",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "San Silvestre Chiclanera",
@@ -9003,7 +9398,9 @@
    "official": false,
    "note": "",
    "id": "san-silvestre-chiclanera-2026-1229",
-   "source": "https://sportplan.es/es/events/san-silvestre-chiclanera-chiclana-de-la-frontera-cadiz-es-2026-12-29"
+   "source": "https://sportplan.es/es/events/san-silvestre-chiclanera-chiclana-de-la-frontera-cadiz-es-2026-12-29",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "Sanselvestre",
@@ -9016,7 +9413,9 @@
    "official": false,
    "note": "",
    "id": "sanselvestre-2026-1229",
-   "source": "https://sportplan.es/es/events/sanselvestre-san-sebastian-de-los-reyes-madrid-es-2026-12-29"
+   "source": "https://sportplan.es/es/events/sanselvestre-san-sebastian-de-los-reyes-madrid-es-2026-12-29",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "Sant Silvestre Dénia",
@@ -9029,7 +9428,9 @@
    "official": false,
    "note": "",
    "id": "sant-silvestre-denia-2026-1229",
-   "source": "https://sportplan.es/es/events/sant-silvestre-denia-denia-alicante-es-2026-12-29"
+   "source": "https://sportplan.es/es/events/sant-silvestre-denia-denia-alicante-es-2026-12-29",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "San Silvestre Dombenitense",
@@ -9042,7 +9443,9 @@
    "official": false,
    "note": "",
    "id": "san-silvestre-dombenitense-2026-1230",
-   "source": "https://sportplan.es/es/events/san-silvestre-dombenitense-don-benito-badajoz-es-2026-12-30"
+   "source": "https://sportplan.es/es/events/san-silvestre-dombenitense-don-benito-badajoz-es-2026-12-30",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "San Silvestre Huelva Onupolis",
@@ -9055,7 +9458,9 @@
    "official": false,
    "note": "",
    "id": "san-silvestre-huelva-onupolis-2026-1230",
-   "source": "https://sportplan.es/es/events/san-silvestre-huelva-onupolis-huelva-es-2026-12-30"
+   "source": "https://sportplan.es/es/events/san-silvestre-huelva-onupolis-huelva-es-2026-12-30",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "San Silvestre Melilla",
@@ -9068,7 +9473,9 @@
    "official": false,
    "note": "",
    "id": "san-silvestre-melilla-2026-1230",
-   "source": "https://sportplan.es/es/events/san-silvestre-melilla-melilla-es-2026-12-30"
+   "source": "https://sportplan.es/es/events/san-silvestre-melilla-melilla-es-2026-12-30",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "San Silvestre Popular Valenciana",
@@ -9083,7 +9490,9 @@
    "official": false,
    "note": "",
    "id": "san-silvestre-popular-valenciana-2026-1230",
-   "source": "https://sportplan.es/es/events/san-silvestre-popular-valenciana-valencia-es-2026-12-30"
+   "source": "https://sportplan.es/es/events/san-silvestre-popular-valenciana-valencia-es-2026-12-30",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "San Silvestre de Calahorra",
@@ -9096,7 +9505,9 @@
    "official": false,
    "note": "",
    "id": "san-silvestre-de-calahorra-2026-1230",
-   "source": "https://sportplan.es/es/events/san-silvestre-de-calahorra-calahorra-la-rioja-es-2026-12-30"
+   "source": "https://sportplan.es/es/events/san-silvestre-de-calahorra-calahorra-la-rioja-es-2026-12-30",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "San Silvestre de Llanera",
@@ -9109,7 +9520,9 @@
    "official": false,
    "note": "",
    "id": "san-silvestre-de-llanera-2026-1230",
-   "source": "https://sportplan.es/es/events/san-silvestre-de-llanera-llanera-asturias-es-2026-12-30"
+   "source": "https://sportplan.es/es/events/san-silvestre-de-llanera-llanera-asturias-es-2026-12-30",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "San Silvestre de Mérida",
@@ -9122,7 +9535,9 @@
    "official": false,
    "note": "",
    "id": "san-silvestre-de-merida-2026-1230",
-   "source": "https://sportplan.es/es/events/san-silvestre-de-merida-merida-badajoz-es-2026-12-30"
+   "source": "https://sportplan.es/es/events/san-silvestre-de-merida-merida-badajoz-es-2026-12-30",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "San Silvestre de Torremolinos",
@@ -9135,7 +9550,9 @@
    "official": false,
    "note": "",
    "id": "san-silvestre-de-torremolinos-2026-1230",
-   "source": "https://sportplan.es/es/events/san-silvestre-de-torremolinos-torremolinos-malaga-es-2026-12-30"
+   "source": "https://sportplan.es/es/events/san-silvestre-de-torremolinos-torremolinos-malaga-es-2026-12-30",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "San Silvestre Vallecana",
@@ -9153,7 +9570,10 @@
    "price": "27 €",
    "km": "10 km",
    "id": "san-silvestre-vallecana-2026",
-   "official_guess": "https://www.sansilvestrevallecana.com/"
+   "official_guess": "https://www.sansilvestrevallecana.com/",
+   "checkedAt": "2026-10-22",
+   "banner": "https://sansilvestrevallecana.com/assets/img/redes_sociales.jpg",
+   "changedAt": "2026-10-22"
   },
   {
    "name": "B100 Cursa dels Nassos",
@@ -9171,7 +9591,11 @@
    "km": "10 km · 5 km",
    "price": "18,50 €",
    "id": "cursa-nassos-2026",
-   "official_guess": "https://www.cursadenassos.barcelona/ca"
+   "official_guess": "https://www.cursadenassos.barcelona/ca",
+   "checkedAt": "2026-10-22",
+   "regulation": "https://cursadenassos.barcelona/es/la-carrera/reglamento2",
+   "banner": "https://cursadenassos.barcelona/media/galleries/medium/bannerweb23.png",
+   "changedAt": "2026-10-22"
   },
   {
    "name": "San Silvestre de Talavera",
@@ -9182,11 +9606,15 @@
    "distances": [
     "Popular"
    ],
-   "url": "",
-   "official": false,
+   "url": "https://carreraspopulares.com/carrera/san-silvestre-talavera-de-la-reina",
+   "official": true,
    "note": "Salida en avenida Juan Carlos I.",
    "id": "san-silvestre-talavera-2026",
-   "source": "https://www.festivalesdeespana.com/festival/xliii-san-silvestre-de-talavera-de-la-reina-talavera-de-la-reina"
+   "source": "https://www.festivalesdeespana.com/festival/xliii-san-silvestre-de-talavera-de-la-reina-talavera-de-la-reina",
+   "checkedAt": "2026-10-22",
+   "nosite": false,
+   "banner": "https://carreraspopulares.com/calendario/carteles_def/cartel_def_3.jpg",
+   "changedAt": "2026-10-22"
   },
   {
    "name": "Circuit Vall de Segó Carreres Populars",
@@ -9201,9 +9629,16 @@
    "source": "https://running.life/en/event/circuit-vall-de-sego-carreres-populars",
    "official_guess": "https://sportmaniacs.com/en/races/circuit-vall-de-sego-carreres-populars-2026",
    "id": "circuit-vall-de-sego-carreres-populars-2026-1231",
-   "official": false,
-   "url": "",
-   "addedAt": "2026-10-21"
+   "official": true,
+   "url": "https://sportmaniacs.com/en/services/inscription/circuit-vall-de-sego-carreres-populars-2026",
+   "addedAt": "2026-10-21",
+   "checkedAt": "2026-10-22",
+   "nosite": false,
+   "signup": true,
+   "regulation": "https://sportmaniacs.com/en/races/circuit-vall-de-sego-carreres-populars-2026#rules",
+   "banner": "https://sportmaniacs.com/images/share/sportmaniacs-race.jpg",
+   "km": "10 km · 7,2 km · 6 km · 5 km",
+   "changedAt": "2026-10-22"
   },
   {
    "name": "Cursa Sant Silvestre Canovelles",
@@ -9220,7 +9655,8 @@
    "id": "cursa-sant-silvestre-canovelles-2026-1231",
    "official": false,
    "url": "",
-   "addedAt": "2026-10-21"
+   "addedAt": "2026-10-21",
+   "checkedAt": "2026-10-22"
   },
   {
    "name": "Cursa Sant Silvestre Ciutat d'Inca",
@@ -9233,7 +9669,9 @@
    "official": false,
    "note": "",
    "id": "cursa-sant-silvestre-ciutat-d-inca-2026-1231",
-   "source": "https://sportplan.es/es/events/cursa-sant-silvestre-ciutat-d-inca-inca-islas-baleares-es-2026-12-31"
+   "source": "https://sportplan.es/es/events/cursa-sant-silvestre-ciutat-d-inca-inca-islas-baleares-es-2026-12-31",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "Cursa Sant Silvestre de Tarragona",
@@ -9246,7 +9684,9 @@
    "official": false,
    "note": "",
    "id": "cursa-sant-silvestre-de-tarragona-2026-1231",
-   "source": "https://sportplan.es/es/events/cursa-sant-silvestre-de-tarragona-tarragona-es-2026-12-31"
+   "source": "https://sportplan.es/es/events/cursa-sant-silvestre-de-tarragona-tarragona-es-2026-12-31",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "Cursa de Cap d'Any de Sabadell",
@@ -9263,7 +9703,8 @@
    "id": "cursa-de-cap-d-any-de-sabadell-2026-1231",
    "official": false,
    "url": "",
-   "addedAt": "2026-10-21"
+   "addedAt": "2026-10-21",
+   "checkedAt": "2026-10-22"
   },
   {
    "name": "La Sant Silvestre Torrenca",
@@ -9276,7 +9717,9 @@
    "official": false,
    "note": "",
    "id": "la-sant-silvestre-torrenca-2026-1231",
-   "source": "https://sportplan.es/es/events/la-sant-silvestre-torrenca-torredembarra-tarragona-es-2026-12-31"
+   "source": "https://sportplan.es/es/events/la-sant-silvestre-torrenca-torredembarra-tarragona-es-2026-12-31",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "San Silvestre A Coruña",
@@ -9291,7 +9734,9 @@
    "official": false,
    "note": "",
    "id": "san-silvestre-a-coruna-2026-1231",
-   "source": "https://sportplan.es/es/events/san-silvestre-a-coruna-a-coruna-es-2026-12-31"
+   "source": "https://sportplan.es/es/events/san-silvestre-a-coruna-a-coruna-es-2026-12-31",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "San Silvestre Alcarreña",
@@ -9304,7 +9749,9 @@
    "official": false,
    "note": "",
    "id": "san-silvestre-alcarrena-2026-1231",
-   "source": "https://sportplan.es/es/events/san-silvestre-alcarrena-azuqueca-de-henares-guadalajara-es-2026-12-31"
+   "source": "https://sportplan.es/es/events/san-silvestre-alcarrena-azuqueca-de-henares-guadalajara-es-2026-12-31",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "San Silvestre Alcoyana",
@@ -9317,7 +9764,9 @@
    "official": false,
    "note": "",
    "id": "san-silvestre-alcoyana-2026-1231",
-   "source": "https://sportplan.es/es/events/san-silvestre-alcoyana-alcoi-alicante-es-2026-12-31"
+   "source": "https://sportplan.es/es/events/san-silvestre-alcoyana-alcoi-alicante-es-2026-12-31",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "San Silvestre Alpedreteña",
@@ -9330,7 +9779,9 @@
    "official": false,
    "note": "",
    "id": "san-silvestre-alpedretena-2026-1231",
-   "source": "https://sportplan.es/es/events/san-silvestre-alpedretena-alpedrete-madrid-es-2026-12-31"
+   "source": "https://sportplan.es/es/events/san-silvestre-alpedretena-alpedrete-madrid-es-2026-12-31",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "San Silvestre Antequerana",
@@ -9343,7 +9794,9 @@
    "official": false,
    "note": "",
    "id": "san-silvestre-antequerana-2026-1231",
-   "source": "https://sportplan.es/es/events/san-silvestre-antequerana-antequera-malaga-es-2026-12-31"
+   "source": "https://sportplan.es/es/events/san-silvestre-antequerana-antequera-malaga-es-2026-12-31",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "San Silvestre Arandina",
@@ -9356,7 +9809,9 @@
    "official": false,
    "note": "",
    "id": "san-silvestre-arandina-2026-1231",
-   "source": "https://sportplan.es/es/events/san-silvestre-arandina-aranda-de-duero-burgos-es-2026-12-31"
+   "source": "https://sportplan.es/es/events/san-silvestre-arandina-aranda-de-duero-burgos-es-2026-12-31",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "San Silvestre Barakaldesa",
@@ -9369,7 +9824,9 @@
    "official": false,
    "note": "",
    "id": "san-silvestre-barakaldesa-2026-1231",
-   "source": "https://sportplan.es/es/events/san-silvestre-barakaldesa-barakaldo-bizkaia-es-2026-12-31"
+   "source": "https://sportplan.es/es/events/san-silvestre-barakaldesa-barakaldo-bizkaia-es-2026-12-31",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "San Silvestre Bastetana",
@@ -9382,7 +9839,9 @@
    "official": false,
    "note": "",
    "id": "san-silvestre-bastetana-2026-1231",
-   "source": "https://sportplan.es/es/events/san-silvestre-bastetana-baza-granada-es-2026-12-31"
+   "source": "https://sportplan.es/es/events/san-silvestre-bastetana-baza-granada-es-2026-12-31",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "San Silvestre Bañezana",
@@ -9395,7 +9854,9 @@
    "official": false,
    "note": "",
    "id": "san-silvestre-banezana-2026-1231",
-   "source": "https://sportplan.es/es/events/san-silvestre-banezana-la-baneza-leon-es-2026-12-31"
+   "source": "https://sportplan.es/es/events/san-silvestre-banezana-la-baneza-leon-es-2026-12-31",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "San Silvestre Burlada",
@@ -9408,7 +9869,9 @@
    "official": false,
    "note": "",
    "id": "san-silvestre-burlada-2026-1231",
-   "source": "https://sportplan.es/es/events/san-silvestre-burlada-burlada-navarra-es-2026-12-31"
+   "source": "https://sportplan.es/es/events/san-silvestre-burlada-burlada-navarra-es-2026-12-31",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "San Silvestre Cidiana",
@@ -9421,7 +9884,9 @@
    "official": false,
    "note": "",
    "id": "san-silvestre-cidiana-2026-1231",
-   "source": "https://sportplan.es/es/events/san-silvestre-cidiana-burgos-es-2026-12-31"
+   "source": "https://sportplan.es/es/events/san-silvestre-cidiana-burgos-es-2026-12-31",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "San Silvestre Ciudad de Arrecife",
@@ -9434,7 +9899,9 @@
    "official": false,
    "note": "",
    "id": "san-silvestre-ciudad-de-arrecife-2026-1231",
-   "source": "https://sportplan.es/es/events/san-silvestre-ciudad-de-arrecife-arrecife-las-palmas-es-2026-12-31"
+   "source": "https://sportplan.es/es/events/san-silvestre-ciudad-de-arrecife-arrecife-las-palmas-es-2026-12-31",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "San Silvestre Colmenar Viejo",
@@ -9446,12 +9913,19 @@
     "10K",
     "6K"
    ],
-   "url": "",
-   "official": false,
+   "url": "https://www.sansilvestrecolmenarviejo.com/",
+   "official": true,
    "note": "",
    "id": "san-silvestre-colmenar-viejo-2026-1231",
    "source": "https://running.life/es/carrera/san-silvestre-colmenar-viejo",
-   "official_guess": "https://www.sansilvestrecolmenarviejo.com"
+   "official_guess": "https://www.sansilvestrecolmenarviejo.com",
+   "checkedAt": "2026-10-22",
+   "nosite": false,
+   "regulation": "https://www.sansilvestrecolmenarviejo.com/ssc-reglamento",
+   "banner": "https://deporticket.blob.core.windows.net/awebs/san-silvestre-colmenar-viejo/cartel--sscv-2025-638962940991956950.jpg",
+   "price": "8–30 €",
+   "km": "10 km · 6 km",
+   "changedAt": "2026-10-22"
   },
   {
    "name": "San Silvestre Complutense",
@@ -9467,7 +9941,8 @@
    "note": "",
    "id": "san-silvestre-complutense-2026-1231",
    "source": "https://sportplan.es/es/events/san-silvestre-complutense-alcala-de-henares-madrid-es-2026-12-31",
-   "official_guess": "https://www.deporticket.com/web-evento/13959-san-silvestre-complutense"
+   "official_guess": "https://www.deporticket.com/web-evento/13959-san-silvestre-complutense",
+   "checkedAt": "2026-10-22"
   },
   {
    "name": "San Silvestre Cordobesa",
@@ -9480,7 +9955,9 @@
    "official": false,
    "note": "",
    "id": "san-silvestre-cordobesa-2026-1231",
-   "source": "https://sportplan.es/es/events/san-silvestre-cordobesa-cordoba-es-2026-12-31"
+   "source": "https://sportplan.es/es/events/san-silvestre-cordobesa-cordoba-es-2026-12-31",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "San Silvestre Corraliega",
@@ -9493,7 +9970,9 @@
    "official": false,
    "note": "",
    "id": "san-silvestre-corraliega-2026-1231",
-   "source": "https://sportplan.es/es/events/san-silvestre-corraliega-corrales-d-buelna-cantabria-es-2026-12-31"
+   "source": "https://sportplan.es/es/events/san-silvestre-corraliega-corrales-d-buelna-cantabria-es-2026-12-31",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "San Silvestre Cosladeña",
@@ -9506,7 +9985,9 @@
    "official": false,
    "note": "",
    "id": "san-silvestre-cosladena-2026-1231",
-   "source": "https://sportplan.es/es/events/san-silvestre-cosladena-coslada-madrid-es-2026-12-31"
+   "source": "https://sportplan.es/es/events/san-silvestre-cosladena-coslada-madrid-es-2026-12-31",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "San Silvestre Donostiarra",
@@ -9519,7 +10000,9 @@
    "official": false,
    "note": "",
    "id": "san-silvestre-donostiarra-2026-1231",
-   "source": "https://sportplan.es/es/events/san-silvestre-donostiarra-donostia-san-sebastian-gipuzkoa-es-2026-12-31"
+   "source": "https://sportplan.es/es/events/san-silvestre-donostiarra-donostia-san-sebastian-gipuzkoa-es-2026-12-31",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "San Silvestre Eldense",
@@ -9532,7 +10015,9 @@
    "official": false,
    "note": "",
    "id": "san-silvestre-eldense-2026-1231",
-   "source": "https://sportplan.es/es/events/san-silvestre-de-eldense-elda-alicante-es-2026-12-31"
+   "source": "https://sportplan.es/es/events/san-silvestre-de-eldense-elda-alicante-es-2026-12-31",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "San Silvestre Gallarda",
@@ -9545,7 +10030,9 @@
    "official": false,
    "note": "",
    "id": "san-silvestre-gallarda-2026-1231",
-   "source": "https://sportplan.es/es/events/san-silvestre-gallarda-marchamalo-guadalajara-es-2026-12-31"
+   "source": "https://sportplan.es/es/events/san-silvestre-gallarda-marchamalo-guadalajara-es-2026-12-31",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "San Silvestre Golden Mile",
@@ -9558,7 +10045,9 @@
    "official": false,
    "note": "",
    "id": "san-silvestre-golden-mile-2026-1231",
-   "source": "https://sportplan.es/es/events/san-silvestre-golden-mile-las-americas-arona-tenerife-es-2026-12-31"
+   "source": "https://sportplan.es/es/events/san-silvestre-golden-mile-las-americas-arona-tenerife-es-2026-12-31",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "San Silvestre Hondarribia",
@@ -9571,7 +10060,9 @@
    "official": false,
    "note": "",
    "id": "san-silvestre-hondarribia-2026-1231",
-   "source": "https://sportplan.es/es/events/san-silvestre-sport-mundi-hondarribia-gipuzkoa-es-2026-12-31"
+   "source": "https://sportplan.es/es/events/san-silvestre-sport-mundi-hondarribia-gipuzkoa-es-2026-12-31",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "San Silvestre Ilicitana",
@@ -9584,7 +10075,9 @@
    "official": false,
    "note": "",
    "id": "san-silvestre-ilicitana-2026-1231",
-   "source": "https://sportplan.es/es/events/san-silvestre-ilicitana-elche-alicante-es-2026-12-31"
+   "source": "https://sportplan.es/es/events/san-silvestre-ilicitana-elche-alicante-es-2026-12-31",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "San Silvestre Illescana",
@@ -9597,7 +10090,9 @@
    "official": false,
    "note": "",
    "id": "san-silvestre-illescana-2026-1231",
-   "source": "https://sportplan.es/es/events/san-silvestre-illescana-illescas-toledo-es-2026-12-31"
+   "source": "https://sportplan.es/es/events/san-silvestre-illescana-illescas-toledo-es-2026-12-31",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "San Silvestre Internacional Crevillentina",
@@ -9608,12 +10103,17 @@
    "distances": [
     "21K"
    ],
-   "url": "",
-   "official": false,
+   "url": "https://www.chiplevante.com/es/prueba/san-silvestre-internacional-crevillentina-1004-2026",
+   "official": true,
    "note": "",
    "id": "san-silvestre-internacional-crevillentina-2026-1231",
    "source": "https://sportplan.es/es/events/san-silvestre-internacional-crevillentina-crevillent-alicante-es-2026-12-31",
-   "official_guess": "https://www.chiplevante.com/es/prueba/san-silvestre-internacional-crevillentina-1004-2026"
+   "official_guess": "https://www.chiplevante.com/es/prueba/san-silvestre-internacional-crevillentina-1004-2026",
+   "checkedAt": "2026-10-22",
+   "nosite": false,
+   "regulation": "https://www.chiplevante.com/es/prueba/files/documentacion/REGLAMENTOSSCREVILLENTE26.pdf",
+   "km": "10 km",
+   "changedAt": "2026-10-22"
   },
   {
    "name": "San Silvestre Jerezana",
@@ -9626,7 +10126,9 @@
    "official": false,
    "note": "",
    "id": "san-silvestre-jerezana-2026-1231",
-   "source": "https://sportplan.es/es/events/san-silvestre-jerezana-jerez-de-la-frontera-cadiz-es-2026-12-31"
+   "source": "https://sportplan.es/es/events/san-silvestre-jerezana-jerez-de-la-frontera-cadiz-es-2026-12-31",
+   "checkedAt": "2026-10-22",
+   "nosite": true
   },
   {
    "name": "San Silvestre Lagunera",
@@ -10094,7 +10596,8 @@
    "note": "",
    "id": "san-silvestre-de-las-rozas-2026-1231",
    "source": "https://sportplan.es/es/events/san-silvestre-de-las-rozas-las-rozas-madrid-es-2026-12-31",
-   "official_guess": "https://www.deporticket.com/web-evento/13904-xv-san-silvestre-de-las-rozas"
+   "official_guess": "https://www.deporticket.com/web-evento/13904-xv-san-silvestre-de-las-rozas",
+   "checkedAt": "2026-10-22"
   },
   {
    "name": "San Silvestre de Lekeitio",
@@ -11323,286 +11826,38 @@
   }
  ],
  "lastRun": {
-  "at": "2026-10-22T06:08:27+00:00",
+  "at": "2026-10-22T08:51:34+00:00",
   "added": [],
   "updated": {
-   "paleotrail-loarre-2026-1114": [
-    "url",
-    "banner",
-    "km"
-   ],
-   "volta-a-peu-port-de-catarroja-2026-1114": [
-    "url",
-    "regulation",
-    "banner",
-    "price",
-    "time",
-    "km"
-   ],
-   "maraton-toledo-2026": [
-    "banner"
-   ],
-   "10k-caravaca-de-la-cruz-2026-1115": [
-    "url",
-    "regulation",
-    "price",
-    "km"
-   ],
-   "10k-la-puebla-de-almoradiel-2026-1115": [
-    "url",
-    "regulation",
-    "price",
-    "km"
-   ],
-   "10k-solidaria-de-marines-2026-1115": [
-    "url",
-    "regulation"
-   ],
-   "30k-ciutat-de-sagunt-2026-1115": [
+   "cursa-del-club-natacio-sabadell-2026-1213": [
     "url",
     "regulation",
     "banner",
     "price",
     "km"
    ],
-   "5k10k-vic-2026-1115": [
-    "url",
-    "regulation",
-    "banner",
-    "price",
-    "km"
-   ],
-   "bilboko-herri-krosa-2026-1115": [
-    "url",
-    "regulation",
-    "km"
-   ],
-   "carreira-popular-da-valenza-2026-1115": [
-    "url",
-    "regulation",
-    "banner",
-    "km"
-   ],
-   "carrera-fundacion-marco-asensio-2026-1115": [
+   "mar-menor-running-challenge-2026-1213": [
     "url",
     "regulation",
     "price",
     "time",
     "km"
    ],
-   "carrera-urbana-rafael-del-riego-2026-1115": [
-    "url",
-    "regulation",
-    "banner",
-    "km"
-   ],
-   "carrera-de-empresas-murcia-2026-1115": [
-    "url",
-    "regulation",
-    "price",
-    "km"
-   ],
-   "carrera-del-telefono-de-la-esperanza-2026-1115": [
-    "url",
-    "banner",
-    "km"
-   ],
-   "cursa-popular-sant-marti-2026-1115": [
-    "url",
-    "regulation",
-    "banner",
-    "time",
-    "km"
-   ],
-   "cursa-popular-vila-de-sant-boi-2026-1115": [
-    "url",
-    "banner",
-    "km"
-   ],
-   "cursa-solidaria-autoritat-portuaria-2026-1115": [
-    "url",
-    "regulation",
-    "price",
-    "km"
-   ],
-   "la-palauenca-2026-1115": [
-    "url",
-    "regulation",
-    "banner",
-    "price",
-    "km"
-   ],
-   "media-maraton-comarca-de-valdejalon-2026-1115": [
-    "url",
-    "banner",
-    "time",
-    "km"
-   ],
-   "media-maraton-lerida-2026-1115": [
-    "url",
-    "banner",
-    "km"
-   ],
-   "media-maraton-marchena-paradas-2026-1115": [
-    "url",
-    "banner"
-   ],
-   "media-maraton-reserva-de-la-biosfera-de-monfrague-2026-1115": [
-    "url",
-    "regulation",
-    "banner",
-    "price",
-    "time",
-    "km"
-   ],
-   "media-maraton-de-jaen-2026-1115": [
-    "url",
-    "regulation",
-    "banner",
-    "price",
-    "time",
-    "km"
-   ],
-   "media-maraton-de-melilla-2026-1115": [
-    "url",
-    "banner",
-    "km"
-   ],
-   "medio-maraton-ciudad-de-orihuela-2026-1115": [
-    "url",
-    "regulation",
-    "km"
-   ],
-   "medio-maraton-elvas-badajoz-2026-1115": [
-    "url",
-    "banner"
-   ],
-   "mitja-marato-roquette-benifaio-2026-1115": [
-    "url",
-    "regulation"
-   ],
-   "prueba-de-fondo-villa-romana-de-salar-2026-1115": [
-    "url",
-    "regulation",
-    "banner",
-    "price",
-    "km"
-   ],
-   "pujada-al-castell-de-xativa-2026-1115": [
-    "url",
-    "regulation",
-    "banner",
-    "price",
-    "time",
-    "km"
-   ],
-   "vulcan-race-garachico-2026-1115": [
-    "url",
-    "regulation",
-    "banner",
-    "price",
-    "km"
-   ],
-   "10k-y-5k-mislata-2026-1115": [
-    "url",
-    "regulation"
-   ],
-   "ponle-freno-madrid-2026": [
-    "url",
-    "banner"
-   ],
-   "carrera-popular-madrid-tambien-solidario-2026-1115": [
-    "url",
-    "regulation",
-    "banner",
-    "price",
-    "time",
-    "km"
-   ],
-   "carrera-popular-running-pinto-2026-1115": [
+   "medio-maraton-de-navalmoral-de-la-mata-2026-1213": [
     "url",
     "banner",
     "price",
     "km"
    ],
-   "10k-de-sarinena-2026-1121": [
-    "url",
-    "banner",
-    "price",
-    "km"
-   ],
-   "10kcpc-carrera-solidaria-puerto-de-cartagena-2026-1121": [
-    "url",
-    "regulation",
-    "price",
-    "km"
-   ],
-   "azkoitiko-herri-lasterketa-2026-1121": [
-    "url",
-    "banner"
-   ],
-   "bkt-larrabetzu-2026-1121": [
-    "url",
-    "regulation",
-    "banner",
-    "km"
-   ],
-   "benidorm-half-2026-1121": [
-    "url",
-    "banner",
-    "km"
-   ],
-   "cursa-fosca-2026-1121": [
-    "url",
-    "regulation",
-    "banner",
-    "price",
-    "time",
-    "km"
-   ],
-   "cursa-de-sa-sobrassada-2026-1121": [
-    "url",
-    "regulation",
-    "banner",
-    "price",
-    "time",
-    "km"
-   ],
-   "milla-cidade-de-vigo-e-10k-relevos-2026-1121": [
-    "url",
-    "regulation",
-    "price",
-    "km"
-   ],
-   "10k-montbrio-del-camp-2026-1122": [
-    "url",
-    "banner",
-    "time",
-    "km"
-   ],
-   "5k-10k-villa-de-castuera-2026-1122": [
-    "url",
-    "banner",
-    "price",
-    "km"
-   ],
-   "cxm-toleta-2026-1122": [
-    "url",
-    "regulation",
-    "banner",
-    "price",
-    "km"
-   ],
-   "carreira-pedestre-de-ribadavia-2026-1122": [
+   "memorial-adolfo-ros-volta-a-ria-2026-1213": [
     "url"
    ],
-   "carrera-marcha-solidaria-a-favor-de-acodip-2026-1122": [
+   "mitja-marato-i-10k-ciutat-de-vilanova-2026-1213": [
     "url",
     "regulation",
-    "price",
     "km"
    ],
-   "carrera-contra-el-cancer-de-pancreas-madrid-2026-1122": [
+   "pujada-a-la-seu-vella-2026-1213": [
     "url",
     "regulation",
     "banner",
@@ -11610,316 +11865,195 @@
     "time",
     "km"
    ],
-   "carrera-popular-almenara-de-tormes-enusa-2026-1122": [
-    "url",
-    "regulation",
-    "price",
-    "km"
-   ],
-   "carrera-popular-almendral-2026-1122": [
+   "runcancer-picassent-2026-1213": [
     "url",
     "banner",
-    "price",
+    "km"
+   ],
+   "sarria-10km-os-mais-rapidos-2026-1213": [
+    "url",
+    "regulation",
+    "banner",
+    "km"
+   ],
+   "trofeo-jose-cano-2026-1213": [
+    "url",
+    "banner",
     "time",
     "km"
    ],
-   "carrera-solidaria-auxiliar-conservera-2026-1122": [
+   "carrera-popular-joaquinesca-2026-1213": [
     "url",
     "regulation",
     "price",
-    "time",
     "km"
    ],
-   "carrera-y-marcha-contra-el-cancer-de-mama-2026-1122": [
-    "url",
-    "regulation",
-    "km"
-   ],
-   "carrera-de-fondo-peligros-2026-1122": [
-    "url",
-    "regulation",
-    "price",
-    "time",
-    "km"
-   ],
-   "cursa-entrepobles-la-garrotxa-2026-1122": [
+   "carrera-de-navidad-villanueva-de-la-canada-2026-1213": [
     "url",
     "banner",
-    "price",
     "km"
    ],
-   "cursa-festa-de-l-esport-son-fusteret-2026-1122": [
-    "url",
-    "price",
-    "time",
-    "km"
-   ],
-   "cursa-on-deu-va-perdre-l-espardenya-2026-1122": [
-    "url",
-    "regulation",
-    "price",
-    "km"
-   ],
-   "cursa-solidaria-per-a-la-infancia-2026-1122": [
+   "bkt-zamudio-2026-1219": [
     "url",
     "regulation",
     "banner",
-    "price",
     "km"
    ],
-   "cursa-de-parets-del-valles-2026-1122": [
-    "url",
-    "banner",
-    "price",
-    "km"
-   ],
-   "dinosauris-moncada-10k-2026-1122": [
-    "url",
-    "regulation"
-   ],
-   "la-mitja-del-maresme-2026-1122": [
-    "url",
-    "regulation",
-    "banner",
-    "price",
-    "km"
-   ],
-   "media-maraton-ciudad-de-ceuta-2026-1122": [
-    "url",
-    "regulation",
-    "price",
-    "km"
-   ],
-   "media-maraton-ciudad-de-roquetas-2026-1122": [
-    "url",
-    "banner",
-    "price",
-    "km"
-   ],
-   "media-maraton-holiday-world-benalmadena-2026-1122": [
-    "url",
-    "km"
-   ],
-   "media-maraton-jumilla-ciudad-del-vino-2026-1122": [
+   "carrera-de-navidad-de-soto-del-real-2026-1219": [
     "url",
     "regulation",
     "price",
     "time",
     "km"
    ],
-   "media-maraton-villa-de-miguelturra-2026-1122": [
+   "papanoelada-runners-vigo-2026-1219": [
     "url",
     "regulation",
+    "price",
+    "km"
+   ],
+   "10k-y-5k-nocturno-san-mateo-de-gallego-2026-1219": [
+    "url",
+    "regulation",
+    "km"
+   ],
+   "san-silvestre-de-hortaleza-2026-1219": [
+    "url",
+    "regulation",
+    "banner",
     "price",
     "time",
     "km"
    ],
-   "media-maraton-de-jarandilla-de-la-vera-2026-1122": [
+   "cursa-de-nadal-sant-sadurni-d-anoia-2026-1220": [
+    "url",
+    "regulation",
+    "banner",
+    "price",
+    "km"
+   ],
+   "descoberta-run-fontcoberta-2026-1220": [
+    "url",
+    "regulation",
+    "price",
+    "km"
+   ],
+   "guadiaton-2026-1220": [
+    "url",
+    "regulation",
+    "banner",
+    "km"
+   ],
+   "la-media-de-vitoria-gasteiz-2026-1220": [
+    "url",
+    "regulation",
+    "price",
+    "km"
+   ],
+   "media-maraton-ciudad-de-cieza-2026-1220": [
+    "url",
+    "regulation",
+    "price",
+    "km"
+   ],
+   "media-maraton-ciudad-de-tacoronte-2026-1220": [
+    "url",
+    "regulation",
+    "banner",
+    "price",
+    "km"
+   ],
+   "media-maraton-villa-de-aspe-2026-1220": [
+    "url",
+    "regulation",
+    "km"
+   ],
+   "mou-te-per-l-esclerosi-multiple-2026-1220": [
+    "url",
+    "banner",
+    "km"
+   ],
+   "quarta-i-mitja-marato-paiporta-picanya-2026-1220": [
+    "url",
+    "banner",
+    "km"
+   ],
+   "san-pintena-2026-1220": [
+    "url",
+    "banner",
+    "km"
+   ],
+   "carrera-popular-villa-de-aranjuez-2026-1220": [
     "url",
     "banner",
     "price",
     "km"
    ],
-   "mitja-marato-espirall-2026-1122": [
-    "url",
-    "banner",
-    "price",
-    "km"
-   ],
-   "mitja-marato-samaruc-2026-1122": [
+   "carrera-de-navidad-de-cartama-2026-1220": [
     "url",
     "banner"
    ],
-   "mitja-marato-de-porreres-2026-1122": [
+   "cursa-de-l-indiot-de-mollerussa-2026-1226": [
     "url",
     "regulation",
     "price",
     "time",
     "km"
    ],
-   "barbie-run-alcobendas-2026-1122": [
-    "url",
-    "price",
-    "km"
-   ],
-   "corre-por-un-mundo-sostenible-2026-1122": [
-    "url",
-    "regulation",
-    "banner",
-    "price",
-    "time",
-    "km"
-   ],
-   "tarraco-health-race-2026-1122": [
-    "url",
-    "banner",
-    "price",
-    "km"
-   ],
-   "carrera-entre-dinosaurios-villa-de-igea-2026-1128": [
+   "st-esteve-run-2026-1226": [
     "url",
     "banner",
     "km"
    ],
-   "playa-blanca-music-run-night-2026-1128": [
+   "runcancer-alcasser-2026-1227": [
     "url",
     "banner",
     "km"
    ],
-   "10k-dulces-de-casinos-2026-1128": [
-    "url",
-    "regulation"
-   ],
-   "carrera-y-marcha-popular-solidaria-cerro-de-la-marmota-2026-1129": [
+   "san-silvestre-praviana-2026-1227": [
     "url",
     "regulation",
     "price",
     "km"
    ],
-   "desafio-sarrio-2026-1129": [
+   "san-silvestre-de-guadalajara-2026-1227": [
+    "url",
+    "banner",
+    "km"
+   ],
+   "sant-silvestre-racc-badalona-2026-1227": [
     "url",
     "regulation",
     "price",
     "km"
    ],
-   "marato-i-mitja-relleus-vinyols-2026-1129": [
+   "circuit-vall-de-sego-carreres-populars-2026-1231": [
     "url",
+    "regulation",
     "banner",
-    "price"
+    "km"
    ],
-   "maraton-internacional-elche-alicante-2026-1129": [
+   "san-silvestre-internacional-crevillentina-2026-1231": [
+    "url",
+    "regulation",
+    "km"
+   ],
+   "san-silvestre-vallecana-2026": [
+    "banner"
+   ],
+   "cursa-nassos-2026": [
+    "regulation",
+    "banner"
+   ],
+   "san-silvestre-talavera-2026": [
     "url",
     "banner"
    ],
-   "media-maraton-de-guadalajara-2026-1129": [
-    "url",
-    "regulation",
-    "price",
-    "km"
-   ],
-   "mitja-marato-union-alcoyana-2026-1129": [
-    "url",
-    "regulation",
-    "banner",
-    "km"
-   ],
-   "ponle-freno-las-palmas-2026-1129": [
-    "url",
-    "banner",
-    "km"
-   ],
-   "jean-bouin-2026": [
-    "regulation",
-    "banner",
-    "price",
-    "km"
-   ],
-   "k42-canarias-anaga-marathon-2026-1204": [
-    "url",
-    "regulation",
-    "km"
-   ],
-   "maraton-lanzarote-2026": [
-    "url",
-    "banner"
-   ],
-   "maraton-valencia-2026": [
-    "banner"
-   ],
-   "10k-sant-mateu-2026-1206": [
-    "url"
-   ],
-   "carrera-del-pavo-y-papa-noel-molins-2026-1206": [
-    "url",
-    "regulation",
-    "price",
-    "time",
-    "km"
-   ],
-   "etxebarri-xtreme-2026-1206": [
-    "url",
-    "regulation",
-    "banner",
-    "time",
-    "km"
-   ],
-   "la-cizur-gares-2026-1206": [
-    "url",
-    "banner"
-   ],
-   "la-mitja-figueras-2026-1206": [
-    "url",
-    "regulation",
-    "banner",
-    "km"
-   ],
-   "la-mitja-figueres-2026-1206": [
-    "url",
-    "regulation",
-    "banner",
-    "km"
-   ],
-   "media-maraton-villa-de-torre-pacheco-2026-1206": [
-    "url",
-    "regulation",
-    "price",
-    "time",
-    "km"
-   ],
-   "10k-de-laviana-2026-1206": [
-    "url",
-    "banner",
-    "km"
-   ],
-   "trofeo-akiles-2026-1206": [
-    "url",
-    "banner",
-    "time",
-    "km"
-   ],
-   "carrera-de-s-hostal-de-montuiri-2026-1208": [
-    "url",
-    "regulation",
-    "price",
-    "time",
-    "km"
-   ],
-   "cursa-cec-collserola-2026-1212": [
-    "url",
-    "regulation",
-    "km"
-   ],
-   "maraton-corralejo-grandes-playas-2026-1212": [
+   "san-silvestre-colmenar-viejo-2026-1231": [
     "url",
     "regulation",
     "banner",
     "price",
-    "km"
-   ],
-   "maraton-elche-alicante-2026": [
-    "banner"
-   ],
-   "medio-maraton-sevilla-2026": [
-    "banner"
-   ],
-   "10k-la-vall-de-sego-quart-de-les-valls-2026-1213": [
-    "url",
-    "regulation",
-    "banner",
-    "price",
-    "km"
-   ],
-   "carrera-contra-el-cancer-de-pancreas-barcelona-2026-1213": [
-    "url",
-    "regulation",
-    "banner",
-    "price",
-    "km"
-   ],
-   "cursa-popular-de-la-sagrera-2026-1213": [
-    "url",
-    "regulation",
-    "banner",
     "km"
    ]
   },
