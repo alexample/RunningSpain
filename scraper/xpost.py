@@ -133,10 +133,11 @@ def send_macrodroid(hook: str, todo: list, st: dict) -> int:
         text = compose(r, con_enlace=config.MACRO_CON_ENLACE)
         enlace = r["url"] if r.get("official") and r.get("url") else config.X_WEB
         try:
-            resp = requests.get(hook, timeout=30, params={
-                "tweet": text, "carrera": r["name"], "enlace": enlace,
-                "orden": str(i + 1), "total": str(len(todo)), "fecha": r["date"],
-            })
+            params = {"tweet": text, "carrera": r["name"], "enlace": enlace,
+                      "orden": str(i + 1), "total": str(len(todo)), "fecha": r["date"]}
+            # Espacios como %20 (no "+"), que MacroDroid decodifica siempre bien
+            qs = "&".join(f"{k}={quote(v, safe='')}" for k, v in params.items())
+            resp = requests.get(hook + ("&" if "?" in hook else "?") + qs, timeout=30)
         except requests.RequestException as e:
             print(f"MacroDroid: error de red con «{r['name']}»: {e}")
             break
