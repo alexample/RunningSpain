@@ -155,3 +155,6 @@ MACRO_PARAMS = []
 # True: el texto del tweet va en el CUERPO de la petición (POST). En el disparador Webhook de MacroDroid,
 # "Guardar el cuerpo en una variable de cadena" → tweet. Más fiable con emojis y saltos de línea.
 MACRO_CUERPO = True
+# MacroDroid no entrega al móvil las llamadas que salen de GitHub: se envían a través del Worker de
+# Cloudflare, que las reenvía (solo a tu URL de webhook). Vacío = llamar directamente.
+MACRO_RELE = "https://dondeloechan-ia.alexample.workers.dev/macrodroid"

@@ -139,7 +139,11 @@ def send_macrodroid(hook: str, todo: list, st: dict, guardar: bool = True) -> in
             # Espacios como %20 (no "+"), que MacroDroid decodifica siempre bien
             qs = "&".join(f"{k}={quote(v, safe='')}" for k, v in params.items())
             url = hook + (("&" if "?" in hook else "?") + qs if qs else "")
-            if config.MACRO_CUERPO:
+            if config.MACRO_RELE:
+                resp = requests.post(config.MACRO_RELE, data=text.encode("utf-8"), timeout=30,
+                                     headers={"Content-Type": "text/plain; charset=utf-8", "X-Hook": url,
+                                              "User-Agent": "RunningSpainBot/1.0"})
+            elif config.MACRO_CUERPO:
                 resp = requests.post(url, data=text.encode("utf-8"), timeout=30,
                                      headers={"Content-Type": "text/plain; charset=utf-8"})
             else:
