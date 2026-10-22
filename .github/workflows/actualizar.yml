@@ -2,8 +2,10 @@ name: Actualizar carreras
 
 on:
   schedule:
-    - cron: "17 3 * * *"   # cada día a las 03:17 UTC (05:17 en Madrid en verano)
-    - cron: "43 14 * * *"  # segunda pasada de respaldo (16:43 en Madrid): GitHub a veces se salta la primera
+    # TEMPORAL para pruebas: cada hora en el minuto 23. Volver a los dos horarios diarios de abajo.
+    - cron: "23 * * * *"
+    # - cron: "17 3 * * *"   # cada día a las 03:17 UTC (05:17 en Madrid en verano)
+    # - cron: "43 14 * * *"  # segunda pasada de respaldo (16:43 en Madrid)
   workflow_dispatch:        # botón "Run workflow" para lanzarlo a mano
 
 permissions:
