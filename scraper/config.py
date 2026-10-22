@@ -149,3 +149,6 @@ X_WEB = "https://alexample.github.io/RunningSpain/#nuevas"
 # Si existe, el robot NO usa la API de X: manda cada texto al móvil en la variable "tweet".
 MACRO_CON_ENLACE = True    # publicando desde la app de X el enlace no cuesta nada
 MACRO_PAUSA = 90           # segundos entre un envío y el siguiente (tiempo para publicar cada uno)
+# Parámetros que se envían al webhook. Cada uno necesita una variable con el MISMO nombre en la macro,
+# o MacroDroid puede ignorar el aviso. Posibles: tweet, carrera, enlace, orden, total, fecha.
+MACRO_PARAMS = ["tweet"]

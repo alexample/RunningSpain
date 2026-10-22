@@ -133,8 +133,9 @@ def send_macrodroid(hook: str, todo: list, st: dict, guardar: bool = True) -> in
         text = compose(r, con_enlace=config.MACRO_CON_ENLACE)
         enlace = r["url"] if r.get("official") and r.get("url") else config.X_WEB
         try:
-            params = {"tweet": text, "carrera": r["name"], "enlace": enlace,
-                      "orden": str(i + 1), "total": str(len(todo)), "fecha": r["date"]}
+            todos = {"tweet": text, "carrera": r["name"], "enlace": enlace,
+                     "orden": str(i + 1), "total": str(len(todo)), "fecha": r["date"]}
+            params = {k: todos[k] for k in config.MACRO_PARAMS if k in todos}
             # Espacios como %20 (no "+"), que MacroDroid decodifica siempre bien
             qs = "&".join(f"{k}={quote(v, safe='')}" for k, v in params.items())
             resp = requests.get(hook + ("&" if "?" in hook else "?") + qs, timeout=30)
