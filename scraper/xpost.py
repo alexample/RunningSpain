@@ -121,7 +121,8 @@ def pending(races: list, st: dict, today: date) -> list:
     todo = [r for r in races
             if r.get("addedAt") and r["addedAt"] >= config.X_DESDE
             and r["date"] >= today.isoformat() and r["id"] not in done]
-    return sorted(todo, key=lambda r: (r["addedAt"], r["date"]))
+    # Orden de envío: primero las añadidas antes; dentro del mismo día, por fecha de la carrera (la más próxima primero)
+    return sorted(todo, key=lambda r: (r["addedAt"], r["date"], r.get("time") or "99", r["name"]))
 
 
 def send_macrodroid(hook: str, todo: list, st: dict) -> int:
@@ -132,7 +133,10 @@ def send_macrodroid(hook: str, todo: list, st: dict) -> int:
         text = compose(r, con_enlace=config.MACRO_CON_ENLACE)
         enlace = r["url"] if r.get("official") and r.get("url") else config.X_WEB
         try:
-            resp = requests.get(hook, params={"tweet": text, "carrera": r["name"], "enlace": enlace}, timeout=30)
+            resp = requests.get(hook, timeout=30, params={
+                "tweet": text, "carrera": r["name"], "enlace": enlace,
+                "orden": str(i + 1), "total": str(len(todo)), "fecha": r["date"],
+            })
         except requests.RequestException as e:
             print(f"MacroDroid: error de red con «{r['name']}»: {e}")
             break
