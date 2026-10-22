@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-22T11:14:33+00:00",
+ "updatedAt": "2026-10-22T12:13:28+00:00",
  "count": 653,
  "races": [
   {
@@ -3154,7 +3154,8 @@
    "id": "la-pota-roja-cervello-2026-1108",
    "source": "https://sportplan.es/es/events/la-pota-roja-cervello-2026-11-08-cervello",
    "checkedAt": "2026-10-21",
-   "nosite": true
+   "nosite": true,
+   "official_guess": "https://web.rockthesport.com/es/event/pota-roja-2026"
   },
   {
    "name": "Media Maratón Ciudad de Cádiz",
@@ -12211,7 +12212,7 @@
   }
  ],
  "lastRun": {
-  "at": "2026-10-22T11:14:33+00:00",
+  "at": "2026-10-22T12:13:28+00:00",
   "added": [],
   "updated": {},
   "removed": 0
