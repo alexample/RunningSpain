@@ -125,7 +125,7 @@ def pending(races: list, st: dict, today: date) -> list:
     return sorted(todo, key=lambda r: (r["addedAt"], r["date"], r.get("time") or "99", r["name"]))
 
 
-def send_macrodroid(hook: str, todo: list, st: dict) -> int:
+def send_macrodroid(hook: str, todo: list, st: dict, guardar: bool = True) -> int:
     sent = 0
     for i, r in enumerate(todo):
         if i:
@@ -143,9 +143,10 @@ def send_macrodroid(hook: str, todo: list, st: dict) -> int:
             break
         if resp.ok:
             st["publicadas"][r["id"]] = "macrodroid"
-            save_state(st)
+            if guardar:
+                save_state(st)
             sent += 1
-            print(f"MacroDroid: enviada «{r['name']}»")
+            print(f"MacroDroid: enviada «{r['name']}» → respuesta {resp.status_code} {resp.text[:80]}")
         else:
             print(f"MacroDroid: error {resp.status_code} con «{r['name']}»: {resp.text[:200]}")
             break
@@ -159,6 +160,15 @@ def main(argv: list[str]) -> int:
     st = load_state()
     todo = pending(races, st, today)
     print(f"X: {len(todo)} carreras nuevas sin publicar (tope {config.X_MAX_POR_EJECUCION} por ejecución)")
+    if "--prueba-macro" in argv:
+        # Envía UNA carrera real a MacroDroid sin anotarla como publicada (para probar la macro)
+        hook = os.environ.get("MACRODROID_WEBHOOK", "").strip()
+        if not hook:
+            print("MacroDroid: falta el secreto MACRODROID_WEBHOOK")
+            return 1
+        cand = sorted((r for r in races if r["date"] >= today.isoformat() and r.get("official")),
+                      key=lambda r: (r["date"], r.get("time") or "99"))[:1]
+        return send_macrodroid(hook, cand, {"publicadas": {}}, guardar=False)
     if "--prueba" in argv:
         for r in todo[: config.X_MAX_POR_EJECUCION]:
             t = compose(r)
