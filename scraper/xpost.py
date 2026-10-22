@@ -125,6 +125,36 @@ def pending(races: list, st: dict, today: date) -> list:
     return sorted(todo, key=lambda r: (r["addedAt"], r["date"], r.get("time") or "99", r["name"]))
 
 
+def ntfy_topic(hook: str) -> str:
+    """Tema privado de ntfy, derivado del secreto (nadie puede adivinarlo sin la URL del webhook)."""
+    return "runningspain-" + hashlib.sha256(hook.encode()).hexdigest()[:16]
+
+
+def send_ntfy(topic: str, todo: list, st: dict, guardar: bool = True) -> int:
+    sent = 0
+    for i, r in enumerate(todo):
+        if i:
+            time.sleep(config.MACRO_PAUSA)
+        text = compose(r, con_enlace=config.MACRO_CON_ENLACE)
+        try:
+            resp = requests.post(f"https://ntfy.sh/{topic}", data=text.encode("utf-8"), timeout=30,
+                                 headers={"Title": "RunningSpain", "Tags": "runner"})
+        except requests.RequestException as e:
+            print(f"ntfy: error de red con «{r['name']}»: {e}")
+            break
+        if resp.ok:
+            st["publicadas"][r["id"]] = "ntfy"
+            if guardar:
+                save_state(st)
+            sent += 1
+            print(f"ntfy: enviada «{r['name']}»")
+        else:
+            print(f"ntfy: error {resp.status_code} con «{r['name']}»: {resp.text[:200]}")
+            break
+    print(f"ntfy: {sent} envíos hechos")
+    return 0
+
+
 def send_macrodroid(hook: str, todo: list, st: dict, guardar: bool = True) -> int:
     sent = 0
     for i, r in enumerate(todo):
@@ -178,6 +208,8 @@ def main(argv: list[str]) -> int:
             return 1
         cand = sorted((r for r in races if r["date"] >= today.isoformat() and r.get("official")),
                       key=lambda r: (r["date"], r.get("time") or "99"))[:1]
+        if config.NTFY:
+            return send_ntfy(ntfy_topic(hook), cand, {"publicadas": {}}, guardar=False)
         return send_macrodroid(hook, cand, {"publicadas": {}}, guardar=False)
     if "--prueba" in argv:
         for r in todo[: config.X_MAX_POR_EJECUCION]:
@@ -185,6 +217,8 @@ def main(argv: list[str]) -> int:
             print(f"--- {x_len(t)} caracteres\n{t}")
         return 0
     hook = os.environ.get("MACRODROID_WEBHOOK", "").strip()
+    if hook and config.NTFY:
+        return send_ntfy(ntfy_topic(hook), todo[: config.X_MAX_POR_EJECUCION], st)
     if hook:
         return send_macrodroid(hook, todo[: config.X_MAX_POR_EJECUCION], st)
     keys = {"api_key": os.environ.get("X_API_KEY", ""), "api_secret": os.environ.get("X_API_SECRET", ""),

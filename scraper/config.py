@@ -157,4 +157,8 @@ MACRO_PARAMS = []
 MACRO_CUERPO = True
 # MacroDroid no entrega al móvil las llamadas que salen de GitHub: se envían a través del Worker de
 # Cloudflare, que las reenvía (solo a tu URL de webhook). Vacío = llamar directamente.
-MACRO_RELE = "https://dondeloechan-ia.alexample.workers.dev/macrodroid"
+MACRO_RELE = ""
+# ntfy (app de notificaciones): MacroDroid tampoco entrega lo que llega desde Cloudflare, así que el robot
+# publica cada tweet en un tema privado de ntfy.sh y MacroDroid lo lee con "Notificación recibida".
+# El nombre del tema se saca del secreto MACRODROID_WEBHOOK (no aparece en el código).
+NTFY = True
