@@ -25,7 +25,7 @@ Las carreras que ya han pasado se borran solas. Si quieres que una ficha no se t
 
 Cada vez que pasa, el robot publica en X las carreras nuevas que ha encontrado (como mucho 10 por pasada). Lleva la cuenta en `estado/x.json` para no repetir ninguna.
 
-Para activarlo, crea una app en https://console.x.com con permiso **Read and write**, genera las claves y añádelas en Settings → Secrets and variables → Actions:
+Para activarlo, crea una app en https://developer.x.com (consola de desarrolladores de X) con permiso **Read and write**, genera las claves y añádelas en Settings → Secrets and variables → Actions:
 `X_API_KEY`, `X_API_SECRET`, `X_ACCESS_TOKEN`, `X_ACCESS_SECRET`. Sin ellas no se publica nada.
 
 La API de X cobra por publicación (unos 0,015 $ por publicación de solo texto y unos 0,20 $ si lleva enlace; carga saldo en la consola de X). Por eso el enlace a la web está desactivado por defecto (`X_CON_ENLACE` en `scraper/config.py`).
