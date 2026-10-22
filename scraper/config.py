@@ -151,4 +151,7 @@ MACRO_CON_ENLACE = True    # publicando desde la app de X el enlace no cuesta na
 MACRO_PAUSA = 90           # segundos entre un envío y el siguiente (tiempo para publicar cada uno)
 # Parámetros que se envían al webhook. Cada uno necesita una variable con el MISMO nombre en la macro,
 # o MacroDroid puede ignorar el aviso. Posibles: tweet, carrera, enlace, orden, total, fecha.
-MACRO_PARAMS = ["tweet"]
+MACRO_PARAMS = []
+# True: el texto del tweet va en el CUERPO de la petición (POST). En el disparador Webhook de MacroDroid,
+# "Guardar el cuerpo en una variable de cadena" → tweet. Más fiable con emojis y saltos de línea.
+MACRO_CUERPO = True

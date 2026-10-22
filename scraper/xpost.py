@@ -138,7 +138,12 @@ def send_macrodroid(hook: str, todo: list, st: dict, guardar: bool = True) -> in
             params = {k: todos[k] for k in config.MACRO_PARAMS if k in todos}
             # Espacios como %20 (no "+"), que MacroDroid decodifica siempre bien
             qs = "&".join(f"{k}={quote(v, safe='')}" for k, v in params.items())
-            resp = requests.get(hook + ("&" if "?" in hook else "?") + qs, timeout=30)
+            url = hook + (("&" if "?" in hook else "?") + qs if qs else "")
+            if config.MACRO_CUERPO:
+                resp = requests.post(url, data=text.encode("utf-8"), timeout=30,
+                                     headers={"Content-Type": "text/plain; charset=utf-8"})
+            else:
+                resp = requests.get(url, timeout=30)
         except requests.RequestException as e:
             print(f"MacroDroid: error de red con «{r['name']}»: {e}")
             break
