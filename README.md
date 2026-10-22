@@ -23,6 +23,9 @@ Las carreras que ya han pasado se borran solas. Si quieres que una ficha no se t
 
 ## Publicar en X
 
+**Con MacroDroid (gratis, recomendado):** crea en MacroDroid una macro con el disparador *Webhook (URL)* y guarda su URL como secreto `MACRODROID_WEBHOOK`. Por cada carrera nueva el robot llama a esa URL con los parámetros `tweet` (texto completo), `carrera` y `enlace`. La macro abre X con el texto listo para publicar.
+
+**Con la API de X (de pago):**
 Cada vez que pasa, el robot publica en X las carreras nuevas que ha encontrado (como mucho 10 por pasada). Lleva la cuenta en `estado/x.json` para no repetir ninguna.
 
 Para activarlo, crea una app en https://developer.x.com (consola de desarrolladores de X) con permiso **Read and write**, genera las claves y añádelas en Settings → Secrets and variables → Actions:

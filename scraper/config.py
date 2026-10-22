@@ -145,3 +145,7 @@ X_DESDE = "2026-10-22"     # solo se publican carreras añadidas desde esta fech
 X_MAX_POR_EJECUCION = 10   # tope de publicaciones cada vez que pasa el robot
 X_CON_ENLACE = False       # True añade el enlace a la web: cada publicación cuesta ~0,20 $ en vez de ~0,015 $
 X_WEB = "https://alexample.github.io/RunningSpain/#nuevas"
+# Envío a MacroDroid (secreto MACRODROID_WEBHOOK = URL del disparador Webhook de la macro).
+# Si existe, el robot NO usa la API de X: manda cada texto al móvil en la variable "tweet".
+MACRO_CON_ENLACE = True    # publicando desde la app de X el enlace no cuesta nada
+MACRO_PAUSA = 90           # segundos entre un envío y el siguiente (tiempo para publicar cada uno)

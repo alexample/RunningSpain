@@ -40,6 +40,7 @@ jobs:
       - name: Publicar carreras nuevas en X
         env:
           # Si faltan estos secretos, el paso no publica nada (y no falla).
+          MACRODROID_WEBHOOK: ${{ secrets.MACRODROID_WEBHOOK }}
           X_API_KEY: ${{ secrets.X_API_KEY }}
           X_API_SECRET: ${{ secrets.X_API_SECRET }}
           X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}

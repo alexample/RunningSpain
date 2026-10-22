@@ -3,7 +3,10 @@
 Uso:  python -m scraper.xpost            (publica, si hay claves)
       python -m scraper.xpost --prueba   (solo muestra los textos)
 
-Claves (secretos de GitHub): X_API_KEY, X_API_SECRET, X_ACCESS_TOKEN, X_ACCESS_SECRET.
+Dos formas (secretos de GitHub):
+  - MACRODROID_WEBHOOK: URL del disparador Webhook de MacroDroid. Cada carrera se envía al móvil
+    en la variable "tweet" (más "carrera" y "enlace") y la macro abre X con el texto.
+  - X_API_KEY, X_API_SECRET, X_ACCESS_TOKEN, X_ACCESS_SECRET: publica directamente con la API de X (de pago).
 Lleva la cuenta de lo publicado en estado/x.json para no repetir nunca.
 """
 import base64
@@ -53,7 +56,7 @@ def x_len(text: str) -> int:
     return n - 1
 
 
-def compose(r: dict) -> str:
+def compose(r: dict, con_enlace: bool | None = None) -> str:
     y, m, d = map(int, r["date"].split("-"))
     dt = date(y, m, d)
     when = f"{DAYS[dt.weekday()]} {d} de {MONTHS[m - 1]}" + (f" · {r['time']} h" if r.get("time") else "")
@@ -69,7 +72,9 @@ def compose(r: dict) -> str:
     if r.get("price"):
         lines.append(f"💶 {r['price']}")
     tags = "#running #carreras" + (f" #{REGION_TAG[r['region']]}" if r.get("region") in REGION_TAG else "")
-    tail = [config.X_WEB] if config.X_CON_ENLACE else []
+    if con_enlace is None:
+        con_enlace = config.X_CON_ENLACE
+    tail = [config.X_WEB] if con_enlace else []
     tail.append(tags)
     text = "\n".join(lines + [""] + tail)
     while x_len(text) > 280 and len(lines[0]) > 30:   # recorta el nombre si no cabe
@@ -119,6 +124,30 @@ def pending(races: list, st: dict, today: date) -> list:
     return sorted(todo, key=lambda r: (r["addedAt"], r["date"]))
 
 
+def send_macrodroid(hook: str, todo: list, st: dict) -> int:
+    sent = 0
+    for i, r in enumerate(todo):
+        if i:
+            time.sleep(config.MACRO_PAUSA)
+        text = compose(r, con_enlace=config.MACRO_CON_ENLACE)
+        enlace = r["url"] if r.get("official") and r.get("url") else config.X_WEB
+        try:
+            resp = requests.get(hook, params={"tweet": text, "carrera": r["name"], "enlace": enlace}, timeout=30)
+        except requests.RequestException as e:
+            print(f"MacroDroid: error de red con «{r['name']}»: {e}")
+            break
+        if resp.ok:
+            st["publicadas"][r["id"]] = "macrodroid"
+            save_state(st)
+            sent += 1
+            print(f"MacroDroid: enviada «{r['name']}»")
+        else:
+            print(f"MacroDroid: error {resp.status_code} con «{r['name']}»: {resp.text[:200]}")
+            break
+    print(f"MacroDroid: {sent} envíos hechos")
+    return 0
+
+
 def main(argv: list[str]) -> int:
     today = date.today()
     races = json.loads(DATA.read_text(encoding="utf-8"))["races"]
@@ -130,10 +159,13 @@ def main(argv: list[str]) -> int:
             t = compose(r)
             print(f"--- {x_len(t)} caracteres\n{t}")
         return 0
+    hook = os.environ.get("MACRODROID_WEBHOOK", "").strip()
+    if hook:
+        return send_macrodroid(hook, todo[: config.X_MAX_POR_EJECUCION], st)
     keys = {"api_key": os.environ.get("X_API_KEY", ""), "api_secret": os.environ.get("X_API_SECRET", ""),
             "token": os.environ.get("X_ACCESS_TOKEN", ""), "token_secret": os.environ.get("X_ACCESS_SECRET", "")}
     if not all(keys.values()):
-        print("X: faltan las claves (secretos X_API_KEY, X_API_SECRET, X_ACCESS_TOKEN, X_ACCESS_SECRET). No se publica nada.")
+        print("X: no hay MACRODROID_WEBHOOK ni claves de la API de X. No se publica nada.")
         return 0
     sent = 0
     for r in todo[: config.X_MAX_POR_EJECUCION]:
