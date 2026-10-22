@@ -20,6 +20,7 @@ jobs:
         env:
           HOOK: ${{ secrets.MACRODROID_WEBHOOK }}
         run: |
+          HOOK="${HOOK%.}"
           echo "Longitud de la URL guardada: ${#HOOK}"
           echo "Empieza por: ${HOOK:0:40}…  termina en: …${HOOK: -14}"
           curl -sS -w "\nHTTP %{http_code}\n" -A "Mozilla/5.0 (Linux; Android 14) Chrome/130 Mobile" \

@@ -151,14 +151,14 @@ MACRO_CON_ENLACE = True    # publicando desde la app de X el enlace no cuesta na
 MACRO_PAUSA = 90           # segundos entre un envío y el siguiente (tiempo para publicar cada uno)
 # Parámetros que se envían al webhook. Cada uno necesita una variable con el MISMO nombre en la macro,
 # o MacroDroid puede ignorar el aviso. Posibles: tweet, carrera, enlace, orden, total, fecha.
-MACRO_PARAMS = []
+MACRO_PARAMS = ["tweet"]
 # True: el texto del tweet va en el CUERPO de la petición (POST). En el disparador Webhook de MacroDroid,
 # "Guardar el cuerpo en una variable de cadena" → tweet. Más fiable con emojis y saltos de línea.
-MACRO_CUERPO = True
+MACRO_CUERPO = False
 # MacroDroid no entrega al móvil las llamadas que salen de GitHub: se envían a través del Worker de
 # Cloudflare, que las reenvía (solo a tu URL de webhook). Vacío = llamar directamente.
 MACRO_RELE = ""
 # ntfy (app de notificaciones): MacroDroid tampoco entrega lo que llega desde Cloudflare, así que el robot
 # publica cada tweet en un tema privado de ntfy.sh y MacroDroid lo lee con "Notificación recibida".
 # El nombre del tema se saca del secreto MACRODROID_WEBHOOK (no aparece en el código).
-NTFY = True
+NTFY = False

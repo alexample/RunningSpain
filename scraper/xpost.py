@@ -202,7 +202,7 @@ def main(argv: list[str]) -> int:
     print(f"X: {len(todo)} carreras nuevas sin publicar (tope {config.X_MAX_POR_EJECUCION} por ejecución)")
     if "--prueba-macro" in argv:
         # Envía UNA carrera real a MacroDroid sin anotarla como publicada (para probar la macro)
-        hook = os.environ.get("MACRODROID_WEBHOOK", "").strip()
+        hook = os.environ.get("MACRODROID_WEBHOOK", "").strip().rstrip(".,;")
         if not hook:
             print("MacroDroid: falta el secreto MACRODROID_WEBHOOK")
             return 1
@@ -216,7 +216,7 @@ def main(argv: list[str]) -> int:
             t = compose(r)
             print(f"--- {x_len(t)} caracteres\n{t}")
         return 0
-    hook = os.environ.get("MACRODROID_WEBHOOK", "").strip()
+    hook = os.environ.get("MACRODROID_WEBHOOK", "").strip().rstrip(".,;")
     if hook and config.NTFY:
         return send_ntfy(ntfy_topic(hook), todo[: config.X_MAX_POR_EJECUCION], st)
     if hook:
