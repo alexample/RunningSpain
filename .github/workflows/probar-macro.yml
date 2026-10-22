@@ -1,18 +1,34 @@
 name: Probar MacroDroid
 
-# Envía una carrera real a la macro (sin anotarla como publicada). Solo a mano.
+# Prueba la macro. Solo a mano.
 on:
   workflow_dispatch:
+    inputs:
+      modo:
+        description: "simple = texto corto como el del navegador; carrera = una carrera real"
+        type: choice
+        options: [simple, carrera]
+        default: carrera
 
 jobs:
   probar:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Prueba simple (igual que desde el navegador)
+        if: inputs.modo == 'simple'
+        env:
+          HOOK: ${{ secrets.MACRODROID_WEBHOOK }}
+        run: |
+          echo "Longitud de la URL guardada: ${#HOOK}"
+          echo "Empieza por: ${HOOK:0:40}…  termina en: …${HOOK: -14}"
+          curl -sS -w "\nHTTP %{http_code}\n" -A "Mozilla/5.0 (Linux; Android 14) Chrome/130 Mobile" \
+            "${HOOK}?tweet=Prueba%20simple%20desde%20GitHub"
       - uses: actions/setup-python@v5
+        if: inputs.modo == 'carrera'
         with:
           python-version: "3.12"
-      - run: pip install -r requirements.txt
-      - run: python -m scraper.xpost --prueba-macro
+      - if: inputs.modo == 'carrera'
+        run: pip install -r requirements.txt && python -m scraper.xpost --prueba-macro
         env:
           MACRODROID_WEBHOOK: ${{ secrets.MACRODROID_WEBHOOK }}
