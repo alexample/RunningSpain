@@ -1,0 +1,161 @@
+"""Publica en X cada carrera nueva que encuentra el robot.
+
+Uso:  python -m scraper.xpost            (publica, si hay claves)
+      python -m scraper.xpost --prueba   (solo muestra los textos)
+
+Claves (secretos de GitHub): X_API_KEY, X_API_SECRET, X_ACCESS_TOKEN, X_ACCESS_SECRET.
+Lleva la cuenta de lo publicado en estado/x.json para no repetir nunca.
+"""
+import base64
+import hashlib
+import hmac
+import json
+import os
+import secrets
+import sys
+import time
+import unicodedata
+from datetime import date
+from pathlib import Path
+from urllib.parse import quote
+
+import requests
+
+from . import config
+
+ROOT = Path(__file__).resolve().parent.parent
+DATA = ROOT / "docs" / "data" / "carreras.json"
+STATE = ROOT / "estado" / "x.json"
+URL = "https://api.x.com/2/tweets"
+MONTHS = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto",
+          "septiembre", "octubre", "noviembre", "diciembre"]
+DAYS = ["lunes", "martes", "miércoles", "jueves", "viernes", "sábado", "domingo"]
+REGION_TAG = {
+    "Andalucía": "Andalucía", "Aragón": "Aragón", "Asturias": "Asturias", "Islas Baleares": "Baleares",
+    "Canarias": "Canarias", "Cantabria": "Cantabria", "Castilla y León": "CastillaYLeón",
+    "Castilla-La Mancha": "CastillaLaMancha", "Cataluña": "Catalunya", "Comunidad Valenciana": "ComunitatValenciana",
+    "Extremadura": "Extremadura", "Galicia": "Galicia", "Comunidad de Madrid": "Madrid",
+    "Región de Murcia": "Murcia", "Navarra": "Navarra", "País Vasco": "Euskadi", "La Rioja": "LaRioja",
+    "Ceuta": "Ceuta", "Melilla": "Melilla",
+}
+
+
+def x_len(text: str) -> int:
+    """Longitud según X: casi todo cuenta 1, emojis y CJK cuentan 2, un enlace cuenta 23."""
+    n = 0
+    for word in text.split(" "):
+        if word.startswith("http"):
+            n += 23 + 1
+            continue
+        for ch in word:
+            n += 2 if (ord(ch) > 0x2FFF or unicodedata.category(ch) == "So") else 1
+        n += 1
+    return n - 1
+
+
+def compose(r: dict) -> str:
+    y, m, d = map(int, r["date"].split("-"))
+    dt = date(y, m, d)
+    when = f"{DAYS[dt.weekday()]} {d} de {MONTHS[m - 1]}" + (f" · {r['time']} h" if r.get("time") else "")
+    place = r.get("city") or ""
+    if r.get("region") and r["region"] != place:
+        place = f"{place} ({r['region']})" if place else r["region"]
+    dist = r.get("km") or " · ".join(r.get("distances") or [])
+    lines = [f"🏃 Nueva carrera: {r['name']}", f"📅 {when}"]
+    if place:
+        lines.append(f"📍 {place}")
+    if dist:
+        lines.append(f"📏 {dist}")
+    if r.get("price"):
+        lines.append(f"💶 {r['price']}")
+    tags = "#running #carreras" + (f" #{REGION_TAG[r['region']]}" if r.get("region") in REGION_TAG else "")
+    tail = [config.X_WEB] if config.X_CON_ENLACE else []
+    tail.append(tags)
+    text = "\n".join(lines + [""] + tail)
+    while x_len(text) > 280 and len(lines[0]) > 30:   # recorta el nombre si no cabe
+        lines[0] = lines[0].rstrip("…")[:-1].rstrip() + "…"
+        text = "\n".join(lines + [""] + tail)
+    return text
+
+
+def _pct(s: str) -> str:
+    return quote(s, safe="~-._")
+
+
+def oauth_header(method: str, url: str, keys: dict, extra: dict | None = None,
+                 nonce: str | None = None, ts: str | None = None) -> str:
+    """Cabecera OAuth 1.0a. `extra` son parámetros de URL/formulario (el cuerpo JSON no entra en la firma)."""
+    params = {
+        "oauth_consumer_key": keys["api_key"],
+        "oauth_nonce": nonce or secrets.token_hex(16),
+        "oauth_signature_method": "HMAC-SHA1",
+        "oauth_timestamp": ts or str(int(time.time())),
+        "oauth_token": keys["token"],
+        "oauth_version": "1.0",
+    }
+    signed = {**params, **(extra or {})}
+    base = "&".join([method, _pct(url), _pct("&".join(f"{_pct(k)}={_pct(v)}" for k, v in sorted(signed.items())))])
+    signing_key = f"{_pct(keys['api_secret'])}&{_pct(keys['token_secret'])}"
+    params["oauth_signature"] = base64.b64encode(hmac.new(signing_key.encode(), base.encode(), hashlib.sha1).digest()).decode()
+    return "OAuth " + ", ".join(f'{_pct(k)}="{_pct(v)}"' for k, v in sorted(params.items()))
+
+
+def load_state() -> dict:
+    if STATE.exists():
+        return json.loads(STATE.read_text(encoding="utf-8"))
+    return {"publicadas": {}}
+
+
+def save_state(st: dict) -> None:
+    STATE.parent.mkdir(parents=True, exist_ok=True)
+    STATE.write_text(json.dumps(st, ensure_ascii=False, indent=1, sort_keys=True), encoding="utf-8")
+
+
+def pending(races: list, st: dict, today: date) -> list:
+    done = st["publicadas"]
+    todo = [r for r in races
+            if r.get("addedAt") and r["addedAt"] >= config.X_DESDE
+            and r["date"] >= today.isoformat() and r["id"] not in done]
+    return sorted(todo, key=lambda r: (r["addedAt"], r["date"]))
+
+
+def main(argv: list[str]) -> int:
+    today = date.today()
+    races = json.loads(DATA.read_text(encoding="utf-8"))["races"]
+    st = load_state()
+    todo = pending(races, st, today)
+    print(f"X: {len(todo)} carreras nuevas sin publicar (tope {config.X_MAX_POR_EJECUCION} por ejecución)")
+    if "--prueba" in argv:
+        for r in todo[: config.X_MAX_POR_EJECUCION]:
+            t = compose(r)
+            print(f"--- {x_len(t)} caracteres\n{t}")
+        return 0
+    keys = {"api_key": os.environ.get("X_API_KEY", ""), "api_secret": os.environ.get("X_API_SECRET", ""),
+            "token": os.environ.get("X_ACCESS_TOKEN", ""), "token_secret": os.environ.get("X_ACCESS_SECRET", "")}
+    if not all(keys.values()):
+        print("X: faltan las claves (secretos X_API_KEY, X_API_SECRET, X_ACCESS_TOKEN, X_ACCESS_SECRET). No se publica nada.")
+        return 0
+    sent = 0
+    for r in todo[: config.X_MAX_POR_EJECUCION]:
+        text = compose(r)
+        resp = requests.post(URL, json={"text": text}, timeout=30,
+                             headers={"Authorization": oauth_header("POST", URL, keys), "Content-Type": "application/json"})
+        if resp.status_code == 201:
+            st["publicadas"][r["id"]] = resp.json().get("data", {}).get("id", "")
+            save_state(st)
+            sent += 1
+            print(f"X: publicada «{r['name']}»")
+            time.sleep(3)
+            continue
+        print(f"X: error {resp.status_code} con «{r['name']}»: {resp.text[:300]}")
+        if resp.status_code == 403 and "duplicate" in resp.text.lower():
+            st["publicadas"][r["id"]] = "duplicada"   # ya estaba publicada: no reintentar
+            save_state(st)
+            continue
+        break   # sin saldo (402), límite (429), claves mal (401/403): se reintenta en la próxima ejecución
+    print(f"X: {sent} publicaciones hechas")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main(sys.argv[1:]))

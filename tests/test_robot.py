@@ -107,5 +107,28 @@ class ChangesTests(unittest.TestCase):
         self.assertEqual(db["races"][0]["changedAt"], "2026-10-22")
 
 
+class XPostTests(unittest.TestCase):
+    def test_oauth_signature_matches_x_docs(self):
+        from scraper import xpost
+        keys = {"api_key": "xvz1evFS4wEEPTGEFPHBog", "api_secret": "kAcSOqF21Fu85e7zjz7ZN2U4ZRhfV3WpwPAoE3Z7kBw",
+                "token": "370773112-GmHxMAgYyLbNEtIKZeRNFsMKPR9EyMZeS9weJAEb",
+                "token_secret": "LswwdoUaIvS8ltyTt5jkRh4J50vUPVVHtR2YPi5kE"}
+        h = xpost.oauth_header("POST", "https://api.twitter.com/1.1/statuses/update.json", keys,
+                               extra={"include_entities": "true",
+                                      "status": "Hello Ladies + Gentlemen, a signed OAuth request!"},
+                               nonce="kYjzVBB8Y0ZFabxSWbWovY3uYSQ2pTgmZeNu2VS4cg", ts="1318622958")
+        self.assertIn('oauth_signature="hCtSmYh%2BiHYCEqBWrE7C7hYmtUk%3D"', h)
+
+    def test_compose_fits_and_skips_backlog(self):
+        from scraper import xpost
+        r = {"id": "x", "name": "Carrera " + "Muy " * 80 + "Larga", "date": "2026-11-29", "city": "Colmenar Viejo",
+             "region": "Comunidad de Madrid", "distances": ["10K"], "addedAt": "2026-10-21"}
+        self.assertLessEqual(xpost.x_len(xpost.compose(r)), 280)
+        self.assertEqual(xpost.pending([r], {"publicadas": {}}, date(2026, 10, 22)), [])
+        r["addedAt"] = "2026-10-23"
+        self.assertEqual(len(xpost.pending([r], {"publicadas": {}}, date(2026, 10, 23))), 1)
+        self.assertEqual(xpost.pending([r], {"publicadas": {"x": "1"}}, date(2026, 10, 23)), [])
+
+
 if __name__ == "__main__":
     unittest.main()

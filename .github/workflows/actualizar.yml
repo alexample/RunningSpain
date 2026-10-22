@@ -37,11 +37,21 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python -m scraper.main
 
+      - name: Publicar carreras nuevas en X
+        env:
+          # Si faltan estos secretos, el paso no publica nada (y no falla).
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_SECRET: ${{ secrets.X_ACCESS_SECRET }}
+        run: python -m scraper.xpost
+
       - name: Guardar los datos
         run: |
           git config user.name "runningspain-bot"
           git config user.email "runningspain-bot@users.noreply.github.com"
           git add docs/data/carreras.json
+          [ -f estado/x.json ] && git add estado/x.json
           if git diff --cached --quiet; then
             echo "Sin cambios"
           else

@@ -138,3 +138,10 @@ SLUG_REGION = {
 # Modelo opcional para leer reglamentos (solo si existe el secreto ANTHROPIC_API_KEY).
 LLM_MODEL = "claude-haiku-5-5"
 LLM_MAX_CALLS = 120
+
+# --- Publicación en X (scraper/xpost.py) ---
+# Solo publica si existen los secretos X_API_KEY, X_API_SECRET, X_ACCESS_TOKEN y X_ACCESS_SECRET.
+X_DESDE = "2026-10-22"     # solo se publican carreras añadidas desde esta fecha (no el atrasado)
+X_MAX_POR_EJECUCION = 10   # tope de publicaciones cada vez que pasa el robot
+X_CON_ENLACE = False       # True añade el enlace a la web: cada publicación cuesta ~0,20 $ en vez de ~0,015 $
+X_WEB = "https://alexample.github.io/RunningSpain/#nuevas"
