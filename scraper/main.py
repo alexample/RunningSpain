@@ -24,6 +24,14 @@ GENERIC = {"san", "sant", "silvestre", "media", "maraton", "medio", "mitja", "ma
 TRACKED = ("url", "regulation", "banner", "price", "time", "km", "date", "route", "inscripcion")
 
 
+RUN_AT = datetime.now(timezone.utc).isoformat(timespec="minutes")
+
+
+def touch(r: dict) -> None:
+    """Apunta en la ficha la fecha y hora de esta revisión del robot (se muestra en la web)."""
+    r["revisada"] = RUN_AT
+
+
 def log(msg: str) -> None:
     print(msg, flush=True)
 
@@ -123,12 +131,14 @@ def discover(db: dict, today: date, changes: dict) -> int:
                 if c["source_url"] != dup.get("source") and c["source_url"] not in alt and len(alt) < 5:
                     alt.append(c["source_url"])
                 dup.setdefault("official_guess", r.get("official_guess"))
+                touch(dup)
             else:
                 motivo = "añadida"
                 r["id"] = parse.race_id(r["name"], r["date"])
                 r["official"] = False
                 r["url"] = ""
                 r["addedAt"] = today.isoformat()
+                touch(r)
                 db["races"].append(r)
                 changes["added"].append(r["id"])
                 added += 1
@@ -148,6 +158,7 @@ def complete(db: dict, today: date, changes: dict) -> int:
     done = 0
     for r in todo[: config.MAX_ENRICH]:
         upd = enrich.enrich(r, today)
+        touch(r)
         before = {k: r.get(k) for k in TRACKED}
         r.update({k: v for k, v in upd.items() if v is not None})
         changed = [k for k in TRACKED if r.get(k) and r.get(k) != before[k]]
@@ -179,6 +190,7 @@ def media(db: dict, today: date, changes: dict) -> int:
         old = r["regulation"]
         page = r.get("url") if r.get("official") else None
         new = enrich.resolve_regulation(old, found_on=page)
+        touch(r)
         if not new and page:      # el enlace ya no abre: se busca otra vez en la web oficial
             html, final, _ = net.get(page)
             again = parse.find_regulation(html, final) if html and not isinstance(html, bytes) else None
@@ -204,6 +216,7 @@ def media(db: dict, today: date, changes: dict) -> int:
     found = 0
     for r in todo[: config.MAX_MEDIA]:
         got = sources.read_media(r["source"])
+        touch(r)
         # el recorrido, primero en la web de la carrera (portada o página «Recorrido»)
         if not r.get("route") and r.get("official") and r.get("url"):
             own = enrich.route_from_site(r["url"])
@@ -256,6 +269,7 @@ def registrations(db: dict, today: date, changes: dict) -> int:
         if not html or isinstance(html, bytes):
             continue
         st = parse.registration_status(html, platform)
+        touch(r)
         r["inscripcionAt"] = today.isoformat()
         if st != r.get("inscripcion"):
             if st:

@@ -135,6 +135,7 @@ input[type=search]{flex:1 1 180px}
 .link{margin-top:auto;align-self:flex-start;font:600 14px var(--body);text-decoration:none;color:var(--accent-ink);
   background:var(--accent);padding:8px 14px;border-radius:8px}
 .link.alt{background:transparent;color:var(--ink);border:1px solid var(--line)}
+.rev{margin:2px 0 0;font-size:12px;color:var(--muted)}
 .insc{display:inline-flex;align-items:center;gap:6px;font-weight:600}
 .insc::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--ic)}
 .insc-at{color:var(--muted);font-size:12px}
@@ -219,6 +220,19 @@ function wikilocTerms(r){
   const town=(r.city||"").replace(/^(.*)\s*\((la|el|los|las|l'|els|les|a|o|as|os)\)\s*$/i,(m0,c,art)=>art+" "+c.trim());
   return [core||(dist?(dist==="42K"?"maraton":dist==="21K"?"media maraton":dist):"carrera"),town].join(" ").trim();
 }
+// «Revisada el 23 oct a las 18:40»: última vez que el robot miró esta carrera
+function revisada(r){
+  let t=null,conHora=false;
+  if(r.revisada){t=new Date(r.revisada);conHora=true}
+  else{const ds=[r.checkedAt,r.mediaChecked,r.inscripcionAt,r.regChecked,r.addedAt].filter(Boolean).map(x=>x.slice(0,10)).sort();
+    if(ds.length)t=parseDate(ds[ds.length-1])}
+  if(!t||isNaN(t))return null;
+  const hoy=new Date();hoy.setHours(0,0,0,0);const dia=new Date(t);dia.setHours(0,0,0,0);
+  const diff=Math.round((hoy-dia)/864e5);
+  const fecha=diff===0?"hoy":diff===1?"ayer":"el "+t.getDate()+" "+MONTHS[t.getMonth()].slice(0,3);
+  const hora=conHora?" a las "+String(t.getHours()).padStart(2,"0")+":"+String(t.getMinutes()).padStart(2,"0"):"";
+  return el("p",{class:"rev"},"Revisada "+fecha+hora);
+}
 function inscRow(r){const i=INSC[r.inscripcion];if(!i)return null;
   const d=r.inscripcionAt?parseDate(r.inscripcionAt):null;
   return [el("dt",{},"Inscripción"),el("dd",{},el("span",{class:"insc",style:"--ic:"+i[1]},i[0]),
@@ -268,7 +282,7 @@ function card(r){
   if(news.added.has(r.id))badge=el("span",{class:"badge new"},"Nueva");
   else if(news.updated[r.id])badge=el("span",{class:"badge chg"},"Actualizada: "+news.updated[r.id].map(f=>FIELD[f]||f).join(", "));
   return el("article",{class:"race",style:"--kc:"+kcolor(k)},bib,
-    el("div",{class:"info"},badge,el("h3",{},r.name),tags,dl,r.note?el("p",{class:"note"},r.note):null,actions));
+    el("div",{class:"info"},badge,el("h3",{},r.name),tags,dl,r.note?el("p",{class:"note"},r.note):null,actions,revisada(r)));
 }
 
 function render(){
