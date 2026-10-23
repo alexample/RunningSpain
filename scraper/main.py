@@ -158,6 +158,21 @@ def complete(db: dict, today: date, changes: dict) -> int:
 def media(db: dict, today: date, changes: dict) -> int:
     """Reabre la ficha del calendario de las carreras sin cartel o sin recorrido."""
     limit = (today - timedelta(days=config.MEDIA_RECHECK_DAYS)).isoformat()
+    # reglamentos que son una página: se intenta llegar al PDF (una vez)
+    regs = [r for r in db["races"] if r["date"] >= today.isoformat() and r.get("regulation")
+            and not parse.is_document(r["regulation"]) and not r.get("regResolved")]
+    better = 0
+    for r in regs[: config.MAX_MEDIA]:
+        new = enrich.resolve_regulation(r["regulation"])
+        r["regResolved"] = today.isoformat()
+        if new != r["regulation"]:
+            r["regulation"] = new
+            better += 1
+            if r["id"] not in changes["added"]:
+                lst = changes["updated"].setdefault(r["id"], [])
+                if "regulation" not in lst:
+                    lst.append("regulation")
+    log(f"Reglamentos: {len(regs)} eran una página, {better} ya enlazan directamente al documento")
     todo = [r for r in db["races"] if r["date"] >= today.isoformat() and r.get("source")
             and (not r.get("banner") or not r.get("route")) and (r.get("mediaChecked") or "") < limit]
     todo.sort(key=lambda r: r["date"])

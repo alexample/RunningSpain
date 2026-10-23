@@ -31,6 +31,19 @@ def fetch_text(url: str) -> tuple[str, str | None, str]:
     return parse.page_text(body), body, final
 
 
+def resolve_regulation(url: str) -> str:
+    """Si el reglamento es una página, entra en ella y devuelve el PDF/documento que contenga (acceso directo)."""
+    if not url or parse.is_document(url):
+        return url
+    body, final, ctype = net.get(url)
+    if body is None:
+        return url
+    if isinstance(body, bytes) or "pdf" in (ctype or ""):
+        return final              # la «página» era en realidad el PDF (redirección)
+    doc = parse.find_regulation(body, final, only_docs=True)
+    return doc or url
+
+
 def ask_llm(name: str, d: str, text: str) -> dict:
     """Lectura opcional con IA (solo si hay ANTHROPIC_API_KEY). Barato: un modelo pequeño."""
     global _llm_calls
@@ -104,7 +117,9 @@ def enrich(r: dict, today: date) -> dict:
 
     regulation = r.get("regulation") or (parse.find_regulation(html, final) if html else (final if final.lower().endswith(".pdf") else None))
     if regulation and not r.get("regulation"):
+        regulation = resolve_regulation(regulation)
         upd["regulation"] = regulation
+        upd["regResolved"] = today.isoformat()
     if html:
         img, score = parse.best_image(html, final)
         # el cartel de la web oficial gana si puntúa igual o mejor que el que ya hubiera

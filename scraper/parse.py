@@ -188,19 +188,42 @@ def guess_official(html: str, base: str) -> str | None:
     return scored[0][1] if scored[0][0] > 0 else None
 
 
-REG_WORDS = re.compile(r"reglament|normativ|bases|araudi|regulation|rules|reglament", re.I)
+REG_WORDS = re.compile(r"reglament|normativ|\bbases\b|araudi|regulation|\brules\b|regolamento", re.I)
+_REG_BAD = re.compile(r"protecci[oó]n de datos|rgpd|gdpr|privacidad|privacy|cookies|aviso legal|legal-notice|"
+                      r"condiciones de (uso|compra)|terminos|términos|facebook|instagram|twitter|whatsapp", re.I)
+_DOC = re.compile(r"\.pdf(\?|#|$)|drive\.google\.com/(file|open|uc)|docs\.google\.com/(document|viewer)|"
+                  r"dropbox\.com/.+\.pdf|onedrive|1drv\.ms|\.docx?(\?|$)", re.I)
 
 
-def find_regulation(html: str, base: str) -> str | None:
-    s = soup(html)
-    best = None
-    for a in s.find_all("a", href=True):
+def is_document(url: str) -> bool:
+    """¿El enlace va directamente al documento (PDF, Drive, Word…) y no a una página?"""
+    return bool(_DOC.search(url or ""))
+
+
+def find_regulation(html: str, base: str, only_docs: bool = False) -> str | None:
+    """Enlace al reglamento. Prefiere el documento directo (PDF/Drive) frente a una página «Reglamento»."""
+    best, best_score = None, 0
+    for a in soup(html).find_all("a", href=True):
         href = urljoin(base, a["href"].strip())
-        txt = a.get_text(" ", strip=True)
-        if REG_WORDS.search(txt) or REG_WORDS.search(href):
-            if href.lower().split("?")[0].endswith(".pdf"):
-                return href
-            best = best or href
+        if not href.startswith("http"):
+            continue
+        txt = a.get_text(" ", strip=True)[:120] + " " + str(a.get("title") or "")
+        if _REG_BAD.search(txt) or _REG_BAD.search(href):
+            continue
+        named = REG_WORDS.search(txt) or REG_WORDS.search(href)
+        doc = is_document(href)
+        if named and doc:
+            score = 10
+        elif doc and re.search(r"descarg|download|pdf", txt, re.I) and not only_docs:
+            score = 5          # «Descargar PDF» sin decir qué es: puede ser el reglamento
+        elif named and not only_docs:
+            score = 3          # página «Reglamento»: se intentará llegar al PDF desde ella
+        else:
+            continue
+        if re.search(r"20(26|27)", href + txt):
+            score += 1         # la edición actual mejor que una antigua
+        if score > best_score:
+            best, best_score = href, score
     return best
 
 

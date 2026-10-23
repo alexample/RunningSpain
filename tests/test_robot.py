@@ -267,5 +267,25 @@ class MediaTests(unittest.TestCase):
         self.assertEqual(r["mediaChecked"], "2026-10-23")
 
 
+class RegulationTests(unittest.TestCase):
+    def test_prefers_pdf_and_skips_privacy(self):
+        html = """<a href="/privacidad">Política de privacidad y protección de datos</a>
+        <a href="/reglamento/">Reglamento</a>
+        <a href="/docs/Reglamento-2026.pdf">Descargar reglamento</a>"""
+        self.assertEqual(parse.find_regulation(html, "https://x.es/"), "https://x.es/docs/Reglamento-2026.pdf")
+        self.assertIsNone(parse.find_regulation('<a href="/rgpd">Reglamento general de protección de datos</a>', "https://x.es/"))
+        self.assertTrue(parse.is_document("https://drive.google.com/file/d/abc/view"))
+
+    def test_resolve_page_to_pdf(self):
+        page = '<h1>Reglamento</h1><a href="/wp-content/uploads/2026/09/Normativa-10K.pdf">Normativa 10K (PDF)</a>'
+        with mock.patch("scraper.net.get", return_value=(page, "https://x.es/reglamento/", "text/html")):
+            self.assertEqual(enrich.resolve_regulation("https://x.es/reglamento/"),
+                             "https://x.es/wp-content/uploads/2026/09/Normativa-10K.pdf")
+        with mock.patch("scraper.net.get", return_value=("<p>Texto del reglamento en la página</p>", "https://x.es/r", "text/html")):
+            self.assertEqual(enrich.resolve_regulation("https://x.es/r"), "https://x.es/r")
+        with mock.patch("scraper.net.get", return_value=(b"%PDF", "https://x.es/r.pdf", "application/pdf")):
+            self.assertEqual(enrich.resolve_regulation("https://x.es/descarga?id=3"), "https://x.es/r.pdf")
+
+
 if __name__ == "__main__":
     unittest.main()

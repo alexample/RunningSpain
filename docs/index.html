@@ -135,6 +135,7 @@ input[type=search]{flex:1 1 180px}
 .link{margin-top:auto;align-self:flex-start;font:600 14px var(--body);text-decoration:none;color:var(--accent-ink);
   background:var(--accent);padding:8px 14px;border-radius:8px}
 .link.alt{background:transparent;color:var(--ink);border:1px solid var(--line)}
+.link.ghost{background:transparent;color:var(--muted);border:1px dashed var(--line);font-weight:500}
 .actions{margin-top:auto;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
 .actions .link{margin-top:0}
 .meta dd.tbd{color:var(--muted)}
@@ -236,7 +237,11 @@ function card(r){
   if(r.official&&r.url)actions.append(el("a",{class:"link",href:r.url,target:"_blank",rel:"noopener"},r.signup?"Inscripción oficial ↗":"Web oficial ↗"));
   if(r.regulation)actions.append(el("a",{class:"link alt",href:r.regulation,target:"_blank",rel:"noopener"},/\.pdf(\?|$)/i.test(r.regulation)?"Reglamento (PDF) ↗":"Reglamento ↗"));
   if(r.route)actions.append(el("a",{class:"link alt",href:r.route,target:"_blank",rel:"noopener"},/\.(gpx|kml|kmz)(\?|$)/i.test(r.route)?"Recorrido (GPX) ↗":"Recorrido ↗"));
-  if(!actions.childNodes.length)actions.append(el("span",{class:"pending"},r.nosite?"Sin web oficial publicada":"Web oficial en búsqueda"));
+  else{ // segunda opción: buscar el recorrido en Wikiloc con el nombre y el pueblo
+    const qy="site:wikiloc.com "+r.name+(r.city?" "+r.city:"");
+    actions.append(el("a",{class:"link ghost",href:"https://www.google.com/search?q="+encodeURIComponent(qy),target:"_blank",rel:"noopener",title:"Buscar el recorrido en Wikiloc"},"Recorrido en Wikiloc ↗"));
+  }
+  if(!(r.official&&r.url))actions.prepend(el("span",{class:"pending",style:"flex-basis:100%"},r.nosite?"Sin web oficial publicada":"Web oficial en búsqueda"));
   let badge=null;
   if(news.added.has(r.id))badge=el("span",{class:"badge new"},"Nueva");
   else if(news.updated[r.id])badge=el("span",{class:"badge chg"},"Actualizada: "+news.updated[r.id].map(f=>FIELD[f]||f).join(", "));
