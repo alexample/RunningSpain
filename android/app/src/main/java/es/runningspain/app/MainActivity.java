@@ -27,17 +27,21 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
+import androidx.webkit.WebViewAssetLoader;
+import android.webkit.WebResourceResponse;
 
 /**
- * La app es la web de RunningSpain dentro de un WebView: los datos y cualquier mejora de la web
- * llegan solos, sin tener que instalar una APK nueva.
+ * Las pantallas van dentro de la APK (assets/index.html), servidas desde https://appassets.androidplatform.net/assets/.
+ * La app solo descarga los datos (carreras.json); sin conexión usa los últimos descargados.
  * - Los enlaces de fuera (web oficial, reglamento, recorrido) se abren en el navegador.
- * - Deslizar hacia abajo recarga. Sin conexión se muestra la última versión guardada.
+ * - Los enlaces a la web de RunningSpain (…/#c-id, …/c/id.html, …/#nuevas) se abren dentro de la app.
+ * - Deslizar hacia abajo recarga los datos.
  */
 public class MainActivity extends Activity {
 
-    private static final String HOST = "alexample.github.io";
-    private static final String START = "https://" + HOST + "/RunningSpain/";
+    private static final String HOST = "alexample.github.io";          // la web (enlaces compartidos)
+    private static final String LOCAL = "appassets.androidplatform.net";
+    private static final String START = "https://" + LOCAL + "/assets/index.html";
 
     private WebView web;
     private SwipeRefreshLayout refresh;
@@ -90,16 +94,27 @@ public class MainActivity extends Activity {
         refresh.setOnChildScrollUpCallback((parent, child) -> web.getScrollY() > 0);
         refresh.setOnRefreshListener(() -> {
             web.getSettings().setCacheMode(hayConexion() ? WebSettings.LOAD_DEFAULT : WebSettings.LOAD_CACHE_ELSE_NETWORK);
-            String u = web.getUrl();
-            cargar(u != null && u.startsWith("https://" + HOST) ? u : START);
+            web.reload();   // vuelve a descargar los datos
         });
+
+        final WebViewAssetLoader loader = new WebViewAssetLoader.Builder()
+                .setDomain(LOCAL)
+                .addPathHandler("/assets/", new WebViewAssetLoader.AssetsPathHandler(this))
+                .build();
 
         web.setWebViewClient(new WebViewClient() {
             @Override
+            public WebResourceResponse shouldInterceptRequest(WebView view, WebResourceRequest req) {
+                return loader.shouldInterceptRequest(req.getUrl());
+            }
+
+            @Override
             public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest req) {
                 Uri u = req.getUrl();
+                if (LOCAL.equals(u.getHost())) return false;                       // pantallas de la app
                 if (HOST.equals(u.getHost()) && u.getPath() != null && u.getPath().startsWith("/RunningSpain")) {
-                    return false;   // páginas de la propia web: dentro de la app
+                    view.loadUrl(local(u));                                          // enlace a la web: dentro de la app
+                    return true;
                 }
                 try { startActivity(new Intent(Intent.ACTION_VIEW, u)); } catch (Exception ignored) { }
                 return true;
@@ -136,22 +151,24 @@ public class MainActivity extends Activity {
         }
     }
 
-    /** Con conexión, pide siempre la web recién publicada (sin la copia guardada); sin conexión, la guardada. */
     private void cargar(String url) {
-        if (hayConexion()) {
-            java.util.Map<String, String> h = new java.util.HashMap<>();
-            h.put("Cache-Control", "no-cache");
-            h.put("Pragma", "no-cache");
-            web.loadUrl(url, h);
-        } else {
-            web.loadUrl(url);
-        }
+        web.loadUrl(url);
     }
 
-    /** Si la app se abre desde un enlace a la web (p. ej. …/RunningSpain/#nuevas), abre ese enlace. */
+    /** Si la app se abre desde un enlace a la web (p. ej. …/RunningSpain/#nuevas), abre esa pantalla. */
     private String urlInicial(Intent intent) {
         Uri data = intent != null ? intent.getData() : null;
-        if (data != null && HOST.equals(data.getHost())) return data.toString();
+        if (data != null && HOST.equals(data.getHost())) return local(data);
+        return START;
+    }
+
+    /** …/RunningSpain/#c-id, …/RunningSpain/c/id.html o …/#nuevas → la misma pantalla dentro de la app. */
+    private static String local(Uri u) {
+        String frag = u.getFragment();
+        if (frag != null && !frag.isEmpty()) return START + "#" + frag;
+        String path = u.getPath() == null ? "" : u.getPath();
+        java.util.regex.Matcher m = java.util.regex.Pattern.compile("/c/([a-z0-9-]+)\\.html$").matcher(path);
+        if (m.find()) return START + "#c-" + m.group(1);
         return START;
     }
 
@@ -207,6 +224,12 @@ public class MainActivity extends Activity {
         public void guardarAjustes(String json) {
             getSharedPreferences(AvisosWorker.PREFS, Context.MODE_PRIVATE).edit().putString("ajustes", json).apply();
             AvisosWorker.revisarYa(MainActivity.this);
+        }
+
+        /** Versión instalada (para avisar si hay una más nueva). */
+        @JavascriptInterface
+        public String version() {
+            try { return getPackageManager().getPackageInfo(getPackageName(), 0).versionName; } catch (Exception e) { return ""; }
         }
 
         /** «Compartir»: abre el menú de compartir de Android (WhatsApp, Telegram…) con el texto de la carrera. */

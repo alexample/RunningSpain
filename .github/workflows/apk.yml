@@ -7,6 +7,8 @@ on:
     branches: [main]
     paths:
       - "android/**"
+      - "docs/index.html"
+      - "docs/logo.svg"
       - ".github/workflows/apk.yml"
   workflow_dispatch:
 
@@ -27,6 +29,15 @@ jobs:
         with:
           distribution: temurin
           java-version: "17"
+
+      - name: Meter las pantallas en la APK
+        run: |
+          A=app/src/main/assets
+          rm -rf "$A" && mkdir -p "$A/data"
+          cp ../docs/index.html ../docs/logo.svg ../docs/logo.png "$A/"
+          cp -r ../docs/flags "$A/flags"
+          cp ../docs/data/carreras.json "$A/data/carreras.json"   # datos de partida para el primer arranque sin conexión
+          ls -la "$A"
 
       - name: SDK de Android
         run: |
@@ -56,5 +67,5 @@ jobs:
           make_latest: "true"
           body: |
             Descarga **RunningSpain.apk** desde el móvil y ábrela para instalar.
-            Si ya tenías una versión anterior, se instala encima.
+            Si ya tenías una versión anterior, se instala encima (la app avisa sola cuando hay una nueva).
           files: RunningSpain.apk

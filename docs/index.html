@@ -81,6 +81,7 @@ h1 .logo{width:clamp(36px,7vw,48px);height:auto;border-radius:22%;flex:none;box-
 .upd b{font-weight:600}
 .news{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;justify-content:space-between;
   background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:10px;padding:10px 14px;margin-top:14px;font-size:14px}
+.news .mini{font:600 13px var(--body);color:var(--accent)}
 .news button{font:600 13px var(--body);color:var(--accent);background:none;border:0;cursor:pointer;padding:0}
 .badge{align-self:flex-start;font:700 11px var(--body);letter-spacing:.08em;text-transform:uppercase;padding:3px 8px;border-radius:4px}
 .badge.new{background:var(--accent);color:var(--accent-ink)}
@@ -443,22 +444,55 @@ document.querySelectorAll(".chip").forEach(b=>b.addEventListener("click",()=>{
 document.getElementById("region").addEventListener("change",e=>{region=e.target.value;render()});
 document.getElementById("q").addEventListener("input",e=>{q=e.target.value;render()});
 
+// Dentro de la app las pantallas van empaquetadas y los datos se descargan de la web.
+// Sin conexión se usan los últimos datos descargados (o los que trae la propia app).
+const EN_APP=location.hostname==="appassets.androidplatform.net";
+const DATA_URL=EN_APP?"https://alexample.github.io/RunningSpain/data/carreras.json":"data/carreras.json";
+async function cargarDatos(){
+  try{
+    const res=await fetch(DATA_URL,{cache:"no-cache"});
+    if(!res.ok)throw new Error(res.status);
+    const txt=await res.text();
+    if(EN_APP){try{localStorage.setItem("rs-data",txt)}catch(e){}}
+    return {data:JSON.parse(txt),offline:false};
+  }catch(e){
+    if(!EN_APP)throw e;
+    let txt=null;try{txt=localStorage.getItem("rs-data")}catch(_){}
+    if(!txt){const r=await fetch("data/carreras.json");txt=await r.text()}   // los datos que trae la app
+    return {data:JSON.parse(txt),offline:true};
+  }
+}
 (async()=>{
   try{
-    const res=await fetch("data/carreras.json",{cache:"no-cache"});
-    if(!res.ok)throw new Error(res.status);
-    const data=await res.json();
+    const {data,offline}=await cargarDatos();
     races=data.races||[];
     meta={updatedAt:data.updatedAt,lastRun:data.lastRun||null};
     if(data.lastRun)news={added:new Set(data.lastRun.added||[]),updated:data.lastRun.updated||{}};
     loadFavs();fillRegions();setStatus();countNew();countFav();
+    if(offline)document.getElementById("list").before(el("div",{class:"news"},"Sin conexión: se muestran los últimos datos descargados."));
     abrirHash();
     window.addEventListener("hashchange",abrirHash);
+    if(EN_APP)avisoVersion();
   }catch(e){
     document.getElementById("list").replaceChildren(el("div",{class:"empty"},"No se pudo cargar el calendario. Recarga la página en unos minutos."));
     document.getElementById("status").textContent="";
   }
 })();
+// Aviso de versión nueva de la app (compara con la última publicada en GitHub)
+async function avisoVersion(){
+  try{
+    const mine=window.AndroidApp&&window.AndroidApp.version?window.AndroidApp.version():"";
+    const r=await fetch("https://api.github.com/repos/alexample/RunningSpain/releases/latest",{cache:"no-cache"});
+    if(!r.ok)return;
+    const rel=await r.json(),last=(rel.tag_name||"").replace(/^app-v/,"");
+    const n=v=>v.split(".").map(x=>+x||0),a=n(last),b=n(mine);
+    let newer=false;for(let i=0;i<3;i++){if((a[i]||0)!==(b[i]||0)){newer=(a[i]||0)>(b[i]||0);break}}
+    if(!mine||!newer)return;
+    const url=(rel.assets&&rel.assets[0]&&rel.assets[0].browser_download_url)||rel.html_url;
+    const link=el("a",{href:url,target:"_blank",rel:"noopener",class:"mini"},"Descargar");
+    document.querySelector("header").after(el("div",{class:"news"},el("span",{},"Hay una versión nueva de la app ("+last+")."),link));
+  }catch(e){}
+}
 // ---------------------------------------------------------------- avisos (solo en la app Android)
 const APP=window.AndroidApp||null;
 const DIST_OPT=[["42","Maratón (42 km)"],["21","Media maratón (21 km)"],["10","10K"],["5","5K"],["x","Otras distancias"]];
