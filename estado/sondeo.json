@@ -1,0 +1,110 @@
+[
+ {
+  "ua": "RunningSpainBot/1.0 ",
+  "url": "https://sportplan.es/robots.txt",
+  "status": 200,
+  "final": "https://sportplan.es/robots.txt",
+  "bytes": 18943,
+  "server": "cloudflare",
+  "inicio": "User-Agent: *\nAllow: /\nDisallow: /api/\nDisallow: /dashboard/\nDisallow: /admin/\nDisallow: /sign-in\nDisallow: /onboarding\nDisallow: /*/events/*/calendar.ics\nDisallow: /*?lat=\nDisallow: /*?lng=\nDisallow: /*?radiusKm=\nDisallow: /*?dateFrom=\nDisallow: /*&lat=\nDisallow: /*&lng=\nDisallow: /*&radiusKm=\nDisa"
+ },
+ {
+  "ua": "RunningSpainBot/1.0 ",
+  "url": "https://sportplan.es/",
+  "status": 403,
+  "final": "https://sportplan.es/",
+  "bytes": 5541,
+  "server": "cloudflare",
+  "inicio": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scal"
+ },
+ {
+  "ua": "RunningSpainBot/1.0 ",
+  "url": "https://sportplan.es/es/regions/madrid",
+  "status": 403,
+  "final": "https://sportplan.es/es/regions/madrid",
+  "bytes": 5614,
+  "server": "cloudflare",
+  "inicio": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scal"
+ },
+ {
+  "ua": "RunningSpainBot/1.0 ",
+  "url": "https://sportplan.es/es/regions/barcelona",
+  "status": 403,
+  "final": "https://sportplan.es/es/regions/barcelona",
+  "bytes": 5623,
+  "server": "cloudflare",
+  "inicio": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scal"
+ },
+ {
+  "ua": "RunningSpainBot/1.0 ",
+  "url": "https://sportplan.es/es/series/san-silvestre",
+  "status": 403,
+  "final": "https://sportplan.es/es/series/san-silvestre",
+  "bytes": 5632,
+  "server": "cloudflare",
+  "inicio": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scal"
+ },
+ {
+  "ua": "RunningSpainBot/1.0 ",
+  "url": "https://www.sportplan.es/es/regions/madrid",
+  "status": 403,
+  "final": "https://www.sportplan.es/es/regions/madrid",
+  "bytes": 5618,
+  "server": "cloudflare",
+  "inicio": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scal"
+ },
+ {
+  "ua": "Mozilla/5.0 (Windows",
+  "url": "https://sportplan.es/robots.txt",
+  "status": 200,
+  "final": "https://sportplan.es/robots.txt",
+  "bytes": 18943,
+  "server": "cloudflare",
+  "inicio": "User-Agent: *\nAllow: /\nDisallow: /api/\nDisallow: /dashboard/\nDisallow: /admin/\nDisallow: /sign-in\nDisallow: /onboarding\nDisallow: /*/events/*/calendar.ics\nDisallow: /*?lat=\nDisallow: /*?lng=\nDisallow: /*?radiusKm=\nDisallow: /*?dateFrom=\nDisallow: /*&lat=\nDisallow: /*&lng=\nDisallow: /*&radiusKm=\nDisa"
+ },
+ {
+  "ua": "Mozilla/5.0 (Windows",
+  "url": "https://sportplan.es/",
+  "status": 403,
+  "final": "https://sportplan.es/",
+  "bytes": 5541,
+  "server": "cloudflare",
+  "inicio": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scal"
+ },
+ {
+  "ua": "Mozilla/5.0 (Windows",
+  "url": "https://sportplan.es/es/regions/madrid",
+  "status": 403,
+  "final": "https://sportplan.es/es/regions/madrid",
+  "bytes": 5614,
+  "server": "cloudflare",
+  "inicio": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scal"
+ },
+ {
+  "ua": "Mozilla/5.0 (Windows",
+  "url": "https://sportplan.es/es/regions/barcelona",
+  "status": 403,
+  "final": "https://sportplan.es/es/regions/barcelona",
+  "bytes": 5623,
+  "server": "cloudflare",
+  "inicio": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scal"
+ },
+ {
+  "ua": "Mozilla/5.0 (Windows",
+  "url": "https://sportplan.es/es/series/san-silvestre",
+  "status": 403,
+  "final": "https://sportplan.es/es/series/san-silvestre",
+  "bytes": 5632,
+  "server": "cloudflare",
+  "inicio": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scal"
+ },
+ {
+  "ua": "Mozilla/5.0 (Windows",
+  "url": "https://www.sportplan.es/es/regions/madrid",
+  "status": 403,
+  "final": "https://www.sportplan.es/es/regions/madrid",
+  "bytes": 5618,
+  "server": "cloudflare",
+  "inicio": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scal"
+ }
+]
