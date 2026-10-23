@@ -205,6 +205,20 @@ function flag(region){const f=FLAG[region];if(!f)return null;
   const i=el("img",{class:"flag",src:"flags/"+f+".png",alt:"Bandera de "+region,title:region,loading:"lazy"});i.onerror=()=>i.remove();return i}
 const FIELD={url:"web oficial",regulation:"reglamento",banner:"cartel",price:"precio",time:"hora",km:"km",date:"fecha",route:"recorrido",inscripcion:"inscripción"};
 const INSC={abierta:["Abierta","var(--k10)"],agotada:["Agotada","var(--accent)"],cerrada:["Cerrada","var(--accent)"],proximamente:["Próximamente","#d4a017"]};
+// Búsqueda de Wikiloc: lo que identifica a la carrera (sin año, nº de edición ni palabras genéricas) + el pueblo.
+// Las rutas las suben corredores, a menudo de ediciones pasadas y con otro título.
+const WL_GEN=new Set(["carrera","carreras","cursa","carreira","popular","populares","solidaria","solidari","edicion","edición","edició",
+  "de","del","la","el","los","las","y","i","a","en","por","per","the","race","run","urbana","urbano","ciudad","ciutat","villa","vila"]);
+function wikilocTerms(r){
+  const noAcc=x=>x.normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+  const city=noAcc(r.city||"");
+  const words=(r.name||"").replace(/\b20\d\d\b/g," ").replace(/\b\d+\s*(ª|º|a\.|o\.|ª)\s*/gi," ").split(/[\s\-–·,:()"«»]+/)
+    .filter(w=>w&&!/^[ivxlc]+$/i.test(w)&&!/^\d+(ª|º)$/.test(w)&&!WL_GEN.has(noAcc(w))&&!(city&&city.includes(noAcc(w))));
+  const dist=tagsOf(r).find(t=>/^(42|21|10|5)K$/.test(t));
+  const core=words.slice(0,4).join(" ");
+  const town=(r.city||"").replace(/^(.*)\s*\((la|el|los|las|l'|els|les|a|o|as|os)\)\s*$/i,(m0,c,art)=>art+" "+c.trim());
+  return [core||(dist?(dist==="42K"?"maraton":dist==="21K"?"media maraton":dist):"carrera"),town].join(" ").trim();
+}
 function inscRow(r){const i=INSC[r.inscripcion];if(!i)return null;
   const d=r.inscripcionAt?parseDate(r.inscripcionAt):null;
   return [el("dt",{},"Inscripción"),el("dd",{},el("span",{class:"insc",style:"--ic:"+i[1]},i[0]),
@@ -246,7 +260,7 @@ function card(r){
   if(r.regulation)actions.append(el("a",{class:"link alt",href:r.regulation,target:"_blank",rel:"noopener"},/\.pdf(\?|$)/i.test(r.regulation)?"Reglamento (PDF) ↗":"Reglamento ↗"));
   if(r.route)actions.append(el("a",{class:"link alt",href:r.route,target:"_blank",rel:"noopener"},/\.(gpx|kml|kmz)(\?|$)/i.test(r.route)?"Recorrido (GPX) ↗":"Recorrido ↗"));
   else{ // segunda opción: buscar el recorrido en Wikiloc con el nombre y el pueblo
-    const qy="site:wikiloc.com "+r.name+(r.city?" "+r.city:"");
+    const qy="site:wikiloc.com "+wikilocTerms(r);
     actions.append(el("a",{class:"link ghost",href:"https://www.google.com/search?q="+encodeURIComponent(qy),target:"_blank",rel:"noopener",title:"Buscar el recorrido en Wikiloc"},"Recorrido en Wikiloc ↗"));
   }
   if(!(r.official&&r.url))actions.prepend(el("span",{class:"pending",style:"flex-basis:100%"},r.nosite?"Sin web oficial publicada":"Web oficial en búsqueda"));
