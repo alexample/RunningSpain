@@ -1,5 +1,6 @@
 """Pruebas sin conexión: python -m unittest discover -s tests"""
 import unittest
+from pathlib import Path
 from datetime import date
 from unittest import mock
 
@@ -128,6 +129,85 @@ class XPostTests(unittest.TestCase):
         r["addedAt"] = "2026-10-23"
         self.assertEqual(len(xpost.pending([r], {"publicadas": {}}, date(2026, 10, 23))), 1)
         self.assertEqual(xpost.pending([r], {"publicadas": {"x": "1"}}, date(2026, 10, 23)), [])
+
+
+SM_LIST = """<html><body>
+<a href="/es/races/10k-ciudad-de-ejemplo-2026">10K</a>
+<a href="/es/races/trail-sierra-ejemplo-2026">Trail</a>
+<a href="/es/races?page=2">2</a></body></html>"""
+SM_EVENT = """<html><head><script type="application/ld+json">
+{"@type":"SportsEvent","name":"10K Ciudad de Ejemplo","startDate":"2026-11-29T10:00:00+01:00",
+ "location":{"@type":"Place","address":{"addressLocality":"Lugo","addressRegion":"Lugo"}}}
+</script></head><body><h1>10K Ciudad de Ejemplo</h1></body></html>"""
+LS_EVENT = """<html><body><h1>XI CARRERA SOLIDARIA PUERTO DE EJEMPLO</h1>
+<p>Lugar Cartagena Fecha 21 de Noviembre de 2026 Hora 16:30 Reglamento</p></body></html>"""
+RU_INDEX = "<sitemapindex><sitemap><loc>https://runedia.mundodeportivo.com/sitemaps/sitemap-curses1.xml</loc></sitemap></sitemapindex>"
+RU_MAP = """<urlset>
+<url><loc>https://runedia.mundodeportivo.com/carrera/cursa-de-ejemplo-2026/202637600/</loc></url>
+<url><loc>https://runedia.mundodeportivo.com/carrera/marxa-de-ejemplo-2026/202637601/</loc></url>
+<url><loc>https://runedia.mundodeportivo.com/carrera/cursa-vieja-2024/20241234/</loc></url>
+</urlset>"""
+
+
+def fake_sources(url, binary=False):
+    pages = {
+        "https://sportmaniacs.com/es/races?page=1": SM_LIST,
+        "https://sportmaniacs.com/es/races/10k-ciudad-de-ejemplo-2026": SM_EVENT,
+        "https://runedia.mundodeportivo.com/sitemap_index.xml": RU_INDEX,
+        "https://runedia.mundodeportivo.com/sitemaps/sitemap-curses1.xml": RU_MAP,
+        "https://runedia.mundodeportivo.com/carrera/cursa-de-ejemplo-2026/202637600/": LS_EVENT.replace("21 de Noviembre", "6 de Diciembre"),
+    }
+    if url in pages:
+        return pages[url], url, "text/html"
+    return None, url, ""
+
+
+class NewSourcesTests(unittest.TestCase):
+    def test_date_from_text(self):
+        self.assertEqual(parse.date_from_text("Lugar Cartagena Fecha 21 de Noviembre de 2026 Hora 16:30"), "2026-11-21")
+        self.assertEqual(parse.date_from_text("Martes, 25-8-2026"), "2026-08-25")
+        self.assertEqual(parse.date_from_text("dissabte 14 de desembre de 2026"), "2026-12-14")
+        self.assertIsNone(parse.date_from_text("sin fecha"))
+
+    def test_nice_name(self):
+        self.assertEqual(parse.nice_name("XI CARRERA SOLIDARIA DE LA VILLA"), "XI Carrera Solidaria de la Villa")
+        self.assertEqual(parse.nice_name("Media Maratón de Lugo"), "Media Maratón de Lugo")
+
+    def test_generic_page_without_jsonld(self):
+        with mock.patch("scraper.net.get", return_value=(LS_EVENT, "https://www.lineadesalida.net/carreras/x", "text/html")):
+            r = sources.read_event_page({"source_url": "https://www.lineadesalida.net/carreras/x"}, date(2026, 10, 23))
+        self.assertEqual(r["date"], "2026-11-21")
+        self.assertEqual(r["time"], "16:30")
+        self.assertEqual(r["name"], "XI Carrera Solidaria Puerto de Ejemplo")
+
+    def test_lists_filter_trail_and_old_years(self):
+        with mock.patch("scraper.net.get", side_effect=fake_sources):
+            sm = sources.list_sportmaniacs(date(2026, 10, 23), lambda m: None)
+            ru = sources.list_runedia(date(2026, 10, 23), lambda m: None)
+        self.assertEqual([c["source_url"] for c in sm], ["https://sportmaniacs.com/es/races/10k-ciudad-de-ejemplo-2026"])
+        self.assertEqual([c["source_url"] for c in ru], ["https://runedia.mundodeportivo.com/carrera/cursa-de-ejemplo-2026/202637600/"])
+
+    def test_discover_remembers_what_it_saw(self):
+        import tempfile
+        today = date(2026, 10, 23)
+        db = {"races": []}
+        with tempfile.TemporaryDirectory() as tmp, \
+             mock.patch.object(main, "SEEN", Path(tmp) / "vistos.json"), \
+             mock.patch("scraper.net.get", side_effect=fake_sources) as get, \
+             mock.patch.object(sources, "list_runninglife", return_value=[]), \
+             mock.patch.object(sources, "list_carreraspopulares", return_value=[]), \
+             mock.patch.object(sources, "list_lineadesalida", return_value=[]):
+            added = main.discover(db, today, {"added": [], "updated": {}})
+            self.assertEqual(added, 2)
+            opened_first = [c.args[0] for c in get.call_args_list if "/carrera/" in c.args[0] or "/es/races/" in c.args[0]]
+            get.reset_mock()
+            db2 = {"races": []}   # aunque no estén en los datos, ya se vieron: no se vuelven a abrir
+            main.discover(db2, today, {"added": [], "updated": {}})
+            opened_second = [c.args[0] for c in get.call_args_list if "/carrera/" in c.args[0] or "/es/races/" in c.args[0]]
+        self.assertEqual(len(opened_first), 2)
+        self.assertEqual(opened_second, [])
+        names = sorted(r["name"] for r in db["races"])
+        self.assertEqual(names, ["10K Ciudad de Ejemplo", "XI Carrera Solidaria Puerto de Ejemplo"])
 
 
 if __name__ == "__main__":

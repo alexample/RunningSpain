@@ -13,6 +13,8 @@ from pathlib import Path
 from . import config, enrich, net, parse, sources
 
 DATA = Path(__file__).resolve().parent.parent / "docs" / "data" / "carreras.json"
+SEEN = Path(__file__).resolve().parent.parent / "estado" / "vistos.json"
+FINAL = {"no_asfalto", "duplicada", "añadida", "sin_nombre"}   # no se vuelven a abrir nunca
 GENERIC = {"san", "sant", "silvestre", "media", "maraton", "medio", "mitja", "marato", "10k", "5k",
            "15k", "21k", "solidaria", "solidari", "navidad", "nadal", "nocturna", "urbana", "race",
            "run", "half", "contra", "cancer", "mujer", "dona", "por", "de", "del", "la", "el", "los",
@@ -52,36 +54,82 @@ def save(db: dict) -> None:
     DATA.write_text(json.dumps(db, ensure_ascii=False, indent=1), encoding="utf-8")
 
 
+def load_seen() -> dict:
+    if SEEN.exists():
+        return json.loads(SEEN.read_text(encoding="utf-8"))
+    return {}
+
+
+def save_seen(seen: dict, today: date) -> None:
+    limit = (today - timedelta(days=200)).isoformat()
+    seen = {u: v for u, v in seen.items() if v.get("t", "") >= limit}
+    SEEN.parent.mkdir(parents=True, exist_ok=True)
+    SEEN.write_text(json.dumps(seen, ensure_ascii=False, separators=(",", ":"), sort_keys=True), encoding="utf-8")
+
+
+def skip_seen(v: dict | None, today: date) -> bool:
+    """True si la ficha ya se revisó y no merece la pena volver a abrirla hoy."""
+    if not v:
+        return False
+    if v.get("m") in FINAL:
+        return True
+    d = v.get("d")
+    if v.get("m") == "fuera_de_ventana" and d:
+        return d < today.isoformat() or d > (today + timedelta(days=config.DAYS_AHEAD)).isoformat()
+    try:
+        return (today - date.fromisoformat(v.get("t", "2000-01-01"))).days < config.VISTOS_REINTENTO_DIAS
+    except ValueError:
+        return False
+
+
 def discover(db: dict, today: date, changes: dict) -> int:
     log("Buscando carreras en los calendarios…")
-    cands = sources.list_sportplan(today, log) + sources.list_runninglife(today, log)
+    seen = load_seen()
+    cands = []
+    for fn in (sources.list_sportplan, sources.list_runninglife, sources.list_sportmaniacs,
+               sources.list_carreraspopulares, sources.list_lineadesalida, sources.list_runedia):
+        try:
+            cands += fn(today, log)
+        except Exception as e:  # una fuente rota no debe parar el robot
+            log(f"  error en {fn.__name__}: {e}")
     known_sources = {r.get("source") for r in db["races"]}
-    cands = [c for c in cands if c["source_url"] not in known_sources]
-    cands.sort(key=lambda c: c.get("date") or "9999")
-    log(f"{len(cands)} fichas nuevas que revisar (máximo {config.MAX_EVENT_PAGES})")
-    added = 0
-    for c in cands[: config.MAX_EVENT_PAGES]:
+    total = len(cands)
+    cands = [c for c in cands if c["source_url"] not in known_sources and not skip_seen(seen.get(c["source_url"]), today)]
+    # primero las de fecha conocida (más próximas antes); después las de Runedia, con su propio tope
+    dated = sorted((c for c in cands if c.get("date")), key=lambda c: c["date"])
+    undated = [c for c in cands if not c.get("date") and "rid" not in c]
+    runedia = [c for c in cands if "rid" in c][: config.RUNEDIA_MAX_POR_EJECUCION]
+    queue = (dated + undated + runedia)[: config.MAX_EVENT_PAGES]
+    log(f"{total} fichas en los calendarios · {len(cands)} sin revisar · se abren {len(queue)}")
+    added, reasons = 0, {}
+    for c in queue:
         r = sources.read_event_page(c, today)
-        if not r:
-            continue
-        dup = next((x for x in db["races"] if same_race(x, r)), None)
-        if dup:
-            for k in ("time", "city", "region"):
-                if not dup.get(k) and r.get(k):
-                    dup[k] = r[k]
-                    if k in TRACKED:
-                        changes["updated"].setdefault(dup["id"], []).append(k)
-            if not dup.get("distances") and r.get("distances"):
-                dup["distances"] = r["distances"]
-            dup.setdefault("official_guess", r.get("official_guess"))
-            continue
-        r["id"] = parse.race_id(r["name"], r["date"])
-        r["official"] = False
-        r["url"] = ""
-        r["addedAt"] = today.isoformat()
-        db["races"].append(r)
-        changes["added"].append(r["id"])
-        added += 1
+        motivo = c.get("motivo", "sin_acceso")
+        if r:
+            dup = next((x for x in db["races"] if same_race(x, r)), None)
+            if dup:
+                motivo = "duplicada"
+                for k in ("time", "city", "region"):
+                    if not dup.get(k) and r.get(k):
+                        dup[k] = r[k]
+                        if k in TRACKED:
+                            changes["updated"].setdefault(dup["id"], []).append(k)
+                if not dup.get("distances") and r.get("distances"):
+                    dup["distances"] = r["distances"]
+                dup.setdefault("official_guess", r.get("official_guess"))
+            else:
+                motivo = "añadida"
+                r["id"] = parse.race_id(r["name"], r["date"])
+                r["official"] = False
+                r["url"] = ""
+                r["addedAt"] = today.isoformat()
+                db["races"].append(r)
+                changes["added"].append(r["id"])
+                added += 1
+        reasons[motivo] = reasons.get(motivo, 0) + 1
+        seen[c["source_url"]] = {"m": motivo, "d": c.get("fecha"), "t": today.isoformat()}
+    save_seen(seen, today)
+    log(f"Resultado: {reasons}")
     log(f"Añadidas {added} carreras nuevas")
     return added
 

@@ -231,7 +231,7 @@ def extract_price(text: str) -> str | None:
     return format_price(vals[:12]) if vals else None
 
 
-TIME_RE = re.compile(r"(?:salida|sortida|hora de inicio|comienzo|inicio|start)[^0-9]{0,40}?\b([01]?\d|2[0-3])[:.h]\s?([0-5]\d)\b", re.I)
+TIME_RE = re.compile(r"(?:salida|sortida|hora de inicio|comienzo|inicio|start|\bhora)[^0-9]{0,40}?\b([01]?\d|2[0-3])[:.h]\s?([0-5]\d)\b", re.I)
 
 
 def extract_time(text: str) -> str | None:
@@ -258,6 +258,44 @@ def extract_km(text: str) -> str | None:
 
 
 DATE_IN_SLUG = re.compile(r"(20\d{2})-(\d{2})-(\d{2})")
+
+_MESES = {"enero": 1, "febrero": 2, "marzo": 3, "abril": 4, "mayo": 5, "junio": 6, "julio": 7, "agosto": 8,
+          "septiembre": 9, "setiembre": 9, "octubre": 10, "noviembre": 11, "diciembre": 12,
+          "gener": 1, "febrer": 2, "marc": 3, "abril ": 4, "maig": 5, "juny": 6, "juliol": 7, "agost": 8,
+          "setembre": 9, "octubre ": 10, "novembre": 11, "desembre": 12}
+_DATE_TXT = re.compile(r"\b(\d{1,2})\s+de\s+([a-z]+)\s+(?:de\s+|del\s+)?(20\d{2})\b")
+_DATE_NUM = re.compile(r"\b(\d{1,2})[/.-](\d{1,2})[/.-](20\d{2})\b")
+
+
+def date_from_text(text: str) -> str | None:
+    """Primera fecha razonable en un texto: «21 de noviembre de 2026», «21/11/2026» o «21-11-2026»."""
+    t = norm(text or "")
+    found = []
+    for m in _DATE_TXT.finditer(t):
+        mes = _MESES.get(m.group(2)) or _MESES.get(m.group(2) + " ")
+        if mes:
+            found.append((m.start(), int(m.group(3)), mes, int(m.group(1))))
+    for m in _DATE_NUM.finditer(t):
+        found.append((m.start(), int(m.group(3)), int(m.group(2)), int(m.group(1))))
+    for _, y, mth, d in sorted(found):
+        try:
+            return date(y, mth, d).isoformat()
+        except ValueError:
+            continue
+    return None
+
+
+def nice_name(name: str) -> str:
+    """Pasa a formato título los nombres escritos todo en mayúsculas."""
+    if name and name.upper() == name and sum(c.isalpha() for c in name) > 4:
+        small = {"de", "del", "la", "el", "los", "las", "y", "i", "a", "en", "por", "contra"}
+        words = name.lower().split()
+        def fix(i, w):
+            if re.fullmatch(r"[ivxlc]+[ºª.]?", w):
+                return w.upper()
+            return w if (i and w in small) else w[:1].upper() + w[1:]
+        return " ".join(fix(i, w) for i, w in enumerate(words))
+    return name
 
 
 def date_from_url(url: str) -> str | None:

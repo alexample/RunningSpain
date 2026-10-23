@@ -39,6 +39,8 @@ def _links(html: str, base: str, pattern: re.Pattern) -> list[tuple[str, str]]:
 
 
 def list_sportplan(today: date, log) -> list[dict]:
+    if not config.SPORTPLAN_ACTIVO:
+        return []
     found = {}
     pages = [config.SPORTPLAN_REGION_URL.format(slug=s) for s in config.SPORTPLAN_REGIONS]
     pages += config.SPORTPLAN_SERIES
@@ -86,23 +88,101 @@ def list_runninglife(today: date, log) -> list[dict]:
     return list(found.values())
 
 
+SM_EVENT = re.compile(r"/es/races/[a-z0-9][a-z0-9-]+")
+CP_EVENT = re.compile(r"/carrera/[a-z0-9][a-z0-9-]+")
+LS_EVENT = re.compile(r"/carreras/[a-z0-9][a-z0-9-]+")
+RU_EVENT = re.compile(r"https://runedia\.mundodeportivo\.com/carrera/([a-z0-9-]+)-(20\d{2})/(\d+)/?")
+
+
+def _paged(name: str, tpl: str, pattern: re.Pattern, max_pages: int, log, keep=lambda u: True) -> list[dict]:
+    found = {}
+    for n in range(1, max_pages + 1):
+        html, final, _ = net.get(tpl.format(n=n))
+        if not html:
+            break
+        new = 0
+        for url, txt in _links(html, final, pattern):
+            url = url.split("#")[0].split("?")[0]
+            if url not in found and keep(url):
+                found[url] = {"source_url": url, "name_hint": txt[:120], "date": None}
+                new += 1
+        if not new:
+            break
+    log(f"  {name}: {len(found)} fichas")
+    return list(found.values())
+
+
+def list_sportmaniacs(today: date, log) -> list[dict]:
+    return _paged("sportmaniacs", config.SPORTMANIACS_LIST, SM_EVENT, config.SPORTMANIACS_MAX_PAGES, log,
+                  keep=lambda u: parse.is_road(u.rsplit("/", 1)[-1].replace("-", " ")))
+
+
+def list_carreraspopulares(today: date, log) -> list[dict]:
+    return _paged("carreraspopulares", config.CARRERASPOPULARES_LIST, CP_EVENT, config.CARRERASPOPULARES_MAX_PAGES, log,
+                  keep=lambda u: parse.is_road(u.rsplit("/", 1)[-1].replace("-", " ")))
+
+
+def list_lineadesalida(today: date, log) -> list[dict]:
+    return _paged("lineadesalida", config.LINEADESALIDA_LIST + "?_={n}", LS_EVENT, 1, log,
+                  keep=lambda u: parse.is_road(u.rsplit("/", 1)[-1].replace("-", " ")))
+
+
+def list_runedia(today: date, log) -> list[dict]:
+    """Runedia: las fichas de carreras salen de su sitemap (no tienen fecha en la URL)."""
+    idx, _, _ = net.get(config.RUNEDIA_SITEMAP)
+    if not idx:
+        log("  runedia: sin acceso")
+        return []
+    years = {str(today.year), str(today.year + 1)}
+    found = {}
+    for sm in re.findall(r"<loc>([^<]*sitemap-curses[^<]*)</loc>", idx):
+        xml, _, _ = net.get(sm.strip())
+        if not xml:
+            continue
+        for m in RU_EVENT.finditer(xml):
+            slug, year, rid = m.groups()
+            if year not in years or not rid.startswith(year):
+                continue
+            if not parse.is_road(slug.replace("-", " ")):
+                continue
+            url = m.group(0) if m.group(0).endswith("/") else m.group(0) + "/"
+            found[url] = {"source_url": url, "name_hint": slug.replace("-", " "), "date": None, "rid": int(rid)}
+    # las más recientes (id mayor) primero: son las que se acaban de publicar
+    res = sorted(found.values(), key=lambda c: -c["rid"])
+    log(f"  runedia: {len(res)} fichas de {', '.join(sorted(years))} en el sitemap")
+    return res
+
+
 def read_event_page(cand: dict, today: date) -> dict | None:
     """Abre la ficha del calendario y devuelve una carrera normalizada (o None)."""
+    cand["motivo"], cand["fecha"] = "sin_acceso", None
     html, final, _ = net.get(cand["source_url"])
     if not html:
         return None
     events = parse.jsonld_events(html)
     f = parse.event_fields(events[0]) if events else {}
-    name = f.get("name") or cand.get("name_hint") or ""
-    if not name:
-        h1 = parse.soup(html).find("h1")
-        name = h1.get_text(" ", strip=True) if h1 else ""
-    d = f.get("date") or cand.get("date")
-    if not name or not d or not _in_window(d, today):
-        return None
     text = parse.page_text(html)[:6000]
-    if not parse.is_road(name):
+    h1 = parse.soup(html).find("h1")
+    h1 = h1.get_text(" ", strip=True) if h1 else ""
+    hint = cand.get("name_hint") or ""
+    if re.match(r"^[A-Z][a-z]{2} \d", hint):   # running.life usa la fecha como texto del enlace
+        hint = ""
+    name = parse.nice_name(f.get("name") or h1 or hint)
+    d = f.get("date") or cand.get("date") or parse.date_from_text(text[:3000])
+    cand["fecha"] = d
+    if not name:
+        cand["motivo"] = "sin_nombre"
         return None
+    if not d:
+        cand["motivo"] = "sin_fecha"
+        return None
+    if not _in_window(d, today):
+        cand["motivo"] = "fuera_de_ventana"
+        return None
+    if not parse.is_road(name):
+        cand["motivo"] = "no_asfalto"
+        return None
+    cand["motivo"] = "ok"
     city = f.get("city") or ""
     region = (parse.region_from_text(f.get("region_hint", ""), city)
               or parse.region_from_text(text[:1500])
@@ -111,7 +191,7 @@ def read_event_page(cand: dict, today: date) -> dict | None:
     return {
         "name": re.sub(r"\s+20\d{2}$", "", name).strip(),
         "date": d,
-        "time": f.get("time") or "",
+        "time": f.get("time") or parse.extract_time(text[:3000]) or "",
         "city": city,
         "region": region or "",
         "distances": parse.distances_from(name + " " + text[:800]),

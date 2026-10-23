@@ -38,8 +38,24 @@ RUNNINGLIFE_LISTS = [
     "https://running.life/half-marathons/spain",
     "https://running.life/marathon-calendar/spain",
     "https://running.life/10k-races/spain",
+    "https://running.life/5k-races/spain",
 ]
-RUNNINGLIFE_MAX_PAGES = 25
+
+# sportplan.es bloquea a los robots (Cloudflare, error 403): desactivado.
+SPORTPLAN_ACTIVO = False
+
+# Otras fuentes (robots.txt lo permite). Solo sirven para descubrir carreras.
+SPORTMANIACS_LIST = "https://sportmaniacs.com/es/races?page={n}"
+SPORTMANIACS_MAX_PAGES = 30
+CARRERASPOPULARES_LIST = "https://www.carreraspopulares.com/calendario_carreras/lista?page={n}"
+CARRERASPOPULARES_MAX_PAGES = 20
+LINEADESALIDA_LIST = "https://www.lineadesalida.net/"
+RUNEDIA_SITEMAP = "https://runedia.mundodeportivo.com/sitemap_index.xml"
+RUNEDIA_MAX_POR_EJECUCION = 250   # fichas nuevas de Runedia (sin fecha en la URL) que se abren por ejecución
+
+# Memoria de fichas ya revisadas (para no abrir dos veces las de trail, duplicadas, etc.)
+VISTOS_REINTENTO_DIAS = 7
+RUNNINGLIFE_MAX_PAGES = 60
 
 # Dominios que NO son webs oficiales (calendarios, agregadores, redes sociales).
 NOT_OFFICIAL = {
@@ -54,6 +70,7 @@ NOT_OFFICIAL = {
     "wikiloc.com", "booking.com", "hostelworld.com", "intervals.icu",
     "marathon-index.com", "runabc.co.uk", "mybestruns.com", "watchathletics.com",
     "trainerday.com", "events-app.eu.trainerday.com",
+    "carreraspopulares.com", "runedia.mundodeportivo.com", "mundodeportivo.com",
 }
 
 # Plataformas de inscripción que valen como página oficial de la carrera.
@@ -74,6 +91,9 @@ NOT_ROAD = [
     "acuatl", "swimrun", "btt", "bike", "bici", "ciclis", "marcha nórdica",
     "marcha nordica", "senderis", "vertical", "kv ", "backyard", "hyrox",
     "orientaci", "canicross", "infantil", "kids", "mini ", "caminata",
+    "mtb", "cxm", "marxa", "passejada", "caminada", "senderisme", "hyatlon", "hyathlon",
+    "nataci", "swim", "aquabike", "padel", "pádel", "kayak", "piragü", "remo ", "enduro",
+    "gravel", "rally", "ciclotur", "cicloturist", "patinaje", "roller",
 ]
 
 PROVINCE_TO_REGION = {
