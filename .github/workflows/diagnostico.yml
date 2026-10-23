@@ -2,6 +2,11 @@ name: Diagnóstico de búsqueda
 
 on:
   workflow_dispatch:
+    inputs:
+      modo:
+        type: choice
+        options: [sondeo, completo]
+        default: completo
 
 permissions:
   contents: write
@@ -17,11 +22,14 @@ jobs:
           python-version: "3.12"
       - run: pip install -r requirements.txt
       - run: python -m scraper.diagnostico
+        if: inputs.modo == 'completo'
+      - run: python -m scraper.sondeo
+        if: inputs.modo == 'sondeo'
       - name: Guardar
         run: |
           git config user.name "runningspain-bot"
           git config user.email "runningspain-bot@users.noreply.github.com"
-          git add estado/diagnostico.json
+          git add estado/
           git commit -m "Diagnóstico de búsqueda" || exit 0
           git pull --rebase -X theirs origin main
           git push
