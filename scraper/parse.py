@@ -31,9 +31,19 @@ def soup(html: str) -> BeautifulSoup:
 _NOT_ROAD_RE = re.compile(r"\b(" + "|".join(re.escape(norm(w).strip()) for w in config.NOT_ROAD) + r")", re.I)
 
 
+# Palabras que solas descartan, pero no si además se nombra una carrera a pie
+# («Cursa i Caminada», «Cursa del Club Natació»).
+_SOFT = {"caminata", "caminada", "marxa", "passejada", "nataci", "swim", "senderis", "senderisme"}
+_RUN_RE = re.compile(r"\b(cursa|carrera|carreira|lasterketa|run|running|corre|marato|maraton|mitja|media|\d+\s?k\b|\d+\s?km)", re.I)
+
+
 def is_road(*texts: str) -> bool:
     """True si el nombre no indica trail, montaña, cross, obstáculos, etc."""
-    return not _NOT_ROAD_RE.search(norm(" ".join(t for t in texts if t)))
+    t = norm(" ".join(t for t in texts if t))
+    hits = {m.group(1).lower() for m in _NOT_ROAD_RE.finditer(t)}
+    if not hits:
+        return True
+    return all(h in _SOFT for h in hits) and bool(_RUN_RE.search(t))
 
 
 def region_from_text(*texts: str) -> str | None:
@@ -87,6 +97,10 @@ def event_fields(ev: dict) -> dict:
     elif isinstance(addr, str):
         city = addr.split(",")[0]
         region_hint = addr
+    country = ""
+    if isinstance(addr, dict):
+        co = addr.get("addressCountry") or ""
+        country = (co.get("name") or co.get("@id") or "") if isinstance(co, dict) else str(co)
     if not city and isinstance(loc, dict):
         city = loc.get("name") or ""
     offers = ev.get("offers") or []
@@ -121,6 +135,7 @@ def event_fields(ev: dict) -> dict:
         "time": start[11:16] if re.match(r"\d{4}-\d{2}-\d{2}T\d{2}:\d{2}", start) and start[11:16] != "00:00" else None,
         "city": city.strip(),
         "region_hint": region_hint,
+        "country": country.strip(),
         "description": ev.get("description") or "",
         "price": format_price(prices) if prices else None,
         "image": image if isinstance(image, str) else None,
@@ -283,6 +298,21 @@ def date_from_text(text: str) -> str | None:
         except ValueError:
             continue
     return None
+
+
+def is_spain(country: str) -> bool:
+    """True si el país está vacío (no se sabe) o es España."""
+    c = norm(country or "").strip(" .")
+    return not c or c in {"es", "esp", "spain", "espana", "espanya", "espagne", "spanien"}
+
+
+def clean_name(name: str, city: str = "") -> str:
+    """Quita la fecha y el lugar pegados al final del nombre («… Cabo de Palos 24/10/2026»)."""
+    n = re.sub(r"\s+\d{1,2}/\d{1,2}/20\d{2}\s*$", "", name or "").strip()
+    if city and len(n) > len(city) + 5 and norm(n).endswith(" " + norm(city)):
+        n = n[: -len(city)].strip(" -·,")
+    n = re.sub(r"\s+20\d{2}$", "", n).strip()
+    return n
 
 
 def nice_name(name: str) -> str:

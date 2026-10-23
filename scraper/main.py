@@ -14,7 +14,7 @@ from . import config, enrich, net, parse, sources
 
 DATA = Path(__file__).resolve().parent.parent / "docs" / "data" / "carreras.json"
 SEEN = Path(__file__).resolve().parent.parent / "estado" / "vistos.json"
-FINAL = {"no_asfalto", "duplicada", "añadida", "sin_nombre"}   # no se vuelven a abrir nunca
+FINAL = {"no_asfalto", "duplicada", "añadida", "sin_nombre", "extranjera"}   # no se vuelven a abrir nunca
 GENERIC = {"san", "sant", "silvestre", "media", "maraton", "medio", "mitja", "marato", "10k", "5k",
            "15k", "21k", "solidaria", "solidari", "navidad", "nadal", "nocturna", "urbana", "race",
            "run", "half", "contra", "cancer", "mujer", "dona", "por", "de", "del", "la", "el", "los",
@@ -155,6 +155,17 @@ def complete(db: dict, today: date, changes: dict) -> int:
     return done
 
 
+def tidy(db: dict) -> int:
+    """Aplica a los datos guardados los filtros y arreglos actuales (por si se mejoraron)."""
+    before = len(db["races"])
+    db["races"] = [r for r in db["races"] if parse.is_road(r["name"]) and not r.get("foreign")]
+    for r in db["races"]:
+        if r.get("city"):
+            r["city"] = parse.nice_name(r["city"])
+        r["name"] = parse.clean_name(r["name"], r.get("city", ""))
+    return before - len(db["races"])
+
+
 def prune(db: dict, today: date) -> int:
     limit = (today - timedelta(days=config.KEEP_PAST_DAYS)).isoformat()
     before = len(db["races"])
@@ -166,7 +177,7 @@ def main(argv: list[str]) -> None:
     t0 = time.time()
     today = date.today()
     db = load()
-    removed = prune(db, today)
+    removed = prune(db, today) + tidy(db)
     changes = {"added": [], "updated": {}}
     added = 0 if "--enrich-only" in argv else discover(db, today, changes)
     save(db)

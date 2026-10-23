@@ -123,8 +123,11 @@ def list_carreraspopulares(today: date, log) -> list[dict]:
 
 
 def list_lineadesalida(today: date, log) -> list[dict]:
-    return _paged("lineadesalida", config.LINEADESALIDA_LIST + "?_={n}", LS_EVENT, 1, log,
-                  keep=lambda u: parse.is_road(u.rsplit("/", 1)[-1].replace("-", " ")))
+    res = _paged("lineadesalida", config.LINEADESALIDA_LIST + "?_={n}", LS_EVENT, 1, log,
+                 keep=lambda u: parse.is_road(u.rsplit("/", 1)[-1].replace("-", " ")))
+    for c in res:   # empresa de cronometraje de Murcia: casi todas sus carreras son de allí
+        c["region_default"] = "Región de Murcia"
+    return res
 
 
 def list_runedia(today: date, log) -> list[dict]:
@@ -182,14 +185,22 @@ def read_event_page(cand: dict, today: date) -> dict | None:
     if not parse.is_road(name):
         cand["motivo"] = "no_asfalto"
         return None
+    if not parse.is_spain(f.get("country", "")):
+        cand["motivo"] = "extranjera"
+        return None
     cand["motivo"] = "ok"
     city = f.get("city") or ""
+    if not city:
+        m = re.search(r"\bLugar:?\s+(.{2,40}?)\s+(?:Fecha|Hora|Distancia)\b", text[:3000])
+        city = m.group(1).strip() if m else ""
+    city = parse.nice_name(city)
+    name = parse.clean_name(name, city)
     region = (parse.region_from_text(f.get("region_hint", ""), city)
-              or parse.region_from_text(text[:1500])
-              or cand.get("region_default"))
+              or cand.get("region_default")
+              or parse.region_from_text(text[:1500]))
     official = (f.get("official_candidates") or [None])[0] or parse.guess_official(html, final)
     return {
-        "name": re.sub(r"\s+20\d{2}$", "", name).strip(),
+        "name": name,
         "date": d,
         "time": f.get("time") or parse.extract_time(text[:3000]) or "",
         "city": city,
