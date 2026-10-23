@@ -7,7 +7,8 @@
 <meta name="description" content="Carreras de asfalto en España: maratones, medias, 10K y populares de los próximos tres meses, con web oficial, precio y reglamento.">
 <meta property="og:title" content="RunningSpain">
 <meta property="og:description" content="Calendario de carreras de asfalto de toda España, actualizado cada día.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23e0461c'/%3E%3Ctext x='32' y='44' font-size='34' text-anchor='middle' font-family='Arial' font-weight='700' fill='white'%3ERS%3C/text%3E%3C/svg%3E">
+<link rel="icon" type="image/svg+xml" href="logo.svg">
+<link rel="apple-touch-icon" href="logo.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@600;700;800&family=Figtree:wght@400;500;600&display=swap">
 <style>
@@ -38,7 +39,9 @@ body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15p
   padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
 header{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:8px 24px;margin-bottom:18px}
 h1{font-family:var(--display);font-weight:800;font-size:clamp(34px,7vw,52px);line-height:.95;margin:0;letter-spacing:-.01em;text-wrap:balance}
-h1 span{color:var(--accent)}
+h1 .t span{color:var(--accent)}
+h1{display:flex;align-items:center;gap:12px}
+h1 .logo{width:clamp(36px,7vw,48px);height:auto;border-radius:22%;flex:none;box-shadow:0 1px 3px rgba(0,0,0,.2)}
 .sub{color:var(--muted);margin:6px 0 0;max-width:60ch}
 .status{font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums}
 .status b{color:var(--ink);font-weight:600}
@@ -126,7 +129,7 @@ footer{margin-top:40px;font-size:13px;color:var(--muted);max-width:70ch}
 <div class="wrap">
   <header>
     <div>
-      <h1>Running<span>Spain</span></h1>
+      <h1><img class="logo" src="logo.svg" alt="" width="44" height="44"><span class="t">Running<span>Spain</span></span></h1>
       <p class="sub">Maratones, medias, 10K y populares de toda España en los próximos tres meses. Se actualiza cada día.</p>
     </div>
     <button class="upd" id="upd" type="button" aria-pressed="false" hidden>
