@@ -36,6 +36,22 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python -m scraper.main
 
+      # 1) Guardar los datos en cuanto termina la búsqueda: la web se actualiza sin esperar a los tweets.
+      - name: Guardar los datos
+        run: |
+          git config user.name "runningspain-bot"
+          git config user.email "runningspain-bot@users.noreply.github.com"
+          git add docs/data/carreras.json
+          [ -f estado/vistos.json ] && git add estado/vistos.json
+          if git diff --cached --quiet; then
+            echo "Sin cambios"
+          else
+            git commit -m "Actualizar carreras $(date -u +%Y-%m-%d)"
+            git pull --rebase -X theirs origin main
+            git push
+          fi
+
+      # 2) Después, los tweets (uno cada 90 segundos a MacroDroid).
       - name: Publicar carreras nuevas en X
         env:
           # Si faltan estos secretos, el paso no publica nada (y no falla).
@@ -46,17 +62,16 @@ jobs:
           X_ACCESS_SECRET: ${{ secrets.X_ACCESS_SECRET }}
         run: python -m scraper.xpost
 
-      - name: Guardar los datos
+      # 3) Anotar qué carreras se han enviado ya (aunque el paso anterior fallara a medias).
+      - name: Guardar lo publicado
+        if: always()
         run: |
-          git config user.name "runningspain-bot"
-          git config user.email "runningspain-bot@users.noreply.github.com"
-          git add docs/data/carreras.json
-          [ -f estado/x.json ] && git add estado/x.json
-          [ -f estado/vistos.json ] && git add estado/vistos.json
+          [ -f estado/x.json ] || exit 0
+          git add estado/x.json
           if git diff --cached --quiet; then
             echo "Sin cambios"
           else
-            git commit -m "Actualizar carreras $(date -u +%Y-%m-%d)"
+            git commit -m "Tweets enviados $(date -u +%Y-%m-%d)"
             git pull --rebase -X theirs origin main
             git push
           fi
