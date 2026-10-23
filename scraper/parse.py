@@ -24,6 +24,18 @@ def race_id(name: str, d: str) -> str:
     return f"{slug(name)}-{d[:4]}-{d[5:7]}{d[8:10]}"
 
 
+def page_base(html: str, url: str) -> str:
+    """Dirección base para los enlaces relativos: respeta <base href> si la página lo declara."""
+    m = re.search(r"<base\s[^>]*href=[\"']([^\"']+)[\"']", html[:20000] or "", re.I)
+    return urljoin(url, m.group(1).strip()) if m else url
+
+
+def abs_url(base: str, href: str) -> str:
+    """Enlace absoluto y bien codificado (espacios y tildes incluidos)."""
+    from requests.utils import requote_uri
+    return requote_uri(urljoin(base, (href or "").strip()))
+
+
 def soup(html: str) -> BeautifulSoup:
     return BeautifulSoup(html, "html.parser")
 
@@ -160,10 +172,11 @@ OFFICIAL_HINT = re.compile(r"web|oficial|official|site|inscri|registr|organiza|m
 
 
 def external_links(html: str, base: str) -> list[tuple[str, str]]:
+    base = page_base(html, base)
     s = soup(html)
     res = []
     for a in s.find_all("a", href=True):
-        href = urljoin(base, a["href"].strip())
+        href = abs_url(base, a["href"])
         if href.startswith("http") and is_official_url(href) and domain(href) != domain(base):
             res.append((href.split("#")[0], a.get_text(" ", strip=True)))
     return res
@@ -171,6 +184,7 @@ def external_links(html: str, base: str) -> list[tuple[str, str]]:
 
 def guess_official(html: str, base: str) -> str | None:
     """Elige el enlace externo con más pinta de web oficial en una ficha de calendario."""
+    base = page_base(html, base)
     links = external_links(html, base)
     if not links:
         return None
@@ -202,9 +216,10 @@ def is_document(url: str) -> bool:
 
 def find_regulation(html: str, base: str, only_docs: bool = False) -> str | None:
     """Enlace al reglamento. Prefiere el documento directo (PDF/Drive) frente a una página «Reglamento»."""
+    base = page_base(html, base)
     best, best_score = None, 0
     for a in soup(html).find_all("a", href=True):
-        href = urljoin(base, a["href"].strip())
+        href = abs_url(base, a["href"])
         if not href.startswith("http"):
             continue
         txt = a.get_text(" ", strip=True)[:120] + " " + str(a.get("title") or "")
@@ -245,13 +260,14 @@ _IMG_POSTER = re.compile(r"cartel|cartell|poster|afiche|flyer|affiche|kartel", r
 def best_image(html: str, base: str) -> tuple[str | None, int]:
     """El mejor cartel de una página y su puntuación (0 = ninguno).
     Prefiere imágenes llamadas «cartel/poster»; luego la imagen del evento (JSON-LD); luego og:image."""
+    base = page_base(html, base)
     s = soup(html)
     cands: dict[str, int] = {}
 
     def add(url, score):
         if not url or not isinstance(url, str):
             return
-        url = urljoin(base, url.strip())
+        url = abs_url(base, url)
         if not url.startswith("http") or _IMG_BAD.search(url):
             return
         if _IMG_POSTER.search(url):
@@ -303,9 +319,10 @@ def is_route_url(url: str) -> bool:
 def find_route(html: str, base: str, strict: bool = False) -> str | None:
     """Enlace al recorrido: Strava, Wikiloc, Garmin, Google My Maps…, un .gpx/.kml o una página «Recorrido»
     de la propia web. Con strict=True (páginas de calendarios) solo valen servicios de rutas y archivos GPX/KML."""
+    base = page_base(html, base)
     best, best_score = None, 0
     for a in soup(html).find_all("a", href=True):
-        href = urljoin(base, a["href"].strip())
+        href = abs_url(base, a["href"])
         if not href.startswith("http"):
             continue
         text = a.get_text(" ", strip=True)[:80] + " " + str(a.get("title") or "")

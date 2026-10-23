@@ -81,6 +81,7 @@ class FlowTests(unittest.TestCase):
     def test_read_and_enrich(self):
         today = date(2026, 10, 22)
         with mock.patch("scraper.net.get", side_effect=fake_get), \
+             mock.patch("scraper.net.probe", side_effect=lambda u: (True, u, u.endswith(".pdf"))), \
              mock.patch("scraper.enrich.pdf_text", return_value=REG_TEXT):
             r = sources.read_event_page({"source_url": "https://sportplan.es/es/events/media-ejemplo"}, today)
             self.assertEqual(r["name"], "Media Maratón de Ejemplo")
@@ -276,14 +277,31 @@ class RegulationTests(unittest.TestCase):
         self.assertIsNone(parse.find_regulation('<a href="/rgpd">Reglamento general de protección de datos</a>', "https://x.es/"))
         self.assertTrue(parse.is_document("https://drive.google.com/file/d/abc/view"))
 
+    def test_base_href_and_spaces(self):
+        html = '<base href="https://www.babelsport.com/"><a href="userfiles/e4ff_Reglamento Carrera 2026.pdf">Reglamento</a>'
+        self.assertEqual(parse.find_regulation(html, "https://www.babelsport.com/evento/x-2026/Reglamento"),
+                         "https://www.babelsport.com/userfiles/e4ff_Reglamento%20Carrera%202026.pdf")
+
+    def test_broken_pdf_falls_back_to_page(self):
+        def probe(u):
+            return (not u.endswith(".pdf"), u, False)   # el PDF devuelve una página: no vale
+        with mock.patch("scraper.net.probe", side_effect=probe):
+            self.assertEqual(enrich.resolve_regulation("https://deporchip.com/r.pdf", found_on="https://x.es/carrera"),
+                             "https://x.es/carrera")
+        with mock.patch("scraper.net.probe", return_value=(False, "u", False)):
+            self.assertIsNone(enrich.resolve_regulation("https://deporchip.com/r.pdf"))
+
     def test_resolve_page_to_pdf(self):
         page = '<h1>Reglamento</h1><a href="/wp-content/uploads/2026/09/Normativa-10K.pdf">Normativa 10K (PDF)</a>'
-        with mock.patch("scraper.net.get", return_value=(page, "https://x.es/reglamento/", "text/html")):
+        with mock.patch("scraper.net.probe", side_effect=lambda u: (True, u, u.endswith(".pdf"))), \
+             mock.patch("scraper.net.get", return_value=(page, "https://x.es/reglamento/", "text/html")):
             self.assertEqual(enrich.resolve_regulation("https://x.es/reglamento/"),
                              "https://x.es/wp-content/uploads/2026/09/Normativa-10K.pdf")
-        with mock.patch("scraper.net.get", return_value=("<p>Texto del reglamento en la página</p>", "https://x.es/r", "text/html")):
+        with mock.patch("scraper.net.probe", side_effect=lambda u: (True, u, False)), \
+             mock.patch("scraper.net.get", return_value=("<p>Texto del reglamento en la página</p>", "https://x.es/r", "text/html")):
             self.assertEqual(enrich.resolve_regulation("https://x.es/r"), "https://x.es/r")
-        with mock.patch("scraper.net.get", return_value=(b"%PDF", "https://x.es/r.pdf", "application/pdf")):
+        with mock.patch("scraper.net.probe", side_effect=lambda u: (True, u, True)), \
+             mock.patch("scraper.net.get", return_value=(b"%PDF", "https://x.es/r.pdf", "application/pdf")):
             self.assertEqual(enrich.resolve_regulation("https://x.es/descarga?id=3"), "https://x.es/r.pdf")
 
 

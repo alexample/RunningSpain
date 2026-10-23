@@ -77,3 +77,32 @@ def get(url: str, binary: bool = False):
         r.encoding = r.encoding or r.apparent_encoding
         return r.text, r.url, ctype
     return None, url, None
+
+
+def probe(url: str) -> tuple[bool, str, bool]:
+    """¿Abre el enlace? Devuelve (funciona, url_final, es_pdf). Solo lee el principio del archivo."""
+    if not url or not url.startswith(("http://", "https://")):
+        return False, url, False
+    host = domain(url)
+    for attempt in range(2):
+        _wait(host)
+        stats["requests"] += 1
+        try:
+            r = _session.get(url, timeout=config.TIMEOUT, allow_redirects=True, stream=True,
+                             headers={"Referer": f"{urlparse(url).scheme}://{urlparse(url).netloc}/"})
+            head = next(r.iter_content(2048), b"")
+            r.close()
+        except (requests.RequestException, StopIteration):
+            stats["errors"] += 1
+            continue
+        if r.status_code in (429, 503) and attempt == 0:
+            time.sleep(8)
+            continue
+        is_pdf = head.startswith(b"%PDF")
+        if r.status_code >= 400:
+            return False, r.url, False
+        # un enlace «.pdf» que devuelve una página no es el documento
+        if url.lower().split("?")[0].endswith(".pdf") and not is_pdf:
+            return False, r.url, False
+        return True, r.url, is_pdf
+    return False, url, False

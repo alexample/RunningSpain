@@ -31,17 +31,31 @@ def fetch_text(url: str) -> tuple[str, str | None, str]:
     return parse.page_text(body), body, final
 
 
-def resolve_regulation(url: str) -> str:
-    """Si el reglamento es una página, entra en ella y devuelve el PDF/documento que contenga (acceso directo)."""
-    if not url or parse.is_document(url):
-        return url
-    body, final, ctype = net.get(url)
-    if body is None:
-        return url
-    if isinstance(body, bytes) or "pdf" in (ctype or ""):
-        return final              # la «página» era en realidad el PDF (redirección)
-    doc = parse.find_regulation(body, final, only_docs=True)
-    return doc or url
+def resolve_regulation(url: str, found_on: str | None = None) -> str | None:
+    """Enlace más directo al reglamento QUE FUNCIONE.
+    - Si es una página, entra y busca el PDF/documento que contenga.
+    - Comprueba que el enlace abre (y que un «.pdf» es de verdad un PDF).
+    - Si el documento no abre, vale la página donde estaba; si nada abre, None."""
+    if not url:
+        return None
+    candidates = []
+    if parse.is_document(url):
+        candidates = [url, found_on]
+    else:
+        body, final, ctype = net.get(url)
+        if body is not None and (isinstance(body, bytes) or "pdf" in (ctype or "")):
+            candidates = [final, found_on]          # la «página» era el PDF (redirección)
+        elif body is not None:
+            doc = parse.find_regulation(body, final, only_docs=True)
+            candidates = [doc, final, found_on]
+        else:
+            candidates = [found_on]
+    for c in candidates:
+        if c:
+            ok, final, _ = net.probe(c)
+            if ok:
+                return c if parse.is_document(c) else final
+    return None
 
 
 def ask_llm(name: str, d: str, text: str) -> dict:
@@ -117,9 +131,10 @@ def enrich(r: dict, today: date) -> dict:
 
     regulation = r.get("regulation") or (parse.find_regulation(html, final) if html else (final if final.lower().endswith(".pdf") else None))
     if regulation and not r.get("regulation"):
-        regulation = resolve_regulation(regulation)
-        upd["regulation"] = regulation
-        upd["regResolved"] = today.isoformat()
+        regulation = resolve_regulation(regulation, found_on=final)
+        if regulation:
+            upd["regulation"] = regulation
+        upd["regResolved"] = upd["regChecked"] = today.isoformat()
     if html:
         img, score = parse.best_image(html, final)
         # el cartel de la web oficial gana si puntúa igual o mejor que el que ya hubiera

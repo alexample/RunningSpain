@@ -158,21 +158,34 @@ def complete(db: dict, today: date, changes: dict) -> int:
 def media(db: dict, today: date, changes: dict) -> int:
     """Reabre la ficha del calendario de las carreras sin cartel o sin recorrido."""
     limit = (today - timedelta(days=config.MEDIA_RECHECK_DAYS)).isoformat()
-    # reglamentos que son una página: se intenta llegar al PDF (una vez)
+    # reglamentos: llegar al PDF si era una página, y comprobar cada semana que el enlace sigue abriendo
+    week = (today - timedelta(days=7)).isoformat()
     regs = [r for r in db["races"] if r["date"] >= today.isoformat() and r.get("regulation")
-            and not parse.is_document(r["regulation"]) and not r.get("regResolved")]
-    better = 0
+            and (not r.get("regResolved") or (r.get("regChecked") or "") < week)]
+    regs.sort(key=lambda r: (r.get("regChecked") or "", r["date"]))
+    better = broken = 0
     for r in regs[: config.MAX_MEDIA]:
-        new = enrich.resolve_regulation(r["regulation"])
-        r["regResolved"] = today.isoformat()
-        if new != r["regulation"]:
+        old = r["regulation"]
+        page = r.get("url") if r.get("official") else None
+        new = enrich.resolve_regulation(old, found_on=page)
+        if not new and page:      # el enlace ya no abre: se busca otra vez en la web oficial
+            html, final, _ = net.get(page)
+            again = parse.find_regulation(html, final) if html and not isinstance(html, bytes) else None
+            new = enrich.resolve_regulation(again, found_on=final) if again else None
+        r["regResolved"] = r["regChecked"] = today.isoformat()
+        if new == old:
+            continue
+        if new:
             r["regulation"] = new
             better += 1
-            if r["id"] not in changes["added"]:
-                lst = changes["updated"].setdefault(r["id"], [])
-                if "regulation" not in lst:
-                    lst.append("regulation")
-    log(f"Reglamentos: {len(regs)} eran una página, {better} ya enlazan directamente al documento")
+        else:
+            r.pop("regulation")
+            broken += 1
+        if r["id"] not in changes["added"] and new:
+            lst = changes["updated"].setdefault(r["id"], [])
+            if "regulation" not in lst:
+                lst.append("regulation")
+    log(f"Reglamentos revisados: {min(len(regs), config.MAX_MEDIA)} · {better} cambiados por un enlace que funciona · {broken} quitados por no abrir")
     todo = [r for r in db["races"] if r["date"] >= today.isoformat() and r.get("source")
             and (not r.get("banner") or not r.get("route")) and (r.get("mediaChecked") or "") < limit]
     todo.sort(key=lambda r: r["date"])
