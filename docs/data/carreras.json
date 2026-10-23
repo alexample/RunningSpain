@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-23T12:25:26+00:00",
+ "updatedAt": "2026-10-23T14:20:21+00:00",
  "count": 869,
  "races": [
   {
@@ -8760,7 +8760,8 @@
    "price": "12 €",
    "km": "10 km · 7 km · 5 km",
    "changedAt": "2026-10-22",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Carrera y Marcha Urbana Mueve La Vida",
@@ -8785,7 +8786,8 @@
    "km": "5,3 km · 3 km",
    "mediaChecked": "2026-10-23",
    "banner": "https://www.alcanzatumeta.es/uploads/Cartel/f79e288ce724ee6613e84fc3f2f7498e.jpeg",
-   "bannerScore": 8
+   "bannerScore": 8,
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Media Maratón Villa de Miguelturra",
@@ -8808,7 +8810,8 @@
    "regulation": "https://carrerasciudadreal.es/wp-content/uploads/2026/10/Reglamento-Miguelturra-2026.pdf",
    "km": "10 km",
    "changedAt": "2026-10-22",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Cursa Festa de l'Esport Son Fusteret",
@@ -8833,7 +8836,8 @@
    "changedAt": "2026-10-22",
    "mediaChecked": "2026-10-23",
    "banner": "https://www.elitechip.net/media.php?zwimg=5705803&zwh=1200&zww=800&zwrot=0&zwp=856bd1aa55&zwver=ce594",
-   "bannerScore": 4
+   "bannerScore": 4,
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Mitja Marató Espirall",
@@ -8858,7 +8862,9 @@
    "price": "26 €",
    "km": "10 km · 5 km",
    "changedAt": "2026-10-22",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23",
+   "inscripcion": "abierta"
   },
   {
    "name": "22a TEIALADA",
@@ -8883,7 +8889,9 @@
    "banner": "https://web.rockthesport.com/images/home-banner.jpg",
    "bannerScore": 2,
    "km": "10 km · 5 km",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23",
+   "inscripcion": "cerrada"
   },
   {
    "name": "5K-10K Villa de Castuera",
@@ -8908,7 +8916,8 @@
    "km": "10 km · 5 km",
    "changedAt": "2026-10-22",
    "mediaChecked": "2026-10-23",
-   "bannerScore": 8
+   "bannerScore": 8,
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Andaina de Outono Concello Paderne de Allariz",
@@ -8936,7 +8945,9 @@
    "km": "18 km · 12 km · 4 km",
    "regResolved": "2026-10-23",
    "mediaChecked": "2026-10-23",
-   "bannerScore": 4
+   "bannerScore": 4,
+   "inscripcionAt": "2026-10-23",
+   "inscripcion": "abierta"
   },
   {
    "name": "Barbaño Corre 8K",
@@ -8978,7 +8989,8 @@
    "price": "23 €",
    "km": "10 km · 5 km · 3 km",
    "changedAt": "2026-10-22",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Carreira Pedestre de Ribadavia",
@@ -8997,7 +9009,8 @@
    "checkedAt": "2026-10-22",
    "nosite": false,
    "changedAt": "2026-10-22",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Carreira Popular Novo Mesoiro",
@@ -9039,7 +9052,8 @@
    "changedAt": "2026-10-22",
    "mediaChecked": "2026-10-23",
    "banner": "https://www.alcanzatumeta.es/uploads/Cartel/0a5e269a4764ffd17f03a58127e1d679.jpg",
-   "bannerScore": 8
+   "bannerScore": 8,
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Carrera Corre Segura",
@@ -9114,7 +9128,8 @@
    "regulation": "https://www.cronofinisher.com/images/biblioteca_eventos/738/reglamento-carrera-contra-la-droga-navalmoral-de-la-mata-2026-def(1).pdf",
    "banner": "https://www.cronofinisher.com/images/img-rrss1.jpg",
    "km": "5 km · 3 km",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Carrera Popular Almenara de Tormes - Enusa",
@@ -9139,7 +9154,8 @@
    "km": "10 km",
    "changedAt": "2026-10-22",
    "regResolved": "2026-10-23",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Carrera Popular Jamón Veloz",
@@ -9216,7 +9232,8 @@
    "km": "5 km",
    "regResolved": "2026-10-23",
    "mediaChecked": "2026-10-23",
-   "bannerScore": 8
+   "bannerScore": 8,
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Carrera Solidaria Ruta 091 Córdoba",
@@ -9272,7 +9289,8 @@
    "regulation": "https://www.chiplevante.com/es/prueba/files/documentacion/Reglamento2026amacmec.pdf",
    "km": "10 km · 5,5 km",
    "changedAt": "2026-10-22",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Carrera contra el Cáncer de Mama Elche",
@@ -9345,7 +9363,9 @@
    "banner": "https://rtsfiles.blob.core.windows.net/manager/1160/custom/root/b23325c7-231a-4521-a69d-3a4b564bbab9_custom1.jpg",
    "km": "5 km",
    "mediaChecked": "2026-10-23",
-   "bannerScore": 4
+   "bannerScore": 4,
+   "inscripcionAt": "2026-10-23",
+   "inscripcion": "abierta"
   },
   {
    "name": "Cros Antoni Amorós",
@@ -9370,7 +9390,8 @@
    "banner": "https://sportmaniacs.com/images/share/sportmaniacs-race.jpg",
    "km": "4,925 km",
    "regResolved": "2026-10-23",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Cursa Entrepobles La Garrotxa",
@@ -9394,7 +9415,9 @@
    "banner": "https://web.rockthesport.com/_next/image?url=https%3A%2F%2Frtsfiles.blob.core.windows.net%2Fmanager%2F11687%2Flibrary%2Froot%2Fe2fa4aeb-7a75-4eea-94f3-7c58c5b12a60.jpg&w=1200&q=75",
    "km": "10 km",
    "changedAt": "2026-10-22",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23",
+   "inscripcion": "cerrada"
   },
   {
    "name": "Cursa On Déu Va Perdre l'Espardenya",
@@ -9421,7 +9444,8 @@
    "km": "14 km · 10 km · 5,5 km · 5 km",
    "changedAt": "2026-10-22",
    "regResolved": "2026-10-23",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Cursa Popular Vila de Sant Boi",
@@ -9463,7 +9487,8 @@
    "price": "6–18 €",
    "km": "10 km · 5 km",
    "changedAt": "2026-10-22",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Cursa de Parets del Vallès",
@@ -9488,7 +9513,9 @@
    "km": "10 km · 5 km",
    "changedAt": "2026-10-22",
    "mediaChecked": "2026-10-23",
-   "bannerScore": 4
+   "bannerScore": 4,
+   "inscripcionAt": "2026-10-23",
+   "inscripcion": "abierta"
   },
   {
    "name": "Cursa solidària CNG4Camins",
@@ -9531,7 +9558,8 @@
    "banner": "https://sportmaniacs.com/images/share/sportmaniacs-race.jpg",
    "km": "30 km · 20 km",
    "regResolved": "2026-10-23",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Desafío Vega Baja Redovan By Medieval",
@@ -9555,7 +9583,9 @@
    "km": "8 km · 5 km",
    "mediaChecked": "2026-10-23",
    "banner": "https://crono4sports.com/storage/posters/01M08HASXG33Q6Y9SZJ1G71AP5.jpg",
-   "bannerScore": 8
+   "bannerScore": 8,
+   "inscripcionAt": "2026-10-23",
+   "inscripcion": "abierta"
   },
   {
    "name": "Dinosauris Moncada 10K",
@@ -9578,7 +9608,8 @@
    "regulation": "https://inscripciones.cronorunner.com/rgpd",
    "changedAt": "2026-10-22",
    "regResolved": "2026-10-23",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Emakumeen Lasterketa 5K",
@@ -9602,7 +9633,9 @@
    "banner": "https://rtsfiles.blob.core.windows.net/manager/1367/library/root/214294d8-a5c3-4b3a-b9da-2833545a4217.jpeg",
    "km": "5 km",
    "mediaChecked": "2026-10-23",
-   "bannerScore": 4
+   "bannerScore": 4,
+   "inscripcionAt": "2026-10-23",
+   "inscripcion": "abierta"
   },
   {
    "name": "Evento Gordako Utiel",
@@ -9624,7 +9657,9 @@
    "regulation": "https://sportmaniacs.com/es/races/evento-gordako-utiel-2026#rules",
    "banner": "https://sportmaniacs.com/images/share/sportmaniacs-race.jpg",
    "regResolved": "2026-10-23",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23",
+   "inscripcion": "abierta"
   },
   {
    "name": "Isla Race Estadi Mallorca Son Moix",
@@ -9645,7 +9680,9 @@
    "signup": true,
    "banner": "https://rtsfiles.blob.core.windows.net/manager/14468/library/root/1226ff71-1cd3-4098-9a45-538b6f14ddb8.jpeg",
    "mediaChecked": "2026-10-23",
-   "bannerScore": 4
+   "bannerScore": 4,
+   "inscripcionAt": "2026-10-23",
+   "inscripcion": "abierta"
   },
   {
    "name": "La Mitja del Maresme",
@@ -9671,7 +9708,8 @@
    "price": "2 €",
    "km": "21 km · 10 km · 5 km",
    "changedAt": "2026-10-22",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "La Palauenca",
@@ -9713,7 +9751,8 @@
    "regulation": "https://www.mistiemposconchip.com/sites/default/files/eventos/REGLAMENTO%20XXXIV%20MEDIA%20MARAT%C3%93N%20CIUDAD%20DE%20CEUTA%20XX%20MEDIA%20MARAT%C3%93N%20JUNIOR.pdf",
    "km": "21 km · 18 km · 14 km · 10 km",
    "changedAt": "2026-10-22",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Media Maratón Ciudad de Roquetas",
@@ -9738,7 +9777,8 @@
    "km": "21,097 km · 8 km",
    "changedAt": "2026-10-22",
    "mediaChecked": "2026-10-23",
-   "bannerScore": 4
+   "bannerScore": 4,
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Media Maratón Holiday World Benalmádena",
@@ -9760,7 +9800,8 @@
    "signup": true,
    "km": "21 km",
    "changedAt": "2026-10-22",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Media Maratón de Jarandilla de la Vera",
@@ -9785,7 +9826,8 @@
    "km": "21,097 km · 21 km · 10 km",
    "changedAt": "2026-10-22",
    "mediaChecked": "2026-10-23",
-   "bannerScore": 8
+   "bannerScore": 8,
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Mitja Marató Samaruc",
@@ -9807,7 +9849,8 @@
    "signup": true,
    "banner": "https://rtsfiles.blob.core.windows.net/manager/2048/custom/root/c1901fc6-4ce1-4715-a003-0d4d98e4af3b_custom1.jpeg",
    "changedAt": "2026-10-22",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Tarraco Health Race",
@@ -9832,7 +9875,9 @@
    "price": "5–10 €",
    "km": "10 km · 5 km",
    "changedAt": "2026-10-22",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23",
+   "inscripcion": "abierta"
   },
   {
    "name": "Vilarnau Correcava",
@@ -9858,7 +9903,8 @@
    "banner": "https://sportmaniacs.com/images/share/sportmaniacs-race.jpg",
    "km": "12 km · 8 km",
    "regResolved": "2026-10-23",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "X Carrera Popular XI Marcha Solidaria por la Diabetes",
@@ -9882,7 +9928,9 @@
    "regulation": "http://deporchip.com/wp-content/uploads/2026/07/Reglamento-X-CARRERA-POPULAR-XI-MARCHA-SOLIDARIA-POR-LA-DIABETES-2026.pdf",
    "banner": "https://sportmaniacs.com/images/share/sportmaniacs-race.jpg",
    "km": "7,4 km",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23",
+   "inscripcion": "abierta"
   },
   {
    "name": "XVI Cursa i Caminada Solidaria Contra la Violència de Gènere",
@@ -9905,7 +9953,9 @@
    "signup": true,
    "regulation": "https://sportmaniacs.com/es/races/xvi-cursa-i-caminada-solidaria-contra-la-violencia-de-genere#rules",
    "regResolved": "2026-10-23",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23",
+   "inscripcion": "abierta"
   },
   {
    "name": "Capital to Country Multi Day Ultra Nepal",
@@ -9976,7 +10026,8 @@
    "regulation": "https://www.alcanzatumeta.es/uploads/Reglamento/8952f1f560ccbe3a139530f9ef09c6ed.pdf",
    "mediaChecked": "2026-10-23",
    "banner": "https://www.alcanzatumeta.es/uploads/Cartel/97feac9da4cd968f320d7c66347d5f05.jpeg",
-   "bannerScore": 8
+   "bannerScore": 8,
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "II Carrera y Caminata la Muela por la Igualdad",
@@ -10018,7 +10069,8 @@
    "bannerScore": 9,
    "km": "5 km",
    "regResolved": "2026-10-23",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "10K Dulces de Casinos",
@@ -10040,7 +10092,9 @@
    "regulation": "https://inscripciones.cronorunner.com/rgpd",
    "changedAt": "2026-10-22",
    "regResolved": "2026-10-23",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23",
+   "inscripcion": "cerrada"
   },
   {
    "name": "10K Sariñena",
@@ -10101,7 +10155,9 @@
    "km": "10 km",
    "changedAt": "2026-10-22",
    "mediaChecked": "2026-10-23",
-   "bannerScore": 4
+   "bannerScore": 4,
+   "inscripcionAt": "2026-10-23",
+   "inscripcion": "abierta"
   },
   {
    "name": "Carrera Papá Noel La Florida",
@@ -10137,7 +10193,8 @@
    "nosite": false,
    "banner": "https://faa-media.s3.eu-south-2.amazonaws.com/IMG-20261015-WA0006.18556.jpg",
    "mediaChecked": "2026-10-23",
-   "bannerScore": 4
+   "bannerScore": 4,
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "En Marcha Contra el Cáncer Longares",
@@ -10158,7 +10215,9 @@
    "signup": true,
    "banner": "https://rtsfiles.blob.core.windows.net/manager/10247/library/root/ffe832eb-0802-472a-ad61-1428642aa875.png",
    "mediaChecked": "2026-10-23",
-   "bannerScore": 4
+   "bannerScore": 4,
+   "inscripcionAt": "2026-10-23",
+   "inscripcion": "abierta"
   },
   {
    "name": "La Cursa del Tractor",
@@ -10185,7 +10244,8 @@
    "km": "12 km · 3 km",
    "regResolved": "2026-10-23",
    "mediaChecked": "2026-10-23",
-   "bannerScore": 4
+   "bannerScore": 4,
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Playa Blanca Music Run Night",
@@ -10211,7 +10271,9 @@
    "km": "10 km · 5 km",
    "changedAt": "2026-10-22",
    "mediaChecked": "2026-10-23",
-   "bannerScore": 4
+   "bannerScore": 4,
+   "inscripcionAt": "2026-10-23",
+   "inscripcion": "abierta"
   },
   {
    "name": "Allianz Jean Bouin",
@@ -10234,7 +10296,8 @@
    "price": "3 €",
    "km": "10 km · 5 km",
    "changedAt": "2026-10-22",
-   "regResolved": "2026-10-23"
+   "regResolved": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Carrera Popular Cortijo del Fraile",
@@ -10258,7 +10321,8 @@
    "km": "11 km · 5 km",
    "mediaChecked": "2026-10-23",
    "banner": "https://www.todofondo.net/media/competiciones/CARTEL_kxZipfb.jpeg",
-   "bannerScore": 8
+   "bannerScore": 8,
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Media Maratón de Córdoba",
@@ -10300,7 +10364,9 @@
    "banner": "https://s3.eu-west-1.amazonaws.com/sm-fotos.sportmaniacs.com/back/resize/1920x410x0_header_6ab10778-5fa4-4c0b-ad06-4890ac1f05d9.png",
    "regResolved": "2026-10-23",
    "mediaChecked": "2026-10-23",
-   "bannerScore": 4
+   "bannerScore": 4,
+   "inscripcionAt": "2026-10-23",
+   "inscripcion": "abierta"
   },
   {
    "name": "10K Alfàs del Pi",
@@ -10377,7 +10443,9 @@
    "banner": "https://rtsfiles.blob.core.windows.net/manager/11136/library/root/1d9dbd32-5275-48ea-9cb1-2fdff1d8bf0a.jpeg",
    "km": "5 km",
    "mediaChecked": "2026-10-23",
-   "bannerScore": 4
+   "bannerScore": 4,
+   "inscripcionAt": "2026-10-23",
+   "inscripcion": "abierta"
   },
   {
    "name": "Carrera Popular de Fuentes de Ebro",
@@ -10482,7 +10550,8 @@
    "regulation": "https://youevent.es/sport/.\\multimedia\\reglamentos\\ReglamentoXVMARCHAPOPULARSOLIDARIACERROMARMOTA.pdf",
    "km": "20 km · 10 km",
    "changedAt": "2026-10-22",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Cursa de la Dona Vila de Castellar",
@@ -10521,7 +10590,8 @@
    "regulation": "https://desafiosarrio.com/wp-content/uploads/2026/09/Reglamento-DESAFIO-SARRIO.pdf",
    "km": "10 km",
    "changedAt": "2026-10-22",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Marató i Mitja Relleus Vinyols",
@@ -10545,7 +10615,9 @@
    "price": "8–17 €",
    "changedAt": "2026-10-22",
    "mediaChecked": "2026-10-23",
-   "bannerScore": 4
+   "bannerScore": 4,
+   "inscripcionAt": "2026-10-23",
+   "inscripcion": "abierta"
   },
   {
    "name": "Maratón Internacional Elche-Alicante",
@@ -10567,7 +10639,8 @@
    "nosite": false,
    "banner": "https://media.endu.net/editions/106909/covers/071220f9-dfd9-4279-aff0-cfc34fbb095d.jpg?w=1200",
    "changedAt": "2026-10-22",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Media Maratón de Guadalajara",
@@ -10592,7 +10665,8 @@
    "price": "19–29 €",
    "km": "11 km · 5 km",
    "changedAt": "2026-10-22",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Mitja Marató Unión Alcoyana",
@@ -10620,7 +10694,9 @@
    "km": "21 km · 20 km · 10,5 km · 10 km",
    "changedAt": "2026-10-22",
    "mediaChecked": "2026-10-23",
-   "bannerScore": 4
+   "bannerScore": 4,
+   "inscripcionAt": "2026-10-23",
+   "inscripcion": "abierta"
   },
   {
    "name": "Ponle Freno Las Palmas",
@@ -10645,7 +10721,9 @@
    "banner": "https://web.rockthesport.com/_next/image?url=https%3A%2F%2Frockthesportv2.blob.core.windows.net%2Fmanager%2F328%2Flibrary%2Froot%2F05b11765-9e5d-4f06-b530-3d04b3af864a.png&w=1200&q=75",
    "km": "10 km · 5 km",
    "changedAt": "2026-10-22",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23",
+   "inscripcion": "abierta"
   },
   {
    "name": "Trofeo José Cano",
@@ -10722,7 +10800,8 @@
    "km": "42,2 km · 29,5 km · 20,3 km · 12,8 km",
    "changedAt": "2026-10-22",
    "regResolved": "2026-10-23",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Bunt Mikołajów",
@@ -10748,7 +10827,9 @@
    "km": "5 km",
    "regResolved": "2026-10-23",
    "mediaChecked": "2026-10-23",
-   "bannerScore": 4
+   "bannerScore": 4,
+   "inscripcionAt": "2026-10-23",
+   "inscripcion": "abierta"
   },
   {
    "name": "Font Vella Lanzarote International Marathon",
@@ -10774,7 +10855,9 @@
    "signup": true,
    "banner": "https://web.rockthesport.com/_next/image?url=https%3A%2F%2Frtsfiles.blob.core.windows.net%2Fmanager%2F13768%2Flibrary%2Froot%2F4be34e1e-3163-4eb8-9cf9-d0ee9065a52f.png&w=1200&q=75",
    "changedAt": "2026-10-22",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23",
+   "inscripcion": "abierta"
   },
   {
    "name": "XXI Volta a Peu la Vall D&#039;alba (3 Pujades a L&#039;ermita)",
@@ -10800,7 +10883,9 @@
    "km": "13,4 km",
    "regResolved": "2026-10-23",
    "mediaChecked": "2026-10-23",
-   "route": "https://es.wikiloc.com/rutas-carrera-por-montana/volta-vall-dalba-2025-3-pujades-a-lermita-234057641"
+   "route": "https://es.wikiloc.com/rutas-carrera-por-montana/volta-vall-dalba-2025-3-pujades-a-lermita-234057641",
+   "inscripcionAt": "2026-10-23",
+   "inscripcion": "abierta"
   },
   {
    "name": "Carrera Popular Corre con tu Médico",
@@ -10874,7 +10959,8 @@
    "changedAt": "2026-10-22",
    "mediaChecked": "2026-10-23",
    "banner": "https://www.alcanzatumeta.es/uploads/Cartel/1c5c0686276b8bdffa300c1b42155785.jpg",
-   "bannerScore": 8
+   "bannerScore": 8,
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Maratón Valencia Trinidad Alfonso",
@@ -10896,7 +10982,8 @@
    "checkedAt": "2026-10-22",
    "banner": "https://cdn1.valenciaciudaddelrunning.com/wp-content/uploads/2014/05/42k_salida-01.jpg",
    "changedAt": "2026-10-22",
-   "regResolved": "2026-10-23"
+   "regResolved": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Trofeo Akiles",
@@ -10920,7 +11007,9 @@
    "banner": "https://web.rockthesport.com/_next/image?url=https%3A%2F%2Frtsfiles.blob.core.windows.net%2Fmanager%2F318%2Flibrary%2Froot%2F76488e7c-a630-4e40-8ca3-5196dbaa3d2b.png&w=1200&q=75",
    "km": "10 km · 5 km",
    "changedAt": "2026-10-22",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23",
+   "inscripcion": "abierta"
   },
   {
    "name": "Media Maratón Villa de Torre Pacheco",
@@ -10946,7 +11035,8 @@
    "changedAt": "2026-10-22",
    "mediaChecked": "2026-10-23",
    "banner": "https://www.alcanzatumeta.es/uploads/Cartel/2c61e63e4ea4ac7daffe37e4caa06ed3.jpg",
-   "bannerScore": 8
+   "bannerScore": 8,
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "10K de Laviana",
@@ -10968,7 +11058,8 @@
    "banner": "https://cronelec.es/wp-content/uploads/2026/01/Cartel-10km-Laviana-2026.png",
    "km": "10 km",
    "changedAt": "2026-10-22",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "10k Sant Mateu",
@@ -10991,7 +11082,8 @@
    "changedAt": "2026-10-22",
    "mediaChecked": "2026-10-23",
    "banner": "https://hj-crono.es/hj-files/evento/79405/cartel.jpg",
-   "bannerScore": 8
+   "bannerScore": 8,
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Carrera Popular Día de la Constitución",
@@ -11109,7 +11201,9 @@
    "banner": "https://rtsfiles.blob.core.windows.net/manager/2000/library/root/03c85994-a1f7-4877-90f6-997af739800c.jpg",
    "changedAt": "2026-10-22",
    "mediaChecked": "2026-10-23",
-   "bannerScore": 4
+   "bannerScore": 4,
+   "inscripcionAt": "2026-10-23",
+   "inscripcion": "abierta"
   },
   {
    "name": "La Mitja Figueras",
@@ -11136,7 +11230,8 @@
    "km": "21,097 km · 21 km · 10 km",
    "changedAt": "2026-10-22",
    "mediaChecked": "2026-10-23",
-   "bannerScore": 8
+   "bannerScore": 8,
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "La Mitja Figueres",
@@ -11162,7 +11257,8 @@
    "changedAt": "2026-10-22",
    "official_guess": "https://sportmaniacs.com/es/races/x-mitja-marato-de-figueres-i-10-km-de-figueres",
    "mediaChecked": "2026-10-23",
-   "bannerScore": 8
+   "bannerScore": 8,
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "La Sansi de Viladecans",
@@ -11202,7 +11298,9 @@
    "banner": "https://rtsfiles.blob.core.windows.net/manager/543/library/root/d40b964a-1c7d-4fce-9783-c7252226196b.jpeg",
    "km": "5 km",
    "mediaChecked": "2026-10-23",
-   "bannerScore": 4
+   "bannerScore": 4,
+   "inscripcionAt": "2026-10-23",
+   "inscripcion": "abierta"
   },
   {
    "name": "Carrera de S'Hostal de Montuïri",
@@ -11228,7 +11326,8 @@
    "changedAt": "2026-10-22",
    "mediaChecked": "2026-10-23",
    "banner": "https://www.elitechip.net/media.php?zwimg=5706021&zwh=1200&zww=849&zwrot=0&zwp=a0e1a5f020&zwver=60adc",
-   "bannerScore": 4
+   "bannerScore": 4,
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Carrera Solidaria Ruta 091 Elche",
@@ -11252,7 +11351,8 @@
    "km": "5 km",
    "mediaChecked": "2026-10-23",
    "banner": "https://ruta091.es/storage/app/uploads/public/6ad/1e0/82a/6ad1e082abf03192249038.webp",
-   "bannerScore": 4
+   "bannerScore": 4,
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Carrera Popular la Tercia Memorial la Huella de Carolina",
@@ -11277,7 +11377,8 @@
    "km": "10 km · 5 km",
    "mediaChecked": "2026-10-23",
    "banner": "https://www.babelsport.com/carteles/eb0d_IMG-20261008-WA0022.jpg?image=250",
-   "bannerScore": 8
+   "bannerScore": 8,
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Cursa Popular de Porqueres",
@@ -11317,7 +11418,8 @@
    "km": "5 km",
    "mediaChecked": "2026-10-23",
    "banner": "https://www.alcanzatumeta.es/uploads/Cartel/6324fb038ef29d7ebc13d360c1fd5b88.jpeg",
-   "bannerScore": 8
+   "bannerScore": 8,
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "XXIX Vuelta a Pie Nocturna Tous",
@@ -11342,7 +11444,9 @@
    "banner": "https://s3.eu-west-1.amazonaws.com/sm-fotos.sportmaniacs.com/back/resize/1920x410x0_header_6ad7ad44-6678-4847-ad9a-4025ac1f08d8.png",
    "km": "8 km",
    "mediaChecked": "2026-10-23",
-   "bannerScore": 4
+   "bannerScore": 4,
+   "inscripcionAt": "2026-10-23",
+   "inscripcion": "abierta"
   },
   {
    "name": "Carrera Popular San Jeromín de Benferri",
@@ -11366,7 +11470,8 @@
    "km": "5 km",
    "mediaChecked": "2026-10-23",
    "banner": "https://www.alcanzatumeta.es/uploads/Cartel/64e0c516cd6db9487a841f49c3a9bca2.jpeg",
-   "bannerScore": 8
+   "bannerScore": 8,
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "5K y 10K Fuentes de Ebro",
@@ -11427,7 +11532,8 @@
    "regulation": "https://collserola.cec.cat/wp-content/uploads/REGLAMENT-2025-REV-2.pdf",
    "km": "24 km",
    "changedAt": "2026-10-22",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Legua Navidad Arganda del Rey",
@@ -11471,7 +11577,8 @@
    "km": "42 km · 21 km · 10 km · 5 km",
    "changedAt": "2026-10-22",
    "mediaChecked": "2026-10-23",
-   "bannerScore": 4
+   "bannerScore": 4,
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Natural Greatness Wild Race Campeonato Autonomico Mushing Tierra Comunidad Valenciana",
@@ -11497,7 +11604,9 @@
    "km": "4,5 km",
    "regResolved": "2026-10-23",
    "mediaChecked": "2026-10-23",
-   "bannerScore": 4
+   "bannerScore": 4,
+   "inscripcionAt": "2026-10-23",
+   "inscripcion": "abierta"
   },
   {
    "name": "Neblina Tres Valles",
@@ -11523,7 +11632,8 @@
    "banner": "https://s3.eu-west-1.amazonaws.com/sm-fotos.sportmaniacs.com/back/resize/1920x410x0_header_6ac569b5-211c-40a4-a2c9-41fcac1f1a57.png",
    "km": "16 km · 7,5 km",
    "mediaChecked": "2026-10-23",
-   "bannerScore": 4
+   "bannerScore": 4,
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "San Silvestre Solidaria Pobla de Farnals",
@@ -11543,7 +11653,8 @@
    "nosite": false,
    "regulation": "https://inscripciones.cronorunner.com/rgpd",
    "regResolved": "2026-10-23",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "10K Pas Ras al Port de València",
@@ -11581,7 +11692,8 @@
    "id": "maraton-elche-alicante-2026",
    "checkedAt": "2026-10-22",
    "banner": "https://maratonelchealicante.com/wp-content/uploads/2024/02/LOGOTIPO-MONTEMAR.png",
-   "changedAt": "2026-10-22"
+   "changedAt": "2026-10-22",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Medio Maratón de Sevilla",
@@ -11603,7 +11715,8 @@
    "checkedAt": "2026-10-22",
    "banner": "https://deporticket.blob.core.windows.net/awebs/medio-maraton-de-sevilla/mm-sevilla---negro.png",
    "changedAt": "2026-10-22",
-   "regResolved": "2026-10-23"
+   "regResolved": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Mar Menor Running Challenge",
@@ -11631,7 +11744,9 @@
    "changedAt": "2026-10-22",
    "mediaChecked": "2026-10-23",
    "banner": "https://www.alcanzatumeta.es/uploads/Cartel/426b07623c8f57d1ffd4e7037bf8fe5f.jpeg",
-   "bannerScore": 8
+   "bannerScore": 8,
+   "inscripcionAt": "2026-10-23",
+   "inscripcion": "abierta"
   },
   {
    "name": "Pujada a la Seu Vella",
@@ -11658,7 +11773,8 @@
    "changedAt": "2026-10-22",
    "regResolved": "2026-10-23",
    "mediaChecked": "2026-10-23",
-   "bannerScore": 4
+   "bannerScore": 4,
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Trofeo Jose Cano",
@@ -11683,7 +11799,9 @@
    "km": "10 km",
    "changedAt": "2026-10-22",
    "mediaChecked": "2026-10-23",
-   "bannerScore": 4
+   "bannerScore": 4,
+   "inscripcionAt": "2026-10-23",
+   "inscripcion": "abierta"
   },
   {
    "name": "Marxa Popular Per la Marató de Tv3 2026 ( Riudarenes )",
@@ -11725,7 +11843,9 @@
    "banner": "https://s3.eu-west-1.amazonaws.com/sm-fotos.sportmaniacs.com/back/resize/1920x410x0_header_6ac4c3fa-4db8-4acc-997b-40f1ac1f267d.png",
    "regResolved": "2026-10-23",
    "mediaChecked": "2026-10-23",
-   "bannerScore": 4
+   "bannerScore": 4,
+   "inscripcionAt": "2026-10-23",
+   "inscripcion": "abierta"
   },
   {
    "name": "10K Alcobendas",
@@ -11769,7 +11889,8 @@
    "km": "10 km",
    "changedAt": "2026-10-22",
    "regResolved": "2026-10-23",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "5K y 10K Ciudad de Borja",
@@ -11813,7 +11934,8 @@
    "price": "3–13 €",
    "km": "10 km · 5 km",
    "changedAt": "2026-10-22",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Carrera Solidaria Divina Pastora",
@@ -11905,7 +12027,9 @@
    "price": "14–18 €",
    "km": "10 km · 5 km",
    "changedAt": "2026-10-22",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23",
+   "inscripcion": "proximamente"
   },
   {
    "name": "Carrera de Navidad Siente la Huerta",
@@ -11947,7 +12071,9 @@
    "km": "10 km · 5 km · 3 km",
    "changedAt": "2026-10-22",
    "mediaChecked": "2026-10-23",
-   "bannerScore": 4
+   "bannerScore": 4,
+   "inscripcionAt": "2026-10-23",
+   "inscripcion": "abierta"
   },
   {
    "name": "Carrera de las Empresas ESIC",
@@ -12004,7 +12130,8 @@
    "km": "10 km · 5 km",
    "changedAt": "2026-10-22",
    "regResolved": "2026-10-23",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Cursa de les Empreses",
@@ -12048,7 +12175,8 @@
    "changedAt": "2026-10-22",
    "regResolved": "2026-10-23",
    "mediaChecked": "2026-10-23",
-   "bannerScore": 8
+   "bannerScore": 8,
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Media Maratón Sevilla-Los Palacios",
@@ -12112,7 +12240,8 @@
    "km": "21,097 km · 21 km · 10 km",
    "changedAt": "2026-10-22",
    "mediaChecked": "2026-10-23",
-   "bannerScore": 8
+   "bannerScore": 8,
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Memorial Adolfo Ros Volta á Ría",
@@ -12130,7 +12259,8 @@
    "checkedAt": "2026-10-22",
    "nosite": false,
    "changedAt": "2026-10-22",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Mitja Marató i 10K Ciutat de Vilanova",
@@ -12153,7 +12283,8 @@
    "km": "10 km",
    "changedAt": "2026-10-22",
    "regResolved": "2026-10-23",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Run4Angels",
@@ -12193,7 +12324,9 @@
    "banner": "https://web.rockthesport.com/_next/image?url=https%3A%2F%2Frtsfiles.blob.core.windows.net%2Fmanager%2F10084%2Flibrary%2Froot%2F80ca93ab-c71f-466e-b4be-c21bf396dec3.jpg&w=1200&q=75",
    "km": "10 km · 7,2 km",
    "changedAt": "2026-10-22",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23",
+   "inscripcion": "abierta"
   },
   {
    "name": "San Silvestre de Alcorcón",
@@ -12235,7 +12368,8 @@
    "km": "10 km · 5 km",
    "changedAt": "2026-10-22",
    "mediaChecked": "2026-10-23",
-   "bannerScore": 8
+   "bannerScore": 8,
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Carrera a los Puentes",
@@ -12375,7 +12509,9 @@
    "km": "10 km · 5 km",
    "changedAt": "2026-10-22",
    "regResolved": "2026-10-23",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23",
+   "inscripcion": "abierta"
   },
   {
    "name": "Carrera de Navidad de Soto del Real",
@@ -12402,7 +12538,8 @@
    "price": "7–14 €",
    "km": "11 km · 10,4 km · 10 km · 5,5 km",
    "changedAt": "2026-10-22",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Super Amara Gabonetako Krosa Irun",
@@ -12428,7 +12565,8 @@
    "regResolved": "2026-10-23",
    "mediaChecked": "2026-10-23",
    "banner": "https://inscripcion.kirolprobak.com/fileserver.php?name=/images/eventos/rol/9008_evento_30638_cartel.jpg&type=public&v=1784189695",
-   "bannerScore": 8
+   "bannerScore": 8,
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "10K y 5K Nocturno San Mateo de Gállego",
@@ -12453,7 +12591,8 @@
    "km": "24 km · 10 km · 5 km",
    "changedAt": "2026-10-22",
    "regResolved": "2026-10-23",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "BKT Zamudio",
@@ -12481,7 +12620,8 @@
    "changedAt": "2026-10-22",
    "regResolved": "2026-10-23",
    "mediaChecked": "2026-10-23",
-   "bannerScore": 8
+   "bannerScore": 8,
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Carrera Popular Sancho Abarca",
@@ -12649,7 +12789,8 @@
    "nosite": false,
    "regulation": "https://www.babelsport.com/evento/liga-barrios-novelda-2026/Reglamento/userfiles/6c93_REGLAMENTO LIGA DE BARRIOS NOVELDA 2026.pdf",
    "km": "10 km · 5 km",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Muskizko 3 Miliak",
@@ -12692,7 +12833,8 @@
    "changedAt": "2026-10-22",
    "mediaChecked": "2026-10-23",
    "banner": "https://magmasports.es/storage/tWilykfGz3hhHYpXrkrNKXqynBu5s7NZJjuuJbhE.png",
-   "bannerScore": 4
+   "bannerScore": 4,
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "San Silvestre Bruja Alcantarilla",
@@ -12766,7 +12908,8 @@
    "regResolved": "2026-10-23",
    "mediaChecked": "2026-10-23",
    "banner": "https://grupobrotons.com/wp-content/uploads/2026/09/AF-Cartel-San-Silvestre-BENIDORM-26.jpg",
-   "bannerScore": 8
+   "bannerScore": 8,
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Baño de Navidad",
@@ -12786,7 +12929,9 @@
    "addedAt": "2026-10-23",
    "checkedAt": "2026-10-23",
    "nosite": true,
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23",
+   "inscripcion": "abierta"
   },
   {
    "name": "Cursa de Nadal Sant Sadurní d'Anoia",
@@ -12812,7 +12957,8 @@
    "banner": "https://sportmaniacs.com/images/share/sportmaniacs-race.jpg",
    "km": "10 km · 5 km",
    "changedAt": "2026-10-22",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "10K por la Fibrosis Quística",
@@ -12854,7 +13000,9 @@
    "price": "20–25 €",
    "km": "10 km",
    "changedAt": "2026-10-22",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23",
+   "inscripcion": "abierta"
   },
   {
    "name": "Carrera Popular de Navidad de El Rubio",
@@ -12878,7 +13026,9 @@
    "regulation": "https://s3-eu-west-1.amazonaws.com/sm-fotos.sportmaniacs.com/back/Reglamento Carrera el Rubio.pdf",
    "banner": "https://sportmaniacs.com/images/share/sportmaniacs-race.jpg",
    "km": "7 km",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23",
+   "inscripcion": "abierta"
   },
   {
    "name": "Carrera de Navidad Albeldense",
@@ -12933,7 +13083,9 @@
    "signup": true,
    "banner": "https://web.rockthesport.com/_next/image?url=https%3A%2F%2Frtsfiles.blob.core.windows.net%2Fmanager%2F318%2Flibrary%2Froot%2F3ff64a71-0ab6-443a-a414-c9d4e3f83755.png&w=1200&q=75",
    "km": "5 km",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23",
+   "inscripcion": "abierta"
   },
   {
    "name": "Carrera de Navidad de Cártama",
@@ -12952,7 +13104,8 @@
    "nosite": false,
    "banner": "https://web.faalive.com/img/LogoFetriIcon.png",
    "changedAt": "2026-10-22",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Carrera de Navidad de Piélagos",
@@ -13055,7 +13208,8 @@
    "nosite": false,
    "regulation": "https://gesport.cat/wp-content/uploads/2026/10/Reglament-Cursa-La-5k-Sant-Vicenc-Montalt-2026.pdf",
    "km": "5 km",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Descoberta Run - Fontcoberta",
@@ -13078,7 +13232,8 @@
    "regulation": "https://cursesplaestany.cat/wp-content/uploads/2026/10/Normativa-CCP-26-27.pdf",
    "km": "10 km",
    "changedAt": "2026-10-22",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Guadiatón",
@@ -13105,7 +13260,8 @@
    "banner": "https://www.cronofinisher.com/images/img-rrss1.jpg",
    "km": "12 km · 10 km · 8 km · 7 km",
    "changedAt": "2026-10-22",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "La Cabrereña",
@@ -13144,7 +13300,8 @@
    "price": "50 €",
    "km": "10 km",
    "changedAt": "2026-10-22",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Legua Solidaria Carranque",
@@ -13207,7 +13364,8 @@
    "changedAt": "2026-10-22",
    "mediaChecked": "2026-10-23",
    "banner": "https://www.alcanzatumeta.es/uploads/Cartel/94f06b6a24bbce39677347a85792e3ac.jpg",
-   "bannerScore": 8
+   "bannerScore": 8,
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Media Maratón Ciudad de Tacoronte",
@@ -13234,7 +13392,8 @@
    "changedAt": "2026-10-22",
    "regResolved": "2026-10-23",
    "mediaChecked": "2026-10-23",
-   "bannerScore": 8
+   "bannerScore": 8,
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Media Maratón Villa de Aspe",
@@ -13258,7 +13417,8 @@
    "regulation": "https://www.chiplevante.com/es/prueba/files/documentacion/REGLAMENTO2026MMASPE.pdf",
    "km": "21,097 km · 21 km · 11 km · 10 km",
    "changedAt": "2026-10-22",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Mou-Te per L'esclerosi Múltiple",
@@ -13285,7 +13445,9 @@
    "km": "20 km · 10 km · 5 km",
    "changedAt": "2026-10-22",
    "mediaChecked": "2026-10-23",
-   "bannerScore": 4
+   "bannerScore": 4,
+   "inscripcionAt": "2026-10-23",
+   "inscripcion": "abierta"
   },
   {
    "name": "Quarta i Mitja Marató Paiporta-Picanya",
@@ -13308,7 +13470,9 @@
    "banner": "https://web.rockthesport.com/_next/image?url=https%3A%2F%2Frtsfiles.blob.core.windows.net%2Fmanager%2F2048%2Fcustom%2Froot%2Fafc6775f-dcce-4b3b-9f74-cf82af226678_custom1.jpeg&w=1200&q=75",
    "km": "10 km",
    "changedAt": "2026-10-22",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23",
+   "inscripcion": "abierta"
   },
   {
    "name": "San Pinteña",
@@ -13333,7 +13497,9 @@
    "banner": "https://web.rockthesport.com/_next/image?url=https%3A%2F%2Frtsfiles.blob.core.windows.net%2Fmanager%2F2893%2Flibrary%2Froot%2F1adb68ed-1d26-48ad-bb75-0bfb612b6a34.png&w=1200&q=75",
    "km": "10 km · 5 km",
    "changedAt": "2026-10-22",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23",
+   "inscripcion": "abierta"
   },
   {
    "name": "San Silvestre 2026-les Alqueries",
@@ -13357,7 +13523,9 @@
    "regulation": "https://sportmaniacs.com/es/races/san-silvestre-2026-les-alqueries#rules",
    "km": "5 km",
    "regResolved": "2026-10-23",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23",
+   "inscripcion": "abierta"
   },
   {
    "name": "San Silvestre Pedrezuela",
@@ -13542,7 +13710,8 @@
    "km": "10 km",
    "changedAt": "2026-10-23",
    "regResolved": "2026-10-23",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "San Silvestre Real Club Mediterráneo",
@@ -13599,7 +13768,8 @@
    "km": "10 km · 5 km",
    "changedAt": "2026-10-22",
    "regResolved": "2026-10-23",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "San Silvestre de Benicàssim",
@@ -13654,7 +13824,8 @@
    "nosite": false,
    "regulation": "https://www.alcanzatumeta.es/uploads/Reglamento/b591c7f9a3e30c0ea7f0ba8a4f2c051a.pdf",
    "changedAt": "2026-10-23",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Carrera de Fin de Año de Pola de Siero",
@@ -13746,7 +13917,8 @@
    "km": "5 km",
    "changedAt": "2026-10-23",
    "regResolved": "2026-10-23",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "San Silvestre Candelaria",
@@ -13969,7 +14141,9 @@
    "bannerScore": 4,
    "km": "5 km",
    "changedAt": "2026-10-23",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23",
+   "inscripcion": "abierta"
   },
   {
    "name": "Sant Silvestre Manresana",
@@ -14043,7 +14217,9 @@
    "banner": "https://web.rockthesport.com/_next/image?url=https%3A%2F%2Frtsfiles.blob.core.windows.net%2Fmanager%2F1785%2Flibrary%2Froot%2F4332a8d6-13c6-493b-9b5f-7555a17b5599.png&w=1200&q=75",
    "km": "10 km · 5 km",
    "changedAt": "2026-10-22",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23",
+   "inscripcion": "abierta"
   },
   {
    "name": "VI Carrera del Mazapan de Sonseca",
@@ -14067,7 +14243,9 @@
    "regulation": "http://deporchip.com/wp-content/uploads/2026/10/REGLAMENTO_2026-2.pdf",
    "km": "5,5 km",
    "changedAt": "2026-10-23",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23",
+   "inscripcion": "abierta"
   },
   {
    "name": "La San Silvestre más Bestia",
@@ -14108,7 +14286,8 @@
    "regulation": "https://s3-eu-west-1.amazonaws.com/sm-fotos.sportmaniacs.com/back/REGLAMENTO-San-Silvestre-Montehermoso-2026-PRESENTACION-FINAL (2).pdf",
    "km": "3 km",
    "changedAt": "2026-10-23",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "XV San Silvestre D&#039;orpesa",
@@ -14133,7 +14312,9 @@
    "km": "3 km",
    "changedAt": "2026-10-23",
    "regResolved": "2026-10-23",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23",
+   "inscripcion": "abierta"
   },
   {
    "name": "5K Sant Silvestre Vila-real",
@@ -14154,7 +14335,8 @@
    "checkedAt": "2026-10-23",
    "nosite": false,
    "changedAt": "2026-10-23",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Carreira de Fin de Ano Mugardos-Ares",
@@ -14213,7 +14395,9 @@
    "km": "10 km · 3 km",
    "changedAt": "2026-10-22",
    "mediaChecked": "2026-10-23",
-   "bannerScore": 4
+   "bannerScore": 4,
+   "inscripcionAt": "2026-10-23",
+   "inscripcion": "abierta"
   },
   {
    "name": "San Pinteña",
@@ -14366,7 +14550,8 @@
    "bannerScore": 10,
    "km": "5 km",
    "changedAt": "2026-10-23",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "San Silvestre Praviana",
@@ -14393,7 +14578,9 @@
    "changedAt": "2026-10-22",
    "mediaChecked": "2026-10-23",
    "banner": "https://www.321go.es/Uploads/Image/Carrera/02f9b055ba824c6ca1a0179bc2951ffb.jpeg",
-   "bannerScore": 4
+   "bannerScore": 4,
+   "inscripcionAt": "2026-10-23",
+   "inscripcion": "abierta"
   },
   {
    "name": "San Silvestre Rincón de la Victoria",
@@ -14485,7 +14672,8 @@
    "bannerScore": 2,
    "km": "5 km",
    "changedAt": "2026-10-23",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "San Silvestre Villasecana",
@@ -14575,7 +14763,8 @@
    "banner": "https://web.rockthesport.com/_next/image?url=https%3A%2F%2Frtsfiles.blob.core.windows.net%2Fmanager%2F2893%2Flibrary%2Froot%2F3606f719-8a77-43fb-a803-9af3a1211d94.jpg&w=1200&q=75",
    "km": "10 km · 5 km",
    "changedAt": "2026-10-22",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "San Silvestre de Lena",
@@ -14696,7 +14885,8 @@
    "km": "10 km · 5 km",
    "changedAt": "2026-10-22",
    "regResolved": "2026-10-23",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Cursa de la Llufa",
@@ -14816,7 +15006,8 @@
    "bannerScore": 2,
    "km": "5 km",
    "changedAt": "2026-10-23",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "San Silvestre Dombenitense",
@@ -14901,7 +15092,8 @@
    "banner": "https://www.fdmvalencia.es/wp-content/uploads/2025/12/san_silvestre_2026_recurso_03.jpg",
    "bannerScore": 2,
    "changedAt": "2026-10-23",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "San Silvestre de Calahorra",
@@ -14986,7 +15178,8 @@
    "signup": true,
    "regulation": "https://s3-eu-west-1.amazonaws.com/sm-fotos.sportmaniacs.com/back/REGLAMENTO-San-Silvestre-Sierra-de-Fuentes-2026_FINAL_ESCUDO (1) (1) (1).pdf",
    "changedAt": "2026-10-23",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Sant Silvestre Llorencina",
@@ -15007,7 +15200,8 @@
    "banner": "https://www.elitechip.net/media.php?zwimg=5657479&zwh=800&zww=1200&zwrot=0&zwp=e7524e2ffa&zwver=f672f",
    "bannerScore": 4,
    "changedAt": "2026-10-23",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "San Silvestre Vallecana",
@@ -15029,7 +15223,8 @@
    "checkedAt": "2026-10-22",
    "banner": "https://sansilvestrevallecana.com/assets/img/redes_sociales.jpg",
    "changedAt": "2026-10-22",
-   "regResolved": "2026-10-23"
+   "regResolved": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "B100 Cursa dels Nassos",
@@ -15052,7 +15247,9 @@
    "regulation": "https://cursadenassos.barcelona/es/la-carrera/reglamento2",
    "banner": "https://cursadenassos.barcelona/media/galleries/medium/bannerweb23.png",
    "changedAt": "2026-10-22",
-   "regResolved": "2026-10-23"
+   "regResolved": "2026-10-23",
+   "inscripcionAt": "2026-10-23",
+   "inscripcion": "agotada"
   },
   {
    "name": "Zegamako San Silbestrea",
@@ -15075,7 +15272,8 @@
    "signup": true,
    "km": "5 km",
    "changedAt": "2026-10-23",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "San Silvestre de Talavera",
@@ -15094,7 +15292,8 @@
    "banner": "https://www.festivalesdeespana.com/images/image_hero.webp",
    "changedAt": "2026-10-22",
    "mediaChecked": "2026-10-23",
-   "bannerScore": 4
+   "bannerScore": 4,
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "42. Bieg Sylwestrowy",
@@ -15121,7 +15320,9 @@
    "km": "10 km",
    "changedAt": "2026-10-23",
    "regResolved": "2026-10-23",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23",
+   "inscripcion": "abierta"
   },
   {
    "name": "Circuit Vall de Segó Carreres Populars",
@@ -15150,7 +15351,8 @@
    "km": "10 km · 7,2 km · 6 km · 5 km",
    "changedAt": "2026-10-22",
    "regResolved": "2026-10-23",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Cursa Sant Silvestre Canovelles",
@@ -15256,7 +15458,8 @@
    "signup": true,
    "km": "5,4 km · 5 km",
    "changedAt": "2026-10-23",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Lillo Christmas Race & Walk",
@@ -15282,7 +15485,8 @@
    "changedAt": "2026-10-23",
    "mediaChecked": "2026-10-23",
    "banner": "https://s3.eu-west-1.amazonaws.com/sm-fotos.sportmaniacs.com/back/resize/960x0x0_cartel%20lillo.jpg",
-   "bannerScore": 8
+   "bannerScore": 8,
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Orioko San Silbestrea",
@@ -15307,7 +15511,9 @@
    "bannerScore": 4,
    "km": "5 km",
    "changedAt": "2026-10-23",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23",
+   "inscripcion": "abierta"
   },
   {
    "name": "San Silvestre A Coruña",
@@ -15526,7 +15732,8 @@
    "changedAt": "2026-10-22",
    "regResolved": "2026-10-23",
    "mediaChecked": "2026-10-23",
-   "bannerScore": 8
+   "bannerScore": 8,
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "San Silvestre Complutense",
@@ -15664,7 +15871,8 @@
    "km": "5 km",
    "changedAt": "2026-10-23",
    "regResolved": "2026-10-23",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "San Silvestre Golden Mile",
@@ -15750,7 +15958,8 @@
    "regulation": "https://www.chiplevante.com/es/prueba/files/documentacion/REGLAMENTOSSCREVILLENTE26.pdf",
    "km": "10 km",
    "changedAt": "2026-10-22",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "San Silvestre Jerezana",
@@ -16004,7 +16213,8 @@
    "changedAt": "2026-10-22",
    "regResolved": "2026-10-23",
    "mediaChecked": "2026-10-23",
-   "bannerScore": 4
+   "bannerScore": 4,
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "San Silvestre Valle de Egüés",
@@ -16675,7 +16885,8 @@
    "bannerScore": 2,
    "route": "https://www.strava.com/segments/40487253",
    "km": "5 km",
-   "changedAt": "2026-10-23"
+   "changedAt": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Sant Silvestre de Girona",
@@ -16764,7 +16975,8 @@
    "signup": true,
    "regulation": "https://s3-eu-west-1.amazonaws.com/sm-fotos.sportmaniacs.com/back/REGLAMENTO-San-Silvestre-Valdefuentes-2026_CORREGIDO_FINAL3.pdf",
    "changedAt": "2026-10-23",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Carrera Popular Reyes Magos",
@@ -16942,7 +17154,8 @@
    "changedAt": "2026-10-23",
    "mediaChecked": "2026-10-23",
    "banner": "https://www.elitechip.net/media.php?zwimg=5704007&zwh=1200&zww=960&zwrot=0&zwp=c4e0afcd27&zwver=e51a8",
-   "bannerScore": 4
+   "bannerScore": 4,
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Mitja Marató de Sitges",
@@ -16968,7 +17181,8 @@
    "km": "21,097 km · 21 km · 10,503 km · 10 km",
    "changedAt": "2026-10-22",
    "regResolved": "2026-10-23",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "10K Valencia Ibercaja by Kiprun",
@@ -16991,7 +17205,8 @@
    "regulation": "https://10kvalencia.com/reglamento-10k/",
    "banner": "https://10kvalencia.com/wp-content/themes/10kvalencia/imgdis/Marca_Web_2026.png",
    "changedAt": "2026-10-22",
-   "regResolved": "2026-10-23"
+   "regResolved": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Mitja Badia de Roses",
@@ -17017,7 +17232,8 @@
    "km": "21 km · 7,5 km",
    "changedAt": "2026-10-22",
    "mediaChecked": "2026-10-23",
-   "bannerScore": 4
+   "bannerScore": 4,
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Carrera Popular Villa de Muel",
@@ -17060,7 +17276,8 @@
    "regulation": "https://www.alcanzatumeta.es/uploads/Reglamento/f934822e260400a5659aa8a378f8e6be.pdf",
    "km": "21,5 km · 21 km · 15 km · 10 km",
    "changedAt": "2026-10-22",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Crematorrons",
@@ -17103,7 +17320,9 @@
    "banner": "https://web.rockthesport.com/_next/image?url=https%3A%2F%2Frtsfiles.blob.core.windows.net%2Fmanager%2F1785%2Flibrary%2Froot%2F93502d74-ba63-4c67-9f79-eec50b861fe3.png&w=1200&q=75",
    "km": "20 km · 17 km · 10 km · 9 km",
    "changedAt": "2026-10-22",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23",
+   "inscripcion": "abierta"
   },
   {
    "name": "Juan Jose Alcelay Omenaldi k.",
@@ -17123,7 +17342,8 @@
    "nosite": false,
    "banner": "https://herrikrosa.eus/images/header_fondo.jpg",
    "changedAt": "2026-10-22",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "La Navarclina",
@@ -17150,7 +17370,8 @@
    "km": "10 km · 5 km",
    "changedAt": "2026-10-22",
    "regResolved": "2026-10-23",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Media Maratón Paraíso Salado",
@@ -17212,7 +17433,8 @@
    "bannerScore": 2,
    "km": "12 km · 10 km · 8 km · 7 km",
    "changedAt": "2026-10-23",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Sant Mateu Xtrail",
@@ -17258,7 +17480,8 @@
    "changedAt": "2026-10-22",
    "regResolved": "2026-10-23",
    "mediaChecked": "2026-10-23",
-   "bannerScore": 8
+   "bannerScore": 8,
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Trofeo Páris",
@@ -17283,7 +17506,9 @@
    "banner": "https://web.rockthesport.com/_next/image?url=https%3A%2F%2Frtsfiles.blob.core.windows.net%2Fmanager%2F1264%2Flibrary%2Froot%2F90519e08-c40a-44c9-9721-29d26b358c09.png&w=1200&q=75",
    "km": "10 km · 5 km",
    "changedAt": "2026-10-22",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23",
+   "inscripcion": "abierta"
   },
   {
    "name": "Vuelta Pedestre a Tres Cantos",
@@ -17320,7 +17545,8 @@
    "banner": "https://carrerasanantonjaen.com/wp-content/uploads/41-Carrera-san-anton-2024.jpg",
    "changedAt": "2026-10-22",
    "mediaChecked": "2026-10-23",
-   "bannerScore": 4
+   "bannerScore": 4,
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Cros Popular de les Franqueses del Vallès",
@@ -17341,7 +17567,8 @@
    "regulation": "https://seu-e.cat/ca/web/lesfranquesesdelvalles/govern-obert-i-transparencia/accio-de-govern-i-normativa/accio-de-govern-i-grups-politics/convocatories-de-sessions-del-ple",
    "changedAt": "2026-10-23",
    "regResolved": "2026-10-23",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Media Maratón Los Barruecos",
@@ -17368,7 +17595,8 @@
    "km": "21,097 km · 21 km · 10 km",
    "changedAt": "2026-10-22",
    "mediaChecked": "2026-10-23",
-   "bannerScore": 4
+   "bannerScore": 4,
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Cursa Mercabarna",
@@ -17394,7 +17622,8 @@
    "km": "10 km · 5 km",
    "changedAt": "2026-10-22",
    "regResolved": "2026-10-23",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Serralades de Barxeta Mabu",
@@ -17419,7 +17648,9 @@
    "km": "42 km",
    "changedAt": "2026-10-22",
    "mediaChecked": "2026-10-23",
-   "bannerScore": 4
+   "bannerScore": 4,
+   "inscripcionAt": "2026-10-23",
+   "inscripcion": "abierta"
   },
   {
    "name": "Ultramediterrània Vrt 6k",
@@ -17477,7 +17708,8 @@
    "bannerScore": 9,
    "km": "5 km",
    "changedAt": "2026-10-23",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Mitja Marató Internacional Vila de Santa Pola",
@@ -17501,7 +17733,9 @@
    "banner": "https://web.rockthesport.com/_next/image?url=https%3A%2F%2Frtsfiles.blob.core.windows.net%2Fmanager%2F692%2Flibrary%2Froot%2F628d922f-cb8b-4264-b1bc-7b2af341f105.jpg&w=1200&q=75",
    "km": "10 km",
    "changedAt": "2026-10-22",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23",
+   "inscripcion": "abierta"
   },
   {
    "name": "Ultramediterrània Max 50k",
@@ -17560,7 +17794,8 @@
    "regulation": "https://www.elitechip.net/system/public/download/1443b274ff60bfb9b2a6e6bb07b3ea28.pdf",
    "km": "15 km · 10 km · 5 km",
    "changedAt": "2026-10-22",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "La Mitja de Granollers",
@@ -17585,7 +17820,9 @@
    "km": "21 km · 10 km",
    "changedAt": "2026-10-22",
    "regResolved": "2026-10-23",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23",
+   "inscripcion": "agotada"
   },
   {
    "name": "Mitja Marató Internacional Vila de Santa Pola",
@@ -17608,7 +17845,9 @@
    "price": "5–10 €",
    "km": "10 km",
    "changedAt": "2026-10-22",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23",
+   "inscripcion": "abierta"
   },
   {
    "name": "Sanchinarro 10K",
@@ -17636,7 +17875,9 @@
    "changedAt": "2026-10-22",
    "regResolved": "2026-10-23",
    "mediaChecked": "2026-10-23",
-   "bannerScore": 4
+   "bannerScore": 4,
+   "inscripcionAt": "2026-10-23",
+   "inscripcion": "abierta"
   },
   {
    "name": "10K Pueblonuevo del Guadiana",
@@ -17663,7 +17904,8 @@
    "banner": "https://www.cronofinisher.com/images/img-rrss1.jpg",
    "km": "12 km · 10 km · 8 km · 7 km",
    "changedAt": "2026-10-22",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Carrera Popular 10k del Roscón",
@@ -17687,7 +17929,8 @@
    "regulation": "https://osandarines.com/wp-content/uploads/2026/08/Reglamento-XVII-10K-y-5k-del-Roscon-FAA.pdf",
    "km": "10 km · 5 km",
    "changedAt": "2026-10-22",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Cursa Atlètica Run-Run La Vall del Terri",
@@ -17710,7 +17953,8 @@
    "regulation": "https://cursesplaestany.cat/wp-content/uploads/2026/10/Normativa-CCP-26-27.pdf",
    "km": "10 km",
    "changedAt": "2026-10-22",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Media Maratón Entreparques La Rinconada",
@@ -17738,7 +17982,8 @@
    "changedAt": "2026-10-22",
    "regResolved": "2026-10-23",
    "mediaChecked": "2026-10-23",
-   "bannerScore": 8
+   "bannerScore": 8,
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Ultramediterrània Exp 25k",
@@ -17782,7 +18027,8 @@
    "regResolved": "2026-10-23",
    "mediaChecked": "2026-10-23",
    "banner": "https://carreras.dxtchiprun.es/images/carreras/CARTEL%20ALMAGRO%20MARATON%202027.jpg",
-   "bannerScore": 8
+   "bannerScore": 8,
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Media Del Lince",
@@ -17807,7 +18053,8 @@
    "km": "21 km · 12 km",
    "changedAt": "2026-10-22",
    "regResolved": "2026-10-23",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Media Maratón El Puerto",
@@ -17831,7 +18078,8 @@
    "price": "4–25 €",
    "km": "10 km",
    "changedAt": "2026-10-22",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "XXXVIII Carrera Alcalde de La Unión",
@@ -17851,7 +18099,9 @@
    "nosite": true,
    "mediaChecked": "2026-10-23",
    "banner": "https://lineadesalida.net/storage/miniaturas/cartel_proximamente.png",
-   "bannerScore": 9
+   "bannerScore": 9,
+   "inscripcionAt": "2026-10-23",
+   "inscripcion": "abierta"
   },
   {
    "name": "10K Bombers Xàtiva",
@@ -17876,7 +18126,9 @@
    "km": "10 km",
    "changedAt": "2026-10-22",
    "mediaChecked": "2026-10-23",
-   "bannerScore": 8
+   "bannerScore": 8,
+   "inscripcionAt": "2026-10-23",
+   "inscripcion": "cerrada"
   },
   {
    "name": "10K Camargo",
@@ -17901,7 +18153,9 @@
    "km": "10 km",
    "changedAt": "2026-10-22",
    "mediaChecked": "2026-10-23",
-   "bannerScore": 4
+   "bannerScore": 4,
+   "inscripcionAt": "2026-10-23",
+   "inscripcion": "abierta"
   },
   {
    "name": "10K Vilafranca",
@@ -17926,7 +18180,9 @@
    "banner": "https://web.rockthesport.com/_next/image?url=https%3A%2F%2Frtsfiles.blob.core.windows.net%2Fmanager%2F10765%2Flibrary%2Froot%2Fccca311f-4a7f-4ad5-b7e1-6a67cac3559c.png&w=1200&q=75",
    "km": "10 km · 5 km",
    "changedAt": "2026-10-22",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23",
+   "inscripcion": "abierta"
   },
   {
    "name": "Cursa Moritz Sant Antoni",
@@ -17963,7 +18219,8 @@
    "checkedAt": "2026-10-22",
    "nosite": false,
    "changedAt": "2026-10-22",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Media Maratón de Castelló",
@@ -17986,7 +18243,9 @@
    "banner": "https://web.rockthesport.com/_next/image?url=https%3A%2F%2Frtsfiles.blob.core.windows.net%2Fmanager%2F12678%2Flibrary%2Froot%2F014037f6-7d38-4855-8268-a0bcb5f0c72b.png&w=1200&q=75",
    "km": "21 km",
    "changedAt": "2026-10-22",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23",
+   "inscripcion": "abierta"
   },
   {
    "name": "Media Maratón de Getafe",
@@ -18031,7 +18290,8 @@
    "km": "21 km · 5 km",
    "changedAt": "2026-10-22",
    "mediaChecked": "2026-10-23",
-   "bannerScore": 8
+   "bannerScore": 8,
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Mitja Sant Cugat",
@@ -18056,7 +18316,9 @@
    "banner": "https://web.rockthesport.com/_next/image?url=https%3A%2F%2Frtsfiles.blob.core.windows.net%2Fmanager%2F1785%2Flibrary%2Froot%2Fad30ae61-c2a5-4a6a-8a12-0a0e82cc9232.png&w=1200&q=75",
    "km": "21 km · 10 km · 5 km",
    "changedAt": "2026-10-22",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23",
+   "inscripcion": "abierta"
   },
   {
    "name": "Carrera Pedestre Vega de Cantimpalos",
@@ -18080,7 +18342,8 @@
    "signup": true,
    "km": "10 km · 5 km",
    "changedAt": "2026-10-22",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Frío Extremo Monreal Del Campo",
@@ -18106,7 +18369,8 @@
    "changedAt": "2026-10-22",
    "mediaChecked": "2026-10-23",
    "banner": "https://fartlecksport.com/wp-content/uploads/2026/08/Cartel_Frio-Extremo-Monreal_2027_web-scaled.jpg",
-   "bannerScore": 8
+   "bannerScore": 8,
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "16 Snow Running Sierra Nevada",
@@ -18133,7 +18397,9 @@
    "km": "12,7 km",
    "changedAt": "2026-10-23",
    "regResolved": "2026-10-23",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23",
+   "inscripcion": "abierta"
   },
   {
    "name": "Llanera10k",
@@ -18158,7 +18424,8 @@
    "banner": "http://cronelec.es/wp-content/uploads/2019/09/2022-Logo-10k.jpg",
    "km": "10 km · 5 km",
    "changedAt": "2026-10-22",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Maratón Murcia Costa Calida",
@@ -18184,7 +18451,8 @@
    "km": "42 km · 21 km · 10 km",
    "changedAt": "2026-10-22",
    "regResolved": "2026-10-23",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "10K Conciénciate",
@@ -18210,7 +18478,8 @@
    "km": "10 km · 5 km",
    "changedAt": "2026-10-22",
    "regResolved": "2026-10-23",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "10K Ibiza-Platja d'en Bossa",
@@ -18238,7 +18507,8 @@
    "regResolved": "2026-10-23",
    "mediaChecked": "2026-10-23",
    "banner": "https://www.elitechip.net/media.php?zwimg=5704006&zwh=1200&zww=960&zwrot=0&zwp=204d3465bd&zwver=bf373",
-   "bannerScore": 4
+   "bannerScore": 4,
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "5Km de la Media Maraton de Torremolinos",
@@ -18261,7 +18531,8 @@
    "nosite": false,
    "signup": true,
    "changedAt": "2026-10-22",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Carrera Regimiento \"Lusitania\"",
@@ -18282,7 +18553,8 @@
    "regulation": "https://inscripciones.cronorunner.com/rgpd",
    "changedAt": "2026-10-22",
    "regResolved": "2026-10-23",
-   "mediaChecked": "2026-10-23"
+   "mediaChecked": "2026-10-23",
+   "inscripcionAt": "2026-10-23"
   },
   {
    "name": "Media Maraton Internacional de Torremolinos",
@@ -18307,7 +18579,9 @@
    "km": "5 km",
    "changedAt": "2026-10-22",
    "mediaChecked": "2026-10-23",
-   "bannerScore": 4
+   "bannerScore": 4,
+   "inscripcionAt": "2026-10-23",
+   "inscripcion": "abierta"
   },
   {
    "name": "Ruta del Lago (Guadajoz)",
@@ -18333,266 +18607,219 @@
    "changedAt": "2026-10-22",
    "regResolved": "2026-10-23",
    "mediaChecked": "2026-10-23",
-   "bannerScore": 8
+   "bannerScore": 8,
+   "inscripcionAt": "2026-10-23"
   }
  ],
  "lastRun": {
-  "at": "2026-10-23T12:25:26+00:00",
+  "at": "2026-10-23T14:20:21+00:00",
   "added": [],
   "updated": {
-   "xii-timoncap-costa-calida-2026-cabo-de-palos-24-10-2026-2026-1024": [
+   "mitja-marato-espirall-2026-1122": [
     "inscripcion"
    ],
-   "san-juan-de-los-terreros-2026-1024": [
+   "22a-teialada-2026-1122": [
     "inscripcion"
    ],
-   "fedola-family-run-2026-1024": [
+   "andaina-de-outono-concello-paderne-de-allariz-2026-1122": [
     "inscripcion"
    ],
-   "ruta-del-barbo-2026-1024": [
+   "corre-sin-resistencias-2026-1122": [
     "inscripcion"
    ],
-   "caravaca-experience-2026-caravaca-de-la-cruz-25-10-2026-2026-1025": [
+   "cursa-entrepobles-la-garrotxa-2026-1122": [
     "inscripcion"
    ],
-   "mitja-maresme-2026": [
+   "cursa-de-parets-del-valles-2026-1122": [
     "inscripcion"
    ],
-   "los-alcazares-en-marcha-contra-el-cancer-2026-los-alcazares-25-10-2026-2026-1025": [
+   "desafio-vega-baja-redovan-by-medieval-2026-1122": [
     "inscripcion"
    ],
-   "salto-15k-donostia-2026": [
+   "emakumeen-lasterketa-5k-2026-1122": [
     "inscripcion"
    ],
-   "media-maraton-villa-de-montehermoso-2026-1025": [
+   "evento-gordako-utiel-2026-1122": [
     "inscripcion"
    ],
-   "10k-de-salinas-2026-1025": [
+   "isla-race-estadi-mallorca-son-moix-2026-1122": [
     "inscripcion"
    ],
-   "carrera-hazvisible22q-2026-1025": [
+   "tarraco-health-race-2026-1122": [
     "inscripcion"
    ],
-   "burgos-21k-tras-las-huellas-del-cid-2026-1025": [
+   "x-carrera-popular-xi-marcha-solidaria-por-la-diabetes-2026-1122": [
     "inscripcion"
    ],
-   "carrera-popular-5k-y-10k-redovan-2026-1025": [
+   "xvi-cursa-i-caminada-solidaria-contra-la-violencia-de-genere-2026-1122": [
     "inscripcion"
    ],
-   "carrera-popular-ciudad-de-pozuelo-2026-1025": [
+   "10k-dulces-de-casinos-2026-1128": [
     "inscripcion"
    ],
-   "carrera-popular-dia-del-ictus-2026-1025": [
+   "carrera-entre-dinosaurios-villa-de-igea-2026-1128": [
     "inscripcion"
    ],
-   "carrera-popular-ruta-de-las-norias-2026-1025": [
+   "en-marcha-contra-el-cancer-longares-2026-1128": [
     "inscripcion"
    ],
-   "el-derbi-de-las-aficiones-2026-1025": [
+   "playa-blanca-music-run-night-2026-1128": [
     "inscripcion"
    ],
-   "iii-carrera-amp-marcha-solidaria-del-hospital-nacional-de-paraplejicos-2026-1025": [
+   "trikids-sant-joan-2026-1129": [
     "inscripcion"
    ],
-   "lasarte-oria-bai-2026-1025": [
+   "carrera-popular-solidaria-corre-para-pararlo-2026-1129": [
     "inscripcion"
    ],
-   "marcha-contra-el-cancer-huelva-2026-1025": [
+   "marato-i-mitja-relleus-vinyols-2026-1129": [
     "inscripcion"
    ],
-   "marcha-contra-el-cancer-en-tarifa-2026-1025": [
+   "mitja-marato-union-alcoyana-2026-1129": [
     "inscripcion"
    ],
-   "prueba-de-fondo-la-hispanidad-2026-1025": [
+   "ponle-freno-las-palmas-2026-1129": [
     "inscripcion"
    ],
-   "puerto-serrano-en-marcha-contra-el-cancer-2026-1025": [
+   "bunt-miko-ajow-2026-1205": [
     "inscripcion"
    ],
-   "runcancer-gandia-2026-1025": [
+   "maraton-lanzarote-2026": [
     "inscripcion"
    ],
-   "wine-run-rioja-alavesa-2026-1025": [
+   "xxi-volta-a-peu-la-vall-d-039-alba-3-pujades-a-l-039-ermita-2026-1205": [
     "inscripcion"
    ],
-   "minze-dark-horse-2026-1030": [
+   "trofeo-akiles-2026-1206": [
     "inscripcion"
    ],
-   "carrera-popular-monumentos-aceite-y-piedra-2026-1031": [
+   "la-cizur-gares-2026-1206": [
     "inscripcion"
    ],
-   "10k-running-oliva-nova-2026-1031": [
+   "llano-del-camello-2026-1206": [
     "inscripcion"
    ],
-   "las-murallas-pamplona-iruna-2026-1031": [
+   "xxix-vuelta-a-pie-nocturna-tous-2026-1212": [
     "inscripcion"
    ],
-   "oboncross-x-2026-1031": [
+   "natural-greatness-wild-race-campeonato-autonomico-mushing-tierra-comunidad-valen-2026-1212": [
     "inscripcion"
    ],
-   "21k-huelva-2026": [
+   "mar-menor-running-challenge-2026-1213": [
     "inscripcion"
    ],
-   "rotary-club-de-oviedo-2026-1101": [
+   "trofeo-jose-cano-2026-1213": [
     "inscripcion"
    ],
-   "xv-andaina-solidaria-banos-de-molgas-2026-1101": [
+   "10-milla-solidaria-de-valldoreix-2026-1213": [
     "inscripcion"
    ],
-   "dual-run-monachil-academia-puerta-real-2026-1102": [
+   "carrera-contra-el-cancer-de-pancreas-barcelona-2026-1213": [
     "inscripcion"
    ],
-   "binter-nightrun-las-palmas-de-gran-canaria-2026-1107": [
+   "carrera-de-navidad-villanueva-de-la-canada-2026-1213": [
     "inscripcion"
    ],
-   "millennial-race-2026-1107": [
+   "runcancer-picassent-2026-1213": [
     "inscripcion"
    ],
-   "viii-niebieski-bieg-niepodleg-osci-o-puchar-komendanta-g-ownego-policji-2026-1107": [
+   "san-silvestre-de-hortaleza-2026-1219": [
     "inscripcion"
    ],
-   "xii-cursa-sant-carles-xtrem-2026-1107": [
+   "bano-de-navidad-2026-1220": [
     "inscripcion"
    ],
-   "10k-castello-de-la-plana-2026-1108": [
+   "carrera-popular-villa-de-aranjuez-2026-1220": [
     "inscripcion"
    ],
-   "media-maraton-de-fuengirola-2026-1108": [
+   "carrera-popular-de-navidad-de-el-rubio-2026-1220": [
     "inscripcion"
    ],
-   "murcia-en-marcha-contra-el-cancer-2026-1108": [
+   "carrera-de-navidad-memorial-antonio-jimenez-2026-1220": [
     "inscripcion"
    ],
-   "xlvi-carrera-popular-villa-de-grazalema-2026-1108": [
+   "mou-te-per-l-esclerosi-multiple-2026-1220": [
     "inscripcion"
    ],
-   "carrera-por-la-salud-2026-1108": [
+   "quarta-i-mitja-marato-paiporta-picanya-2026-1220": [
     "inscripcion"
    ],
-   "carrera-urbana-universidad-ciudad-de-granada-2026-1108": [
+   "san-pintena-2026-1220": [
     "inscripcion"
    ],
-   "media-maraton-ciudad-de-cadiz-2026-1108": [
+   "san-silvestre-2026-les-alqueries-2026-1220": [
     "inscripcion"
    ],
-   "media-maraton-pilar-de-la-horadada-2026-1108": [
+   "san-silvestre-del-masnou-2026-1226": [
     "inscripcion"
    ],
-   "mitja-marato-ciutat-de-tarragona-2026-1108": [
+   "st-esteve-run-2026-1226": [
     "inscripcion"
    ],
-   "superfast-innoporc-5k-2026-1108": [
+   "vi-carrera-del-mazapan-de-sonseca-2026-1226": [
     "inscripcion"
    ],
-   "v-carrera-solidaria-kilometros-que-dan-vida-2026-1108": [
+   "xv-san-silvestre-d-039-orpesa-2026-1227": [
     "inscripcion"
    ],
-   "v-gincana-ibiza-amp-formentera-preservation-2026-1108": [
+   "runcancer-alcasser-2026-1227": [
     "inscripcion"
    ],
-   "xx-andaina-outono-o-barco-de-valdeorras-2026-1108": [
+   "san-silvestre-praviana-2026-1227": [
     "inscripcion"
    ],
-   "xxxvii-erandioko-herri-krosa-2026-1108": [
+   "cursa-nassos-2026": [
     "inscripcion"
    ],
-   "x-polkowicki-bieg-niepodleg-osci-2026-1111": [
+   "42-bieg-sylwestrowy-2026-1231": [
     "inscripcion"
    ],
-   "xiii-bieg-uliczny-sw-marcina-o-puchar-burmistrza-miasta-i-gminy-kepno-bieg-s-uzb-2026-1111": [
+   "orioko-san-silbestrea-2026-1231": [
     "inscripcion"
    ],
-   "maraton-alcarria-2026-1114": [
+   "cursa-mar-i-murtra-2027-0110": [
     "inscripcion"
    ],
-   "moraltrail-race-2026-1114": [
+   "trofeo-paris-2027-0110": [
     "inscripcion"
    ],
-   "1-edicion-hunting-teguise-003-2026-1114": [
+   "serralades-de-barxeta-mabu-2027-0117": [
     "inscripcion"
    ],
-   "viii-fluor-moon-diabetes-2026-1114": [
+   "mitja-marato-internacional-vila-de-santa-pola-2027-0123": [
     "inscripcion"
    ],
-   "carrera-corre-sin-resistencias-valencia-2026-1114": [
+   "mitja-granollers-2027": [
     "inscripcion"
    ],
-   "la-palma-music-run-night-2026-1114": [
+   "mitja-santa-pola-2027": [
     "inscripcion"
    ],
-   "maraton-sierra-de-mijas-2026-1114": [
+   "sanchinarro-10k-2027-0124": [
     "inscripcion"
    ],
-   "paleotrail-loarre-2026-1114": [
+   "xxxviii-carrera-alcalde-de-la-union-la-union-31-01-2027-2027-0131": [
     "inscripcion"
    ],
-   "suski-bieg-niepodleg-osci-2026-1114": [
+   "10k-bombers-xativa-2027-0131": [
     "inscripcion"
    ],
-   "pujada-al-castell-de-xativa-2026-1115": [
+   "10k-camargo-2027-0131": [
     "inscripcion"
    ],
-   "xxx-memorial-miguel-angel-gomez-campuzano-2026-1115": [
+   "10k-vilafranca-2027-0131": [
     "inscripcion"
    ],
-   "media-maraton-comarca-de-valdejalon-2026-1115": [
+   "media-maraton-de-castello-2027-0131": [
     "inscripcion"
    ],
-   "carrera-popular-madrid-tambien-solidario-2026-1115": [
+   "mitja-sant-cugat-2027-0131": [
     "inscripcion"
    ],
-   "ponle-freno-madrid-2026": [
+   "16-snow-running-sierra-nevada-2027-0206": [
     "inscripcion"
    ],
-   "carrera-popular-running-pinto-2026-1115": [
-    "inscripcion"
-   ],
-   "carrera-de-empresas-murcia-2026-1115": [
-    "inscripcion"
-   ],
-   "carrera-del-telefono-de-la-esperanza-2026-1115": [
-    "inscripcion"
-   ],
-   "cursa-popular-vila-de-sant-boi-2026-1115": [
-    "inscripcion"
-   ],
-   "en-marcha-contra-el-cancer-bujaraloz-2026-1115": [
-    "inscripcion"
-   ],
-   "media-maraton-de-melilla-2026-1115": [
-    "inscripcion"
-   ],
-   "prueba-de-fondo-villa-romana-de-salar-2026-1115": [
-    "inscripcion"
-   ],
-   "som-urban-race-2026-1115": [
-    "inscripcion"
-   ],
-   "xi-desafio-sierra-de-villaluenga-2026-1115": [
-    "inscripcion"
-   ],
-   "el-privilegio-100-millas-2026-1120": [
-    "inscripcion"
-   ],
-   "cursa-fosca-2026-1121": [
-    "inscripcion"
-   ],
-   "10kcpc-carrera-solidaria-puerto-de-cartagena-2026-1121": [
-    "inscripcion"
-   ],
-   "10k-de-sarinena-2026-1121": [
-    "inscripcion"
-   ],
-   "benidorm-half-2026-1121": [
-    "inscripcion"
-   ],
-   "10k-montbrio-del-camp-2026-1122": [
-    "inscripcion"
-   ],
-   "maraton-donostia-2026": [
-    "inscripcion"
-   ],
-   "i-carrera-empresas-huelva24-2026-1122": [
+   "media-maraton-internacional-de-torremolinos-2027-0207": [
     "inscripcion"
    ]
   },
