@@ -1,307 +1,72 @@
 [
  {
-  "url": "https://runedia.mundodeportivo.com/calendario-carreras/espana/",
-  "status": 200,
-  "final": "https://runedia.mundodeportivo.com/calendario-carreras/",
+  "url": "https://es.wikiloc.com/robots.txt",
+  "status": 403,
+  "final": "https://es.wikiloc.com/robots.txt",
+  "server": "cloudflare",
   "ctype": "text/html; charset=UTF-8",
-  "bytes": 389215,
-  "jsonld": [],
-  "h1": "CALENDARIO Carreras",
-  "fechas_texto": [
-   "12/31/2018",
-   "12/31/2018"
-  ],
-  "paginacion": [],
-  "eventos_muestra": [
-   "https://runedia.mundodeportivo.com/carrera/cross-popular-de-sants-2026/202637332/",
-   "https://runedia.mundodeportivo.com/carrera/marxa-de-la-llopa-petita-2026/202637512/",
-   "https://runedia.mundodeportivo.com/carrera/30a-passejada-popular-de-llica-de-vall-2026/202637529/",
-   "https://runedia.mundodeportivo.com/carrera/i-icarrera-global-humanitaria-4k-8k-2026-2026/202637091/",
-   "https://runedia.mundodeportivo.com/carrera/marxa-de-larboc-curta-2026/202637521/",
-   "https://runedia.mundodeportivo.com/carrera/72-cross-internacional-zornotza-carrera-popular-2026/202637514/",
-   "https://runedia.mundodeportivo.com/carrera/72-cross-internacional-zornotza-2026/202637513/",
-   "https://runedia.mundodeportivo.com/carrera/marxa-de-larboc-llarga-2026/202637522/",
-   "https://runedia.mundodeportivo.com/carrera/marxa-de-la-llopa-2026/202637511/",
-   "https://runedia.mundodeportivo.com/carrera/cursa-familiar-per-la-vida-girona-2026/202637496/"
-  ],
-  "xml_locs": [],
-  "texto": " Carreras | Runedia Carrera añadida a tu agenda Cuéntalo a tus amigos!! Twittear Calendario Resultados NOTICIAS Tracks Reviews Síguenos Calendario Resultados NOTICIAS OFERTAS EXCLUSIVAS Tracks Reviews Busca runners por club PUBLICIDAD Contactar Acceso CALENDARIO Carreras CARRERAS MÁS VALORADAS CARRERAS MÁS VALORADAS País/Zona España Francia Italia Portugal Bélgica Sudamérica Centro América Estados Unidos Otros Paises CCAA/Región Provincia Dist. min 0 km 1500/1609 m 5 km 10 km 15 km 21 km 30 km 42 km 65 km 100 km Dist. max 1500/1609 m 5 km 10 km 15 km 21 km 30 km 42 km 65 km 100 km max Tipo .......... RUTA Pista Asfalto Running Tierra Cross Canicross Carrera de obstáculos Carrera virtual ...."
+  "bytes": 5701,
+  "titulo": "Just a moment...",
+  "rutas": [],
+  "inicio": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta http-equiv=\"content-security-policy\" content=\"default-src &#39;none&#39;; script-src &#39;nonce-OduC27p9r0Ft09j9hUIW5A&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-src-attr &#39;none&#39;; style-src &#39;unsafe-inline&#39;; img-src &#39;self&#39; https://challenges.cloudflare.com; connect-src &#39;self&#39; https://challenges.cloudflare.com; frame-src &#39;self&#39; https://challenges.cloudflare.com blob:; child-src &#39;self&#39; https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri &#39;self&#39;\"><style>*{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,\"Noto Sans\",sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol\",\"Noto Color Emoji\"}body{display:flex;flex-direction:column;height:100vh;min-height:100vh}.main-content{margin:8rem auto;padding-left:1.5rem;max-width:60rem}@media (width <= 720px){.main-content{margin-top:4rem}}#challenge-error-text{background-image:url(\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zd"
  },
  {
-  "url": "https://runedia.mundodeportivo.com/calendario-carreras/espana/?pag=2",
-  "status": 200,
-  "final": "https://runedia.mundodeportivo.com/calendario-carreras/",
+  "url": "https://es.wikiloc.com/wikiloc/find.do?q=media+maraton+cuenca",
+  "status": 403,
+  "final": "https://es.wikiloc.com/wikiloc/find.do?q=media+maraton+cuenca",
+  "server": "cloudflare",
   "ctype": "text/html; charset=UTF-8",
-  "bytes": 389215,
-  "jsonld": [],
-  "h1": "CALENDARIO Carreras",
-  "fechas_texto": [
-   "12/31/2018",
-   "12/31/2018"
-  ],
-  "paginacion": [],
-  "eventos_muestra": [
-   "https://runedia.mundodeportivo.com/carrera/cross-popular-de-sants-2026/202637332/",
-   "https://runedia.mundodeportivo.com/carrera/marxa-de-la-llopa-petita-2026/202637512/",
-   "https://runedia.mundodeportivo.com/carrera/30a-passejada-popular-de-llica-de-vall-2026/202637529/",
-   "https://runedia.mundodeportivo.com/carrera/i-icarrera-global-humanitaria-4k-8k-2026-2026/202637091/",
-   "https://runedia.mundodeportivo.com/carrera/marxa-de-larboc-curta-2026/202637521/",
-   "https://runedia.mundodeportivo.com/carrera/72-cross-internacional-zornotza-carrera-popular-2026/202637514/",
-   "https://runedia.mundodeportivo.com/carrera/72-cross-internacional-zornotza-2026/202637513/",
-   "https://runedia.mundodeportivo.com/carrera/marxa-de-larboc-llarga-2026/202637522/",
-   "https://runedia.mundodeportivo.com/carrera/marxa-de-la-llopa-2026/202637511/",
-   "https://runedia.mundodeportivo.com/carrera/cursa-familiar-per-la-vida-girona-2026/202637496/"
-  ],
-  "xml_locs": [],
-  "texto": " Carreras | Runedia Carrera añadida a tu agenda Cuéntalo a tus amigos!! Twittear Calendario Resultados NOTICIAS Tracks Reviews Síguenos Calendario Resultados NOTICIAS OFERTAS EXCLUSIVAS Tracks Reviews Busca runners por club PUBLICIDAD Contactar Acceso CALENDARIO Carreras CARRERAS MÁS VALORADAS CARRERAS MÁS VALORADAS País/Zona España Francia Italia Portugal Bélgica Sudamérica Centro América Estados Unidos Otros Paises CCAA/Región Provincia Dist. min 0 km 1500/1609 m 5 km 10 km 15 km 21 km 30 km 42 km 65 km 100 km Dist. max 1500/1609 m 5 km 10 km 15 km 21 km 30 km 42 km 65 km 100 km max Tipo .......... RUTA Pista Asfalto Running Tierra Cross Canicross Carrera de obstáculos Carrera virtual ...."
+  "bytes": 5843,
+  "titulo": "Just a moment...",
+  "rutas": [],
+  "inicio": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scal"
  },
  {
-  "url": "https://runedia.mundodeportivo.com/sitemap_index.xml",
-  "status": 200,
-  "final": "https://runedia.mundodeportivo.com/sitemap_index.xml",
-  "ctype": "text/xml",
-  "bytes": 7822,
-  "jsonld": [],
-  "h1": null,
-  "fechas_texto": [
-   "2026-10-22",
-   "2026-10-22",
-   "2026-10-22",
-   "2026-10-22",
-   "2026-10-22",
-   "2026-10-22",
-   "2026-10-22",
-   "2026-10-22"
-  ],
-  "paginacion": [],
-  "eventos_muestra": [],
-  "xml_locs": [
-   "https://runedia.mundodeportivo.com/sitemaps/sitemap-news.xml",
-   "https://runedia.mundodeportivo.com/sitemaps/sitemap-web.xml",
-   "https://runedia.mundodeportivo.com/sitemaps/sitemap-noticies1.xml",
-   "https://runedia.mundodeportivo.com/sitemaps/sitemap-curses1.xml",
-   "https://runedia.mundodeportivo.com/sitemaps/sitemap-curses2.xml",
-   "https://runedia.mundodeportivo.com/sitemaps/sitemap-curses3.xml",
-   "https://runedia.mundodeportivo.com/sitemaps/sitemap-curses4.xml",
-   "https://runedia.mundodeportivo.com/sitemaps/sitemap-curses5.xml",
-   "https://runedia.mundodeportivo.com/sitemaps/sitemap-curses6.xml",
-   "https://runedia.mundodeportivo.com/sitemaps/sitemap-curses7.xml",
-   "https://runedia.mundodeportivo.com/sitemaps/sitemap-curses8.xml",
-   "https://runedia.mundodeportivo.com/sitemaps/sitemap-curses9.xml",
-   "https://runedia.mundodeportivo.com/sitemaps/sitemap-curses10.xml",
-   "https://runedia.mundodeportivo.com/sitemaps/sitemap-curses11.xml",
-   "https://runedia.mundodeportivo.com/sitemaps/sitemap-curses12.xml"
-  ],
-  "texto": "https://runedia.mundodeportivo.com/sitemaps/sitemap-news.xml https://runedia.mundodeportivo.com/sitemaps/sitemap-web.xml 2026-10-22 https://runedia.mundodeportivo.com/sitemaps/sitemap-noticies1.xml 2026-10-22 https://runedia.mundodeportivo.com/sitemaps/sitemap-curses1.xml 2026-10-22 https://runedia.mundodeportivo.com/sitemaps/sitemap-curses2.xml 2026-10-22 https://runedia.mundodeportivo.com/sitemaps/sitemap-curses3.xml 2026-10-22 https://runedia.mundodeportivo.com/sitemaps/sitemap-curses4.xml 2026-10-22 https://runedia.mundodeportivo.com/sitemaps/sitemap-curses5.xml 2026-10-22 https://runedia.mundodeportivo.com/sitemaps/sitemap-curses6.xml 2026-10-22 https://runedia.mundodeportivo.com/sitema"
- },
- {
-  "url": "https://www.carreraspopulares.com/calendario_carreras/lista",
-  "status": 200,
-  "final": "https://www.carreraspopulares.com/calendario_carreras/lista",
+  "url": "https://es.wikiloc.com/rutas/correr?q=media+maraton+cuenca",
+  "status": 403,
+  "final": "https://es.wikiloc.com/rutas/correr?q=media+maraton+cuenca",
+  "server": "cloudflare",
   "ctype": "text/html; charset=UTF-8",
-  "bytes": 367190,
-  "jsonld": [],
-  "h1": null,
-  "fechas_texto": [
-   "08/11/2026",
-   "22/11/2026",
-   "13/12/2026",
-   "20/12/2026"
-  ],
-  "paginacion": [
-   "https://www.carreraspopulares.com/calendario_carreras/lista?page=2"
-  ],
-  "eventos_muestra": [
-   "https://carreraspopulares.com/carrera/carrera-de-la-logistica",
-   "https://carreraspopulares.com/carrera/carrera-de-la-logistica",
-   "https://carreraspopulares.com/carrera/carrera-de-la-logistica",
-   "https://carreraspopulares.com/carrera/10k-naquera",
-   "https://carreraspopulares.com/carrera/10k-naquera",
-   "https://carreraspopulares.com/carrera/10k-naquera",
-   "https://carreraspopulares.com/carrera/mitja-marato-gandia",
-   "https://carreraspopulares.com/carrera/mitja-marato-gandia",
-   "https://carreraspopulares.com/carrera/mitja-marato-gandia",
-   "https://carreraspopulares.com/carrera/10k-ciutat-de-gandia"
-  ],
-  "xml_locs": [],
-  "texto": " Filtrado por Carreras España próximos 30 días Toggle navigation CALENDARIO Calendario running Calendario ciclismo Sólo maratón TICKETRUN REVISTA FULLSCAN ORGANIZADORES Alta carreras Panel de organizadores Seguros de eventos CALCULADORA Calculadora de tiempos Calculadora de marcas Calculadora avanzada LOGIN Calendario running Lista de carreras Filtrado por: Carreras España próximos 30 días Palabras claves Fecha Inicio Fecha Fin Consultas directas Ninguna Carreras España próximos 30 días Evento virtual Carreras Comunidad de Madrid próximos 30 días Carreras Comunidad Valenciana próximos 30 días Carreras Cataluña próximos 30 días Carreras Andalucia próximos 30 días Carreras Castilla La Mancha p"
+  "bytes": 5834,
+  "titulo": "Just a moment...",
+  "rutas": [],
+  "inicio": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scal"
  },
  {
-  "url": "https://sportmaniacs.com/es/races?page=2",
-  "status": 200,
-  "final": "https://sportmaniacs.com/es/races?page=2",
+  "url": "https://es.wikiloc.com/wikiloc/map.do?q=media+maraton+cuenca",
+  "status": 403,
+  "final": "https://es.wikiloc.com/wikiloc/map.do?q=media+maraton+cuenca",
+  "server": "cloudflare",
   "ctype": "text/html; charset=UTF-8",
-  "bytes": 64614,
-  "jsonld": [],
-  "h1": "Próximas carreras",
-  "fechas_texto": [
-   "2026-10-24",
-   "2026-10-24",
-   "2026-10-24",
-   "2026-10-25",
-   "2026-10-24",
-   "2026-10-25",
-   "2026-10-25",
-   "2026-10-25"
-  ],
-  "paginacion": [
-   "https://sportmaniacs.com/es/races?page=1",
-   "https://sportmaniacs.com/es/races?page=18",
-   "https://sportmaniacs.com/es/races?page=2",
-   "https://sportmaniacs.com/es/races?page=3",
-   "https://sportmaniacs.com/es/races?page=4"
-  ],
-  "eventos_muestra": [
-   "https://sportmaniacs.com/es/races/i-desafio-bomberos-san-sebastian-de-los-reyes-2026",
-   "https://sportmaniacs.com/es/races/pulpi---circuito-de-carreras-populares-diputacin-de-almera-2026",
-   "https://sportmaniacs.com/es/races/h6-hyatlon-la-nucia-ambar-tour-2026",
-   "https://sportmaniacs.com/es/races/i-backyard-dama-blanca",
-   "https://sportmaniacs.com/es/races/runcancer-gandia-2026",
-   "https://sportmaniacs.com/es/races/carrera-mtb-urda-extrem-2026",
-   "https://sportmaniacs.com/es/races/iii-carrera-amp-marcha-solidaria-del-hospital-nacional-de-parapljicos",
-   "https://sportmaniacs.com/es/races/trail-castell-de-serra-2026",
-   "https://sportmaniacs.com/es/races/xxvii-media-maratn-ciudad-de-dos-hermanas-ldquotierra-y-olivordquo",
-   "https://sportmaniacs.com/es/races/v-media-maraton-ldquovilla-de-montehermosordquo-2026"
-  ],
-  "xml_locs": [],
-  "texto": " Sportmaniacs — Calendario de carreras, inscripciones y clasificaciones Carreras Clasificaciones Próximas carreras Nombre de la carrera Selecciona provincia Todas las provincias Selecciona una provincia A Coruña Albacete Alicante Almería Araba/Álava Asturias Ávila Badajoz Baleares (Illes) Barcelona Bizkaia Burgos Cáceres Cádiz Cantabria Castellón Ceuta Ciudad Real Córdoba Cuenca Gipuzkoa Girona Granada Guadalajara Huelva Huesca Jaén La Rioja Las Palmas León Lleida Lugo Madrid Málaga Melilla Murcia Navarra Ourense Palencia Pontevedra Salamanca Santa Cruz de Tenerife Segovia Sevilla Soria Tarragona Teruel Toledo Valencia Valladolid Zamora Zaragoza Buscar carreras Inicio Próximas carreras Próxi"
+  "bytes": 5840,
+  "titulo": "Just a moment...",
+  "rutas": [],
+  "inicio": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scal"
  },
  {
-  "url": "https://running.life/10k-races/spain/andalucia",
-  "status": 200,
-  "final": "https://running.life/10k-races/spain/andalucia",
-  "ctype": "text/html; charset=utf-8",
-  "bytes": 294897,
-  "jsonld": [
-   {
-    "name": "Media Maratón Holiday World Benalmádena",
-    "date": "2026-11-22",
-    "time": null,
-    "city": "Benalmádena",
-    "region_hint": "Andalucía Benalmádena ",
-    "description": "The Media Maratón Holiday World Benalmádena will take place in Benalmádena on Sunday 22 November 2026. You can run between 5 and 21 kilometers.",
-    "price": null,
-    "image": null,
-    "official_candidates": []
-   },
-   {
-    "name": "Carrera Urbana Rafael de Riego",
-    "date": "2026-11-15",
-    "time": null,
-    "city": "Las Cabezas de San Juan",
-    "region_hint": "Andalucía Las Cabezas de San Juan ",
-    "description": "The Carrera Urbana Rafael de Riego will take place in Las Cabezas de San Juan on Sunday 15 November 2026. You can run between 5 and 10 kilometers.",
-    "price": null,
-    "image": null,
-    "official_candidates": []
-   }
-  ],
-  "h1": "10K Race Calendar Andalucia 2026-2027",
-  "fechas_texto": [
-   "2026-10-25",
-   "2026-10-25",
-   "2026-10-25",
-   "2026-10-25",
-   "2026-10-25",
-   "2026-10-25",
-   "2026-10-25",
-   "2026-10-25"
-  ],
-  "paginacion": [
-   "https://running.life/10k-races/spain/andalucia?page=2"
-  ],
-  "eventos_muestra": [
-   "https://running.life/en/event/desafio-malaga",
-   "https://running.life/en/event/desafio-malaga",
-   "https://running.life/en/event/desafio-malaga",
-   "https://running.life/en/event/desafio-malaga",
-   "https://running.life/en/event/desafio-malaga",
-   "https://running.life/en/event/10k-correplayas-memorial-paco-guisado",
-   "https://running.life/en/event/10k-correplayas-memorial-paco-guisado",
-   "https://running.life/en/event/10k-correplayas-memorial-paco-guisado",
-   "https://running.life/en/event/carrera-popular-ciudad-de-aguilar",
-   "https://running.life/en/event/carrera-popular-ciudad-de-aguilar"
-  ],
-  "xml_locs": [],
-  "texto": " 10K Race Calendar Andalucia 2026-2027 Calendar United States United Kingdom Australia Canada South Africa New Zealand Ireland United Arab Emirates Indonesia Jersey Marathons in Europe Half Marathons in Europe All Countries Home Articles Pace Calculator Contact plus-circle-outline Event en English Español Nederlands Deutsch Français Login Home Articles Pace Calculator Contact United States United Kingdom Australia Canada South Africa New Zealand Ireland United Arab Emirates Indonesia Jersey Marathons in Europe Half Marathons in Europe All Countries Calendar 10K Race Calendar Spain Andalucia Andalucia close Map Filters Spain World Recently Searched.. United Kingdom Events in United Kingdom Di"
- },
- {
-  "url": "https://runedia.mundodeportivo.com/carrera/cursa-popular-sant-marti-2026/202637000/",
-  "status": 200,
-  "final": "https://runedia.mundodeportivo.com/carrera/mercedes-benz-uci-mtb-world-championships-4x-xcc-xco-emtb-dh-2026/202637000/",
+  "url": "https://es.wikiloc.com/wikiloc/spatialArtifacts.do?q=media+maraton+cuenca",
+  "status": 403,
+  "final": "https://es.wikiloc.com/wikiloc/spatialArtifacts.do?q=media+maraton+cuenca",
+  "server": "cloudflare",
   "ctype": "text/html; charset=UTF-8",
-  "bytes": 88318,
-  "jsonld": [],
-  "h1": "MERCEDES-BENZ UCI MTB WORLD CHAMPIONSHIPS 4X - XCC - XCO - EMTB - DH",
-  "fechas_texto": [],
-  "paginacion": [],
-  "eventos_muestra": [
-   "https://runedia.mundodeportivo.com/carrera/mercedes-benz-uci-mtb-world-championships-4x-xcc-xco-emtb-dh-2026/202637000/",
-   "https://runedia.mundodeportivo.com/carrera/mercedes-benz-uci-mtb-world-championships-4x-xcc-xco-emtb-dh-2026/202637000/",
-   "https://runedia.mundodeportivo.com/carrera/mercedes-benz-uci-mtb-world-championships-4x-xcc-xco-emtb-dh-2025/20252038032/",
-   "https://runedia.mundodeportivo.com/carrera/mercedes-benz-uci-mtb-world-championships-4x-xcc-xco-emtb-dh-2026/202637000/",
-   "https://runedia.mundodeportivo.com/carrera/mercedes-benz-uci-mtb-world-championships-4x-xcc-xco-emtb-dh-2026/202637000/",
-   "https://runedia.mundodeportivo.com/carrera/mercedes-benz-uci-mtb-world-championships-4x-xcc-xco-emtb-dh-2026/202637000/"
-  ],
-  "xml_locs": [],
-  "texto": " MERCEDES-BENZ UCI MTB WORLD CHAMPIONSHIPS 4X - XCC - XCO - EMTB - DH 2026 | Runedia Calendario Resultados NOTICIAS Tracks Reviews Síguenos Calendario Resultados NOTICIAS OFERTAS EXCLUSIVAS Tracks Reviews Busca runners por club PUBLICIDAD Contactar Acceso MERCEDES-BENZ UCI MTB WORLD CHAMPIONSHIPS 4X - XCC - XCO - EMTB - DH Martes, 25-8-2026 Fecha no confirmada Val di Sole Trentino Montaña Precio a partir de: - Desnivel subida (m): - Desnivel bajada (m): - Edición: 2026 2025 INFORMACIÓN CARRERA Edición: 17 Lugar de la salida: Lugar de la llegada: Nivel solidario: Distancia homologada: No Copa/campeonato/circuito: Copa/campeonato/circuito adicional: Inscripción Apertura inscripciones: 01/01/19"
+  "bytes": 5900,
+  "titulo": "Just a moment...",
+  "rutas": [],
+  "inicio": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scal"
  },
  {
-  "url": "https://sportmaniacs.com/es/races/13ordm-carrera-popular-la-villa-de-don-fadrique-toledo",
-  "status": 200,
-  "final": "https://sportmaniacs.com/es/services/inscription/13ordm-carrera-popular-la-villa-de-don-fadrique-toledo",
+  "url": "https://es.wikiloc.com/rutas/correr/espana/castilla-la-mancha/cuenca",
+  "status": 403,
+  "final": "https://es.wikiloc.com/rutas/correr/espana/castilla-la-mancha/cuenca",
+  "server": "cloudflare",
   "ctype": "text/html; charset=UTF-8",
-  "bytes": 55901,
-  "jsonld": [
-   {
-    "name": "13º CARRERA POPULAR La Villa de Don Fadrique (Toledo)",
-    "date": "2026-10-24",
-    "time": null,
-    "city": "Villa de Don Fadrique (La)",
-    "region_hint": "Toledo Villa de Don Fadrique (La) ",
-    "description": "",
-    "price": "2–10 €",
-    "image": "https://s3.eu-west-1.amazonaws.com/sm-fotos.sportmaniacs.com/back/resize/1920x410x0_default_dark.jpg",
-    "official_candidates": [
-     "https://sportmaniacs.com/es/races/13ordm-carrera-popular-la-villa-de-don-fadrique-toledo"
-    ]
-   }
-  ],
-  "h1": "13º CARRERA POPULAR La Villa de Don Fadrique (Toledo)",
-  "fechas_texto": [
-   "24/10/2026",
-   "24/10/2026",
-   "24/10/2026",
-   "2026-10-24",
-   "2026-10-24"
-  ],
-  "paginacion": [],
-  "eventos_muestra": [
-   "https://sportmaniacs.com/es/races/13ordm-carrera-popular-la-villa-de-don-fadrique-toledo#registrations",
-   "https://sportmaniacs.com/es/races/13ordm-carrera-popular-la-villa-de-don-fadrique-toledo#rules",
-   "https://sportmaniacs.com/es/races/13ordm-carrera-popular-la-villa-de-don-fadrique-toledo#contact"
-  ],
-  "xml_locs": [],
-  "texto": " 13º CARRERA POPULAR La Villa de Don Fadrique (Toledo). Inscripciones e info — Sportmaniacs Nombre de carrera Buscar carreras Carreras Clasificaciones 24 oct 2026, Villa de Don Fadrique (La) 13º CARRERA POPULAR La Villa de Don Fadrique (Toledo) Inscripciones e info Inicio Próximas carreras 13º CARRERA POPULAR La Villa de Don Fadrique (Toledo) Información Inscripciones Reglamento Info. de contacto Inscritos Total inscritos 202 GENERAL 5K/10K 148 MARCHA 22 INFANTILES 32 Inscritos Total inscritos 202 GENERAL 5K/10K 148 MARCHA 22 INFANTILES 32 Inscritos Total inscritos 202 GENERAL 5K/10K 148 MARCHA 22 INFANTILES 32 Inscripciones GENERAL 5K/10K 24/10/2026 18:30 Cerrada MARCHA 24/10/2026 18:30 Cer"
+  "bytes": 5870,
+  "titulo": "Just a moment...",
+  "rutas": [],
+  "inicio": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scal"
  },
  {
-  "url": "https://www.lineadesalida.net/carreras/xi-carrera-solidaria-puerto-de-cartagena-10kcpc",
-  "status": 200,
-  "final": "https://www.lineadesalida.net/carreras/xi-carrera-solidaria-puerto-de-cartagena-10kcpc",
-  "ctype": "text/html; charset=UTF-8",
-  "bytes": 50472,
-  "jsonld": [],
-  "h1": null,
-  "fechas_texto": [
-   "17 de octubre de 2026"
-  ],
-  "paginacion": [],
-  "eventos_muestra": [
-   "https://www.lineadesalida.net/carreras/xi-carrera-solidaria-puerto-de-cartagena-10kcpc",
-   "https://www.lineadesalida.net/carreras/xi-carrera-solidaria-puerto-de-cartagena-10kcpc",
-   "https://www.lineadesalida.net/carreras/xi-carrera-solidaria-puerto-de-cartagena-10kcpc"
-  ],
-  "xml_locs": [],
-  "texto": " Lineadesalida.net Inicio Carreras Próximas carreras Carreras finalizadas Ligas Noticias Consulta de inscripciones Contacto Iniciar sesión Iniciar sesión XI Carrera Solidaria Puerto de Cartagena 10KCPC Lugar Cartagena Fecha 21 de Noviembre de 2026 Hora 16:30 Reglamento Descripción: ¡Prepárate para vivir una jornada inolvidable de deporte y solidaridad junto al mar! 🌊🏃‍♀️ Te animamos a participar el próximo sábado 17 de octubre de 2026 en la XI Carrera Puerto de Cartagena 10KCPC , un evento con un fin exclusivamente benéfico donde cada zancada suma. Es la oportunidad perfecta para hacer deporte, fomentar la inclusión y disfrutar de los rincones más bonitos de nuestra fachada marítima, desde e"
+  "url": "https://api.wikiloc.com/",
+  "error": "ConnectionError(MaxRetryError('HTTPSConnectionPool(host=\\'api.wikiloc.com\\', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host=\\'api.wikiloc.com\\', port="
  }
 ]
