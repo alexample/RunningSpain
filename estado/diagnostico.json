@@ -1,0 +1,612 @@
+{
+ "hoy": "2026-10-23",
+ "carreras_en_datos": 653,
+ "max_fecha_en_datos": "2027-02-07",
+ "sportplan": [
+  {
+   "slug": "madrid",
+   "error": true
+  },
+  {
+   "slug": "barcelona",
+   "error": true
+  },
+  {
+   "slug": "valencia",
+   "error": true
+  },
+  {
+   "slug": "sevilla",
+   "error": true
+  },
+  {
+   "slug": "malaga",
+   "error": true
+  },
+  {
+   "slug": "cordoba",
+   "error": true
+  },
+  {
+   "slug": "cadiz",
+   "error": true
+  },
+  {
+   "slug": "granada",
+   "error": true
+  },
+  {
+   "slug": "almeria",
+   "error": true
+  },
+  {
+   "slug": "jaen",
+   "error": true
+  },
+  {
+   "slug": "huelva",
+   "error": true
+  },
+  {
+   "slug": "zaragoza",
+   "error": true
+  },
+  {
+   "slug": "huesca",
+   "error": true
+  },
+  {
+   "slug": "teruel",
+   "error": true
+  },
+  {
+   "slug": "asturias",
+   "error": true
+  },
+  {
+   "slug": "santander",
+   "error": true
+  },
+  {
+   "slug": "pamplona",
+   "error": true
+  },
+  {
+   "slug": "la-rioja",
+   "error": true
+  },
+  {
+   "slug": "bilbao",
+   "error": true
+  },
+  {
+   "slug": "san-sebastian",
+   "error": true
+  },
+  {
+   "slug": "vitoria",
+   "error": true
+  },
+  {
+   "slug": "badajoz",
+   "error": true
+  },
+  {
+   "slug": "caceres",
+   "error": true
+  },
+  {
+   "slug": "palma",
+   "error": true
+  },
+  {
+   "slug": "ibiza",
+   "error": true
+  },
+  {
+   "slug": "menorca",
+   "error": true
+  },
+  {
+   "slug": "tenerife",
+   "error": true
+  },
+  {
+   "slug": "gran-canaria",
+   "error": true
+  },
+  {
+   "slug": "murcia",
+   "error": true
+  },
+  {
+   "slug": "alicante",
+   "error": true
+  },
+  {
+   "slug": "castellon",
+   "error": true
+  },
+  {
+   "slug": "girona",
+   "error": true
+  },
+  {
+   "slug": "tarragona",
+   "error": true
+  },
+  {
+   "slug": "lleida",
+   "error": true
+  },
+  {
+   "slug": "valladolid",
+   "error": true
+  },
+  {
+   "slug": "salamanca",
+   "error": true
+  },
+  {
+   "slug": "leon",
+   "error": true
+  },
+  {
+   "slug": "burgos",
+   "error": true
+  },
+  {
+   "slug": "palencia",
+   "error": true
+  },
+  {
+   "slug": "zamora",
+   "error": true
+  },
+  {
+   "slug": "segovia",
+   "error": true
+  },
+  {
+   "slug": "avila",
+   "error": true
+  },
+  {
+   "slug": "soria",
+   "error": true
+  },
+  {
+   "slug": "toledo",
+   "error": true
+  },
+  {
+   "slug": "ciudad-real",
+   "error": true
+  },
+  {
+   "slug": "albacete",
+   "error": true
+  },
+  {
+   "slug": "cuenca",
+   "error": true
+  },
+  {
+   "slug": "guadalajara",
+   "error": true
+  },
+  {
+   "slug": "a-coruna",
+   "error": true
+  },
+  {
+   "slug": "vigo",
+   "error": true
+  },
+  {
+   "slug": "ourense",
+   "error": true
+  },
+  {
+   "slug": "lugo",
+   "error": true
+  },
+  {
+   "slug": "santiago-de-compostela",
+   "error": true
+  },
+  {
+   "slug": "ceuta",
+   "error": true
+  },
+  {
+   "slug": "melilla",
+   "error": true
+  }
+ ],
+ "runninglife": [
+  {
+   "lista": "https://running.life/half-marathons/spain",
+   "paginas": [
+    {
+     "p": 1,
+     "enlaces": 20,
+     "jsonld": 20,
+     "primera": "2026-10-24",
+     "ultima": "2026-11-01",
+     "nuevas_no_conocidas": 15,
+     "ejemplo": [
+      [
+       "https://running.life/en/event/media-maraton-cuenca",
+       "Oct 24 Sa"
+      ],
+      [
+       "https://running.life/en/event/arrankudiaga-zollo-trail-lasterketa",
+       "Oct 24 Sa"
+      ]
+     ]
+    },
+    {
+     "p": 2,
+     "enlaces": 20,
+     "jsonld": 20,
+     "primera": "2026-11-01",
+     "ultima": "2026-11-08",
+     "nuevas_no_conocidas": 18,
+     "ejemplo": [
+      [
+       "https://running.life/en/event/trail-pena-rubia",
+       "Nov 1 Su"
+      ],
+      [
+       "https://running.life/en/event/trenca-3-pics",
+       "Nov 1 Su"
+      ]
+     ]
+    },
+    {
+     "p": 3,
+     "enlaces": 20,
+     "jsonld": 20,
+     "primera": "2026-11-08",
+     "ultima": "2026-11-15",
+     "nuevas_no_conocidas": 16,
+     "ejemplo": [
+      [
+       "https://running.life/en/event/marato-de-la-mare-de-deu-del-mont",
+       "Nov 8 Su"
+      ],
+      [
+       "https://running.life/en/event/media-maraton-pilar-de-la-horadada",
+       "Nov 8 Su"
+      ]
+     ]
+    },
+    {
+     "p": 4,
+     "enlaces": 20,
+     "jsonld": 20,
+     "primera": "2026-11-15",
+     "ultima": "2026-11-22",
+     "nuevas_no_conocidas": 16,
+     "ejemplo": [
+      [
+       "https://running.life/en/event/carrera-ebro-vida-la-cartuja",
+       "Nov 15 Su"
+      ],
+      [
+       "https://running.life/en/event/mitja-marato-de-lleida",
+       "Nov 15 Su"
+      ]
+     ]
+    },
+    {
+     "p": 5,
+     "enlaces": 20,
+     "jsonld": 20,
+     "primera": "2026-11-22",
+     "ultima": "2026-12-12",
+     "nuevas_no_conocidas": 13,
+     "ejemplo": [
+      [
+       "https://running.life/en/event/carrera-popular-almendral",
+       "Nov 22 Su"
+      ],
+      [
+       "https://running.life/en/event/mitja-marato-samaruc",
+       "Nov 22 Su"
+      ]
+     ]
+    }
+   ],
+   "paginacion": {
+    "enlaces_pagina": [
+     "https://running.life/half-marathons/spain?page=11",
+     "https://running.life/half-marathons/spain?page=12",
+     "https://running.life/half-marathons/spain?page=2",
+     "https://running.life/half-marathons/spain?page=3",
+     "https://running.life/half-marathons/spain?page=4",
+     "https://running.life/half-marathons/spain?page=5",
+     "https://running.life/half-marathons/spain?page=6"
+    ],
+    "botones_mas": [
+     "Next"
+    ],
+    "rel_next": [],
+    "scripts_api": [
+     "https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css",
+     "https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"
+    ]
+   }
+  },
+  {
+   "lista": "https://running.life/marathon-calendar/spain",
+   "paginas": [
+    {
+     "p": 1,
+     "enlaces": 20,
+     "jsonld": 20,
+     "primera": "2026-10-24",
+     "ultima": "2026-12-05",
+     "nuevas_no_conocidas": 14,
+     "ejemplo": [
+      [
+       "https://running.life/en/event/trepitja-garrotxa-solidaria",
+       "Oct 24-25 Sa - Su"
+      ],
+      [
+       "https://running.life/en/event/chamizo-trail",
+       "Oct 24 Sa"
+      ]
+     ]
+    },
+    {
+     "p": 2,
+     "enlaces": 20,
+     "jsonld": 20,
+     "primera": "2026-12-06",
+     "ultima": "2027-04-10",
+     "nuevas_no_conocidas": 16,
+     "ejemplo": [
+      [
+       "https://running.life/en/event/maraton-valencia",
+       "Dec 6 Su"
+      ],
+      [
+       "https://running.life/en/event/maraton-dany-sport-corralejo-grandes-playas",
+       "Dec 12 Sa"
+      ]
+     ]
+    },
+    {
+     "p": 3,
+     "enlaces": 20,
+     "jsonld": 20,
+     "primera": "2027-04-18",
+     "ultima": "2027-10-17",
+     "nuevas_no_conocidas": 20,
+     "ejemplo": [
+      [
+       "https://running.life/en/event/sherry-maraton",
+       "Apr 18 Su"
+      ],
+      [
+       "https://running.life/en/event/marato-per-equips-els-7k-del-riu",
+       "Apr 18 Su"
+      ]
+     ]
+    },
+    {
+     "p": 4,
+     "error": true
+    }
+   ],
+   "paginacion": {
+    "enlaces_pagina": [
+     "https://running.life/marathon-calendar/spain?page=2",
+     "https://running.life/marathon-calendar/spain?page=3"
+    ],
+    "botones_mas": [
+     "Next"
+    ],
+    "rel_next": [],
+    "scripts_api": [
+     "https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css",
+     "https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js",
+     "https://api.runrunsports.com/api/carteles/i-maraton-imperial-de-toledo/imagen-de-whatsapp-2025-12-02-a-las-13_1."
+    ]
+   }
+  },
+  {
+   "lista": "https://running.life/10k-races/spain",
+   "paginas": [
+    {
+     "p": 1,
+     "enlaces": 20,
+     "jsonld": 20,
+     "primera": "2026-10-24",
+     "ultima": "2026-10-25",
+     "nuevas_no_conocidas": 15,
+     "ejemplo": [
+      [
+       "https://running.life/en/event/bestial-race-el-hierro",
+       "Oct 24 Sa"
+      ],
+      [
+       "https://running.life/en/event/media-maraton-cuenca",
+       "Oct 24 Sa"
+      ]
+     ]
+    },
+    {
+     "p": 2,
+     "enlaces": 20,
+     "jsonld": 20,
+     "primera": "2026-10-25",
+     "ultima": "2026-10-25",
+     "nuevas_no_conocidas": 13,
+     "ejemplo": [
+      [
+       "https://running.life/en/event/10-km-de-carabanchel-del-alto-al-bajo",
+       "Oct 25 Su"
+      ],
+      [
+       "https://running.life/en/event/carrera-popular-solidaria-ciudad-de-tomares",
+       "Oct 25 Su"
+      ]
+     ]
+    },
+    {
+     "p": 3,
+     "enlaces": 20,
+     "jsonld": 20,
+     "primera": "2026-10-25",
+     "ultima": "2026-11-01",
+     "nuevas_no_conocidas": 9,
+     "ejemplo": [
+      [
+       "https://running.life/en/event/carrera-solidaria-a-favor-de-manos-unidas",
+       "Oct 25 Su"
+      ],
+      [
+       "https://running.life/en/event/yugo-10k-socuellamos",
+       "Oct 25 Su"
+      ]
+     ]
+    },
+    {
+     "p": 4,
+     "enlaces": 20,
+     "jsonld": 20,
+     "primera": "2026-11-01",
+     "ultima": "2026-11-08",
+     "nuevas_no_conocidas": 8,
+     "ejemplo": [
+      [
+       "https://running.life/en/event/mitja-marato-menorca",
+       "Nov 1 Su"
+      ],
+      [
+       "https://running.life/en/event/vallalta-trail",
+       "Nov 1 Su"
+      ]
+     ]
+    },
+    {
+     "p": 5,
+     "enlaces": 20,
+     "jsonld": 20,
+     "primera": "2026-11-08",
+     "ultima": "2026-11-14",
+     "nuevas_no_conocidas": 9,
+     "ejemplo": [
+      [
+       "https://running.life/en/event/10k-ciudad-de-merida",
+       "Nov 8 Su"
+      ],
+      [
+       "https://running.life/en/event/media-maraton-de-moratalaz",
+       "Nov 8 Su"
+      ]
+     ]
+    }
+   ],
+   "paginacion": {
+    "enlaces_pagina": [
+     "https://running.life/10k-races/spain?page=19",
+     "https://running.life/10k-races/spain?page=2",
+     "https://running.life/10k-races/spain?page=20",
+     "https://running.life/10k-races/spain?page=3",
+     "https://running.life/10k-races/spain?page=4",
+     "https://running.life/10k-races/spain?page=5",
+     "https://running.life/10k-races/spain?page=6"
+    ],
+    "botones_mas": [
+     "Next"
+    ],
+    "rel_next": [],
+    "scripts_api": [
+     "https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css",
+     "https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"
+    ]
+   }
+  }
+ ],
+ "candidatos_total": 446,
+ "candidatos_nuevos": 273,
+ "motivos": {
+  "no_asfalto": 25,
+  "duplicada": 55
+ },
+ "ejemplos": {
+  "no_asfalto": [
+   {
+    "url": "https://running.life/en/event/bizkaia-kopa-trail/2026-11-21",
+    "fecha": "2026-11-21",
+    "nombre": "Nov 21 Sa"
+   },
+   {
+    "url": "https://running.life/en/event/bizkaia-kopa-trail/2026-12-19",
+    "fecha": "2026-12-19",
+    "nombre": "Dec 19 Sa"
+   },
+   {
+    "url": "https://running.life/en/event/trailseries-costa-daurada/2026-12-20",
+    "fecha": "2026-12-20",
+    "nombre": "Dec 20 Su"
+   },
+   {
+    "url": "https://running.life/en/event/arrankudiaga-zollo-trail-lasterketa",
+    "fecha": null,
+    "nombre": "Oct 24 Sa"
+   },
+   {
+    "url": "https://running.life/en/event/trail-castell-de-serra",
+    "fecha": null,
+    "nombre": "Oct 25 Su"
+   },
+   {
+    "url": "https://running.life/en/event/tap-trail",
+    "fecha": null,
+    "nombre": "Oct 25 Su"
+   }
+  ],
+  "duplicada": [
+   {
+    "url": "https://running.life/en/event/running-night-los-torunos/2027-01-10",
+    "fecha": "2027-01-10",
+    "nombre": "Jan 10 Su"
+   },
+   {
+    "url": "https://running.life/en/event/media-maraton-cuenca",
+    "fecha": null,
+    "nombre": "Oct 24 Sa"
+   },
+   {
+    "url": "https://running.life/en/event/ruta-del-barbo",
+    "fecha": null,
+    "nombre": "Oct 24 Sa"
+   },
+   {
+    "url": "https://running.life/en/event/mitja-marato-costa-barcelona-maresme",
+    "fecha": null,
+    "nombre": "Oct 25 Su"
+   },
+   {
+    "url": "https://running.life/en/event/burgos-tras-las-huellas-del-cid",
+    "fecha": null,
+    "nombre": "Oct 25 Su"
+   },
+   {
+    "url": "https://running.life/en/event/media-maraton-tierra-y-olivo-ciudad-de-dos-hermanas",
+    "fecha": null,
+    "nombre": "Oct 25 Su"
+   }
+  ]
+ },
+ "peticiones": {
+  "requests": 231,
+  "errors": 112,
+  "blocked_by_robots": 0
+ }
+}
