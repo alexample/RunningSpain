@@ -145,7 +145,13 @@ input[type=search]{flex:1 1 180px}
 .fav[aria-pressed="true"]{color:#f2b100}
 .fav:focus-visible{outline:2px solid var(--accent)}
 .race.hl{box-shadow:0 0 0 3px var(--accent)}
-.link.share{cursor:pointer;font:600 14px var(--body)}
+.foot{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:2px}
+.foot .rev{margin:0}
+.sharebtn{flex:none;width:40px;height:40px;margin:-6px -6px -6px 0;display:grid;place-items:center;border:0;border-radius:50%;
+  background:transparent;color:var(--ink);cursor:pointer}
+.sharebtn svg{fill:currentColor;stroke:currentColor}
+.sharebtn:hover{background:var(--bg)}
+.sharebtn:focus-visible{outline:2px solid var(--accent)}
 .toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);z-index:30;
   background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:10px;font:600 14px var(--body)}
 .rev{margin:2px 0 0;font-size:12px;color:var(--muted)}
@@ -270,6 +276,11 @@ function shareText(r){const d=parseDate(r.date);
   const dist=r.km||tagsOf(r).join(" · ");
   return ["🏃 "+r.name,"📅 "+DAYS[d.getDay()]+" "+d.getDate()+" de "+MONTHS[d.getMonth()]+(r.time?" · "+r.time+" h":""),
     place?"📍 "+place:"",dist?"📏 "+dist:"",r.price?"💶 "+r.price:""].filter(Boolean).join("\n")}
+// icono de compartir (tres puntos unidos), abajo a la derecha de la ficha
+function shareBtn(r){
+  const b=el("button",{class:"sharebtn",type:"button","aria-label":"Compartir "+r.name,title:"Compartir"});
+  b.innerHTML='<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4" stroke-width="2.2" stroke-linecap="round"/></svg>';
+  b.onclick=()=>compartir(r);return b}
 function toast(msg){const t=el("div",{class:"toast"},msg);document.body.append(t);setTimeout(()=>t.remove(),2200)}
 async function compartir(r){
   const text=shareText(r),url=shareUrl(r);
@@ -317,19 +328,18 @@ function card(r){
   const actions=el("div",{class:"actions"});
   if(r.official&&r.url)actions.append(el("a",{class:"link",href:r.url,target:"_blank",rel:"noopener"},r.signup?"Inscripción oficial ↗":"Web oficial ↗"));
   if(r.regulation)actions.append(el("a",{class:"link alt",href:r.regulation,target:"_blank",rel:"noopener"},/\.pdf(\?|$)/i.test(r.regulation)?"Reglamento (PDF) ↗":"Reglamento ↗"));
-  const sh=el("button",{class:"link alt share",type:"button",title:"Compartir esta carrera"},"Compartir");sh.onclick=()=>compartir(r);
   if(r.route)actions.append(el("a",{class:"link alt",href:r.route,target:"_blank",rel:"noopener"},/\.(gpx|kml|kmz)(\?|$)/i.test(r.route)?"Recorrido (GPX) ↗":"Recorrido ↗"));
   else{ // segunda opción: buscar el recorrido en Wikiloc con el nombre y el pueblo
     const qy="site:wikiloc.com "+wikilocTerms(r);
     actions.append(el("a",{class:"link ghost",href:"https://www.google.com/search?q="+encodeURIComponent(qy),target:"_blank",rel:"noopener",title:"Buscar el recorrido en Wikiloc"},"Recorrido en Wikiloc ↗"));
   }
-  actions.append(sh);
   if(!(r.official&&r.url))actions.prepend(el("span",{class:"pending",style:"flex-basis:100%"},r.nosite?"Sin web oficial publicada":"Web oficial en búsqueda"));
   let badge=null;
   if(news.added.has(r.id))badge=el("span",{class:"badge new"},"Nueva");
   else if(news.updated[r.id])badge=el("span",{class:"badge chg"},"Actualizada: "+news.updated[r.id].map(f=>FIELD[f]||f).join(", "));
   return el("article",{class:"race",id:"c-"+r.id,style:"--kc:"+kcolor(k)},bib,
-    el("div",{class:"info"},badge,el("div",{class:"ttl"},el("h3",{},r.name),favBtn(r)),tags,dl,r.note?el("p",{class:"note"},r.note):null,actions,revisada(r)));
+    el("div",{class:"info"},badge,el("div",{class:"ttl"},el("h3",{},r.name),favBtn(r)),tags,dl,r.note?el("p",{class:"note"},r.note):null,actions,
+      el("div",{class:"foot"},revisada(r)||el("span"),shareBtn(r))));
 }
 
 function render(){

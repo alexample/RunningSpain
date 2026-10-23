@@ -145,6 +145,7 @@ def event_fields(ev: dict) -> dict:
         "name": (ev.get("name") or "").strip(),
         "date": start[:10] if re.match(r"\d{4}-\d{2}-\d{2}", start) else None,
         "time": start[11:16] if re.match(r"\d{4}-\d{2}-\d{2}T\d{2}:\d{2}", start) and start[11:16] != "00:00" else None,
+        "start": start,
         "city": city.strip(),
         "region_hint": region_hint,
         "country": country.strip(),
@@ -438,6 +439,31 @@ def registration_status(html: str, signup_platform: bool = False) -> str | None:
                 return "abierta"
             # «SoldOut» oculto no se usa: Rockthesport lo pone incluso con la inscripción abierta
     return None
+
+
+def local_time(start: str, region: str = "") -> str | None:
+    """Hora de salida en la hora local de la carrera. Si la fecha trae zona horaria (…Z o +00:00),
+    se convierte a la de la Península o a la de Canarias."""
+    m = re.match(r"(\d{4}-\d{2}-\d{2})T(\d{2}):(\d{2})(?::\d{2}(?:\.\d+)?)?(Z|[+-]\d{2}:?\d{2})?$", (start or "").strip())
+    if not m:
+        return None
+    hh, mm, tz = m.group(2), m.group(3), m.group(4)
+    # Solo se convierte la hora universal (Z / +00:00). Con +01:00/+02:00 se respeta la hora escrita:
+    # muchas webs dejan fijo el desfase de verano o de invierno y lo que quieren decir es la hora del reloj.
+    if not tz or tz.replace(":", "") not in ("Z", "+0000", "-0000"):
+        t = f"{hh}:{mm}"
+    else:
+        from datetime import datetime
+        from zoneinfo import ZoneInfo
+        iso = start.strip().replace("Z", "+00:00")
+        if re.search(r"[+-]\d{4}$", iso):
+            iso = iso[:-2] + ":" + iso[-2:]
+        try:
+            dt = datetime.fromisoformat(iso).astimezone(ZoneInfo("Atlantic/Canary" if region == "Canarias" else "Europe/Madrid"))
+        except Exception:
+            return None
+        t = dt.strftime("%H:%M")
+    return None if t == "00:00" else t
 
 
 def tags_from_km(km: str) -> list[str]:

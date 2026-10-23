@@ -382,5 +382,18 @@ class RouteSiteTests(unittest.TestCase):
             self.assertEqual(enrich.route_from_site("https://mi10k.es/"), "https://www.google.com/maps/d/viewer?mid=ZZZ")
 
 
+class TimeZoneTests(unittest.TestCase):
+    def test_local_time(self):
+        lt = parse.local_time
+        self.assertEqual(lt("2026-10-24T09:30:00+02:00"), "09:30")
+        self.assertEqual(lt("2026-10-24T07:30:00Z"), "09:30")                 # UTC → Península (verano)
+        self.assertEqual(lt("2026-10-24T07:30:00Z", "Canarias"), "08:30")     # UTC → Canarias
+        self.assertEqual(lt("2026-11-22T09:00:00Z"), "10:00")                 # invierno
+        self.assertEqual(lt("2026-10-24T10:00"), "10:00")                     # sin zona: tal cual
+        self.assertEqual(lt("2026-10-25T10:00:00+02:00"), "10:00")            # desfase local mal puesto: la hora escrita
+        self.assertIsNone(lt("2026-10-24T00:00:00"))
+        self.assertIsNone(lt("2026-10-24"))
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -90,7 +90,8 @@ public class MainActivity extends Activity {
         refresh.setOnChildScrollUpCallback((parent, child) -> web.getScrollY() > 0);
         refresh.setOnRefreshListener(() -> {
             web.getSettings().setCacheMode(hayConexion() ? WebSettings.LOAD_DEFAULT : WebSettings.LOAD_CACHE_ELSE_NETWORK);
-            web.reload();
+            String u = web.getUrl();
+            cargar(u != null && u.startsWith("https://" + HOST) ? u : START);
         });
 
         web.setWebViewClient(new WebViewClient() {
@@ -131,7 +132,19 @@ public class MainActivity extends Activity {
         if (savedInstanceState != null) {
             web.restoreState(savedInstanceState);
         } else {
-            web.loadUrl(urlInicial(getIntent()));
+            cargar(urlInicial(getIntent()));
+        }
+    }
+
+    /** Con conexión, pide siempre la web recién publicada (sin la copia guardada); sin conexión, la guardada. */
+    private void cargar(String url) {
+        if (hayConexion()) {
+            java.util.Map<String, String> h = new java.util.HashMap<>();
+            h.put("Cache-Control", "no-cache");
+            h.put("Pragma", "no-cache");
+            web.loadUrl(url, h);
+        } else {
+            web.loadUrl(url);
         }
     }
 
@@ -146,7 +159,7 @@ public class MainActivity extends Activity {
     protected void onNewIntent(Intent intent) {
         super.onNewIntent(intent);
         setIntent(intent);
-        if (intent.getData() != null) web.loadUrl(urlInicial(intent));
+        if (intent.getData() != null) cargar(urlInicial(intent));
     }
 
     private boolean hayConexion() {

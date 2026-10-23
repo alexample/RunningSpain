@@ -290,6 +290,10 @@ def tidy(db: dict) -> int:
     """Aplica a los datos guardados los filtros y arreglos actuales (por si se mejoraron)."""
     before = len(db["races"])
     db["races"] = [r for r in db["races"] if parse.is_road(r["name"]) and not r.get("foreign")]
+    for r in db["races"]:   # horas de madrugada (00:30-05:59): casi seguro una hora UTC sin convertir; se vuelven a leer
+        if r.get("time") and "00:30" <= r["time"] <= "05:59" and not r.get("locked"):
+            r.pop("time")
+            r.pop("checkedAt", None)
     for r in db["races"]:   # recorridos que no superan el filtro actual: fuera, y se vuelve a buscar
         if r.get("route") and not parse.is_route_url(r["route"]):
             r.pop("route")

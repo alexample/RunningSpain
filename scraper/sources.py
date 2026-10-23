@@ -203,7 +203,7 @@ def read_event_page(cand: dict, today: date) -> dict | None:
     return {
         "name": name,
         "date": d,
-        "time": f.get("time") or parse.extract_time(text[:3000]) or "",
+        "time": parse.local_time(f.get("start", ""), region or "") or parse.extract_time(text[:3000]) or "",
         "city": city,
         "region": region or "",
         "distances": parse.distances_from(name),

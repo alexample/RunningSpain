@@ -153,7 +153,7 @@ def from_sources(r: dict) -> dict:
         if g:
             found["official"].append(g)
         text = parse.page_text(html)[:8000]
-        found["time"] = found["time"] or f.get("time") or parse.extract_time(text)
+        found["time"] = found["time"] or parse.local_time(f.get("start", ""), r.get("region", "")) or parse.extract_time(text)
         found["price"] = found["price"] or f.get("price") or parse.extract_price(text)
         found["km"] = found["km"] or parse.extract_km(text[:4000])
     return found
