@@ -247,6 +247,9 @@ class MediaTests(unittest.TestCase):
                          "https://www.mi10k.es/recorrido-10k/")
         self.assertFalse(parse.is_route_url("https://running.life/en/event/carrera-solidaria-ruta-091-torremolinos"))
         self.assertTrue(parse.is_route_url("https://www.strava.com/routes/123"))
+        self.assertTrue(parse.is_route_url("https://es.wikiloc.com/rutas-carrera/media-maraton-montehermoso-2025-123456"))
+        self.assertFalse(parse.is_route_url("https://www.wikiloc.com"))
+        self.assertFalse(parse.is_route_url("https://es.wikiloc.com/rutas/carrera/espana/extremadura/montehermoso"))
         self.assertFalse(parse.is_route_url("https://sportmaniacs.com/es/services/inscription/pulpi---circuito-de-carreras-populares-2026"))
         self.assertTrue(parse.is_route_url("https://www.mi10k.es/docs/circuito-2026.pdf"))
 

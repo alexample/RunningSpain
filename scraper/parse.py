@@ -297,7 +297,7 @@ def best_image(html: str, base: str) -> tuple[str | None, int]:
     return url, cands[url]
 
 
-_ROUTE_HOSTS = re.compile(r"(strava\.com/(routes|segments)|wikiloc\.com|connect\.garmin\.com/modern/course|"
+_ROUTE_HOSTS = re.compile(r"(strava\.com/(routes|segments)|wikiloc\.com/(rutas-[a-z-]+/[a-z0-9-]+-\d+|[a-z-]+-trails/[a-z0-9-]+-\d+|wikiloc/view\.do)|connect\.garmin\.com/modern/course|"
                           r"komoot\.(com|de)/tour|ridewithgps\.com/routes|plotaroute\.com|mapmyrun\.com/routes|"
                           r"onthegomap\.com|google\.[a-z.]+/maps/d/|mapometer\.com|alltrails\.com|relive\.cc|"
                           r"footpathapp\.com|runkeeper\.com/user/.+/route|openrunner\.com)", re.I)
