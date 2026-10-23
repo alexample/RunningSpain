@@ -24,7 +24,7 @@ from urllib.parse import quote
 
 import requests
 
-from . import config
+from . import config, share
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "docs" / "data" / "carreras.json"
@@ -74,7 +74,7 @@ def compose(r: dict, con_enlace: bool | None = None) -> str:
     tags = "#running #carreras" + (f" #{REGION_TAG[r['region']]}" if r.get("region") in REGION_TAG else "")
     if con_enlace is None:
         con_enlace = config.X_CON_ENLACE
-    tail = [config.X_WEB] if con_enlace else []
+    tail = [share.share_url(r)] if con_enlace else []   # enlace directo a la ficha (con vista previa del cartel)
     tail.append(tags)
     text = "\n".join(lines + [""] + tail)
     while x_len(text) > 280 and len(lines[0]) > 30:   # recorta el nombre si no cabe

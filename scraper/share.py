@@ -6,6 +6,7 @@ lleva a su ficha en la web (…/#c-<id>).
 """
 import html
 import re
+import zlib
 from datetime import date
 from pathlib import Path
 
@@ -17,8 +18,21 @@ MONTHS = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agost
 DAYS = ["lunes", "martes", "miércoles", "jueves", "viernes", "sábado", "domingo"]
 
 
-def safe_id(rid: str) -> str:
-    return re.sub(r"[^a-z0-9-]", "-", rid.lower())[:120]
+_B36 = "0123456789abcdefghijklmnopqrstuvwxyz"
+
+
+def short_code(rid: str) -> str:
+    """Código corto y fijo de una carrera (hasta 7 caracteres): …/c/1tjcvbo.html. El mismo en Python y en la web."""
+    n = zlib.crc32(rid.encode("utf-8")) & 0xFFFFFFFF
+    out = ""
+    while n:
+        n, d = divmod(n, 36)
+        out = _B36[d] + out
+    return out.rjust(7, "0")
+
+
+def safe_id(rid: str) -> str:   # nombre del archivo de la página de la carrera
+    return short_code(rid)
 
 
 def describe(r: dict) -> tuple[str, str]:
@@ -40,7 +54,7 @@ def page(r: dict) -> str:
     e = lambda s: html.escape(s or "", quote=True)
     when, rest = describe(r)
     target = f"{SITE}#c-{r['id']}"
-    self_url = f"{SITE}c/{safe_id(r['id'])}.html"
+    self_url = share_url(r)
     img = r.get("banner") or SITE + "logo.png"
     desc = when + (" · " + rest if rest else "")
     return f"""<!doctype html>

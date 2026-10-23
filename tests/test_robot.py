@@ -395,5 +395,17 @@ class TimeZoneTests(unittest.TestCase):
         self.assertIsNone(lt("2026-10-24"))
 
 
+class ShareTests(unittest.TestCase):
+    def test_short_links_in_tweets(self):
+        from scraper import share, xpost
+        r = {"id": "carrera-popular-aesan-2026-1024", "name": "Carrera Popular AESAN", "date": "2026-10-24",
+             "time": "08:30", "city": "Madrid", "region": "Comunidad de Madrid", "km": "5 km"}
+        code = share.short_code(r["id"])
+        self.assertLessEqual(len(code), 7)
+        self.assertEqual(share.share_url(r), f"https://alexample.github.io/RunningSpain/c/{code}.html")
+        self.assertIn(share.share_url(r), xpost.compose(r, con_enlace=True))
+        self.assertIn('content="https://alexample.github.io/RunningSpain/#c-carrera-popular-aesan-2026-1024"', share.page(r).replace("url=", 'content="'))
+
+
 if __name__ == "__main__":
     unittest.main()

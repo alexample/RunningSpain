@@ -271,7 +271,11 @@ function revisada(r){
 }
 // ---- compartir una carrera: texto + enlace a su página (vista previa con cartel en WhatsApp)
 const SITE="https://alexample.github.io/RunningSpain/";
-function shareUrl(r){return SITE+"c/"+r.id.toLowerCase().replace(/[^a-z0-9-]/g,"-").slice(0,120)+".html"}
+// código corto de la carrera: crc32 del id en base 36 (igual que scraper/share.py)
+const CRC=(()=>{const t=[];for(let n=0;n<256;n++){let c=n;for(let k=0;k<8;k++)c=c&1?0xEDB88320^(c>>>1):c>>>1;t[n]=c>>>0}return t})();
+function shortCode(id){const b=new TextEncoder().encode(id);let c=0xFFFFFFFF;for(const x of b)c=CRC[(c^x)&255]^(c>>>8);
+  return ((c^0xFFFFFFFF)>>>0).toString(36).padStart(7,"0")}
+function shareUrl(r){return SITE+"c/"+shortCode(r.id)+".html"}
 function shareText(r){const d=parseDate(r.date);
   const place=[r.city,r.region&&r.region!==r.city?r.region:""].filter(Boolean).join(" · ");
   const dist=r.km||tagsOf(r).join(" · ");
@@ -387,6 +391,7 @@ function abrirHash(){
   const h=decodeURIComponent(location.hash||"");
   if(h==="#nuevas")return setTab("new",false);
   if(h==="#mis")return setTab("fav",false);
+  if(h.startsWith("#s-")){const r=races.find(x=>shortCode(x.id)===h.slice(3));if(r){location.replace("#c-"+r.id);return}}
   if(h.startsWith("#c-")){
     const id=h.slice(3);
     if(!races.some(r=>r.id===id))return render();
