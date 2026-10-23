@@ -1,0 +1,60 @@
+name: Compilar APK
+
+# Se compila una APK nueva solo cuando cambia la app Android. Los datos y la web
+# los descarga la app sola, así que no hace falta recompilar cuando cambian.
+on:
+  push:
+    branches: [main]
+    paths:
+      - "android/**"
+      - ".github/workflows/apk.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  apk:
+    # Ubuntu 24.04 ya trae el SDK de Android instalado.
+    runs-on: ubuntu-24.04
+    defaults:
+      run:
+        working-directory: android
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - name: SDK de Android
+        run: |
+          SDK="${ANDROID_HOME:-$ANDROID_SDK_ROOT}"
+          echo "SDK en: $SDK"
+          ls "$SDK" || { echo "No hay SDK de Android en la máquina"; exit 1; }
+          echo "sdk.dir=$SDK" > local.properties
+          SM=$(ls "$SDK"/cmdline-tools/*/bin/sdkmanager 2>/dev/null | head -1)
+          yes | "$SM" --licenses > /dev/null || true
+          "$SM" "platforms;android-35" "build-tools;35.0.0" > /dev/null
+
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: "8.11.1"
+
+      - name: Compilar
+        run: gradle :app:assembleRelease --no-daemon
+
+      - name: Renombrar
+        run: cp app/build/outputs/apk/release/app-release.apk ../RunningSpain.apk
+
+      - name: Publicar en Releases
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: app-v1.0.${{ github.run_number }}
+          name: RunningSpain 1.0.${{ github.run_number }}
+          make_latest: "true"
+          body: |
+            Descarga **RunningSpain.apk** desde el móvil y ábrela para instalar.
+            Si ya tenías una versión anterior, se instala encima.
+          files: RunningSpain.apk

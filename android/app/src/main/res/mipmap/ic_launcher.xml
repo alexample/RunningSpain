@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Para Android 7 (sin iconos adaptativos): las dos capas superpuestas -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/ic_fondo" />
+    <item android:drawable="@drawable/ic_frente" />
+</layer-list>
