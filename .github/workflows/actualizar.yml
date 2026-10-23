@@ -42,6 +42,7 @@ jobs:
           git config user.name "runningspain-bot"
           git config user.email "runningspain-bot@users.noreply.github.com"
           git add docs/data/carreras.json
+          git add -A docs/c
           [ -f estado/vistos.json ] && git add estado/vistos.json
           if git diff --cached --quiet; then
             echo "Sin cambios"

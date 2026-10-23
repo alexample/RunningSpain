@@ -7,6 +7,7 @@
 <meta name="description" content="Carreras de asfalto en España: maratones, medias, 10K y populares de los próximos tres meses, con web oficial, precio y reglamento.">
 <meta property="og:title" content="RunningSpain">
 <meta property="og:description" content="Calendario de carreras de asfalto de toda España, actualizado cada día.">
+<meta property="og:image" content="https://alexample.github.io/RunningSpain/logo.png">
 <link rel="icon" type="image/svg+xml" href="logo.svg">
 <link rel="apple-touch-icon" href="logo.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -144,6 +145,9 @@ input[type=search]{flex:1 1 180px}
 .fav[aria-pressed="true"]{color:#f2b100}
 .fav:focus-visible{outline:2px solid var(--accent)}
 .race.hl{box-shadow:0 0 0 3px var(--accent)}
+.link.share{cursor:pointer;font:600 14px var(--body)}
+.toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);z-index:30;
+  background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:10px;font:600 14px var(--body)}
 .rev{margin:2px 0 0;font-size:12px;color:var(--muted)}
 .insc{display:inline-flex;align-items:center;gap:6px;font-weight:600}
 .insc::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--ic)}
@@ -258,6 +262,22 @@ function revisada(r){
   const hora=conHora?" a las "+String(t.getHours()).padStart(2,"0")+":"+String(t.getMinutes()).padStart(2,"0"):"";
   return el("p",{class:"rev"},"Revisada "+fecha+hora);
 }
+// ---- compartir una carrera: texto + enlace a su página (vista previa con cartel en WhatsApp)
+const SITE="https://alexample.github.io/RunningSpain/";
+function shareUrl(r){return SITE+"c/"+r.id.toLowerCase().replace(/[^a-z0-9-]/g,"-").slice(0,120)+".html"}
+function shareText(r){const d=parseDate(r.date);
+  const place=[r.city,r.region&&r.region!==r.city?r.region:""].filter(Boolean).join(" · ");
+  const dist=r.km||tagsOf(r).join(" · ");
+  return ["🏃 "+r.name,"📅 "+DAYS[d.getDay()]+" "+d.getDate()+" de "+MONTHS[d.getMonth()]+(r.time?" · "+r.time+" h":""),
+    place?"📍 "+place:"",dist?"📏 "+dist:"",r.price?"💶 "+r.price:""].filter(Boolean).join("\n")}
+function toast(msg){const t=el("div",{class:"toast"},msg);document.body.append(t);setTimeout(()=>t.remove(),2200)}
+async function compartir(r){
+  const text=shareText(r),url=shareUrl(r);
+  if(window.AndroidApp&&window.AndroidApp.compartir){window.AndroidApp.compartir(text+"\n\n"+url);return}
+  if(navigator.share){try{await navigator.share({title:r.name,text,url});return}catch(e){if(e&&e.name==="AbortError")return}}
+  try{await navigator.clipboard.writeText(text+"\n\n"+url);toast("Copiado: pégalo donde quieras")}
+  catch(e){window.open("https://wa.me/?text="+encodeURIComponent(text+"\n\n"+url),"_blank","noopener")}
+}
 function inscRow(r){const i=INSC[r.inscripcion];if(!i)return null;
   const d=r.inscripcionAt?parseDate(r.inscripcionAt):null;
   return [el("dt",{},"Inscripción"),el("dd",{},el("span",{class:"insc",style:"--ic:"+i[1]},i[0]),
@@ -297,11 +317,13 @@ function card(r){
   const actions=el("div",{class:"actions"});
   if(r.official&&r.url)actions.append(el("a",{class:"link",href:r.url,target:"_blank",rel:"noopener"},r.signup?"Inscripción oficial ↗":"Web oficial ↗"));
   if(r.regulation)actions.append(el("a",{class:"link alt",href:r.regulation,target:"_blank",rel:"noopener"},/\.pdf(\?|$)/i.test(r.regulation)?"Reglamento (PDF) ↗":"Reglamento ↗"));
+  const sh=el("button",{class:"link alt share",type:"button",title:"Compartir esta carrera"},"Compartir");sh.onclick=()=>compartir(r);
   if(r.route)actions.append(el("a",{class:"link alt",href:r.route,target:"_blank",rel:"noopener"},/\.(gpx|kml|kmz)(\?|$)/i.test(r.route)?"Recorrido (GPX) ↗":"Recorrido ↗"));
   else{ // segunda opción: buscar el recorrido en Wikiloc con el nombre y el pueblo
     const qy="site:wikiloc.com "+wikilocTerms(r);
     actions.append(el("a",{class:"link ghost",href:"https://www.google.com/search?q="+encodeURIComponent(qy),target:"_blank",rel:"noopener",title:"Buscar el recorrido en Wikiloc"},"Recorrido en Wikiloc ↗"));
   }
+  actions.append(sh);
   if(!(r.official&&r.url))actions.prepend(el("span",{class:"pending",style:"flex-basis:100%"},r.nosite?"Sin web oficial publicada":"Web oficial en búsqueda"));
   let badge=null;
   if(news.added.has(r.id))badge=el("span",{class:"badge new"},"Nueva");

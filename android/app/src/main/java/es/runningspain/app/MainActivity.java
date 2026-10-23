@@ -196,6 +196,15 @@ public class MainActivity extends Activity {
             AvisosWorker.revisarYa(MainActivity.this);
         }
 
+        /** «Compartir»: abre el menú de compartir de Android (WhatsApp, Telegram…) con el texto de la carrera. */
+        @JavascriptInterface
+        public void compartir(final String texto) {
+            runOnUiThread(() -> {
+                Intent i = new Intent(Intent.ACTION_SEND).setType("text/plain").putExtra(Intent.EXTRA_TEXT, texto);
+                try { startActivity(Intent.createChooser(i, "Compartir carrera")); } catch (Exception ignored) { }
+            });
+        }
+
         /** Carreras favoritas (lista de ids en JSON), para los recordatorios. */
         @JavascriptInterface
         public String leerFavs() {

@@ -10,7 +10,7 @@ import time
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
-from . import config, enrich, net, parse, sources
+from . import config, enrich, net, parse, share, sources
 
 DATA = Path(__file__).resolve().parent.parent / "docs" / "data" / "carreras.json"
 SEEN = Path(__file__).resolve().parent.parent / "estado" / "vistos.json"
@@ -60,6 +60,7 @@ def save(db: dict) -> None:
     db["count"] = len(db["races"])
     DATA.parent.mkdir(parents=True, exist_ok=True)
     DATA.write_text(json.dumps(db, ensure_ascii=False, indent=1), encoding="utf-8")
+    share.write_all(db["races"])   # páginas para compartir cada carrera con su cartel
 
 
 def load_seen() -> dict:
