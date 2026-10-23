@@ -1,9 +1,14 @@
 package es.runningspain.app;
 
+import android.Manifest;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.os.Build;
+import android.provider.Settings;
+import android.webkit.JavascriptInterface;
 import android.content.res.Configuration;
 import android.graphics.Color;
 import android.net.ConnectivityManager;
@@ -118,6 +123,11 @@ public class MainActivity extends Activity {
             }
         });
 
+        // Avisos de carreras nuevas: la página guarda los filtros con AndroidApp.guardarAjustes(json).
+        web.addJavascriptInterface(new Puente(), "AndroidApp");
+        AvisosWorker.crearCanal(this);
+        AvisosWorker.programar(this);
+
         if (savedInstanceState != null) {
             web.restoreState(savedInstanceState);
         } else {
@@ -162,6 +172,55 @@ public class MainActivity extends Activity {
     protected void onResume() {
         super.onResume();
         web.onResume();
+        AvisosWorker.revisarYa(this);
+        // por si se acaba de dar o quitar el permiso de notificaciones en los ajustes de Android
+        web.evaluateJavascript("window.alVolverApp && window.alVolverApp()", null);
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int code, String[] perms, int[] res) {
+        super.onRequestPermissionsResult(code, perms, res);
+        web.evaluateJavascript("window.alVolverApp && window.alVolverApp()", null);
+    }
+
+    /** Lo que la página puede pedir a Android: leer y guardar los filtros de avisos y el permiso. */
+    private class Puente {
+        @JavascriptInterface
+        public String leerAjustes() {
+            return getSharedPreferences(AvisosWorker.PREFS, Context.MODE_PRIVATE).getString("ajustes", "{}");
+        }
+
+        @JavascriptInterface
+        public void guardarAjustes(String json) {
+            getSharedPreferences(AvisosWorker.PREFS, Context.MODE_PRIVATE).edit().putString("ajustes", json).apply();
+            AvisosWorker.revisarYa(MainActivity.this);
+        }
+
+        @JavascriptInterface
+        public boolean avisosActivos() {
+            return AvisosWorker.puedeNotificar(MainActivity.this);
+        }
+
+        /** Pide permiso de notificaciones (Android 13 o superior). */
+        @JavascriptInterface
+        public void permisoAvisos() {
+            if (Build.VERSION.SDK_INT >= 33 && checkSelfPermission(Manifest.permission.POST_NOTIFICATIONS)
+                    != PackageManager.PERMISSION_GRANTED) {
+                runOnUiThread(() -> requestPermissions(new String[]{Manifest.permission.POST_NOTIFICATIONS}, 7));
+            }
+        }
+
+        /** Abre los ajustes de notificaciones de la app (si el permiso se denegó antes). */
+        @JavascriptInterface
+        public void abrirAjustesAvisos() {
+            runOnUiThread(() -> {
+                try {
+                    Intent i = new Intent(Settings.ACTION_APP_NOTIFICATION_SETTINGS)
+                            .putExtra(Settings.EXTRA_APP_PACKAGE, getPackageName());
+                    startActivity(i);
+                } catch (Exception ignored) { }
+            });
+        }
     }
 
     @Override

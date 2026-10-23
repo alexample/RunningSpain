@@ -45,6 +45,30 @@ h1 .logo{width:clamp(36px,7vw,48px);height:auto;border-radius:22%;flex:none;box-
 .sub{color:var(--muted);margin:6px 0 0;max-width:60ch}
 .status{font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums}
 .status b{color:var(--ink);font-weight:600}
+.hbtns{display:flex;flex-wrap:wrap;gap:8px;align-items:stretch}
+.bell{display:flex;align-items:center;gap:8px;font:600 13px var(--body);color:var(--ink);background:var(--surface);
+  border:1px solid var(--line);border-radius:10px;padding:8px 12px;cursor:pointer}
+.bell .on{width:8px;height:8px;border-radius:50%;background:var(--muted)}
+.bell[data-on="1"] .on{background:var(--k10)}
+.sheet{position:fixed;inset:0;z-index:20;background:rgba(0,0,0,.45);display:flex;align-items:flex-end;justify-content:center}
+.sheet .box{background:var(--surface);color:var(--ink);width:100%;max-width:560px;max-height:88vh;overflow:auto;border-radius:16px 16px 0 0;
+  padding:18px max(16px,env(safe-area-inset-left,0px)) calc(18px + env(safe-area-inset-bottom,0px));display:flex;flex-direction:column;gap:14px}
+.sheet h2{font:700 22px var(--display);text-transform:uppercase;letter-spacing:.05em;margin:0}
+.sheet .row{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.sheet h3{font:600 12px var(--body);text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin:0 0 6px}
+.sheet .regs{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:4px 12px}
+.sheet label{display:flex;align-items:center;gap:8px;font-size:14px;padding:4px 0}
+.sheet input[type=checkbox]{width:18px;height:18px;accent-color:var(--accent)}
+.sheet .mini{font:600 12px var(--body);color:var(--accent);background:none;border:0;padding:0;cursor:pointer}
+.sheet .note{font-size:13px;color:var(--muted);margin:0}
+.sheet .warn{font-size:13px;color:var(--accent);margin:0}
+.sheet .go{font:700 15px var(--body);color:var(--accent-ink);background:var(--accent);border:0;border-radius:10px;padding:12px;cursor:pointer}
+.switch{position:relative;width:48px;height:28px;flex:none}
+.switch input{opacity:0;width:0;height:0}
+.switch span{position:absolute;inset:0;background:var(--line);border-radius:99px;transition:.2s}
+.switch span::after{content:"";position:absolute;left:3px;top:3px;width:22px;height:22px;border-radius:50%;background:#fff;transition:.2s}
+.switch input:checked+span{background:var(--accent)}
+.switch input:checked+span::after{transform:translateX(20px)}
 .upd{display:flex;align-items:center;gap:10px;font:500 13px var(--body);color:var(--ink);background:var(--surface);
   border:1px solid var(--line);border-radius:10px;padding:8px 12px;cursor:pointer;text-align:left;font-variant-numeric:tabular-nums}
 .upd:hover{border-color:var(--muted)}
@@ -132,9 +156,12 @@ footer{margin-top:40px;font-size:13px;color:var(--muted);max-width:70ch}
       <h1><img class="logo" src="logo.svg" alt="" width="44" height="44"><span class="t">Running<span>Spain</span></span></h1>
       <p class="sub">Maratones, medias, 10K y populares de toda España en los próximos tres meses. Se actualiza cada día.</p>
     </div>
+    <div class="hbtns">
     <button class="upd" id="upd" type="button" aria-pressed="false" hidden>
       <span class="dot"></span><span class="lines"><b id="upd-when"></b><span id="upd-what"></span></span>
     </button>
+    <button class="bell" id="bell" type="button" hidden><span aria-hidden="true">🔔</span>Avisos<span class="on"></span></button>
+    </div>
     <div class="status" id="status">Cargando calendario…</div>
   </header>
 
@@ -306,11 +333,54 @@ document.getElementById("q").addEventListener("input",e=>{q=e.target.value;rende
     if(data.lastRun)news={added:new Set(data.lastRun.added||[]),updated:data.lastRun.updated||{}};
     fillRegions();setStatus();countNew();
     if(location.hash==="#nuevas")setTab("new",false);else render();
+    window.addEventListener("hashchange",()=>{if(location.hash==="#nuevas")setTab("new",false)});
   }catch(e){
     document.getElementById("list").replaceChildren(el("div",{class:"empty"},"No se pudo cargar el calendario. Recarga la página en unos minutos."));
     document.getElementById("status").textContent="";
   }
 })();
+// ---------------------------------------------------------------- avisos (solo en la app Android)
+const APP=window.AndroidApp||null;
+const DIST_OPT=[["42","Maratón"],["21","Media"],["10","10K"],["5","5K"],["x","Otras"]];
+function leerAj(){try{return JSON.parse(APP.leerAjustes()||"{}")}catch(e){return{}}}
+function pintarBell(){const b=document.getElementById("bell");const a=leerAj();b.dataset.on=a.activo&&APP.avisosActivos()?"1":"0"}
+function abrirAvisos(){
+  const a=leerAj(), dist=new Set(a.dist||[]), regs=new Set(a.regiones||[]);
+  const sw=el("input",{type:"checkbox"});sw.checked=!!a.activo;
+  const distBox=el("div",{class:"chips"});
+  DIST_OPT.forEach(([k,t])=>{const b=el("button",{class:"chip",type:"button","aria-pressed":String(dist.has(k))},t);
+    b.onclick=()=>{dist.has(k)?dist.delete(k):dist.add(k);b.setAttribute("aria-pressed",String(dist.has(k)))};distBox.append(b)});
+  const regBox=el("div",{class:"regs"});
+  Object.keys(FLAG).sort((x,y)=>x.localeCompare(y,"es")).forEach(r=>{const c=el("input",{type:"checkbox",value:r});c.checked=regs.has(r);
+    regBox.append(el("label",{},c,flag(r)||"",r))});
+  const todas=el("button",{class:"mini",type:"button"},"Marcar todas"),ninguna=el("button",{class:"mini",type:"button"},"Quitar todas");
+  todas.onclick=()=>regBox.querySelectorAll("input").forEach(c=>c.checked=true);
+  ninguna.onclick=()=>regBox.querySelectorAll("input").forEach(c=>c.checked=false);
+  const perm=el("p",{class:"warn"});
+  const estadoPerm=()=>{perm.replaceChildren();if(sw.checked&&!APP.avisosActivos()){
+    const ir=el("button",{class:"mini",type:"button"},"Abrir ajustes");ir.onclick=()=>APP.abrirAjustesAvisos();
+    perm.append("Las notificaciones de la app están desactivadas en el móvil. ",ir)}};
+  sw.onchange=()=>{if(sw.checked)APP.permisoAvisos();estadoPerm()};
+  const guardar=el("button",{class:"go",type:"button"},"Guardar");
+  const cerrar=el("button",{class:"mini",type:"button"},"Cerrar");
+  const sheet=el("div",{class:"sheet"},el("div",{class:"box"},
+    el("div",{class:"row"},el("h2",{},"Avisos"),cerrar),
+    el("div",{class:"row"},el("span",{},"Avisarme de carreras nuevas"),el("label",{class:"switch"},sw,el("span"))),
+    perm,
+    el("div",{},el("h3",{},"Distancias"),distBox,el("p",{class:"note"},"Sin ninguna marcada: todas.")),
+    el("div",{},el("div",{class:"row"},el("h3",{},"Comunidades"),el("span",{},todas," · ",ninguna)),regBox,el("p",{class:"note"},"Sin ninguna marcada: toda España.")),
+    el("p",{class:"note"},"La app revisa el calendario cada pocas horas y te avisa solo de las carreras que aparezcan a partir de ahora."),
+    guardar));
+  const close=()=>{sheet.remove();window.alVolverApp=pintarBell};
+  cerrar.onclick=close;sheet.onclick=e=>{if(e.target===sheet)close()};
+  guardar.onclick=()=>{
+    const r=[...regBox.querySelectorAll("input:checked")].map(c=>c.value);
+    APP.guardarAjustes(JSON.stringify({activo:sw.checked,dist:[...dist],regiones:r}));
+    pintarBell();close()};
+  window.alVolverApp=()=>{estadoPerm();pintarBell()};
+  document.body.append(sheet);estadoPerm();
+}
+if(APP){const b=document.getElementById("bell");b.hidden=false;b.onclick=abrirAvisos;pintarBell();window.alVolverApp=pintarBell}
 </script>
 </body>
 </html>

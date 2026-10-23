@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Icono pequeño de la notificación: corredor en blanco -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp" android:height="24dp" android:viewportWidth="56" android:viewportHeight="56"
+    >
+    <group android:translateX="-30" android:translateY="-24">
+    <path android:strokeColor="#FFFFFFFF" android:strokeWidth="6.38" android:strokeLineCap="round" android:strokeLineJoin="round" android:pathData="M60.77,44.3 L67.81,48.74 L72.25,43.56" />
+    <path android:strokeColor="#FFFFFFFF" android:strokeWidth="6.38" android:strokeLineCap="round" android:strokeLineJoin="round" android:pathData="M60.77,44.3 L54.12,48.74 L50.05,44.67" />
+    <path android:strokeColor="#FFFFFFFF" android:strokeWidth="6.38" android:strokeLineCap="round" android:strokeLineJoin="round" android:pathData="M61.88,41.71 L56.34,56.88" />
+    <path android:strokeColor="#FFFFFFFF" android:strokeWidth="6.38" android:strokeLineCap="round" android:strokeLineJoin="round" android:pathData="M56.34,56.88 L65.22,60.21 L63.37,70.57 L68.17,71.68" />
+    <path android:strokeColor="#FFFFFFFF" android:strokeWidth="6.38" android:strokeLineCap="round" android:strokeLineJoin="round" android:pathData="M56.34,56.88 L52.27,65.76 L43.75,63.17" />
+    <path android:fillColor="#FFFFFFFF" android:pathData="M64.47,34.68m-5.33,0a5.33,5.33 0,1 1,10.66,0a5.33,5.33 0,1 1,-10.66,0" />
+    </group>
+</vector>
