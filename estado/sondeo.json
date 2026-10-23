@@ -1,110 +1,279 @@
 [
  {
   "ua": "RunningSpainBot/1.0 ",
-  "url": "https://sportplan.es/robots.txt",
+  "url": "https://running.life/races/spain",
+  "status": 404,
+  "final": "https://running.life/races/spain",
+  "bytes": 7597,
+  "server": "cloudflare",
+  "robots": false,
+  "jsonld_event": 0,
+  "fechas": 0,
+  "titulo": "Not Found"
+ },
+ {
+  "ua": "RunningSpainBot/1.0 ",
+  "url": "https://running.life/5k-races/spain",
   "status": 200,
-  "final": "https://sportplan.es/robots.txt",
-  "bytes": 18943,
+  "final": "https://running.life/5k-races/spain",
+  "bytes": 318229,
   "server": "cloudflare",
-  "inicio": "User-Agent: *\nAllow: /\nDisallow: /api/\nDisallow: /dashboard/\nDisallow: /admin/\nDisallow: /sign-in\nDisallow: /onboarding\nDisallow: /*/events/*/calendar.ics\nDisallow: /*?lat=\nDisallow: /*?lng=\nDisallow: /*?radiusKm=\nDisallow: /*?dateFrom=\nDisallow: /*&lat=\nDisallow: /*&lng=\nDisallow: /*&radiusKm=\nDisa"
+  "robots": false,
+  "jsonld_event": 20,
+  "fechas": 49,
+  "titulo": "5K Race Calendar Spain 2026-2027"
  },
  {
   "ua": "RunningSpainBot/1.0 ",
-  "url": "https://sportplan.es/",
-  "status": 403,
-  "final": "https://sportplan.es/",
-  "bytes": 5541,
+  "url": "https://running.life/15k-races/spain",
+  "status": 404,
+  "final": "https://running.life/15k-races/spain",
+  "bytes": 7597,
   "server": "cloudflare",
-  "inicio": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scal"
+  "robots": false,
+  "jsonld_event": 0,
+  "fechas": 0,
+  "titulo": "Not Found"
  },
  {
   "ua": "RunningSpainBot/1.0 ",
-  "url": "https://sportplan.es/es/regions/madrid",
-  "status": 403,
-  "final": "https://sportplan.es/es/regions/madrid",
-  "bytes": 5614,
+  "url": "https://running.life/running-races/spain",
+  "status": 404,
+  "final": "https://running.life/running-races/spain",
+  "bytes": 7597,
   "server": "cloudflare",
-  "inicio": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scal"
+  "robots": false,
+  "jsonld_event": 0,
+  "fechas": 0,
+  "titulo": "Not Found"
  },
  {
   "ua": "RunningSpainBot/1.0 ",
-  "url": "https://sportplan.es/es/regions/barcelona",
-  "status": 403,
-  "final": "https://sportplan.es/es/regions/barcelona",
-  "bytes": 5623,
+  "url": "https://running.life/es/carreras/espana",
+  "status": 404,
+  "final": "https://running.life/es/carreras/espana",
+  "bytes": 7597,
   "server": "cloudflare",
-  "inicio": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scal"
+  "robots": false,
+  "jsonld_event": 0,
+  "fechas": 0,
+  "titulo": "Not Found"
  },
  {
   "ua": "RunningSpainBot/1.0 ",
-  "url": "https://sportplan.es/es/series/san-silvestre",
-  "status": 403,
-  "final": "https://sportplan.es/es/series/san-silvestre",
-  "bytes": 5632,
-  "server": "cloudflare",
-  "inicio": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scal"
- },
- {
-  "ua": "RunningSpainBot/1.0 ",
-  "url": "https://www.sportplan.es/es/regions/madrid",
-  "status": 403,
-  "final": "https://www.sportplan.es/es/regions/madrid",
-  "bytes": 5618,
-  "server": "cloudflare",
-  "inicio": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scal"
- },
- {
-  "ua": "Mozilla/5.0 (Windows",
-  "url": "https://sportplan.es/robots.txt",
+  "url": "https://www.carreraspopulares.com/",
   "status": 200,
-  "final": "https://sportplan.es/robots.txt",
-  "bytes": 18943,
+  "final": "https://www.carreraspopulares.com/",
+  "bytes": 89492,
   "server": "cloudflare",
-  "inicio": "User-Agent: *\nAllow: /\nDisallow: /api/\nDisallow: /dashboard/\nDisallow: /admin/\nDisallow: /sign-in\nDisallow: /onboarding\nDisallow: /*/events/*/calendar.ics\nDisallow: /*?lat=\nDisallow: /*?lng=\nDisallow: /*?radiusKm=\nDisallow: /*?dateFrom=\nDisallow: /*&lat=\nDisallow: /*&lng=\nDisallow: /*&radiusKm=\nDisa"
+  "robots": false,
+  "jsonld_event": 0,
+  "fechas": 4,
+  "titulo": "Portada - carreraspopulares.com | Calendario nacional de carreras populares"
  },
  {
-  "ua": "Mozilla/5.0 (Windows",
-  "url": "https://sportplan.es/",
+  "ua": "RunningSpainBot/1.0 ",
+  "url": "https://www.carreraspopulares.com/calendario/",
   "status": 403,
-  "final": "https://sportplan.es/",
-  "bytes": 5541,
+  "final": "https://www.carreraspopulares.com/calendario/",
+  "bytes": 1233,
   "server": "cloudflare",
-  "inicio": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scal"
+  "robots": false,
+  "jsonld_event": 0,
+  "fechas": 0,
+  "titulo": "403 - Forbidden: Access is denied."
  },
  {
-  "ua": "Mozilla/5.0 (Windows",
-  "url": "https://sportplan.es/es/regions/madrid",
-  "status": 403,
-  "final": "https://sportplan.es/es/regions/madrid",
-  "bytes": 5614,
-  "server": "cloudflare",
-  "inicio": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scal"
+  "ua": "RunningSpainBot/1.0 ",
+  "url": "https://runedia.mundodeportivo.com/calendario-carreras/espana/",
+  "status": 200,
+  "final": "https://runedia.mundodeportivo.com/calendario-carreras/",
+  "bytes": 389877,
+  "server": "nginx",
+  "robots": true,
+  "jsonld_event": 0,
+  "fechas": 0,
+  "titulo": "Carreras | Runedia"
  },
  {
-  "ua": "Mozilla/5.0 (Windows",
-  "url": "https://sportplan.es/es/regions/barcelona",
-  "status": 403,
-  "final": "https://sportplan.es/es/regions/barcelona",
-  "bytes": 5623,
-  "server": "cloudflare",
-  "inicio": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scal"
+  "ua": "RunningSpainBot/1.0 ",
+  "url": "https://www.runnea.com/calendario-carreras/",
+  "error": "SSLError(MaxRetryError(\"HTTPSConnectionPool(host='www.runnea.com', port=443): Max retries exceeded with url: /calendario-carreras/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VE"
  },
  {
-  "ua": "Mozilla/5.0 (Windows",
-  "url": "https://sportplan.es/es/series/san-silvestre",
-  "status": 403,
-  "final": "https://sportplan.es/es/series/san-silvestre",
-  "bytes": 5632,
-  "server": "cloudflare",
-  "inicio": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scal"
+  "ua": "RunningSpainBot/1.0 ",
+  "url": "https://www.corriendovoy.com/carreras",
+  "error": "SSLError(MaxRetryError(\"HTTPSConnectionPool(host='www.corriendovoy.com', port=443): Max retries exceeded with url: /carreras (Caused by SSLError(SSLError(1, '[SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 al"
  },
  {
-  "ua": "Mozilla/5.0 (Windows",
-  "url": "https://www.sportplan.es/es/regions/madrid",
+  "ua": "RunningSpainBot/1.0 ",
+  "url": "https://www.todoscorremos.com/",
+  "error": "ConnectionError(MaxRetryError('HTTPSConnectionPool(host=\\'www.todoscorremos.com\\', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host=\\'www.todoscorremos."
+ },
+ {
+  "ua": "RunningSpainBot/1.0 ",
+  "url": "https://www.sportmaniacs.com/es/races",
+  "status": 200,
+  "final": "https://sportmaniacs.com/es/races",
+  "bytes": 65211,
+  "server": "Sportmaniacs WEB Server",
+  "robots": true,
+  "jsonld_event": 0,
+  "fechas": 15,
+  "titulo": "Sportmaniacs — Calendario de carreras, inscripciones y clasificaciones"
+ },
+ {
+  "ua": "RunningSpainBot/1.0 ",
+  "url": "https://www.rockthesport.com/es/eventos",
+  "status": 200,
+  "final": "https://www.rockthesport.com/es/eventos",
+  "bytes": 5039,
+  "server": null,
+  "robots": true,
+  "jsonld_event": 0,
+  "fechas": 0,
+  "titulo": "RockTheSport.com | Página no encontrada"
+ },
+ {
+  "ua": "RunningSpainBot/1.0 ",
+  "url": "https://www.mychip.es/es/calendario",
+  "status": 200,
+  "final": "https://www.mychip.es/es/calendario",
+  "bytes": 934,
+  "server": "AmazonS3",
+  "robots": true,
+  "jsonld_event": 0,
+  "fechas": 0,
+  "titulo": "Mychip"
+ },
+ {
+  "ua": "RunningSpainBot/1.0 ",
+  "url": "https://www.deporticket.com/",
   "status": 403,
-  "final": "https://www.sportplan.es/es/regions/madrid",
-  "bytes": 5618,
+  "final": "https://www.deporticket.com/",
+  "bytes": 5655,
   "server": "cloudflare",
-  "inicio": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scal"
+  "robots": false,
+  "jsonld_event": 0,
+  "fechas": 0,
+  "titulo": "Just a moment..."
+ },
+ {
+  "ua": "RunningSpainBot/1.0 ",
+  "url": "https://www.championchipnorte.com/",
+  "status": 200,
+  "final": "https://ccnorte.com/",
+  "bytes": 30198,
+  "server": "HTTPd",
+  "robots": false,
+  "jsonld_event": 0,
+  "fechas": 0,
+  "titulo": "CCNorte - Champion Chip Norte"
+ },
+ {
+  "ua": "RunningSpainBot/1.0 ",
+  "url": "https://www.atletismorfea.es/calendario",
+  "status": 200,
+  "final": "https://www.atletismorfea.es/calendario",
+  "bytes": 91191,
+  "server": "cloudflare",
+  "robots": false,
+  "jsonld_event": 0,
+  "fechas": 0,
+  "titulo": "Calendario | RFEA"
+ },
+ {
+  "ua": "RunningSpainBot/1.0 ",
+  "url": "https://www.ahotu.com/es/calendario/running/espana",
+  "status": 403,
+  "final": "https://www.ahotu.com/es/calendario/running/espana",
+  "bytes": 5784,
+  "server": "cloudflare",
+  "robots": false,
+  "jsonld_event": 0,
+  "fechas": 0,
+  "titulo": "Just a moment..."
+ },
+ {
+  "ua": "RunningSpainBot/1.0 ",
+  "url": "https://www.finishers.com/es/carreras/espana",
+  "status": 404,
+  "final": "https://www.finishers.com/es/carreras/espana",
+  "bytes": 109309,
+  "server": "Vercel",
+  "robots": true,
+  "jsonld_event": 0,
+  "fechas": 0,
+  "titulo": ""
+ },
+ {
+  "ua": "RunningSpainBot/1.0 ",
+  "url": "https://www.worldsmarathons.com/es/s/running/spain",
+  "status": 200,
+  "final": "https://worldsmarathons.com/es/s/running/spain",
+  "bytes": 337210,
+  "server": "cloudflare",
+  "robots": false,
+  "jsonld_event": 0,
+  "fechas": 0,
+  "titulo": "Encuentra tu pr&#243;xima carrera | World&#39;s Marathons"
+ },
+ {
+  "ua": "RunningSpainBot/1.0 ",
+  "url": "https://www.calendariocarreras.es/",
+  "error": "ConnectionError(MaxRetryError('HTTPSConnectionPool(host=\\'www.calendariocarreras.es\\', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host=\\'www.calendario"
+ },
+ {
+  "ua": "RunningSpainBot/1.0 ",
+  "url": "https://www.carreraspormontana.com/",
+  "status": 200,
+  "final": "https://carreraspormontana.com/",
+  "bytes": 173472,
+  "server": "nginx",
+  "robots": true,
+  "jsonld_event": 0,
+  "fechas": 6,
+  "titulo": "La web del trail running. - Carreraspormontana.com"
+ },
+ {
+  "ua": "RunningSpainBot/1.0 ",
+  "url": "https://www.runningzaragoza.com/calendario",
+  "error": "SSLError(MaxRetryError(\"HTTPSConnectionPool(host='www.runningzaragoza.com', port=443): Max retries exceeded with url: /calendario (Caused by SSLError(SSLError(1, '[SSL: TLSV1_ALERT_INTERNAL_ERROR] tls"
+ },
+ {
+  "ua": "RunningSpainBot/1.0 ",
+  "url": "https://www.sportmaniacs.com/es/calendar",
+  "status": 404,
+  "final": "https://sportmaniacs.com/es/calendar",
+  "bytes": 28158,
+  "server": "Sportmaniacs WEB Server",
+  "robots": true,
+  "jsonld_event": 0,
+  "fechas": 0,
+  "titulo": ""
+ },
+ {
+  "ua": "RunningSpainBot/1.0 ",
+  "url": "https://www.inscripcionesonline.com/",
+  "status": 200,
+  "final": "https://inscripcionesonline.com/",
+  "bytes": 9780,
+  "server": "cloudflare",
+  "robots": false,
+  "jsonld_event": 0,
+  "fechas": 0,
+  "titulo": "Documento sin título"
+ },
+ {
+  "ua": "RunningSpainBot/1.0 ",
+  "url": "https://www.lineadesalida.net/",
+  "status": 200,
+  "final": "https://www.lineadesalida.net/",
+  "bytes": 203037,
+  "server": "Apache/2",
+  "robots": true,
+  "jsonld_event": 0,
+  "fechas": 72,
+  "titulo": "Lineadesalida.net"
  }
 ]
