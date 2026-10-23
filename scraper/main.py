@@ -21,7 +21,7 @@ GENERIC = {"san", "sant", "silvestre", "media", "maraton", "medio", "mitja", "ma
            "las", "y", "i", "a", "en", "carrera", "cursa", "carreira", "popular", "ciudad", "ciutat",
            "villa", "vila", "2026", "2027", "2028", "edicion"}
 # Campos cuyo cambio se anuncia en la web como "actualizada"
-TRACKED = ("url", "regulation", "banner", "price", "time", "km", "date", "route")
+TRACKED = ("url", "regulation", "banner", "price", "time", "km", "date", "route", "inscripcion")
 
 
 def log(msg: str) -> None:
@@ -197,6 +197,51 @@ def media(db: dict, today: date, changes: dict) -> int:
     return found
 
 
+def signup_page(r: dict) -> tuple[str | None, bool]:
+    """Página donde mirar el estado de la inscripción (la de inscripción si la hay) y si es una plataforma."""
+    if r.get("official") and r.get("url"):
+        return r["url"], parse.is_signup_platform(r["url"])
+    src = r.get("source") or ""
+    if src and parse.is_signup_platform(src):
+        return src, True
+    return None, False
+
+
+def registrations(db: dict, today: date, changes: dict) -> int:
+    """Comprueba si las inscripciones están abiertas, agotadas, cerradas o próximamente."""
+    near = (today + timedelta(days=config.INSCRIPCION_CERCA_DIAS)).isoformat()
+    week = (today - timedelta(days=7)).isoformat()
+    due = []
+    for r in db["races"]:
+        if r["date"] < today.isoformat() or not signup_page(r)[0]:
+            continue
+        last = r.get("inscripcionAt") or ""
+        if (r["date"] <= near and last < today.isoformat()) or last < week:
+            due.append(r)
+    due.sort(key=lambda r: (r.get("inscripcionAt") or "", r["date"]))   # primero las nunca revisadas
+    log(f"Inscripciones: {len(due)} por revisar, se revisan {min(len(due), config.MAX_INSCRIPCION)}")
+    changed = 0
+    for r in due[: config.MAX_INSCRIPCION]:
+        url, platform = signup_page(r)
+        html, final, ctype = net.get(url)
+        if not html or isinstance(html, bytes):
+            continue
+        st = parse.registration_status(html, platform)
+        r["inscripcionAt"] = today.isoformat()
+        if st != r.get("inscripcion"):
+            if st:
+                r["inscripcion"] = st
+            else:
+                r.pop("inscripcion", None)
+            changed += 1
+            if st and r["id"] not in changes["added"]:
+                lst = changes["updated"].setdefault(r["id"], [])
+                if "inscripcion" not in lst:
+                    lst.append("inscripcion")
+    log(f"Inscripciones con estado nuevo: {changed}")
+    return changed
+
+
 def tidy(db: dict) -> int:
     """Aplica a los datos guardados los filtros y arreglos actuales (por si se mejoraron)."""
     before = len(db["races"])
@@ -237,6 +282,8 @@ def main(argv: list[str]) -> None:
     completed = complete(db, today, changes)
     save(db)
     media(db, today, changes)
+    save(db)
+    registrations(db, today, changes)
     ids = {r["id"] for r in db["races"]}
     db["lastRun"] = {
         "at": datetime.now(timezone.utc).isoformat(timespec="seconds"),

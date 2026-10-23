@@ -322,6 +322,52 @@ def find_route(html: str, base: str, strict: bool = False) -> str | None:
     return best if best_score >= 2 else None
 
 
+# ---------------------------------------------------------------- estado de la inscripción
+_ST_AGOTADA = re.compile(r"(dorsales|inscripciones|plazas|entradas)\s+(agotad|completad)|sold\s?out|\bagotado\b(?=.{0,20}dorsal)|"
+                         r"aforo\s+completo|sin\s+plazas\s+disponibles|no\s+quedan\s+(dorsales|plazas)|dorsals\s+esgotats", re.I)
+_ST_CERRADA = re.compile(r"inscripci[oó]n(es)?\s+(cerrad|finalizad|tancad)|plazo\s+de\s+inscripci[oó]n\s+(cerrado|finalizado)|"
+                         r"inscripci[oó]n(es)?\s+no\s+disponibles?|registration\s+closed|inscripcions\s+tancades", re.I)
+_ST_PROX = re.compile(r"inscripci[oó]n(es)?\s+(pr[oó]ximamente|muy\s+pronto)|(se\s+abrir[aá]n|abrir[aá]n)\s+(las\s+)?inscripciones|"
+                      r"apertura\s+de\s+(las\s+)?inscripciones|inscripcions\s+properament|coming\s+soon", re.I)
+_ST_ABIERTA = re.compile(r"inscripci[oó]n(es)?\s+(abiertas?|obertes?|disponibles?)|registration\s+open|"
+                         r"[uú]ltimos\s+dorsales|quedan\s+pocos\s+dorsales", re.I)
+_ST_BOTON = re.compile(r"^\s*(inscr[ií]bete( ya| ahora)?|inscribirme|inscribirse|inscripci[oó]n online|comprar dorsal|"
+                       r"apúntate|apuntate|registrarse|inscriu-te)\s*$", re.I)
+
+
+def registration_status(html: str, signup_platform: bool = False) -> str | None:
+    """Estado de la inscripción si la página lo dice claramente: abierta, agotada, cerrada o proximamente."""
+    for ev in jsonld_events(html):     # dato estructurado (schema.org offers.availability)
+        offers = ev.get("offers") or []
+        for o in (offers if isinstance(offers, list) else [offers]):
+            av = str((o or {}).get("availability") or "") if isinstance(o, dict) else ""
+            if "SoldOut" in av:
+                return "agotada"
+            if "Discontinued" in av:
+                return "cerrada"
+            if "PreOrder" in av or "PreSale" in av:
+                return "proximamente"
+            if "InStock" in av or "LimitedAvailability" in av:
+                return "abierta"
+    s = soup(html)
+    for t in s(["script", "style", "noscript", "footer", "nav"]):
+        t.decompose()
+    text = re.sub(r"\s+", " ", s.get_text(" "))[:20000]
+    if _ST_AGOTADA.search(text):
+        return "agotada"
+    if _ST_CERRADA.search(text):
+        return "cerrada"
+    if _ST_PROX.search(text):
+        return "proximamente"
+    if _ST_ABIERTA.search(text):
+        return "abierta"
+    if signup_platform:     # en una plataforma de inscripción, un botón «Inscríbete» activo = abierta
+        for b in s.find_all(["a", "button"]):
+            if _ST_BOTON.match(b.get_text(" ", strip=True)) and not b.get("disabled") and "disabled" not in " ".join(b.get("class") or []):
+                return "abierta"
+    return None
+
+
 def tags_from_km(km: str) -> list[str]:
     """Etiquetas de distancia a partir de los km de la ficha («21,097 km · 10 km» → ["21K", "10K"])."""
     out = []

@@ -287,5 +287,32 @@ class RegulationTests(unittest.TestCase):
             self.assertEqual(enrich.resolve_regulation("https://x.es/descarga?id=3"), "https://x.es/r.pdf")
 
 
+class RegistrationTests(unittest.TestCase):
+    def test_states(self):
+        st = parse.registration_status
+        self.assertEqual(st("<p>¡Dorsales agotados! Gracias a todos.</p>"), "agotada")
+        self.assertEqual(st("<p>Plazo de inscripción cerrado</p>"), "cerrada")
+        self.assertEqual(st("<p>Inscripciones próximamente</p>"), "proximamente")
+        self.assertEqual(st("<p>Inscripciones abiertas hasta el 20 de noviembre</p>"), "abierta")
+        self.assertIsNone(st("<p>10K por las calles del centro</p>"))
+        self.assertIsNone(st('<a class="btn">Inscríbete</a>'))                    # en una web cualquiera no basta
+        self.assertEqual(st('<a class="btn">Inscríbete</a>', True), "abierta")   # en una plataforma, sí
+        ld = """<script type="application/ld+json">{"@type":"SportsEvent","name":"X","startDate":"2026-11-01",
+        "offers":{"@type":"Offer","availability":"https://schema.org/SoldOut"}}</script>"""
+        self.assertEqual(st(ld), "agotada")
+
+    def test_pass_checks_near_races_daily(self):
+        today = date(2026, 10, 23)
+        db = {"races": [
+            {"id": "a", "name": "A", "date": "2026-11-01", "official": True, "url": "https://www.rockthesport.com/es/evento/a"},
+            {"id": "b", "name": "B", "date": "2026-11-02", "official": True, "url": "https://b.es/", "inscripcionAt": "2026-10-23"},
+            {"id": "c", "name": "C", "date": "2027-01-20", "official": True, "url": "https://c.es/", "inscripcionAt": "2026-10-20"},
+        ]}
+        with mock.patch("scraper.net.get", return_value=("<p>Inscripciones abiertas</p>", "u", "text/html")) as get:
+            main.registrations(db, today, {"added": [], "updated": {}})
+        self.assertEqual(get.call_count, 1)    # b ya se miró hoy; c (lejana) se miró hace 3 días
+        self.assertEqual(db["races"][0]["inscripcion"], "abierta")
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -135,6 +135,9 @@ input[type=search]{flex:1 1 180px}
 .link{margin-top:auto;align-self:flex-start;font:600 14px var(--body);text-decoration:none;color:var(--accent-ink);
   background:var(--accent);padding:8px 14px;border-radius:8px}
 .link.alt{background:transparent;color:var(--ink);border:1px solid var(--line)}
+.insc{display:inline-flex;align-items:center;gap:6px;font-weight:600}
+.insc::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--ic)}
+.insc-at{color:var(--muted);font-size:12px}
 .link.ghost{background:transparent;color:var(--muted);border:1px dashed var(--line);font-weight:500}
 .actions{margin-top:auto;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
 .actions .link{margin-top:0}
@@ -200,7 +203,12 @@ let races=[], meta=null, dist="all", region="", q="", onlyNews=false, news={adde
 const FLAG={"Andalucía": "andalucia", "Aragón": "aragon", "Asturias": "asturias", "Islas Baleares": "islas-baleares", "Canarias": "canarias", "Cantabria": "cantabria", "Castilla y León": "castilla-y-leon", "Castilla-La Mancha": "castilla-la-mancha", "Cataluña": "cataluna", "Comunidad Valenciana": "comunidad-valenciana", "Extremadura": "extremadura", "Galicia": "galicia", "Comunidad de Madrid": "comunidad-de-madrid", "Región de Murcia": "region-de-murcia", "Navarra": "navarra", "País Vasco": "pais-vasco", "La Rioja": "la-rioja", "Ceuta": "ceuta", "Melilla": "melilla"};
 function flag(region){const f=FLAG[region];if(!f)return null;
   const i=el("img",{class:"flag",src:"flags/"+f+".png",alt:"Bandera de "+region,title:region,loading:"lazy"});i.onerror=()=>i.remove();return i}
-const FIELD={url:"web oficial",regulation:"reglamento",banner:"cartel",price:"precio",time:"hora",km:"km",date:"fecha",route:"recorrido"};
+const FIELD={url:"web oficial",regulation:"reglamento",banner:"cartel",price:"precio",time:"hora",km:"km",date:"fecha",route:"recorrido",inscripcion:"inscripción"};
+const INSC={abierta:["Abierta","var(--k10)"],agotada:["Agotada","var(--accent)"],cerrada:["Cerrada","var(--accent)"],proximamente:["Próximamente","#d4a017"]};
+function inscRow(r){const i=INSC[r.inscripcion];if(!i)return null;
+  const d=r.inscripcionAt?parseDate(r.inscripcionAt):null;
+  return [el("dt",{},"Inscripción"),el("dd",{},el("span",{class:"insc",style:"--ic:"+i[1]},i[0]),
+    d?el("small",{class:"insc-at"}," · comprobado el "+d.getDate()+" "+MONTHS[d.getMonth()].slice(0,3)):null)]}
 
 // Etiquetas de distancia: si la ficha tiene km, salen de ahí (así coinciden siempre con lo que se anuncia)
 function tagsFromKm(km){const out=[];(String(km||"").match(/\d+(?:[.,]\d+)?\s*km/gi)||[]).forEach(x=>{
@@ -232,7 +240,7 @@ function card(r){
     el("dt",{},"Hora"),el("dd",{},r.time?r.time+" h":"Por confirmar"),
     el("dt",{},"Lugar"),el("dd",{},(r.city||"")+(r.region?" · "+r.region:""),flag(r.region)),
     el("dt",{},"Distancia"),el("dd",{class:r.km?"":"tbd"},r.km||(tagsOf(r).length?tagsOf(r).join(" · ")+" (aprox.)":"Por confirmar")),
-    el("dt",{},"Precio"),el("dd",{class:r.price?"":"tbd"},r.price||"Por confirmar"));
+    el("dt",{},"Precio"),el("dd",{class:r.price?"":"tbd"},r.price||"Por confirmar"),...(inscRow(r)||[]));
   const actions=el("div",{class:"actions"});
   if(r.official&&r.url)actions.append(el("a",{class:"link",href:r.url,target:"_blank",rel:"noopener"},r.signup?"Inscripción oficial ↗":"Web oficial ↗"));
   if(r.regulation)actions.append(el("a",{class:"link alt",href:r.regulation,target:"_blank",rel:"noopener"},/\.pdf(\?|$)/i.test(r.regulation)?"Reglamento (PDF) ↗":"Reglamento ↗"));
@@ -354,6 +362,7 @@ function pintarBell(){const b=document.getElementById("bell");const a=leerAj();b
 function abrirAvisos(){
   const a=leerAj(), dist=new Set(a.dist||[]), regs=new Set(a.regiones||[]);
   const sw=el("input",{type:"checkbox"});sw.checked=!!a.activo;
+  const ap=el("input",{type:"checkbox"});ap.checked=!!a.aperturas;
   const distBox=el("div",{class:"regs"});
   DIST_OPT.forEach(([k,t])=>{const c=el("input",{type:"checkbox",value:k});c.checked=dist.has(k);distBox.append(el("label",{},c,t))});
   // fecha de la carrera
@@ -384,6 +393,7 @@ function abrirAvisos(){
     perm,
     el("div",{},el("h3",{},"Distancias"),distBox,el("p",{class:"note"},"Sin ninguna marcada: todas.")),
     el("div",{},el("h3",{},"Fecha de la carrera"),sel,rango),
+    el("div",{class:"row"},el("span",{},"Avisarme también cuando se abran las inscripciones de una carrera que encaje"),el("label",{class:"switch"},ap,el("span"))),
     el("div",{},el("div",{class:"row"},el("h3",{},"Comunidades"),el("span",{},todas," · ",ninguna)),regBox,el("p",{class:"note"},"Sin ninguna marcada: toda España.")),
     el("p",{class:"note"},"La app revisa el calendario cada pocas horas y te avisa solo de las carreras que aparezcan a partir de ahora."),
     guardar));
@@ -394,7 +404,7 @@ function abrirAvisos(){
     const d=[...distBox.querySelectorAll("input:checked")].map(c=>c.value);
     const fecha=sel.value==="rango"?{modo:"rango",desde:desde.value||"",hasta:hasta.value||""}
       :(sel.value==="0"?{}:{modo:"dias",dias:+sel.value});
-    APP.guardarAjustes(JSON.stringify({activo:sw.checked,dist:d,regiones:r,fecha}));
+    APP.guardarAjustes(JSON.stringify({activo:sw.checked,dist:d,regiones:r,fecha,aperturas:ap.checked}));
     pintarBell();close()};
   window.alVolverApp=()=>{estadoPerm();pintarBell()};
   document.body.append(sheet);estadoPerm();

@@ -50,7 +50,9 @@ import java.util.regex.Pattern;
  *
  * Preferencias ("avisos"):
  *   ajustes = {"activo":bool, "dist":["42","21","10","5","x"], "regiones":["Andalucía",…],   (lista vacía = todas)
- *              "fecha":{"modo":"dias","dias":30} | {"modo":"rango","desde":"AAAA-MM-DD","hasta":"AAAA-MM-DD"} | {}}
+ *              "fecha":{"modo":"dias","dias":30} | {"modo":"rango","desde":"AAAA-MM-DD","hasta":"AAAA-MM-DD"} | {},
+ *              "aperturas":bool}   (avisar también cuando una carrera que encaja abre inscripciones)
+ *   insc    = {id: estado de inscripción de la última revisión}
  *   vistas  = ids de carreras ya conocidas (nunca se avisa dos veces de la misma)
  * La primera revisión solo memoriza lo que ya existe, para no llenar el móvil de avisos.
  */
@@ -124,6 +126,11 @@ public class AvisosWorker extends Worker {
         try { carreras = new JSONObject(cuerpo).getJSONArray("races"); } catch (Exception e) { return Result.success(); }
 
         Set<String> vistas = new HashSet<>(p.getStringSet("vistas", new HashSet<>()));
+        boolean aperturas = aj.optBoolean("aperturas", false);
+        JSONObject inscAntes;
+        try { inscAntes = new JSONObject(p.getString("insc", "{}")); } catch (Exception e) { inscAntes = new JSONObject(); }
+        JSONObject inscAhora = new JSONObject();
+        List<JSONObject> abiertas = new ArrayList<>();
         boolean primera = !p.getBoolean("iniciado", false);
         String hoy = new SimpleDateFormat("yyyy-MM-dd", Locale.ROOT).format(new Date());
         List<JSONObject> nuevas = new ArrayList<>();
@@ -134,6 +141,11 @@ public class AvisosWorker extends Worker {
             if (r == null) continue;
             String id = r.optString("id");
             ahora.add(id);
+            String st = r.optString("inscripcion", "");
+            try { if (!st.isEmpty()) inscAhora.put(id, st); } catch (Exception ignored) { }
+            String antes = inscAntes.optString(id, "");
+            boolean seAbre = "abierta".equals(st) && ("proximamente".equals(antes) || "cerrada".equals(antes));
+            if (seAbre && aperturas && !primera && encajaFiltros(r, hoy, fDesde, fHasta, regiones, dist)) abiertas.add(r);
             if (vistas.contains(id) || primera || !activo) continue;
             if (r.optString("date").compareTo(hoy) < 0) continue;
             String fecha = r.optString("date");
@@ -144,7 +156,11 @@ public class AvisosWorker extends Worker {
             nuevas.add(r);
         }
         // Se recuerdan todas las actuales (encajen o no), así cambiar los filtros no trae avisos atrasados.
-        p.edit().putStringSet("vistas", ahora).putBoolean("iniciado", true).apply();
+        p.edit().putStringSet("vistas", ahora).putBoolean("iniciado", true).putString("insc", inscAhora.toString()).apply();
+        if (!abiertas.isEmpty() && puedeNotificar(c)) {
+            crearCanal(c);
+            for (JSONObject r : abiertas) notificarApertura(c, r);
+        }
 
         if (!nuevas.isEmpty() && puedeNotificar(c)) {
             crearCanal(c);
@@ -156,6 +172,15 @@ public class AvisosWorker extends Worker {
     }
 
     // ------------------------------------------------------------- filtros
+    private static boolean encajaFiltros(JSONObject r, String hoy, String fDesde, String fHasta,
+                                         Set<String> regiones, Set<String> dist) {
+        String fecha = r.optString("date");
+        if (fecha.compareTo(hoy) < 0) return false;
+        if (!fDesde.isEmpty() && fecha.compareTo(fDesde) < 0) return false;
+        if (!fHasta.isEmpty() && fecha.compareTo(fHasta) > 0) return false;
+        if (!regiones.isEmpty() && !regiones.contains(r.optString("region"))) return false;
+        return dist.isEmpty() || encaja(categorias(r), dist);
+    }
     private static Set<String> conjunto(JSONArray a) {
         Set<String> s = new HashSet<>();
         if (a != null) for (int i = 0; i < a.length(); i++) s.add(a.optString(i));
@@ -228,6 +253,23 @@ public class AvisosWorker extends Worker {
                 .setStyle(new NotificationCompat.BigTextStyle().bigText(texto + (km.isEmpty() ? "" : "\n" + km)))
                 .setContentIntent(abrirNuevas(c, id))
                 .setAutoCancel(true);
+        try { NotificationManagerCompat.from(c).notify(id, n.build()); } catch (SecurityException ignored) { }
+    }
+
+    private static void notificarApertura(Context c, JSONObject r) {
+        int id = ("ins" + r.optString("id")).hashCode();
+        NotificationCompat.Builder n = new NotificationCompat.Builder(c, CANAL)
+                .setSmallIcon(R.drawable.ic_aviso)
+                .setColor(0xFF13805A)
+                .setContentTitle("🟢 Inscripciones abiertas: " + r.optString("name"))
+                .setContentText(cuando(r) + " · " + lugar(r))
+                .setContentIntent(abrirNuevas(c, id))
+                .setAutoCancel(true);
+        String url = r.optString("url", "");
+        if (r.optBoolean("official") && !url.isEmpty()) {   // tocar lleva directamente a inscribirse
+            Intent web = new Intent(Intent.ACTION_VIEW, Uri.parse(url)).setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            n.setContentIntent(PendingIntent.getActivity(c, id, web, PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE));
+        }
         try { NotificationManagerCompat.from(c).notify(id, n.build()); } catch (SecurityException ignored) { }
     }
 
