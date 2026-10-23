@@ -220,7 +220,8 @@ def _media(html: str, final: str) -> dict:
     img, score = parse.best_image(html, final)
     if img:
         out["banner"], out["bannerScore"] = img, score
-    route = parse.find_route(html, final)
+    # en webs de calendarios solo valen enlaces claros (Strava, Wikiloc, GPX…): sus «ruta» son otras carreras
+    route = parse.find_route(html, final, strict=not parse.is_official_url(final))
     if route:
         out["route"] = route
     return out

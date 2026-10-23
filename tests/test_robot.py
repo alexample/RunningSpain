@@ -237,6 +237,18 @@ class MediaTests(unittest.TestCase):
         self.assertEqual(parse.find_route('<a href="/files/10k.gpx">Track</a>', "https://x.es/"), "https://x.es/files/10k.gpx")
         self.assertIsNone(parse.find_route('<a href="/contacto">Contacto</a>', "https://x.es/"))
 
+    def test_route_rejects_other_races_news_and_sitemaps(self):
+        cal = """<a href="https://running.life/en/event/carrera-solidaria-ruta-091">Carrera Solidaria Ruta 091</a>
+        <a href="https://www.mundodeportivo.com/running/20261022/1/ruta-correr-montana">Ruta para correr</a>"""
+        self.assertIsNone(parse.find_route(cal, "https://running.life/en/event/x", strict=True))
+        self.assertIsNone(parse.find_route('<a href="/es/mapa-web/">Mapa web</a>', "https://www.fdmvalencia.es/"))
+        self.assertEqual(parse.find_route('<a href="/recorrido-10k/">Recorrido</a>', "https://www.mi10k.es/"),
+                         "https://www.mi10k.es/recorrido-10k/")
+        self.assertFalse(parse.is_route_url("https://running.life/en/event/carrera-solidaria-ruta-091-torremolinos"))
+        self.assertTrue(parse.is_route_url("https://www.strava.com/routes/123"))
+        self.assertFalse(parse.is_route_url("https://sportmaniacs.com/es/services/inscription/pulpi---circuito-de-carreras-populares-2026"))
+        self.assertTrue(parse.is_route_url("https://www.mi10k.es/docs/circuito-2026.pdf"))
+
     def test_tags_follow_km(self):
         self.assertEqual(parse.tags_from_km("21,097 km · 10 km"), ["21K", "10K"])
         self.assertEqual(parse.tags_from_km("7,5 km"), ["7,5K"])

@@ -95,7 +95,7 @@ NOT_ROAD = [
     "orientaci", "canicross", "infantil", "kids", "mini ", "caminata",
     "mtb", "cxm", "marxa", "passejada", "caminada", "senderisme", "hyatlon", "hyathlon",
     "nataci", "swim", "aquabike", "padel", "pádel", "kayak", "piragü", "remo ", "enduro",
-    "gravel", "rally", "ciclotur", "cicloturist", "patinaje", "roller",
+    "gravel", "rally", "ciclotur", "cicloturist", "ciclodeport", "ciclista", "cicloturism", "patinaje", "roller",
     "triath", "duath", "ironman", "ocean lava", "campo a traves", "campo a través", "xtreme", "extreme",
     "funcional", "crossfit", "hybrid", "wop challenge", "travesia", "travesía", "sky race", "skymarathon",
 ]

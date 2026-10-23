@@ -1,6 +1,6 @@
 {
- "updatedAt": "2026-10-23T09:58:20+00:00",
- "count": 869,
+ "updatedAt": "2026-10-23T10:13:44+00:00",
+ "count": 868,
  "races": [
   {
    "name": "Carrera Popular AESAN",
@@ -92,10 +92,8 @@
    "price": "2–17 €",
    "km": "21 km · 10 km",
    "changedAt": "2026-10-21",
-   "mediaChecked": "2026-10-23",
    "banner": "https://www.timingsys.com/eventdata/772/image/poster_772.jpg",
-   "bannerScore": 8,
-   "route": "https://running.life/es/carrera/carrera-solidaria-ruta-091-cuenca"
+   "bannerScore": 8
   },
   {
    "name": "Cursa des Teix",
@@ -175,13 +173,11 @@
    "price": "",
    "source": "https://runedia.mundodeportivo.com/carrera/1er-memorial-juan-perez-2026/202637377/",
    "official_guess": "http://",
-   "route": "https://www.mundodeportivo.com/running/20261022/1004241110/ruta-correr-montana-rioja-cambia-completo-llegan-otono-bajan-temperaturas-rts.html",
    "id": "1er-memorial-juan-perez-2026-1024",
    "official": false,
    "url": "",
    "addedAt": "2026-10-23",
-   "checkedAt": "2026-10-23",
-   "mediaChecked": "2026-10-23"
+   "checkedAt": "2026-10-23"
   },
   {
    "name": "5K Ciudad de Elda",
@@ -458,9 +454,7 @@
    "signup": true,
    "regulation": "https://sportmaniacs.com/es/races/pulpi---circuito-de-carreras-populares-diputacin-de-almera-2026#rules",
    "banner": "https://sportmaniacs.com/images/share/sportmaniacs-race.jpg",
-   "km": "9,96 km",
-   "mediaChecked": "2026-10-23",
-   "route": "https://sportmaniacs.com/es/services/inscription/pulpi---circuito-de-carreras-populares-diputacin-de-almera-2026"
+   "km": "9,96 km"
   },
   {
    "name": "Ruta del Barbo",
@@ -1002,9 +996,7 @@
    "nosite": false,
    "regulation": "https://www.desafiodeguerreros.com.es/reglamento",
    "banner": "http://static1.squarespace.com/static/5e5cbe47e925e0699b89922b/62e1956e7654ba32bd54f8a9/68f5f2b0504f6e447cf99f85/1792103581154/_DSC3061.jpg?format=1500w",
-   "km": "12 km · 10 km · 7 km · 6 km",
-   "mediaChecked": "2026-10-23",
-   "route": "https://running.life/en/event/carrera-solidaria-ruta-091-torremolinos"
+   "km": "12 km · 10 km · 7 km · 6 km"
   },
   {
    "name": "10K de Salinas",
@@ -1147,9 +1139,7 @@
    "checkedAt": "2026-10-23",
    "nosite": false,
    "banner": "http://www.tuskilometrosnosdanvida.org/wp-content/themes/tuskilometrosnosdanvida/assets/images/logo-color.png",
-   "km": "5,2 km",
-   "mediaChecked": "2026-10-23",
-   "route": "https://running.life/en/event/circuito-diputacion-de-sevilla-de-campo-a-traves/2026-10-24"
+   "km": "5,2 km"
   },
   {
    "name": "5K Granadilla de Abona",
@@ -1346,9 +1336,7 @@
    "note": "",
    "id": "carreira-pedestre-popular-de-santiago-2026-1025",
    "source": "https://running.life/es/carrera/carreira-pedestre-popular-de-santiago",
-   "checkedAt": "2026-10-21",
-   "mediaChecked": "2026-10-23",
-   "route": "https://running.life/es/carrera/corresan-ruta-da-prata-angrois-memorial-manolo-moure"
+   "checkedAt": "2026-10-21"
   },
   {
    "name": "Carreira Popular Concello de Cospeito",
@@ -1880,9 +1868,7 @@
    "nosite": false,
    "regulation": "https://deporte.malaga.eu/normativa/",
    "banner": "http://deporte.malaga.eu/export/sites/deporte/.galleries/-IMAGENES-Carteleria-2026/46-Carrera-Urbana-Malaga-2026.jpg",
-   "km": "10 km · 5 km",
-   "mediaChecked": "2026-10-23",
-   "route": "https://running.life/en/event/carrera-solidaria-ruta-091-torremolinos"
+   "km": "10 km · 5 km"
   },
   {
    "name": "Carrera de la Mujer ALMOM-Drasanvi contra el Cáncer de Mama",
@@ -2559,10 +2545,8 @@
    "nosite": false,
    "regulation": "https://ruta091.es/storage/app/uploads/public/6ab/25f/e1d/6ab25fe1d8c7a713703661.pdf",
    "km": "5,09 km · 5 km",
-   "mediaChecked": "2026-10-23",
    "banner": "https://ruta091.es/storage/app/uploads/public/6ab/50f/465/6ab50f465c9ae473161755.webp",
-   "bannerScore": 4,
-   "route": "https://ruta091.es/carrera/carrera-solidaria-ruta-091-torremolinos-2026"
+   "bannerScore": 4
   },
   {
    "name": "II Carrera Nocturna los Lagos",
@@ -2715,10 +2699,8 @@
    "checkedAt": "2026-10-23",
    "nosite": false,
    "regulation": "https://ruta091.es/storage/app/uploads/public/6a7/07e/0a3/6a707e0a319f8215790939.pdf",
-   "mediaChecked": "2026-10-23",
    "banner": "https://ruta091.es/storage/app/uploads/public/6a7/074/17a/6a707417aebdc726011850.webp",
-   "bannerScore": 4,
-   "route": "https://ruta091.es/carrera/carrera-solidaria-ruta-091-antequera-2026"
+   "bannerScore": 4
   },
   {
    "name": "Carrera Solidaria de Cox",
@@ -3355,9 +3337,7 @@
    "regulation": "https://sportmaniacs.com/es/races/xv-andaina-solidaria-bantildeo-de-molgas#rules",
    "banner": "https://s3.eu-west-1.amazonaws.com/sm-fotos.sportmaniacs.com/back/resize/1920x410x0_header_6ac761eb-0a88-47e7-b0ea-31e6ac1f046c.png",
    "km": "20 km · 10 km",
-   "mediaChecked": "2026-10-23",
-   "bannerScore": 4,
-   "route": "https://sportmaniacs.com/es/races/xv-andaina-solidaria-bantildeo-de-molgas/6ac76314-892c-4457-80d9-42a7ac1f2400/registered"
+   "bannerScore": 4
   },
   {
    "name": "Dual Run Monachil Academia Puerta Real",
@@ -3487,9 +3467,7 @@
    "regulation": "https://carrera-spatana.org/reglamento.html",
    "banner": "https://inscripciones.tecnocrono.com/fileserver.php?name=/images/eventos/rol/9947_evento_31351_cartel.jpg&type=public&v=1792094516",
    "km": "5 km",
-   "mediaChecked": "2026-10-23",
-   "bannerScore": 8,
-   "route": "https://running.life/en/event/circuito-diputacion-de-sevilla-de-campo-a-traves/2026-10-24"
+   "bannerScore": 8
   },
   {
    "name": "Cursa del Sant Crist de Balaguer",
@@ -3533,10 +3511,8 @@
    "checkedAt": "2026-10-21",
    "nosite": false,
    "changedAt": "2026-10-21",
-   "mediaChecked": "2026-10-23",
    "banner": "https://www.federacionaragonesadeatletismo.com/wp-content/uploads/2022/01/cr-aragon.png",
-   "bannerScore": 2,
-   "route": "https://www.federacionaragonesadeatletismo.com/federacion/estamentos-faa/entrenadores/"
+   "bannerScore": 2
   },
   {
    "name": "Carrera Solidaria con Otra Mirada",
@@ -3720,9 +3696,7 @@
    "url": "",
    "addedAt": "2026-10-23",
    "checkedAt": "2026-10-23",
-   "nosite": true,
-   "mediaChecked": "2026-10-23",
-   "route": "https://running.life/en/event/circuito-diputacion-de-sevilla-de-campo-a-traves/2026-10-24"
+   "nosite": true
   },
   {
    "name": "Circuito Juan Carlos de la Ossa",
@@ -4235,9 +4209,7 @@
    "price": "8–23 €",
    "km": "5 km",
    "changedAt": "2026-10-21",
-   "mediaChecked": "2026-10-23",
-   "bannerScore": 4,
-   "route": "https://running.life/es/carrera/carrera-solidaria-ruta-091-torremolinos"
+   "bannerScore": 4
   },
   {
    "name": "Mitja Marató Ciutat de Gandia",
@@ -4443,9 +4415,7 @@
    "nosite": false,
    "signup": true,
    "banner": "https://web.rockthesport.com/_next/image?url=https%3A%2F%2Frtsfiles.blob.core.windows.net%2Fmanager%2F1330%2Flibrary%2Froot%2F4eb028e9-e0d7-42f2-8dde-0711be97ca42.jpeg&w=1200&q=75",
-   "km": "5 km",
-   "mediaChecked": "2026-10-23",
-   "route": "https://running.life/en/event/carrera-solidaria-ruta-091-badajoz"
+   "km": "5 km"
   },
   {
    "name": "Ruta 091 Estepona",
@@ -4466,9 +4436,7 @@
    "checkedAt": "2026-10-23",
    "nosite": false,
    "regulation": "https://ruta091.es/storage/app/uploads/public/6ab/d01/1c6/6abd011c6aa04323572978.pdf",
-   "km": "5 km",
-   "mediaChecked": "2026-10-23",
-   "route": "https://ruta091.es/carrera/carrera-solidaria-ruta-091-estepona-2026"
+   "km": "5 km"
   },
   {
    "name": "Marató del Montseny",
@@ -4482,13 +4450,11 @@
    "price": "",
    "source": "https://runedia.mundodeportivo.com/carrera/marato-del-montseny-2026/202637390/",
    "official_guess": "http://",
-   "route": "https://www.mundodeportivo.com/running/20261022/1004241110/ruta-correr-montana-rioja-cambia-completo-llegan-otono-bajan-temperaturas-rts.html",
    "id": "marato-del-montseny-2026-1108",
    "official": false,
    "url": "",
    "addedAt": "2026-10-23",
-   "checkedAt": "2026-10-23",
-   "mediaChecked": "2026-10-23"
+   "checkedAt": "2026-10-23"
   },
   {
    "name": "10K Ciudad de Mérida",
@@ -4637,10 +4603,8 @@
    "nosite": false,
    "regulation": "https://www.alcanzatumeta.es/uploads/Reglamento/36a706a37b6ac7192ebbf4dc7c2352f2.pdf",
    "km": "10 km · 5 km",
-   "mediaChecked": "2026-10-23",
    "banner": "https://www.alcanzatumeta.es/uploads/Cartel/fee39374435161640801b8485bace097.jpg",
-   "bannerScore": 8,
-   "route": "https://running.life/en/event/carrera-popular-ruta-de-las-norias"
+   "bannerScore": 8
   },
   {
    "name": "8K Burjassot",
@@ -5364,28 +5328,6 @@
    "bannerScore": 4
   },
   {
-   "name": "V Marcha Ciclodeportiva Montesa",
-   "date": "2026-11-08",
-   "time": "",
-   "city": "Montesa",
-   "region": "Comunidad Valenciana",
-   "distances": [],
-   "price": "39–55 €",
-   "source": "https://sportmaniacs.com/es/races/v-marcha-ciclodeportiva-montesa",
-   "official_guess": "https://sportmaniacs.com/es/races/v-marcha-ciclodeportiva-montesa",
-   "id": "v-marcha-ciclodeportiva-montesa-2026-1108",
-   "official": true,
-   "url": "https://sportmaniacs.com/es/services/inscription/v-marcha-ciclodeportiva-montesa",
-   "addedAt": "2026-10-23",
-   "checkedAt": "2026-10-23",
-   "nosite": false,
-   "signup": true,
-   "regulation": "https://sportmaniacs.com/es/races/v-marcha-ciclodeportiva-montesa#rules",
-   "banner": "https://s3.eu-west-1.amazonaws.com/sm-fotos.sportmaniacs.com/back/resize/1920x410x0_6ab2902e-40d0-460b-98ed-42feac1f0ca4-header_6aa91f34-bf20-4242-862c-31efac1f0ac0.png",
-   "mediaChecked": "2026-10-23",
-   "bannerScore": 4
-  },
-  {
    "name": "Volta a l’Estany d’Ivars i Vila-sana",
    "date": "2026-11-08",
    "time": "",
@@ -5506,9 +5448,7 @@
    "signup": true,
    "regulation": "https://sportmaniacs.com/es/races/x-polkowicki-bieg-niepodlegoci#rules",
    "banner": "https://sportmaniacs.com/images/share/sportmaniacs-race.jpg",
-   "km": "5,1 km",
-   "mediaChecked": "2026-10-23",
-   "route": "https://s3-eu-west-1.amazonaws.com/sm-fotos.sportmaniacs.com/back/X Polkowicki Bieg Niepodległości 2026 - Mapa trasy biegu.pdf"
+   "km": "5,1 km"
   },
   {
    "name": "XIII Bieg Uliczny Św. Marcina O Puchar Burmistrza Miasta I Gminy Kępno Bieg Służb Mundurowych",
@@ -5652,9 +5592,7 @@
    "nosite": false,
    "regulation": "https://www.elitechip.net/system/public/download/d9735c9d614fc97b1eaaed196d7eb991.pdf",
    "km": "21 km · 10 km",
-   "changedAt": "2026-10-21",
-   "mediaChecked": "2026-10-23",
-   "route": "https://running.life/es/carrera/cursa-ruta-092"
+   "changedAt": "2026-10-21"
   },
   {
    "name": "Carrera Popular Nocturna de Noblejas",
@@ -5886,9 +5824,7 @@
    "nosite": false,
    "signup": true,
    "banner": "https://web.rockthesport.com/_next/image?url=https%3A%2F%2Frtsfiles.blob.core.windows.net%2Fmanager%2F14287%2Flibrary%2Froot%2F30d1b5af-d0b2-4fd3-82b1-30d5ecf47f74.jpg&w=1200&q=75",
-   "km": "42 km · 21 km · 12 km",
-   "mediaChecked": "2026-10-23",
-   "route": "https://running.life/en/event/carrera-solidaria-ruta-091-torremolinos"
+   "km": "42 km · 21 km · 12 km"
   },
   {
    "name": "Media Maratón Nocturna Ciudad de Móstoles",
@@ -5985,13 +5921,11 @@
    "price": "",
    "source": "https://runedia.mundodeportivo.com/carrera/vi-rogaine-del-cap-de-creus-2026/202637525/",
    "official_guess": "http://",
-   "route": "https://www.mundodeportivo.com/running/20261022/1004241110/ruta-correr-montana-rioja-cambia-completo-llegan-otono-bajan-temperaturas-rts.html",
    "id": "vi-rogaine-del-cap-de-creus-2026-1114",
    "official": false,
    "url": "",
    "addedAt": "2026-10-23",
-   "checkedAt": "2026-10-23",
-   "mediaChecked": "2026-10-23"
+   "checkedAt": "2026-10-23"
   },
   {
    "name": "Vilanova Night Run",
@@ -6451,13 +6385,11 @@
    "price": "",
    "source": "https://runedia.mundodeportivo.com/carrera/10k-2026/202637492/",
    "official_guess": "http://",
-   "route": "https://www.mundodeportivo.com/running/20261022/1004241110/ruta-correr-montana-rioja-cambia-completo-llegan-otono-bajan-temperaturas-rts.html",
    "id": "10-k-2026-1115",
    "official": false,
    "url": "",
    "addedAt": "2026-10-23",
-   "checkedAt": "2026-10-23",
-   "mediaChecked": "2026-10-23"
+   "checkedAt": "2026-10-23"
   },
   {
    "name": "5K10K Vic",
@@ -6506,10 +6438,8 @@
    "regulation": "https://www.alcanzatumeta.es/uploads/Reglamento/f40d11d7975d52ac986bd45905d5e8fd.pdf",
    "km": "10 km · 5 km",
    "changedAt": "2026-10-22",
-   "mediaChecked": "2026-10-23",
    "banner": "https://www.alcanzatumeta.es/uploads/Cartel/604c95dd188667bf50203eabacd35809.jpeg",
-   "bannerScore": 8,
-   "route": "https://running.life/en/event/vuelta-al-santuario-virgen-de-la-esperanza-y-ruta-senderista"
+   "bannerScore": 8
   },
   {
    "name": "10K y 5K Mislata",
@@ -8366,7 +8296,6 @@
    "price": "",
    "source": "https://runedia.mundodeportivo.com/carrera/22a-teialada-2026/202637544/",
    "official_guess": "https://web.rockthesport.com/es",
-   "route": "https://www.mundodeportivo.com/running/20261022/1004241110/ruta-correr-montana-rioja-cambia-completo-llegan-otono-bajan-temperaturas-rts.html",
    "id": "22a-teialada-2026-1122",
    "official": true,
    "url": "https://web.rockthesport.com/es",
@@ -9338,7 +9267,6 @@
    "price": "",
    "source": "https://runedia.mundodeportivo.com/carrera/xi-carrera-contra-la-violencia-de-genero-villanueva-de-gallego-2026/202637444/",
    "official_guess": "http://",
-   "route": "https://www.mundodeportivo.com/running/20261022/1004241110/ruta-correr-montana-rioja-cambia-completo-llegan-otono-bajan-temperaturas-rts.html",
    "id": "xi-carrera-contra-la-violencia-de-genero-villanueva-de-gallego-2026-1123",
    "official": false,
    "url": "",
@@ -9388,7 +9316,6 @@
    "price": "",
    "source": "https://runedia.mundodeportivo.com/carrera/ii-carrera-y-caminata-la-muela-por-la-igualdad-2026/202637532/",
    "official_guess": "http://",
-   "route": "https://www.mundodeportivo.com/running/20261022/1004241110/ruta-correr-montana-rioja-cambia-completo-llegan-otono-bajan-temperaturas-rts.html",
    "id": "ii-carrera-y-caminata-la-muela-por-la-igualdad-2026-1128",
    "official": false,
    "url": "",
@@ -9407,7 +9334,6 @@
    "price": "5–20 €",
    "source": "https://runedia.mundodeportivo.com/carrera/xii-5km-nocturna-el-rosario-2026-2026/202637238/",
    "official_guess": "https://inscripciones.conchipcanarias.com/inscripcion/xii-5km-nocturna-el-rosario-2026/",
-   "route": "https://www.mundodeportivo.com/running/20261022/1004241110/ruta-correr-montana-rioja-cambia-completo-llegan-otono-bajan-temperaturas-rts.html",
    "id": "xii-5km-nocturna-el-rosario-2026-1128",
    "official": true,
    "url": "https://inscripciones.conchipcanarias.com/inscripcion/iv-5km-nocturna-el-rosario-tenerife-2026/",
@@ -9704,7 +9630,6 @@
    "price": "",
    "source": "https://runedia.mundodeportivo.com/carrera/caminada-per-la-marato-per-la-vall-dolzinelles-curta-2026/202637542/",
    "official_guess": "http://",
-   "route": "https://www.mundodeportivo.com/running/20261022/1004241110/ruta-correr-montana-rioja-cambia-completo-llegan-otono-bajan-temperaturas-rts.html",
    "id": "caminada-per-la-marato-per-la-vall-d-olzinelles-curta-2026-1129",
    "official": false,
    "url": "",
@@ -10966,7 +10891,6 @@
    "price": "",
    "source": "https://runedia.mundodeportivo.com/carrera/marxa-popular-per-la-marato-de-tv3-2026-riudarenes-2026/202637508/",
    "official_guess": "http://",
-   "route": "https://www.mundodeportivo.com/running/20261022/1004241110/ruta-correr-montana-rioja-cambia-completo-llegan-otono-bajan-temperaturas-rts.html",
    "id": "marxa-popular-per-la-marato-de-tv3-2026-riudarenes-2026-1213",
    "official": false,
    "url": "",
@@ -13956,7 +13880,6 @@
    "nosite": false,
    "banner": "https://www.fdmvalencia.es/wp-content/uploads/2025/12/san_silvestre_2026_recurso_03.jpg",
    "bannerScore": 2,
-   "route": "https://www.fdmvalencia.es/es/mapa-web/",
    "changedAt": "2026-10-23"
   },
   {

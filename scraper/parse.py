@@ -261,11 +261,25 @@ _ROUTE_HOSTS = re.compile(r"(strava\.com/(routes|segments)|wikiloc\.com|connect\
                           r"komoot\.(com|de)/tour|ridewithgps\.com/routes|plotaroute\.com|mapmyrun\.com/routes|"
                           r"onthegomap\.com|google\.[a-z.]+/maps/d/|mapometer\.com|alltrails\.com|relive\.cc|"
                           r"footpathapp\.com|runkeeper\.com/user/.+/route|openrunner\.com)", re.I)
-_ROUTE_WORD = re.compile(r"recorrido|circuito|itinerario|recorregut|ibilbide|\bruta\b|\bmapa\b|\btrack\b|\bgpx\b|\bcourse\b|\broute\b", re.I)
+_ROUTE_WORD = re.compile(r"\b(recorrido|recorridos|circuito|recorregut|ibilbidea?|perfil del recorrido|track gps|mapa del recorrido)\b", re.I)
+_ROUTE_URL_WORD = re.compile(r"recorrido|circuito|recorregut|ibilbide|perfil", re.I)
+_ROUTE_BAD = re.compile(r"facebook|instagram|twitter|youtube|tiktok|whatsapp|mapa-web|sitemap|mapa-del-sitio|"
+                        r"/noticia|/news|/blog/|/running/20\d\d|/event/|/events/|/carrera/|/races/|/calendario|"
+                        r"inscripci|inscription|/services/|circuito-de-carreras|circuito-provincial|circuit-de-curses", re.I)
 
 
-def find_route(html: str, base: str) -> str | None:
-    """Enlace al recorrido: Strava, Wikiloc, Garmin, Google My Maps…, un .gpx/.kml o una página «Recorrido»."""
+def is_route_url(url: str) -> bool:
+    """¿Parece de verdad un recorrido? (servicio de rutas, archivo GPX/KML o página/archivo «recorrido» del organizador)"""
+    if not url or not url.startswith("http"):
+        return False
+    if re.search(r"\.(gpx|kml|kmz)(\?|$)", url, re.I) or _ROUTE_HOSTS.search(url):
+        return True
+    return bool(_ROUTE_URL_WORD.search(url)) and not _ROUTE_BAD.search(url) and is_official_url(url)
+
+
+def find_route(html: str, base: str, strict: bool = False) -> str | None:
+    """Enlace al recorrido: Strava, Wikiloc, Garmin, Google My Maps…, un .gpx/.kml o una página «Recorrido»
+    de la propia web. Con strict=True (páginas de calendarios) solo valen servicios de rutas y archivos GPX/KML."""
     best, best_score = None, 0
     for a in soup(html).find_all("a", href=True):
         href = urljoin(base, a["href"].strip())
@@ -277,9 +291,8 @@ def find_route(html: str, base: str) -> str | None:
             score = 6
         elif _ROUTE_HOSTS.search(href):
             score = 5
-        elif _ROUTE_WORD.search(text) or re.search(r"/(recorrido|circuito|recorregut|ruta|route|mapa)", href, re.I):
-            if re.search(r"facebook|instagram|twitter|youtube|tiktok|whatsapp", href, re.I):
-                continue
+        elif not strict and not _ROUTE_BAD.search(href) and domain(href) == domain(base) and (
+                _ROUTE_WORD.search(text) or _ROUTE_URL_WORD.search(href.split("?")[0].rsplit("/", 1)[-1])):
             score = 3 if re.search(r"\.(jpe?g|png|webp|pdf)(\?|$)", href, re.I) else 2
         if score > best_score:
             best, best_score = href, score
