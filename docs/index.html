@@ -168,9 +168,14 @@ let races=[], meta=null, dist="all", region="", q="", onlyNews=false, news={adde
 const FLAG={"Andalucía": "andalucia", "Aragón": "aragon", "Asturias": "asturias", "Islas Baleares": "islas-baleares", "Canarias": "canarias", "Cantabria": "cantabria", "Castilla y León": "castilla-y-leon", "Castilla-La Mancha": "castilla-la-mancha", "Cataluña": "cataluna", "Comunidad Valenciana": "comunidad-valenciana", "Extremadura": "extremadura", "Galicia": "galicia", "Comunidad de Madrid": "comunidad-de-madrid", "Región de Murcia": "region-de-murcia", "Navarra": "navarra", "País Vasco": "pais-vasco", "La Rioja": "la-rioja", "Ceuta": "ceuta", "Melilla": "melilla"};
 function flag(region){const f=FLAG[region];if(!f)return null;
   const i=el("img",{class:"flag",src:"flags/"+f+".png",alt:"Bandera de "+region,title:region,loading:"lazy"});i.onerror=()=>i.remove();return i}
-const FIELD={url:"web oficial",regulation:"reglamento",banner:"cartel",price:"precio",time:"hora",km:"km",date:"fecha"};
+const FIELD={url:"web oficial",regulation:"reglamento",banner:"cartel",price:"precio",time:"hora",km:"km",date:"fecha",route:"recorrido"};
 
-function kind(r){const d=(r.distances||[]).join(" ");
+// Etiquetas de distancia: si la ficha tiene km, salen de ahí (así coinciden siempre con lo que se anuncia)
+function tagsFromKm(km){const out=[];(String(km||"").match(/\d+(?:[.,]\d+)?\s*km/gi)||[]).forEach(x=>{
+  const v=parseFloat(x.replace(",","."));const t=(v>=42&&v<=42.4)?"42K":(v>=21&&v<=21.2)?"21K":(String(Math.round(v*10)/10).replace(".",",")+"K");
+  if(!out.includes(t))out.push(t)});return out}
+function tagsOf(r){const k=tagsFromKm(r.km);return k.length?k:(r.distances||[])}
+function kind(r){const d=tagsOf(r).join(" ");
   if(/42/.test(d))return"42"; if(/21|20K/.test(d))return"21"; if(/10K/.test(d))return"10"; return"x";}
 function kcolor(k){return{"42":"var(--k42)","21":"var(--k21)","10":"var(--k10)","x":"var(--kx)"}[k]}
 function tagColor(t){return /42/.test(t)?"var(--k42)":/21|20K/.test(t)?"var(--k21)":/10K/.test(t)?"var(--k10)":"var(--kx)"}
@@ -184,21 +189,22 @@ function card(r){
   const bib=el("div",{class:"bib",style:"--kc:"+kcolor(k)});
   const fallback=()=>{bib.replaceChildren(
     el("div",{class:"band"},el("span",{},r.city||""),el("span",{},String(d.getDate()).padStart(2,"0")+" "+MONTHS[d.getMonth()].slice(0,3))),
-    el("div",{class:"num"},(r.distances&&r.distances[0])||"RUN"),
+    el("div",{class:"num"},tagsOf(r)[0]||"RUN"),
     el("div",{class:"nm"},r.name),
     el("span",{class:"pin tl"}),el("span",{class:"pin tr"}),el("span",{class:"pin bl"}),el("span",{class:"pin br"}))};
   if(r.banner){const img=el("img",{src:r.banner,alt:"Cartel de "+r.name,loading:"lazy",referrerpolicy:"no-referrer"});img.onerror=fallback;bib.append(img)}else fallback();
 
-  const tags=el("div",{class:"tags"});(r.distances||[]).forEach(t=>tags.append(el("span",{class:"tag",style:"--kc:"+tagColor(t)},t)));
+  const tags=el("div",{class:"tags"});tagsOf(r).forEach(t=>tags.append(el("span",{class:"tag",style:"--kc:"+tagColor(t)},t)));
   const dl=el("dl",{class:"meta"},
     el("dt",{},"Día"),el("dd",{},DAYS[d.getDay()]+" "+d.getDate()+" de "+MONTHS[d.getMonth()]),
     el("dt",{},"Hora"),el("dd",{},r.time?r.time+" h":"Por confirmar"),
     el("dt",{},"Lugar"),el("dd",{},(r.city||"")+(r.region?" · "+r.region:""),flag(r.region)),
-    el("dt",{},"Distancia"),el("dd",{class:r.km?"":"tbd"},r.km||((r.distances&&r.distances.length)?r.distances.join(" · "):"Por confirmar")),
+    el("dt",{},"Distancia"),el("dd",{class:r.km?"":"tbd"},r.km||(tagsOf(r).length?tagsOf(r).join(" · ")+" (aprox.)":"Por confirmar")),
     el("dt",{},"Precio"),el("dd",{class:r.price?"":"tbd"},r.price||"Por confirmar"));
   const actions=el("div",{class:"actions"});
   if(r.official&&r.url)actions.append(el("a",{class:"link",href:r.url,target:"_blank",rel:"noopener"},r.signup?"Inscripción oficial ↗":"Web oficial ↗"));
   if(r.regulation)actions.append(el("a",{class:"link alt",href:r.regulation,target:"_blank",rel:"noopener"},/\.pdf(\?|$)/i.test(r.regulation)?"Reglamento (PDF) ↗":"Reglamento ↗"));
+  if(r.route)actions.append(el("a",{class:"link alt",href:r.route,target:"_blank",rel:"noopener"},/\.(gpx|kml|kmz)(\?|$)/i.test(r.route)?"Recorrido (GPX) ↗":"Recorrido ↗"));
   if(!actions.childNodes.length)actions.append(el("span",{class:"pending"},r.nosite?"Sin web oficial publicada":"Web oficial en búsqueda"));
   let badge=null;
   if(news.added.has(r.id))badge=el("span",{class:"badge new"},"Nueva");

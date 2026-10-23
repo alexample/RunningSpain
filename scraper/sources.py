@@ -206,8 +206,26 @@ def read_event_page(cand: dict, today: date) -> dict | None:
         "time": f.get("time") or parse.extract_time(text[:3000]) or "",
         "city": city,
         "region": region or "",
-        "distances": parse.distances_from(name + " " + text[:800]),
+        "distances": parse.distances_from(name),
         "price": f.get("price") or "",
         "source": cand["source_url"],
         "official_guess": official,
+        **_media(html, final),
     }
+
+
+def _media(html: str, final: str) -> dict:
+    """Cartel y recorrido que aparezcan en la página."""
+    out = {}
+    img, score = parse.best_image(html, final)
+    if img:
+        out["banner"], out["bannerScore"] = img, score
+    route = parse.find_route(html, final)
+    if route:
+        out["route"] = route
+    return out
+
+
+def read_media(url: str) -> dict:
+    html, final, _ = net.get(url)
+    return _media(html, final) if html else {}

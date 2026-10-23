@@ -219,5 +219,41 @@ class NewSourcesTests(unittest.TestCase):
         self.assertEqual(names, ["10K Ciudad de Ejemplo", "XI Carrera Solidaria Puerto de Ejemplo"])
 
 
+class MediaTests(unittest.TestCase):
+    PAGE = """<html><head><meta property="og:image" content="/img/logo.png">
+    <meta name="twitter:image" content="/img/foto-salida.jpg"></head><body>
+    <img src="/up/2026/cartel-10k.jpg" alt="Cartel 10K"><img src="/img/patrocinadores.png" alt="Patrocinadores">
+    <a href="https://www.strava.com/routes/123">Ver recorrido en Strava</a><a href="/docs/circuito.pdf">Circuito</a>
+    <a href="https://facebook.com/x/ruta">ruta</a></body></html>"""
+
+    def test_best_image_prefers_poster_and_skips_logos(self):
+        img, score = parse.best_image(self.PAGE, "https://x.es/")
+        self.assertEqual(img, "https://x.es/up/2026/cartel-10k.jpg")
+        self.assertGreater(score, 4)
+        self.assertEqual(parse.best_image("<html><meta property='og:image' content='/logo.png'></html>", "https://x.es/"), (None, 0))
+
+    def test_find_route(self):
+        self.assertEqual(parse.find_route(self.PAGE, "https://x.es/"), "https://www.strava.com/routes/123")
+        self.assertEqual(parse.find_route('<a href="/files/10k.gpx">Track</a>', "https://x.es/"), "https://x.es/files/10k.gpx")
+        self.assertIsNone(parse.find_route('<a href="/contacto">Contacto</a>', "https://x.es/"))
+
+    def test_tags_follow_km(self):
+        self.assertEqual(parse.tags_from_km("21,097 km · 10 km"), ["21K", "10K"])
+        self.assertEqual(parse.tags_from_km("7,5 km"), ["7,5K"])
+        db = {"races": [{"id": "a", "name": "Media Maratón de X", "date": "2026-11-01", "km": "10 km", "distances": ["21K"]}]}
+        main.tidy(db)
+        self.assertEqual(db["races"][0]["distances"], ["10K"])
+
+    def test_media_pass_fills_missing_poster_and_route(self):
+        today = date(2026, 10, 23)
+        db = {"races": [{"id": "a", "name": "10K X", "date": "2026-11-01", "source": "https://cal.es/a"}]}
+        with mock.patch("scraper.net.get", return_value=(self.PAGE, "https://cal.es/a", "text/html")):
+            main.media(db, today, {"added": [], "updated": {}})
+        r = db["races"][0]
+        self.assertEqual(r["banner"], "https://cal.es/up/2026/cartel-10k.jpg")
+        self.assertEqual(r["route"], "https://www.strava.com/routes/123")
+        self.assertEqual(r["mediaChecked"], "2026-10-23")
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -1,6 +1,6 @@
 {
- "updatedAt": "2026-10-23T07:06:20+00:00",
- "count": 854,
+ "updatedAt": "2026-10-23T09:43:53+00:00",
+ "count": 853,
  "races": [
   {
    "name": "Carrera Popular AESAN",
@@ -9,7 +9,7 @@
    "city": "Madrid",
    "region": "Comunidad de Madrid",
    "distances": [
-    "21K"
+    "5K"
    ],
    "price": "",
    "source": "https://running.life/en/event/carrera-popular-aesan",
@@ -31,7 +31,8 @@
    "region": "Cataluña",
    "distances": [
     "10K",
-    "5K"
+    "5K",
+    "3K"
    ],
    "url": "https://cursacompanys.cat/",
    "official": true,
@@ -52,9 +53,7 @@
    "time": "10:00",
    "city": "Cabo de Palos",
    "region": "Región de Murcia",
-   "distances": [
-    "5K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://www.lineadesalida.net/carreras/xii-timoncap-costa-calida-2026",
    "official_guess": null,
@@ -96,7 +95,10 @@
    "city": "Valldemosa",
    "region": "Islas Baleares",
    "distances": [
-    "21K"
+    "16K",
+    "15K",
+    "12K",
+    "6K"
    ],
    "price": "9–32 €",
    "source": "https://running.life/en/event/cursa-des-teix",
@@ -117,7 +119,7 @@
    "city": "Pulpí",
    "region": "Andalucía",
    "distances": [
-    "21K"
+    "7,2K"
    ],
    "price": "",
    "source": "https://running.life/en/event/san-juan-de-los-terreros",
@@ -173,10 +175,7 @@
    "time": "",
    "city": "El Hierro",
    "region": "",
-   "distances": [
-    "21K",
-    "10K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://running.life/en/event/bestial-race-el-hierro",
    "official_guess": "https://ocrbestial.com/bestial-race-el-hierro/",
@@ -208,8 +207,8 @@
    "city": "La Villa de Don Fadrique",
    "region": "Castilla-La Mancha",
    "distances": [
-    "21K",
-    "10K"
+    "10K",
+    "5K"
    ],
    "price": "",
    "source": "https://running.life/en/event/carrera-popular-la-villa-de-don-fadrique-10k",
@@ -246,9 +245,7 @@
    "time": "",
    "city": "Solsona",
    "region": "",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://running.life/en/event/cursa-antiracista-solsona",
    "official_guess": "https://www.inscripcions.cat/cursaantiracistasolsona2026/",
@@ -294,9 +291,7 @@
    "city": "Bilbao",
    "region": "País Vasco",
    "distances": [
-    "42K",
-    "21K",
-    "10K"
+    "42K"
    ],
    "url": "",
    "official": false,
@@ -312,9 +307,7 @@
    "time": "",
    "city": "Granollers",
    "region": "Cataluña",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "url": "",
    "official": false,
    "note": "",
@@ -367,9 +360,7 @@
    "time": "",
    "city": "Bera",
    "region": "Navarra",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://running.life/en/event/lizuniako-egoera",
    "official_guess": "https://pb-organisation.com/evenements/lizuniako-igoera/",
@@ -401,7 +392,9 @@
    "time": "",
    "city": "Pulpá",
    "region": "Andalucía",
-   "distances": [],
+   "distances": [
+    "10K"
+   ],
    "price": "",
    "source": "https://sportmaniacs.com/es/races/pulpi---circuito-de-carreras-populares-diputacin-de-almera-2026",
    "official_guess": "https://sportmaniacs.com/es/races/pulpi---circuito-de-carreras-populares-diputacin-de-almera-2026",
@@ -444,10 +437,7 @@
    "time": "",
    "city": "Quijorna",
    "region": "Comunidad de Madrid",
-   "distances": [
-    "21K",
-    "10K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://running.life/en/event/survivor-madrid-quijorna",
    "official_guess": "https://survivor-race.com/carreras/survivor-madrid-quijorna/",
@@ -464,7 +454,9 @@
    "city": "Olot",
    "region": "",
    "distances": [
-    "21K"
+    "42K",
+    "24K",
+    "9K"
    ],
    "price": "",
    "source": "https://running.life/en/event/trepitja-garrotxa-solidaria",
@@ -562,6 +554,7 @@
    "city": "Valencia",
    "region": "Comunidad Valenciana",
    "distances": [
+    "42K",
     "21K"
    ],
    "price": "3–100 €",
@@ -622,10 +615,7 @@
    "time": "09:00",
    "city": "Madrid",
    "region": "Comunidad de Madrid",
-   "distances": [
-    "42K",
-    "10K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://www.carreraspopulares.com/carrera/derbi-de-las-aficiones",
    "official_guess": null,
@@ -662,10 +652,7 @@
    "time": "09:30",
    "city": "Huesca",
    "region": "Aragón",
-   "distances": [
-    "42K",
-    "8K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://www.carreraspopulares.com/carrera/carrera-de-las-empresas-de-huesca",
    "official_guess": null,
@@ -706,9 +693,7 @@
    "time": "10:00",
    "city": "Torrejón de Ardoz",
    "region": "Comunidad de Madrid",
-   "distances": [
-    "10K"
-   ],
+   "distances": [],
    "url": "",
    "official": false,
    "note": "",
@@ -723,9 +708,7 @@
    "time": "10:00",
    "city": "Coslada",
    "region": "Comunidad de Madrid",
-   "distances": [
-    "10K"
-   ],
+   "distances": [],
    "url": "https://unionatleticacoslada.com/agenda-deportiva-union-atletica-coslada/",
    "official": true,
    "note": "",
@@ -744,7 +727,7 @@
    "city": "Barberà del Vallès",
    "region": "Cataluña",
    "distances": [
-    "21K"
+    "5K"
    ],
    "price": "8–20 €",
    "source": "https://running.life/en/event/cursa-de-barbera-del-valles",
@@ -766,9 +749,7 @@
    "time": "10:00",
    "city": "Monreal del Campo",
    "region": "Aragón",
-   "distances": [
-    "42K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://www.carreraspopulares.com/carrera/carrera-del-azafran-monreal-del-campo",
    "official_guess": null,
@@ -845,7 +826,8 @@
    "city": "Montehermoso",
    "region": "Extremadura",
    "distances": [
-    "21K"
+    "21K",
+    "10K"
    ],
    "price": "12–15 €",
    "source": "https://running.life/en/event/media-maraton-villa-de-montehermoso",
@@ -867,7 +849,6 @@
    "city": "Socuéllamos",
    "region": "",
    "distances": [
-    "21K",
     "10K"
    ],
    "price": "2–16 €",
@@ -889,7 +870,10 @@
    "city": "Rincón de la Victoria",
    "region": "Andalucía",
    "distances": [
-    "21K"
+    "12K",
+    "10K",
+    "7K",
+    "6K"
    ],
    "price": "15–52,89 €",
    "source": "https://running.life/en/event/desafio-malaga",
@@ -911,7 +895,8 @@
    "city": "Salinas",
    "region": "Asturias",
    "distances": [
-    "10K"
+    "10K",
+    "5K"
    ],
    "url": "https://www.321go.es/Carrera/Detail/538-vedicindelos10kmdesalinas",
    "official": true,
@@ -956,7 +941,9 @@
    "time": "11:00",
    "city": "Valle de Santa Ana",
    "region": "Extremadura",
-   "distances": [],
+   "distances": [
+    "7K"
+   ],
    "price": "",
    "source": "https://sportmaniacs.com/es/races/xxvii-carrera-popular-valle-de-santa-ana-2026",
    "official_guess": "https://sportmaniacs.com/es/races/xxvii-carrera-popular-valle-de-santa-ana-2026",
@@ -1003,7 +990,7 @@
    "city": "Isla de la Cartuja",
    "region": "Andalucía",
    "distances": [
-    "21K"
+    "5,2K"
    ],
    "price": "6–10 €",
    "source": "https://running.life/en/event/tus-kilometros-nos-dan-vida-sevilla",
@@ -1081,7 +1068,8 @@
    "city": "Laza",
    "region": "Galicia",
    "distances": [
-    "21K"
+    "21K",
+    "11K"
    ],
    "price": "",
    "source": "https://running.life/en/event/a-media-do-camino",
@@ -1105,7 +1093,8 @@
    "region": "",
    "distances": [
     "10K",
-    "5K"
+    "5K",
+    "3K"
    ],
    "price": "",
    "source": "https://sportmaniacs.com/es/races/barbie-run-puebla-2026",
@@ -1174,9 +1163,7 @@
    "time": "",
    "city": "Santiago de Compostela",
    "region": "Galicia",
-   "distances": [
-    "12K"
-   ],
+   "distances": [],
    "url": "",
    "official": false,
    "note": "",
@@ -1190,9 +1177,7 @@
    "time": "",
    "city": "Cospeito",
    "region": "Galicia",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://running.life/en/event/carreira-popular-concello-de-cospeito",
    "official_guess": "https://terrachallenge.es/es/web/evento/3394/",
@@ -1211,10 +1196,7 @@
    "time": "",
    "city": "A Coruña",
    "region": "Galicia",
-   "distances": [
-    "6K",
-    "3K"
-   ],
+   "distances": [],
    "url": "https://corunacorre.com/",
    "official": true,
    "note": "",
@@ -1278,7 +1260,8 @@
    "city": "Miranda de Ebro",
    "region": "Castilla y León",
    "distances": [
-    "10K"
+    "10K",
+    "3K"
    ],
    "url": "https://idjinscripciones.burgos.es/inscripcion/ii-carrera-cruzando-miranda/",
    "official": true,
@@ -1300,9 +1283,7 @@
    "time": "",
    "city": "Getafe",
    "region": "Comunidad de Madrid",
-   "distances": [
-    "5K"
-   ],
+   "distances": [],
    "url": "",
    "official": false,
    "note": "",
@@ -1334,9 +1315,9 @@
    "city": "Redován",
    "region": "Comunidad Valenciana",
    "distances": [
-    "21K",
     "10K",
-    "5K"
+    "5K",
+    "3,5K"
    ],
    "price": "12 €",
    "source": "https://running.life/en/event/carrera-popular-5k-y-10k-redovan",
@@ -1356,10 +1337,7 @@
    "time": "",
    "city": "Aguilar de la Frontera",
    "region": "Andalucía",
-   "distances": [
-    "10K",
-    "5K"
-   ],
+   "distances": [],
    "url": "",
    "official": false,
    "note": "",
@@ -1413,7 +1391,8 @@
    "city": "Santander",
    "region": "Cantabria",
    "distances": [
-    "21K"
+    "10K",
+    "5K"
    ],
    "price": "",
    "source": "https://running.life/en/event/carrera-popular-dm",
@@ -1437,7 +1416,7 @@
    "region": "Comunidad de Madrid",
    "distances": [
     "10K",
-    "5K"
+    "4K"
    ],
    "url": "https://carrerapopulardiadelictus.es/",
    "official": true,
@@ -1475,7 +1454,10 @@
    "city": "Utrera",
    "region": "Andalucía",
    "distances": [
-    "21K"
+    "19,8K",
+    "17,1K",
+    "13,1K",
+    "12,2K"
    ],
    "url": "https://inscripciones.tecnocrono.com/inscripcion/carrera-popular-paseo-de-consolacion-memorial-dionisio-delgado/",
    "official": true,
@@ -1497,9 +1479,7 @@
    "time": "",
    "city": "Yunquera de Henares",
    "region": "Castilla-La Mancha",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://running.life/en/event/carrera-popular-ruta-de-las-ermitas",
    "official_guess": "https://www.deporticket.com/web-evento/13960-xvi-carrera-popular-ruta-de-las-ermitas",
@@ -1516,7 +1496,9 @@
    "city": "Abarán",
    "region": "Región de Murcia",
    "distances": [
-    "21K"
+    "10K",
+    "5K",
+    "3K"
    ],
    "url": "https://www.alcanzatumeta.es/xix-carrera-popular-ruta-de-las-norias-2026/",
    "official": true,
@@ -1553,7 +1535,10 @@
    "city": "Olivares",
    "region": "Andalucía",
    "distances": [
-    "10K"
+    "18,4K",
+    "15,5K",
+    "14,8K",
+    "10,6K"
    ],
    "url": "https://inscripciones.tecnocrono.com/inscripcion/xxvii-carrera-popular-villa-de-olivares/",
    "official": true,
@@ -1575,7 +1560,8 @@
    "city": "San Pedro",
    "region": "Región de Murcia",
    "distances": [
-    "21K"
+    "10K",
+    "5K"
    ],
    "price": "",
    "source": "https://running.life/en/event/carrera-popular-de-patino",
@@ -1595,9 +1581,7 @@
    "time": "",
    "city": "San Cristóbal de La Laguna",
    "region": "Canarias",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "url": "",
    "official": false,
    "note": "",
@@ -1636,9 +1620,7 @@
    "time": "",
    "city": "Badajoz",
    "region": "Extremadura",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "url": "",
    "official": false,
    "note": "",
@@ -1654,9 +1636,7 @@
    "time": "",
    "city": "Salamanca",
    "region": "Castilla y León",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "url": "",
    "official": false,
    "note": "",
@@ -1673,7 +1653,8 @@
    "city": "Málaga",
    "region": "Andalucía",
    "distances": [
-    "21K"
+    "10K",
+    "5K"
    ],
    "price": "",
    "source": "https://running.life/en/event/carrera-urbana-ciudad-de-malaga",
@@ -1694,9 +1675,7 @@
    "time": "",
    "city": "León",
    "region": "Castilla y León",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://running.life/en/event/carrera-de-la-mujer-contra-el-cancer-de-mama",
    "official_guess": "https://ccnorte.com/evento/detalle/page/1/id/3386/xii-carrera-de-la-mujer-almom-drasanvi-2026-contra-el-cancer-de-mama",
@@ -1758,7 +1737,7 @@
    "city": "Terrassa",
    "region": "Cataluña",
    "distances": [
-    "21K"
+    "5K"
    ],
    "price": "10 €",
    "source": "https://running.life/en/event/cursa-familiar-per-la-vida-terrassa",
@@ -1778,9 +1757,7 @@
    "time": "",
    "city": "Terrassa",
    "region": "Cataluña",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://running.life/en/event/cursa-solidaria-pau-dinares-terrassa",
    "official_guess": "https://dina35.org/activitat/cursa-solidaria-dina35/",
@@ -1796,9 +1773,7 @@
    "time": "",
    "city": "Lérida",
    "region": "Cataluña",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://running.life/en/event/cursa-de-campus-a-campus-udl",
    "official_guess": "https://estudiantat.udl.cat/ca/ce/CEUdL/275/",
@@ -1814,9 +1789,7 @@
    "time": "",
    "city": "Vilanova de la Barca",
    "region": "Cataluña",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://running.life/en/event/cursa-de-la-barca",
    "official_guess": "https://getracer.com/pulsepoint/event/la-barca-cursa-de-la-barca-wExGjV0G1W",
@@ -1833,9 +1806,7 @@
    "time": "",
    "city": "Córdoba",
    "region": "Andalucía",
-   "distances": [
-    "5K"
-   ],
+   "distances": [],
    "url": "",
    "official": false,
    "note": "",
@@ -1851,7 +1822,10 @@
    "city": "Madrid",
    "region": "Comunidad de Madrid",
    "distances": [
-    "21K"
+    "10K",
+    "9K",
+    "8K",
+    "7K"
    ],
    "price": "17–19 €",
    "source": "https://running.life/en/event/el-derbi-de-las-aficiones",
@@ -1893,9 +1867,7 @@
    "time": "",
    "city": "Súria",
    "region": "",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://running.life/en/event/escaldada",
    "official_guess": "https://dsport.cat/ca/fitxa_cursa.php?id_cursa=1185",
@@ -1912,7 +1884,8 @@
    "city": "Toledo",
    "region": "Castilla-La Mancha",
    "distances": [
-    "5K"
+    "6K",
+    "4K"
    ],
    "price": "5–12 €",
    "source": "https://sportmaniacs.com/es/races/iii-carrera-amp-marcha-solidaria-del-hospital-nacional-de-parapljicos",
@@ -1950,7 +1923,8 @@
    "city": "Lasarte-Oria",
    "region": "País Vasco",
    "distances": [
-    "10K"
+    "10K",
+    "5K"
    ],
    "url": "https://web.rockthesport.com/es/event/29-lasarte-oria-bai",
    "official": true,
@@ -2006,7 +1980,8 @@
    "city": "Huelva",
    "region": "Andalucía",
    "distances": [
-    "21K"
+    "5K",
+    "4,5K"
    ],
    "price": "10 €",
    "source": "https://running.life/en/event/huelva-en-marcha-contra-el-cancer",
@@ -2028,7 +2003,7 @@
    "city": "Tarifa",
    "region": "Ceuta",
    "distances": [
-    "21K"
+    "5K"
    ],
    "price": "",
    "source": "https://running.life/en/event/marcha-contra-el-cancer-en-tarifa",
@@ -2126,8 +2101,7 @@
    "city": "El Vendrell",
    "region": "Cataluña",
    "distances": [
-    "21K",
-    "10K"
+    "21K"
    ],
    "url": "",
    "official": false,
@@ -2160,7 +2134,10 @@
    "time": "",
    "city": "Sant Sadurná d&#039;Anoia",
    "region": "Cataluña",
-   "distances": [],
+   "distances": [
+    "41K",
+    "22K"
+   ],
    "price": "",
    "source": "https://sportmaniacs.com/es/races/open-maxxis-marathon-sant-sadurni-danoia-2026",
    "official_guess": "https://sportmaniacs.com/es/races/open-maxxis-marathon-sant-sadurni-danoia-2026",
@@ -2182,7 +2159,7 @@
    "city": "Santa Fe",
    "region": "Andalucía",
    "distances": [
-    "21K"
+    "10K"
    ],
    "price": "10–50 €",
    "source": "https://running.life/en/event/prueba-de-fondo-la-hispanidad",
@@ -2204,7 +2181,7 @@
    "city": "Puerto Serrano",
    "region": "",
    "distances": [
-    "21K"
+    "5K"
    ],
    "price": "",
    "source": "https://running.life/en/event/puerto-serrano-en-marcha-contra-el-cancer",
@@ -2226,7 +2203,7 @@
    "city": "Gandía",
    "region": "Comunidad Valenciana",
    "distances": [
-    "21K"
+    "5K"
    ],
    "price": "",
    "source": "https://running.life/en/event/gandia-contra-el-cancer",
@@ -2248,6 +2225,7 @@
    "city": "Samaniego",
    "region": "País Vasco",
    "distances": [
+    "20K",
     "10K"
    ],
    "url": "https://web.rockthesport.com/es/event/wine-run-rioja-alavesa-2026",
@@ -2269,7 +2247,9 @@
    "time": "",
    "city": "Vilafranca del Penedès",
    "region": "Cataluña",
-   "distances": [],
+   "distances": [
+    "13,4K"
+   ],
    "price": "",
    "source": "https://sportmaniacs.com/es/races/xv-cursa-solidria-pas-del-cava-2026",
    "official_guess": "https://sportmaniacs.com/es/races/xv-cursa-solidria-pas-del-cava-2026",
@@ -2291,8 +2271,7 @@
    "city": "Olot",
    "region": "Cataluña",
    "distances": [
-    "42K",
-    "21K"
+    "42K"
    ],
    "url": "",
    "official": false,
@@ -2309,7 +2288,7 @@
    "city": "La Zenia",
    "region": "Canarias",
    "distances": [
-    "21K"
+    "5K"
    ],
    "price": "",
    "source": "https://running.life/en/event/sokolsky-beh-republiky-cabo-roig",
@@ -2330,7 +2309,8 @@
    "city": "Torremolinos",
    "region": "Andalucía",
    "distances": [
-    "21K"
+    "5,1K",
+    "5K"
    ],
    "price": "10–13 €",
    "source": "https://running.life/en/event/carrera-solidaria-ruta-091-torremolinos",
@@ -2350,9 +2330,7 @@
    "time": "19:00",
    "city": "Alginet",
    "region": "Comunidad Valenciana",
-   "distances": [
-    "42K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://www.carreraspopulares.com/carrera/carrera-nocturna-los-lagos",
    "official_guess": null,
@@ -2370,7 +2348,8 @@
    "city": "La Parra",
    "region": "",
    "distances": [
-    "21K"
+    "42K",
+    "15K"
    ],
    "price": "",
    "source": "https://running.life/en/event/ultra-de-los-castillos",
@@ -2392,7 +2371,7 @@
    "city": "Las Rosas",
    "region": "Canarias",
    "distances": [
-    "21K"
+    "5K"
    ],
    "price": "",
    "source": "https://running.life/en/event/minze-dark-horse",
@@ -2413,10 +2392,7 @@
    "time": "08:00",
    "city": "Xixona",
    "region": "Comunidad Valenciana",
-   "distances": [
-    "42K",
-    "15K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://www.carreraspopulares.com/carrera/pujada-a-la-penya-migjorn",
    "official_guess": null,
@@ -2434,7 +2410,8 @@
    "city": "La Garriga",
    "region": "",
    "distances": [
-    "21K"
+    "21K",
+    "10K"
    ],
    "price": "8–50 €",
    "source": "https://running.life/en/event/el-tast-de-la-mitja",
@@ -2455,7 +2432,7 @@
    "city": "Porcuna",
    "region": "",
    "distances": [
-    "21K"
+    "5K"
    ],
    "price": "8 €",
    "source": "https://running.life/en/event/carrera-popular-monumentos-aceite-y-piedra",
@@ -2475,9 +2452,7 @@
    "time": "19:15",
    "city": "Antequera",
    "region": "",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "price": "10–13 €",
    "source": "https://running.life/en/event/carrera-solidaria-ruta-091-antequera",
    "official_guess": "https://ruta091.es/carrera/carrera-solidaria-ruta-091-antequera-2026",
@@ -2496,7 +2471,8 @@
    "city": "Cox",
    "region": "Comunidad Valenciana",
    "distances": [
-    "21K"
+    "5,3K",
+    "5K"
    ],
    "price": "5–10 €",
    "source": "https://running.life/en/event/carrera-solidaria-de-cox",
@@ -2517,7 +2493,6 @@
    "city": "Oliva",
    "region": "Comunidad Valenciana",
    "distances": [
-    "21K",
     "10K"
    ],
    "price": "",
@@ -2557,7 +2532,10 @@
    "city": "Vergara",
    "region": "",
    "distances": [
-    "21K"
+    "13,7K",
+    "12,7K",
+    "10,5K",
+    "9,5K"
    ],
    "price": "20 €",
    "source": "https://running.life/en/event/antxintxika-lasterketa",
@@ -2579,7 +2557,8 @@
    "city": "Villanueva de Alcardete",
    "region": "",
    "distances": [
-    "21K"
+    "10K",
+    "5K"
    ],
    "price": "8–20 €",
    "source": "https://running.life/en/event/10k-i-carrera-bodegas-latue",
@@ -2599,9 +2578,7 @@
    "time": "",
    "city": "El Provencio",
    "region": "",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "price": "2–18 €",
    "source": "https://running.life/en/event/carrera-popular-zancara-canforrales",
    "official_guess": "https://www.circuitocarrerasdiputacioncuenca.com/index.php/pruebas/129-01-27?date=2026-10-31-16-00",
@@ -2621,7 +2598,8 @@
    "city": "La Arboleja",
    "region": "Región de Murcia",
    "distances": [
-    "21K"
+    "10K",
+    "5K"
    ],
    "price": "",
    "source": "https://running.life/en/event/carrera-popular-de-la-arboleja",
@@ -2643,9 +2621,9 @@
    "region": "Navarra",
    "distances": [
     "21K",
-    "16K",
-    "11K",
-    "6K"
+    "20K",
+    "15K",
+    "10K"
    ],
    "url": "https://web.rockthesport.com/es/event/lasmurallas26",
    "official": true,
@@ -2666,9 +2644,7 @@
    "time": "",
    "city": "Motrico",
    "region": "País Vasco",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://running.life/en/event/mutriku-herri-krosa",
    "official_guess": "https://herrikrosa.eus/Carreras2.asp?carrera=723&Submit=Enviar",
@@ -2687,7 +2663,10 @@
    "city": "Obón",
    "region": "Aragón",
    "distances": [
-    "5K"
+    "36K",
+    "33K",
+    "26K",
+    "18K"
    ],
    "price": "15 €",
    "source": "https://sportmaniacs.com/es/races/oboncross-x",
@@ -2709,10 +2688,7 @@
    "time": "",
    "city": "Perdiguera",
    "region": "Aragón",
-   "distances": [
-    "21K",
-    "5K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://running.life/en/event/wolf-race-perdiguera",
    "official_guess": "https://www.deporticket.com/web-evento/13688-wolf-race-perdiguera",
@@ -2729,7 +2705,8 @@
    "city": "Barcelona",
    "region": "Cataluña",
    "distances": [
-    "21K"
+    "11K",
+    "10K"
    ],
    "price": "19–23 €",
    "source": "https://running.life/en/event/montjuic-tibidabo",
@@ -2766,9 +2743,7 @@
    "time": "10:00",
    "city": "Lavern",
    "region": "Cataluña",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://running.life/en/event/cursa-de-les-caves",
    "official_guess": "https://www.weevens.com/esdeveniments/cursa-de-muntanya-serralats/",
@@ -2787,7 +2762,7 @@
    "distances": [
     "21K",
     "10K",
-    "5K"
+    "4,5K"
    ],
    "url": "https://www.elitechip.net/index.php?zwshow=compdet&idcomp=7380180",
    "official": true,
@@ -2895,10 +2870,7 @@
    "time": "",
    "city": "Madrid (Vallehermoso)",
    "region": "Comunidad de Madrid",
-   "distances": [
-    "10K",
-    "6K"
-   ],
+   "distances": [],
    "url": "",
    "official": false,
    "note": "",
@@ -2913,10 +2885,7 @@
    "time": "",
    "city": "Daganzo",
    "region": "Comunidad de Madrid",
-   "distances": [
-    "10K",
-    "5K"
-   ],
+   "distances": [],
    "url": "",
    "official": false,
    "note": "",
@@ -2931,9 +2900,7 @@
    "time": "",
    "city": "Brenes",
    "region": "Andalucía",
-   "distances": [
-    "9K"
-   ],
+   "distances": [],
    "url": "",
    "official": false,
    "note": "",
@@ -2984,8 +2951,10 @@
    "city": "San Vicente de Barakaldo",
    "region": "País Vasco",
    "distances": [
-    "21K",
-    "10K"
+    "13,4K",
+    "11,3K",
+    "10K",
+    "8,2K"
    ],
    "price": "15–16,5 €",
    "source": "https://running.life/en/event/halloweenrun-zorroza-bilbao-10k",
@@ -3007,7 +2976,8 @@
    "city": "Vitoria-Gasteiz",
    "region": "",
    "distances": [
-    "21K"
+    "10K",
+    "5K"
    ],
    "price": "3–26 €",
    "source": "https://running.life/en/event/la-conquista-de-la-almendra",
@@ -3028,7 +2998,7 @@
    "city": "Oviedo",
    "region": "Asturias",
    "distances": [
-    "21K"
+    "5K"
    ],
    "price": "5–11 €",
    "source": "https://running.life/en/event/rotary-club-de-oviedo",
@@ -3050,7 +3020,7 @@
    "city": "Navás",
    "region": "",
    "distances": [
-    "21K"
+    "5K"
    ],
    "price": "",
    "source": "https://running.life/en/event/trenca-3-pics",
@@ -3071,6 +3041,7 @@
    "city": "Baños de Molgas",
    "region": "Galicia",
    "distances": [
+    "20K",
     "10K"
    ],
    "price": "10 €",
@@ -3094,7 +3065,7 @@
    "city": "Monachil",
    "region": "",
    "distances": [
-    "21K"
+    "10K"
    ],
    "price": "",
    "source": "https://running.life/en/event/dual-run-monachil-academia-puerta-real",
@@ -3132,9 +3103,7 @@
    "time": "",
    "city": "Tejeda",
    "region": "Canarias",
-   "distances": [
-    "42K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://www.carreraspopulares.com/carrera/challenge-gran-canaria",
    "official_guess": null,
@@ -3152,8 +3121,7 @@
    "city": "Eslida",
    "region": "Comunidad Valenciana",
    "distances": [
-    "42K",
-    "5K"
+    "42K"
    ],
    "price": "",
    "source": "https://www.carreraspopulares.com/carrera/marato-dels-dements",
@@ -3172,7 +3140,6 @@
    "city": "Náquera",
    "region": "Comunidad Valenciana",
    "distances": [
-    "21K",
     "10K"
    ],
    "price": "10 €",
@@ -3196,7 +3163,7 @@
    "city": "Isla de la Cartuja",
    "region": "Andalucía",
    "distances": [
-    "21K"
+    "5K"
    ],
    "price": "",
    "source": "https://running.life/en/event/carrera-solidaria-guerreros-spatanos",
@@ -3218,7 +3185,7 @@
    "city": "Balaguer",
    "region": "Cataluña",
    "distances": [
-    "21K"
+    "5K"
    ],
    "price": "3–30 €",
    "source": "https://running.life/en/event/cursa-del-sant-crist-de-balaguer",
@@ -3258,7 +3225,8 @@
    "city": "Sagunto",
    "region": "Comunidad Valenciana",
    "distances": [
-    "21K"
+    "10K",
+    "5K"
    ],
    "price": "12 €",
    "source": "https://running.life/en/event/carrera-solidaria-con-otra-mirada",
@@ -3281,7 +3249,7 @@
    "city": "Puerto de Palma",
    "region": "Islas Baleares",
    "distances": [
-    "21K"
+    "4,5K"
    ],
    "price": "20 €",
    "source": "https://running.life/en/event/social-sunset-run-palma",
@@ -3301,7 +3269,8 @@
    "city": "Mora de Rubielos",
    "region": "",
    "distances": [
-    "21K"
+    "16K",
+    "10K"
    ],
    "price": "12–25 €",
    "source": "https://running.life/en/event/nocturna-feria-de-mora",
@@ -3324,7 +3293,8 @@
    "city": "Las Palmas de Gran Canaria",
    "region": "Canarias",
    "distances": [
-    "21K"
+    "10K",
+    "5K"
    ],
    "price": "",
    "source": "https://running.life/en/event/binter-nightrun-las-palmas-de-gran-canaria",
@@ -3345,9 +3315,7 @@
    "time": "",
    "city": "Vigo",
    "region": "",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://running.life/en/event/carrera-contra-el-cancer-de-pancreas-vigo",
    "official_guess": "https://www.deporticket.com/web-evento/13886-i-carrera-de-las-ciudades-contra-el-cancer-de-pancreas-vigo",
@@ -3363,9 +3331,7 @@
    "time": "",
    "city": "Güímar",
    "region": "Canarias",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "url": "",
    "official": false,
    "note": "",
@@ -3397,7 +3363,6 @@
    "city": "Albacete",
    "region": "Castilla-La Mancha",
    "distances": [
-    "21K",
     "5K"
    ],
    "price": "",
@@ -3415,9 +3380,7 @@
    "time": "",
    "city": "Dos Hermanas",
    "region": "Andalucía",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://running.life/en/event/carrera-solidaria-banco-mediolanum",
    "official_guess": null,
@@ -3435,7 +3398,7 @@
    "city": "Tarancón",
    "region": "",
    "distances": [
-    "21K"
+    "5K"
    ],
    "price": "",
    "source": "https://running.life/en/event/circuito-juan-carlos-de-la-ossa",
@@ -3457,9 +3420,7 @@
    "time": "",
    "city": "Cerdanyola del Vallès",
    "region": "Cataluña",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://running.life/en/event/cros-ciutat-de-cerdanyola",
    "official_guess": "https://www.atcerdanyola.com/curses/crosCerdanyola/",
@@ -3476,9 +3437,7 @@
    "time": "",
    "city": "O Añón de Berdillo",
    "region": "Galicia",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://running.life/en/event/cros-popular-concello-de-carballo",
    "official_guess": "https://ccnorte.com/evento/detalle/page/1/id/3393/i-cros-popular-concello-de-carballo",
@@ -3494,9 +3453,7 @@
    "time": "",
    "city": "Marratxí",
    "region": "Islas Baleares",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "url": "",
    "official": false,
    "note": "",
@@ -3513,7 +3470,8 @@
    "city": "Ascó",
    "region": "",
    "distances": [
-    "21K"
+    "10K",
+    "5K"
    ],
    "price": "",
    "source": "https://running.life/en/event/cursa-i-caminada-solidaria-asco",
@@ -3535,9 +3493,7 @@
    "time": "",
    "city": "Agoncillo",
    "region": "La Rioja",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://running.life/en/event/eolos-race-agoncillo",
    "official_guess": "https://www.deporticket.com/web-evento/13277-eolos-race-agoncillo",
@@ -3553,9 +3509,7 @@
    "time": "",
    "city": "La Pulgosa",
    "region": "Castilla-La Mancha",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://running.life/en/event/homenaje-jose-manuel-y-fernando-entrenamiento-solidario",
    "official_guess": "https://www.timingsys.com/event/800",
@@ -3573,9 +3527,7 @@
    "time": "",
    "city": "Ledaña",
    "region": "",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://running.life/en/event/las-10-mil-zancadas-de-ledana",
    "official_guess": "https://www.circuitocarrerasdiputacioncuenca.com/index.php/pruebas/130-01-28?date=2026-11-07-16-00",
@@ -3595,7 +3547,6 @@
    "city": "Cabacés",
    "region": "",
    "distances": [
-    "21K",
     "8K",
     "5K"
    ],
@@ -3618,7 +3569,9 @@
    "time": "",
    "city": "Puerto Barrios",
    "region": "",
-   "distances": [],
+   "distances": [
+    "25,8K"
+   ],
    "price": "",
    "source": "https://sportmaniacs.com/es/races/tri-del-caribe-2026",
    "official_guess": "https://sportmaniacs.com/es/races/tri-del-caribe-2026",
@@ -3663,7 +3616,7 @@
    "city": "Villanueva y Geltrú",
    "region": "",
    "distances": [
-    "21K"
+    "5K"
    ],
    "price": "",
    "source": "https://running.life/en/event/vilanova-night-run",
@@ -3699,7 +3652,7 @@
    "city": "Santa Eulalia del Río",
    "region": "Islas Baleares",
    "distances": [
-    "5K"
+    "6K"
    ],
    "price": "6 €",
    "source": "https://sportmaniacs.com/es/races/xii-cursa-sant-carles-xtrem",
@@ -3722,7 +3675,9 @@
    "city": "Beuda",
    "region": "",
    "distances": [
-    "21K"
+    "42K",
+    "21K",
+    "12K"
    ],
    "price": "10–43 €",
    "source": "https://running.life/en/event/marato-de-la-mare-de-deu-del-mont",
@@ -3735,23 +3690,6 @@
    "nosite": false,
    "regulation": "https://curses.cat/mdm2026/reglament.pdf",
    "km": "42 km · 21 km · 12 km"
-  },
-  {
-   "name": "Desafío Hybrid Race San Pedro del Pinatar",
-   "date": "2026-11-08",
-   "time": "08:00",
-   "city": "San Pedro del Pinatar",
-   "region": "Región de Murcia",
-   "distances": [],
-   "price": "",
-   "source": "https://www.lineadesalida.net/carreras/desafio-hybrid-race-san-pedro-del-pinatar",
-   "official_guess": null,
-   "id": "desafio-hybrid-race-san-pedro-del-pinatar-san-pedro-del-pinatar-08-11-2026-2026-1108",
-   "official": false,
-   "url": "",
-   "addedAt": "2026-10-23",
-   "checkedAt": "2026-10-23",
-   "nosite": true
   },
   {
    "name": "Generali Maratón Málaga",
@@ -3798,8 +3736,8 @@
    "city": "Castellón de la Plana",
    "region": "Comunidad Valenciana",
    "distances": [
-    "21K",
-    "10K"
+    "10K",
+    "5K"
    ],
    "price": "",
    "source": "https://running.life/en/event/5k-y-10k-el-corte-ingles",
@@ -3820,7 +3758,7 @@
    "city": "Valencia",
    "region": "Comunidad Valenciana",
    "distances": [
-    "21K"
+    "5K"
    ],
    "price": "3–10 €",
    "source": "https://running.life/en/event/carrera-por-la-solidaridad",
@@ -3879,7 +3817,11 @@
    "time": "09:30",
    "city": "Salvatierra de los Barros",
    "region": "Extremadura",
-   "distances": [],
+   "distances": [
+    "26K",
+    "14K",
+    "6K"
+   ],
    "price": "18 €",
    "source": "https://sportmaniacs.com/es/races/ivtrail-salvatrail-ndash-salvatierra-de-los-barros-2026",
    "official_guess": "https://sportmaniacs.com/es/races/ivtrail-salvatrail-ndash-salvatierra-de-los-barros-2026",
@@ -3901,7 +3843,6 @@
    "city": "Talavera de la Reina",
    "region": "Castilla-La Mancha",
    "distances": [
-    "21K",
     "10K"
    ],
    "url": "https://www.udat.es/",
@@ -3922,7 +3863,6 @@
    "city": "Fuengirola",
    "region": "Andalucía",
    "distances": [
-    "21K",
     "5K"
    ],
    "url": "https://olarivers.com/eventos/ix-media-maraton-de-fuengirola/",
@@ -3966,7 +3906,8 @@
    "city": "Murcia",
    "region": "Región de Murcia",
    "distances": [
-    "21K"
+    "10K",
+    "5K"
    ],
    "url": "https://web.rockthesport.com/es/event/murcia-en-marcha-contra-el-cancer-2026",
    "official": true,
@@ -3988,9 +3929,7 @@
    "time": "10:00",
    "city": "Zaragoza",
    "region": "Aragón",
-   "distances": [
-    "10K"
-   ],
+   "distances": [],
    "url": "",
    "official": false,
    "note": "",
@@ -4031,7 +3970,8 @@
    "city": "San Antonio Abad",
    "region": "Islas Baleares",
    "distances": [
-    "21K"
+    "5K",
+    "3K"
    ],
    "price": "5–10 €",
    "source": "https://running.life/en/event/sant-antoni-camina-amb-el-cancer",
@@ -4051,7 +3991,9 @@
    "time": "10:00",
    "city": "Grazalema",
    "region": "Andalucía",
-   "distances": [],
+   "distances": [
+    "11K"
+   ],
    "price": "10 €",
    "source": "https://sportmaniacs.com/es/races/xlvi-carrera-popular-villa-de-grazalema",
    "official_guess": "https://sportmaniacs.com/es/races/xlvi-carrera-popular-villa-de-grazalema",
@@ -4073,8 +4015,7 @@
    "city": "Madrid (Moratalaz)",
    "region": "Comunidad de Madrid",
    "distances": [
-    "21K",
-    "10K"
+    "21K"
    ],
    "url": "",
    "official": false,
@@ -4115,7 +4056,7 @@
    "city": "Badajoz",
    "region": "Extremadura",
    "distances": [
-    "21K"
+    "5K"
    ],
    "price": "3 €",
    "source": "https://running.life/en/event/carrera-por-la-salud",
@@ -4137,7 +4078,7 @@
    "city": "Estepona",
    "region": "",
    "distances": [
-    "21K"
+    "5K"
    ],
    "price": "10–12 €",
    "source": "https://running.life/en/event/ruta-091-estepona",
@@ -4232,8 +4173,8 @@
    "city": "La Solana",
    "region": "",
    "distances": [
-    "21K",
-    "10K"
+    "10K",
+    "5K"
    ],
    "price": "2–16 €",
    "source": "https://running.life/en/event/10k-antonio-serrano-la-solana",
@@ -4253,7 +4194,9 @@
    "time": "",
    "city": "Sant Cugat del Vallès",
    "region": "Cataluña",
-   "distances": [],
+   "distances": [
+    "5,5K"
+   ],
    "price": "",
    "source": "https://sportmaniacs.com/es/races/28e-cros-ciutat-de-sant-cugat",
    "official_guess": "https://sportmaniacs.com/es/races/28e-cros-ciutat-de-sant-cugat",
@@ -4275,7 +4218,8 @@
    "city": "Cieza",
    "region": "Región de Murcia",
    "distances": [
-    "21K"
+    "10K",
+    "5K"
    ],
    "price": "2–10 €",
    "source": "https://running.life/en/event/55-solidarios-alcanzando-metas",
@@ -4312,9 +4256,7 @@
    "time": "",
    "city": "Alfafar",
    "region": "Comunidad Valenciana",
-   "distances": [
-    "8K"
-   ],
+   "distances": [],
    "url": "",
    "official": false,
    "note": "",
@@ -4345,10 +4287,7 @@
    "time": "",
    "city": "Ourense",
    "region": "Galicia",
-   "distances": [
-    "10K",
-    "5K"
-   ],
+   "distances": [],
    "url": "https://www.carreirasgalegas.com/events/xlix-carreira-pedestre-popular-do-san-martino/V9LyyPjJ",
    "official": true,
    "note": "",
@@ -4366,7 +4305,6 @@
    "city": "Castro del Río",
    "region": "",
    "distances": [
-    "21K",
     "10K"
    ],
    "price": "",
@@ -4405,7 +4343,10 @@
    "city": "Daganzo de Arriba",
    "region": "Comunidad de Madrid",
    "distances": [
-    "21K"
+    "23K",
+    "19,7K",
+    "16,6K",
+    "16K"
    ],
    "price": "12 €",
    "source": "https://running.life/en/event/carrera-popular-villa-de-daganzo",
@@ -4426,9 +4367,7 @@
    "time": "",
    "city": "La Mojonera",
    "region": "Andalucía",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://running.life/en/event/carrera-popular-la-mojonera",
    "official_guess": "https://web.faalive.com/ch/2026/14565/",
@@ -4462,7 +4401,8 @@
    "city": "Béznar",
    "region": "",
    "distances": [
-    "21K"
+    "10K",
+    "6K"
    ],
    "price": "4–12 €",
    "source": "https://running.life/en/event/carrera-solidaria-ponteenmarchaya-lecrin",
@@ -4499,7 +4439,8 @@
    "city": "Cáceres",
    "region": "Extremadura",
    "distances": [
-    "21K"
+    "10K",
+    "5K"
    ],
    "price": "12 €",
    "source": "https://running.life/en/event/carrera-solidaria-virgen-del-pilar-caceres",
@@ -4542,7 +4483,8 @@
    "city": "Derramador",
    "region": "Comunidad Valenciana",
    "distances": [
-    "21K"
+    "10K",
+    "5K"
    ],
    "price": "",
    "source": "https://running.life/en/event/carrera-y-marcha-mil-camins-una-meta",
@@ -4597,7 +4539,9 @@
    "time": "",
    "city": "Recoleta",
    "region": "",
-   "distances": [],
+   "distances": [
+    "7K"
+   ],
    "price": "",
    "source": "https://sportmaniacs.com/es/races/corrida-familiar-recoleta-2026",
    "official_guess": "https://sportmaniacs.com/es/races/corrida-familiar-recoleta-2026",
@@ -4619,7 +4563,7 @@
    "city": "Granollers",
    "region": "Cataluña",
    "distances": [
-    "21K"
+    "10K"
    ],
    "price": "",
    "source": "https://running.life/en/event/cros-de-granollers",
@@ -4638,9 +4582,7 @@
    "time": "",
    "city": "Santa Oliva",
    "region": "Cataluña",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://running.life/en/event/cursa-montanyans",
    "official_guess": "https://www.weevens.com/esdeveniments/cursa-montanyans/",
@@ -4671,9 +4613,7 @@
    "time": "",
    "city": "Madrid",
    "region": "Comunidad de Madrid",
-   "distances": [
-    "10K"
-   ],
+   "distances": [],
    "url": "",
    "official": false,
    "note": "",
@@ -4721,9 +4661,7 @@
    "time": "",
    "city": "Ferrol",
    "region": "Galicia",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://running.life/en/event/ferrol-en-marcha-contra-o-cancro",
    "official_guess": "https://www.carreirasgalegas.com/events/xiii-ferrol-en-marcha-contra-o-cancro/VjK3npjJ",
@@ -4741,7 +4679,8 @@
    "city": "Beirut",
    "region": "",
    "distances": [
-    "10K"
+    "10K",
+    "5K"
    ],
    "price": "",
    "source": "https://sportmaniacs.com/es/races/lia-assurex-lets-run-for-my-beirut",
@@ -4763,9 +4702,7 @@
    "time": "",
    "city": "Cervelló",
    "region": "Cataluña",
-   "distances": [
-    "10K"
-   ],
+   "distances": [],
    "url": "",
    "official": false,
    "note": "",
@@ -4782,7 +4719,7 @@
    "city": "Yuncos",
    "region": "Castilla-La Mancha",
    "distances": [
-    "21K"
+    "5K"
    ],
    "price": "",
    "source": "https://running.life/en/event/legua-urbana-de-yuncos",
@@ -4805,7 +4742,8 @@
    "city": "Cádiz",
    "region": "Andalucía",
    "distances": [
-    "21K"
+    "21K",
+    "10K"
    ],
    "url": "https://www.cronofinisher.com/evento/iii-media-maraton-ciudad-de-cadiz/",
    "official": true,
@@ -4828,7 +4766,6 @@
    "city": "Pilar de la Horadada",
    "region": "Comunidad Valenciana",
    "distances": [
-    "21K",
     "10K",
     "5K"
    ],
@@ -4891,7 +4828,6 @@
    "city": "Tarragona",
    "region": "Cataluña",
    "distances": [
-    "21K",
     "10K"
    ],
    "url": "https://web.rockthesport.com/es/event/35a-mitja-marato-10-k-ciutat-de-tarragona-",
@@ -4914,7 +4850,6 @@
    "city": "Segovia",
    "region": "Castilla y León",
    "distances": [
-    "21K",
     "5K"
    ],
    "price": "",
@@ -4937,7 +4872,8 @@
    "city": "Olías del Rey",
    "region": "Castilla-La Mancha",
    "distances": [
-    "8K"
+    "8K",
+    "4K"
    ],
    "price": "5–10 €",
    "source": "https://sportmaniacs.com/es/races/v-carrera-solidaria-ldquokilmetros-que-dan-vidardquo",
@@ -4959,7 +4895,9 @@
    "time": "",
    "city": "Sant Josep de sa Talaia",
    "region": "Islas Baleares",
-   "distances": [],
+   "distances": [
+    "3K"
+   ],
    "price": "",
    "source": "https://sportmaniacs.com/es/races/v-gincana-ibiza-amp-formentera-preservation",
    "official_guess": "https://sportmaniacs.com/es/races/v-gincana-ibiza-amp-formentera-preservation",
@@ -5001,7 +4939,8 @@
    "city": "Ivars d'Urgell",
    "region": "",
    "distances": [
-    "21K"
+    "10K",
+    "7K"
    ],
    "price": "15–16 €",
    "source": "https://running.life/en/event/volta-a-lestany-divars-i-vila-sana",
@@ -5022,6 +4961,7 @@
    "city": "Barco de Valdeorras (O)",
    "region": "Galicia",
    "distances": [
+    "25K",
     "15K"
    ],
    "price": "18 €",
@@ -5045,7 +4985,7 @@
    "city": "Erandio",
    "region": "País Vasco",
    "distances": [
-    "5K"
+    "7K"
    ],
    "price": "",
    "source": "https://sportmaniacs.com/es/races/xxxvii-erandioko-herri-krosa",
@@ -5068,6 +5008,7 @@
    "city": "Madrid",
    "region": "Comunidad de Madrid",
    "distances": [
+    "30K",
     "10K",
     "5K"
    ],
@@ -5092,7 +5033,7 @@
    "city": "Polkowice",
    "region": "",
    "distances": [
-    "5K"
+    "5,1K"
    ],
    "price": "",
    "source": "https://sportmaniacs.com/es/races/x-polkowicki-bieg-niepodlegoci",
@@ -5114,7 +5055,9 @@
    "time": "",
    "city": "Kępno",
    "region": "",
-   "distances": [],
+   "distances": [
+    "10,3K"
+   ],
    "price": "",
    "source": "https://sportmaniacs.com/es/races/xiii-bieg-uliczny-w-marcina-o-puchar-burmistrza-miasta-i-gminy-kpno-bieg-sub-mundurowych-24294",
    "official_guess": "https://sportmaniacs.com/es/races/xiii-bieg-uliczny-w-marcina-o-puchar-burmistrza-miasta-i-gminy-kpno-bieg-sub-mundurowych-24294",
@@ -5137,7 +5080,9 @@
    "region": "Castilla-La Mancha",
    "distances": [
     "42K",
-    "21K"
+    "21K",
+    "10,6K",
+    "5,3K"
    ],
    "url": "https://web.rockthesport.com/es/event/maraton-alcarria",
    "official": true,
@@ -5160,7 +5105,9 @@
    "city": "Moralzarzal",
    "region": "Comunidad de Madrid",
    "distances": [
-    "21K"
+    "17K",
+    "9,5K",
+    "9K"
    ],
    "price": "5–32 €",
    "source": "https://running.life/en/event/moraltrail-race",
@@ -5182,7 +5129,7 @@
    "city": "Catarroja",
    "region": "Comunidad Valenciana",
    "distances": [
-    "21K"
+    "10K"
    ],
    "price": "10 €",
    "source": "https://running.life/en/event/volta-a-peu-port-de-catarroja",
@@ -5246,9 +5193,7 @@
    "time": "19:30",
    "city": "Noblejas",
    "region": "Castilla-La Mancha",
-   "distances": [
-    "42K"
-   ],
+   "distances": [],
    "url": "",
    "official": false,
    "note": "",
@@ -5264,7 +5209,9 @@
    "time": "20:00",
    "city": "Ingenio",
    "region": "Canarias",
-   "distances": [],
+   "distances": [
+    "3K"
+   ],
    "price": "5–10 €",
    "source": "https://sportmaniacs.com/es/races/viii-fluor-moon-diabetes-2026",
    "official_guess": "https://sportmaniacs.com/es/races/viii-fluor-moon-diabetes-2026",
@@ -5286,9 +5233,7 @@
    "city": "Palencia",
    "region": "Castilla y León",
    "distances": [
-    "21K",
-    "14K",
-    "7K"
+    "21K"
    ],
    "url": "",
    "official": false,
@@ -5304,9 +5249,7 @@
    "time": "",
    "city": "Alfara del Patriarca",
    "region": "Comunidad Valenciana",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://running.life/en/event/carrera-corre-sin-resistencias-valencia",
    "official_guess": "https://web.rockthesport.com/es/event/carrera-solidaria-corre-sin-resistencias-ceu-cardenal-herrera-alfara-del-patriarca",
@@ -5326,7 +5269,7 @@
    "city": "Liétor",
    "region": "",
    "distances": [
-    "21K"
+    "10K"
    ],
    "price": "",
    "source": "https://running.life/en/event/carrera-popular-lietor",
@@ -5362,7 +5305,8 @@
    "city": "Elda",
    "region": "Comunidad Valenciana",
    "distances": [
-    "21K"
+    "10K",
+    "5K"
    ],
    "price": "",
    "source": "https://running.life/en/event/circuit-de-carreres-a-peu-monover",
@@ -5382,9 +5326,7 @@
    "time": "",
    "city": "Santiago de Compostela",
    "region": "",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://running.life/en/event/corresan-ruta-da-prata-angrois-memorial-manolo-moure",
    "official_guess": "https://www.carreirasgalegas.com/events/xii-corresan-ruta-da-prata-angrois-memorial-manolo-moure/AmkKJ4m4",
@@ -5402,8 +5344,7 @@
    "city": "Ikaztegieta",
    "region": "",
    "distances": [
-    "21K",
-    "10K"
+    "4,5K"
    ],
    "price": "",
    "source": "https://running.life/en/event/ikaztegieta-45k-mistoa",
@@ -5424,7 +5365,8 @@
    "city": "Santa Cruz de la Palma",
    "region": "Canarias",
    "distances": [
-    "21K"
+    "10K",
+    "5K"
    ],
    "price": "2,5 €",
    "source": "https://running.life/en/event/la-palma-music-run-night",
@@ -5446,7 +5388,9 @@
    "city": "Mijas",
    "region": "Andalucía",
    "distances": [
-    "21K"
+    "42K",
+    "21K",
+    "12K"
    ],
    "price": "",
    "source": "https://running.life/en/event/maraton-sierra-de-mijas",
@@ -5468,8 +5412,7 @@
    "city": "Móstoles",
    "region": "Comunidad de Madrid",
    "distances": [
-    "21K",
-    "10K"
+    "21K"
    ],
    "url": "",
    "official": false,
@@ -5485,9 +5428,7 @@
    "time": "",
    "city": "Avià",
    "region": "",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://running.life/en/event/nocturna-davia",
    "official_guess": "https://www.9hsports.cat/ca/informacio_cursa/1292",
@@ -5504,7 +5445,8 @@
    "city": "Loarre",
    "region": "Aragón",
    "distances": [
-    "21K"
+    "21K",
+    "13K"
    ],
    "price": "",
    "source": "https://running.life/en/event/paleotrail-loarre",
@@ -5527,7 +5469,7 @@
    "city": "Susz",
    "region": "",
    "distances": [
-    "8K"
+    "5,8K"
    ],
    "price": "60 €",
    "source": "https://sportmaniacs.com/es/races/suski-bieg-niepodleglosci-2026",
@@ -5580,8 +5522,8 @@
    "city": "Jaén",
    "region": "Andalucía",
    "distances": [
-    "21K",
-    "10K"
+    "10K",
+    "5K"
    ],
    "url": "https://jaenciudaddelatletismo.es/project/30-edicion-media-maraton-ciudad-de-jaen-y-10k-en-memoria-de-paco-manzaneda/",
    "official": true,
@@ -5603,9 +5545,7 @@
    "time": "08:00",
    "city": "Castalla",
    "region": "Comunidad Valenciana",
-   "distances": [
-    "42K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://www.carreraspopulares.com/carrera/volta-a-la-foia",
    "official_guess": null,
@@ -5623,7 +5563,7 @@
    "city": "Játiva",
    "region": "Comunidad Valenciana",
    "distances": [
-    "21K"
+    "10K"
    ],
    "price": "5–15 €",
    "source": "https://running.life/en/event/pujada-al-castell-de-xativa",
@@ -5646,7 +5586,7 @@
    "city": "Mairena del Alcor",
    "region": "Andalucía",
    "distances": [
-    "5K"
+    "8,5K"
    ],
    "price": "1–5 €",
    "source": "https://sportmaniacs.com/es/races/xxx-memorial-miguel-ngel-gmez-campuzano",
@@ -5669,7 +5609,8 @@
    "city": "Barcelona",
    "region": "Cataluña",
    "distances": [
-    "21K"
+    "10K",
+    "5K"
    ],
    "price": "",
    "source": "https://running.life/en/event/cursa-popular-sant-marti",
@@ -5691,9 +5632,7 @@
    "time": "09:00",
    "city": "Gandia",
    "region": "Comunidad Valenciana",
-   "distances": [
-    "42K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://www.carreraspopulares.com/carrera/cursa-de-les-empreses-de-la-safor",
    "official_guess": null,
@@ -5711,7 +5650,6 @@
    "city": "La Almunia de Doña Godina",
    "region": "Aragón",
    "distances": [
-    "21K",
     "10K"
    ],
    "url": "https://web.rockthesport.com/es/event/media-maraton-y-10k-comarca-de-valdejalon-2026",
@@ -5775,8 +5713,8 @@
    "city": "La Puebla de Almoradiel",
    "region": "Castilla-La Mancha",
    "distances": [
-    "21K",
-    "10K"
+    "10K",
+    "5K"
    ],
    "price": "2–15 €",
    "source": "https://running.life/en/event/10k-la-puebla-de-almoradiel",
@@ -5798,7 +5736,8 @@
    "city": "Magaluf",
    "region": "Islas Baleares",
    "distances": [
-    "21K"
+    "10K",
+    "5K"
    ],
    "price": "2–15 €",
    "source": "https://running.life/en/event/carrera-fundacion-marco-asensio",
@@ -5844,9 +5783,7 @@
    "time": "10:00",
    "city": "Sevilla",
    "region": "Andalucía",
-   "distances": [
-    "6.4K"
-   ],
+   "distances": [],
    "url": "",
    "official": false,
    "note": "",
@@ -5864,6 +5801,7 @@
    "region": "Extremadura",
    "distances": [
     "21K",
+    "19K",
     "10K"
    ],
    "url": "https://www.pulsaciones.net/carreras/15-11-2026-xx-media-maraton-reserva-de-la-biosfera-de-monfrague-malpartida-de-plasencia-2026/",
@@ -5909,7 +5847,6 @@
    "city": "La Cartuja",
    "region": "Aragón",
    "distances": [
-    "42K",
     "21K"
    ],
    "price": "",
@@ -5929,7 +5866,8 @@
    "city": "Los Gallardos",
    "region": "",
    "distances": [
-    "21K"
+    "5K",
+    "3K"
    ],
    "price": "5–8 €",
    "source": "https://running.life/en/event/carrera-solidaria-por-el-autismo-los-gallardos",
@@ -5950,8 +5888,8 @@
    "city": "Caravaca de la Cruz",
    "region": "Región de Murcia",
    "distances": [
-    "21K",
-    "10K"
+    "10K",
+    "5K"
    ],
    "price": "10–14 €",
    "source": "https://running.life/en/event/10k-punto-copy",
@@ -5994,7 +5932,6 @@
    "city": "Marines Viejo",
    "region": "Comunidad Valenciana",
    "distances": [
-    "21K",
     "10K"
    ],
    "price": "",
@@ -6059,7 +5996,6 @@
    "city": "Huelva",
    "region": "Andalucía",
    "distances": [
-    "21K",
     "5K"
    ],
    "price": "8 €",
@@ -6082,7 +6018,6 @@
    "city": "A Coruña",
    "region": "Galicia",
    "distances": [
-    "21K",
     "5K"
    ],
    "price": "",
@@ -6105,7 +6040,8 @@
    "city": "Vic",
    "region": "",
    "distances": [
-    "21K"
+    "10K",
+    "5K"
    ],
    "price": "3–18 €",
    "source": "https://running.life/en/event/5k10k-vic",
@@ -6128,7 +6064,6 @@
    "city": "Villarreal",
    "region": "Comunidad Valenciana",
    "distances": [
-    "21K",
     "5K"
    ],
    "price": "",
@@ -6148,7 +6083,7 @@
    "city": "Bilbao",
    "region": "País Vasco",
    "distances": [
-    "21K"
+    "10K"
    ],
    "price": "",
    "source": "https://running.life/en/event/bilboko-herri-krosa",
@@ -6187,7 +6122,8 @@
    "city": "Barbadás",
    "region": "Galicia",
    "distances": [
-    "21K"
+    "10K",
+    "5K"
    ],
    "price": "",
    "source": "https://running.life/en/event/carreira-popular-da-valenza",
@@ -6210,9 +6146,7 @@
    "time": "",
    "city": "Alcalá de Henares",
    "region": "Comunidad de Madrid",
-   "distances": [
-    "5K"
-   ],
+   "distances": [],
    "url": "",
    "official": false,
    "note": "",
@@ -6228,9 +6162,7 @@
    "time": "",
    "city": "Zaragoza",
    "region": "Aragón",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://running.life/en/event/carrera-ebro-vida-la-cartuja",
    "official_guess": "https://fartlecksport.com/carrera-hibervida-la-cartuja/",
@@ -6246,9 +6178,7 @@
    "time": "",
    "city": "Albacete",
    "region": "Castilla-La Mancha",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "url": "",
    "official": false,
    "note": "",
@@ -6264,10 +6194,7 @@
    "time": "",
    "city": "Madrid",
    "region": "Comunidad de Madrid",
-   "distances": [
-    "10K",
-    "5K"
-   ],
+   "distances": [],
    "url": "",
    "official": false,
    "note": "",
@@ -6376,7 +6303,10 @@
    "city": "Aljaraque",
    "region": "Andalucía",
    "distances": [
-    "21K"
+    "49,1K",
+    "38,6K",
+    "30,4K",
+    "29,3K"
    ],
    "price": "5–8 €",
    "source": "https://running.life/en/event/carrera-solidaria-por-la-diabetes-aljaraque",
@@ -6398,7 +6328,10 @@
    "city": "Las Cabezas de San Juan",
    "region": "Andalucía",
    "distances": [
-    "21K"
+    "37,1K",
+    "31,2K",
+    "30,7K",
+    "23,4K"
    ],
    "url": "https://inscripciones.tecnocrono.com/inscripcion/xxxviii-carrera-urbana-rafael-de-riego/",
    "official": true,
@@ -6419,9 +6352,7 @@
    "time": "",
    "city": "Granada",
    "region": "Andalucía",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "url": "",
    "official": false,
    "note": "",
@@ -6438,7 +6369,8 @@
    "city": "Murcia",
    "region": "Región de Murcia",
    "distances": [
-    "21K"
+    "10K",
+    "5K"
    ],
    "price": "10–48 €",
    "source": "https://running.life/en/event/carrera-de-empresas",
@@ -6475,7 +6407,8 @@
    "city": "Pamplona",
    "region": "Navarra",
    "distances": [
-    "21K"
+    "10K",
+    "5K"
    ],
    "url": "https://web.rockthesport.com/es/event/carrera-telefono-de-la-esperanza-2026",
    "official": true,
@@ -6496,9 +6429,7 @@
    "time": "",
    "city": "Tabernas",
    "region": "Andalucía",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://running.life/en/event/carrera-del-desierto-de-tabernas",
    "official_guess": "https://toprun.es/eventos/carrera-del-desierto-de-tabernas-2026",
@@ -6515,7 +6446,7 @@
    "city": "Murcia",
    "region": "Región de Murcia",
    "distances": [
-    "21K",
+    "10K",
     "5K"
    ],
    "price": "",
@@ -6537,7 +6468,8 @@
    "city": "La Zarza",
    "region": "Castilla y León",
    "distances": [
-    "21K"
+    "9K",
+    "5K"
    ],
    "price": "5 €",
    "source": "https://running.life/en/event/carrera-y-marcha-del-nicalo",
@@ -6559,7 +6491,7 @@
    "city": "Sabadell",
    "region": "Cataluña",
    "distances": [
-    "21K"
+    "5K"
    ],
    "price": "2–15 €",
    "source": "https://running.life/en/event/cursa-antirracista-de-sabadell",
@@ -6582,7 +6514,8 @@
    "city": "Sant Boi de Llobregat",
    "region": "Cataluña",
    "distances": [
-    "21K"
+    "10K",
+    "5K"
    ],
    "price": "",
    "source": "https://running.life/en/event/cursa-popular-vila-de-sant-boi",
@@ -6605,7 +6538,8 @@
    "city": "Palma",
    "region": "Islas Baleares",
    "distances": [
-    "21K"
+    "10K",
+    "4K"
    ],
    "url": "https://www.elitechip.net/index.php?zwshow=compdet&idcomp=7520067",
    "official": true,
@@ -6641,9 +6575,7 @@
    "time": "",
    "city": "Sant Martí de Centelles",
    "region": "",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://running.life/en/event/cursa-de-valldaneu",
    "official_guess": "https://www.9hsports.cat/ca/informacio_cursa/1328",
@@ -6691,9 +6623,7 @@
    "time": "",
    "city": "Bujaraloz",
    "region": "",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://running.life/en/event/en-marcha-contra-el-cancer-bujaraloz",
    "official_guess": "https://web.rockthesport.com/es/event/en-marcha-contra-el-cancer-bujaraloz-2026",
@@ -6713,8 +6643,8 @@
    "city": "Palau-solità i Plegamans",
    "region": "Cataluña",
    "distances": [
-    "21K",
-    "10K"
+    "10K",
+    "5K"
    ],
    "price": "3–9 €",
    "source": "https://running.life/en/event/la-palauenca",
@@ -6753,7 +6683,7 @@
    "city": "Lérida",
    "region": "Cataluña",
    "distances": [
-    "21K"
+    "5K"
    ],
    "price": "",
    "source": "https://running.life/en/event/mitja-marato-de-lleida",
@@ -6795,7 +6725,6 @@
    "city": "Melilla",
    "region": "Melilla",
    "distances": [
-    "21K",
     "10K",
     "5K"
    ],
@@ -6819,8 +6748,7 @@
    "city": "Vigo",
    "region": "Galicia",
    "distances": [
-    "21K",
-    "10K"
+    "21K"
    ],
    "url": "",
    "official": false,
@@ -6857,9 +6785,7 @@
    "city": "Ripoll",
    "region": "Cataluña",
    "distances": [
-    "21K",
-    "10K",
-    "5K"
+    "21K"
    ],
    "url": "",
    "official": false,
@@ -6876,8 +6802,7 @@
    "city": "Benifaió",
    "region": "Comunidad Valenciana",
    "distances": [
-    "21K",
-    "10K"
+    "21K"
    ],
    "url": "https://inscripciones.cronorunner.com/evento/xvii-mitja-marato-roquette-benifaio",
    "official": true,
@@ -6896,9 +6821,7 @@
    "time": "",
    "city": "Sueca",
    "region": "Comunidad Valenciana",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://running.life/en/event/mou-te-per-la-mpoc",
    "official_guess": "https://inscripciones.mychip.es/es/evento/mou-te-per-la-mpoc-2026",
@@ -6918,7 +6841,7 @@
    "city": "Salar",
    "region": "",
    "distances": [
-    "21K"
+    "10K"
    ],
    "price": "10–50 €",
    "source": "https://running.life/en/event/prueba-de-fondo-villa-romana-de-salar",
@@ -6963,9 +6886,7 @@
    "time": "",
    "city": "Córdoba",
    "region": "Andalucía",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://running.life/en/event/spg-runningseries-aje-cordoba",
    "official_guess": "https://www.deporticket.com/web-evento/14097-xi-spg-runningseries-aje-cordoba",
@@ -6981,7 +6902,10 @@
    "time": "",
    "city": "Palma",
    "region": "Islas Baleares",
-   "distances": [],
+   "distances": [
+    "4,3K",
+    "4K"
+   ],
    "price": "30 €",
    "source": "https://sportmaniacs.com/es/races/som-urban-race-2026",
    "official_guess": "https://sportmaniacs.com/es/races/som-urban-race-2026",
@@ -7003,7 +6927,8 @@
    "city": "Garachico",
    "region": "",
    "distances": [
-    "21K"
+    "21K",
+    "10K"
    ],
    "price": "17–22 €",
    "source": "https://running.life/en/event/vulcan-race-garachico",
@@ -7025,7 +6950,10 @@
    "time": "",
    "city": "Villaluenga del Rosario",
    "region": "Andalucía",
-   "distances": [],
+   "distances": [
+    "24K",
+    "15K"
+   ],
    "price": "13–25 €",
    "source": "https://sportmaniacs.com/es/races/xi-desafio-sierra-de-villaluenga",
    "official_guess": "https://sportmaniacs.com/es/races/xi-desafio-sierra-de-villaluenga",
@@ -7061,7 +6989,9 @@
    "time": "",
    "city": "Ciudad Real",
    "region": "Castilla-La Mancha",
-   "distances": [],
+   "distances": [
+    "29K"
+   ],
    "price": "35–140 €",
    "source": "https://sportmaniacs.com/es/races/el-privilegio-100-millas-2026",
    "official_guess": "https://sportmaniacs.com/es/races/el-privilegio-100-millas-2026",
@@ -7083,7 +7013,10 @@
    "city": "Torrelles de Foix",
    "region": "",
    "distances": [
-    "21K"
+    "30K",
+    "26K",
+    "24K",
+    "22K"
    ],
    "price": "27–33 €",
    "source": "https://running.life/en/event/cursafosca",
@@ -7105,9 +7038,7 @@
    "time": "11:45",
    "city": "Esparragalejo",
    "region": "Extremadura",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "price": "3–5 €",
    "source": "https://running.life/en/event/5000-la-charca-grande",
    "official_guess": "https://www.cronofinisher.com/evento/ix-5-000-la-charca-grande/",
@@ -7126,9 +7057,7 @@
    "time": "12:30",
    "city": "Arrecife",
    "region": "Canarias",
-   "distances": [
-    "8K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://sportmaniacs.com/es/races/xiv-carrera-contra-la-violencia-de-gnero-lanzarote-2026",
    "official_guess": "https://sportmaniacs.com/es/races/xiv-carrera-contra-la-violencia-de-gnero-lanzarote-2026",
@@ -7149,7 +7078,10 @@
    "city": "Cartagena",
    "region": "Región de Murcia",
    "distances": [
-    "21K"
+    "10,5K",
+    "10K",
+    "8K",
+    "5K"
    ],
    "price": "6–18 €",
    "source": "https://running.life/en/event/10kcpc-carrera-solidaria-puerto-de-cartagena",
@@ -7196,8 +7128,8 @@
    "city": "Sariñena",
    "region": "",
    "distances": [
-    "21K",
-    "10K"
+    "10K",
+    "5K"
    ],
    "price": "26 €",
    "source": "https://running.life/en/event/10k-de-sarinena",
@@ -7219,9 +7151,7 @@
    "time": "",
    "city": "Azcoitia",
    "region": "",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://running.life/en/event/azkoitiko-herri-lasterketa",
    "official_guess": "https://herrikrosa.eus/Carreras2.asp?carrera=341&Submit=Enviar",
@@ -7241,7 +7171,8 @@
    "city": "Lezama",
    "region": "País Vasco",
    "distances": [
-    "21K"
+    "20K",
+    "10K"
    ],
    "price": "",
    "source": "https://running.life/en/event/bkt-larrabetzu",
@@ -7313,7 +7244,8 @@
    "city": "El Palmar",
    "region": "Región de Murcia",
    "distances": [
-    "21K"
+    "10K",
+    "5K"
    ],
    "price": "",
    "source": "https://running.life/en/event/carrera-nocturna-solidaria-los-rosales",
@@ -7333,9 +7265,7 @@
    "time": "",
    "city": "Arucas",
    "region": "Canarias",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://running.life/en/event/carrera-tolerancia-cero",
    "official_guess": "https://toprun.es/eventos/carrera-tolerancia-cero-2026",
@@ -7367,7 +7297,6 @@
    "city": "Vigo",
    "region": "",
    "distances": [
-    "21K",
     "10K"
    ],
    "price": "6–40 €",
@@ -7390,7 +7319,7 @@
    "city": "Cerdanyola del Vallès",
    "region": "Cataluña",
    "distances": [
-    "21K",
+    "10K",
     "5K"
    ],
    "price": "2–10 €",
@@ -7412,9 +7341,7 @@
    "time": "",
    "city": "Espinama",
    "region": "Cantabria",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://running.life/en/event/trotabuhos",
    "official_guess": "https://www.gedsports.com/race/trotabuhos-2025-1",
@@ -7432,8 +7359,8 @@
    "city": "Montbrió del Camp",
    "region": "Cataluña",
    "distances": [
-    "21K",
-    "10K"
+    "10K",
+    "5K"
    ],
    "price": "",
    "source": "https://running.life/en/event/10k-montbrio-del-camp",
@@ -7457,7 +7384,8 @@
    "region": "Comunidad de Madrid",
    "distances": [
     "10K",
-    "5K"
+    "5K",
+    "3K"
    ],
    "url": "https://correporunmundosostenible.es/",
    "official": true,
@@ -7479,9 +7407,7 @@
    "time": "09:00",
    "city": "Barcelona",
    "region": "Cataluña",
-   "distances": [
-    "7K"
-   ],
+   "distances": [],
    "url": "",
    "official": false,
    "note": "Carrera femenina.",
@@ -7517,7 +7443,8 @@
    "city": "Casco Histórico de Barajas",
    "region": "Comunidad de Madrid",
    "distances": [
-    "21K"
+    "10K",
+    "5K"
    ],
    "price": "6–15 €",
    "source": "https://running.life/en/event/carrera-contra-el-cancer-de-pancreas-madrid",
@@ -7540,7 +7467,8 @@
    "city": "Almendral",
    "region": "",
    "distances": [
-    "21K"
+    "21K",
+    "10K"
    ],
    "price": "10–14 €",
    "source": "https://running.life/en/event/carrera-popular-almendral",
@@ -7562,7 +7490,8 @@
    "city": "Molina de Segura",
    "region": "Región de Murcia",
    "distances": [
-    "21K"
+    "10K",
+    "5K"
    ],
    "price": "2–15 €",
    "source": "https://running.life/en/event/carrera-solidaria-auxiliar-conservera",
@@ -7584,7 +7513,7 @@
    "city": "Córdoba",
    "region": "Andalucía",
    "distances": [
-    "21K"
+    "5K"
    ],
    "price": "7–12 €",
    "source": "https://running.life/en/event/carrera-solidaria-el-cerebro-no-es-gris",
@@ -7605,7 +7534,10 @@
    "time": "10:00",
    "city": "Huelva",
    "region": "Andalucía",
-   "distances": [],
+   "distances": [
+    "7,5K",
+    "7K"
+   ],
    "price": "10 €",
    "source": "https://sportmaniacs.com/es/races/i-carrera-empresas-huelva24-2026",
    "official_guess": "https://sportmaniacs.com/es/races/i-carrera-empresas-huelva24-2026",
@@ -7627,7 +7559,6 @@
    "city": "Jumilla",
    "region": "Región de Murcia",
    "distances": [
-    "21K",
     "10K"
    ],
    "url": "https://www.alcanzatumeta.es/viii-media-maraton-jumilla-ciudad-del-vino-2026/",
@@ -7672,10 +7603,7 @@
    "time": "10:00",
    "city": "Mirandilla",
    "region": "Extremadura",
-   "distances": [
-    "42K",
-    "15K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://www.carreraspopulares.com/carrera/fondo-popular-cornalvo-mirandilla",
    "official_guess": null,
@@ -7692,9 +7620,7 @@
    "time": "11:00",
    "city": "Jaén",
    "region": "Andalucía",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "url": "",
    "official": false,
    "note": "",
@@ -7709,10 +7635,7 @@
    "time": "11:00",
    "city": "Monzón",
    "region": "Aragón",
-   "distances": [
-    "42K",
-    "5K"
-   ],
+   "distances": [],
    "url": "",
    "official": false,
    "note": "",
@@ -7729,7 +7652,9 @@
    "city": "Peligros",
    "region": "Andalucía",
    "distances": [
-    "21K"
+    "10K",
+    "7K",
+    "5K"
    ],
    "url": "https://www.global-tempo.com/carreras.php?id=3299",
    "official": true,
@@ -7752,7 +7677,8 @@
    "city": "El Algar",
    "region": "Región de Murcia",
    "distances": [
-    "21K"
+    "5,3K",
+    "3K"
    ],
    "price": "8–10 €",
    "source": "https://running.life/en/event/carrera-y-marcha-urbana-mueve-la-vida",
@@ -7773,7 +7699,7 @@
    "city": "Miguelturra",
    "region": "",
    "distances": [
-    "21K"
+    "10K"
    ],
    "price": "2–18 €",
    "source": "https://running.life/en/event/media-maraton-villa-de-miguelturra",
@@ -7795,7 +7721,8 @@
    "city": "La Indiotería",
    "region": "Islas Baleares",
    "distances": [
-    "21K"
+    "10K",
+    "5K"
    ],
    "price": "13–18 €",
    "source": "https://running.life/en/event/cursa-festa-de-lesport-son-fusteret",
@@ -7816,7 +7743,6 @@
    "city": "Castuera",
    "region": "",
    "distances": [
-    "21K",
     "10K",
     "5K"
    ],
@@ -7840,7 +7766,9 @@
    "city": "Paderne de Allariz",
    "region": "Galicia",
    "distances": [
-    "21K"
+    "18K",
+    "12K",
+    "4K"
    ],
    "price": "10 €",
    "source": "https://sportmaniacs.com/es/races/andaina-de-outono-concello-paderne-de-allariz",
@@ -7881,7 +7809,8 @@
    "region": "Comunidad de Madrid",
    "distances": [
     "10K",
-    "5K"
+    "5K",
+    "3K"
    ],
    "url": "https://www.asdeporte.com:443/evento/barbie-run-madrid-2026-a2h/datos-del-evento",
    "official": true,
@@ -7901,9 +7830,7 @@
    "time": "",
    "city": "Ribadavia",
    "region": "Galicia",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://running.life/en/event/carreira-pedestre-de-ribadavia",
    "official_guess": "https://www.carreirasgalegas.com/events/xi-carreira-pedestre-de-ribadavia/Ll7x8YmO",
@@ -7937,7 +7864,8 @@
    "city": "Ibi",
    "region": "Comunidad Valenciana",
    "distances": [
-    "21K"
+    "10K",
+    "5K"
    ],
    "price": "15 €",
    "source": "https://running.life/en/event/carrera-marcha-solidaria-a-favor-de-acodip",
@@ -7958,9 +7886,7 @@
    "time": "",
    "city": "Quintana",
    "region": "Comunidad de Madrid",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://running.life/en/event/carrera-corre-segura",
    "official_guess": "https://www.deporticket.com/web-evento/13685-ii-carrera-corre-segura",
@@ -8007,7 +7933,8 @@
    "city": "Navalmoral de la Mata",
    "region": "",
    "distances": [
-    "21K"
+    "5K",
+    "3K"
    ],
    "price": "26 €",
    "source": "https://running.life/en/event/carrera-popular-contra-la-droga-navalmoral-de-la-mata",
@@ -8029,7 +7956,7 @@
    "city": "Almenara de Tormes",
    "region": "Castilla y León",
    "distances": [
-    "21K"
+    "10K"
    ],
    "price": "5–8 €",
    "source": "https://running.life/en/event/carrera-popular-almenara-de-tormes-enusa",
@@ -8066,9 +7993,7 @@
    "time": "",
    "city": "El Puerto de Santa María",
    "region": "",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://running.life/en/event/carrera-popular-puerto-menesteo",
    "official_guess": "https://www.runnink.com/evento/xxx-carrera-popular-puerto-menesteo/121",
@@ -8084,9 +8009,7 @@
    "time": "",
    "city": "Santiponce",
    "region": "Andalucía",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://running.life/en/event/carrera-popular-santiponce",
    "official_guess": null,
@@ -8104,7 +8027,6 @@
    "city": "Oviedo",
    "region": "Asturias",
    "distances": [
-    "21K",
     "5K"
    ],
    "price": "5–18 €",
@@ -8158,7 +8080,8 @@
    "city": "Elche",
    "region": "Comunidad Valenciana",
    "distances": [
-    "21K"
+    "10K",
+    "5,5K"
    ],
    "price": "",
    "source": "https://running.life/en/event/carrera-y-marcha-contra-el-cancer-de-mama",
@@ -8194,10 +8117,7 @@
    "time": "",
    "city": "Alicante",
    "region": "Comunidad Valenciana",
-   "distances": [
-    "10K",
-    "5K"
-   ],
+   "distances": [],
    "url": "",
    "official": false,
    "note": "",
@@ -8229,7 +8149,7 @@
    "city": "Embajadores",
    "region": "Comunidad de Madrid",
    "distances": [
-    "21K"
+    "5K"
    ],
    "price": "",
    "source": "https://running.life/en/event/corre-sin-resistencias",
@@ -8251,7 +8171,7 @@
    "city": "Santa Coloma de Gramanet",
    "region": "Cataluña",
    "distances": [
-    "21K"
+    "4,9K"
    ],
    "price": "3–4 €",
    "source": "https://running.life/en/event/cros-antoni-amoros",
@@ -8274,7 +8194,7 @@
    "city": "Olot",
    "region": "",
    "distances": [
-    "21K"
+    "10K"
    ],
    "price": "26 €",
    "source": "https://running.life/en/event/cursa-entrepobles-la-garrotxa",
@@ -8297,7 +8217,10 @@
    "city": "Bovera",
    "region": "",
    "distances": [
-    "21K"
+    "14K",
+    "10K",
+    "5,5K",
+    "5K"
    ],
    "price": "2–20 €",
    "source": "https://running.life/en/event/cursa-on-deu-va-perdre-lespardenya",
@@ -8334,7 +8257,7 @@
    "city": "Terrassa",
    "region": "Cataluña",
    "distances": [
-    "21K",
+    "10K",
     "5K"
    ],
    "url": "https://sportmaniacs.com/en/services/inscription/xi-cursa-solidria-per-a-la-infncia",
@@ -8359,7 +8282,8 @@
    "city": "Lliçà de Vall",
    "region": "Cataluña",
    "distances": [
-    "21K"
+    "10K",
+    "5K"
    ],
    "price": "14–16 €",
    "source": "https://running.life/en/event/cursa-de-parets-del-valles",
@@ -8380,9 +8304,7 @@
    "time": "",
    "city": "Granollers",
    "region": "",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://running.life/en/event/cursa-solidaria-cng4camins",
    "official_guess": "https://www.9hsports.cat/ca/informacio_cursa/1276",
@@ -8398,7 +8320,10 @@
    "time": "",
    "city": "Santo Tomás La Unión",
    "region": "",
-   "distances": [],
+   "distances": [
+    "30K",
+    "20K"
+   ],
    "price": "",
    "source": "https://sportmaniacs.com/es/races/desafo-entre-cafetales--dec--santo-toms",
    "official_guess": "https://sportmaniacs.com/es/races/desafo-entre-cafetales--dec--santo-toms",
@@ -8420,7 +8345,8 @@
    "city": "Redovan",
    "region": "Comunidad Valenciana",
    "distances": [
-    "21K"
+    "8K",
+    "5K"
    ],
    "price": "48–58 €",
    "source": "https://running.life/en/event/desafio-vega-baja-redovan-by-medieval",
@@ -8440,7 +8366,6 @@
    "city": "Moncada",
    "region": "Comunidad Valenciana",
    "distances": [
-    "21K",
     "10K"
    ],
    "price": "",
@@ -8462,7 +8387,6 @@
    "city": "Durango",
    "region": "País Vasco",
    "distances": [
-    "21K",
     "5K"
    ],
    "price": "",
@@ -8504,9 +8428,7 @@
    "time": "",
    "city": "Palma",
    "region": "Islas Baleares",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://running.life/en/event/isla-race-estadi-mallorca-son-moix",
    "official_guess": "https://web.rockthesport.com/es/event/1785915050",
@@ -8566,7 +8488,10 @@
    "city": "Ceuta",
    "region": "Ceuta",
    "distances": [
-    "21K"
+    "21K",
+    "18K",
+    "14K",
+    "10K"
    ],
    "price": "5–21 €",
    "source": "https://running.life/en/event/media-maraton-ciudad-de-ceuta",
@@ -8611,9 +8536,7 @@
    "city": "Benalmádena",
    "region": "Andalucía",
    "distances": [
-    "21K",
-    "10K",
-    "5K"
+    "21K"
    ],
    "url": "https://www.dorsalchip.es/carrera/2026/11/22/Media_Maraton_IX_Carrera_Holiday_World.aspx",
    "official": true,
@@ -8634,7 +8557,8 @@
    "city": "Jarandilla de la Vera",
    "region": "",
    "distances": [
-    "21K"
+    "21K",
+    "10K"
    ],
    "price": "10–15 €",
    "source": "https://running.life/en/event/media-maraton-de-jarandilla-de-la-vera",
@@ -8656,7 +8580,6 @@
    "city": "Vilafranca del Penedès",
    "region": "Cataluña",
    "distances": [
-    "21K",
     "10K",
     "5K"
    ],
@@ -8702,7 +8625,8 @@
    "city": "Tarragona",
    "region": "Cataluña",
    "distances": [
-    "10K"
+    "10K",
+    "5K"
    ],
    "url": "https://web.rockthesport.com/es/event/tarraco-health-race-2026",
    "official": true,
@@ -8725,6 +8649,7 @@
    "city": "Sant Sadurná d&#039;Anoia",
    "region": "Cataluña",
    "distances": [
+    "12K",
     "8K"
    ],
    "price": "",
@@ -8747,7 +8672,9 @@
    "time": "",
    "city": "Toledo",
    "region": "Castilla-La Mancha",
-   "distances": [],
+   "distances": [
+    "7,4K"
+   ],
    "price": "2,98–10 €",
    "source": "https://sportmaniacs.com/es/races/x-carrera-popular-xi-marcha-solidaria-por-la-diabetes",
    "official_guess": "https://sportmaniacs.com/es/races/x-carrera-popular-xi-marcha-solidaria-por-la-diabetes",
@@ -8768,9 +8695,7 @@
    "time": "",
    "city": "Zaragoza",
    "region": "Aragón",
-   "distances": [
-    "6.5K"
-   ],
+   "distances": [],
    "url": "",
    "official": false,
    "note": "",
@@ -8785,9 +8710,7 @@
    "time": "17:30",
    "city": "Fuente Alamo",
    "region": "Región de Murcia",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "price": "2 €",
    "source": "https://running.life/en/event/carrera-popular-ayuntamiento-fuente-alamo",
    "official_guess": "http://www.alcanzatumeta.es/xxiv-carrera-popular-ayuntamiento-fuente-alamo-2026",
@@ -8860,7 +8783,7 @@
    "city": "Igea",
    "region": "La Rioja",
    "distances": [
-    "21K"
+    "10K"
    ],
    "price": "",
    "source": "https://running.life/en/event/carrera-entre-dinosaurios-villa-de-igea",
@@ -8897,9 +8820,7 @@
    "time": "",
    "city": "La Línea de la Concepción",
    "region": "",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://running.life/en/event/carrera-popular-de-la-inmaculada-alcaldesa-perpetua",
    "official_guess": "https://web.faalive.com/ch/2026/14514/",
@@ -8917,10 +8838,7 @@
    "time": "",
    "city": "Longares",
    "region": "",
-   "distances": [
-    "21K",
-    "5K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://running.life/en/event/en-marcha-contra-el-cancer-longares",
    "official_guess": "https://web.rockthesport.com/es/event/en-marcha-contra-el-cancer-longares-2026",
@@ -8939,7 +8857,10 @@
    "time": "",
    "city": "Casserres",
    "region": "Cataluña",
-   "distances": [],
+   "distances": [
+    "12K",
+    "3K"
+   ],
    "price": "6–10 €",
    "source": "https://sportmaniacs.com/es/races/la-cursa-del-tractor-2026",
    "official_guess": "https://sportmaniacs.com/es/races/la-cursa-del-tractor-2026",
@@ -8961,7 +8882,8 @@
    "city": "Yaiza",
    "region": "Canarias",
    "distances": [
-    "21K"
+    "10K",
+    "5K"
    ],
    "price": "",
    "source": "https://running.life/en/event/playa-blanca-music-run-night",
@@ -9006,7 +8928,8 @@
    "city": "Albaricoques",
    "region": "Andalucía",
    "distances": [
-    "21K"
+    "11K",
+    "5K"
    ],
    "price": "",
    "source": "https://running.life/en/event/carrera-popular-cortijo-del-fraile",
@@ -9094,7 +9017,7 @@
    "city": "Torrejón de la Calzada",
    "region": "Comunidad de Madrid",
    "distances": [
-    "21K"
+    "5K"
    ],
    "price": "",
    "source": "https://running.life/en/event/carrera-popular-solidaria-corre-para-pararlo",
@@ -9145,11 +9068,7 @@
    "time": "",
    "city": "Madrid",
    "region": "Comunidad de Madrid",
-   "distances": [
-    "21K",
-    "10K",
-    "5K"
-   ],
+   "distances": [],
    "url": "",
    "official": false,
    "note": "",
@@ -9195,7 +9114,8 @@
    "city": "Colmenar Viejo",
    "region": "Comunidad de Madrid",
    "distances": [
-    "21K"
+    "20K",
+    "10K"
    ],
    "price": "5–22 €",
    "source": "https://running.life/en/event/carrera-y-marcha-popular-solidaria-cerro-de-la-marmota",
@@ -9233,7 +9153,7 @@
    "city": "La Rioja",
    "region": "La Rioja",
    "distances": [
-    "21K"
+    "10K"
    ],
    "price": "3–22 €",
    "source": "https://running.life/en/event/desafio-sarrio",
@@ -9255,8 +9175,7 @@
    "city": "Vinyols i els Arcs",
    "region": "Cataluña",
    "distances": [
-    "42K",
-    "21K"
+    "42K"
    ],
    "url": "https://web.rockthesport.com/es/event/marato-i-mitja-marato-relleus-vinyols-2026",
    "official": true,
@@ -9278,7 +9197,7 @@
    "city": "Alicante (Alacant)",
    "region": "Comunidad Valenciana",
    "distances": [
-    "21K"
+    "42K"
    ],
    "price": "",
    "source": "https://running.life/en/event/maraton-internacional-elche-alicante",
@@ -9299,8 +9218,8 @@
    "city": "Guadalajara",
    "region": "Castilla-La Mancha",
    "distances": [
-    "21K",
-    "11K"
+    "11K",
+    "5K"
    ],
    "url": "https://youevent.es/sport/Tabla_FichaEventoDeportivo.asp?id_competicion=8632",
    "official": true,
@@ -9324,7 +9243,9 @@
    "region": "Comunidad Valenciana",
    "distances": [
     "21K",
-    "11K"
+    "20K",
+    "10,5K",
+    "10K"
    ],
    "url": "https://web.rockthesport.com/es/event/xv-mitja-marato-union-alcoyana",
    "official": true,
@@ -9347,7 +9268,8 @@
    "city": "Las Palmas de Gran Canaria",
    "region": "Canarias",
    "distances": [
-    "21K"
+    "10K",
+    "5K"
    ],
    "price": "",
    "source": "https://running.life/en/event/ponle-freno-las-palmas",
@@ -9417,7 +9339,10 @@
    "city": "La Laguna",
    "region": "",
    "distances": [
-    "21K"
+    "42K",
+    "29,5K",
+    "20,3K",
+    "12,8K"
    ],
    "price": "",
    "source": "https://running.life/en/event/k42-canarias-anaga-marathon",
@@ -9486,7 +9411,9 @@
    "time": "08:30",
    "city": "Vall d&#039;Alba",
    "region": "Comunidad Valenciana",
-   "distances": [],
+   "distances": [
+    "13,4K"
+   ],
    "price": "18,6 €",
    "source": "https://sportmaniacs.com/es/races/xxi-volta-a-peu-la-vall-dalba-3-pujades-a-lermita",
    "official_guess": "https://sportmaniacs.com/es/races/xxi-volta-a-peu-la-vall-dalba-3-pujades-a-lermita",
@@ -9553,7 +9480,8 @@
    "city": "Molíns",
    "region": "Comunidad Valenciana",
    "distances": [
-    "21K"
+    "10K",
+    "5K"
    ],
    "price": "3–13 €",
    "source": "https://running.life/en/event/carrera-del-pavo-y-papa-noel",
@@ -9619,7 +9547,6 @@
    "city": "Torre-Pacheco",
    "region": "Región de Murcia",
    "distances": [
-    "21K",
     "11K",
     "5K"
    ],
@@ -9664,7 +9591,6 @@
    "city": "San Mateo",
    "region": "Comunidad Valenciana",
    "distances": [
-    "21K",
     "10K"
    ],
    "price": "",
@@ -9774,9 +9700,7 @@
    "time": "",
    "city": "Cizur Menor",
    "region": "Navarra",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://running.life/en/event/la-cizur-gares",
    "official_guess": "https://web.rockthesport.com/es/event/lacizurgares26",
@@ -9797,7 +9721,8 @@
    "city": "Figueres",
    "region": "",
    "distances": [
-    "21K"
+    "21K",
+    "10K"
    ],
    "price": "",
    "source": "https://running.life/en/event/la-mitja-figueras",
@@ -9860,7 +9785,7 @@
    "city": "Las Chafiras",
    "region": "Canarias",
    "distances": [
-    "21K"
+    "5K"
    ],
    "price": "",
    "source": "https://running.life/en/event/llano-del-camello",
@@ -9882,8 +9807,8 @@
    "city": "Montuïri",
    "region": "Islas Baleares",
    "distances": [
-    "21K",
-    "10K"
+    "10K",
+    "4K"
    ],
    "url": "https://www.elitechip.net/index.php?zwshow=compdet&idcomp=7566150",
    "official": true,
@@ -9905,7 +9830,7 @@
    "city": "Elche",
    "region": "Comunidad Valenciana",
    "distances": [
-    "21K"
+    "5K"
    ],
    "price": "12 €",
    "source": "https://running.life/en/event/carrera-solidaria-ruta-091-elche",
@@ -9926,7 +9851,8 @@
    "city": "Gea y Truyols",
    "region": "Región de Murcia",
    "distances": [
-    "21K"
+    "10K",
+    "5K"
    ],
    "price": "",
    "source": "https://running.life/en/event/carrera-popular-la-tercia-memorial-la-huella-de-carolina",
@@ -9962,7 +9888,7 @@
    "city": "Callosa de Segura",
    "region": "Comunidad Valenciana",
    "distances": [
-    "21K"
+    "5K"
    ],
    "price": "2–12 €",
    "source": "https://running.life/en/event/carrera-de-navidad-callosa-de-segura",
@@ -10006,7 +9932,7 @@
    "city": "Benferri",
    "region": "Comunidad Valenciana",
    "distances": [
-    "21K"
+    "5K"
    ],
    "price": "3–7 €",
    "source": "https://running.life/en/event/carrera-popular-san-jeromin-de-benferri",
@@ -10027,7 +9953,6 @@
    "city": "Fuentes de Ebro",
    "region": "Aragón",
    "distances": [
-    "21K",
     "10K",
     "5K"
    ],
@@ -10046,10 +9971,7 @@
    "time": "",
    "city": "Paracuellos de Jarama",
    "region": "Comunidad de Madrid",
-   "distances": [
-    "10K",
-    "5K"
-   ],
+   "distances": [],
    "url": "",
    "official": false,
    "note": "",
@@ -10065,7 +9987,7 @@
    "city": "Barcelona",
    "region": "Cataluña",
    "distances": [
-    "21K"
+    "24K"
    ],
    "price": "",
    "source": "https://running.life/en/event/cursa-cec-collserola",
@@ -10128,7 +10050,7 @@
    "city": "Barracas",
    "region": "Comunidad Valenciana",
    "distances": [
-    "5K"
+    "4,5K"
    ],
    "price": "5–35 €",
    "source": "https://sportmaniacs.com/es/races/campeonato-autonmico-de-mushing-sprint-tierra-barracas-middot-castelln-12-13-de-diciembre-de-2026",
@@ -10151,7 +10073,8 @@
    "city": "Valleseco",
    "region": "Canarias",
    "distances": [
-    "5K"
+    "16K",
+    "7,5K"
    ],
    "price": "20–25 €",
    "source": "https://sportmaniacs.com/es/races/neblina-tres-valles-2026",
@@ -10173,9 +10096,7 @@
    "time": "",
    "city": "Puebla de Farnáls",
    "region": "Comunidad Valenciana",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://running.life/en/event/san-silvestre-solidaria-pobla-de-farnals",
    "official_guess": "https://inscripciones.cronorunner.com/evento/xi-san-silvestre-solidaria-pobla-de-farnals",
@@ -10252,7 +10173,9 @@
    "city": "La Manga",
    "region": "Región de Murcia",
    "distances": [
-    "21K"
+    "10,5K",
+    "10K",
+    "5K"
    ],
    "price": "7–22 €",
    "source": "https://running.life/en/event/mar-menor-running-challenge",
@@ -10275,7 +10198,8 @@
    "city": "Lleida",
    "region": "Cataluña",
    "distances": [
-    "21K"
+    "10,4K",
+    "10K"
    ],
    "price": "2 €",
    "source": "https://running.life/en/event/pujada-a-la-seu-vella",
@@ -10298,7 +10222,7 @@
    "city": "Madrid",
    "region": "Comunidad de Madrid",
    "distances": [
-    "21K"
+    "10K"
    ],
    "price": "",
    "source": "https://running.life/en/event/trofeo-jose-cano",
@@ -10320,9 +10244,7 @@
    "time": "",
    "city": "Sant Cugat del Vallès",
    "region": "Cataluña",
-   "distances": [
-    "8K"
-   ],
+   "distances": [],
    "price": "5 €",
    "source": "https://sportmaniacs.com/es/races/10-milla-solidria-de-valldoreix",
    "official_guess": "https://sportmaniacs.com/es/races/10-milla-solidria-de-valldoreix",
@@ -10360,7 +10282,6 @@
    "city": "Cuart de les Valls",
    "region": "Comunidad Valenciana",
    "distances": [
-    "21K",
     "10K"
    ],
    "price": "8–12 €",
@@ -10385,7 +10306,6 @@
    "city": "Borja",
    "region": "",
    "distances": [
-    "21K",
     "10K",
     "5K"
    ],
@@ -10405,7 +10325,8 @@
    "city": "Bigastro",
    "region": "Comunidad Valenciana",
    "distances": [
-    "10K"
+    "10K",
+    "5K"
    ],
    "url": "https://www.alcanzatumeta.es/xiv-carrera-popular-la-joaquinesca-5-y-10k-bigastro/",
    "official": true,
@@ -10441,9 +10362,7 @@
    "time": "",
    "city": "Pamplona",
    "region": "Navarra",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://running.life/en/event/carrera-solidaria-ruta-091-pamplona",
    "official_guess": "https://ruta091.es/carrera/carrera-solidaria-ruta-091-panplona-2026",
@@ -10490,7 +10409,8 @@
    "city": "Barcelona",
    "region": "Cataluña",
    "distances": [
-    "21K"
+    "10K",
+    "5K"
    ],
    "url": "https://carreracancerpancreas.es/cursa-barcelona/carrera-barcelona/",
    "official": true,
@@ -10529,7 +10449,8 @@
    "region": "Comunidad de Madrid",
    "distances": [
     "10K",
-    "5K"
+    "5K",
+    "3K"
    ],
    "url": "https://web.rockthesport.com/es/event/1789575263",
    "official": true,
@@ -10581,7 +10502,8 @@
    "city": "Barcelona",
    "region": "Cataluña",
    "distances": [
-    "21K"
+    "10K",
+    "5K"
    ],
    "url": "https://www.cursadelasagrera.cat/",
    "official": true,
@@ -10602,9 +10524,7 @@
    "time": "",
    "city": "L'Hospitalet de Llobregat",
    "region": "Cataluña",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "url": "",
    "official": false,
    "note": "",
@@ -10620,7 +10540,8 @@
    "city": "Sabadell",
    "region": "Cataluña",
    "distances": [
-    "21K"
+    "10K",
+    "5K"
    ],
    "price": "3,5–19 €",
    "source": "https://running.life/en/event/cursa-del-club-natacio-sabadell",
@@ -10701,9 +10622,7 @@
    "time": "",
    "city": "Fene",
    "region": "Galicia",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "url": "https://www.carreirasgalegas.com/events/xl-memorial-adolfo-ros-volta-a-ria/w95AWw9V",
    "official": true,
    "note": "",
@@ -10721,7 +10640,6 @@
    "city": "Vilanova i la Geltrú",
    "region": "Cataluña",
    "distances": [
-    "21K",
     "10K"
    ],
    "url": "https://mitjavilanova.com/",
@@ -10758,7 +10676,8 @@
    "city": "Picassent",
    "region": "Comunidad Valenciana",
    "distances": [
-    "21K"
+    "10K",
+    "7,2K"
    ],
    "url": "https://web.rockthesport.com/es/event/picassent-contra-el-cancer-2026",
    "official": true,
@@ -10795,8 +10714,8 @@
    "city": "Sarria",
    "region": "Galicia",
    "distances": [
-    "21K",
-    "10K"
+    "10K",
+    "5K"
    ],
    "price": "",
    "source": "https://running.life/en/event/sarria-10km-os-mais-rapidos",
@@ -10863,9 +10782,7 @@
    "time": "",
    "city": "Sada",
    "region": "Galicia",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "url": "",
    "official": false,
    "note": "",
@@ -10952,7 +10869,10 @@
    "city": "Soto del Real",
    "region": "Comunidad de Madrid",
    "distances": [
-    "21K"
+    "11K",
+    "10,4K",
+    "10K",
+    "5,5K"
    ],
    "url": "https://youevent.es/sport/Tabla_FichaEventoDeportivo.asp?id_competicion=8923",
    "official": true,
@@ -10975,7 +10895,8 @@
    "city": "Irún",
    "region": "",
    "distances": [
-    "21K"
+    "10K",
+    "5K"
    ],
    "price": "3–200 €",
    "source": "https://running.life/en/event/super-amara-gabonetako-krosa-irun",
@@ -10996,6 +10917,7 @@
    "city": "San Mateo de Gállego",
    "region": "Aragón",
    "distances": [
+    "24K",
     "10K",
     "5K"
    ],
@@ -11018,7 +10940,8 @@
    "city": "Zamudio",
    "region": "País Vasco",
    "distances": [
-    "21K"
+    "20K",
+    "10K"
    ],
    "price": "",
    "source": "https://running.life/en/event/bkt-zamudio",
@@ -11146,9 +11069,7 @@
    "time": "",
    "city": "Bétera",
    "region": "Comunidad Valenciana",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "url": "",
    "official": false,
    "note": "",
@@ -11180,7 +11101,8 @@
    "city": "Novelda",
    "region": "Comunidad Valenciana",
    "distances": [
-    "21K"
+    "10K",
+    "5K"
    ],
    "price": "",
    "source": "https://running.life/en/event/liga-de-barrios-novelda/2026-12-19",
@@ -11200,9 +11122,7 @@
    "time": "",
    "city": "San Julián de Muskiz",
    "region": "País Vasco",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://running.life/en/event/muskizko-3-miliak",
    "official_guess": "https://www.buscametas.com/modulos/ticket/evento.php?codigo=1385",
@@ -11219,7 +11139,8 @@
    "city": "Playa de Samil",
    "region": "",
    "distances": [
-    "21K"
+    "10K",
+    "5K"
    ],
    "price": "2–15 €",
    "source": "https://running.life/en/event/papanoelada-runners-vigo",
@@ -11240,9 +11161,7 @@
    "time": "",
    "city": "Alcantarilla",
    "region": "Región de Murcia",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "url": "",
    "official": false,
    "note": "",
@@ -11289,7 +11208,7 @@
    "city": "Benidorm",
    "region": "Comunidad Valenciana",
    "distances": [
-    "21K"
+    "4,5K"
    ],
    "price": "6–15 €",
    "source": "https://running.life/en/event/san-silvestre-benidorm",
@@ -11350,7 +11269,7 @@
    "city": "Rubio (El)",
    "region": "Andalucía",
    "distances": [
-    "21K"
+    "7K"
    ],
    "price": "7 €",
    "source": "https://sportmaniacs.com/es/races/carrera-popular-de-navidad-de-el-rubio-2026",
@@ -11403,7 +11322,7 @@
    "city": "Ávila",
    "region": "Castilla y León",
    "distances": [
-    "21K"
+    "5K"
    ],
    "price": "10–12 €",
    "source": "https://running.life/en/event/carrera-de-navidad-memorial-antonio-jimenez",
@@ -11424,9 +11343,7 @@
    "time": "",
    "city": "Cártama",
    "region": "Andalucía",
-   "distances": [
-    "10K"
-   ],
+   "distances": [],
    "url": "https://web.faalive.com/ch/2026/14513/",
    "official": true,
    "note": "",
@@ -11459,9 +11376,7 @@
    "time": "",
    "city": "Sevilla",
    "region": "Andalucía",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "url": "",
    "official": false,
    "note": "",
@@ -11523,7 +11438,8 @@
    "city": "Sant Sadurní d'Anoia",
    "region": "Cataluña",
    "distances": [
-    "21K"
+    "10K",
+    "5K"
    ],
    "price": "12–14 €",
    "source": "https://running.life/en/event/cursa-de-nadal-sant-sadurni-danoia",
@@ -11547,7 +11463,6 @@
    "city": "Sant Vicenç de Montalt",
    "region": "Cataluña",
    "distances": [
-    "21K",
     "5K"
    ],
    "price": "12–15 €",
@@ -11569,7 +11484,7 @@
    "city": "Fontcoberta",
    "region": "",
    "distances": [
-    "21K"
+    "10K"
    ],
    "price": "10–50 €",
    "source": "https://running.life/en/event/descoberta-run-fontcoberta",
@@ -11591,7 +11506,10 @@
    "city": "Guadiana",
    "region": "Extremadura",
    "distances": [
-    "21K"
+    "12K",
+    "10K",
+    "8K",
+    "7K"
    ],
    "price": "",
    "source": "https://running.life/en/event/guadiaton",
@@ -11629,7 +11547,7 @@
    "city": "Vitoria-Gasteiz",
    "region": "País Vasco",
    "distances": [
-    "21K"
+    "10K"
    ],
    "url": "https://www.mediamaratonvitoriagasteiz.com/",
    "official": true,
@@ -11666,7 +11584,7 @@
    "city": "Campo de Criptana",
    "region": "",
    "distances": [
-    "21K"
+    "42K"
    ],
    "price": "",
    "source": "https://running.life/en/event/maraton-clandestino",
@@ -11685,7 +11603,7 @@
    "region": "Región de Murcia",
    "distances": [
     "21K",
-    "11K"
+    "11,3K"
    ],
    "url": "https://www.alcanzatumeta.es/xxxvii-media-maraton-ciudad-de-cieza-y-xvii-113k-solidarios-2026/",
    "official": true,
@@ -11707,7 +11625,6 @@
    "city": "Tacoronte",
    "region": "Canarias",
    "distances": [
-    "21K",
     "10K",
     "5K"
    ],
@@ -11734,7 +11651,7 @@
    "distances": [
     "21K",
     "11K",
-    "5K"
+    "10K"
    ],
    "url": "https://www.chiplevante.com/es/prueba/media-maraton-11km-y-5km-villa-de-aspe-672-2026",
    "official": true,
@@ -11755,7 +11672,9 @@
    "city": "Montmeló",
    "region": "",
    "distances": [
-    "21K"
+    "20K",
+    "10K",
+    "5K"
    ],
    "price": "",
    "source": "https://running.life/en/event/mou-te-per-lesclerosi-multiple",
@@ -11778,8 +11697,7 @@
    "city": "Paiporta",
    "region": "Comunidad Valenciana",
    "distances": [
-    "21K",
-    "11K"
+    "10K"
    ],
    "url": "https://web.rockthesport.com/es/event/quarta-i-mitja-marato-paiporta-picanya-2026",
    "official": true,
@@ -11801,7 +11719,8 @@
    "city": "Pinto",
    "region": "Comunidad de Madrid",
    "distances": [
-    "21K"
+    "10K",
+    "5K"
    ],
    "price": "",
    "source": "https://running.life/en/event/san-pintena",
@@ -11823,9 +11742,7 @@
    "time": "",
    "city": "Pedrezuela",
    "region": "Comunidad de Madrid",
-   "distances": [
-    "12K"
-   ],
+   "distances": [],
    "url": "",
    "official": false,
    "note": "",
@@ -11975,9 +11892,7 @@
    "time": "",
    "city": "Madrid",
    "region": "Comunidad de Madrid",
-   "distances": [
-    "10K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://sportmaniacs.com/es/races/nationale-nederlanden-san-silvestre-vallecana-virtual-2026",
    "official_guess": "https://sportmaniacs.com/es/races/nationale-nederlanden-san-silvestre-vallecana-virtual-2026",
@@ -11992,9 +11907,7 @@
    "time": "",
    "city": "Málaga",
    "region": "Andalucía",
-   "distances": [
-    "10K"
-   ],
+   "distances": [],
    "url": "",
    "official": false,
    "note": "",
@@ -12025,7 +11938,8 @@
    "city": "Mollerussa",
    "region": "Cataluña",
    "distances": [
-    "21K"
+    "10K",
+    "5K"
    ],
    "price": "2–21 €",
    "source": "https://running.life/en/event/cursa-de-lindiot-de-mollerussa",
@@ -12079,9 +11993,7 @@
    "time": "",
    "city": "Jumilla",
    "region": "Región de Murcia",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://running.life/en/event/carrera-popular-solidaria-navidena-de-jumilla",
    "official_guess": "http://www.alcanzatumeta.es/xviii-carrera-popular-solidaria-navidena-de-jumilla-2026",
@@ -12126,9 +12038,7 @@
    "time": "",
    "city": "Rota",
    "region": "Andalucía",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "url": "",
    "official": false,
    "note": "",
@@ -12144,9 +12054,7 @@
    "time": "",
    "city": "Tortosa",
    "region": "",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://running.life/en/event/cursa-solidaria-nadal-rotary-tortosa",
    "official_guess": "https://www.9hsports.cat/ca/informacio_cursa/1323",
@@ -12161,9 +12069,7 @@
    "time": "",
    "city": "La Jonquera",
    "region": "",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://running.life/en/event/cursa-de-la-dona-de-la-jonquera",
    "official_guess": "https://curses.cat/donajonquera2026/",
@@ -12178,9 +12084,7 @@
    "time": "",
    "city": "Candelaria",
    "region": "Canarias",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "url": "",
    "official": false,
    "note": "",
@@ -12241,9 +12145,7 @@
    "time": "",
    "city": "A Alivía",
    "region": "",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://running.life/en/event/san-silvestre-muradana",
    "official_guess": "https://www.deporticket.com/web-evento/13963-v-san-silvestre-muradana",
@@ -12258,9 +12160,7 @@
    "time": "",
    "city": "Valdetorres de Jarama",
    "region": "Comunidad de Madrid",
-   "distances": [
-    "5K"
-   ],
+   "distances": [],
    "url": "",
    "official": false,
    "note": "",
@@ -12276,9 +12176,7 @@
    "time": "",
    "city": "Mieres",
    "region": "Asturias",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "url": "",
    "official": false,
    "note": "",
@@ -12294,9 +12192,7 @@
    "time": "",
    "city": "Vélez-Málaga",
    "region": "Andalucía",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "url": "",
    "official": false,
    "note": "",
@@ -12372,9 +12268,7 @@
    "time": "",
    "city": "El Masnou",
    "region": "Cataluña",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://running.life/en/event/san-silvestre-del-masnou",
    "official_guess": "https://www.lasansi.com/es/sant-silvestre-masnou",
@@ -12404,9 +12298,7 @@
    "time": "",
    "city": "El Vendrell",
    "region": "Cataluña",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://running.life/en/event/sant-silvestre-del-vendrell",
    "official_guess": "https://www.runnerselvendrell.cat/?page_id=6420",
@@ -12437,7 +12329,8 @@
    "city": "L'Escala",
    "region": "",
    "distances": [
-    "21K"
+    "10K",
+    "5K"
    ],
    "price": "",
    "source": "https://running.life/en/event/st-esteve-run",
@@ -12459,10 +12352,7 @@
    "time": "",
    "city": "Sonseca",
    "region": "Castilla-La Mancha",
-   "distances": [
-    "21K",
-    "5K"
-   ],
+   "distances": [],
    "price": "10 €",
    "source": "https://sportmaniacs.com/es/races/vi-carrera-del-mazapan-de-sonseca",
    "official_guess": "https://sportmaniacs.com/es/races/vi-carrera-del-mazapan-de-sonseca",
@@ -12509,7 +12399,6 @@
    "city": "Villarreal",
    "region": "Comunidad Valenciana",
    "distances": [
-    "21K",
     "5K"
    ],
    "price": "",
@@ -12541,9 +12430,7 @@
    "time": "",
    "city": "Canyelles",
    "region": "",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://running.life/en/event/cursa-solidaria-cap-dany-canyelles",
    "official_guess": "https://www.weevens.com/esdeveniments/cursa-solidaria-bureau-vallee-cap-dany-canyelles-2026/",
@@ -12574,7 +12461,8 @@
    "city": "Alcácer",
    "region": "Comunidad Valenciana",
    "distances": [
-    "21K"
+    "10K",
+    "3K"
    ],
    "price": "",
    "source": "https://running.life/en/event/runcancer-alcasser",
@@ -12596,10 +12484,7 @@
    "time": "",
    "city": "Pinto",
    "region": "Comunidad de Madrid",
-   "distances": [
-    "10K",
-    "5K"
-   ],
+   "distances": [],
    "url": "",
    "official": false,
    "note": "",
@@ -12719,9 +12604,7 @@
    "time": "",
    "city": "Badajoz",
    "region": "Extremadura",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://running.life/en/event/san-silvestre-pacense-badajoz",
    "official_guess": "https://www.pulsaciones.net/carreras/27-12-2026-san-silvestre-pacense-badajoz-2026/",
@@ -12737,7 +12620,8 @@
    "city": "Pravia",
    "region": "Asturias",
    "distances": [
-    "21K"
+    "5K",
+    "3K"
    ],
    "price": "2–11 €",
    "source": "https://running.life/en/event/san-silvestre-praviana",
@@ -12774,9 +12658,7 @@
    "time": "",
    "city": "Salamanca",
    "region": "Castilla y León",
-   "distances": [
-    "10K"
-   ],
+   "distances": [],
    "url": "",
    "official": false,
    "note": "",
@@ -12791,9 +12673,7 @@
    "time": "",
    "city": "Santa Cruz",
    "region": "Andalucía",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://running.life/en/event/san-silvestre-sevillana",
    "official_guess": "https://www.deporticket.com/web-evento/14134-xxxi-san-silvestre-sevillana",
@@ -12823,9 +12703,7 @@
    "time": "",
    "city": "Tarifa",
    "region": "Ceuta",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://running.life/en/event/san-silvestre-tarifena",
    "official_guess": "https://www.cronofinisher.com/evento/v-san-silvestre-tarifena-2026/",
@@ -12855,9 +12733,7 @@
    "time": "",
    "city": "Almería",
    "region": "Andalucía",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "url": "",
    "official": false,
    "note": "",
@@ -12873,9 +12749,7 @@
    "time": "",
    "city": "Burriana",
    "region": "Comunidad Valenciana",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "url": "",
    "official": false,
    "note": "",
@@ -12907,7 +12781,8 @@
    "city": "Guadalajara",
    "region": "Castilla-La Mancha",
    "distances": [
-    "21K"
+    "10K",
+    "5K"
    ],
    "url": "https://web.rockthesport.com/es/event/x-san-silvestre-ciudad-de-guadalajara",
    "official": true,
@@ -13019,7 +12894,8 @@
    "city": "Badalona",
    "region": "Cataluña",
    "distances": [
-    "21K"
+    "10K",
+    "5K"
    ],
    "url": "https://www.zonavipevents.com/sant-silvestre-badalona/",
    "official": true,
@@ -13130,9 +13006,7 @@
    "time": "",
    "city": "Huesa",
    "region": "",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://running.life/en/event/carrera-san-silvestre-huesa",
    "official_guess": "https://www.cronofinisher.com/evento/ix-carrera-san-silvestre-huesa-2026/",
@@ -13192,9 +13066,7 @@
    "time": "",
    "city": "Valencia",
    "region": "Comunidad Valenciana",
-   "distances": [
-    "5K"
-   ],
+   "distances": [],
    "url": "",
    "official": false,
    "note": "",
@@ -13209,9 +13081,7 @@
    "time": "",
    "city": "Sant Francesc",
    "region": "Comunidad Valenciana",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://running.life/en/event/san-silvestre-valencia",
    "official_guess": "https://www.fdmvalencia.es/es/eventos/san-silvestre-valencia-2026/",
@@ -13329,9 +13199,7 @@
    "time": "18:00",
    "city": "Talavera de la Reina",
    "region": "Castilla-La Mancha",
-   "distances": [
-    "Popular"
-   ],
+   "distances": [],
    "url": "https://carreraspopulares.com/carrera/san-silvestre-talavera-de-la-reina",
    "official": true,
    "note": "Salida en avenida Juan Carlos I.",
@@ -13348,9 +13216,7 @@
    "time": "",
    "city": "Łódź",
    "region": "",
-   "distances": [
-    "10K"
-   ],
+   "distances": [],
    "price": "77 €",
    "source": "https://sportmaniacs.com/es/races/42-bieg-sylwestrowy",
    "official_guess": "https://sportmaniacs.com/es/races/42-bieg-sylwestrowy",
@@ -13366,7 +13232,10 @@
    "city": "Benavites",
    "region": "Comunidad Valenciana",
    "distances": [
-    "21K"
+    "10K",
+    "7,2K",
+    "6K",
+    "5K"
    ],
    "price": "",
    "source": "https://running.life/en/event/circuit-vall-de-sego-carreres-populars",
@@ -13389,9 +13258,7 @@
    "time": "",
    "city": "Canovelles",
    "region": "Cataluña",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://running.life/en/event/cursa-sant-silvestre-canovelles",
    "official_guess": "https://dsport.cat/ca/fitxa_cursa.php?id_cursa=1246",
@@ -13437,9 +13304,7 @@
    "time": "",
    "city": "Sabadell",
    "region": "Cataluña",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://running.life/en/event/cursa-de-cap-dany-de-sabadell",
    "official_guess": "https://www.capdanyrace.cat/",
@@ -13470,9 +13335,7 @@
    "time": "",
    "city": "Beasain",
    "region": "",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://running.life/en/event/lazkaoko-san-silbestrea",
    "official_guess": "https://web.rockthesport.com/es/event/xiv-lazkaoko-san-silbestrea",
@@ -13487,9 +13350,7 @@
    "time": "",
    "city": "Lillo",
    "region": "Castilla-La Mancha",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://running.life/en/event/lillo-christmas-race-walk",
    "official_guess": "https://sportmaniacs.com/en/races/lillo-christmas-race",
@@ -13504,9 +13365,7 @@
    "time": "",
    "city": "Orio",
    "region": "",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://running.life/en/event/orioko-san-silbestrea",
    "official_guess": "https://web.rockthesport.com/es/event/orioko-san-silbestrea-2026",
@@ -13521,9 +13380,7 @@
    "time": "",
    "city": "A Coruña",
    "region": "Galicia",
-   "distances": [
-    "7.5K"
-   ],
+   "distances": [],
    "url": "",
    "official": false,
    "note": "",
@@ -13727,9 +13584,7 @@
    "time": "",
    "city": "Alcalá de Henares",
    "region": "Comunidad de Madrid",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "url": "",
    "official": false,
    "note": "",
@@ -13834,9 +13689,7 @@
    "time": "",
    "city": "Garachico",
    "region": "",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://running.life/en/event/san-silvestre-garachico",
    "official_guess": "https://inscripciones.chronotrackcanarias.com/inscripcion/xiv-san-silvestre-garachiquense-2026/",
@@ -13912,7 +13765,7 @@
    "city": "Crevillent",
    "region": "Comunidad Valenciana",
    "distances": [
-    "21K"
+    "10K"
    ],
    "url": "https://www.chiplevante.com/es/prueba/san-silvestre-internacional-crevillentina-1004-2026",
    "official": true,
@@ -13962,9 +13815,7 @@
    "time": "",
    "city": "Las Palmas de Gran Canaria",
    "region": "Canarias",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://running.life/en/event/san-silvestre-las-palmas-de-gran-canaria",
    "official_guess": "https://www.sansilvestre.es/",
@@ -13994,9 +13845,7 @@
    "time": "",
    "city": "Manzanares el Real",
    "region": "Comunidad de Madrid",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "url": "",
    "official": false,
    "note": "",
@@ -14012,9 +13861,7 @@
    "time": "",
    "city": "Montijo",
    "region": "Extremadura",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "url": "",
    "official": false,
    "note": "",
@@ -14247,9 +14094,7 @@
    "time": "",
    "city": "Albacete",
    "region": "Castilla-La Mancha",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "url": "",
    "official": false,
    "note": "",
@@ -14265,9 +14110,7 @@
    "time": "",
    "city": "Alcobendas",
    "region": "Comunidad de Madrid",
-   "distances": [
-    "10K"
-   ],
+   "distances": [],
    "url": "",
    "official": false,
    "note": "",
@@ -14327,9 +14170,7 @@
    "time": "",
    "city": "Bilbao",
    "region": "País Vasco",
-   "distances": [
-    "6.6K"
-   ],
+   "distances": [],
    "url": "",
    "official": false,
    "note": "",
@@ -14449,9 +14290,7 @@
    "time": "",
    "city": "Getafe",
    "region": "Comunidad de Madrid",
-   "distances": [
-    "10K"
-   ],
+   "distances": [],
    "url": "",
    "official": false,
    "note": "",
@@ -14511,9 +14350,7 @@
    "time": "",
    "city": "Las Rozas",
    "region": "Comunidad de Madrid",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "url": "",
    "official": false,
    "note": "",
@@ -14618,9 +14455,7 @@
    "time": "",
    "city": "Mohedas de la Jara",
    "region": "",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://running.life/en/event/san-silvestre-de-mohedas-de-la-jara",
    "official_guess": "https://www.deporticket.com/web-evento/14131-iv-san-silvestre-de-mohedas-de-la-jara",
@@ -14725,9 +14560,7 @@
    "time": "",
    "city": "Santander",
    "region": "Cantabria",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "url": "",
    "official": false,
    "note": "",
@@ -14803,9 +14636,7 @@
    "time": "",
    "city": "San Lorenzo de Cardessar",
    "region": "Islas Baleares",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://running.life/en/event/sant-silvestre-llorencina",
    "official_guess": "https://www.elitechip.net/index.php?zwshow=compdet&idcomp=7380166",
@@ -14820,9 +14651,7 @@
    "time": "",
    "city": "Berga",
    "region": "",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://running.life/en/event/sant-silvestre-de-berga",
    "official_guess": "https://www.jaberga.com/santsilvestre",
@@ -14837,9 +14666,7 @@
    "time": "",
    "city": "Girona",
    "region": "Cataluña",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "url": "",
    "official": false,
    "note": "",
@@ -14870,9 +14697,7 @@
    "time": "",
    "city": "Reus",
    "region": "Cataluña",
-   "distances": [
-    "5K"
-   ],
+   "distances": [],
    "url": "",
    "official": false,
    "note": "",
@@ -14888,9 +14713,7 @@
    "time": "",
    "city": "Valencia",
    "region": "Comunidad Valenciana",
-   "distances": [
-    "10K"
-   ],
+   "distances": [],
    "url": "",
    "official": false,
    "note": "",
@@ -14920,9 +14743,7 @@
    "time": "",
    "city": "Cegama",
    "region": "País Vasco",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://running.life/en/event/zegamako-san-silbestrea",
    "official_guess": "https://web.rockthesport.com/es/event/zegamako-14-san-silbestrea",
@@ -15029,9 +14850,7 @@
    "time": "",
    "city": "Cornellà de Llobregat",
    "region": "Cataluña",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://running.life/en/event/cursa-solidaria-de-reis-cornella-de-llobregat",
    "official_guess": "http://www.corresolidaris.org/cursadereis/",
@@ -15061,9 +14880,7 @@
    "time": "",
    "city": "Baños de la Encina",
    "region": "Andalucía",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "url": "",
    "official": false,
    "note": "",
@@ -15081,7 +14898,8 @@
    "region": "Cataluña",
    "distances": [
     "21K",
-    "11K"
+    "10,5K",
+    "10K"
    ],
    "url": "https://www.zonavipevents.com/mitja-sitges/",
    "official": true,
@@ -15126,7 +14944,7 @@
    "region": "Cataluña",
    "distances": [
     "21K",
-    "8K"
+    "7,5K"
    ],
    "url": "https://www.atletismeroses.cat/mitjabadiaderoses",
    "official": true,
@@ -15149,7 +14967,6 @@
    "city": "San Jorge de ses Salines",
    "region": "Islas Baleares",
    "distances": [
-    "21K",
     "5K"
    ],
    "price": "",
@@ -15183,7 +15000,10 @@
    "city": "Ricote",
    "region": "Región de Murcia",
    "distances": [
-    "21K"
+    "21,5K",
+    "21K",
+    "15K",
+    "10K"
    ],
    "price": "12–26 €",
    "source": "https://running.life/en/event/carrera-solidaria-virgen-de-los-dolores-ricote",
@@ -15220,7 +15040,10 @@
    "city": "Blanes",
    "region": "Cataluña",
    "distances": [
-    "21K"
+    "20K",
+    "17K",
+    "10K",
+    "9K"
    ],
    "price": "3–5 €",
    "source": "https://running.life/en/event/cursa-mar-i-murtra",
@@ -15242,9 +15065,7 @@
    "time": "",
    "city": "Deba",
    "region": "",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://running.life/en/event/juan-jose-alcelay-omenaldi-k",
    "official_guess": "https://herrikrosa.eus/Carreras2.asp?carrera=955&Submit=Enviar",
@@ -15264,7 +15085,8 @@
    "city": "Navarcles",
    "region": "Cataluña",
    "distances": [
-    "21K"
+    "10K",
+    "5K"
    ],
    "price": "",
    "source": "https://running.life/en/event/la-navarclina",
@@ -15319,9 +15141,7 @@
    "time": "",
    "city": "Guadajira",
    "region": "Extremadura",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://running.life/en/event/san-silvestre-de-guadajira-cruzando-el-camino-real",
    "official_guess": "https://www.cronofinisher.com/evento/san-silvestre-de-guadajira-cruzando-el-camino-real-5-km/",
@@ -15336,9 +15156,7 @@
    "time": "",
    "city": "Premià de Dalt",
    "region": "Cataluña",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://running.life/en/event/sant-mateu-xtrail",
    "official_guess": "https://misports.cat/curses/sant-mateu-xtrail/",
@@ -15356,7 +15174,9 @@
    "region": "Andalucía",
    "distances": [
     "21K",
-    "10K"
+    "20,9K",
+    "19,2K",
+    "18,7K"
    ],
    "url": "https://inscripciones.tecnocrono.com/inscripcion/torunos-running-series-2027/",
    "official": true,
@@ -15379,7 +15199,8 @@
    "city": "Madrid",
    "region": "Comunidad de Madrid",
    "distances": [
-    "21K"
+    "10K",
+    "5K"
    ],
    "url": "https://web.rockthesport.com/es/event/xxvi-trofeo-paris-de-atletismo",
    "official": true,
@@ -15416,9 +15237,7 @@
    "time": "",
    "city": "Jaén",
    "region": "Andalucía",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://running.life/en/event/carrera-urbana-internacional-noche-de-san-anton",
    "official_guess": "https://web.faalive.com/ch/2027/14537/",
@@ -15437,9 +15256,7 @@
    "time": "",
    "city": "Llerona",
    "region": "",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://running.life/en/event/cros-popular-de-les-franqueses-del-valles",
    "official_guess": "https://www.lesfranqueses.cat/actualitat/noticies/33e-cros-escolar-i-30e-cros-popular-de-les-franqueses-del-valles.html",
@@ -15480,7 +15297,8 @@
    "city": "El Prat de Llobregat",
    "region": "Cataluña",
    "distances": [
-    "21K"
+    "10K",
+    "5K"
    ],
    "price": "3 €",
    "source": "https://running.life/en/event/cursa-mercabarna",
@@ -15503,7 +15321,7 @@
    "city": "Barcheta",
    "region": "Comunidad Valenciana",
    "distances": [
-    "21K"
+    "42K"
    ],
    "price": "",
    "source": "https://running.life/en/event/serralades-de-barxeta",
@@ -15556,7 +15374,6 @@
    "city": "Fasnia",
    "region": "",
    "distances": [
-    "21K",
     "5K"
    ],
    "price": "",
@@ -15574,7 +15391,6 @@
    "city": "Santa Pola",
    "region": "Comunidad Valenciana",
    "distances": [
-    "21K",
     "10K"
    ],
    "price": "5–10 €",
@@ -15628,7 +15444,8 @@
    "city": "El Molinar",
    "region": "Islas Baleares",
    "distances": [
-    "21K",
+    "15K",
+    "10K",
     "5K"
    ],
    "price": "14–20 €",
@@ -15674,7 +15491,6 @@
    "city": "Santa Pola",
    "region": "Comunidad Valenciana",
    "distances": [
-    "21K",
     "10K"
    ],
    "url": "https://web.rockthesport.com/es/event/mitja-marato-internacional-santa-pola-2027",
@@ -15697,8 +15513,8 @@
    "city": "Sanchinarro",
    "region": "Comunidad de Madrid",
    "distances": [
-    "21K",
-    "10K"
+    "10K",
+    "5K"
    ],
    "price": "2–16 €",
    "source": "https://running.life/en/event/sanchinarro-10k",
@@ -15722,8 +15538,10 @@
    "city": "Pueblonuevo del Guadiana",
    "region": "Extremadura",
    "distances": [
-    "21K",
-    "10K"
+    "12K",
+    "10K",
+    "8K",
+    "7K"
    ],
    "price": "",
    "source": "https://running.life/en/event/10k-pueblonuevo-del-guadiana",
@@ -15746,8 +15564,8 @@
    "city": "La Almozara",
    "region": "Aragón",
    "distances": [
-    "21K",
-    "10K"
+    "10K",
+    "5K"
    ],
    "price": "14–19 €",
    "source": "https://running.life/en/event/carrera-popular-10k-del-roscon",
@@ -15769,7 +15587,7 @@
    "city": "Cornellà del Terri",
    "region": "",
    "distances": [
-    "21K"
+    "10K"
    ],
    "price": "10–50 €",
    "source": "https://running.life/en/event/cursa-atletica-run-run-la-vall-del-terri",
@@ -15791,7 +15609,10 @@
    "city": "La Rinconada",
    "region": "Andalucía",
    "distances": [
-    "21K"
+    "28,6K",
+    "26K",
+    "19,9K",
+    "18,4K"
    ],
    "url": "https://inscripciones.tecnocrono.com/inscripcion/viii-media-maraton-entreparques-la-rinconada/",
    "official": true,
@@ -15828,7 +15649,8 @@
    "city": "Almagro",
    "region": "",
    "distances": [
-    "21K"
+    "42K",
+    "3K"
    ],
    "price": "5–50 €",
    "source": "https://running.life/en/event/maraton-de-almagro",
@@ -15850,7 +15672,8 @@
    "city": "Aznalcázar",
    "region": "",
    "distances": [
-    "21K"
+    "21K",
+    "12K"
    ],
    "price": "",
    "source": "https://running.life/en/event/media-del-lince",
@@ -15872,7 +15695,6 @@
    "city": "El Puerto de Santa María",
    "region": "Andalucía",
    "distances": [
-    "21K",
     "10K"
    ],
    "url": "https://www.runnink.com/evento/media-maraton-el-puerto/114",
@@ -15895,10 +15717,7 @@
    "time": "09:50",
    "city": "La Unión",
    "region": "Región de Murcia",
-   "distances": [
-    "21K",
-    "5K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://www.lineadesalida.net/carreras/xxxviii-carrera-alcalde-de-la-union",
    "official_guess": null,
@@ -15914,7 +15733,6 @@
    "city": "Játiva",
    "region": "Comunidad Valenciana",
    "distances": [
-    "21K",
     "10K"
    ],
    "price": "5–16 €",
@@ -15938,7 +15756,6 @@
    "city": "Maliaño",
    "region": "Cantabria",
    "distances": [
-    "21K",
     "10K"
    ],
    "price": "",
@@ -15962,8 +15779,8 @@
    "city": "Vilafranca del Penedès",
    "region": "",
    "distances": [
-    "21K",
-    "10K"
+    "10K",
+    "5K"
    ],
    "price": "",
    "source": "https://running.life/en/event/10k-vilafranca",
@@ -15985,9 +15802,7 @@
    "time": "",
    "city": "Barcelona",
    "region": "Cataluña",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://running.life/en/event/cursa-moritz-sant-antoni",
    "official_guess": "https://cursasantantoni.cat/",
@@ -16062,7 +15877,8 @@
    "city": "Alzira",
    "region": "Comunidad Valenciana",
    "distances": [
-    "21K"
+    "21K",
+    "5K"
    ],
    "url": "https://www.runatica.com/event/xxviii-mitja-marato-ciutat-alzira-2027",
    "official": true,
@@ -16110,7 +15926,8 @@
    "city": "Cantimpalos",
    "region": "Castilla y León",
    "distances": [
-    "21K"
+    "10K",
+    "5K"
    ],
    "price": "12 €",
    "source": "https://running.life/en/event/carrera-pedestre-vega-de-cantimpalos",
@@ -16132,7 +15949,8 @@
    "city": "Monreal del Campo",
    "region": "Aragón",
    "distances": [
-    "21K"
+    "10K",
+    "5K"
    ],
    "price": "",
    "source": "https://running.life/en/event/frio-extremo-monreal-del-campo",
@@ -16169,7 +15987,8 @@
    "city": "Posada",
    "region": "Asturias",
    "distances": [
-    "21K"
+    "10K",
+    "5K"
    ],
    "price": "15–20 €",
    "source": "https://running.life/en/event/llanera10k",
@@ -16192,7 +16011,9 @@
    "city": "Murcia",
    "region": "Región de Murcia",
    "distances": [
-    "21K"
+    "42K",
+    "21K",
+    "10K"
    ],
    "price": "6–57 €",
    "source": "https://running.life/en/event/maraton-murcia-costa-calida",
@@ -16214,8 +16035,8 @@
    "city": "Elche",
    "region": "Comunidad Valenciana",
    "distances": [
-    "21K",
-    "10K"
+    "10K",
+    "5K"
    ],
    "price": "18–21 €",
    "source": "https://running.life/en/event/10k-rotary-concienciate",
@@ -16238,8 +16059,9 @@
    "city": "San Jorge de ses Salines",
    "region": "Islas Baleares",
    "distances": [
-    "21K",
-    "10K"
+    "42K",
+    "10K",
+    "5K"
    ],
    "price": "18–22 €",
    "source": "https://running.life/en/event/10k-ibiza-platja-den-bossa",
@@ -16282,9 +16104,7 @@
    "time": "",
    "city": "Marines Viejo",
    "region": "Comunidad Valenciana",
-   "distances": [
-    "21K"
-   ],
+   "distances": [],
    "price": "",
    "source": "https://running.life/en/event/carrera-regimiento-lusitania",
    "official_guess": "https://cronorunner.com/evento.php?ref=632-2275",
@@ -16304,7 +16124,7 @@
    "city": "Torremolinos",
    "region": "Andalucía",
    "distances": [
-    "21K"
+    "5K"
    ],
    "price": "20 €",
    "source": "https://running.life/en/event/media-maraton-internacional-de-torremolinos",
@@ -16327,7 +16147,7 @@
    "city": "Carmona",
    "region": "Andalucía",
    "distances": [
-    "21K"
+    "10K"
    ],
    "price": "",
    "source": "https://running.life/en/event/ruta-del-lago-guadajoz",

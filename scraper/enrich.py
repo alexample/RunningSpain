@@ -105,10 +105,15 @@ def enrich(r: dict, today: date) -> dict:
     regulation = r.get("regulation") or (parse.find_regulation(html, final) if html else (final if final.lower().endswith(".pdf") else None))
     if regulation and not r.get("regulation"):
         upd["regulation"] = regulation
-    if html and not r.get("banner"):
-        img = parse.og_image(html, final)
-        if img and not img.lower().endswith((".svg", ".ico")):
-            upd["banner"] = img
+    if html:
+        img, score = parse.best_image(html, final)
+        # el cartel de la web oficial gana si puntúa igual o mejor que el que ya hubiera
+        if img and (not r.get("banner") or score >= (r.get("bannerScore") or 0)) and img != r.get("banner"):
+            upd["banner"], upd["bannerScore"] = img, score
+        if not r.get("route"):
+            route = parse.find_route(html, final)
+            if route:
+                upd["route"] = route
 
     reg_text = ""
     if regulation and (not r.get("price") or not r.get("time")):
@@ -139,4 +144,7 @@ def enrich(r: dict, today: date) -> dict:
         upd["time"] = time_
     if km and not r.get("km"):
         upd["km"] = km
+        tags = parse.tags_from_km(km)
+        if tags:
+            upd["distances"] = tags
     return upd

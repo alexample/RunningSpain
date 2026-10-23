@@ -21,7 +21,7 @@ GENERIC = {"san", "sant", "silvestre", "media", "maraton", "medio", "mitja", "ma
            "las", "y", "i", "a", "en", "carrera", "cursa", "carreira", "popular", "ciudad", "ciutat",
            "villa", "vila", "2026", "2027", "2028", "edicion"}
 # Campos cuyo cambio se anuncia en la web como "actualizada"
-TRACKED = ("url", "regulation", "banner", "price", "time", "km", "date")
+TRACKED = ("url", "regulation", "banner", "price", "time", "km", "date", "route")
 
 
 def log(msg: str) -> None:
@@ -155,10 +155,41 @@ def complete(db: dict, today: date, changes: dict) -> int:
     return done
 
 
+def media(db: dict, today: date, changes: dict) -> int:
+    """Reabre la ficha del calendario de las carreras sin cartel o sin recorrido."""
+    limit = (today - timedelta(days=config.MEDIA_RECHECK_DAYS)).isoformat()
+    todo = [r for r in db["races"] if r["date"] >= today.isoformat() and r.get("source")
+            and (not r.get("banner") or not r.get("route")) and (r.get("mediaChecked") or "") < limit]
+    todo.sort(key=lambda r: r["date"])
+    log(f"Carteles y recorridos: {len(todo)} pendientes, se revisan {min(len(todo), config.MAX_MEDIA)}")
+    found = 0
+    for r in todo[: config.MAX_MEDIA]:
+        got = sources.read_media(r["source"])
+        r["mediaChecked"] = today.isoformat()
+        changed = []
+        if got.get("banner") and (not r.get("banner") or got["bannerScore"] > (r.get("bannerScore") or 0)):
+            r["banner"], r["bannerScore"] = got["banner"], got["bannerScore"]
+            changed.append("banner")
+        if got.get("route") and not r.get("route"):
+            r["route"] = got["route"]
+            changed.append("route")
+        if changed:
+            found += 1
+            if r["id"] not in changes["added"]:
+                lst = changes["updated"].setdefault(r["id"], [])
+                lst += [k for k in changed if k not in lst]
+    log(f"Fichas con cartel o recorrido nuevo: {found}")
+    return found
+
+
 def tidy(db: dict) -> int:
     """Aplica a los datos guardados los filtros y arreglos actuales (por si se mejoraron)."""
     before = len(db["races"])
     db["races"] = [r for r in db["races"] if parse.is_road(r["name"]) and not r.get("foreign")]
+    for r in db["races"]:   # las etiquetas de distancia, iguales que los km de la ficha
+        tags = parse.tags_from_km(r.get("km", ""))
+        if tags:
+            r["distances"] = tags
     for r in db["races"]:
         name, place = parse.split_name_place(r["name"])
         if place and not r.get("city"):
@@ -185,6 +216,8 @@ def main(argv: list[str]) -> None:
     added = 0 if "--enrich-only" in argv else discover(db, today, changes)
     save(db)
     completed = complete(db, today, changes)
+    save(db)
+    media(db, today, changes)
     ids = {r["id"] for r in db["races"]}
     db["lastRun"] = {
         "at": datetime.now(timezone.utc).isoformat(timespec="seconds"),

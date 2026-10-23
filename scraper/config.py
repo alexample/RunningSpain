@@ -9,6 +9,8 @@ KEEP_PAST_DAYS = 7
 # Límites por ejecución, para ser respetuosos con las webs y no alargar el robot.
 MAX_EVENT_PAGES = 700      # fichas de calendario abiertas por ejecución
 MAX_ENRICH = 180           # webs oficiales revisadas por ejecución
+MAX_MEDIA = 300            # fichas de calendario reabiertas por ejecución para buscar cartel y recorrido
+MEDIA_RECHECK_DAYS = 14
 RECHECK_DAYS = 7           # una ficha sin web oficial se vuelve a intentar pasados N días
 REQUEST_DELAY = 1.2        # segundos entre peticiones al mismo dominio
 TIMEOUT = 25

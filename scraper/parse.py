@@ -213,6 +213,95 @@ def og_image(html: str, base: str) -> str | None:
     return None
 
 
+_IMG_BAD = re.compile(r"logo|icon|favicon|sprite|avatar|default|placeholder|blank|pixel|loading|spinner|"
+                      r"share|social|og-image|og_image|banner-web|header-bg|bandera|flag|sponsor|patrocin|"
+                      r"\.svg|\.gif|\.ico|gravatar|emoji|badge|app-store|google-play|qr", re.I)
+_IMG_POSTER = re.compile(r"cartel|cartell|poster|afiche|flyer|affiche|kartel", re.I)
+
+
+def best_image(html: str, base: str) -> tuple[str | None, int]:
+    """El mejor cartel de una página y su puntuación (0 = ninguno).
+    Prefiere imágenes llamadas «cartel/poster»; luego la imagen del evento (JSON-LD); luego og:image."""
+    s = soup(html)
+    cands: dict[str, int] = {}
+
+    def add(url, score):
+        if not url or not isinstance(url, str):
+            return
+        url = urljoin(base, url.strip())
+        if not url.startswith("http") or _IMG_BAD.search(url):
+            return
+        if _IMG_POSTER.search(url):
+            score += 4
+        cands[url] = max(cands.get(url, 0), score)
+
+    for ev in jsonld_events(html):
+        img = ev.get("image")
+        for i in (img if isinstance(img, list) else [img]):
+            add(i.get("url") if isinstance(i, dict) else i, 4)
+    for prop in ("og:image", "twitter:image", "og:image:url"):
+        m = s.find("meta", attrs={"property": prop}) or s.find("meta", attrs={"name": prop})
+        if m and m.get("content"):
+            add(m["content"], 2)
+    for img in s.find_all("img"):
+        src = img.get("data-src") or img.get("data-lazy-src") or img.get("src")
+        label = " ".join(str(img.get(k) or "") for k in ("alt", "title", "class", "id"))
+        if _IMG_POSTER.search(label):
+            add(src, 5)
+    for a in s.find_all("a", href=True):   # enlaces directos al cartel («Ver cartel»)
+        if re.search(r"\.(jpe?g|png|webp)(\?|$)", a["href"], re.I) and _IMG_POSTER.search(a.get_text(" ") + " " + a["href"]):
+            add(a["href"], 6)
+    if not cands:
+        return None, 0
+    url = max(cands, key=cands.get)
+    return url, cands[url]
+
+
+_ROUTE_HOSTS = re.compile(r"(strava\.com/(routes|segments)|wikiloc\.com|connect\.garmin\.com/modern/course|"
+                          r"komoot\.(com|de)/tour|ridewithgps\.com/routes|plotaroute\.com|mapmyrun\.com/routes|"
+                          r"onthegomap\.com|google\.[a-z.]+/maps/d/|mapometer\.com|alltrails\.com|relive\.cc|"
+                          r"footpathapp\.com|runkeeper\.com/user/.+/route|openrunner\.com)", re.I)
+_ROUTE_WORD = re.compile(r"recorrido|circuito|itinerario|recorregut|ibilbide|\bruta\b|\bmapa\b|\btrack\b|\bgpx\b|\bcourse\b|\broute\b", re.I)
+
+
+def find_route(html: str, base: str) -> str | None:
+    """Enlace al recorrido: Strava, Wikiloc, Garmin, Google My Maps…, un .gpx/.kml o una página «Recorrido»."""
+    best, best_score = None, 0
+    for a in soup(html).find_all("a", href=True):
+        href = urljoin(base, a["href"].strip())
+        if not href.startswith("http"):
+            continue
+        text = a.get_text(" ", strip=True)[:80] + " " + str(a.get("title") or "")
+        score = 0
+        if re.search(r"\.(gpx|kml|kmz)(\?|$)", href, re.I):
+            score = 6
+        elif _ROUTE_HOSTS.search(href):
+            score = 5
+        elif _ROUTE_WORD.search(text) or re.search(r"/(recorrido|circuito|recorregut|ruta|route|mapa)", href, re.I):
+            if re.search(r"facebook|instagram|twitter|youtube|tiktok|whatsapp", href, re.I):
+                continue
+            score = 3 if re.search(r"\.(jpe?g|png|webp|pdf)(\?|$)", href, re.I) else 2
+        if score > best_score:
+            best, best_score = href, score
+    return best if best_score >= 2 else None
+
+
+def tags_from_km(km: str) -> list[str]:
+    """Etiquetas de distancia a partir de los km de la ficha («21,097 km · 10 km» → ["21K", "10K"])."""
+    out = []
+    for m in re.finditer(r"(\d+(?:[.,]\d+)?)\s*km", km or "", re.I):
+        v = float(m.group(1).replace(",", "."))
+        if 42 <= v <= 42.4:
+            t = "42K"
+        elif 21 <= v <= 21.2:
+            t = "21K"
+        else:
+            t = f"{round(v, 1):g}".replace(".", ",") + "K"
+        if t not in out:
+            out.append(t)
+    return out
+
+
 def page_text(html: str) -> str:
     s = soup(html)
     for t in s(["script", "style", "noscript"]):
@@ -357,9 +446,11 @@ def date_from_url(url: str) -> str | None:
 def distances_from(text: str) -> list[str]:
     t = norm(text)
     out = []
-    if re.search(r"\b(maraton|marato|42\s?k|42[.,]195)\b", t) and not re.search(r"media|medio|mitja|half|semi", t):
+    half = re.search(r"\b(media|medio|mitja|mig)\s+marat|\bhalf\s+marathon|\bsemi\s?marat|\b21[.,]0\d{1,2}\b|\b21\s?k\b|\bmezza", t)
+    full = re.search(r"\bmarat(o|on|hon)\b|\b42[.,]195\b|\b42\s?k\b", t)
+    if full and not re.search(r"\b(media|medio|mitja|mig|half|semi)\s?marat", t):
         out.append("42K")
-    if re.search(r"media|medio|mitja|half|semi|21\s?k|21[.,]09", t):
+    if half:
         out.append("21K")
     for n in ("15", "10", "8", "5"):
         if re.search(rf"\b{n}\s?k(m|ms)?\b", t):
