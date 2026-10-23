@@ -336,19 +336,9 @@ _ST_BOTON = re.compile(r"^\s*(inscr[ií]bete( ya| ahora)?|inscribirme|inscribirs
 
 
 def registration_status(html: str, signup_platform: bool = False) -> str | None:
-    """Estado de la inscripción si la página lo dice claramente: abierta, agotada, cerrada o proximamente."""
-    for ev in jsonld_events(html):     # dato estructurado (schema.org offers.availability)
-        offers = ev.get("offers") or []
-        for o in (offers if isinstance(offers, list) else [offers]):
-            av = str((o or {}).get("availability") or "") if isinstance(o, dict) else ""
-            if "SoldOut" in av:
-                return "agotada"
-            if "Discontinued" in av:
-                return "cerrada"
-            if "PreOrder" in av or "PreSale" in av:
-                return "proximamente"
-            if "InStock" in av or "LimitedAvailability" in av:
-                return "abierta"
+    """Estado de la inscripción si la página lo dice claramente: abierta, agotada, cerrada o proximamente.
+    Manda lo que la página dice a la vista; el dato oculto (schema.org) solo si la página no dice nada,
+    porque algunas plataformas lo marcan «SoldOut» aunque la inscripción esté abierta."""
     s = soup(html)
     for t in s(["script", "style", "noscript", "footer", "nav"]):
         t.decompose()
@@ -365,6 +355,15 @@ def registration_status(html: str, signup_platform: bool = False) -> str | None:
         for b in s.find_all(["a", "button"]):
             if _ST_BOTON.match(b.get_text(" ", strip=True)) and not b.get("disabled") and "disabled" not in " ".join(b.get("class") or []):
                 return "abierta"
+    for ev in jsonld_events(html):     # último recurso: dato estructurado (offers.availability)
+        offers = ev.get("offers") or []
+        for o in (offers if isinstance(offers, list) else [offers]):
+            av = str(o.get("availability") or "") if isinstance(o, dict) else ""
+            if "PreOrder" in av or "PreSale" in av:
+                return "proximamente"
+            if "InStock" in av or "LimitedAvailability" in av:
+                return "abierta"
+            # «SoldOut» oculto no se usa: Rockthesport lo pone incluso con la inscripción abierta
     return None
 
 

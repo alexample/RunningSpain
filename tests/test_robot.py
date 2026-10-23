@@ -299,7 +299,10 @@ class RegistrationTests(unittest.TestCase):
         self.assertEqual(st('<a class="btn">Inscríbete</a>', True), "abierta")   # en una plataforma, sí
         ld = """<script type="application/ld+json">{"@type":"SportsEvent","name":"X","startDate":"2026-11-01",
         "offers":{"@type":"Offer","availability":"https://schema.org/SoldOut"}}</script>"""
-        self.assertEqual(st(ld), "agotada")
+        self.assertIsNone(st(ld))   # el «SoldOut» oculto no basta
+        # Rockthesport: la página dice «Inscripciones abiertas» aunque el dato oculto diga SoldOut
+        self.assertEqual(st(ld + "<p>Inscripciones abiertas</p>"), "abierta")
+        self.assertEqual(st(ld + "<p>Inscripciones cerradas desde 22 oct 2026</p>"), "cerrada")
 
     def test_pass_checks_near_races_daily(self):
         today = date(2026, 10, 23)
