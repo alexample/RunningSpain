@@ -49,7 +49,8 @@ import java.util.regex.Pattern;
  * los filtros elegidos en la app (distancias y comunidades).
  *
  * Preferencias ("avisos"):
- *   ajustes = {"activo":bool, "dist":["42","21","10","5","x"], "regiones":["Andalucía",…]}  (lista vacía = todas)
+ *   ajustes = {"activo":bool, "dist":["42","21","10","5","x"], "regiones":["Andalucía",…],   (lista vacía = todas)
+ *              "fecha":{"modo":"dias","dias":30} | {"modo":"rango","desde":"AAAA-MM-DD","hasta":"AAAA-MM-DD"} | {}}
  *   vistas  = ids de carreras ya conocidas (nunca se avisa dos veces de la misma)
  * La primera revisión solo memoriza lo que ya existe, para no llenar el móvil de avisos.
  */
@@ -104,6 +105,18 @@ public class AvisosWorker extends Worker {
         boolean activo = aj.optBoolean("activo", false);
         Set<String> dist = conjunto(aj.optJSONArray("dist"));
         Set<String> regiones = conjunto(aj.optJSONArray("regiones"));
+        // Fecha de la carrera: próximos N días o entre dos fechas (vacío = cualquiera)
+        JSONObject fe = aj.optJSONObject("fecha");
+        String fDesde = "", fHasta = "";
+        if (fe != null) {
+            if ("dias".equals(fe.optString("modo")) && fe.optInt("dias", 0) > 0) {
+                fHasta = new SimpleDateFormat("yyyy-MM-dd", Locale.ROOT)
+                        .format(new Date(System.currentTimeMillis() + fe.optInt("dias") * 86400000L));
+            } else if ("rango".equals(fe.optString("modo"))) {
+                fDesde = fe.optString("desde", "");
+                fHasta = fe.optString("hasta", "");
+            }
+        }
 
         String cuerpo;
         try { cuerpo = descargar(URL_DATOS); } catch (Exception e) { return Result.retry(); }
@@ -123,6 +136,9 @@ public class AvisosWorker extends Worker {
             ahora.add(id);
             if (vistas.contains(id) || primera || !activo) continue;
             if (r.optString("date").compareTo(hoy) < 0) continue;
+            String fecha = r.optString("date");
+            if (!fDesde.isEmpty() && fecha.compareTo(fDesde) < 0) continue;
+            if (!fHasta.isEmpty() && fecha.compareTo(fHasta) > 0) continue;
             if (!regiones.isEmpty() && !regiones.contains(r.optString("region"))) continue;
             if (!dist.isEmpty() && !encaja(categorias(r), dist)) continue;
             nuevas.add(r);

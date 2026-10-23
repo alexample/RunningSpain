@@ -62,6 +62,7 @@ h1 .logo{width:clamp(36px,7vw,48px);height:auto;border-radius:22%;flex:none;box-
 .sheet .mini{font:600 12px var(--body);color:var(--accent);background:none;border:0;padding:0;cursor:pointer}
 .sheet .note{font-size:13px;color:var(--muted);margin:0}
 .sheet .warn{font-size:13px;color:var(--accent);margin:0}
+.sheet select,.sheet input[type=date]{font:500 15px var(--body);color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:8px 10px}
 .sheet .go{font:700 15px var(--body);color:var(--accent-ink);background:var(--accent);border:0;border-radius:10px;padding:12px;cursor:pointer}
 .switch{position:relative;width:48px;height:28px;flex:none}
 .switch input{opacity:0;width:0;height:0}
@@ -341,15 +342,24 @@ document.getElementById("q").addEventListener("input",e=>{q=e.target.value;rende
 })();
 // ---------------------------------------------------------------- avisos (solo en la app Android)
 const APP=window.AndroidApp||null;
-const DIST_OPT=[["42","Maratón"],["21","Media"],["10","10K"],["5","5K"],["x","Otras"]];
+const DIST_OPT=[["42","Maratón (42 km)"],["21","Media maratón (21 km)"],["10","10K"],["5","5K"],["x","Otras distancias"]];
+const FECHA_OPT=[["0","Cualquier fecha"],["7","En los próximos 7 días"],["15","En los próximos 15 días"],["30","En el próximo mes"],["60","En los próximos 2 meses"],["rango","Entre dos fechas…"]];
 function leerAj(){try{return JSON.parse(APP.leerAjustes()||"{}")}catch(e){return{}}}
 function pintarBell(){const b=document.getElementById("bell");const a=leerAj();b.dataset.on=a.activo&&APP.avisosActivos()?"1":"0"}
 function abrirAvisos(){
   const a=leerAj(), dist=new Set(a.dist||[]), regs=new Set(a.regiones||[]);
   const sw=el("input",{type:"checkbox"});sw.checked=!!a.activo;
-  const distBox=el("div",{class:"chips"});
-  DIST_OPT.forEach(([k,t])=>{const b=el("button",{class:"chip",type:"button","aria-pressed":String(dist.has(k))},t);
-    b.onclick=()=>{dist.has(k)?dist.delete(k):dist.add(k);b.setAttribute("aria-pressed",String(dist.has(k)))};distBox.append(b)});
+  const distBox=el("div",{class:"regs"});
+  DIST_OPT.forEach(([k,t])=>{const c=el("input",{type:"checkbox",value:k});c.checked=dist.has(k);distBox.append(el("label",{},c,t))});
+  // fecha de la carrera
+  const f=a.fecha||{};
+  const sel=el("select",{"aria-label":"Fecha de la carrera"});
+  FECHA_OPT.forEach(([v,t])=>sel.append(el("option",{value:v},t)));
+  sel.value=f.modo==="rango"?"rango":String(f.dias||0);
+  const hoyISO=iso(new Date());
+  const desde=el("input",{type:"date",min:hoyISO,value:f.desde||""}),hasta=el("input",{type:"date",min:hoyISO,value:f.hasta||""});
+  const rango=el("div",{class:"row",style:"justify-content:flex-start;flex-wrap:wrap"},el("label",{},"Desde ",desde),el("label",{},"Hasta ",hasta));
+  const verRango=()=>{rango.hidden=sel.value!=="rango"};sel.onchange=verRango;verRango();
   const regBox=el("div",{class:"regs"});
   Object.keys(FLAG).sort((x,y)=>x.localeCompare(y,"es")).forEach(r=>{const c=el("input",{type:"checkbox",value:r});c.checked=regs.has(r);
     regBox.append(el("label",{},c,flag(r)||"",r))});
@@ -368,6 +378,7 @@ function abrirAvisos(){
     el("div",{class:"row"},el("span",{},"Avisarme de carreras nuevas"),el("label",{class:"switch"},sw,el("span"))),
     perm,
     el("div",{},el("h3",{},"Distancias"),distBox,el("p",{class:"note"},"Sin ninguna marcada: todas.")),
+    el("div",{},el("h3",{},"Fecha de la carrera"),sel,rango),
     el("div",{},el("div",{class:"row"},el("h3",{},"Comunidades"),el("span",{},todas," · ",ninguna)),regBox,el("p",{class:"note"},"Sin ninguna marcada: toda España.")),
     el("p",{class:"note"},"La app revisa el calendario cada pocas horas y te avisa solo de las carreras que aparezcan a partir de ahora."),
     guardar));
@@ -375,7 +386,10 @@ function abrirAvisos(){
   cerrar.onclick=close;sheet.onclick=e=>{if(e.target===sheet)close()};
   guardar.onclick=()=>{
     const r=[...regBox.querySelectorAll("input:checked")].map(c=>c.value);
-    APP.guardarAjustes(JSON.stringify({activo:sw.checked,dist:[...dist],regiones:r}));
+    const d=[...distBox.querySelectorAll("input:checked")].map(c=>c.value);
+    const fecha=sel.value==="rango"?{modo:"rango",desde:desde.value||"",hasta:hasta.value||""}
+      :(sel.value==="0"?{}:{modo:"dias",dias:+sel.value});
+    APP.guardarAjustes(JSON.stringify({activo:sw.checked,dist:d,regiones:r,fecha}));
     pintarBell();close()};
   window.alVolverApp=()=>{estadoPerm();pintarBell()};
   document.body.append(sheet);estadoPerm();
