@@ -1,6 +1,6 @@
 {
- "updatedAt": "2026-10-23T06:49:15+00:00",
- "count": 875,
+ "updatedAt": "2026-10-23T07:06:20+00:00",
+ "count": 854,
  "races": [
   {
    "name": "Carrera Popular AESAN",
@@ -47,10 +47,10 @@
    "changedAt": "2026-10-21"
   },
   {
-   "name": "XII TimonCap Costa Cálida 2026 Cabo de Palos 24/10/2026",
+   "name": "XII TimonCap Costa Cálida",
    "date": "2026-10-24",
    "time": "10:00",
-   "city": "",
+   "city": "Cabo de Palos",
    "region": "Región de Murcia",
    "distances": [
     "5K"
@@ -168,27 +168,6 @@
    "nosite": true
   },
   {
-   "name": "6k - 12k Run Rodio Swissboring",
-   "date": "2026-10-24",
-   "time": "",
-   "city": "Ciudad de Guatemala",
-   "region": "",
-   "distances": [],
-   "price": "",
-   "source": "https://sportmaniacs.com/es/races/6k---12k-run-rodio-swissboring",
-   "official_guess": "https://sportmaniacs.com/es/races/6k---12k-run-rodio-swissboring",
-   "id": "6k-12k-run-rodio-swissboring-2026-1024",
-   "official": true,
-   "url": "https://sportmaniacs.com/es/services/inscription/6k---12k-run-rodio-swissboring",
-   "addedAt": "2026-10-23",
-   "checkedAt": "2026-10-23",
-   "nosite": false,
-   "signup": true,
-   "regulation": "https://sportmaniacs.com/es/races/6k---12k-run-rodio-swissboring#rules",
-   "banner": "https://sportmaniacs.com/images/share/sportmaniacs-race.jpg",
-   "km": "12 km · 6 km"
-  },
-  {
    "name": "Bestial Race El Hierro",
    "date": "2026-10-24",
    "time": "",
@@ -260,49 +239,6 @@
    "source": "https://sportplan.es/es/events/carrera-por-la-terapia-ocupacional-madrid-es-2026-10-24",
    "checkedAt": "2026-10-21",
    "nosite": true
-  },
-  {
-   "name": "Challenge Barcelona Triathlon",
-   "date": "2026-10-24",
-   "time": "",
-   "city": "Barcelona",
-   "region": "Cataluña",
-   "distances": [
-    "8K"
-   ],
-   "price": "",
-   "source": "https://sportmaniacs.com/es/races/challenge-barcelona-triathlon-2026",
-   "official_guess": "https://sportmaniacs.com/es/races/challenge-barcelona-triathlon-2026",
-   "id": "challenge-barcelona-triathlon-2026-1024",
-   "official": true,
-   "url": "https://sportmaniacs.com/es/services/inscription/challenge-barcelona-triathlon-2026",
-   "addedAt": "2026-10-23",
-   "checkedAt": "2026-10-23",
-   "nosite": false,
-   "signup": true,
-   "regulation": "https://sportmaniacs.com/es/races/challenge-barcelona-triathlon-2026#rules",
-   "banner": "https://sportmaniacs.com/images/share/sportmaniacs-race.jpg",
-   "km": "25,75 km · 8,8 km · 5,75 km · 3,8 km"
-  },
-  {
-   "name": "Circuito Diputación de Sevilla de Campo a Través",
-   "date": "2026-10-24",
-   "time": "",
-   "city": "Mairena del Alcor",
-   "region": "Andalucía",
-   "distances": [
-    "21K"
-   ],
-   "price": "",
-   "source": "https://running.life/en/event/circuito-diputacion-de-sevilla-de-campo-a-traves/2026-10-24",
-   "official_guess": "https://web.faalive.com/ch/2026/14547/",
-   "id": "circuito-diputacion-de-sevilla-de-campo-a-traves-2026-1024",
-   "official": true,
-   "url": "https://web.faalive.com/ch/2026/14547/",
-   "addedAt": "2026-10-23",
-   "checkedAt": "2026-10-23",
-   "nosite": false,
-   "banner": "https://web.faalive.com/img/LogoFetriIcon.png"
   },
   {
    "name": "Cursa Antiracista Solsona",
@@ -445,48 +381,6 @@
    "nosite": false
   },
   {
-   "name": "Ocean Lava Lanzarote",
-   "date": "2026-10-24",
-   "time": "",
-   "city": "Tías",
-   "region": "Canarias",
-   "distances": [],
-   "price": "50–75 €",
-   "source": "https://sportmaniacs.com/es/races/ocean-lava-lanzarote-2026",
-   "official_guess": "https://sportmaniacs.com/es/races/ocean-lava-lanzarote-2026",
-   "id": "ocean-lava-lanzarote-2026-1024",
-   "official": true,
-   "url": "https://sportmaniacs.com/es/services/inscription/ocean-lava-lanzarote-2026",
-   "addedAt": "2026-10-23",
-   "checkedAt": "2026-10-23",
-   "nosite": false,
-   "signup": true,
-   "regulation": "https://sportmaniacs.com/es/races/ocean-lava-lanzarote-2026#rules",
-   "banner": "https://sportmaniacs.com/images/share/sportmaniacs-race.jpg",
-   "km": "13,9 km"
-  },
-  {
-   "name": "Pilar Xtreme",
-   "date": "2026-10-24",
-   "time": "",
-   "city": "Villafranca de los Barros",
-   "region": "",
-   "distances": [
-    "21K"
-   ],
-   "price": "",
-   "source": "https://running.life/en/event/pilar-xtreme",
-   "official_guess": "https://www.chipserena.es/web-evento/13878-viii-pilar-xtreme",
-   "id": "pilar-xtreme-2026-1024",
-   "official": true,
-   "url": "https://www.chipserena.es/web-evento/13878-viii-pilar-xtreme",
-   "addedAt": "2026-10-23",
-   "checkedAt": "2026-10-23",
-   "nosite": false,
-   "banner": "https://deporticket.blob.core.windows.net/awebs/chipserena.-cronometraje-deportivo/logo-chipserena-blanco-2017-638853183074871968.png",
-   "km": "5 km"
-  },
-  {
    "name": "Prueba Urbana Ciudad de Fuente del Maestre",
    "date": "2026-10-24",
    "time": "",
@@ -521,27 +415,6 @@
    "regulation": "https://sportmaniacs.com/es/races/pulpi---circuito-de-carreras-populares-diputacin-de-almera-2026#rules",
    "banner": "https://sportmaniacs.com/images/share/sportmaniacs-race.jpg",
    "km": "9,96 km"
-  },
-  {
-   "name": "Resistencia y Acondicionamiento Funcional Energuate",
-   "date": "2026-10-24",
-   "time": "",
-   "city": "Ciudad de Guatemala",
-   "region": "",
-   "distances": [],
-   "price": "",
-   "source": "https://sportmaniacs.com/es/races/resistencia-y-acondicionamiento-funcional-energuate",
-   "official_guess": "https://sportmaniacs.com/es/races/resistencia-y-acondicionamiento-funcional-energuate",
-   "id": "resistencia-y-acondicionamiento-funcional-energuate-2026-1024",
-   "official": true,
-   "url": "https://sportmaniacs.com/es/services/inscription/resistencia-y-acondicionamiento-funcional-energuate",
-   "addedAt": "2026-10-23",
-   "checkedAt": "2026-10-23",
-   "nosite": false,
-   "signup": true,
-   "regulation": "https://sportmaniacs.com/es/races/resistencia-y-acondicionamiento-funcional-energuate#rules",
-   "banner": "https://sportmaniacs.com/images/share/sportmaniacs-race.jpg",
-   "km": "3,2 km"
   },
   {
    "name": "Ruta del Barbo",
@@ -625,25 +498,6 @@
    "banner": "https://sportmaniacs.com/images/share/sportmaniacs-race.jpg"
   },
   {
-   "name": "Wop Challenge Bilbao - Bizkaia",
-   "date": "2026-10-24",
-   "time": "",
-   "city": "Salida Bilbao",
-   "region": "País Vasco",
-   "distances": [
-    "42K"
-   ],
-   "price": "",
-   "source": "https://www.carreraspopulares.com/carrera/wop-challenge-bilbao-bizkaia",
-   "official_guess": null,
-   "id": "wop-challenge-bilbao-bizkaia-2026-1024",
-   "official": false,
-   "url": "",
-   "addedAt": "2026-10-23",
-   "checkedAt": "2026-10-23",
-   "nosite": true
-  },
-  {
    "name": "XIII Edició Curses Serra de Tramuntana",
    "date": "2026-10-24",
    "time": "",
@@ -664,11 +518,11 @@
    "banner": "https://sportmaniacs.com/images/share/sportmaniacs-race.jpg"
   },
   {
-   "name": "Caravaca Experience 2026 Caravaca de la Cruz 25/10/2026",
+   "name": "Caravaca Experience",
    "date": "2026-10-25",
    "time": "08:00",
-   "city": "",
-   "region": "",
+   "city": "Caravaca de la Cruz",
+   "region": "Región de Murcia",
    "distances": [],
    "price": "",
    "source": "https://www.lineadesalida.net/carreras/caravaca-experience-2026",
@@ -806,7 +660,7 @@
    "name": "III Carrera Empresas Huesca",
    "date": "2026-10-25",
    "time": "09:30",
-   "city": "HUESCA",
+   "city": "Huesca",
    "region": "Aragón",
    "distances": [
     "42K",
@@ -910,7 +764,7 @@
    "name": "III Carrera del Azafrán Monreal del Campo",
    "date": "2026-10-25",
    "time": "10:00",
-   "city": "MONREAL DEL CAMPO",
+   "city": "Monreal del Campo",
    "region": "Aragón",
    "distances": [
     "42K"
@@ -926,11 +780,11 @@
    "nosite": true
   },
   {
-   "name": "Los Alcázares en marcha contra el cáncer 2026 Los Alcázares 25/10/2026",
+   "name": "Los Alcázares en marcha contra el cáncer",
    "date": "2026-10-25",
    "time": "10:00",
-   "city": "",
-   "region": "Canarias",
+   "city": "Los Alcázares",
+   "region": "Región de Murcia",
    "distances": [],
    "price": "",
    "source": "https://www.lineadesalida.net/carreras/los-alcazares-en-marcha-contra-el-cancer-2026",
@@ -1179,30 +1033,6 @@
    "source": "https://running.life/es/carrera/10k-correplayas-memorial-paco-guisado",
    "official_guess": "https://www.runnink.com/evento/xx-correplayas-memorial-paco-guisado/103",
    "checkedAt": "2026-10-21"
-  },
-  {
-   "name": "13a. CARRERA SAN MARTÍN",
-   "date": "2026-10-25",
-   "time": "",
-   "city": "Ciudad de Guatemala",
-   "region": "",
-   "distances": [
-    "10K",
-    "5K"
-   ],
-   "price": "",
-   "source": "https://sportmaniacs.com/es/races/13a-carrera-san-martn",
-   "official_guess": "https://sportmaniacs.com/es/races/13a-carrera-san-martn",
-   "id": "13a-carrera-san-martin-2026-1025",
-   "official": true,
-   "url": "https://sportmaniacs.com/es/services/inscription/13a-carrera-san-martn",
-   "addedAt": "2026-10-23",
-   "checkedAt": "2026-10-23",
-   "nosite": false,
-   "signup": true,
-   "regulation": "https://sportmaniacs.com/es/races/13a-carrera-san-martn#rules",
-   "banner": "https://sportmaniacs.com/images/share/sportmaniacs-race.jpg",
-   "km": "10 km · 5 km"
   },
   {
    "name": "5K Granadilla de Abona",
@@ -3336,29 +3166,6 @@
    "nosite": true
   },
   {
-   "name": "Travesia Playas de Papagayo Grand Haytt Lanzarote Playa Dorada",
-   "date": "2026-11-07",
-   "time": "09:50",
-   "city": "Yaiza",
-   "region": "Canarias",
-   "distances": [
-    "5K"
-   ],
-   "price": "5–55 €",
-   "source": "https://sportmaniacs.com/es/races/travesia-playas-de-papagayo-baha-de-playa-blanca-2026",
-   "official_guess": "https://sportmaniacs.com/es/races/travesia-playas-de-papagayo-baha-de-playa-blanca-2026",
-   "id": "travesia-playas-de-papagayo-grand-haytt-lanzarote-playa-dorada-2026-1107",
-   "official": true,
-   "url": "https://sportmaniacs.com/es/services/inscription/travesia-playas-de-papagayo-baha-de-playa-blanca-2026",
-   "addedAt": "2026-10-23",
-   "checkedAt": "2026-10-23",
-   "nosite": false,
-   "signup": true,
-   "regulation": "https://s3-eu-west-1.amazonaws.com/sm-fotos.sportmaniacs.com/back/WEB_2026_REGLAMENTO Travesía Playas de Papagayo - Grand Hyatt Lanzarote Playa Dorada.pdf",
-   "banner": "https://sportmaniacs.com/images/share/sportmaniacs-race.jpg",
-   "km": "5 km · 4,5 km"
-  },
-  {
    "name": "10K Popular de Náquera",
    "date": "2026-11-07",
    "time": "10:00",
@@ -3761,26 +3568,6 @@
    "banner": "https://rtsfiles.blob.core.windows.net/manager/4700/custom/root/5bed52de-2077-43f8-9b45-9c395561a769_custom1.png"
   },
   {
-   "name": "I Extreme",
-   "date": "2026-11-07",
-   "time": "",
-   "city": "Telde",
-   "region": "Canarias",
-   "distances": [],
-   "price": "20–40 €",
-   "source": "https://sportmaniacs.com/es/races/i-extreme-2026",
-   "official_guess": "https://sportmaniacs.com/es/races/i-extreme-2026",
-   "id": "i-extreme-2026-1107",
-   "official": true,
-   "url": "https://sportmaniacs.com/es/services/inscription/i-extreme-2026",
-   "addedAt": "2026-10-23",
-   "checkedAt": "2026-10-23",
-   "nosite": false,
-   "signup": true,
-   "regulation": "https://s3-eu-west-1.amazonaws.com/sm-fotos.sportmaniacs.com/back/Reglamento_Oficial_Extreme_Telde.pdf",
-   "banner": "https://sportmaniacs.com/images/share/sportmaniacs-race.jpg"
-  },
-  {
    "name": "Las 10 Mil Zancadas de Ledaña",
    "date": "2026-11-07",
    "time": "",
@@ -3950,11 +3737,11 @@
    "km": "42 km · 21 km · 12 km"
   },
   {
-   "name": "Desafío Hybrid Race San Pedro del Pinatar San Pedro del Pinatar 08/11/2026",
+   "name": "Desafío Hybrid Race San Pedro del Pinatar",
    "date": "2026-11-08",
    "time": "08:00",
-   "city": "",
-   "region": "",
+   "city": "San Pedro del Pinatar",
+   "region": "Región de Murcia",
    "distances": [],
    "price": "",
    "source": "https://www.lineadesalida.net/carreras/desafio-hybrid-race-san-pedro-del-pinatar",
@@ -4257,25 +4044,6 @@
    "nosite": false,
    "regulation": "https://www.elitechip.net/system/public/download/3c82ef3da062c041b6bbc3eb6ef05c57.pdf",
    "km": "5 km · 3 km"
-  },
-  {
-   "name": "Trofeo Marathon de Campo a Través",
-   "date": "2026-11-08",
-   "time": "10:00",
-   "city": "Madrid",
-   "region": "Comunidad de Madrid",
-   "distances": [
-    "42K"
-   ],
-   "price": "",
-   "source": "https://www.carreraspopulares.com/carrera/trofeo-marathon-de-campo-a-traves",
-   "official_guess": null,
-   "id": "trofeo-marathon-de-campo-a-traves-2026-1108",
-   "official": false,
-   "url": "",
-   "addedAt": "2026-10-23",
-   "checkedAt": "2026-10-23",
-   "nosite": true
   },
   {
    "name": "XLVI Carrera Popular Villa de Grazalema",
@@ -5248,26 +5016,6 @@
    "km": "10 km · 7 km"
   },
   {
-   "name": "XVI Campo a Través del Aceite Ecológico",
-   "date": "2026-11-08",
-   "time": "",
-   "city": "Puerta de Segura (La)",
-   "region": "Andalucía",
-   "distances": [],
-   "price": "1 €",
-   "source": "https://sportmaniacs.com/es/races/xvi-campo-a-travs-del-aceite-ecolgico",
-   "official_guess": "https://sportmaniacs.com/es/races/xvi-campo-a-travs-del-aceite-ecolgico",
-   "id": "xvi-campo-a-traves-del-aceite-ecologico-2026-1108",
-   "official": true,
-   "url": "https://sportmaniacs.com/es/services/inscription/xvi-campo-a-travs-del-aceite-ecolgico",
-   "addedAt": "2026-10-23",
-   "checkedAt": "2026-10-23",
-   "nosite": false,
-   "signup": true,
-   "regulation": "http://https://s3-eu-west-1.amazonaws.com/sm-fotos.sportmaniacs.com/back/XVI CAMPO A TRAVES2026.pdf",
-   "banner": "https://sportmaniacs.com/images/share/sportmaniacs-race.jpg"
-  },
-  {
    "name": "XX Andaina Outono O Barco de Valdeorras",
    "date": "2026-11-08",
    "time": "",
@@ -5629,26 +5377,6 @@
    "km": "10 km · 5 km"
   },
   {
-   "name": "Circuito Diputación de Sevilla de Campo a Través",
-   "date": "2026-11-14",
-   "time": "",
-   "city": "Mairena del Alcor",
-   "region": "Andalucía",
-   "distances": [
-    "21K"
-   ],
-   "price": "",
-   "source": "https://running.life/en/event/circuito-diputacion-de-sevilla-de-campo-a-traves/2026-11-14",
-   "official_guess": "https://web.faalive.com/ch/2026/14548/",
-   "id": "circuito-diputacion-de-sevilla-de-campo-a-traves-2026-1114",
-   "official": true,
-   "url": "https://web.faalive.com/ch/2026/14548/",
-   "addedAt": "2026-10-23",
-   "checkedAt": "2026-10-23",
-   "nosite": false,
-   "banner": "https://web.faalive.com/img/LogoFetriIcon.png"
-  },
-  {
    "name": "Corresan Ruta da Prata Angrois - Memorial Manolo Moure",
    "date": "2026-11-14",
    "time": "",
@@ -5873,7 +5601,7 @@
    "name": "40ª Volta a la Foia",
    "date": "2026-11-15",
    "time": "08:00",
-   "city": "CASTALLA",
+   "city": "Castalla",
    "region": "Comunidad Valenciana",
    "distances": [
     "42K"
@@ -6451,26 +6179,6 @@
    "source": "https://sportplan.es/es/events/caixabank-10k-bilbao-2026-bilbao-2026-11-15",
    "checkedAt": "2026-10-22",
    "nosite": true
-  },
-  {
-   "name": "Campo a Través Ciudad de Álora",
-   "date": "2026-11-15",
-   "time": "",
-   "city": "Álora",
-   "region": "Andalucía",
-   "distances": [
-    "21K"
-   ],
-   "price": "",
-   "source": "https://running.life/en/event/campo-a-traves-ciudad-de-alora",
-   "official_guess": "https://web.faalive.com/ch/2026/14428/",
-   "id": "campo-a-traves-ciudad-de-alora-2026-1115",
-   "official": true,
-   "url": "https://web.faalive.com/ch/2026/14428/",
-   "addedAt": "2026-10-23",
-   "checkedAt": "2026-10-23",
-   "nosite": false,
-   "banner": "https://web.faalive.com/img/LogoFetriIcon.png"
   },
   {
    "name": "Carreira Popular da Valenzá",
@@ -7348,30 +7056,6 @@
    "nosite": true
   },
   {
-   "name": "Ultramaratón Guatemala -UTG-",
-   "date": "2026-11-20",
-   "time": "01:00",
-   "city": "San Juan del Obispo",
-   "region": "",
-   "distances": [
-    "42K",
-    "21K"
-   ],
-   "price": "",
-   "source": "https://sportmaniacs.com/es/races/ultramaraton-guatemala--utg--2026",
-   "official_guess": "https://sportmaniacs.com/es/races/ultramaraton-guatemala--utg--2026",
-   "id": "ultramaraton-guatemala-utg-2026-1120",
-   "official": true,
-   "url": "https://sportmaniacs.com/es/services/inscription/ultramaraton-guatemala--utg--2026",
-   "addedAt": "2026-10-23",
-   "checkedAt": "2026-10-23",
-   "nosite": false,
-   "signup": true,
-   "regulation": "https://sportmaniacs.com/es/races/ultramaraton-guatemala--utg--2026#rules",
-   "banner": "https://sportmaniacs.com/images/share/sportmaniacs-race.jpg",
-   "km": "50 km · 42 km · 21 km · 12 km"
-  },
-  {
    "name": "El Privilegio 100 Millas",
    "date": "2026-11-20",
    "time": "",
@@ -8209,29 +7893,6 @@
    "nosite": false,
    "price": "23 €",
    "km": "10 km · 5 km · 3 km",
-   "changedAt": "2026-10-22"
-  },
-  {
-   "name": "CXM Toleta",
-   "date": "2026-11-22",
-   "time": "",
-   "city": "Puerto Serrano",
-   "region": "",
-   "distances": [
-    "21K"
-   ],
-   "price": "25–26 €",
-   "source": "https://running.life/en/event/cxm-toleta",
-   "official_guess": "https://inscripciones.tecnocrono.com/inscripcion/vi-cxm-toleta/",
-   "id": "cxm-toleta-2026-1122",
-   "official": true,
-   "url": "https://inscripciones.tecnocrono.com/inscripcion/vi-cxm-toleta/",
-   "addedAt": "2026-10-21",
-   "checkedAt": "2026-10-22",
-   "nosite": false,
-   "regulation": "https://inscripciones.tecnocrono.com/inscripcion/vi-cxm-toleta/reglamento/",
-   "banner": "https://inscripciones.tecnocrono.com/inscripcion/vi-cxm-toleta/ficheros/?filetype=cartel",
-   "km": "29 km · 18 km",
    "changedAt": "2026-10-22"
   },
   {
@@ -9193,26 +8854,6 @@
    "nosite": true
   },
   {
-   "name": "Campo a Través Sierra Ahillos Alcaudete",
-   "date": "2026-11-28",
-   "time": "",
-   "city": "Alcaudete",
-   "region": "Andalucía",
-   "distances": [],
-   "price": "1 €",
-   "source": "https://sportmaniacs.com/es/races/campo-a-travs-sierra-ahillos-alcaudete-2026",
-   "official_guess": "https://sportmaniacs.com/es/races/campo-a-travs-sierra-ahillos-alcaudete-2026",
-   "id": "campo-a-traves-sierra-ahillos-alcaudete-2026-1128",
-   "official": true,
-   "url": "https://sportmaniacs.com/es/services/inscription/campo-a-travs-sierra-ahillos-alcaudete-2026",
-   "addedAt": "2026-10-23",
-   "checkedAt": "2026-10-23",
-   "nosite": false,
-   "signup": true,
-   "regulation": "http://https://s3-eu-west-1.amazonaws.com/sm-fotos.sportmaniacs.com/back/Diptico_Cross_Alcaudete_Sub10_comprimido.pdf",
-   "banner": "https://sportmaniacs.com/images/share/sportmaniacs-race.jpg"
-  },
-  {
    "name": "Carrera Entre Dinosaurios Villa de Igea",
    "date": "2026-11-28",
    "time": "",
@@ -9265,26 +8906,6 @@
    "id": "carrera-popular-de-la-inmaculada-alcaldesa-perpetua-2026-1128",
    "official": true,
    "url": "https://web.faalive.com/ch/2026/14514/",
-   "addedAt": "2026-10-23",
-   "checkedAt": "2026-10-23",
-   "nosite": false,
-   "banner": "https://web.faalive.com/img/LogoFetriIcon.png"
-  },
-  {
-   "name": "Circuito Diputación de Sevilla de Campo a Través",
-   "date": "2026-11-28",
-   "time": "",
-   "city": "Mairena del Alcor",
-   "region": "Andalucía",
-   "distances": [
-    "21K"
-   ],
-   "price": "",
-   "source": "https://running.life/en/event/circuito-diputacion-de-sevilla-de-campo-a-traves/2026-11-28",
-   "official_guess": "https://web.faalive.com/ch/2026/14549/",
-   "id": "circuito-diputacion-de-sevilla-de-campo-a-traves-2026-1128",
-   "official": true,
-   "url": "https://web.faalive.com/ch/2026/14549/",
    "addedAt": "2026-10-23",
    "checkedAt": "2026-10-23",
    "nosite": false,
@@ -9948,30 +9569,6 @@
    "changedAt": "2026-10-22"
   },
   {
-   "name": "Etxebarri Xtreme",
-   "date": "2026-12-06",
-   "time": "08:00",
-   "city": "Vizcaya",
-   "region": "País Vasco",
-   "distances": [
-    "21K"
-   ],
-   "price": "",
-   "source": "https://running.life/en/event/etxebarri-xtreme",
-   "official_guess": "https://sportmaniacs.com/en/races/xiv-etxebarri-xtreme",
-   "id": "etxebarri-xtreme-2026-1206",
-   "official": true,
-   "url": "https://sportmaniacs.com/en/services/inscription/xiv-etxebarri-xtreme",
-   "addedAt": "2026-10-21",
-   "checkedAt": "2026-10-22",
-   "nosite": false,
-   "signup": true,
-   "regulation": "https://s3-eu-west-1.amazonaws.com/sm-fotos.sportmaniacs.com/back/6a572833-2594-4e94-afa9-0bb3ac1f1f6f-Reglamento_ETL_2526.pdf",
-   "banner": "https://sportmaniacs.com/images/share/sportmaniacs-race.jpg",
-   "km": "30 km · 10 km · 9 km",
-   "changedAt": "2026-10-22"
-  },
-  {
    "name": "Maratón Valencia Trinidad Alfonso",
    "date": "2026-12-06",
    "time": "08:15",
@@ -10080,32 +9677,6 @@
    "checkedAt": "2026-10-22",
    "nosite": false,
    "changedAt": "2026-10-22"
-  },
-  {
-   "name": "Antigua Run",
-   "date": "2026-12-06",
-   "time": "",
-   "city": "Antigua Guatemala",
-   "region": "",
-   "distances": [
-    "21K",
-    "15K",
-    "10K",
-    "5K"
-   ],
-   "price": "",
-   "source": "https://sportmaniacs.com/es/races/antigua-run-2026",
-   "official_guess": "https://sportmaniacs.com/es/races/antigua-run-2026",
-   "id": "antigua-run-2026-1206",
-   "official": true,
-   "url": "https://sportmaniacs.com/es/services/inscription/antigua-run-2026",
-   "addedAt": "2026-10-23",
-   "checkedAt": "2026-10-23",
-   "nosite": false,
-   "signup": true,
-   "regulation": "https://sportmaniacs.com/es/races/antigua-run-2026#rules",
-   "banner": "https://sportmaniacs.com/images/share/sportmaniacs-race.jpg",
-   "km": "21 km · 15 km · 10 km · 5 km"
   },
   {
    "name": "Carrera Popular Día de la Constitución",
@@ -15903,28 +15474,6 @@
    "changedAt": "2026-10-22"
   },
   {
-   "name": "CXM Vista Alegre - Sierra Gorda",
-   "date": "2027-01-17",
-   "time": "",
-   "city": "Alumbres",
-   "region": "Región de Murcia",
-   "distances": [
-    "21K"
-   ],
-   "price": "",
-   "source": "https://running.life/en/event/cxm-vista-alegre-sierra-gorda",
-   "official_guess": "https://www.lineadesalida.net/carreras/ix-cxm-vista-alegre-sierra-gorda",
-   "id": "cxm-vista-alegre-sierra-gorda-2027-0117",
-   "official": true,
-   "url": "https://www.lineadesalida.net/carreras/ix-cxm-vista-alegre-sierra-gorda",
-   "addedAt": "2026-10-21",
-   "checkedAt": "2026-10-22",
-   "nosite": false,
-   "signup": true,
-   "km": "12 km · 10,5 km · 8 km",
-   "changedAt": "2026-10-22"
-  },
-  {
    "name": "Cursa Mercabarna",
    "date": "2027-01-17",
    "time": "",
@@ -16341,11 +15890,11 @@
    "changedAt": "2026-10-22"
   },
   {
-   "name": "XXXVIII Carrera Alcalde de La Unión La Unión 31/01/2027",
+   "name": "XXXVIII Carrera Alcalde de La Unión",
    "date": "2027-01-31",
    "time": "09:50",
-   "city": "",
-   "region": "",
+   "city": "La Unión",
+   "region": "Región de Murcia",
    "distances": [
     "21K",
     "5K"

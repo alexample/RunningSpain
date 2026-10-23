@@ -306,13 +306,29 @@ def is_spain(country: str) -> bool:
     return not c or c in {"es", "esp", "spain", "espana", "espanya", "espagne", "spanien"}
 
 
+def split_name_place(name: str) -> tuple[str, str]:
+    """Separa nombres de listado con lugar y fecha pegados al final:
+    «XII TimonCap Costa Cálida 2026 Cabo de Palos 24/10/2026» → («XII TimonCap Costa Cálida», «Cabo de Palos»).
+    Solo actúa si el nombre acaba en una fecha; si no, lo devuelve tal cual."""
+    n = (name or "").strip()
+    m = re.match(r"^(.*?)\s+\d{1,2}/\d{1,2}/20\d{2}\s*$", n)
+    if not m:
+        return n, ""
+    n = m.group(1).strip()
+    m2 = re.match(r"^(.*\S)\s+20\d{2}\s+(.{2,40})$", n)
+    if m2:
+        return m2.group(1).strip(), m2.group(2).strip()
+    w = n.split()
+    for k in range(min(6, len(w) // 2), 0, -1):   # «… San Pedro del Pinatar San Pedro del Pinatar»
+        if [x.lower() for x in w[-k:]] == [x.lower() for x in w[-2 * k:-k]]:
+            return " ".join(w[:-k]), " ".join(w[-k:])
+    return n, ""
+
+
 def clean_name(name: str, city: str = "") -> str:
-    """Quita la fecha y el lugar pegados al final del nombre («… Cabo de Palos 24/10/2026»)."""
-    n = re.sub(r"\s+\d{1,2}/\d{1,2}/20\d{2}\s*$", "", name or "").strip()
-    if city and len(n) > len(city) + 5 and norm(n).endswith(" " + norm(city)):
-        n = n[: -len(city)].strip(" -·,")
-    n = re.sub(r"\s+20\d{2}$", "", n).strip()
-    return n
+    """Quita la fecha (y el lugar) pegados al final y el año suelto del final."""
+    n, _ = split_name_place(name)
+    return re.sub(r"\s+20\d{2}$", "", n).strip()
 
 
 def nice_name(name: str) -> str:

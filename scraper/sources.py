@@ -193,8 +193,9 @@ def read_event_page(cand: dict, today: date) -> dict | None:
     if not city:
         m = re.search(r"\bLugar:?\s+(.{2,40}?)\s+(?:Fecha|Hora|Distancia)\b", text[:3000])
         city = m.group(1).strip() if m else ""
-    city = parse.nice_name(city)
-    name = parse.clean_name(name, city)
+    name, place = parse.split_name_place(name)
+    city = parse.nice_name(city or place)
+    name = parse.clean_name(name)
     region = (parse.region_from_text(f.get("region_hint", ""), city)
               or cand.get("region_default")
               or parse.region_from_text(text[:1500]))

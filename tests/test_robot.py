@@ -169,6 +169,15 @@ class NewSourcesTests(unittest.TestCase):
         self.assertEqual(parse.date_from_text("dissabte 14 de desembre de 2026"), "2026-12-14")
         self.assertIsNone(parse.date_from_text("sin fecha"))
 
+    def test_split_name_place_only_with_trailing_date(self):
+        self.assertEqual(parse.split_name_place("XII TimonCap Costa Cálida 2026 Cabo de Palos 24/10/2026"),
+                         ("XII TimonCap Costa Cálida", "Cabo de Palos"))
+        self.assertEqual(parse.split_name_place("Media Maratón de Cuenca"), ("Media Maratón de Cuenca", ""))
+        self.assertEqual(parse.split_name_place("Desafío Hybrid Race San Pedro del Pinatar San Pedro del Pinatar 07/11/2026"),
+                         ("Desafío Hybrid Race San Pedro del Pinatar", "San Pedro del Pinatar"))
+        self.assertEqual(parse.clean_name("Media Maratón de Cuenca"), "Media Maratón de Cuenca")
+        self.assertEqual(parse.clean_name("Maratón de Sevilla 2027"), "Maratón de Sevilla")
+
     def test_nice_name(self):
         self.assertEqual(parse.nice_name("XI CARRERA SOLIDARIA DE LA VILLA"), "XI Carrera Solidaria de la Villa")
         self.assertEqual(parse.nice_name("Media Maratón de Lugo"), "Media Maratón de Lugo")

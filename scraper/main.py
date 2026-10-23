@@ -160,9 +160,12 @@ def tidy(db: dict) -> int:
     before = len(db["races"])
     db["races"] = [r for r in db["races"] if parse.is_road(r["name"]) and not r.get("foreign")]
     for r in db["races"]:
+        name, place = parse.split_name_place(r["name"])
+        if place and not r.get("city"):
+            r["city"] = place
+        r["name"] = parse.clean_name(name)
         if r.get("city"):
             r["city"] = parse.nice_name(r["city"])
-        r["name"] = parse.clean_name(r["name"], r.get("city", ""))
     return before - len(db["races"])
 
 
