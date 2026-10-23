@@ -1,72 +1,96 @@
 [
  {
-  "url": "https://es.wikiloc.com/robots.txt",
-  "status": 403,
-  "final": "https://es.wikiloc.com/robots.txt",
-  "server": "cloudflare",
-  "ctype": "text/html; charset=UTF-8",
-  "bytes": 5701,
-  "titulo": "Just a moment...",
-  "rutas": [],
-  "inicio": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta http-equiv=\"content-security-policy\" content=\"default-src &#39;none&#39;; script-src &#39;nonce-OduC27p9r0Ft09j9hUIW5A&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-src-attr &#39;none&#39;; style-src &#39;unsafe-inline&#39;; img-src &#39;self&#39; https://challenges.cloudflare.com; connect-src &#39;self&#39; https://challenges.cloudflare.com; frame-src &#39;self&#39; https://challenges.cloudflare.com blob:; child-src &#39;self&#39; https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri &#39;self&#39;\"><style>*{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,\"Noto Sans\",sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol\",\"Noto Color Emoji\"}body{display:flex;flex-direction:column;height:100vh;min-height:100vh}.main-content{margin:8rem auto;padding-left:1.5rem;max-width:60rem}@media (width <= 720px){.main-content{margin-top:4rem}}#challenge-error-text{background-image:url(\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zd"
+  "url": "https://web.rockthesport.com/es/event/fedola-family-run-2026",
+  "status": 200,
+  "estado": "agotada",
+  "hits": {
+   "agotada": [],
+   "cerrada": [],
+   "prox": [],
+   "abierta": [
+    "00 Fin : 24 oct 2026, 23:59 Running/Atletismo 10KM 5KM Otros Organiza Canaryrun Contactar Inscripciones abiertas Inscripción y Tarifas 5 km Ocean Cross €25.00 10 km Ocean C"
+   ]
+  },
+  "ld": [
+   "{'@type': 'Offer', 'url': 'https://web.rockthesport.com/es/event/fedola-family-run-2026', 'availability': 'https://schema.org/SoldOut', 'validFrom': '2026-04-08T08:00:00.0000000', 'validThrough': '2026-10-24T23:59:00.0000000'}"
+  ]
  },
  {
-  "url": "https://es.wikiloc.com/wikiloc/find.do?q=media+maraton+cuenca",
-  "status": 403,
-  "final": "https://es.wikiloc.com/wikiloc/find.do?q=media+maraton+cuenca",
-  "server": "cloudflare",
-  "ctype": "text/html; charset=UTF-8",
-  "bytes": 5843,
-  "titulo": "Just a moment...",
-  "rutas": [],
-  "inicio": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scal"
+  "url": "https://web.rockthesport.com/es/event/iv-ruta-del-barbo-cadreita",
+  "status": 200,
+  "estado": "agotada",
+  "hits": {
+   "agotada": [],
+   "cerrada": [
+    "t 2026, 23:59 Running/Atletismo Media Maratón Organiza Ayuntamiento de Cadreita Contactar Inscripciones cerradas Inscripción y Tarifas TARIFA 21K €10.00 TARIFA 10K €10.00",
+    "ontactar Inscripciones cerradas Inscripción y Tarifas TARIFA 21K €10.00 TARIFA 10K €10.00 Inscripciones cerradas desde 22 oct 2026 Comprueba tu inscripción Añadir a favor"
+   ],
+   "prox": [],
+   "abierta": []
+  },
+  "ld": [
+   "{'@type': 'Offer', 'url': 'https://web.rockthesport.com/es/event/iv-ruta-del-barbo-cadreita', 'availability': 'https://schema.org/SoldOut', 'validFrom': '2026-08-06T10:30:00.0000000', 'validThrough': '2026-10-22T23:59:00.0000000'}"
+  ]
  },
  {
-  "url": "https://es.wikiloc.com/rutas/correr?q=media+maraton+cuenca",
-  "status": 403,
-  "final": "https://es.wikiloc.com/rutas/correr?q=media+maraton+cuenca",
-  "server": "cloudflare",
-  "ctype": "text/html; charset=UTF-8",
-  "bytes": 5834,
-  "titulo": "Just a moment...",
-  "rutas": [],
-  "inicio": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scal"
+  "url": "https://web.rockthesport.com/es/event/29-salto-15k-donostia-san-sebast",
+  "status": 404,
+  "estado": null,
+  "hits": {
+   "agotada": [],
+   "cerrada": [],
+   "prox": [],
+   "abierta": []
+  },
+  "ld": []
  },
  {
-  "url": "https://es.wikiloc.com/wikiloc/map.do?q=media+maraton+cuenca",
-  "status": 403,
-  "final": "https://es.wikiloc.com/wikiloc/map.do?q=media+maraton+cuenca",
-  "server": "cloudflare",
-  "ctype": "text/html; charset=UTF-8",
-  "bytes": 5840,
-  "titulo": "Just a moment...",
-  "rutas": [],
-  "inicio": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scal"
+  "url": "https://web.rockthesport.com/es/event/vi-carrera-hazvisible22q",
+  "status": 200,
+  "estado": "agotada",
+  "hits": {
+   "agotada": [],
+   "cerrada": [],
+   "prox": [],
+   "abierta": [
+    "t 2026, 23:59 Running/Atletismo 10KM 5KM Otros Organiza Eventsthinker - General Contactar Inscripciones abiertas Inscripción y Tarifas 10 Km €15.00 5 Km €15.00 2 Km - march"
+   ]
+  },
+  "ld": [
+   "{'@type': 'Offer', 'url': 'https://web.rockthesport.com/es/event/vi-carrera-hazvisible22q', 'availability': 'https://schema.org/SoldOut', 'validFrom': '2026-01-22T00:00:00.0000000', 'validThrough': '2026-10-23T23:59:00.0000000'}"
+  ]
  },
  {
-  "url": "https://es.wikiloc.com/wikiloc/spatialArtifacts.do?q=media+maraton+cuenca",
-  "status": 403,
-  "final": "https://es.wikiloc.com/wikiloc/spatialArtifacts.do?q=media+maraton+cuenca",
-  "server": "cloudflare",
-  "ctype": "text/html; charset=UTF-8",
-  "bytes": 5900,
-  "titulo": "Just a moment...",
-  "rutas": [],
-  "inicio": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scal"
+  "url": "https://burgos21k.com/",
+  "status": 200,
+  "estado": "agotada",
+  "hits": {
+   "agotada": [
+    "o la prueba junto a la organización, patrocinadores y asociaciones colaboradoras. Con los dorsales agotados,... Leer más → Distancias 21K Prueba homologada. Para qui"
+   ],
+   "cerrada": [],
+   "prox": [],
+   "abierta": []
+  },
+  "ld": []
  },
  {
-  "url": "https://es.wikiloc.com/rutas/correr/espana/castilla-la-mancha/cuenca",
-  "status": 403,
-  "final": "https://es.wikiloc.com/rutas/correr/espana/castilla-la-mancha/cuenca",
-  "server": "cloudflare",
-  "ctype": "text/html; charset=UTF-8",
-  "bytes": 5870,
-  "titulo": "Just a moment...",
-  "rutas": [],
-  "inicio": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scal"
- },
- {
-  "url": "https://api.wikiloc.com/",
-  "error": "ConnectionError(MaxRetryError('HTTPSConnectionPool(host=\\'api.wikiloc.com\\', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host=\\'api.wikiloc.com\\', port="
+  "url": "https://gesport.cat/mitja-marato-costa-barcelona-maresme-2026/",
+  "status": 200,
+  "estado": "agotada",
+  "hits": {
+   "agotada": [
+    "s Cronometratge Servei de cronometratge Inscripcions i resultats QUI SOM Serveis Contacte SOLD OUT - INSCRIPCIONS TANCADES video resum 2025 Serveis de la Curs",
+    "per a la meta que no pas a la sortida. Aquí : Plaça Llúis Gallart (Calella) Inscripcions: SOLD OUT! Obertura d’inscripcions online en aquesta mateixa web. La ",
+    "El 1er i 1a Local obtindran unes ulleres de sol gentilesa de Òptica Calella. INSCRIPCIONS SOLD OUT - INSCRIPCIONS TANCADES RECORREGUT 21K Fes click a la imatg"
+   ],
+   "cerrada": [
+    "atge Servei de cronometratge Inscripcions i resultats QUI SOM Serveis Contacte SOLD OUT - INSCRIPCIONS TANCADES video resum 2025 Serveis de la Cursa Recorregut NORMATIVA R",
+    " Local obtindran unes ulleres de sol gentilesa de Òptica Calella. INSCRIPCIONS SOLD OUT - INSCRIPCIONS TANCADES RECORREGUT 21K Fes click a la imatge per veure el circuit d"
+   ],
+   "prox": [],
+   "abierta": []
+  },
+  "ld": []
  }
 ]
