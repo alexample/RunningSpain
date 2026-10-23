@@ -2,9 +2,9 @@ name: Actualizar carreras
 
 on:
   schedule:
-    # El lanzamiento diario lo hace el Worker de Cloudflare (dondeloechan-ia) a las 03:07 UTC.
-    # Esta pasada de GitHub queda solo de respaldo (GitHub a veces la retrasa o se la salta).
-    - cron: "43 14 * * *"
+    # Las dos vueltas diarias las lanza el Worker de Cloudflare (dondeloechan-ia) a las 03:07 y 14:07 UTC.
+    # Esta pasada de GitHub es solo un respaldo de madrugada por si el Worker fallara (GitHub a veces la retrasa).
+    - cron: "41 22 * * *"
   workflow_dispatch:        # botón "Run workflow" para lanzarlo a mano
   repository_dispatch:      # aviso del Worker de Cloudflare (dondeloechan-ia), más puntual que el horario de GitHub
     types: [robot]
