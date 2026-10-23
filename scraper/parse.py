@@ -311,9 +311,57 @@ def is_route_url(url: str) -> bool:
     """¿Parece de verdad un recorrido? (servicio de rutas, archivo GPX/KML o página/archivo «recorrido» del organizador)"""
     if not url or not url.startswith("http"):
         return False
-    if re.search(r"\.(gpx|kml|kmz)(\?|$)", url, re.I) or _ROUTE_HOSTS.search(url):
+    if re.search(r"\.(gpx|kml|kmz)(\?|$)", url, re.I) or _ROUTE_HOSTS.search(url) or "wikiloc.com/wikiloc/view.do" in url:
         return True
+    if re.search(r"\.(jpe?g|png|webp)(\?|$)", url, re.I) and re.search(r"recorrido|circuito|recorregut|ibilbide|plano|perfil|mapa|route|course", url, re.I):
+        return is_official_url(url)
     return bool(_ROUTE_URL_WORD.search(url)) and not _ROUTE_BAD.search(url) and is_official_url(url)
+
+
+def _embed_to_view(src: str) -> str | None:
+    """Convierte un mapa incrustado en un enlace que se pueda abrir."""
+    m = re.search(r"wikiloc\.com/wikiloc/(?:spatialArtifacts|embedv2)\.do\?.*?\bid=(\d+)", src, re.I)
+    if m:
+        return f"https://es.wikiloc.com/wikiloc/view.do?id={m.group(1)}"
+    m = re.search(r"google\.[a-z.]+/maps/d/(?:u/\d+/)?(?:embed|viewer|edit)\?.*?\bmid=([\w-]+)", src, re.I)
+    if m:
+        return f"https://www.google.com/maps/d/viewer?mid={m.group(1)}"
+    m = re.search(r"strava\.com/(routes|activities|segments)/(\d+)", src, re.I)
+    if m:
+        return f"https://www.strava.com/{m.group(1)}/{m.group(2)}"
+    m = re.search(r"connect\.garmin\.com/modern/course/(?:embed/)?(\d+)", src, re.I)
+    if m:
+        return f"https://connect.garmin.com/modern/course/{m.group(1)}"
+    m = re.search(r"komoot\.[a-z]+/(?:[a-z-]+/)?tour/(\d+)", src, re.I)
+    if m:
+        return f"https://www.komoot.com/tour/{m.group(1)}"
+    m = re.search(r"ridewithgps\.com/(?:embeds\?type=route&id=|routes/)(\d+)", src, re.I)
+    if m:
+        return f"https://ridewithgps.com/routes/{m.group(1)}"
+    m = re.search(r"(plotaroute\.com/(?:route|embedmap)/\d+|mapmyrun\.com/routes/view/\d+|onthegomap\.com/s/\w+)", src, re.I)
+    if m:
+        return "https://www." + m.group(1).replace("embedmap", "route")
+    return None
+
+
+def find_route_media(html: str, base: str) -> tuple[str | None, int]:
+    """Recorrido incrustado o en imagen dentro de la propia página: mapas (iframe), widgets de Strava, imágenes «recorrido»."""
+    base = page_base(html, base)
+    s = soup(html)
+    for f in s.find_all("iframe"):
+        v = _embed_to_view(f.get("src") or f.get("data-src") or "")
+        if v:
+            return v, 5
+    for d in s.select("[data-embed-id][data-embed-type]"):   # widget de Strava
+        if (d.get("data-embed-type") or "") in ("route", "activity", "segment"):
+            return f"https://www.strava.com/{d['data-embed-type']}s/{d['data-embed-id']}", 5
+    for img in s.find_all("img"):
+        src = img.get("data-src") or img.get("data-lazy-src") or img.get("src") or ""
+        label = " ".join(str(img.get(k) or "") for k in ("alt", "title")) + " " + src
+        if re.search(r"recorrido|circuito|recorregut|ibilbide|plano|perfil|mapa[-_ ]|route|course", label, re.I) \
+                and not _IMG_BAD.search(src) and re.search(r"\.(jpe?g|png|webp)(\?|$)", src, re.I):
+            return abs_url(base, src), 3
+    return None, 0
 
 
 def find_route(html: str, base: str, strict: bool = False) -> str | None:
@@ -336,6 +384,14 @@ def find_route(html: str, base: str, strict: bool = False) -> str | None:
             score = 3 if re.search(r"\.(jpe?g|png|webp|pdf)(\?|$)", href, re.I) else 2
         if score > best_score:
             best, best_score = href, score
+    if not strict:
+        emb, sc = find_route_media(html, base)
+        if emb and sc > best_score:
+            best, best_score = emb, sc
+    else:   # en calendarios, solo mapas incrustados de servicios de rutas (no imágenes)
+        emb, sc = find_route_media(html, base)
+        if emb and sc >= 5 and sc > best_score:
+            best, best_score = emb, sc
     return best if best_score >= 2 else None
 
 

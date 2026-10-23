@@ -360,5 +360,27 @@ class RecheckTests(unittest.TestCase):
         self.assertFalse(any("sportplan" in c.args[0] for c in g.call_args_list))   # la fuente bloqueada no se abre
 
 
+class RouteSiteTests(unittest.TestCase):
+    def test_embedded_maps_and_images(self):
+        fr = parse.find_route_media
+        self.assertEqual(fr('<iframe src="https://www.google.com/maps/d/embed?mid=1AbC_x&ehbc=2E312F"></iframe>', "https://x.es/")[0],
+                         "https://www.google.com/maps/d/viewer?mid=1AbC_x")
+        self.assertEqual(fr('<iframe src="https://es.wikiloc.com/wikiloc/spatialArtifacts.do?event=view&id=98765&measures=on"></iframe>', "https://x.es/")[0],
+                         "https://es.wikiloc.com/wikiloc/view.do?id=98765")
+        self.assertEqual(fr('<div class="strava-embed-placeholder" data-embed-type="route" data-embed-id="321"></div>', "https://x.es/")[0],
+                         "https://www.strava.com/routes/321")
+        self.assertEqual(fr('<img src="/wp-content/uploads/2026/09/recorrido-10k.jpg" alt="">', "https://x.es/")[0],
+                         "https://x.es/wp-content/uploads/2026/09/recorrido-10k.jpg")
+        self.assertIsNone(fr('<img src="/logo.png" alt="Logo"><iframe src="https://www.youtube.com/embed/x"></iframe>', "https://x.es/")[0])
+
+    def test_route_page_inside_site(self):
+        home = '<a href="/recorrido/">Recorrido</a>'
+        page = '<h1>Recorrido</h1><iframe src="https://www.google.com/maps/d/embed?mid=ZZZ"></iframe>'
+        def get(u, binary=False):
+            return (page if "recorrido" in u else home), u, "text/html"
+        with mock.patch("scraper.net.get", side_effect=get):
+            self.assertEqual(enrich.route_from_site("https://mi10k.es/"), "https://www.google.com/maps/d/viewer?mid=ZZZ")
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -58,6 +58,26 @@ def resolve_regulation(url: str, found_on: str | None = None) -> str | None:
     return None
 
 
+def route_from_site(url: str) -> str | None:
+    """Recorrido en la web de la carrera: en la portada o, si hay una página «Recorrido», dentro de ella."""
+    html, final, _ = net.get(url)
+    if not html or isinstance(html, bytes):
+        return None
+    found = parse.find_route(html, final)
+    if not found:
+        return None
+    # si lo encontrado es una página de la propia web («/recorrido/»), mirar dentro el mapa, GPX o imagen
+    if net.domain(found) == net.domain(final) and not re.search(r"\.(gpx|kml|kmz|jpe?g|png|webp|pdf)(\?|$)", found, re.I):
+        inner, f2, _ = net.get(found)
+        if inner and not isinstance(inner, bytes):
+            emb, _ = parse.find_route_media(inner, f2)
+            links = parse.find_route(inner, f2)
+            better = emb or (links if links and links != found and not net.domain(links) == net.domain(f2) else None)
+            if better:
+                return better
+    return found
+
+
 def ask_llm(name: str, d: str, text: str) -> dict:
     """Lectura opcional con IA (solo si hay ANTHROPIC_API_KEY). Barato: un modelo pequeño."""
     global _llm_calls
@@ -176,6 +196,8 @@ def enrich(r: dict, today: date) -> dict:
             upd["banner"], upd["bannerScore"] = img, score
         if not r.get("route"):
             route = parse.find_route(html, final)
+            if route and net.domain(route) == net.domain(final) and parse.find_route_media(html, final)[0] is None:
+                route = route_from_site(final) or route     # página «Recorrido»: entrar a por el mapa
             if route:
                 upd["route"] = route
 

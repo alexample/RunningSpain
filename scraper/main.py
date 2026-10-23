@@ -164,6 +164,11 @@ def complete(db: dict, today: date, changes: dict) -> int:
 def media(db: dict, today: date, changes: dict) -> int:
     """Reabre la ficha del calendario de las carreras sin cartel o sin recorrido."""
     limit = (today - timedelta(days=config.MEDIA_RECHECK_DAYS)).isoformat()
+    if not db.get("rutasV2"):   # una vez: volver a buscar recorrido (ahora también mapas incrustados e imágenes)
+        for r in db["races"]:
+            if not r.get("route"):
+                r.pop("mediaChecked", None)
+        db["rutasV2"] = today.isoformat()
     # reglamentos: llegar al PDF si era una página, y comprobar cada semana que el enlace sigue abriendo
     week = (today - timedelta(days=7)).isoformat()
     regs = [r for r in db["races"] if r["date"] >= today.isoformat() and r.get("regulation")
@@ -199,6 +204,11 @@ def media(db: dict, today: date, changes: dict) -> int:
     found = 0
     for r in todo[: config.MAX_MEDIA]:
         got = sources.read_media(r["source"])
+        # el recorrido, primero en la web de la carrera (portada o página «Recorrido»)
+        if not r.get("route") and r.get("official") and r.get("url"):
+            own = enrich.route_from_site(r["url"])
+            if own:
+                got["route"] = own
         r["mediaChecked"] = today.isoformat()
         changed = []
         if got.get("banner") and (not r.get("banner") or got["bannerScore"] > (r.get("bannerScore") or 0)):
