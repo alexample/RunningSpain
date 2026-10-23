@@ -95,7 +95,7 @@ NOT_ROAD = [
     "nataci", "swim", "aquabike", "padel", "pádel", "kayak", "piragü", "remo ", "enduro",
     "gravel", "rally", "ciclotur", "cicloturist", "patinaje", "roller",
     "triath", "duath", "ironman", "ocean lava", "campo a traves", "campo a través", "xtreme", "extreme",
-    "funcional", "crossfit", "wop challenge", "travesia", "travesía", "sky race", "skymarathon",
+    "funcional", "crossfit", "hybrid", "wop challenge", "travesia", "travesía", "sky race", "skymarathon",
 ]
 
 PROVINCE_TO_REGION = {
