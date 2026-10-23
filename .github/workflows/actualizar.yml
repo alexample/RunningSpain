@@ -41,7 +41,7 @@ jobs:
         run: |
           git config user.name "runningspain-bot"
           git config user.email "runningspain-bot@users.noreply.github.com"
-          git add docs/data/carreras.json
+          git add docs/data
           git add -A docs/c
           [ -f estado/vistos.json ] && git add estado/vistos.json
           if git diff --cached --quiet; then
@@ -69,6 +69,7 @@ jobs:
         run: |
           [ -f estado/x.json ] || exit 0
           git add estado/x.json
+          [ -f docs/data/cortos.json ] && git add docs/data/cortos.json
           if git diff --cached --quiet; then
             echo "Sin cambios"
           else

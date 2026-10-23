@@ -24,7 +24,7 @@ from urllib.parse import quote
 
 import requests
 
-from . import config, share
+from . import config, share, shorten
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "docs" / "data" / "carreras.json"
@@ -74,7 +74,8 @@ def compose(r: dict, con_enlace: bool | None = None) -> str:
     tags = "#running #carreras" + (f" #{REGION_TAG[r['region']]}" if r.get("region") in REGION_TAG else "")
     if con_enlace is None:
         con_enlace = config.X_CON_ENLACE
-    tail = [share.share_url(r)] if con_enlace else []   # enlace directo a la ficha (con vista previa del cartel)
+    link = shorten.load().get(r["id"]) or share.share_url(r)   # enlace acortado a la ficha (o el largo si aún no hay)
+    tail = [link] if con_enlace else []
     tail.append(tags)
     text = "\n".join(lines + [""] + tail)
     while x_len(text) > 280 and len(lines[0]) > 30:   # recorta el nombre si no cabe
@@ -216,6 +217,11 @@ def main(argv: list[str]) -> int:
             t = compose(r)
             print(f"--- {x_len(t)} caracteres\n{t}")
         return 0
+    if todo:
+        try:
+            shorten.ensure(races, must=[r["id"] for r in todo[: config.X_MAX_POR_EJECUCION]], limit=config.X_MAX_POR_EJECUCION)
+        except Exception as e:
+            print(f"Enlaces cortos: error {e}")
     hook = os.environ.get("MACRODROID_WEBHOOK", "").strip().rstrip(".,;")
     if hook and config.NTFY:
         return send_ntfy(ntfy_topic(hook), todo[: config.X_MAX_POR_EJECUCION], st)

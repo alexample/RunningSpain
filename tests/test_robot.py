@@ -410,5 +410,20 @@ class ShareTests(unittest.TestCase):
         self.assertIn('content="https://alexample.github.io/RunningSpain/#c-carrera-popular-aesan-2026-1024"', share.page(r).replace("url=", 'content="'))
 
 
+class ShortenTests(unittest.TestCase):
+    def test_ensure_creates_once_and_tweets_use_it(self):
+        import tempfile
+        from scraper import shorten, xpost
+        races = [{"id": "b", "name": "B", "date": "2026-12-01"}, {"id": "a", "name": "A", "date": "2026-11-01", "city": "Lugo"}]
+        with tempfile.TemporaryDirectory() as tmp, mock.patch.object(shorten, "FILE", Path(tmp) / "c.json"), \
+             mock.patch.object(shorten, "shorten", side_effect=lambda u: "https://is.gd/" + u[-12:-5]) as sh, \
+             mock.patch("time.sleep"):
+            d = shorten.ensure(races, must=["b"], limit=1, log=lambda m: None)
+            self.assertEqual(list(d), ["b"])               # primero las que se van a tuitear
+            shorten.ensure(races, limit=5, log=lambda m: None)
+            self.assertEqual(sh.call_count, 2)             # «b» no se vuelve a acortar
+            self.assertIn(shorten.load()["a"], xpost.compose(races[1], con_enlace=True))
+
+
 if __name__ == "__main__":
     unittest.main()

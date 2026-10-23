@@ -10,7 +10,7 @@ import time
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
-from . import config, enrich, net, parse, share, sources
+from . import config, enrich, net, parse, share, shorten, sources
 
 DATA = Path(__file__).resolve().parent.parent / "docs" / "data" / "carreras.json"
 SEEN = Path(__file__).resolve().parent.parent / "estado" / "vistos.json"
@@ -332,6 +332,10 @@ def main(argv: list[str]) -> None:
     media(db, today, changes)
     save(db)
     registrations(db, today, changes)
+    try:
+        shorten.ensure([r for r in db["races"] if r["date"] >= today.isoformat()], log=log)
+    except Exception as e:   # el acortador nunca debe parar el robot
+        log(f"Enlaces cortos: error {e}")
     ids = {r["id"] for r in db["races"]}
     db["lastRun"] = {
         "at": datetime.now(timezone.utc).isoformat(timespec="seconds"),

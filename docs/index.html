@@ -275,7 +275,9 @@ const SITE="https://alexample.github.io/RunningSpain/";
 const CRC=(()=>{const t=[];for(let n=0;n<256;n++){let c=n;for(let k=0;k<8;k++)c=c&1?0xEDB88320^(c>>>1):c>>>1;t[n]=c>>>0}return t})();
 function shortCode(id){const b=new TextEncoder().encode(id);let c=0xFFFFFFFF;for(const x of b)c=CRC[(c^x)&255]^(c>>>8);
   return ((c^0xFFFFFFFF)>>>0).toString(36).padStart(7,"0")}
-function shareUrl(r){return SITE+"c/"+shortCode(r.id)+".html"}
+let CORTOS={};   // enlaces acortados (is.gd) que prepara el robot: docs/data/cortos.json
+fetch((location.hostname==="appassets.androidplatform.net"?SITE:"")+"data/cortos.json",{cache:"no-cache"}).then(r=>r.ok?r.json():{}).then(d=>{CORTOS=d||{}}).catch(()=>{});
+function shareUrl(r){return CORTOS[r.id]||SITE+"c/"+shortCode(r.id)+".html"}
 function shareText(r){const d=parseDate(r.date);
   const place=[r.city,r.region&&r.region!==r.city?r.region:""].filter(Boolean).join(" · ");
   const dist=r.km||tagsOf(r).join(" · ");
