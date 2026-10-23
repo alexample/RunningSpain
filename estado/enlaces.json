@@ -1,12 +1,8 @@
 {
  "resumen": {
-  "ok_pagina": 143,
-  "ok_pdf": 136,
-  "dice_pdf_pero_no_lo_es": 8,
-  "error_404": 13,
-  "error_403": 1,
-  "sin_respuesta:ConnectTimeout": 2,
-  "sin_respuesta:ConnectionError": 1
+  "ok_pagina": 169,
+  "ok_pdf": 134,
+  "error_403": 1
  },
  "enlaces": {
   "carrera-popular-aesan-2026-1024": {
@@ -61,17 +57,17 @@
   },
   "carrera-popular-la-villa-de-don-fadrique-10k-2026-1024": {
    "name": "Carrera Popular la Villa de Don Fadrique 10K",
-   "url": "http://deporchip.com/wp-content/uploads/2026/09/REGLAMENTO-CARRERA-POPULAR-VILLA-DON-FADRIQUE-2026-1.pdf",
-   "status": 202,
-   "final": "http://deporchip.com/wp-content/uploads/2026/09/REGLAMENTO-CARRERA-POPULAR-VILLA-DON-FADRIQUE-2026-1.pdf",
+   "url": "https://sportmaniacs.com/en/services/inscription/13ordm-carrera-popular-la-villa-de-don-fadrique-toledo",
+   "status": 200,
+   "final": "https://sportmaniacs.com/en/services/inscription/13ordm-carrera-popular-la-villa-de-don-fadrique-toledo",
    "ctype": "text/html",
    "pdf": false,
    "html": true,
-   "kind": "dice_pdf_pero_no_lo_es"
+   "kind": "ok_pagina"
   },
   "pulpi-circuito-de-carreras-populares-diputacion-de-almeria-2026-1024": {
    "name": "Pulpi - Circuito de Carreras Populares Diputación de Almería",
-   "url": "https://sportmaniacs.com/es/races/pulpi---circuito-de-carreras-populares-diputacin-de-almera-2026#rules",
+   "url": "https://sportmaniacs.com/es/services/inscription/pulpi---circuito-de-carreras-populares-diputacin-de-almera-2026#rules",
    "status": 200,
    "final": "https://sportmaniacs.com/es/services/inscription/pulpi---circuito-de-carreras-populares-diputacin-de-almera-2026#rules",
    "ctype": "text/html",
@@ -81,7 +77,7 @@
   },
   "vinedos-del-rio-tajo-2026-1024": {
    "name": "Viñedos del Rio Tajo",
-   "url": "https://sportmaniacs.com/es/races/vintildeedos-del-rio-tajo#rules",
+   "url": "https://sportmaniacs.com/es/services/inscription/vintildeedos-del-rio-tajo#rules",
    "status": 200,
    "final": "https://sportmaniacs.com/es/services/inscription/vintildeedos-del-rio-tajo#rules",
    "ctype": "text/html",
@@ -91,7 +87,7 @@
   },
   "wineland26-2026-1024": {
    "name": "Wineland26",
-   "url": "https://sportmaniacs.com/es/races/wineland26#rules",
+   "url": "https://sportmaniacs.com/es/services/inscription/wineland26#rules",
    "status": 200,
    "final": "https://sportmaniacs.com/es/services/inscription/wineland26#rules",
    "ctype": "text/html",
@@ -101,7 +97,7 @@
   },
   "xiii-edicio-curses-serra-de-tramuntana-2026-1024": {
    "name": "XIII Edició Curses Serra de Tramuntana",
-   "url": "https://sportmaniacs.com/es/races/xiii-edici-curses-serra-de-tramuntana-2026#rules",
+   "url": "https://sportmaniacs.com/es/services/inscription/xiii-edici-curses-serra-de-tramuntana-2026#rules",
    "status": 200,
    "final": "https://sportmaniacs.com/es/services/inscription/xiii-edici-curses-serra-de-tramuntana-2026#rules",
    "ctype": "text/html",
@@ -141,7 +137,7 @@
   },
   "media-maraton-tierra-y-olivo-2026-1025": {
    "name": "Media Maratón Tierra y Olivo",
-   "url": "https://sportmaniacs.com/en/races/xxvii-media-maratn-ciudad-de-dos-hermanas-ldquotierra-y-olivordquo#rules",
+   "url": "https://sportmaniacs.com/en/services/inscription/xxvii-media-maratn-ciudad-de-dos-hermanas-ldquotierra-y-olivordquo#rules",
    "status": 200,
    "final": "https://sportmaniacs.com/en/services/inscription/xxvii-media-maratn-ciudad-de-dos-hermanas-ldquotierra-y-olivordquo#rules",
    "ctype": "text/html",
@@ -161,7 +157,7 @@
   },
   "cursa-de-barbera-del-valles-2026-1025": {
    "name": "Cursa de Barberà del Vallès",
-   "url": "https://sportmaniacs.com/en/races/i-cursa-de-barbera-del-valles#rules",
+   "url": "https://sportmaniacs.com/en/services/inscription/i-cursa-de-barbera-del-valles#rules",
    "status": 200,
    "final": "https://sportmaniacs.com/en/services/inscription/i-cursa-de-barbera-del-valles#rules",
    "ctype": "text/html",
@@ -251,7 +247,7 @@
   },
   "a-media-do-camino-2026-1025": {
    "name": "A Media do Camiño",
-   "url": "https://sportmaniacs.com/en/races/a-media-do-camino#rules",
+   "url": "https://sportmaniacs.com/en/services/inscription/a-media-do-camino#rules",
    "status": 200,
    "final": "https://sportmaniacs.com/en/services/inscription/a-media-do-camino#rules",
    "ctype": "text/html",
@@ -261,7 +257,7 @@
   },
   "barbie-run-puebla-2026-1025": {
    "name": "Barbie Run Puebla",
-   "url": "https://sportmaniacs.com/es/races/barbie-run-puebla-2026#rules",
+   "url": "https://sportmaniacs.com/es/services/inscription/barbie-run-puebla-2026#rules",
    "status": 200,
    "final": "https://sportmaniacs.com/es/services/inscription/barbie-run-puebla-2026#rules",
    "ctype": "text/html",
@@ -281,13 +277,13 @@
   },
   "carreira-popular-concello-de-cospeito-2026-1025": {
    "name": "Carreira Popular Concello de Cospeito",
-   "url": "https://ccnorte.com/e/3394/reglamento",
+   "url": "https://terrachallenge.es/es/web/evento/3394/",
    "status": 200,
-   "final": "https://ccnorte.com/uploads/eventos/reglamento-6ad883b98abbf4.77197629.pdf",
-   "ctype": "application/pdf",
-   "pdf": true,
-   "html": false,
-   "kind": "ok_pdf"
+   "final": "https://terrachallenge.es/es/web/evento/3394/",
+   "ctype": "text/html",
+   "pdf": false,
+   "html": true,
+   "kind": "ok_pagina"
   },
   "carreira-popular-ventorrillo-2026-1025": {
    "name": "Carreira Popular Ventorrillo",
@@ -311,7 +307,7 @@
   },
   "carrera-amistad-2026-1025": {
    "name": "Carrera Amistad",
-   "url": "https://sportmaniacs.com/es/races/carrera-amistad-2026#rules",
+   "url": "https://sportmaniacs.com/es/services/inscription/carrera-amistad-2026#rules",
    "status": 200,
    "final": "https://sportmaniacs.com/es/services/inscription/carrera-amistad-2026#rules",
    "ctype": "text/html",
@@ -341,7 +337,7 @@
   },
   "carrera-popular-dm-2026-1025": {
    "name": "Carrera Popular DM",
-   "url": "https://sportmaniacs.com/en/races/xiv-carrera-popular-dm-2026#rules",
+   "url": "https://sportmaniacs.com/en/services/inscription/xiv-carrera-popular-dm-2026#rules",
    "status": 200,
    "final": "https://sportmaniacs.com/en/services/inscription/xiv-carrera-popular-dm-2026#rules",
    "ctype": "text/html",
@@ -391,13 +387,13 @@
   },
   "carrera-popular-de-patino-2026-1025": {
    "name": "Carrera Popular de Patiño",
-   "url": "https://www.babelsport.com/evento/patinio-2026/Reglamento/userfiles/e4ff_Reglamento Carrera Popular PATIÑO 2026.pdf",
-   "status": 404,
-   "final": "https://www.babelsport.com/evento/patinio-2026/Reglamento/userfiles/e4ff_Reglamento%20Carrera%20Popular%20PATI%C3%91O%202026.pdf",
+   "url": "https://www.babelsport.com/evento/patinio-2026/Reglamento/",
+   "status": 200,
+   "final": "https://www.babelsport.com/evento/patinio-2026/Reglamento/",
    "ctype": "text/html",
    "pdf": false,
    "html": true,
-   "kind": "error_404"
+   "kind": "ok_pagina"
   },
   "carrera-solidaria-ciudad-de-tomares-2026-1025": {
    "name": "Carrera Solidaria Ciudad de Tomares",
@@ -431,17 +427,17 @@
   },
   "iii-carrera-amp-marcha-solidaria-del-hospital-nacional-de-paraplejicos-2026-1025": {
    "name": "III CARRERA &amp; MARCHA SOLIDARIA DEL HOSPITAL NACIONAL DE PARAPLÉJICOS",
-   "url": "http://deporchip.com/wp-content/uploads/2026/04/Reglamento-HNP-2026.pdf",
-   "status": 202,
-   "final": "http://deporchip.com/wp-content/uploads/2026/04/Reglamento-HNP-2026.pdf",
+   "url": "https://sportmaniacs.com/es/services/inscription/iii-carrera-amp-marcha-solidaria-del-hospital-nacional-de-parapljicos",
+   "status": 200,
+   "final": "https://sportmaniacs.com/es/services/inscription/iii-carrera-amp-marcha-solidaria-del-hospital-nacional-de-parapljicos",
    "ctype": "text/html",
    "pdf": false,
    "html": true,
-   "kind": "dice_pdf_pero_no_lo_es"
+   "kind": "ok_pagina"
   },
   "milla-de-sarria-correm-junts-2026-1025": {
    "name": "Milla de Sarrià Correm Junts",
-   "url": "https://sportmaniacs.com/es/races/milla-de-sarria-correm-junts-2026#rules",
+   "url": "https://sportmaniacs.com/es/services/inscription/milla-de-sarria-correm-junts-2026#rules",
    "status": 200,
    "final": "https://sportmaniacs.com/es/services/inscription/milla-de-sarria-correm-junts-2026#rules",
    "ctype": "text/html",
@@ -451,7 +447,7 @@
   },
   "open-maxxis-marathon-sant-sadurni-d-039-anoia-2026-1025": {
    "name": "Open Maxxis Marathon Sant Sadurní d&#039;Anoia",
-   "url": "https://sportmaniacs.com/es/races/open-maxxis-marathon-sant-sadurni-danoia-2026#rules",
+   "url": "https://sportmaniacs.com/es/services/inscription/open-maxxis-marathon-sant-sadurni-danoia-2026#rules",
    "status": 200,
    "final": "https://sportmaniacs.com/es/services/inscription/open-maxxis-marathon-sant-sadurni-danoia-2026#rules",
    "ctype": "text/html",
@@ -471,7 +467,7 @@
   },
   "xlviii-carrera-popular-villaviciosa-de-odon-2026-1025": {
    "name": "XLVIII Carrera popular Villaviciosa de Odon",
-   "url": "https://sportmaniacs.com/es/races/xlviii-carrera-popular-villaviciosa-de-odon#rules",
+   "url": "https://sportmaniacs.com/es/services/inscription/xlviii-carrera-popular-villaviciosa-de-odon#rules",
    "status": 200,
    "final": "https://sportmaniacs.com/es/services/inscription/xlviii-carrera-popular-villaviciosa-de-odon#rules",
    "ctype": "text/html",
@@ -481,7 +477,7 @@
   },
   "xv-cursa-solidaria-pais-del-cava-2026-1025": {
    "name": "XV Cursa Solidària País del Cava",
-   "url": "https://sportmaniacs.com/es/races/xv-cursa-solidria-pas-del-cava-2026#rules",
+   "url": "https://sportmaniacs.com/es/services/inscription/xv-cursa-solidria-pas-del-cava-2026#rules",
    "status": 200,
    "final": "https://sportmaniacs.com/es/services/inscription/xv-cursa-solidria-pas-del-cava-2026#rules",
    "ctype": "text/html",
@@ -571,13 +567,13 @@
   },
   "carrera-popular-de-la-arboleja-2026-1031": {
    "name": "Carrera Popular de La Arboleja",
-   "url": "https://www.babelsport.com/evento/la-arboleja-2026/Reglamento/userfiles/81c6_Reglamento Arboleja 2026.pdf",
-   "status": 404,
-   "final": "https://www.babelsport.com/evento/la-arboleja-2026/Reglamento/userfiles/81c6_Reglamento%20Arboleja%202026.pdf",
+   "url": "https://www.babelsport.com/evento/la-arboleja-2026/Reglamento/",
+   "status": 200,
+   "final": "https://www.babelsport.com/evento/la-arboleja-2026/Reglamento/",
    "ctype": "text/html",
    "pdf": false,
    "html": true,
-   "kind": "error_404"
+   "kind": "ok_pagina"
   },
   "oboncross-x-2026-1031": {
    "name": "Oboncross X",
@@ -601,13 +597,13 @@
   },
   "21k-huelva-2026": {
    "name": "21K Ciudad de Huelva",
-   "url": "https://runnersporthuelva.com/21k/21k/reglamento",
-   "status": 404,
-   "final": "https://runnersporthuelva.com/21k/21k/reglamento",
+   "url": "https://runnersporthuelva.com/21k/",
+   "status": 200,
+   "final": "https://runnersporthuelva.com/21k/",
    "ctype": "text/html",
    "pdf": false,
    "html": true,
-   "kind": "error_404"
+   "kind": "ok_pagina"
   },
   "halloweenrun-zorroza-bilbao-10k-2026-1101": {
    "name": "Halloweenrun Zorroza-Bilbao 10K",
@@ -641,7 +637,7 @@
   },
   "xv-andaina-solidaria-banos-de-molgas-2026-1101": {
    "name": "XV Andaina Solidaria Baños de Molgas",
-   "url": "https://sportmaniacs.com/es/races/xv-andaina-solidaria-bantildeo-de-molgas#rules",
+   "url": "https://sportmaniacs.com/es/services/inscription/xv-andaina-solidaria-bantildeo-de-molgas#rules",
    "status": 200,
    "final": "https://sportmaniacs.com/es/services/inscription/xv-andaina-solidaria-bantildeo-de-molgas#rules",
    "ctype": "text/html",
@@ -681,7 +677,7 @@
   },
   "carrera-solidaria-con-otra-mirada-2026-1107": {
    "name": "Carrera Solidaria con Otra Mirada",
-   "url": "https://sportmaniacs.com/en/races/xii-carrera-solidaria-ldquocon-otra-miradardquo-2026#rules",
+   "url": "https://sportmaniacs.com/en/services/inscription/xii-carrera-solidaria-ldquocon-otra-miradardquo-2026#rules",
    "status": 200,
    "final": "https://sportmaniacs.com/en/services/inscription/xii-carrera-solidaria-ldquocon-otra-miradardquo-2026#rules",
    "ctype": "text/html",
@@ -701,17 +697,17 @@
   },
   "circuito-juan-carlos-de-la-ossa-2026-1107": {
    "name": "Circuito Juan Carlos de la Ossa",
-   "url": "http://deporchip.com/wp-content/uploads/2026/10/REGLAMENTO_CIRCUITO_CROSS_2026_2027.pdf",
-   "status": 202,
-   "final": "http://deporchip.com/wp-content/uploads/2026/10/REGLAMENTO_CIRCUITO_CROSS_2026_2027.pdf",
+   "url": "https://sportmaniacs.com/en/services/inscription/ix-circuito-popular-de-cross-cuenca---circuito-ldquojuan-carlos-de-la-ossardquo-tarancon",
+   "status": 200,
+   "final": "https://sportmaniacs.com/en/services/inscription/ix-circuito-popular-de-cross-cuenca---circuito-ldquojuan-carlos-de-la-ossardquo-tarancon",
    "ctype": "text/html",
    "pdf": false,
    "html": true,
-   "kind": "dice_pdf_pero_no_lo_es"
+   "kind": "ok_pagina"
   },
   "cursa-i-caminada-solidaria-asco-2026-1107": {
    "name": "Cursa i Caminada Solidària Ascó",
-   "url": "https://sportmaniacs.com/en/races/cursa-i-caminada-solidria-asc-2026#rules",
+   "url": "https://sportmaniacs.com/en/services/inscription/cursa-i-caminada-solidria-asc-2026#rules",
    "status": 200,
    "final": "https://sportmaniacs.com/en/services/inscription/cursa-i-caminada-solidria-asc-2026#rules",
    "ctype": "text/html",
@@ -731,7 +727,7 @@
   },
   "tri-del-caribe-2026-1107": {
    "name": "Tri del Caribe",
-   "url": "https://sportmaniacs.com/es/races/tri-del-caribe-2026#rules",
+   "url": "https://sportmaniacs.com/es/services/inscription/tri-del-caribe-2026#rules",
    "status": 200,
    "final": "https://sportmaniacs.com/es/services/inscription/tri-del-caribe-2026#rules",
    "ctype": "text/html",
@@ -741,7 +737,7 @@
   },
   "viii-niebieski-bieg-niepodleg-osci-o-puchar-komendanta-g-ownego-policji-2026-1107": {
    "name": "VIII Niebieski Bieg Niepodległości o Puchar Komendanta Głównego Policji",
-   "url": "https://sportmaniacs.com/es/races/viii-niebieski-bieg-niepodleglosci#rules",
+   "url": "https://sportmaniacs.com/es/services/inscription/viii-niebieski-bieg-niepodleglosci#rules",
    "status": 200,
    "final": "https://sportmaniacs.com/es/services/inscription/viii-niebieski-bieg-niepodleglosci#rules",
    "ctype": "text/html",
@@ -761,7 +757,7 @@
   },
   "xii-cursa-sant-carles-xtrem-2026-1107": {
    "name": "XII Cursa Sant Carles XTREM",
-   "url": "https://sportmaniacs.com/es/races/xii-cursa-sant-carles-xtrem#rules",
+   "url": "https://sportmaniacs.com/es/services/inscription/xii-cursa-sant-carles-xtrem#rules",
    "status": 200,
    "final": "https://sportmaniacs.com/es/services/inscription/xii-cursa-sant-carles-xtrem#rules",
    "ctype": "text/html",
@@ -861,7 +857,7 @@
   },
   "xlvi-carrera-popular-villa-de-grazalema-2026-1108": {
    "name": "XLVI Carrera Popular Villa de Grazalema",
-   "url": "https://sportmaniacs.com/es/races/xlvi-carrera-popular-villa-de-grazalema#rules",
+   "url": "https://sportmaniacs.com/es/services/inscription/xlvi-carrera-popular-villa-de-grazalema#rules",
    "status": 200,
    "final": "https://sportmaniacs.com/es/services/inscription/xlvi-carrera-popular-villa-de-grazalema#rules",
    "ctype": "text/html",
@@ -901,7 +897,7 @@
   },
   "28e-cros-ciutat-de-sant-cugat-2026-1108": {
    "name": "28è Cros Ciutat de Sant Cugat",
-   "url": "https://sportmaniacs.com/es/races/28e-cros-ciutat-de-sant-cugat#rules",
+   "url": "https://sportmaniacs.com/es/services/inscription/28e-cros-ciutat-de-sant-cugat#rules",
    "status": 200,
    "final": "https://sportmaniacs.com/es/services/inscription/28e-cros-ciutat-de-sant-cugat#rules",
    "ctype": "text/html",
@@ -961,17 +957,17 @@
   },
   "carrera-y-marcha-mil-camins-una-meta-2026-1108": {
    "name": "Carrera Y Marcha Mil Camins Una Meta",
-   "url": "https://www.chiplevante.com/es/prueba/files/documentacion/REGLAMENTO Mil Camins 2026.pdf",
-   "status": 404,
-   "final": "https://www.chiplevante.com/es/prueba/files/documentacion/REGLAMENTO%20Mil%20Camins%202026.pdf",
+   "url": "https://www.chiplevante.com/es/prueba/carrera-y-marcha-mil-camins-una-meta-977-2026",
+   "status": 200,
+   "final": "https://www.chiplevante.com/es/prueba/carrera-y-marcha-mil-camins-una-meta-977-2026",
    "ctype": "text/html",
    "pdf": false,
-   "html": false,
-   "kind": "error_404"
+   "html": true,
+   "kind": "ok_pagina"
   },
   "corremos-por-la-vida-2026-1108": {
    "name": "Corremos por la Vida",
-   "url": "https://sportmaniacs.com/es/races/corremos-por-la-vida-2026#rules",
+   "url": "https://sportmaniacs.com/es/services/inscription/corremos-por-la-vida-2026#rules",
    "status": 200,
    "final": "https://sportmaniacs.com/es/services/inscription/corremos-por-la-vida-2026#rules",
    "ctype": "text/html",
@@ -981,7 +977,7 @@
   },
   "corrida-familiar-recoleta-2026-1108": {
    "name": "Corrida Familiar Recoleta",
-   "url": "https://sportmaniacs.com/es/races/corrida-familiar-recoleta-2026#rules",
+   "url": "https://sportmaniacs.com/es/services/inscription/corrida-familiar-recoleta-2026#rules",
    "status": 200,
    "final": "https://sportmaniacs.com/es/services/inscription/corrida-familiar-recoleta-2026#rules",
    "ctype": "text/html",
@@ -991,7 +987,7 @@
   },
   "lia-assurex-let-039-s-run-for-my-beirut-2026-1108": {
    "name": "LIA Assurex Let&#039;s Run for My Beirut",
-   "url": "https://sportmaniacs.com/es/races/lia-assurex-lets-run-for-my-beirut#rules",
+   "url": "https://sportmaniacs.com/es/services/inscription/lia-assurex-lets-run-for-my-beirut#rules",
    "status": 200,
    "final": "https://sportmaniacs.com/es/services/inscription/lia-assurex-lets-run-for-my-beirut#rules",
    "ctype": "text/html",
@@ -1001,13 +997,13 @@
   },
   "legua-urbana-de-yuncos-2026-1108": {
    "name": "Legua Urbana de Yuncos",
-   "url": "http://deporchip.com/wp-content/uploads/2026/10/Reglamento-II-Legua-ARFY-Yuncos.pdf",
-   "status": 202,
-   "final": "http://deporchip.com/wp-content/uploads/2026/10/Reglamento-II-Legua-ARFY-Yuncos.pdf",
+   "url": "https://sportmaniacs.com/en/services/inscription/ii-legua-urbana-de-yuncos",
+   "status": 200,
+   "final": "https://sportmaniacs.com/en/services/inscription/ii-legua-urbana-de-yuncos",
    "ctype": "text/html",
    "pdf": false,
    "html": true,
-   "kind": "dice_pdf_pero_no_lo_es"
+   "kind": "ok_pagina"
   },
   "media-maraton-ciudad-de-cadiz-2026-1108": {
    "name": "Media Maratón Ciudad de Cádiz",
@@ -1031,20 +1027,23 @@
   },
   "media-maraton-de-hellin-2026-1108": {
    "name": "Media Maratón de Hellín",
-   "url": "https://deportes.dipualba.es///Api/TripticoPrueba/1181",
-   "status": null,
-   "error": "ConnectTimeout",
-   "kind": "sin_respuesta:ConnectTimeout"
-  },
-  "v-carrera-solidaria-kilometros-que-dan-vida-2026-1108": {
-   "name": "V Carrera Solidaria “kilómetros Que Dan Vida”",
-   "url": "https://deporchip.com/wp-content/uploads/2026/09/REGLAMENTO-OLIAS-TRASPLANTADOS-2026.pdf",
-   "status": 202,
-   "final": "https://deporchip.com/wp-content/uploads/2026/09/REGLAMENTO-OLIAS-TRASPLANTADOS-2026.pdf",
+   "url": "https://www.chiplevante.com/es/prueba/media-maraton-de-hellin-676-2026",
+   "status": 200,
+   "final": "https://www.chiplevante.com/es/prueba/media-maraton-de-hellin-676-2026",
    "ctype": "text/html",
    "pdf": false,
    "html": true,
-   "kind": "dice_pdf_pero_no_lo_es"
+   "kind": "ok_pagina"
+  },
+  "v-carrera-solidaria-kilometros-que-dan-vida-2026-1108": {
+   "name": "V Carrera Solidaria “kilómetros Que Dan Vida”",
+   "url": "https://sportmaniacs.com/es/services/inscription/v-carrera-solidaria-ldquokilmetros-que-dan-vidardquo",
+   "status": 200,
+   "final": "https://sportmaniacs.com/es/services/inscription/v-carrera-solidaria-ldquokilmetros-que-dan-vidardquo",
+   "ctype": "text/html",
+   "pdf": false,
+   "html": true,
+   "kind": "ok_pagina"
   },
   "v-gincana-ibiza-amp-formentera-preservation-2026-1108": {
    "name": "V GINCANA IBIZA &amp; FORMENTERA PRESERVATION",
@@ -1058,7 +1057,7 @@
   },
   "volta-a-l-estany-d-ivars-i-vila-sana-2026-1108": {
    "name": "Volta a l’Estany d’Ivars i Vila-sana",
-   "url": "https://atletismeivars.wixsite.com/caivars/copia-de-pròxima-edició-xiv-vvolta",
+   "url": "https://atletismeivars.wixsite.com/caivars/copia-de-pr%C3%B2xima-edici%C3%B3-xiv-vvolta",
    "status": 200,
    "final": "https://atletismeivars.wixsite.com/caivars/copia-de-pr%C3%B2xima-edici%C3%B3-xiv-vvolta",
    "ctype": "text/html",
@@ -1068,7 +1067,7 @@
   },
   "xx-andaina-outono-o-barco-de-valdeorras-2026-1108": {
    "name": "XX Andaina Outono O Barco de Valdeorras",
-   "url": "https://sportmaniacs.com/es/races/xx-andaina-outono-o-barco-de-valdeorras-2026#rules",
+   "url": "https://sportmaniacs.com/es/services/inscription/xx-andaina-outono-o-barco-de-valdeorras-2026#rules",
    "status": 200,
    "final": "https://sportmaniacs.com/es/services/inscription/xx-andaina-outono-o-barco-de-valdeorras-2026#rules",
    "ctype": "text/html",
@@ -1088,7 +1087,7 @@
   },
   "carrera-de-las-ciudades-contra-el-cancer-de-pancreas-2026-1109": {
    "name": "Carrera de las Ciudades contra el Cáncer de Páncreas",
-   "url": "https://sportmaniacs.com/es/races/carrera-de-las-ciudades-contra-el-cancer-de-pancreas-2026#rules",
+   "url": "https://sportmaniacs.com/es/services/inscription/carrera-de-las-ciudades-contra-el-cancer-de-pancreas-2026#rules",
    "status": 200,
    "final": "https://sportmaniacs.com/es/services/inscription/carrera-de-las-ciudades-contra-el-cancer-de-pancreas-2026#rules",
    "ctype": "text/html",
@@ -1098,7 +1097,7 @@
   },
   "x-polkowicki-bieg-niepodleg-osci-2026-1111": {
    "name": "X Polkowicki Bieg Niepodległości",
-   "url": "https://sportmaniacs.com/es/races/x-polkowicki-bieg-niepodlegoci#rules",
+   "url": "https://sportmaniacs.com/es/services/inscription/x-polkowicki-bieg-niepodlegoci#rules",
    "status": 200,
    "final": "https://sportmaniacs.com/es/services/inscription/x-polkowicki-bieg-niepodlegoci#rules",
    "ctype": "text/html",
@@ -1108,7 +1107,7 @@
   },
   "xiii-bieg-uliczny-sw-marcina-o-puchar-burmistrza-miasta-i-gminy-kepno-bieg-s-uzb-2026-1111": {
    "name": "XIII Bieg Uliczny Św. Marcina O Puchar Burmistrza Miasta I Gminy Kępno Bieg Służb Mundurowych",
-   "url": "https://sportmaniacs.com/es/races/xiii-bieg-uliczny-w-marcina-o-puchar-burmistrza-miasta-i-gminy-kpno-bieg-sub-mundurowych-24294#rules",
+   "url": "https://sportmaniacs.com/es/services/inscription/xiii-bieg-uliczny-w-marcina-o-puchar-burmistrza-miasta-i-gminy-kpno-bieg-sub-mundurowych-24294#rules",
    "status": 200,
    "final": "https://sportmaniacs.com/es/services/inscription/xiii-bieg-uliczny-w-marcina-o-puchar-burmistrza-miasta-i-gminy-kpno-bieg-sub-mundurowych-24294#rules",
    "ctype": "text/html",
@@ -1138,7 +1137,7 @@
   },
   "1-edicion-hunting-teguise-003-2026-1114": {
    "name": "1º edición HUNTING TEGUISE 003",
-   "url": "https://sportmaniacs.com/es/races/1ordm-edicion-hunting-teguise-003#rules",
+   "url": "https://sportmaniacs.com/es/services/inscription/1ordm-edicion-hunting-teguise-003#rules",
    "status": 200,
    "final": "https://sportmaniacs.com/es/services/inscription/1ordm-edicion-hunting-teguise-003#rules",
    "ctype": "text/html",
@@ -1168,24 +1167,27 @@
   },
   "carrera-popular-lietor-2026-1114": {
    "name": "Carrera Popular Lietor",
-   "url": "https://deportes.dipualba.es///Api/TripticoPrueba/1167",
-   "status": null,
-   "error": "ConnectTimeout",
-   "kind": "sin_respuesta:ConnectTimeout"
-  },
-  "circuit-de-carreres-a-peu-monover-2026-1114": {
-   "name": "Circuit de Carreres a Peu Monòver",
-   "url": "https://www.babelsport.com/evento/circuit-monover-2026/Reglamento/userfiles/2559_REGLAMENT II CIRCUIT DE CARRERES A PEU MONÒVER 2026.pdf",
-   "status": 404,
-   "final": "https://www.babelsport.com/evento/circuit-monover-2026/Reglamento/userfiles/2559_REGLAMENT%20II%20CIRCUIT%20DE%20CARRERES%20A%20PEU%20MON%C3%92VER%202026.pdf",
+   "url": "https://www.chiplevante.com/es/prueba/carrera-popular-de-lietor-271-2026",
+   "status": 200,
+   "final": "https://www.chiplevante.com/es/prueba/carrera-popular-de-lietor-271-2026",
    "ctype": "text/html",
    "pdf": false,
    "html": true,
-   "kind": "error_404"
+   "kind": "ok_pagina"
+  },
+  "circuit-de-carreres-a-peu-monover-2026-1114": {
+   "name": "Circuit de Carreres a Peu Monòver",
+   "url": "https://www.babelsport.com/evento/circuit-monover-2026/Reglamento/",
+   "status": 200,
+   "final": "https://www.babelsport.com/evento/circuit-monover-2026/Reglamento/",
+   "ctype": "text/html",
+   "pdf": false,
+   "html": true,
+   "kind": "ok_pagina"
   },
   "suski-bieg-niepodleg-osci-2026-1114": {
    "name": "Suski Bieg Niepodległości",
-   "url": "https://sportmaniacs.com/es/races/suski-bieg-niepodleglosci-2026#rules",
+   "url": "https://sportmaniacs.com/es/services/inscription/suski-bieg-niepodleglosci-2026#rules",
    "status": 200,
    "final": "https://sportmaniacs.com/es/services/inscription/suski-bieg-niepodleglosci-2026#rules",
    "ctype": "text/html",
@@ -1215,7 +1217,7 @@
   },
   "xxx-memorial-miguel-angel-gomez-campuzano-2026-1115": {
    "name": "XXX Memorial Miguel Ángel Gómez Campuzano",
-   "url": "https://sportmaniacs.com/es/races/xxx-memorial-miguel-ngel-gmez-campuzano#rules",
+   "url": "https://sportmaniacs.com/es/services/inscription/xxx-memorial-miguel-ngel-gmez-campuzano#rules",
    "status": 200,
    "final": "https://sportmaniacs.com/es/services/inscription/xxx-memorial-miguel-ngel-gmez-campuzano#rules",
    "ctype": "text/html",
@@ -1225,7 +1227,7 @@
   },
   "cursa-popular-sant-marti-2026-1115": {
    "name": "Cursa Popular Sant Martí",
-   "url": "https://www.cursasantmarti.cat/2021/reglament",
+   "url": "https://www.cursasantmarti.cat/uncategorized/reglament/",
    "status": 200,
    "final": "https://www.cursasantmarti.cat/uncategorized/reglament/",
    "ctype": "text/html",
@@ -1285,13 +1287,13 @@
   },
   "medio-maraton-ciudad-de-orihuela-2026-1115": {
    "name": "Medio Maratón Ciudad de Orihuela",
-   "url": "https://www.chiplevante.com/es/prueba/files/documentacion/REGLAMENTO2026MMORIHUELA.pdf",
-   "status": 404,
-   "final": "https://www.chiplevante.com/es/prueba/files/documentacion/REGLAMENTO2026MMORIHUELA.pdf",
+   "url": "https://www.chiplevante.com/es/prueba/media-maraton-y-8k-de-orihuela-684-2026",
+   "status": 200,
+   "final": "https://www.chiplevante.com/es/prueba/media-maraton-y-8k-de-orihuela-684-2026",
    "ctype": "text/html",
    "pdf": false,
-   "html": false,
-   "kind": "error_404"
+   "html": true,
+   "kind": "ok_pagina"
   },
   "5k10k-vic-2026-1115": {
    "name": "5K10K Vic",
@@ -1335,7 +1337,7 @@
   },
   "30k-ciutat-de-sagunt-2026-1115": {
    "name": "30K Ciutat de Sagunt",
-   "url": "https://sportmaniacs.com/en/races/30k---21k---10k-ciutat-de-sagunt-2026#rules",
+   "url": "https://sportmaniacs.com/en/services/inscription/30k---21k---10k-ciutat-de-sagunt-2026#rules",
    "status": 200,
    "final": "https://sportmaniacs.com/en/services/inscription/30k---21k---10k-ciutat-de-sagunt-2026#rules",
    "ctype": "text/html",
@@ -1355,13 +1357,13 @@
   },
   "5k-coruna-2026-1115": {
    "name": "5K Coruña",
-   "url": "https://ccnorte.com/e/3380/reglamento",
+   "url": "https://c5k.es/",
    "status": 200,
-   "final": "https://ccnorte.com/uploads/eventos/reglamento-6adb58329a5bb2.53543462.pdf",
-   "ctype": "application/pdf",
-   "pdf": true,
-   "html": false,
-   "kind": "ok_pdf"
+   "final": "https://c5k.es/",
+   "ctype": "text/html",
+   "pdf": false,
+   "html": true,
+   "kind": "ok_pagina"
   },
   "bilboko-herri-krosa-2026-1115": {
    "name": "Bilboko Herri Krosa",
@@ -1415,13 +1417,13 @@
   },
   "carrera-y-marcha-solidaria-quiero-crecer-2026-1115": {
    "name": "Carrera y Marcha Solidaria Quiero Crecer",
-   "url": "https://www.babelsport.com/evento/quiero-crecer-2026/Reglamento/userfiles/c190_Reglamento Quiero Crecer 2026-2.pdf",
-   "status": 404,
-   "final": "https://www.babelsport.com/evento/quiero-crecer-2026/Reglamento/userfiles/c190_Reglamento%20Quiero%20Crecer%202026-2.pdf",
+   "url": "https://www.babelsport.com/evento/quiero-crecer-2026/Reglamento/",
+   "status": 200,
+   "final": "https://www.babelsport.com/evento/quiero-crecer-2026/Reglamento/",
    "ctype": "text/html",
    "pdf": false,
    "html": true,
-   "kind": "error_404"
+   "kind": "ok_pagina"
   },
   "carrera-y-marcha-del-nicalo-2026-1115": {
    "name": "Carrera y Marcha del Nícalo",
@@ -1435,7 +1437,7 @@
   },
   "cursa-antirracista-de-sabadell-2026-1115": {
    "name": "Cursa Antirracista de Sabadell",
-   "url": "https://sportmaniacs.com/en/races/cursa-antirracista-de-sabadell#rules",
+   "url": "https://sportmaniacs.com/en/services/inscription/cursa-antirracista-de-sabadell#rules",
    "status": 200,
    "final": "https://sportmaniacs.com/en/services/inscription/cursa-antirracista-de-sabadell#rules",
    "ctype": "text/html",
@@ -1455,7 +1457,7 @@
   },
   "la-palauenca-2026-1115": {
    "name": "La Palauenca",
-   "url": "https://sportmaniacs.com/en/races/la-palauenca-2026#rules",
+   "url": "https://sportmaniacs.com/en/services/inscription/la-palauenca-2026#rules",
    "status": 200,
    "final": "https://sportmaniacs.com/en/services/inscription/la-palauenca-2026#rules",
    "ctype": "text/html",
@@ -1485,7 +1487,7 @@
   },
   "runcancer-l-039-olleria-2026-1115": {
    "name": "RunCáncer L&#039;Olleria",
-   "url": "https://sportmaniacs.com/es/races/runcancer-lolleria-2026#rules",
+   "url": "https://sportmaniacs.com/es/services/inscription/runcancer-lolleria-2026#rules",
    "status": 200,
    "final": "https://sportmaniacs.com/es/services/inscription/runcancer-lolleria-2026#rules",
    "ctype": "text/html",
@@ -1515,7 +1517,7 @@
   },
   "xi-desafio-sierra-de-villaluenga-2026-1115": {
    "name": "XI Desafio Sierra de Villaluenga",
-   "url": "https://sportmaniacs.com/es/races/xi-desafio-sierra-de-villaluenga#rules",
+   "url": "https://sportmaniacs.com/es/services/inscription/xi-desafio-sierra-de-villaluenga#rules",
    "status": 200,
    "final": "https://sportmaniacs.com/es/services/inscription/xi-desafio-sierra-de-villaluenga#rules",
    "ctype": "text/html",
@@ -1525,7 +1527,7 @@
   },
   "el-privilegio-100-millas-2026-1120": {
    "name": "El Privilegio 100 Millas",
-   "url": "https://sportmaniacs.com/es/races/el-privilegio-100-millas-2026#rules",
+   "url": "https://sportmaniacs.com/es/services/inscription/el-privilegio-100-millas-2026#rules",
    "status": 200,
    "final": "https://sportmaniacs.com/es/services/inscription/el-privilegio-100-millas-2026#rules",
    "ctype": "text/html",
@@ -1555,7 +1557,7 @@
   },
   "xiv-carrera-contra-la-violencia-de-genero-lanzarote-2026-1121": {
    "name": "XIV Carrera contra la Violencia de Género Lanzarote",
-   "url": "https://sportmaniacs.com/es/races/xiv-carrera-contra-la-violencia-de-gnero-lanzarote-2026#rules",
+   "url": "https://sportmaniacs.com/es/services/inscription/xiv-carrera-contra-la-violencia-de-gnero-lanzarote-2026#rules",
    "status": 200,
    "final": "https://sportmaniacs.com/es/services/inscription/xiv-carrera-contra-la-violencia-de-gnero-lanzarote-2026#rules",
    "ctype": "text/html",
@@ -1575,7 +1577,7 @@
   },
   "cursa-de-sa-sobrassada-2026-1121": {
    "name": "Cursa de Sa Sobrassada",
-   "url": "https://sportmaniacs.com/en/races/xviii-cursa-de-sa-sobrassada-semimarat-per-relleus-2026#rules",
+   "url": "https://sportmaniacs.com/en/services/inscription/xviii-cursa-de-sa-sobrassada-semimarat-per-relleus-2026#rules",
    "status": 200,
    "final": "https://sportmaniacs.com/en/services/inscription/xviii-cursa-de-sa-sobrassada-semimarat-per-relleus-2026#rules",
    "ctype": "text/html",
@@ -1585,7 +1587,7 @@
   },
   "bkt-larrabetzu-2026-1121": {
    "name": "BKT Larrabetzu",
-   "url": "https://sportmaniacs.com/en/races/bkt-larrabetzu-2026#rules",
+   "url": "https://sportmaniacs.com/en/services/inscription/bkt-larrabetzu-2026#rules",
    "status": 200,
    "final": "https://sportmaniacs.com/en/services/inscription/bkt-larrabetzu-2026#rules",
    "ctype": "text/html",
@@ -1595,7 +1597,7 @@
   },
   "carrera-nocturna-reu-guatemagica-2026-1121": {
    "name": "Carrera Nocturna Reu Guatemagica",
-   "url": "https://sportmaniacs.com/es/races/carrera-nocturna-reu-guatemagica-2026#rules",
+   "url": "https://sportmaniacs.com/es/services/inscription/carrera-nocturna-reu-guatemagica-2026#rules",
    "status": 200,
    "final": "https://sportmaniacs.com/es/services/inscription/carrera-nocturna-reu-guatemagica-2026#rules",
    "ctype": "text/html",
@@ -1605,13 +1607,13 @@
   },
   "carrera-nocturna-solidaria-los-rosales-2026-1121": {
    "name": "Carrera Nocturna Solidaria los Rosales",
-   "url": "https://www.babelsport.com/evento/rosales-2026/Reglamento/userfiles/2408_reglamento carrera 2026 CEIP Los Rosales.pdf",
-   "status": 404,
-   "final": "https://www.babelsport.com/evento/rosales-2026/Reglamento/userfiles/2408_reglamento%20carrera%202026%20CEIP%20Los%20Rosales.pdf",
+   "url": "https://www.babelsport.com/evento/rosales-2026/Reglamento/",
+   "status": 200,
+   "final": "https://www.babelsport.com/evento/rosales-2026/Reglamento/",
    "ctype": "text/html",
    "pdf": false,
    "html": true,
-   "kind": "error_404"
+   "kind": "ok_pagina"
   },
   "milla-cidade-de-vigo-e-10k-relevos-2026-1121": {
    "name": "Milla Cidade de Vigo e 10K Relevos",
@@ -1632,13 +1634,6 @@
    "pdf": true,
    "html": false,
    "kind": "ok_pdf"
-  },
-  "corre-por-un-mundo-sostenible-2026-1122": {
-   "name": "Corre por un Mundo Sostenible",
-   "url": "https://correporunmundosostenible.es/reglamento/",
-   "status": null,
-   "error": "ConnectionError",
-   "kind": "sin_respuesta:ConnectionError"
   },
   "maraton-donostia-2026": {
    "name": "Zurich Maratón Donostia / San Sebastián",
@@ -1742,7 +1737,7 @@
   },
   "andaina-de-outono-concello-paderne-de-allariz-2026-1122": {
    "name": "Andaina de Outono Concello Paderne de Allariz",
-   "url": "https://sportmaniacs.com/es/races/andaina-de-outono-concello-paderne-de-allariz#rules",
+   "url": "https://sportmaniacs.com/es/services/inscription/andaina-de-outono-concello-paderne-de-allariz#rules",
    "status": 200,
    "final": "https://sportmaniacs.com/es/services/inscription/andaina-de-outono-concello-paderne-de-allariz#rules",
    "ctype": "text/html",
@@ -1792,17 +1787,17 @@
   },
   "carrera-y-marcha-contra-el-cancer-de-mama-2026-1122": {
    "name": "Carrera Y Marcha Contra El Cáncer de Mama",
-   "url": "https://www.chiplevante.com/es/prueba/files/documentacion/Reglamento2026amacmec.pdf",
-   "status": 404,
-   "final": "https://www.chiplevante.com/es/prueba/files/documentacion/Reglamento2026amacmec.pdf",
+   "url": "https://www.chiplevante.com/es/prueba/carrera-y-marcha-contra-el-cancer-de-mama-1051-2026",
+   "status": 200,
+   "final": "https://www.chiplevante.com/es/prueba/carrera-y-marcha-contra-el-cancer-de-mama-1051-2026",
    "ctype": "text/html",
    "pdf": false,
-   "html": false,
-   "kind": "error_404"
+   "html": true,
+   "kind": "ok_pagina"
   },
   "cros-antoni-amoros-2026-1122": {
    "name": "Cros Antoni Amorós",
-   "url": "https://sportmaniacs.com/en/races/viii-cros-antoni-amoros#rules",
+   "url": "https://sportmaniacs.com/en/services/inscription/viii-cros-antoni-amoros#rules",
    "status": 200,
    "final": "https://sportmaniacs.com/en/services/inscription/viii-cros-antoni-amoros#rules",
    "ctype": "text/html",
@@ -1832,7 +1827,7 @@
   },
   "desafio-entre-cafetales-dec-santo-tomas-2026-1122": {
    "name": "Desafío Entre Cafetales -dec- Santo Tomás",
-   "url": "https://sportmaniacs.com/es/races/desafo-entre-cafetales--dec--santo-toms#rules",
+   "url": "https://sportmaniacs.com/es/services/inscription/desafo-entre-cafetales--dec--santo-toms#rules",
    "status": 200,
    "final": "https://sportmaniacs.com/es/services/inscription/desafo-entre-cafetales--dec--santo-toms#rules",
    "ctype": "text/html",
@@ -1852,7 +1847,7 @@
   },
   "evento-gordako-utiel-2026-1122": {
    "name": "Evento Gordako Utiel",
-   "url": "https://sportmaniacs.com/es/races/evento-gordako-utiel-2026#rules",
+   "url": "https://sportmaniacs.com/es/services/inscription/evento-gordako-utiel-2026#rules",
    "status": 200,
    "final": "https://sportmaniacs.com/es/services/inscription/evento-gordako-utiel-2026#rules",
    "ctype": "text/html",
@@ -1882,7 +1877,7 @@
   },
   "vilarnau-correcava-2026-1122": {
    "name": "Vilarnau Correcava",
-   "url": "https://sportmaniacs.com/es/races/vilarnau-correcava-2026#rules",
+   "url": "https://sportmaniacs.com/es/services/inscription/vilarnau-correcava-2026#rules",
    "status": 200,
    "final": "https://sportmaniacs.com/es/services/inscription/vilarnau-correcava-2026#rules",
    "ctype": "text/html",
@@ -1892,17 +1887,17 @@
   },
   "x-carrera-popular-xi-marcha-solidaria-por-la-diabetes-2026-1122": {
    "name": "X Carrera Popular XI Marcha Solidaria por la Diabetes",
-   "url": "http://deporchip.com/wp-content/uploads/2026/07/Reglamento-X-CARRERA-POPULAR-XI-MARCHA-SOLIDARIA-POR-LA-DIABETES-2026.pdf",
-   "status": 202,
-   "final": "http://deporchip.com/wp-content/uploads/2026/07/Reglamento-X-CARRERA-POPULAR-XI-MARCHA-SOLIDARIA-POR-LA-DIABETES-2026.pdf",
+   "url": "https://sportmaniacs.com/es/services/inscription/x-carrera-popular-xi-marcha-solidaria-por-la-diabetes",
+   "status": 200,
+   "final": "https://sportmaniacs.com/es/services/inscription/x-carrera-popular-xi-marcha-solidaria-por-la-diabetes",
    "ctype": "text/html",
    "pdf": false,
    "html": true,
-   "kind": "dice_pdf_pero_no_lo_es"
+   "kind": "ok_pagina"
   },
   "xvi-cursa-i-caminada-solidaria-contra-la-violencia-de-genere-2026-1122": {
    "name": "XVI Cursa i Caminada Solidaria Contra la Violència de Gènere",
-   "url": "https://sportmaniacs.com/es/races/xvi-cursa-i-caminada-solidaria-contra-la-violencia-de-genere#rules",
+   "url": "https://sportmaniacs.com/es/services/inscription/xvi-cursa-i-caminada-solidaria-contra-la-violencia-de-genere#rules",
    "status": 200,
    "final": "https://sportmaniacs.com/es/services/inscription/xvi-cursa-i-caminada-solidaria-contra-la-violencia-de-genere#rules",
    "ctype": "text/html",
@@ -1942,7 +1937,7 @@
   },
   "la-cursa-del-tractor-2026-1128": {
    "name": "La Cursa del Tractor",
-   "url": "https://sportmaniacs.com/es/races/la-cursa-del-tractor-2026#rules",
+   "url": "https://sportmaniacs.com/es/services/inscription/la-cursa-del-tractor-2026#rules",
    "status": 200,
    "final": "https://sportmaniacs.com/es/services/inscription/la-cursa-del-tractor-2026#rules",
    "ctype": "text/html",
@@ -1962,7 +1957,7 @@
   },
   "trikids-sant-joan-2026-1129": {
    "name": "Trikids Sant Joan",
-   "url": "https://sportmaniacs.com/es/races/trikids-sant-joan-2026#rules",
+   "url": "https://sportmaniacs.com/es/services/inscription/trikids-sant-joan-2026#rules",
    "status": 200,
    "final": "https://sportmaniacs.com/es/services/inscription/trikids-sant-joan-2026#rules",
    "ctype": "text/html",
@@ -2022,7 +2017,7 @@
   },
   "bunt-miko-ajow-2026-1205": {
    "name": "Bunt Mikołajów",
-   "url": "https://sportmaniacs.com/es/races/bunt-mikolajow-2026#rules",
+   "url": "https://sportmaniacs.com/es/services/inscription/bunt-mikolajow-2026#rules",
    "status": 200,
    "final": "https://sportmaniacs.com/es/services/inscription/bunt-mikolajow-2026#rules",
    "ctype": "text/html",
@@ -2032,7 +2027,7 @@
   },
   "xxi-volta-a-peu-la-vall-d-039-alba-3-pujades-a-l-039-ermita-2026-1205": {
    "name": "XXI Volta a Peu la Vall D&#039;alba (3 Pujades a L&#039;ermita)",
-   "url": "https://sportmaniacs.com/es/races/xxi-volta-a-peu-la-vall-dalba-3-pujades-a-lermita#rules",
+   "url": "https://sportmaniacs.com/es/services/inscription/xxi-volta-a-peu-la-vall-dalba-3-pujades-a-lermita#rules",
    "status": 200,
    "final": "https://sportmaniacs.com/es/services/inscription/xxi-volta-a-peu-la-vall-dalba-3-pujades-a-lermita#rules",
    "ctype": "text/html",
@@ -2112,13 +2107,13 @@
   },
   "carrera-popular-la-tercia-memorial-la-huella-de-carolina-2026-1208": {
    "name": "Carrera Popular la Tercia Memorial la Huella de Carolina",
-   "url": "https://www.babelsport.com/evento/la-tercia-2026/Reglamento/userfiles/a5d6_Reglamento La tercia_2026.pdf",
-   "status": 404,
-   "final": "https://www.babelsport.com/evento/la-tercia-2026/Reglamento/userfiles/a5d6_Reglamento%20La%20tercia_2026.pdf",
+   "url": "https://www.babelsport.com/evento/la-tercia-2026/Reglamento/",
+   "status": 200,
+   "final": "https://www.babelsport.com/evento/la-tercia-2026/Reglamento/",
    "ctype": "text/html",
    "pdf": false,
    "html": true,
-   "kind": "error_404"
+   "kind": "ok_pagina"
   },
   "carrera-de-navidad-callosa-de-segura-2026-1212": {
    "name": "Carrera de Navidad Callosa de Segura",
@@ -2172,7 +2167,7 @@
   },
   "natural-greatness-wild-race-campeonato-autonomico-mushing-tierra-comunidad-valen-2026-1212": {
    "name": "Natural Greatness Wild Race Campeonato Autonomico Mushing Tierra Comunidad Valenciana",
-   "url": "https://sportmaniacs.com/es/races/campeonato-autonmico-de-mushing-sprint-tierra-barracas-middot-castelln-12-13-de-diciembre-de-2026#rules",
+   "url": "https://sportmaniacs.com/es/services/inscription/campeonato-autonmico-de-mushing-sprint-tierra-barracas-middot-castelln-12-13-de-diciembre-de-2026#rules",
    "status": 200,
    "final": "https://sportmaniacs.com/es/services/inscription/campeonato-autonmico-de-mushing-sprint-tierra-barracas-middot-castelln-12-13-de-diciembre-de-2026#rules",
    "ctype": "text/html",
@@ -2220,6 +2215,16 @@
    "html": true,
    "kind": "ok_pagina"
   },
+  "cursa-i-caminada-solidaria-per-la-marato-3cat-tarragona-2026-1213": {
+   "name": "Cursa i Caminada Solidària per la Marató 3CAT - Tarragona",
+   "url": "https://www.athleticevents.net/reglament/15a-cursa-i-caminada-solidaria-per-la-marato-3cat-tgn-541",
+   "status": 200,
+   "final": "https://www.athleticevents.net/reglament/15a-cursa-i-caminada-solidaria-per-la-marato-3cat-tgn-541",
+   "ctype": "text/html",
+   "pdf": false,
+   "html": true,
+   "kind": "ok_pagina"
+  },
   "mar-menor-running-challenge-2026-1213": {
    "name": "Mar Menor Running Challenge",
    "url": "https://lineadesalida.net/storage/reglamentos/1788818515Reglamento Mar Menor Running 2026.pdf",
@@ -2242,7 +2247,7 @@
   },
   "10-milla-solidaria-de-valldoreix-2026-1213": {
    "name": "10 Milla Solidària de Valldoreix",
-   "url": "https://sportmaniacs.com/es/races/10-milla-solidria-de-valldoreix#rules",
+   "url": "https://sportmaniacs.com/es/services/inscription/10-milla-solidria-de-valldoreix#rules",
    "status": 200,
    "final": "https://sportmaniacs.com/es/services/inscription/10-milla-solidria-de-valldoreix#rules",
    "ctype": "text/html",
@@ -2252,7 +2257,7 @@
   },
   "10k-la-vall-de-sego-quart-de-les-valls-2026-1213": {
    "name": "10K La Vall de Segó - Quart de les Valls",
-   "url": "https://sportmaniacs.com/en/races/iii-10k-la-vall-de-sego-2026-quart-de-les-valls#rules",
+   "url": "https://sportmaniacs.com/en/services/inscription/iii-10k-la-vall-de-sego-2026-quart-de-les-valls#rules",
    "status": 200,
    "final": "https://sportmaniacs.com/en/services/inscription/iii-10k-la-vall-de-sego-2026-quart-de-les-valls#rules",
    "ctype": "text/html",
@@ -2292,7 +2297,7 @@
   },
   "cursa-del-club-natacio-sabadell-2026-1213": {
    "name": "Cursa del Club Natació Sabadell",
-   "url": "https://sportmaniacs.com/en/races/xxxiv-cursa-del-club-nataci-sabadell#rules",
+   "url": "https://sportmaniacs.com/en/services/inscription/xxxiv-cursa-del-club-nataci-sabadell#rules",
    "status": 200,
    "final": "https://sportmaniacs.com/en/services/inscription/xxxiv-cursa-del-club-nataci-sabadell#rules",
    "ctype": "text/html",
@@ -2322,7 +2327,7 @@
   },
   "san-silvestre-de-hortaleza-2026-1219": {
    "name": "San Silvestre de Hortaleza",
-   "url": "http://www.duatlonvaldebebas.es/web/otrasansilvestreesposible/reglamento-2021/",
+   "url": "https://www.duatlonvaldebebas.es/web/otrasansilvestreesposible/reglamento-2021/",
    "status": 200,
    "final": "https://www.duatlonvaldebebas.es/web/otrasansilvestreesposible/reglamento-2021/",
    "ctype": "text/html",
@@ -2362,7 +2367,7 @@
   },
   "bkt-zamudio-2026-1219": {
    "name": "BKT Zamudio",
-   "url": "https://sportmaniacs.com/en/races/bkt-zamudio-2026#rules",
+   "url": "https://sportmaniacs.com/en/services/inscription/bkt-zamudio-2026#rules",
    "status": 200,
    "final": "https://sportmaniacs.com/en/services/inscription/bkt-zamudio-2026#rules",
    "ctype": "text/html",
@@ -2372,13 +2377,13 @@
   },
   "liga-de-barrios-novelda-2026-1219": {
    "name": "Liga de Barrios Novelda",
-   "url": "https://www.babelsport.com/evento/liga-barrios-novelda-2026/Reglamento/userfiles/6c93_REGLAMENTO LIGA DE BARRIOS NOVELDA 2026.pdf",
-   "status": 404,
-   "final": "https://www.babelsport.com/evento/liga-barrios-novelda-2026/Reglamento/userfiles/6c93_REGLAMENTO%20LIGA%20DE%20BARRIOS%20NOVELDA%202026.pdf",
+   "url": "https://www.babelsport.com/evento/liga-barrios-novelda-2026/Reglamento/",
+   "status": 200,
+   "final": "https://www.babelsport.com/evento/liga-barrios-novelda-2026/Reglamento/",
    "ctype": "text/html",
    "pdf": false,
    "html": true,
-   "kind": "error_404"
+   "kind": "ok_pagina"
   },
   "papanoelada-runners-vigo-2026-1219": {
    "name": "Papanoelada Runners - Vigo",
@@ -2482,17 +2487,17 @@
   },
   "media-maraton-villa-de-aspe-2026-1220": {
    "name": "Media Maratón Villa de Aspe",
-   "url": "https://www.chiplevante.com/es/prueba/files/documentacion/REGLAMENTO2026MMASPE.pdf",
-   "status": 404,
-   "final": "https://www.chiplevante.com/es/prueba/files/documentacion/REGLAMENTO2026MMASPE.pdf",
+   "url": "https://www.chiplevante.com/es/prueba/media-maraton-11km-y-5km-villa-de-aspe-672-2026",
+   "status": 200,
+   "final": "https://www.chiplevante.com/es/prueba/media-maraton-11km-y-5km-villa-de-aspe-672-2026",
    "ctype": "text/html",
    "pdf": false,
-   "html": false,
-   "kind": "error_404"
+   "html": true,
+   "kind": "ok_pagina"
   },
   "san-silvestre-2026-les-alqueries-2026-1220": {
    "name": "San Silvestre 2026-les Alqueries",
-   "url": "https://sportmaniacs.com/es/races/san-silvestre-2026-les-alqueries#rules",
+   "url": "https://sportmaniacs.com/es/services/inscription/san-silvestre-2026-les-alqueries#rules",
    "status": 200,
    "final": "https://sportmaniacs.com/es/services/inscription/san-silvestre-2026-les-alqueries#rules",
    "ctype": "text/html",
@@ -2502,7 +2507,7 @@
   },
   "nationale-nederlanden-san-silvestre-vallecana-virtual-2026-1224": {
    "name": "Nationale-Nederlanden San Silvestre Vallecana Virtual",
-   "url": "https://sportmaniacs.com/es/races/nationale-nederlanden-san-silvestre-vallecana-virtual-2026#rules",
+   "url": "https://sportmaniacs.com/es/services/inscription/nationale-nederlanden-san-silvestre-vallecana-virtual-2026#rules",
    "status": 200,
    "final": "https://sportmaniacs.com/es/services/inscription/nationale-nederlanden-san-silvestre-vallecana-virtual-2026#rules",
    "ctype": "text/html",
@@ -2542,13 +2547,13 @@
   },
   "vi-carrera-del-mazapan-de-sonseca-2026-1226": {
    "name": "VI Carrera del Mazapan de Sonseca",
-   "url": "http://deporchip.com/wp-content/uploads/2026/10/REGLAMENTO_2026-2.pdf",
-   "status": 202,
-   "final": "http://deporchip.com/wp-content/uploads/2026/10/REGLAMENTO_2026-2.pdf",
+   "url": "https://sportmaniacs.com/es/services/inscription/vi-carrera-del-mazapan-de-sonseca",
+   "status": 200,
+   "final": "https://sportmaniacs.com/es/services/inscription/vi-carrera-del-mazapan-de-sonseca",
    "ctype": "text/html",
    "pdf": false,
    "html": true,
-   "kind": "dice_pdf_pero_no_lo_es"
+   "kind": "ok_pagina"
   },
   "iv-san-silvestre-montehermoso-2026-1227": {
    "name": "IV San Silvestre MONTEHERMOSO",
@@ -2562,7 +2567,7 @@
   },
   "xv-san-silvestre-d-039-orpesa-2026-1227": {
    "name": "XV San Silvestre D&#039;orpesa",
-   "url": "https://sportmaniacs.com/es/races/xv-san-silvestre-dorpesa#rules",
+   "url": "https://sportmaniacs.com/es/services/inscription/xv-san-silvestre-dorpesa#rules",
    "status": 200,
    "final": "https://sportmaniacs.com/es/services/inscription/xv-san-silvestre-dorpesa#rules",
    "ctype": "text/html",
@@ -2642,7 +2647,7 @@
   },
   "42-bieg-sylwestrowy-2026-1231": {
    "name": "42. Bieg Sylwestrowy",
-   "url": "https://sportmaniacs.com/es/races/42-bieg-sylwestrowy#rules",
+   "url": "https://sportmaniacs.com/es/services/inscription/42-bieg-sylwestrowy#rules",
    "status": 200,
    "final": "https://sportmaniacs.com/es/services/inscription/42-bieg-sylwestrowy#rules",
    "ctype": "text/html",
@@ -2652,7 +2657,7 @@
   },
   "circuit-vall-de-sego-carreres-populars-2026-1231": {
    "name": "Circuit Vall de Segó Carreres Populars",
-   "url": "https://sportmaniacs.com/en/races/circuit-vall-de-sego-carreres-populars-2026#rules",
+   "url": "https://sportmaniacs.com/en/services/inscription/circuit-vall-de-sego-carreres-populars-2026#rules",
    "status": 200,
    "final": "https://sportmaniacs.com/en/services/inscription/circuit-vall-de-sego-carreres-populars-2026#rules",
    "ctype": "text/html",
@@ -2662,13 +2667,13 @@
   },
   "lillo-christmas-race-walk-2026-1231": {
    "name": "Lillo Christmas Race & Walk",
-   "url": "http://deporchip.com/wp-content/uploads/2026/10/Reglamento_Lillo_Christmas_Race_Walk_2026.pdf",
-   "status": 202,
-   "final": "http://deporchip.com/wp-content/uploads/2026/10/Reglamento_Lillo_Christmas_Race_Walk_2026.pdf",
+   "url": "https://sportmaniacs.com/en/services/inscription/lillo-christmas-race",
+   "status": 200,
+   "final": "https://sportmaniacs.com/en/services/inscription/lillo-christmas-race",
    "ctype": "text/html",
    "pdf": false,
    "html": true,
-   "kind": "dice_pdf_pero_no_lo_es"
+   "kind": "ok_pagina"
   },
   "san-silvestre-colmenar-viejo-2026-1231": {
    "name": "San Silvestre Colmenar Viejo",
@@ -2692,13 +2697,13 @@
   },
   "san-silvestre-internacional-crevillentina-2026-1231": {
    "name": "San Silvestre Internacional Crevillentina",
-   "url": "https://www.chiplevante.com/es/prueba/files/documentacion/REGLAMENTOSSCREVILLENTE26.pdf",
-   "status": 404,
-   "final": "https://www.chiplevante.com/es/prueba/files/documentacion/REGLAMENTOSSCREVILLENTE26.pdf",
+   "url": "https://www.chiplevante.com/es/prueba/san-silvestre-internacional-crevillentina-1004-2026",
+   "status": 200,
+   "final": "https://www.chiplevante.com/es/prueba/san-silvestre-internacional-crevillentina-1004-2026",
    "ctype": "text/html",
    "pdf": false,
-   "html": false,
-   "kind": "error_404"
+   "html": true,
+   "kind": "ok_pagina"
   },
   "san-silvestre-toledana-2026": {
    "name": "San Silvestre Toledana",
@@ -2772,7 +2777,7 @@
   },
   "la-navarclina-2027-0110": {
    "name": "La Navarclina",
-   "url": "https://sportmaniacs.com/en/races/la-navarclina-2027#rules",
+   "url": "https://sportmaniacs.com/en/services/inscription/la-navarclina-2027#rules",
    "status": 200,
    "final": "https://sportmaniacs.com/en/services/inscription/la-navarclina-2027#rules",
    "ctype": "text/html",
@@ -2972,7 +2977,7 @@
   },
   "16-snow-running-sierra-nevada-2027-0206": {
    "name": "16 Snow Running Sierra Nevada",
-   "url": "https://sportmaniacs.com/es/races/16-snow-running-sierra-nevada-2027#rules",
+   "url": "https://sportmaniacs.com/es/services/inscription/16-snow-running-sierra-nevada-2027#rules",
    "status": 200,
    "final": "https://sportmaniacs.com/es/services/inscription/16-snow-running-sierra-nevada-2027#rules",
    "ctype": "text/html",
