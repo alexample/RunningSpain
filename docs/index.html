@@ -89,10 +89,14 @@ h1 .logo{width:clamp(36px,7vw,48px);height:auto;border-radius:22%;flex:none;box-
   padding-block:10px;display:flex;flex-wrap:wrap;gap:10px;align-items:center;border-bottom:1px solid var(--line);margin-bottom:8px}
 body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
 .chips{display:flex;flex-wrap:wrap;gap:6px}
-.tabs{flex:1 0 100%;display:flex;gap:4px;border-bottom:1px solid var(--line);margin-bottom:2px}
+.tabs{flex:1 0 100%;min-width:0;display:flex;gap:2px;border-bottom:1px solid var(--line);margin-bottom:2px;overflow-x:auto;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
 .tab{font:700 15px var(--display);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);background:none;border:0;
-  border-bottom:3px solid transparent;margin-bottom:-1px;padding:6px 12px 8px;cursor:pointer;display:flex;align-items:center;gap:8px}
+  border-bottom:3px solid transparent;margin-bottom:-1px;padding:6px 10px 8px;cursor:pointer;display:flex;align-items:center;gap:6px;white-space:nowrap;flex:none}
 .tab:hover{color:var(--ink)}
+.tab .sm{display:none}
+@media (max-width:440px){.tab{font-size:14px;letter-spacing:.01em;padding:6px 7px 8px;gap:5px}.tab .n{font-size:11px;padding:1px 6px}}
+@media (max-width:400px){.tab .lg{display:none}.tab .sm{display:inline}}
 .tab[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--accent)}
 .tab .n{font:700 12px var(--body);letter-spacing:0;background:var(--accent);color:var(--accent-ink);border-radius:999px;padding:1px 7px}
 .tab .n:empty{display:none}
@@ -135,6 +139,11 @@ input[type=search]{flex:1 1 180px}
 .link{margin-top:auto;align-self:flex-start;font:600 14px var(--body);text-decoration:none;color:var(--accent-ink);
   background:var(--accent);padding:8px 14px;border-radius:8px}
 .link.alt{background:transparent;color:var(--ink);border:1px solid var(--line)}
+.ttl{display:flex;align-items:flex-start;justify-content:space-between;gap:8px}
+.fav{flex:none;width:36px;height:36px;margin:-6px -6px 0 0;border:0;background:none;cursor:pointer;font-size:22px;line-height:1;color:var(--muted);border-radius:50%}
+.fav[aria-pressed="true"]{color:#f2b100}
+.fav:focus-visible{outline:2px solid var(--accent)}
+.race.hl{box-shadow:0 0 0 3px var(--accent)}
 .rev{margin:2px 0 0;font-size:12px;color:var(--muted)}
 .insc{display:inline-flex;align-items:center;gap:6px;font-weight:600}
 .insc::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--ic)}
@@ -173,8 +182,9 @@ footer{margin-top:40px;font-size:13px;color:var(--muted);max-width:70ch}
 
   <div class="controls">
     <div class="tabs" role="tablist" aria-label="Vista">
-      <button class="tab" id="t-all" role="tab" data-tab="all" aria-selected="true">Calendario</button>
-      <button class="tab" id="t-new" role="tab" data-tab="new" aria-selected="false">Carreras nuevas <span class="n" id="new-n"></span></button>
+      <button class="tab" id="t-all" role="tab" data-tab="all" aria-selected="true"><span class="lg">Calendario</span><span class="sm">Todas</span></button>
+      <button class="tab" id="t-new" role="tab" data-tab="new" aria-selected="false">Nuevas <span class="n" id="new-n"></span></button>
+      <button class="tab" id="t-fav" role="tab" data-tab="fav" aria-selected="false">⭐ <span class="lg">Mis carreras</span><span class="sm">Mías</span> <span class="n" id="fav-n"></span></button>
     </div>
     <div class="chips" role="group" aria-label="Distancia">
       <button class="chip" id="d-all" data-d="all" aria-pressed="true">Todas</button>
@@ -198,6 +208,21 @@ footer{margin-top:40px;font-size:13px;color:var(--muted);max-width:70ch}
 <script>
 const MONTHS=["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"];
 const DAYS=["domingo","lunes","martes","miércoles","jueves","viernes","sábado"];
+// ---- carreras favoritas: en la app se guardan en el móvil (para los avisos); en el navegador, en este navegador
+let favs=new Set();
+function loadFavs(){try{const raw=window.AndroidApp&&window.AndroidApp.leerFavs?window.AndroidApp.leerFavs():localStorage.getItem("rs-favs");
+  favs=new Set(JSON.parse(raw||"[]"))}catch(e){favs=new Set()}}
+function saveFavs(){const j=JSON.stringify([...favs]);
+  try{if(window.AndroidApp&&window.AndroidApp.guardarFavs)window.AndroidApp.guardarFavs(j);else localStorage.setItem("rs-favs",j)}catch(e){}}
+function countFav(){const today=iso(new Date());const n=races.filter(r=>favs.has(r.id)&&r.date>=today).length;
+  document.getElementById("fav-n").textContent=n?String(n):""}
+function favBtn(r){const b=el("button",{class:"fav",type:"button","aria-pressed":String(favs.has(r.id)),
+    "aria-label":favs.has(r.id)?"Quitar de mis carreras":"Guardar en mis carreras",title:"Mis carreras"},favs.has(r.id)?"★":"☆");
+  b.onclick=()=>{favs.has(r.id)?favs.delete(r.id):favs.add(r.id);saveFavs();countFav();
+    b.setAttribute("aria-pressed",String(favs.has(r.id)));b.textContent=favs.has(r.id)?"★":"☆";
+    b.setAttribute("aria-label",favs.has(r.id)?"Quitar de mis carreras":"Guardar en mis carreras");
+    if(tab==="fav")render()};
+  return b}
 const NEW_DAYS=7; // la pestaña "Carreras nuevas" muestra las añadidas en los últimos 7 días
 let tab="all";
 let races=[], meta=null, dist="all", region="", q="", onlyNews=false, news={added:new Set(),updated:{}};
@@ -281,8 +306,8 @@ function card(r){
   let badge=null;
   if(news.added.has(r.id))badge=el("span",{class:"badge new"},"Nueva");
   else if(news.updated[r.id])badge=el("span",{class:"badge chg"},"Actualizada: "+news.updated[r.id].map(f=>FIELD[f]||f).join(", "));
-  return el("article",{class:"race",style:"--kc:"+kcolor(k)},bib,
-    el("div",{class:"info"},badge,el("h3",{},r.name),tags,dl,r.note?el("p",{class:"note"},r.note):null,actions,revisada(r)));
+  return el("article",{class:"race",id:"c-"+r.id,style:"--kc:"+kcolor(k)},bib,
+    el("div",{class:"info"},badge,el("div",{class:"ttl"},el("h3",{},r.name),favBtn(r)),tags,dl,r.note?el("p",{class:"note"},r.note):null,actions,revisada(r)));
 }
 
 function render(){
@@ -293,7 +318,8 @@ function render(){
   const since=newSince();
   const list=races.filter(r=>{const d=parseDate(r.date);
     if(tab==="new"&&!(r.addedAt&&r.addedAt>=since))return false;
-    if(d<today||d>end)return false;
+    if(tab==="fav"&&!favs.has(r.id))return false;
+    if(d<today||(d>end&&tab!=="fav"))return false;
     if(dist!=="all"&&kind(r)!==dist)return false;
     if(region&&r.region!==region)return false;
     if(onlyNews&&!news.added.has(r.id)&&!news.updated[r.id])return false;
@@ -310,6 +336,9 @@ function render(){
   if(!races.length){main.append(el("div",{class:"empty"},"Todavía no hay carreras en el calendario. La actualización semanal las irá añadiendo."));return}
   if(tab==="new"&&!list.length){main.append(el("div",{class:"empty"},
     (dist!=="all"||region||nq)?"Ninguna carrera nueva coincide con estos filtros.":"No se han añadido carreras en los últimos "+NEW_DAYS+" días. El robot busca nuevas cada día."));return}
+  if(tab==="fav"&&!list.length){main.append(el("div",{class:"empty"},favs.size&&(dist!=="all"||region||nq)
+    ?"Ninguna de tus carreras coincide con estos filtros."
+    :"Toca la ☆ de una carrera para guardarla aquí."+(window.AndroidApp?" La app te recordará la víspera, si la inscripción sigue abierta una semana antes y si cambia la fecha o la hora.":"")));return}
   if(!list.length){main.append(el("div",{class:"empty"},"Ninguna carrera coincide con estos filtros. Prueba con otra distancia o comunidad."));return}
   if(tab==="new"){renderNew(main,list);return}
   let cur=null,grid=null;
@@ -320,6 +349,23 @@ function render(){
     grid.append(card(r))}
 }
 
+// #nuevas, #mis o #c-<id> (una carrera concreta: se muestra, se resalta y se lleva a la vista)
+function abrirHash(){
+  const h=decodeURIComponent(location.hash||"");
+  if(h==="#nuevas")return setTab("new",false);
+  if(h==="#mis")return setTab("fav",false);
+  if(h.startsWith("#c-")){
+    const id=h.slice(3);
+    if(!races.some(r=>r.id===id))return render();
+    dist="all";region="";q="";onlyNews=false;
+    document.querySelectorAll(".chip").forEach(c=>c.setAttribute("aria-pressed",String(c.dataset.d==="all")));
+    document.getElementById("region").value="";document.getElementById("q").value="";
+    setTab("all",false);
+    const c=document.getElementById("c-"+id);
+    if(c){const ctl=document.querySelector(".controls");c.style.scrollMarginTop=(ctl.offsetHeight+12)+"px";
+      c.scrollIntoView({block:"start"});c.classList.add("hl");setTimeout(()=>c.classList.remove("hl"),2500)}
+    return}
+  render()}
 function iso(d){return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0")}
 function newSince(){const d=new Date();d.setHours(0,0,0,0);d.setDate(d.getDate()-NEW_DAYS);return iso(d)}
 function addedLabel(a){const t=new Date();t.setHours(0,0,0,0);const d=parseDate(a),diff=Math.round((t-d)/864e5);
@@ -334,7 +380,7 @@ function renderNew(main,list){
 function setTab(t,push){tab=t;if(t==="new")onlyNews=false;
   document.querySelectorAll(".tab").forEach(b=>b.setAttribute("aria-selected",String(b.dataset.tab===t)));
   document.getElementById("upd").setAttribute("aria-pressed",String(onlyNews));
-  if(push){try{history.replaceState(null,"",t==="new"?"#nuevas":location.pathname+location.search)}catch(e){}}
+  if(push){try{history.replaceState(null,"",t==="new"?"#nuevas":t==="fav"?"#mis":location.pathname+location.search)}catch(e){}}
   render()}
 function countNew(){const since=newSince(),t=new Date(),today=iso(t);t.setMonth(t.getMonth()+3);const end=iso(t);
   const n=races.filter(r=>r.addedAt&&r.addedAt>=since&&r.date>=today&&r.date<=end).length;
@@ -373,9 +419,9 @@ document.getElementById("q").addEventListener("input",e=>{q=e.target.value;rende
     races=data.races||[];
     meta={updatedAt:data.updatedAt,lastRun:data.lastRun||null};
     if(data.lastRun)news={added:new Set(data.lastRun.added||[]),updated:data.lastRun.updated||{}};
-    fillRegions();setStatus();countNew();
-    if(location.hash==="#nuevas")setTab("new",false);else render();
-    window.addEventListener("hashchange",()=>{if(location.hash==="#nuevas")setTab("new",false)});
+    loadFavs();fillRegions();setStatus();countNew();countFav();
+    abrirHash();
+    window.addEventListener("hashchange",abrirHash);
   }catch(e){
     document.getElementById("list").replaceChildren(el("div",{class:"empty"},"No se pudo cargar el calendario. Recarga la página en unos minutos."));
     document.getElementById("status").textContent="";
@@ -391,6 +437,7 @@ function abrirAvisos(){
   const a=leerAj(), dist=new Set(a.dist||[]), regs=new Set(a.regiones||[]);
   const sw=el("input",{type:"checkbox"});sw.checked=!!a.activo;
   const ap=el("input",{type:"checkbox"});ap.checked=!!a.aperturas;
+  const fv=el("input",{type:"checkbox"});fv.checked=a.favAvisos!==false;
   const distBox=el("div",{class:"regs"});
   DIST_OPT.forEach(([k,t])=>{const c=el("input",{type:"checkbox",value:k});c.checked=dist.has(k);distBox.append(el("label",{},c,t))});
   // fecha de la carrera
@@ -417,6 +464,8 @@ function abrirAvisos(){
   const cerrar=el("button",{class:"mini",type:"button"},"Cerrar");
   const sheet=el("div",{class:"sheet"},el("div",{class:"box"},
     el("div",{class:"row"},el("h2",{},"Avisos"),cerrar),
+    el("div",{class:"row"},el("span",{},"⭐ Recordatorios de mis carreras",el("br"),el("small",{class:"note"},"La víspera, si la inscripción sigue abierta una semana antes, si se agota y si cambia la fecha o la hora.")),el("label",{class:"switch"},fv,el("span"))),
+    el("h3",{style:"margin-top:6px"},"Carreras nuevas"),
     el("div",{class:"row"},el("span",{},"Avisarme de carreras nuevas"),el("label",{class:"switch"},sw,el("span"))),
     perm,
     el("div",{},el("h3",{},"Distancias"),distBox,el("p",{class:"note"},"Sin ninguna marcada: todas.")),
@@ -432,7 +481,8 @@ function abrirAvisos(){
     const d=[...distBox.querySelectorAll("input:checked")].map(c=>c.value);
     const fecha=sel.value==="rango"?{modo:"rango",desde:desde.value||"",hasta:hasta.value||""}
       :(sel.value==="0"?{}:{modo:"dias",dias:+sel.value});
-    APP.guardarAjustes(JSON.stringify({activo:sw.checked,dist:d,regiones:r,fecha,aperturas:ap.checked}));
+    APP.guardarAjustes(JSON.stringify({activo:sw.checked,dist:d,regiones:r,fecha,aperturas:ap.checked,favAvisos:fv.checked}));
+    if(fv.checked)APP.permisoAvisos();
     pintarBell();close()};
   window.alVolverApp=()=>{estadoPerm();pintarBell()};
   document.body.append(sheet);estadoPerm();

@@ -196,6 +196,19 @@ public class MainActivity extends Activity {
             AvisosWorker.revisarYa(MainActivity.this);
         }
 
+        /** Carreras favoritas (lista de ids en JSON), para los recordatorios. */
+        @JavascriptInterface
+        public String leerFavs() {
+            return getSharedPreferences(AvisosWorker.PREFS, Context.MODE_PRIVATE).getString("favs", "[]");
+        }
+
+        @JavascriptInterface
+        public void guardarFavs(String json) {
+            getSharedPreferences(AvisosWorker.PREFS, Context.MODE_PRIVATE).edit().putString("favs", json).apply();
+            AvisosWorker.revisarYa(MainActivity.this);
+            permisoAvisos();   // la primera favorita: pedir permiso de notificaciones si hace falta
+        }
+
         @JavascriptInterface
         public boolean avisosActivos() {
             return AvisosWorker.puedeNotificar(MainActivity.this);

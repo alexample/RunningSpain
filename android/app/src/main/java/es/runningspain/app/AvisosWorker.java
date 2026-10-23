@@ -53,6 +53,9 @@ import java.util.regex.Pattern;
  *              "fecha":{"modo":"dias","dias":30} | {"modo":"rango","desde":"AAAA-MM-DD","hasta":"AAAA-MM-DD"} | {},
  *              "aperturas":bool}   (avisar también cuando una carrera que encaja abre inscripciones)
  *   insc    = {id: estado de inscripción de la última revisión}
+ *   favs    = ids de «Mis carreras»;  favSnap = {id: {date, time, insc}} para detectar cambios
+ *   Recordatorios de favoritas (ajustes.favAvisos, activo por defecto): la víspera, una semana antes si la
+ *   inscripción sigue abierta, cuando se agota o cierra, y si cambia la fecha o la hora.
  *   vistas  = ids de carreras ya conocidas (nunca se avisa dos veces de la misma)
  * La primera revisión solo memoriza lo que ya existe, para no llenar el móvil de avisos.
  */
@@ -60,6 +63,7 @@ public class AvisosWorker extends Worker {
 
     static final String PREFS = "avisos";
     static final String CANAL = "carreras_nuevas";
+    static final String CANAL_MIS = "mis_carreras";
     static final String URL_DATOS = "https://alexample.github.io/RunningSpain/data/carreras.json";
     private static final String TRABAJO = "revisar-carreras";
     private static final Pattern KM = Pattern.compile("(\\d+(?:[.,]\\d+)?)\\s*km", Pattern.CASE_INSENSITIVE);
@@ -86,8 +90,11 @@ public class AvisosWorker extends Worker {
             NotificationChannel ch = new NotificationChannel(CANAL, "Carreras nuevas",
                     NotificationManager.IMPORTANCE_DEFAULT);
             ch.setDescription("Aviso cuando aparece una carrera nueva de las distancias y comunidades que elijas.");
+            NotificationChannel mis = new NotificationChannel(CANAL_MIS, "Mis carreras",
+                    NotificationManager.IMPORTANCE_HIGH);
+            mis.setDescription("Recordatorios de tus carreras guardadas: víspera, inscripción y cambios de fecha u hora.");
             NotificationManager nm = c.getSystemService(NotificationManager.class);
-            if (nm != null) nm.createNotificationChannel(ch);
+            if (nm != null) { nm.createNotificationChannel(ch); nm.createNotificationChannel(mis); }
         }
     }
 
@@ -155,6 +162,8 @@ public class AvisosWorker extends Worker {
             if (!dist.isEmpty() && !encaja(categorias(r), dist)) continue;
             nuevas.add(r);
         }
+        revisarFavoritas(c, p, aj, carreras, hoy);
+
         // Se recuerdan todas las actuales (encajen o no), así cambiar los filtros no trae avisos atrasados.
         p.edit().putStringSet("vistas", ahora).putBoolean("iniciado", true).putString("insc", inscAhora.toString()).apply();
         if (!abiertas.isEmpty() && puedeNotificar(c)) {
@@ -169,6 +178,82 @@ public class AvisosWorker extends Worker {
             else notificarResumen(c, nuevas);
         }
         return Result.success();
+    }
+
+    // ------------------------------------------------------------- mis carreras
+    private static void revisarFavoritas(Context c, SharedPreferences p, JSONObject aj, JSONArray carreras, String hoy) {
+        Set<String> favs = new HashSet<>();
+        try { favs = conjunto(new JSONArray(p.getString("favs", "[]"))); } catch (Exception ignored) { }
+        if (favs.isEmpty()) return;
+        boolean activo = aj.optBoolean("favAvisos", true);
+        JSONObject snap;
+        try { snap = new JSONObject(p.getString("favSnap", "{}")); } catch (Exception e) { snap = new JSONObject(); }
+        JSONObject nuevo = new JSONObject();
+        SharedPreferences.Editor ed = p.edit();
+        boolean puede = activo && puedeNotificar(c);
+        if (puede) crearCanal(c);
+        long ahora = System.currentTimeMillis();
+        int hora = Integer.parseInt(new SimpleDateFormat("H", Locale.ROOT).format(new Date(ahora)));
+        String manana = new SimpleDateFormat("yyyy-MM-dd", Locale.ROOT).format(new Date(ahora + 86400000L));
+        String semana = new SimpleDateFormat("yyyy-MM-dd", Locale.ROOT).format(new Date(ahora + 7 * 86400000L));
+        for (int i = 0; i < carreras.length(); i++) {
+            JSONObject r = carreras.optJSONObject(i);
+            if (r == null || !favs.contains(r.optString("id"))) continue;
+            String id = r.optString("id"), fecha = r.optString("date"), hr = r.optString("time", ""),
+                    insc = r.optString("inscripcion", "");
+            if (fecha.compareTo(hoy) < 0) continue;
+            try { nuevo.put(id, new JSONObject().put("date", fecha).put("time", hr).put("insc", insc)); } catch (Exception ignored) { }
+            JSONObject antes = snap.optJSONObject(id);
+            if (!puede) continue;
+            if (antes != null) {
+                String f0 = antes.optString("date"), h0 = antes.optString("time", ""), i0 = antes.optString("insc", "");
+                if (!f0.equals(fecha) || (!h0.isEmpty() && !hr.isEmpty() && !h0.equals(hr))) {
+                    avisoMis(c, r, "🔄 Cambio en " + r.optString("name"), "Ahora: " + cuando(r) + " · " + lugar(r), 1);
+                } else if (h0.isEmpty() && !hr.isEmpty()) {
+                    avisoMis(c, r, "🕘 Ya hay hora: " + r.optString("name"), cuando(r) + " · " + lugar(r), 1);
+                }
+                if (!i0.equals(insc) && ("agotada".equals(insc) || "cerrada".equals(insc))) {
+                    avisoMis(c, r, ("agotada".equals(insc) ? "🔴 Inscripciones agotadas: " : "🔴 Inscripciones cerradas: ")
+                            + r.optString("name"), cuando(r) + " · " + lugar(r), 2);
+                }
+            }
+            // la víspera (a partir de las 9 de la mañana, una sola vez)
+            if (fecha.equals(manana) && hora >= 9 && !fecha.equals(p.getString("vis_" + id, ""))) {
+                avisoMis(c, r, "🏃 Mañana: " + r.optString("name"),
+                        (hr.isEmpty() ? "Hora por confirmar" : "Salida a las " + hr + " h") + " · " + lugar(r), 3);
+                ed.putString("vis_" + id, fecha);
+            }
+            // una semana antes, si la inscripción sigue abierta
+            if (fecha.equals(semana) && "abierta".equals(insc) && !fecha.equals(p.getString("sem_" + id, ""))) {
+                avisoMis(c, r, "📝 Faltan 7 días: " + r.optString("name"),
+                        "La inscripción sigue abierta. ¿Ya tienes dorsal?", 4);
+                ed.putString("sem_" + id, fecha);
+            }
+        }
+        ed.putString("favSnap", nuevo.toString()).apply();
+    }
+
+    /** Aviso de una carrera favorita. Tocarlo abre su ficha en la app (o la inscripción, si el aviso es de inscribirse). */
+    private static void avisoMis(Context c, JSONObject r, String titulo, String texto, int tipo) {
+        int nid = (r.optString("id") + "#" + tipo).hashCode();
+        Intent abrir = new Intent(Intent.ACTION_VIEW,
+                Uri.parse("https://alexample.github.io/RunningSpain/#c-" + Uri.encode(r.optString("id"))), c, MainActivity.class)
+                .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+        PendingIntent pi = PendingIntent.getActivity(c, nid, abrir, PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE);
+        String url = r.optString("url", "");
+        if (tipo == 4 && r.optBoolean("official") && !url.isEmpty()) {
+            pi = PendingIntent.getActivity(c, nid, new Intent(Intent.ACTION_VIEW, Uri.parse(url)).setFlags(Intent.FLAG_ACTIVITY_NEW_TASK),
+                    PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE);
+        }
+        NotificationCompat.Builder n = new NotificationCompat.Builder(c, CANAL_MIS)
+                .setSmallIcon(R.drawable.ic_aviso)
+                .setColor(0xFFC60B1E)
+                .setContentTitle(titulo)
+                .setContentText(texto)
+                .setStyle(new NotificationCompat.BigTextStyle().bigText(texto))
+                .setContentIntent(pi)
+                .setAutoCancel(true);
+        try { NotificationManagerCompat.from(c).notify(nid, n.build()); } catch (SecurityException ignored) { }
     }
 
     // ------------------------------------------------------------- filtros
