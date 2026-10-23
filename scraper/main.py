@@ -62,7 +62,7 @@ def load_seen() -> dict:
 
 def save_seen(seen: dict, today: date) -> None:
     limit = (today - timedelta(days=200)).isoformat()
-    seen = {u: v for u, v in seen.items() if v.get("t", "") >= limit}
+    seen = {u: v for u, v in seen.items() if v.get("t", "") >= limit or u.startswith("_")}
     SEEN.parent.mkdir(parents=True, exist_ok=True)
     SEEN.write_text(json.dumps(seen, ensure_ascii=False, separators=(",", ":"), sort_keys=True), encoding="utf-8")
 
@@ -85,6 +85,9 @@ def skip_seen(v: dict | None, today: date) -> bool:
 def discover(db: dict, today: date, changes: dict) -> int:
     log("Buscando carreras en los calendarios…")
     seen = load_seen()
+    if not seen.get("_alt_v1"):   # una vez: reabrir las duplicadas para apuntarlas como fuente alternativa
+        seen = {u: v for u, v in seen.items() if v.get("m") != "duplicada"}
+        seen["_alt_v1"] = {"m": "marca", "t": today.isoformat()}
     cands = []
     for fn in (sources.list_sportplan, sources.list_runninglife, sources.list_sportmaniacs,
                sources.list_carreraspopulares, sources.list_lineadesalida, sources.list_runedia):
@@ -116,6 +119,9 @@ def discover(db: dict, today: date, changes: dict) -> int:
                             changes["updated"].setdefault(dup["id"], []).append(k)
                 if not dup.get("distances") and r.get("distances"):
                     dup["distances"] = r["distances"]
+                alt = dup.setdefault("alt", [])   # otra ficha de la misma carrera: sirve para completarla
+                if c["source_url"] != dup.get("source") and c["source_url"] not in alt and len(alt) < 5:
+                    alt.append(c["source_url"])
                 dup.setdefault("official_guess", r.get("official_guess"))
             else:
                 motivo = "añadida"

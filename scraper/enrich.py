@@ -91,38 +91,72 @@ def ask_llm(name: str, d: str, text: str) -> dict:
 def needs_work(r: dict, today: date) -> bool:
     if r.get("locked"):
         return False
-    complete = r.get("official") and r.get("price") and r.get("regulation") and r.get("banner") and r.get("km")
+    complete = (r.get("official") and r.get("price") and r.get("time") and r.get("regulation")
+                and r.get("banner") and r.get("km"))
     if complete:
         return False
     last = r.get("checkedAt")
-    if last:
-        try:
-            if (today - date.fromisoformat(last[:10])).days < config.RECHECK_DAYS:
-                return False
-        except ValueError:
-            pass
-    return True
+    if not last:
+        return True
+    try:
+        since = (today - date.fromisoformat(last[:10])).days
+        until = (date.fromisoformat(r["date"]) - today).days
+    except ValueError:
+        return True
+    if until <= config.RECHECK_SOON_DAYS:
+        return True          # en cada vuelta (cada vuelta pasa una sola vez por cada carrera)
+    if until <= config.RECHECK_NEAR_DAYS:
+        return since >= 1
+    return since >= config.RECHECK_DAYS
+
+
+def source_pages(r: dict) -> list[str]:
+    """Fichas de calendario de la carrera (la principal y las de otras fuentes), sin las que bloquean al robot."""
+    out = []
+    for u in [r.get("source")] + list(r.get("alt") or []):
+        if u and u not in out and not (not config.SPORTPLAN_ACTIVO and "sportplan.es" in u):
+            out.append(u)
+    return out
+
+
+def from_sources(r: dict) -> dict:
+    """Lo que dicen las fichas de calendario: candidatas a web oficial, hora, precio y km."""
+    found = {"official": [], "time": None, "price": None, "km": None}
+    for u in source_pages(r):
+        html, final, _ = net.get(u)
+        if not html or isinstance(html, bytes):
+            continue
+        ev = parse.jsonld_events(html)
+        f = parse.event_fields(ev[0]) if ev else {}
+        found["official"] += f.get("official_candidates") or []
+        g = parse.guess_official(html, final)
+        if g:
+            found["official"].append(g)
+        text = parse.page_text(html)[:8000]
+        found["time"] = found["time"] or f.get("time") or parse.extract_time(text)
+        found["price"] = found["price"] or f.get("price") or parse.extract_price(text)
+        found["km"] = found["km"] or parse.extract_km(text[:4000])
+    return found
 
 
 def enrich(r: dict, today: date) -> dict:
     """Devuelve los campos nuevos que se han podido confirmar para la carrera r."""
     upd = {"checkedAt": today.isoformat()}
+    src = from_sources(r) if (not r.get("official") or not r.get("time") or not r.get("price") or not r.get("km")) else None
     url = r.get("url") if r.get("official") else None
     if not url:
         guess = r.get("official_guess")
-        if not guess and r.get("source"):
-            html, final, _ = net.get(r["source"])
-            if html:
-                ev = parse.jsonld_events(html)
-                cands = parse.event_fields(ev[0])["official_candidates"] if ev else []
-                guess = (cands or [None])[0] or parse.guess_official(html, final)
-        url = guess
+        if guess and "sportplan.es" in guess and not config.SPORTPLAN_ACTIVO:
+            guess = None
+        url = guess or ((src or {}).get("official") or [None])[0]
     if not url:
         upd["nosite"] = True
+        _fill(upd, r, src)
         return upd
 
     text, html, final = fetch_text(url)
     if not text and not html:
+        _fill(upd, r, src)
         return upd
     if not r.get("official"):
         upd.update({"url": final, "official": True, "nosite": False})
@@ -177,4 +211,20 @@ def enrich(r: dict, today: date) -> dict:
         tags = parse.tags_from_km(km)
         if tags:
             upd["distances"] = tags
+    _fill(upd, r, src)
     return upd
+
+
+def _fill(upd: dict, r: dict, src: dict | None) -> None:
+    """Completa hora, precio y km con lo que digan las fichas de calendario, si la web oficial no lo dijo."""
+    if not src:
+        return
+    if not r.get("time") and not upd.get("time") and src.get("time") and re.match(r"^\d{2}:\d{2}$", src["time"]):
+        upd["time"] = src["time"]
+    if not r.get("price") and not upd.get("price") and src.get("price"):
+        upd["price"] = src["price"]
+    if not r.get("km") and not upd.get("km") and src.get("km"):
+        upd["km"] = src["km"]
+        tags = parse.tags_from_km(src["km"])
+        if tags:
+            upd["distances"] = tags

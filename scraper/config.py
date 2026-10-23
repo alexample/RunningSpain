@@ -13,7 +13,9 @@ MAX_MEDIA = 300            # fichas de calendario reabiertas por ejecución para
 MEDIA_RECHECK_DAYS = 14
 MAX_INSCRIPCION = 250      # páginas de inscripción revisadas por ejecución
 INSCRIPCION_CERCA_DIAS = 30   # las carreras de los próximos N días se revisan a diario; el resto, cada semana
-RECHECK_DAYS = 7           # una ficha sin web oficial se vuelve a intentar pasados N días
+RECHECK_DAYS = 7           # una ficha incompleta se vuelve a intentar pasados N días…
+RECHECK_NEAR_DAYS = 14     # …salvo si la carrera es en los próximos N días: entonces se reintenta a diario
+RECHECK_SOON_DAYS = 3      # y si es en los próximos N días, en cada vuelta
 REQUEST_DELAY = 1.2        # segundos entre peticiones al mismo dominio
 TIMEOUT = 25
 

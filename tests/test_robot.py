@@ -335,5 +335,30 @@ class RegistrationTests(unittest.TestCase):
         self.assertEqual(db["races"][0]["inscripcion"], "abierta")
 
 
+class RecheckTests(unittest.TestCase):
+    def test_near_races_are_retried_sooner(self):
+        today = date(2026, 10, 23)
+        base = {"name": "X", "official": True, "url": "https://x.es/", "checkedAt": "2026-10-21"}
+        self.assertTrue(enrich.needs_work({**base, "date": "2026-10-25"}, today))          # este fin de semana
+        self.assertTrue(enrich.needs_work({**base, "date": "2026-11-01"}, today))          # en 9 días: a diario
+        self.assertFalse(enrich.needs_work({**base, "date": "2026-11-01", "checkedAt": "2026-10-23"}, today))
+        self.assertFalse(enrich.needs_work({**base, "date": "2026-12-20"}, today))         # lejana: cada 7 días
+
+    def test_fill_from_calendar_page_when_official_lacks_data(self):
+        today = date(2026, 10, 23)
+        sm = """<script type="application/ld+json">{"@type":"SportsEvent","name":"10K X","startDate":"2026-10-25T10:00:00+02:00",
+        "offers":{"@type":"Offer","price":"12"}}</script><p>Recorrido de 10 km por el centro</p>"""
+        r = {"id": "x", "name": "10K X", "date": "2026-10-25", "source": "https://sportmaniacs.com/es/races/x",
+             "alt": ["https://sportplan.es/es/events/x"]}
+        def get(u, binary=False):
+            return (sm, u, "text/html") if "sportmaniacs" in u else (None, u, None)
+        with mock.patch("scraper.net.get", side_effect=get) as g, mock.patch("scraper.net.probe", return_value=(False, "", False)):
+            upd = enrich.enrich(r, today)
+        self.assertEqual(upd.get("time"), "10:00")
+        self.assertEqual(upd.get("price"), "12 €")
+        self.assertEqual(upd.get("km"), "10 km")
+        self.assertFalse(any("sportplan" in c.args[0] for c in g.call_args_list))   # la fuente bloqueada no se abre
+
+
 if __name__ == "__main__":
     unittest.main()
