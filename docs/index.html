@@ -146,7 +146,13 @@ input[type=search]{flex:1 1 180px}
 .fav[aria-pressed="true"]{color:#f2b100}
 .fav:focus-visible{outline:2px solid var(--accent)}
 .race.hl{box-shadow:0 0 0 3px var(--accent)}
-.foot{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:2px}
+.foot{display:flex;align-items:center;justify-content:flex-end;gap:6px;margin-top:2px}
+.stars{display:flex;align-items:center;gap:0}
+.stars .st{border:0;background:none;padding:2px;font-size:22px;line-height:1;color:var(--line);cursor:pointer}
+.stars .st.on{color:#f2b100}
+.stars .st.on.mine{color:#e69500}
+.stars .avg{font-size:12px;color:var(--muted);margin-left:4px;font-variant-numeric:tabular-nums;min-width:44px}
+.stars .st:focus-visible{outline:2px solid var(--accent);border-radius:4px}
 .foot .rev{margin:0}
 .sharebtn{flex:none;width:40px;height:40px;margin:-6px -6px -6px 0;display:grid;place-items:center;border:0;border-radius:50%;
   background:transparent;color:var(--ink);cursor:pointer}
@@ -288,6 +294,38 @@ function shareBtn(r){
   const b=el("button",{class:"sharebtn",type:"button","aria-label":"Compartir "+r.name,title:"Compartir"});
   b.innerHTML='<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4" stroke-width="2.2" stroke-linecap="round"/></svg>';
   b.onclick=()=>compartir(r);return b}
+// ---- valoraciones (estrellas 1-5): se guardan en el Worker de Cloudflare, comunes para todos.
+// La clave es la carrera sin año ni nº de edición + el pueblo, así la valoración sirve para todas sus ediciones.
+const VAL_URL="https://dondeloechan-ia.alexample.workers.dev/valoraciones";
+let VALS={};
+function rateKey(r){
+  const sl=x=>(x||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"");
+  const n=(r.name||"").replace(/\b20\d\d\b/g," ").replace(/\b\d+\s*(ª|º|a\.|o\.)\s*/gi," ").replace(/\b[ivxlc]+\b(?=\s)/gi," ")
+    .replace(/\b(edici[oó]n|edici[oó])\b/gi," ");
+  return (sl(n)+"-"+sl(r.city)).replace(/-+/g,"-").replace(/^-|-$/g,"").slice(0,90)}
+function deviceId(){try{let d=localStorage.getItem("rs-dev");if(!d){d=Array.from(crypto.getRandomValues(new Uint8Array(12)),b=>b.toString(16).padStart(2,"0")).join("");localStorage.setItem("rs-dev",d)}return d}
+  catch(e){return null}}
+function misVotos(){try{return JSON.parse(localStorage.getItem("rs-votos")||"{}")}catch(e){return{}}}
+function pintarStars(box,r){
+  const k=rateKey(r),v=VALS[k],mio=misVotos()[k];
+  const media=v&&v[1]?v[0]/v[1]:0,lleno=mio||Math.round(media);
+  box.querySelectorAll(".st").forEach((b,i)=>{b.classList.toggle("on",i<lleno);b.classList.toggle("mine",!!mio)});
+  box.querySelector(".avg").textContent=v&&v[1]?(media.toFixed(1).replace(".",",")+" ("+v[1]+")"):"Valorar"}
+function stars(r){
+  const box=el("div",{class:"stars",role:"group","aria-label":"Valorar "+r.name,"data-k":rateKey(r)});
+  for(let i=1;i<=5;i++){const b=el("button",{class:"st",type:"button","aria-label":i+(i===1?" estrella":" estrellas")},"★");
+    b.onclick=()=>votar(r,i,box);box.append(b)}
+  box.append(el("span",{class:"avg"}));pintarStars(box,r);return box}
+async function votar(r,e,box){
+  const k=rateKey(r),d=deviceId();if(!d){toast("No se puede valorar en este navegador");return}
+  const mv=misVotos(),antes=mv[k];mv[k]=e;try{localStorage.setItem("rs-votos",JSON.stringify(mv))}catch(_){}
+  const v=VALS[k]||[0,0];VALS[k]=antes?[v[0]-antes+e,v[1]]:[v[0]+e,v[1]+1];   // se ve al momento
+  document.querySelectorAll(".stars").forEach(x=>{if(x.dataset.k===k)pintarStars(x,races.find(y=>rateKey(y)===k)||r)});pintarStars(box,r);
+  try{const res=await fetch(VAL_URL,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({k,e,d})});
+    const j=await res.json();if(res.ok&&j.v){VALS[k]=j.v;pintarStars(box,r);toast("¡Gracias! Has dado "+e+"★")}else toast(j.error||"No se pudo guardar")}
+  catch(_){toast("Sin conexión: no se pudo guardar la valoración")}}
+fetch(VAL_URL,{cache:"no-cache"}).then(r=>r.ok?r.json():{}).then(d=>{VALS=d||{};document.querySelectorAll(".race").forEach(c=>{
+  const box=c.querySelector(".stars"),r=races.find(x=>"c-"+x.id===c.id);if(box&&r)pintarStars(box,r)})}).catch(()=>{});
 function toast(msg){const t=el("div",{class:"toast"},msg);document.body.append(t);setTimeout(()=>t.remove(),2200)}
 async function compartir(r){
   const text=shareText(r),url=shareUrl(r);
@@ -346,7 +384,7 @@ function card(r){
   else if(news.updated[r.id])badge=el("span",{class:"badge chg"},"Actualizada: "+news.updated[r.id].map(f=>FIELD[f]||f).join(", "));
   return el("article",{class:"race",id:"c-"+r.id,style:"--kc:"+kcolor(k)},bib,
     el("div",{class:"info"},badge,el("div",{class:"ttl"},el("h3",{},r.name),favBtn(r)),tags,dl,r.note?el("p",{class:"note"},r.note):null,actions,
-      el("div",{class:"foot"},revisada(r)||el("span"),shareBtn(r))));
+      revisada(r),el("div",{class:"foot"},stars(r),shareBtn(r))));
 }
 
 function render(){
