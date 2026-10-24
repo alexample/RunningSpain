@@ -1,3 +1,23 @@
 {
- "runningspain": "{ \"shorturl\": \"https://is.gd/runningspain\" }"
+ "voto4": [
+  200,
+  "{\"k\":\"zz-prueba\",\"v\":[4,1]}"
+ ],
+ "cambia5": [
+  200,
+  "{\"k\":\"zz-prueba\",\"v\":[5,1]}"
+ ],
+ "invalido": [
+  400,
+  "{\"error\":\"Voto no válido.\"}"
+ ],
+ "otro_origen": [
+  403,
+  "{\"error\":\"Origen no permitido.\"}"
+ ],
+ "lectura": [
+  200,
+  "{\"zz-prueba\":[5,1]}",
+  "https://alexample.github.io"
+ ]
 }
