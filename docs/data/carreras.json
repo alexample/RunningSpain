@@ -1,6 +1,6 @@
 {
- "updatedAt": "2026-10-26T03:19:49+00:00",
- "count": 896,
+ "updatedAt": "2026-10-26T14:18:18+00:00",
+ "count": 901,
  "races": [
   {
    "name": "1er Memorial Juan Pérez",
@@ -3306,7 +3306,7 @@
    "checkedAt": "2026-10-26",
    "nosite": true,
    "mediaChecked": "2026-10-23",
-   "revisada": "2026-10-26T03:07+00:00"
+   "revisada": "2026-10-26T14:07+00:00"
   },
   {
    "name": "Sokolský běh republiky – Cabo Roig",
@@ -3331,7 +3331,7 @@
    "inscripcionAt": "2026-10-26",
    "mediaChecked": "2026-10-23",
    "route": "https://www.behrepubliky.cz/templates/assets/img/route/banner/img1.png",
-   "revisada": "2026-10-26T03:07+00:00"
+   "revisada": "2026-10-26T14:07+00:00"
   },
   {
    "name": "Carrera Solidaria Ruta 091 Torremolinos",
@@ -5298,13 +5298,13 @@
    "official_guess": "https://web.rockthesport.com/es/event/generalimaratondemalaga2026",
    "checkedAt": "2026-10-26",
    "regResolved": "2026-10-23",
-   "inscripcionAt": "2026-10-25",
+   "inscripcionAt": "2026-10-26",
    "regChecked": "2026-10-23",
    "alt": [
     "https://running.life/en/event/generali-maraton-malaga",
     "https://sportmaniacs.com/es/races/generali-maraton-malaga-2026"
    ],
-   "revisada": "2026-10-26T00:43+00:00",
+   "revisada": "2026-10-26T14:07+00:00",
    "route": "https://www.wikiloc.com/running-trails/generali-maraton-malaga-2025-236011261?wa=sc&utm_campaign=badge&utm_source=unknown&utm_medium=unknown",
    "changedAt": "2026-10-25"
   },
@@ -5670,9 +5670,9 @@
    "alt": [
     "https://running.life/en/event/palma-beach-running-course"
    ],
-   "revisada": "2026-10-26T03:07+00:00",
+   "revisada": "2026-10-26T14:07+00:00",
    "mediaChecked": "2026-10-26",
-   "route": "http://elitechip.blob.core.windows.net/zw-media-cache/e060d1584bcf894f48684463eecac832.jpg"
+   "route": "https://elitechip.blob.core.windows.net/zw-media-cache/e060d1584bcf894f48684463eecac832.jpg"
   },
   {
    "name": "Sant Antoni Camina Amb el Càncer",
@@ -5849,7 +5849,7 @@
    "inscripcionAt": "2026-10-26",
    "regResolved": "2026-10-23",
    "regChecked": "2026-10-23",
-   "revisada": "2026-10-26T03:07+00:00",
+   "revisada": "2026-10-26T14:07+00:00",
    "banner": "https://carrerasciudadreal.es/wp-content/uploads/2026/10/Cartel-de-La-Solana-2026-scaled.jpg",
    "bannerScore": 10,
    "changedAt": "2026-10-25",
@@ -6901,6 +6901,33 @@
    "price": "5 €"
   },
   {
+   "name": "Pink Run MiR",
+   "date": "2026-11-08",
+   "time": "",
+   "city": "Moncada y Reixach",
+   "region": "Cataluña",
+   "distances": [
+    "5K"
+   ],
+   "price": "11 €",
+   "source": "https://running.life/en/event/pink-run-mir",
+   "official_guess": "https://www.nonstoprun.com/pinkrun/index.php",
+   "id": "pink-run-mir-2026-1108",
+   "official": true,
+   "url": "https://www.nonstoprun.com/pinkrun/index.php",
+   "addedAt": "2026-10-26",
+   "revisada": "2026-10-26T14:07+00:00",
+   "checkedAt": "2026-10-26",
+   "nosite": false,
+   "regulation": "https://nonstoprun.com/pinkrun/AutoritzacioMenor.pdf",
+   "regResolved": "2026-10-26",
+   "regChecked": "2026-10-26",
+   "route": "https://www.nonstoprun.com/pinkrun/images/Recorregut.jpg",
+   "km": "5 km",
+   "mediaChecked": "2026-10-26",
+   "inscripcionAt": "2026-10-26"
+  },
+  {
    "name": "SuperFast Innoporc 5K",
    "date": "2026-11-08",
    "time": "",
@@ -7759,7 +7786,7 @@
     "https://running.life/en/event/media-maraton-de-jaen"
    ],
    "mediaChecked": "2026-10-23",
-   "revisada": "2026-10-26T03:07+00:00",
+   "revisada": "2026-10-26T14:07+00:00",
    "checkedAt": "2026-10-26",
    "time": "03:12"
   },
@@ -8090,7 +8117,7 @@
    "inscripcionAt": "2026-10-26",
    "regResolved": "2026-10-23",
    "regChecked": "2026-10-23",
-   "revisada": "2026-10-26T03:07+00:00",
+   "revisada": "2026-10-26T14:07+00:00",
    "mediaChecked": "2026-10-26",
    "route": "https://www.elitechip.net/system/public/download/c2efa9586fd039ba255d33e102e9a940.pdf"
   },
@@ -9133,10 +9160,10 @@
    "alt": [
     "https://running.life/en/event/cursa-solidaria-autoritat-portuaria-de-balears"
    ],
-   "revisada": "2026-10-26T03:07+00:00",
-   "mediaChecked": "2026-10-26",
+   "revisada": "2026-10-26T14:07+00:00",
    "banner": "https://sportplan.es/es/opengraph-image",
    "bannerScore": 4,
+   "mediaChecked": "2026-10-26",
    "route": "https://www.elitechip.net/system/public/download/dc9d6ce2727ce7b983b234bde18af6e1.pdf"
   },
   {
@@ -9735,7 +9762,7 @@
    "inscripcionAt": "2026-10-26",
    "inscripcion": "abierta",
    "regChecked": "2026-10-23",
-   "revisada": "2026-10-26T03:07+00:00",
+   "revisada": "2026-10-26T14:07+00:00",
    "route": "https://cursafosca.com/img/photos/route-trail-night-1440.jpg",
    "checkedAt": "2026-10-26",
    "time": "03:45"
@@ -10764,7 +10791,7 @@
    "inscripcionAt": "2026-10-26",
    "regResolved": "2026-10-23",
    "regChecked": "2026-10-23",
-   "revisada": "2026-10-26T03:07+00:00",
+   "revisada": "2026-10-26T14:07+00:00",
    "mediaChecked": "2026-10-26",
    "route": "https://carrerasciudadreal.es/evento/media-maraton-rural-miguelturra-2026/"
   },
@@ -11313,7 +11340,7 @@
    "inscripcionAt": "2026-10-26",
    "regResolved": "2026-10-23",
    "regChecked": "2026-10-23",
-   "revisada": "2026-10-26T03:07+00:00",
+   "revisada": "2026-10-26T14:07+00:00",
    "mediaChecked": "2026-10-26",
    "route": "https://www.chiplevante.com/files/documentacion/dipticcarrera2026.pdf"
   },
@@ -13144,7 +13171,7 @@
    "inscripcionAt": "2026-10-23",
    "inscripcion": "abierta",
    "regChecked": "2026-10-23",
-   "revisada": "2026-10-26T03:07+00:00",
+   "revisada": "2026-10-26T14:07+00:00",
    "changedAt": "2026-10-26",
    "mediaChecked": "2026-10-23",
    "checkedAt": "2026-10-26",
@@ -13833,6 +13860,35 @@
    "mediaChecked": "2026-10-23"
   },
   {
+   "name": "Carrera de Navidad Vera",
+   "date": "2026-12-12",
+   "time": "16:30",
+   "city": "Vera",
+   "region": "",
+   "distances": [
+    "10K",
+    "3,3K"
+   ],
+   "price": "2 €",
+   "source": "https://running.life/en/event/carrera-de-navidad-vera",
+   "official_guess": "http://www.alcanzatumeta.es/xiii-carrera-de-navidad-vera-2026",
+   "banner": "https://www.alcanzatumeta.es/uploads/Cartel/a6e3a4ddaaf661881d3874a17af37704.jpeg",
+   "bannerScore": 8,
+   "id": "carrera-de-navidad-vera-2026-1212",
+   "official": true,
+   "url": "https://www.alcanzatumeta.es/xiii-carrera-de-navidad-vera-2026/",
+   "addedAt": "2026-10-26",
+   "revisada": "2026-10-26T14:07+00:00",
+   "checkedAt": "2026-10-26",
+   "nosite": false,
+   "regulation": "https://www.alcanzatumeta.es/uploads/Reglamento/854ba9982e65962274594ba7f465c5df.pdf",
+   "regResolved": "2026-10-26",
+   "regChecked": "2026-10-26",
+   "km": "10 km · 3,3 km",
+   "mediaChecked": "2026-10-26",
+   "inscripcionAt": "2026-10-26"
+  },
+  {
    "name": "XXIX Vuelta a Pie Nocturna Tous",
    "date": "2026-12-12",
    "time": "17:30",
@@ -14419,8 +14475,12 @@
    "source": "https://sportplan.es/es/events/10k-alcobendas-alcobendas-madrid-es-2026-12-13",
    "checkedAt": "2026-10-22",
    "nosite": true,
-   "revisada": "2026-10-23T16:57+00:00",
-   "mediaChecked": "2026-10-23"
+   "revisada": "2026-10-26T14:07+00:00",
+   "mediaChecked": "2026-10-23",
+   "alt": [
+    "https://running.life/en/event/10k-alcobendas"
+   ],
+   "official_guess": "https://10kalcobendas.com/"
   },
   {
    "name": "10K La Vall de Segó - Quart de les Valls",
@@ -14758,6 +14818,33 @@
    ],
    "revisada": "2026-10-23T16:57+00:00",
    "mediaChecked": "2026-10-23"
+  },
+  {
+   "name": "Karstica Biking Point",
+   "date": "2026-12-13",
+   "time": "",
+   "city": "Vallirana",
+   "region": "Cataluña",
+   "distances": [
+    "35K"
+   ],
+   "price": "",
+   "source": "https://sportmaniacs.com/es/races/karstica-biking-point-2026",
+   "official_guess": "https://sportmaniacs.com/es/races/karstica-biking-point-2026",
+   "id": "karstica-biking-point-2026-1213",
+   "official": true,
+   "url": "https://sportmaniacs.com/es/services/inscription/karstica-biking-point-2026",
+   "addedAt": "2026-10-26",
+   "revisada": "2026-10-26T14:07+00:00",
+   "checkedAt": "2026-10-26",
+   "nosite": false,
+   "signup": true,
+   "regulation": "https://sportmaniacs.com/es/services/inscription/karstica-biking-point-2026#rules",
+   "regResolved": "2026-10-26",
+   "regChecked": "2026-10-26",
+   "km": "35 km",
+   "mediaChecked": "2026-10-26",
+   "inscripcionAt": "2026-10-26"
   },
   {
    "name": "Media Maratón Sevilla-Los Palacios",
@@ -21655,6 +21742,37 @@
    "route": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0fxFB20eyOxkVpd3efy69m6cMEKmJFMg5RLDbLc8TEMQAzvFBcap0_Ri-I9Je9S44sP7-OTa1Ghk_RudyRVTXrfa4AedsjbzHR1bJWUC9dV_UDHFkYOzIQpHBDNSrWyy4izCjE1m_7yk/s400/RECORRIDO+Y+DESV%25C3%258DO+ALTERNATIVO.jpg"
   },
   {
+   "name": "Media Maratón Popular Ciudad de Plasencia",
+   "date": "2027-01-31",
+   "time": "",
+   "city": "Plasencia",
+   "region": "",
+   "distances": [
+    "23K",
+    "21K",
+    "17K",
+    "14K"
+   ],
+   "price": "",
+   "source": "https://running.life/en/event/media-maraton-popular-ciudad-de-plasencia",
+   "official_guess": "https://mmp.atletaspopularesdeplasencia.com/?p=2045",
+   "banner": "https://mmp.atletaspopularesdeplasencia.com/wp-content/uploads/sites/2/2026/09/Cartel.jpeg",
+   "bannerScore": 8,
+   "id": "media-maraton-popular-ciudad-de-plasencia-2027-0131",
+   "official": true,
+   "url": "https://mmp.atletaspopularesdeplasencia.com/?p=2045",
+   "addedAt": "2026-10-26",
+   "revisada": "2026-10-26T14:07+00:00",
+   "checkedAt": "2026-10-26",
+   "nosite": false,
+   "regulation": "https://drive.google.com/file/d/1Wr-pi-XEm4un3YDUhSX6EiRyYL8VXT0G/view?usp=sharing",
+   "regResolved": "2026-10-26",
+   "regChecked": "2026-10-26",
+   "route": "https://www.strava.com/routes/3289935860210249970",
+   "km": "23 km · 21 km · 17 km · 14 km",
+   "inscripcionAt": "2026-10-26"
+  },
+  {
    "name": "Media Maratón de Castelló",
    "date": "2027-01-31",
    "time": "",
@@ -21706,6 +21824,37 @@
    "mediaChecked": "2026-10-24",
    "banner": "https://www.mediadegetafe.com/themes/Getafe27/assets/imagenes/og-media-getafe-1200.jpg",
    "bannerScore": 4
+  },
+  {
+   "name": "Medio Maratón Villa de Puente Genil",
+   "date": "2027-01-31",
+   "time": "",
+   "city": "Puente Genil",
+   "region": "",
+   "distances": [
+    "26K",
+    "24K",
+    "20K",
+    "15K"
+   ],
+   "price": "",
+   "source": "https://running.life/en/event/medio-maraton-villa-de-puente-genil",
+   "official_guess": "https://puentegenil.es/la-media-maraton-villa-de-puente-genil-2027-se-celebrara-el-31-de-enero/",
+   "id": "medio-maraton-villa-de-puente-genil-2027-0131",
+   "official": true,
+   "url": "https://puentegenil.es/la-media-maraton-villa-de-puente-genil-2027-se-celebrara-el-31-de-enero/",
+   "addedAt": "2026-10-26",
+   "revisada": "2026-10-26T14:07+00:00",
+   "checkedAt": "2026-10-26",
+   "nosite": false,
+   "regulation": "https://puentegenil.es/la-media-maraton-villa-de-puente-genil-2027-se-celebrara-el-31-de-enero/",
+   "regResolved": "2026-10-26",
+   "regChecked": "2026-10-26",
+   "banner": "https://puentegenil.es/wp-content/uploads/2026/07/260715-Estudio-Media-MaratOn-Puente-Genil-2026.jpg",
+   "bannerScore": 2,
+   "km": "26 km · 24 km · 20 km · 15 km",
+   "mediaChecked": "2026-10-26",
+   "inscripcionAt": "2026-10-26"
   },
   {
    "name": "Mitja Marató Ciutat d'Alzira",
@@ -22098,8 +22247,14 @@
   }
  ],
  "lastRun": {
-  "at": "2026-10-26T03:19:49+00:00",
-  "added": [],
+  "at": "2026-10-26T14:18:18+00:00",
+  "added": [
+   "medio-maraton-villa-de-puente-genil-2027-0131",
+   "media-maraton-popular-ciudad-de-plasencia-2027-0131",
+   "carrera-de-navidad-vera-2026-1212",
+   "pink-run-mir-2026-1108",
+   "karstica-biking-point-2026-1213"
+  ],
   "updated": {
    "media-maraton-de-jaen-2026-1115": [
     "time"
@@ -22120,7 +22275,6 @@
     "route"
    ],
    "cursa-solidaria-autoritat-portuaria-2026-1115": [
-    "banner",
     "route"
    ],
    "media-maraton-villa-de-miguelturra-2026-1122": [
