@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-26T01:24:23+00:00",
+ "updatedAt": "2026-10-26T03:19:49+00:00",
  "count": 896,
  "races": [
   {
@@ -3306,7 +3306,7 @@
    "checkedAt": "2026-10-26",
    "nosite": true,
    "mediaChecked": "2026-10-23",
-   "revisada": "2026-10-26T00:43+00:00"
+   "revisada": "2026-10-26T03:07+00:00"
   },
   {
    "name": "Sokolský běh republiky – Cabo Roig",
@@ -3331,7 +3331,7 @@
    "inscripcionAt": "2026-10-26",
    "mediaChecked": "2026-10-23",
    "route": "https://www.behrepubliky.cz/templates/assets/img/route/banner/img1.png",
-   "revisada": "2026-10-26T00:43+00:00"
+   "revisada": "2026-10-26T03:07+00:00"
   },
   {
    "name": "Carrera Solidaria Ruta 091 Torremolinos",
@@ -3850,12 +3850,12 @@
    "banner": "https://s3.eu-west-1.amazonaws.com/sm-fotos.sportmaniacs.com/back/resize/1920x410x0_6a7b35e1-ab30-4bc1-b9f6-4a93ac1f0cf0-header_6a7ac44b-99f0-4cde-8e0e-0dadac1f1c14.png",
    "km": "36 km · 33 km · 26 km · 18 km",
    "bannerScore": 4,
-   "inscripcionAt": "2026-10-25",
+   "inscripcionAt": "2026-10-26",
    "inscripcion": "abierta",
    "regResolved": "2026-10-23",
    "regChecked": "2026-10-23",
    "mediaChecked": "2026-10-23",
-   "revisada": "2026-10-26T00:43+00:00"
+   "revisada": "2026-10-26T03:07+00:00"
   },
   {
    "name": "Wolf Race Perdiguera",
@@ -4025,9 +4025,9 @@
    "km": "15 km",
    "changedAt": "2026-10-23",
    "mediaChecked": "2026-10-23",
-   "inscripcionAt": "2026-10-25",
+   "inscripcionAt": "2026-10-26",
    "inscripcion": "abierta",
-   "revisada": "2026-10-25T00:31+00:00"
+   "revisada": "2026-10-26T03:07+00:00"
   },
   {
    "name": "La Conquista de la Almendra",
@@ -4350,11 +4350,11 @@
    "km": "20 km · 10 km",
    "bannerScore": 4,
    "regResolved": "2026-10-23",
-   "inscripcionAt": "2026-10-25",
+   "inscripcionAt": "2026-10-26",
    "inscripcion": "abierta",
    "regChecked": "2026-10-23",
    "mediaChecked": "2026-10-23",
-   "revisada": "2026-10-26T00:43+00:00"
+   "revisada": "2026-10-26T03:07+00:00"
   },
   {
    "name": "Dual Run Monachil Academia Puerta Real",
@@ -4513,7 +4513,7 @@
    "regulation": "https://megustacorrer.com/wp-content/uploads/2026/09/NAQUERA-Reglamento-2026.pdf",
    "banner": "https://sportmaniacs.com/images/share/sportmaniacs-race.jpg",
    "km": "10 km",
-   "inscripcionAt": "2026-10-25",
+   "inscripcionAt": "2026-10-26",
    "regResolved": "2026-10-23",
    "regChecked": "2026-10-23",
    "alt": [
@@ -4521,7 +4521,7 @@
     "https://www.carreraspopulares.com/carrera/10k-naquera"
    ],
    "mediaChecked": "2026-10-23",
-   "revisada": "2026-10-25T00:31+00:00"
+   "revisada": "2026-10-26T03:07+00:00"
   },
   {
    "name": "Carrera Solidaria Crecer con Futuro",
@@ -4607,10 +4607,10 @@
    "km": "5 km",
    "bannerScore": 8,
    "regResolved": "2026-10-23",
-   "inscripcionAt": "2026-10-25",
+   "inscripcionAt": "2026-10-26",
    "regChecked": "2026-10-23",
    "mediaChecked": "2026-10-23",
-   "revisada": "2026-10-26T00:43+00:00"
+   "revisada": "2026-10-26T03:07+00:00"
   },
   {
    "name": "Cursa del Sant Crist de Balaguer",
@@ -4999,13 +4999,13 @@
    "banner": "https://sportmaniacs.com/images/share/sportmaniacs-race.jpg",
    "km": "10 km · 5 km",
    "regResolved": "2026-10-23",
-   "inscripcionAt": "2026-10-25",
+   "inscripcionAt": "2026-10-26",
    "regChecked": "2026-10-23",
    "alt": [
     "https://sportmaniacs.com/es/races/cursa-i-caminada-solidria-asc-2026"
    ],
    "mediaChecked": "2026-10-23",
-   "revisada": "2026-10-26T00:43+00:00"
+   "revisada": "2026-10-26T03:07+00:00"
   },
   {
    "name": "Eolos Race Agoncillo",
@@ -5114,10 +5114,10 @@
    "banner": "https://sportmaniacs.com/images/share/sportmaniacs-race.jpg",
    "km": "25,75 km",
    "regResolved": "2026-10-23",
-   "inscripcionAt": "2026-10-25",
+   "inscripcionAt": "2026-10-26",
    "regChecked": "2026-10-23",
    "mediaChecked": "2026-10-23",
-   "revisada": "2026-10-26T00:43+00:00"
+   "revisada": "2026-10-26T03:07+00:00"
   },
   {
    "name": "VIII Niebieski Bieg Niepodległości o Puchar Komendanta Głównego Policji",
@@ -5142,11 +5142,11 @@
    "banner": "https://sportmaniacs.com/images/share/sportmaniacs-race.jpg",
    "km": "10 km",
    "regResolved": "2026-10-23",
-   "inscripcionAt": "2026-10-25",
+   "inscripcionAt": "2026-10-26",
    "inscripcion": "abierta",
    "regChecked": "2026-10-23",
    "mediaChecked": "2026-10-23",
-   "revisada": "2026-10-26T00:43+00:00"
+   "revisada": "2026-10-26T03:07+00:00"
   },
   {
    "name": "Vilanova Night Run",
@@ -5169,10 +5169,10 @@
    "regulation": "https://vilanovanightrun.com/reglament",
    "km": "5 km",
    "regResolved": "2026-10-23",
-   "inscripcionAt": "2026-10-25",
+   "inscripcionAt": "2026-10-26",
    "regChecked": "2026-10-23",
    "mediaChecked": "2026-10-23",
-   "revisada": "2026-10-26T00:43+00:00"
+   "revisada": "2026-10-26T03:07+00:00"
   },
   {
    "name": "Volta a Peu de Sedaví",
@@ -5670,7 +5670,7 @@
    "alt": [
     "https://running.life/en/event/palma-beach-running-course"
    ],
-   "revisada": "2026-10-26T00:43+00:00",
+   "revisada": "2026-10-26T03:07+00:00",
    "mediaChecked": "2026-10-26",
    "route": "http://elitechip.blob.core.windows.net/zw-media-cache/e060d1584bcf894f48684463eecac832.jpg"
   },
@@ -5849,7 +5849,7 @@
    "inscripcionAt": "2026-10-26",
    "regResolved": "2026-10-23",
    "regChecked": "2026-10-23",
-   "revisada": "2026-10-26T00:43+00:00",
+   "revisada": "2026-10-26T03:07+00:00",
    "banner": "https://carrerasciudadreal.es/wp-content/uploads/2026/10/Cartel-de-La-Solana-2026-scaled.jpg",
    "bannerScore": 10,
    "changedAt": "2026-10-25",
@@ -7759,7 +7759,7 @@
     "https://running.life/en/event/media-maraton-de-jaen"
    ],
    "mediaChecked": "2026-10-23",
-   "revisada": "2026-10-26T00:43+00:00",
+   "revisada": "2026-10-26T03:07+00:00",
    "checkedAt": "2026-10-26",
    "time": "03:12"
   },
@@ -8090,7 +8090,7 @@
    "inscripcionAt": "2026-10-26",
    "regResolved": "2026-10-23",
    "regChecked": "2026-10-23",
-   "revisada": "2026-10-26T00:43+00:00",
+   "revisada": "2026-10-26T03:07+00:00",
    "mediaChecked": "2026-10-26",
    "route": "https://www.elitechip.net/system/public/download/c2efa9586fd039ba255d33e102e9a940.pdf"
   },
@@ -9133,8 +9133,10 @@
    "alt": [
     "https://running.life/en/event/cursa-solidaria-autoritat-portuaria-de-balears"
    ],
-   "revisada": "2026-10-26T00:43+00:00",
+   "revisada": "2026-10-26T03:07+00:00",
    "mediaChecked": "2026-10-26",
+   "banner": "https://sportplan.es/es/opengraph-image",
+   "bannerScore": 4,
    "route": "https://www.elitechip.net/system/public/download/dc9d6ce2727ce7b983b234bde18af6e1.pdf"
   },
   {
@@ -9733,7 +9735,7 @@
    "inscripcionAt": "2026-10-26",
    "inscripcion": "abierta",
    "regChecked": "2026-10-23",
-   "revisada": "2026-10-26T00:43+00:00",
+   "revisada": "2026-10-26T03:07+00:00",
    "route": "https://cursafosca.com/img/photos/route-trail-night-1440.jpg",
    "checkedAt": "2026-10-26",
    "time": "03:45"
@@ -10762,7 +10764,7 @@
    "inscripcionAt": "2026-10-26",
    "regResolved": "2026-10-23",
    "regChecked": "2026-10-23",
-   "revisada": "2026-10-26T00:43+00:00",
+   "revisada": "2026-10-26T03:07+00:00",
    "mediaChecked": "2026-10-26",
    "route": "https://carrerasciudadreal.es/evento/media-maraton-rural-miguelturra-2026/"
   },
@@ -11311,7 +11313,7 @@
    "inscripcionAt": "2026-10-26",
    "regResolved": "2026-10-23",
    "regChecked": "2026-10-23",
-   "revisada": "2026-10-26T00:43+00:00",
+   "revisada": "2026-10-26T03:07+00:00",
    "mediaChecked": "2026-10-26",
    "route": "https://www.chiplevante.com/files/documentacion/dipticcarrera2026.pdf"
   },
@@ -11585,12 +11587,12 @@
    "official": true,
    "url": "https://atleticmontblanc.cat/cursa-de-la-dona-2026/",
    "addedAt": "2026-10-25",
-   "revisada": "2026-10-25T14:07+00:00",
+   "revisada": "2026-10-26T03:07+00:00",
    "checkedAt": "2026-10-25",
    "nosite": false,
    "km": "50 km · 31 km · 29 km · 25 km",
    "mediaChecked": "2026-10-25",
-   "inscripcionAt": "2026-10-25"
+   "inscripcionAt": "2026-10-26"
   },
   {
    "name": "Cursa solidària CNG4Camins",
@@ -13142,7 +13144,7 @@
    "inscripcionAt": "2026-10-23",
    "inscripcion": "abierta",
    "regChecked": "2026-10-23",
-   "revisada": "2026-10-26T00:43+00:00",
+   "revisada": "2026-10-26T03:07+00:00",
    "changedAt": "2026-10-26",
    "mediaChecked": "2026-10-23",
    "checkedAt": "2026-10-26",
@@ -22096,20 +22098,9 @@
   }
  ],
  "lastRun": {
-  "at": "2026-10-26T01:24:23+00:00",
-  "added": [
-   "passafred-2026-1122"
-  ],
+  "at": "2026-10-26T03:19:49+00:00",
+  "added": [],
   "updated": {
-   "social-sunset-run-palma-2026-1107": [
-    "banner"
-   ],
-   "carrera-solidaria-crecer-con-futuro-2026-1107": [
-    "url",
-    "price",
-    "time",
-    "route"
-   ],
    "media-maraton-de-jaen-2026-1115": [
     "time"
    ],
@@ -22129,6 +22120,7 @@
     "route"
    ],
    "cursa-solidaria-autoritat-portuaria-2026-1115": [
+    "banner",
     "route"
    ],
    "media-maraton-villa-de-miguelturra-2026-1122": [
@@ -22136,9 +22128,6 @@
    ],
    "carrera-y-marcha-contra-el-cancer-de-mama-2026-1122": [
     "route"
-   ],
-   "dual-run-monachil-academia-puerta-real-2026-1102": [
-    "inscripcion"
    ]
   },
   "removed": 0
