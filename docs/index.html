@@ -118,6 +118,9 @@ input[type=search]{flex:1 1 180px}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px}
 
 .race{background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden;display:flex;flex-direction:column;min-width:0}
+a.bib{display:block;text-decoration:none;cursor:pointer}
+a.bib:hover img,a.bib:focus-visible img{filter:brightness(1.05)}
+a.bib:focus-visible{outline:3px solid var(--accent);outline-offset:-3px}
 .bib{position:relative;aspect-ratio:16/9;max-width:100%;background:var(--bib);color:var(--bib-ink);
   border-bottom:1px solid var(--line);display:flex;flex-direction:column;overflow:hidden}
 .bib img{width:100%;height:100%;object-fit:cover;display:block}
@@ -391,7 +394,10 @@ function otraFecha(r){if(!r.otraFecha)return null;const d=parseDate(r.otraFecha)
   return el("p",{class:"note warn"},"⚠️ Otra fuente indica el "+DAYS[d.getDay()]+" "+d.getDate()+" de "+MONTHS[d.getMonth()]+". Confírmalo en la web oficial.")}
 function card(r){
   const k=kind(r), d=parseDate(r.date);
-  const bib=el("div",{class:"bib",style:"--kc:"+kcolor(k)});
+  // el cartel abre la web oficial (si la hay)
+  const web=r.official&&r.url?r.url:null;
+  const bib=web?el("a",{class:"bib",style:"--kc:"+kcolor(k),href:web,target:"_blank",rel:"noopener",title:"Abrir la web oficial de "+r.name,"aria-label":"Web oficial de "+r.name})
+    :el("div",{class:"bib",style:"--kc:"+kcolor(k)});
   const fallback=()=>{bib.replaceChildren(
     el("div",{class:"band"},el("span",{},r.city||""),el("span",{},String(d.getDate()).padStart(2,"0")+" "+MONTHS[d.getMonth()].slice(0,3))),
     el("div",{class:"num"},tagsOf(r)[0]||"RUN"),
