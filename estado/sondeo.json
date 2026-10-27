@@ -1,77 +1,1129 @@
-{
- "sin_token": [
-  401,
-  "{\"error\":\"No autorizado.\"}"
- ],
- "token_falso": [
-  401,
-  "{\"error\":\"No autorizado.\"}"
- ],
- "token_github": true,
- "candidatas": 197,
- "pruebas": [
-  {
-   "carrera": "Sokolský běh republiky – Cabo Roig",
-   "fecha": "2026-10-28",
-   "faltan": [
-    "estado de inscripción"
-   ],
-   "status": 200,
-   "respuesta": {
-    "km": "5 km · 0,8 km · 0,3 km",
-    "inscripcion": "cerrada",
-    "cartel": null,
-    "recorrido": null,
-    "modelo": "@cf/meta/llama-3.3-70b-instruct-fp8-fast"
+[
+ {
+  "name": "Carrera Popular AESAN",
+  "date": "2026-10-24",
+  "pages": [
+   {
+    "u": "https://carrerapopularaesan.com/",
+    "links": [
+     [
+      "Consulta los resultados aquí",
+      "https://carrerapopularaesan.com/wp-content/uploads/2026/10/01_5_KM_catCarrera_v01.pdf"
+     ]
+    ],
+    "txt": [
+     "Segundos Corre con la energía de una alimentación saludable RESULTADOS Consulta los resultados aquí Los detalles Fecha Localizac",
+     "ergía de una alimentación saludable RESULTADOS Consulta los resultados aquí Los detalles Fecha Localización Distancia Horario/sa"
+    ]
    },
-   "aplicaria": {
-    "inscripcion": "cerrada"
+   {
+    "u": "https://running.life/en/event/carrera-popular-aesan",
+    "links": [],
+    "txt": []
+   }
+  ]
+ },
+ {
+  "name": "Cursa Companys",
+  "date": "2026-10-24",
+  "pages": [
+   {
+    "u": "https://cursacompanys.cat/",
+    "links": [],
+    "txt": []
    },
-   "n_img": 30,
-   "n_links": 1,
-   "len_texto": 4021
-  },
-  {
-   "carrera": "Carrera Solidaria Ruta 091 Torremolinos",
-   "fecha": "2026-10-30",
-   "faltan": [
-    "recorrido",
-    "estado de inscripción"
-   ],
-   "status": 200,
-   "respuesta": {
-    "km": "5,09 km · 400 m · 200 m",
-    "inscripcion": "cerrada",
-    "cartel": 0,
-    "recorrido": null,
-    "modelo": "@cf/meta/llama-3.3-70b-instruct-fp8-fast"
+   {
+    "u": "https://running.life/es/carrera/cursa-companys",
+    "links": [],
+    "txt": []
    },
-   "aplicaria": {
-    "inscripcion": "cerrada"
+   {
+    "u": "https://running.life/en/event/cursa-companys",
+    "links": [],
+    "txt": []
+   }
+  ]
+ },
+ {
+  "name": "Bestial Race El Hierro",
+  "date": "2026-10-24",
+  "pages": [
+   {
+    "u": "https://ocrbestial.com/bestial-race-el-hierro/",
+    "links": [],
+    "txt": []
    },
-   "n_img": 3,
-   "n_links": 0,
-   "len_texto": 10360
-  },
-  {
-   "carrera": "II Carrera Nocturna los Lagos",
-   "fecha": "2026-10-30",
-   "faltan": [
-    "recorrido",
-    "estado de inscripción"
-   ],
-   "status": 200,
-   "respuesta": {
-    "km": "8,2 km",
-    "inscripcion": null,
-    "cartel": 1,
-    "recorrido": null,
-    "modelo": "@cf/meta/llama-3.3-70b-instruct-fp8-fast"
+   {
+    "u": "https://running.life/en/event/bestial-race-el-hierro",
+    "links": [],
+    "txt": []
+   }
+  ]
+ },
+ {
+  "name": "Ruta del Barbo",
+  "date": "2026-10-24",
+  "pages": [
+   {
+    "u": "https://web.rockthesport.com/es/event/iv-ruta-del-barbo-cadreita",
+    "links": [],
+    "txt": [
+     " TARIFA 10K €10.00 Inscripciones cerradas desde 22 oct 2026 Clasificaciones Comprueba tu inscripción Añadir a favoritos Compartir e"
+    ]
    },
-   "aplicaria": {},
-   "n_img": 2,
-   "n_links": 0,
-   "len_texto": 1215
-  }
- ]
-}
+   {
+    "u": "https://running.life/en/event/ruta-del-barbo",
+    "links": [],
+    "txt": []
+   }
+  ]
+ },
+ {
+  "name": "Media Maratón de Cuenca",
+  "date": "2026-10-24",
+  "pages": [
+   {
+    "u": "https://www.timingsys.com/event/772",
+    "sin": true
+   },
+   {
+    "u": "https://running.life/es/carrera/media-maraton-cuenca",
+    "links": [],
+    "txt": [
+     "dos los finalistas reciben medalla finisher. Se premian las clasificaciones generales, por categorías, equipos y los corredores loc"
+    ]
+   },
+   {
+    "u": "https://running.life/en/event/media-maraton-cuenca",
+    "links": [],
+    "txt": []
+   }
+  ]
+ },
+ {
+  "name": "Cursa des Teix",
+  "date": "2026-10-24",
+  "pages": [
+   {
+    "u": "https://www.elitechip.net/index.php?zwshow=compdet&idcomp=7380188",
+    "links": [
+     [
+      "Resultados",
+      "https://www.elitechip.net/index.php?zwshow=results"
+     ],
+     [
+      "Tiempos de Paso",
+      "https://www.elitechip.net/index.php?zwshow=compdet&idcomp=7380188&compsec=stps"
+     ],
+     [
+      "Clasificación",
+      "https://www.elitechip.net/index.php?zwshow=compdet&idcomp=7380188&compsec=clas"
+     ],
+     [
+      "Resultados",
+      "https://www.elitechip.net/index.php?zwshow=results"
+     ]
+    ],
+    "txt": [
+     "tsch Català Español Buscar   Home Mi Perfil Competiciones Resultados Eventos Elitechip Tienda Contactar Ligas y Copas Elitechi",
+     "ición Detalle Competición Atletas Inscritos Tiempos de Paso Clasificación Derechos de Inscripción Fecha: 24/10/2026 Cursa per Munta",
+     " Pedidos Mis Direcciones Información Personal Competiciones Resultados Eventos Contactar Ligas y Copas Condiciones de Uso Aviso "
+    ]
+   },
+   {
+    "u": "https://running.life/en/event/cursa-des-teix",
+    "links": [],
+    "txt": []
+   }
+  ]
+ },
+ {
+  "name": "San Juan de Los Terreros",
+  "date": "2026-10-24",
+  "pages": [
+   {
+    "u": "https://www.cruzandolameta.es/clasificaciones/v2/pulpi-circuito-de-carreras-populares-diputacion-de-almeria-2026---2584/#clasificaciones",
+    "links": [
+     [
+      "LIVE",
+      "https://www.cruzandolameta.es/clasificaciones/carreras-live/"
+     ],
+     [
+      "Servicio de Cronometraje",
+      "https://www.cruzandolameta.es/informacion/#servicio-cronometraje"
+     ],
+     [
+      "Clasificaciones",
+      "https://www.cruzandolameta.es/carreras/finalizadas/"
+     ],
+     [
+      "VER",
+      "https://rankings.cruzandolameta.es/pulpi-circuito-de-carreras-populares-diputacion-de-almeria-2026-absoluta"
+     ],
+     [
+      "VER",
+      "https://www.cruzandolameta.es/media/competiciones/clasificaciones/EQUIPOS_PULPI_SQEKCoB.pdf"
+     ]
+    ],
+    "txt": [
+     "O DE CARRERAS POPULARES DIPUTACIÓN DE ALMERÍA 2026 Inicio / Clasificaciones / PULPI - CIRCUITO DE CARRERAS POPULARES DIPUTACIÓN DE ",
+     "s y el circuito en: https://carreraspopularesalmeria.com/ + Clasificaciones CLASIFICACIONES Y FOTOS VER EQUIPOS VER Vídeos de la pr",
+     "en: https://carreraspopularesalmeria.com/ + Clasificaciones CLASIFICACIONES Y FOTOS VER EQUIPOS VER Vídeos de la prueba Cuenta Atrá"
+    ]
+   },
+   {
+    "u": "https://running.life/en/event/san-juan-de-los-terreros",
+    "links": [],
+    "txt": []
+   }
+  ]
+ },
+ {
+  "name": "Carrera Popular la Villa de Don Fadrique 10K",
+  "date": "2026-10-24",
+  "pages": [
+   {
+    "u": "https://sportmaniacs.com/en/services/inscription/13ordm-carrera-popular-la-villa-de-don-fadrique-toledo",
+    "links": [
+     [
+      "Results",
+      "https://sportmaniacs.com/en/results"
+     ],
+     [
+      "Results",
+      "https://sportmaniacs.com/en/races/13ordm-carrera-popular-la-villa-de-don-fadrique-toledo#results"
+     ],
+     [
+      "Pending Results",
+      "https://sportmaniacs.com/en/services/inscription/13ordm-carrera-popular-la-villa-de-don-fadrique-toledo"
+     ],
+     [
+      "Pending Results",
+      "https://sportmaniacs.com/en/services/inscription/13ordm-carrera-popular-la-villa-de-don-fadrique-toledo"
+     ],
+     [
+      "Pending Results",
+      "https://sportmaniacs.com/en/services/inscription/13ordm-carrera-popular-la-villa-de-don-fadrique-toledo"
+     ],
+     [
+      "View results",
+      "https://sportmaniacs.com/en/races/13ordm-carrera-popular-la-villa-de-don-fadrique-toledo/6adcf2a6-7b94-41cf-a712-e8a1ac1f26f9/results#rankings"
+     ],
+     [
+      "View results",
+      "https://sportmaniacs.com/en/races/13ordm-carrera-popular-la-villa-de-don-fadrique-toledo/6adcf2a6-fde4-40e9-a89a-e290ac1f1013/results#rankings"
+     ]
+    ],
+    "txt": []
+   },
+   {
+    "u": "https://running.life/en/event/carrera-popular-la-villa-de-don-fadrique-10k",
+    "links": [],
+    "txt": []
+   },
+   {
+    "u": "https://sportmaniacs.com/es/races/13ordm-carrera-popular-la-villa-de-don-fadrique-toledo",
+    "links": [
+     [
+      "Clasificaciones",
+      "https://sportmaniacs.com/es/results"
+     ],
+     [
+      "Clasificaciones",
+      "https://sportmaniacs.com/es/results"
+     ],
+     [
+      "Clasificaciones",
+      "https://sportmaniacs.com/es/races/13ordm-carrera-popular-la-villa-de-don-fadrique-toledo#results"
+     ],
+     [
+      "Pendiente de Clasificación",
+      "https://sportmaniacs.com/es/races/13ordm-carrera-popular-la-villa-de-don-fadrique-toledo"
+     ],
+     [
+      "Pendiente de Clasificación",
+      "https://sportmaniacs.com/es/races/13ordm-carrera-popular-la-villa-de-don-fadrique-toledo"
+     ],
+     [
+      "Pendiente de Clasificación",
+      "https://sportmaniacs.com/es/races/13ordm-carrera-popular-la-villa-de-don-fadrique-toledo"
+     ],
+     [
+      "Ver clasificaciones",
+      "https://sportmaniacs.com/es/races/13ordm-carrera-popular-la-villa-de-don-fadrique-toledo/6adcf2a6-7b94-41cf-a712-e8a1ac1f26f9/results#rankings"
+     ],
+     [
+      "Ver clasificaciones",
+      "https://sportmaniacs.com/es/races/13ordm-carrera-popular-la-villa-de-don-fadrique-toledo/6adcf2a6-fde4-40e9-a89a-e290ac1f1013/results#rankings"
+     ]
+    ],
+    "txt": [
+     "Clasificaciones de 13º CARRERA POPULAR La Villa de Don Fadrique (Toledo",
+     ") — Sportmaniacs Nombre de carrera Buscar carreras Carreras Clasificaciones 24 oct 2026, Villa de Don Fadrique (La) 13º CARRERA POP",
+     " (La) 13º CARRERA POPULAR La Villa de Don Fadrique (Toledo) Clasificaciones Inicio Clasificaciones 13º CARRERA POPULAR La Villa de ",
+     "AR La Villa de Don Fadrique (Toledo) Clasificaciones Inicio Clasificaciones 13º CARRERA POPULAR La Villa de Don Fadrique (Toledo) I"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "Fedola Family Run",
+  "date": "2026-10-24",
+  "pages": [
+   {
+    "u": "https://web.rockthesport.com/es/event/fedola-family-run-2026",
+    "links": [],
+    "txt": []
+   },
+   {
+    "u": "https://running.life/es/carrera/fedola-family-run",
+    "links": [],
+    "txt": []
+   },
+   {
+    "u": "https://running.life/en/event/fedola-family-run",
+    "links": [],
+    "txt": []
+   }
+  ]
+ },
+ {
+  "name": "Lizuniako Egoera",
+  "date": "2026-10-24",
+  "pages": [
+   {
+    "u": "https://pb-organisation.com/evenements/lizuniako-igoera/",
+    "links": [],
+    "txt": []
+   },
+   {
+    "u": "https://running.life/en/event/lizuniako-egoera",
+    "links": [],
+    "txt": []
+   }
+  ]
+ },
+ {
+  "name": "Pulpi - Circuito de Carreras Populares Diputación de Almería",
+  "date": "2026-10-24",
+  "pages": [
+   {
+    "u": "https://sportmaniacs.com/es/services/inscription/pulpi---circuito-de-carreras-populares-diputacin-de-almera-2026",
+    "links": [
+     [
+      "Clasificaciones",
+      "https://sportmaniacs.com/es/results"
+     ],
+     [
+      "Clasificaciones",
+      "https://sportmaniacs.com/es/races/pulpi---circuito-de-carreras-populares-diputacin-de-almera-2026#results"
+     ],
+     [
+      "Live Timing",
+      "https://sportmaniacs.com/es/races/pulpi---circuito-de-carreras-populares-diputacin-de-almera-2026/6ada42bf-c950-46a1-9a3f-057bac1f2253/live"
+     ],
+     [
+      "Live Timing",
+      "https://sportmaniacs.com/es/races/pulpi---circuito-de-carreras-populares-diputacin-de-almera-2026/6ada42bf-ee4c-46f1-816d-057bac1f2253/live"
+     ],
+     [
+      "Live Timing",
+      "https://sportmaniacs.com/es/races/pulpi---circuito-de-carreras-populares-diputacin-de-almera-2026/6ada42bf-e7c8-4604-9599-057bac1f2253/live"
+     ],
+     [
+      "Live Timing",
+      "https://sportmaniacs.com/es/races/pulpi---circuito-de-carreras-populares-diputacin-de-almera-2026/6ada42bf-b2ac-45ee-a4c3-057bac1f2253/live"
+     ],
+     [
+      "Live Timing",
+      "https://sportmaniacs.com/es/races/pulpi---circuito-de-carreras-populares-diputacin-de-almera-2026/6ada42bf-d6ec-48a5-9837-057bac1f2253/live"
+     ]
+    ],
+    "txt": [
+     "o — Sportmaniacs Nombre de carrera Buscar carreras Carreras Clasificaciones 24 oct 2026, Pulpá PULPI - CIRCUITO DE CARRERAS POPULAR",
+     "- CIRCUITO DE CARRERAS POPULARES DIPUTACIÓN DE ALMERÍA 2026 Clasificaciones Inicio Próximas carreras PULPI - CIRCUITO DE CARRERAS P",
+     "E CARRERAS POPULARES DIPUTACIÓN DE ALMERÍA 2026 Información Clasificaciones Reglamento Info. de contacto Clasificaciones ABSOLUTA 9",
+     "26 Información Clasificaciones Reglamento Info. de contacto Clasificaciones ABSOLUTA 9.96km Live Timing SUB-10 0.4km Live Timing SU"
+    ]
+   },
+   {
+    "u": "https://sportmaniacs.com/es/races/pulpi---circuito-de-carreras-populares-diputacin-de-almera-2026",
+    "links": [
+     [
+      "Clasificaciones",
+      "https://sportmaniacs.com/es/results"
+     ],
+     [
+      "Clasificaciones",
+      "https://sportmaniacs.com/es/results"
+     ],
+     [
+      "Clasificaciones",
+      "https://sportmaniacs.com/es/races/pulpi---circuito-de-carreras-populares-diputacin-de-almera-2026#results"
+     ],
+     [
+      "Live Timing",
+      "https://sportmaniacs.com/es/races/pulpi---circuito-de-carreras-populares-diputacin-de-almera-2026/6ada42bf-c950-46a1-9a3f-057bac1f2253/live"
+     ],
+     [
+      "Live Timing",
+      "https://sportmaniacs.com/es/races/pulpi---circuito-de-carreras-populares-diputacin-de-almera-2026/6ada42bf-ee4c-46f1-816d-057bac1f2253/live"
+     ],
+     [
+      "Live Timing",
+      "https://sportmaniacs.com/es/races/pulpi---circuito-de-carreras-populares-diputacin-de-almera-2026/6ada42bf-e7c8-4604-9599-057bac1f2253/live"
+     ],
+     [
+      "Live Timing",
+      "https://sportmaniacs.com/es/races/pulpi---circuito-de-carreras-populares-diputacin-de-almera-2026/6ada42bf-b2ac-45ee-a4c3-057bac1f2253/live"
+     ],
+     [
+      "Live Timing",
+      "https://sportmaniacs.com/es/races/pulpi---circuito-de-carreras-populares-diputacin-de-almera-2026/6ada42bf-d6ec-48a5-9837-057bac1f2253/live"
+     ]
+    ],
+    "txt": [
+     "Clasificaciones de PULPI - CIRCUITO DE CARRERAS POPULARES DIPUTACIÓN DE",
+     "6 — Sportmaniacs Nombre de carrera Buscar carreras Carreras Clasificaciones 24 oct 2026, Pulpá PULPI - CIRCUITO DE CARRERAS POPULAR",
+     "- CIRCUITO DE CARRERAS POPULARES DIPUTACIÓN DE ALMERÍA 2026 Clasificaciones Inicio Clasificaciones PULPI - CIRCUITO DE CARRERAS POP",
+     "POPULARES DIPUTACIÓN DE ALMERÍA 2026 Clasificaciones Inicio Clasificaciones PULPI - CIRCUITO DE CARRERAS POPULARES DIPUTACIÓN DE AL"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "Trepitja Garrotxa Solidària",
+  "date": "2026-10-24",
+  "pages": [
+   {
+    "u": "https://trepitjagarrotxa.cat/",
+    "links": [
+     [
+      "Galeria i classificacions",
+      "https://trepitjagarrotxa.cat/galeria-i-classificacions/"
+     ],
+     [
+      "Galeria i classificacions",
+      "https://trepitjagarrotxa.cat/galeria-i-classificacions/"
+     ]
+    ],
+    "txt": [
+     "a 9km Ultra 59 Km Marató 42 Km Mitja Marató 24 Km Galeria i classificacions Programa 2026 XII Trepitja Garrotxa Solidària 24 i 25 d'",
+     "a 9km Ultra 59 Km Marató 42 Km Mitja Marató 24 Km Galeria i classificacions Programa 2026"
+    ]
+   },
+   {
+    "u": "https://running.life/en/event/trepitja-garrotxa-solidaria",
+    "links": [],
+    "txt": []
+   }
+  ]
+ },
+ {
+  "name": "Viñedos del Rio Tajo",
+  "date": "2026-10-24",
+  "pages": [
+   {
+    "u": "https://sportmaniacs.com/es/services/inscription/vintildeedos-del-rio-tajo",
+    "links": [
+     [
+      "Clasificaciones",
+      "https://sportmaniacs.com/es/results"
+     ],
+     [
+      "Clasificaciones",
+      "https://sportmaniacs.com/es/races/vintildeedos-del-rio-tajo#results"
+     ],
+     [
+      "Pendiente de Clasificación",
+      "https://sportmaniacs.com/es/services/inscription/vintildeedos-del-rio-tajo"
+     ],
+     [
+      "Pendiente de Clasificación",
+      "https://sportmaniacs.com/es/services/inscription/vintildeedos-del-rio-tajo"
+     ]
+    ],
+    "txt": [
+     "o — Sportmaniacs Nombre de carrera Buscar carreras Carreras Clasificaciones 24 oct 2026, Guadamur Viñedos del Rio Tajo Clasificacio",
+     " Clasificaciones 24 oct 2026, Guadamur Viñedos del Rio Tajo Clasificaciones Inicio Próximas carreras Viñedos del Rio Tajo Informaci",
+     "s Inicio Próximas carreras Viñedos del Rio Tajo Información Clasificaciones Reglamento Info. de contacto Clasificaciones 10KM 24/10",
+     "jo Información Clasificaciones Reglamento Info. de contacto Clasificaciones 10KM 24/10/2026 09:30 10km Pendiente de Clasificación 5"
+    ]
+   },
+   {
+    "u": "https://sportmaniacs.com/es/races/vintildeedos-del-rio-tajo",
+    "links": [
+     [
+      "Clasificaciones",
+      "https://sportmaniacs.com/es/results"
+     ],
+     [
+      "Clasificaciones",
+      "https://sportmaniacs.com/es/results"
+     ],
+     [
+      "Clasificaciones",
+      "https://sportmaniacs.com/es/races/vintildeedos-del-rio-tajo#results"
+     ],
+     [
+      "Pendiente de Clasificación",
+      "https://sportmaniacs.com/es/races/vintildeedos-del-rio-tajo"
+     ],
+     [
+      "Pendiente de Clasificación",
+      "https://sportmaniacs.com/es/races/vintildeedos-del-rio-tajo"
+     ]
+    ],
+    "txt": [
+     "Clasificaciones de Viñedos del Rio Tajo — Sportmaniacs Nombre de carrer",
+     "o — Sportmaniacs Nombre de carrera Buscar carreras Carreras Clasificaciones 24 oct 2026, Guadamur Viñedos del Rio Tajo Clasificacio",
+     " Clasificaciones 24 oct 2026, Guadamur Viñedos del Rio Tajo Clasificaciones Inicio Clasificaciones Viñedos del Rio Tajo Información",
+     " 2026, Guadamur Viñedos del Rio Tajo Clasificaciones Inicio Clasificaciones Viñedos del Rio Tajo Información Clasificaciones Reglam"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "Wineland26",
+  "date": "2026-10-24",
+  "pages": [
+   {
+    "u": "https://sportmaniacs.com/es/services/inscription/wineland26",
+    "links": [
+     [
+      "Clasificaciones",
+      "https://sportmaniacs.com/es/results"
+     ],
+     [
+      "Clasificaciones",
+      "https://sportmaniacs.com/es/races/wineland26#results"
+     ],
+     [
+      "Pendiente de Clasificación",
+      "https://sportmaniacs.com/es/services/inscription/wineland26"
+     ]
+    ],
+    "txt": [
+     "o — Sportmaniacs Nombre de carrera Buscar carreras Carreras Clasificaciones 24 oct 2026, Requena WINELAND26 Clasificaciones Inicio ",
+     "as Carreras Clasificaciones 24 oct 2026, Requena WINELAND26 Clasificaciones Inicio Próximas carreras WINELAND26 Información Clasifi",
+     "ificaciones Inicio Próximas carreras WINELAND26 Información Clasificaciones Reglamento Info. de contacto Clasificaciones WINELAND 2",
+     "26 Información Clasificaciones Reglamento Info. de contacto Clasificaciones WINELAND 26 24/10/2026 09:00 60km Pendiente de Clasific"
+    ]
+   },
+   {
+    "u": "https://sportmaniacs.com/es/races/wineland26",
+    "links": [
+     [
+      "Clasificaciones",
+      "https://sportmaniacs.com/es/results"
+     ],
+     [
+      "Clasificaciones",
+      "https://sportmaniacs.com/es/results"
+     ],
+     [
+      "Clasificaciones",
+      "https://sportmaniacs.com/es/races/wineland26#results"
+     ],
+     [
+      "Pendiente de Clasificación",
+      "https://sportmaniacs.com/es/races/wineland26"
+     ]
+    ],
+    "txt": [
+     "Clasificaciones de WINELAND26 — Sportmaniacs Nombre de carrera Buscar c",
+     "6 — Sportmaniacs Nombre de carrera Buscar carreras Carreras Clasificaciones 24 oct 2026, Requena WINELAND26 Clasificaciones Inicio ",
+     "as Carreras Clasificaciones 24 oct 2026, Requena WINELAND26 Clasificaciones Inicio Clasificaciones WINELAND26 Información Clasifica",
+     "ones 24 oct 2026, Requena WINELAND26 Clasificaciones Inicio Clasificaciones WINELAND26 Información Clasificaciones Reglamento Info."
+    ]
+   }
+  ]
+ },
+ {
+  "name": "XIII Edició Curses Serra de Tramuntana",
+  "date": "2026-10-24",
+  "pages": [
+   {
+    "u": "https://sportmaniacs.com/es/services/inscription/xiii-edici-curses-serra-de-tramuntana-2026",
+    "links": [
+     [
+      "Clasificaciones",
+      "https://sportmaniacs.com/es/results"
+     ],
+     [
+      "Clasificaciones",
+      "https://sportmaniacs.com/es/races/xiii-edici-curses-serra-de-tramuntana-2026#results"
+     ]
+    ],
+    "txt": [
+     "o — Sportmaniacs Nombre de carrera Buscar carreras Carreras Clasificaciones 24 oct 2026, Pollença XIII EDICIÓ CURSES SERRA DE TRAMU",
+     " 2026, Pollença XIII EDICIÓ CURSES SERRA DE TRAMUNTANA 2026 Clasificaciones Inicio Próximas carreras XIII EDICIÓ CURSES SERRA DE TR",
+     "ras XIII EDICIÓ CURSES SERRA DE TRAMUNTANA 2026 Información Clasificaciones Reglamento Info. de contacto Documentos cartell Clasifi",
+     "ificaciones Reglamento Info. de contacto Documentos cartell Clasificaciones INSCRIPCIÓ CURSA: CÚBER, ESCORCA 07/11/2026 11:00 Abren"
+    ]
+   },
+   {
+    "u": "https://sportmaniacs.com/es/races/xiii-edici-curses-serra-de-tramuntana-2026",
+    "links": [
+     [
+      "Clasificaciones",
+      "https://sportmaniacs.com/es/results"
+     ],
+     [
+      "Clasificaciones",
+      "https://sportmaniacs.com/es/results"
+     ],
+     [
+      "Clasificaciones",
+      "https://sportmaniacs.com/es/races/xiii-edici-curses-serra-de-tramuntana-2026#results"
+     ]
+    ],
+    "txt": [
+     "Clasificaciones de XIII EDICIÓ CURSES SERRA DE TRAMUNTANA 2026 — Sportm",
+     "6 — Sportmaniacs Nombre de carrera Buscar carreras Carreras Clasificaciones 24 oct 2026, Pollença XIII EDICIÓ CURSES SERRA DE TRAMU",
+     " 2026, Pollença XIII EDICIÓ CURSES SERRA DE TRAMUNTANA 2026 Clasificaciones Inicio Clasificaciones XIII EDICIÓ CURSES SERRA DE TRAM",
+     "ICIÓ CURSES SERRA DE TRAMUNTANA 2026 Clasificaciones Inicio Clasificaciones XIII EDICIÓ CURSES SERRA DE TRAMUNTANA 2026 Información"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "A Media do Camiño",
+  "date": "2026-10-25",
+  "pages": [
+   {
+    "u": "https://sportmaniacs.com/en/services/inscription/a-media-do-camino",
+    "links": [
+     [
+      "Results",
+      "https://sportmaniacs.com/en/results"
+     ],
+     [
+      "Results",
+      "https://sportmaniacs.com/en/races/a-media-do-camino#results"
+     ],
+     [
+      "View results",
+      "https://sportmaniacs.com/en/races/a-media-do-camino/6addd11b-d80c-4fbc-b420-4e3aac1f1013/rankings"
+     ],
+     [
+      "View results",
+      "https://sportmaniacs.com/en/races/a-media-do-camino/6addd11b-4d40-49ae-a1fa-44a5ac1f1013/rankings"
+     ]
+    ],
+    "txt": []
+   },
+   {
+    "u": "https://running.life/en/event/a-media-do-camino",
+    "links": [],
+    "txt": []
+   },
+   {
+    "u": "https://sportmaniacs.com/es/races/a-media-do-camino",
+    "links": [
+     [
+      "Clasificaciones",
+      "https://sportmaniacs.com/es/results"
+     ],
+     [
+      "Clasificaciones",
+      "https://sportmaniacs.com/es/results"
+     ],
+     [
+      "Clasificaciones",
+      "https://sportmaniacs.com/es/races/a-media-do-camino#results"
+     ],
+     [
+      "Ver clasificaciones",
+      "https://sportmaniacs.com/es/races/a-media-do-camino/6addd11b-d80c-4fbc-b420-4e3aac1f1013/rankings"
+     ],
+     [
+      "Ver clasificaciones",
+      "https://sportmaniacs.com/es/races/a-media-do-camino/6addd11b-4d40-49ae-a1fa-44a5ac1f1013/rankings"
+     ]
+    ],
+    "txt": [
+     "Clasificaciones de A Media do Camiño — Sportmaniacs Nombre de carrera B",
+     "o — Sportmaniacs Nombre de carrera Buscar carreras Carreras Clasificaciones 25 oct 2026, Laza A Media do Camiño Clasificaciones Ini",
+     "arreras Clasificaciones 25 oct 2026, Laza A Media do Camiño Clasificaciones Inicio Clasificaciones A Media do Camiño Información Cl",
+     " 25 oct 2026, Laza A Media do Camiño Clasificaciones Inicio Clasificaciones A Media do Camiño Información Clasificaciones Reglament"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "Medio Maratón Valencia Trinidad Alfonso",
+  "date": "2026-10-25",
+  "pages": [
+   {
+    "u": "https://www.valenciaciudaddelrunning.com/medio/medio-maraton/",
+    "links": [
+     [
+      "Clasificaciones Medio Maratón 2026",
+      "https://www.valenciaciudaddelrunning.com/medio/clasificaciones-medio-maraton-2026/"
+     ],
+     [
+      "Calculadora de ritmos",
+      "https://www.valenciaciudaddelrunning.com/medio/calculadora-de-ritmos-y-tiempos/"
+     ],
+     [
+      "Calculadora de ritmos y tiempos",
+      "https://www.valenciaciudaddelrunning.com/maraton/calculadora-de-ritmos-y-tiempos/"
+     ],
+     [
+      "Clasificaciones",
+      "https://www.valenciaciudaddelrunning.com/medio/clasificaciones-medio-maraton-2026/"
+     ]
+    ],
+    "txt": [
+     " SuperHalfs Cto. Plátano Canarias Zona Corredor Área runner Clasificaciones Medio Maratón 2026 Guía de la Carrera Planes de entrena",
+     "Español English Valenciano Inscríbete > 21K 42K Área runner CLASIFICACIONES Ya puedes consultar las clasificaciones ¡Ya puedes cons",
+     "21K 42K Área runner CLASIFICACIONES Ya puedes consultar las clasificaciones ¡Ya puedes consultar las clasificaciones! Entra, compru",
+     "edes consultar las clasificaciones ¡Ya puedes consultar las clasificaciones! Entra, comprueba tu resultado y el de tus compañeros d"
+    ]
+   },
+   {
+    "u": "https://www.carreraspopulares.com/carrera/medio-maraton-valencia",
+    "links": [
+     [
+      "Calculadora de tiempos",
+      "https://carreraspopulares.com/calculadora_de_tiempos"
+     ],
+     [
+      "Planifica Medio Maratón Valencia Trinidad Alfonso con la calculadora d",
+      "https://carreraspopulares.com/calculadora_de_tiempos/21097"
+     ],
+     [
+      "Planifica tu carrera",
+      "https://carreraspopulares.com/calculadora_de_tiempos/21097"
+     ]
+    ],
+    "txt": []
+   }
+  ]
+ },
+ {
+  "name": "Valencia Half Marathon",
+  "date": "2026-10-25",
+  "pages": [
+   {
+    "u": "https://www.valenciaciudaddelrunning.com/medio/medio-maraton/",
+    "links": [
+     [
+      "Clasificaciones Medio Maratón 2026",
+      "https://www.valenciaciudaddelrunning.com/medio/clasificaciones-medio-maraton-2026/"
+     ],
+     [
+      "Calculadora de ritmos",
+      "https://www.valenciaciudaddelrunning.com/medio/calculadora-de-ritmos-y-tiempos/"
+     ],
+     [
+      "Calculadora de ritmos y tiempos",
+      "https://www.valenciaciudaddelrunning.com/maraton/calculadora-de-ritmos-y-tiempos/"
+     ],
+     [
+      "Clasificaciones",
+      "https://www.valenciaciudaddelrunning.com/medio/clasificaciones-medio-maraton-2026/"
+     ]
+    ],
+    "txt": [
+     " SuperHalfs Cto. Plátano Canarias Zona Corredor Área runner Clasificaciones Medio Maratón 2026 Guía de la Carrera Planes de entrena",
+     "Español English Valenciano Inscríbete > 21K 42K Área runner CLASIFICACIONES Ya puedes consultar las clasificaciones ¡Ya puedes cons",
+     "21K 42K Área runner CLASIFICACIONES Ya puedes consultar las clasificaciones ¡Ya puedes consultar las clasificaciones! Entra, compru",
+     "edes consultar las clasificaciones ¡Ya puedes consultar las clasificaciones! Entra, comprueba tu resultado y el de tus compañeros d"
+    ]
+   },
+   {
+    "u": "https://running.life/en/event/medio-maraton-valencia",
+    "links": [],
+    "txt": []
+   }
+  ]
+ },
+ {
+  "name": "Mitja Marató Costa Barcelona Maresme",
+  "date": "2026-10-25",
+  "pages": [
+   {
+    "u": "https://gesport.cat/mitja-marato-costa-barcelona-maresme-2026/",
+    "links": [
+     [
+      "Cronometratge",
+      "https://gesport.cat/cronometratge/"
+     ],
+     [
+      "Servei de cronometratge",
+      "https://gesport.cat/cronometratge/"
+     ],
+     [
+      "Inscripcions i resultats",
+      "https://gesport.cat/inscripcions-resultats-crono/"
+     ],
+     [
+      "Cronometratge",
+      "https://gesport.cat/cronometratge/"
+     ],
+     [
+      "Servei de cronometratge",
+      "https://gesport.cat/cronometratge/"
+     ],
+     [
+      "Inscripcions i resultats",
+      "https://gesport.cat/inscripcions-resultats-crono/"
+     ]
+    ],
+    "txt": []
+   },
+   {
+    "u": "https://running.life/es/carrera/mitja-marato-costa-barcelona-maresme",
+    "links": [],
+    "txt": []
+   },
+   {
+    "u": "https://running.life/en/event/mitja-marato-costa-barcelona-maresme",
+    "links": [],
+    "txt": []
+   }
+  ]
+ },
+ {
+  "name": "Carrera Popular Día del Ictus",
+  "date": "2026-10-25",
+  "pages": [
+   {
+    "u": "https://carrerapopulardiadelictus.es/",
+    "links": [],
+    "txt": []
+   },
+   {
+    "u": "https://running.life/es/carrera/carrera-popular-dia-del-ictus",
+    "links": [],
+    "txt": []
+   },
+   {
+    "u": "https://running.life/en/event/carrera-popular-dia-del-ictus",
+    "links": [],
+    "txt": []
+   }
+  ]
+ },
+ {
+  "name": "CaixaBank 10K Zaragoza",
+  "date": "2026-10-25",
+  "pages": [
+   {
+    "u": "https://10kzaragoza.com/",
+    "links": [],
+    "txt": []
+   },
+   {
+    "u": "https://running.life/en/event/10k-zaragoza",
+    "links": [],
+    "txt": []
+   },
+   {
+    "u": "https://www.carreraspopulares.com/carrera/caixabank-10k-zaragoza",
+    "links": [
+     [
+      "Calculadora de tiempos",
+      "https://carreraspopulares.com/calculadora_de_tiempos"
+     ],
+     [
+      "Planifica 10K ZARAGOZA con la calculadora de tiempos",
+      "https://carreraspopulares.com/calculadora_de_tiempos/0"
+     ],
+     [
+      "Planifica tu carrera",
+      "https://carreraspopulares.com/calculadora_de_tiempos/0"
+     ]
+    ],
+    "txt": []
+   }
+  ]
+ },
+ {
+  "name": "Carrera Popular 5k Y 10k Redován",
+  "date": "2026-10-25",
+  "pages": [
+   {
+    "u": "https://www.alcanzatumeta.es/x-carrera-popular-villa-de-redovan/",
+    "links": [
+     [
+      "Resultados",
+      "https://www.alcanzatumeta.es/x-carrera-popular-villa-de-redovan/resultados"
+     ],
+     [
+      "Resultados",
+      "https://www.alcanzatumeta.es/x-carrera-popular-villa-de-redovan/resultados-express.php?e=1224164&p=1248435"
+     ],
+     [
+      "Resultados",
+      "https://www.alcanzatumeta.es/x-carrera-popular-villa-de-redovan/resultados-express.php?e=1224164&p=1248835"
+     ],
+     [
+      "Resultados",
+      "https://www.alcanzatumeta.es/x-carrera-popular-villa-de-redovan/resultados"
+     ]
+    ],
+    "txt": [
+     "e Redován · Alcanza tu Meta Ir al contenido Menú Calendario Resultados Consultar inscripción Organizadores ← Calendario OCT 2026",
+     "ganiza Ayuntamiento de Redován Pruebas 09:30 salida 10K 10K Resultados 09:30 salida 5K 5K Resultados 11:00 salida CHUPETAS 200 m",
+     " Pruebas 09:30 salida 10K 10K Resultados 09:30 salida 5K 5K Resultados 11:00 salida CHUPETAS 200 m 11:10 salida PREBENJAMINES 20",
+     "ones anteriores 2018 04/11 8ª 5K y 10K Villa de Redován Sin resultados publicados. Inscripción Plazo de inscripción finalizado P"
+    ]
+   },
+   {
+    "u": "https://running.life/en/event/carrera-popular-5k-y-10k-redovan",
+    "links": [],
+    "txt": []
+   }
+  ]
+ },
+ {
+  "name": "Media Maratón Tierra y Olivo",
+  "date": "2026-10-25",
+  "pages": [
+   {
+    "u": "https://sportmaniacs.com/en/services/inscription/xxvii-media-maratn-ciudad-de-dos-hermanas-ldquotierra-y-olivordquo",
+    "links": [
+     [
+      "Results",
+      "https://sportmaniacs.com/en/results"
+     ],
+     [
+      "Results",
+      "https://sportmaniacs.com/en/races/xxvii-media-maratn-ciudad-de-dos-hermanas-ldquotierra-y-olivordquo#results"
+     ],
+     [
+      "View results",
+      "https://sportmaniacs.com/en/races/xxvii-media-maratn-ciudad-de-dos-hermanas-ldquotierra-y-olivordquo/6addf00a-d228-43ef-afa0-962cac1f2575/rankings"
+     ]
+    ],
+    "txt": []
+   },
+   {
+    "u": "https://running.life/en/event/media-maraton-tierra-y-olivo-ciudad-de-dos-hermanas",
+    "links": [],
+    "txt": []
+   },
+   {
+    "u": "https://sportmaniacs.com/es/races/xxvii-media-maratn-ciudad-de-dos-hermanas-ldquotierra-y-olivordquo",
+    "links": [
+     [
+      "Clasificaciones",
+      "https://sportmaniacs.com/es/results"
+     ],
+     [
+      "Clasificaciones",
+      "https://sportmaniacs.com/es/results"
+     ],
+     [
+      "Clasificaciones",
+      "https://sportmaniacs.com/es/races/xxvii-media-maratn-ciudad-de-dos-hermanas-ldquotierra-y-olivordquo#results"
+     ],
+     [
+      "Ver clasificaciones",
+      "https://sportmaniacs.com/es/races/xxvii-media-maratn-ciudad-de-dos-hermanas-ldquotierra-y-olivordquo/6addf00a-d228-43ef-afa0-962cac1f2575/rankings"
+     ]
+    ],
+    "txt": [
+     "Clasificaciones de XXVII MEDIA MARATÓN CIUDAD DE DOS HERMANAS “TIERRA Y",
+     "” — Sportmaniacs Nombre de carrera Buscar carreras Carreras Clasificaciones 25 oct 2026, Dos Hermanas XXVII MEDIA MARATÓN CIUDAD DE",
+     "XXVII MEDIA MARATÓN CIUDAD DE DOS HERMANAS “TIERRA Y OLIVO” Clasificaciones Inicio Clasificaciones XXVII MEDIA MARATÓN CIUDAD DE DO",
+     "DAD DE DOS HERMANAS “TIERRA Y OLIVO” Clasificaciones Inicio Clasificaciones XXVII MEDIA MARATÓN CIUDAD DE DOS HERMANAS “TIERRA Y OL"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "10K Correplayas Memorial Paco Guisado",
+  "date": "2026-10-25",
+  "pages": [
+   {
+    "u": "https://www.runnink.com/evento/xx-correplayas-memorial-paco-guisado/103",
+    "links": [
+     [
+      "Clasificaciones",
+      "https://www.runnink.com/clasificaciones/"
+     ],
+     [
+      "Clasificaciones ›",
+      "https://www.runnink.com/resultado/index.php?id_carrera=259"
+     ],
+     [
+      "Clasificaciones ›",
+      "https://www.runnink.com/resultado/index.php?id_carrera=259"
+     ],
+     [
+      "› Clasificaciones",
+      "https://www.runnink.com/clasificaciones/"
+     ],
+     [
+      "› Cronometraje y dorsales",
+      "https://www.runnink.com/organizador/cronometraje/"
+     ]
+    ],
+    "txt": [
+     "XX Correplayas Memorial Paco Guisado 2026 Menú Calendario Clasificaciones Organizadores Voluntarios Contacto Iniciar sesión XX Co",
+     "sesión XX Correplayas Memorial Paco Guisado Chipiona, Cádiz Clasificaciones › Días Horas Min Seg Carrera Popular › Chipiona XX Corr",
+     "piona (Cádiz) › Modalidad: Carrera Popular ¿Quieres ver las clasificaciones? Clasificaciones › Comprobar inscripción › Noticias de ",
+     "odalidad: Carrera Popular ¿Quieres ver las clasificaciones? Clasificaciones › Comprobar inscripción › Noticias de la carrera 📍 Reco"
+    ]
+   },
+   {
+    "u": "https://running.life/es/carrera/10k-correplayas-memorial-paco-guisado",
+    "links": [],
+    "txt": []
+   },
+   {
+    "u": "https://running.life/en/event/10k-correplayas-memorial-paco-guisado",
+    "links": [],
+    "txt": []
+   }
+  ]
+ },
+ {
+  "name": "Carrera Popular Ruta de las Norias",
+  "date": "2026-10-25",
+  "pages": [
+   {
+    "u": "https://www.alcanzatumeta.es/xix-carrera-popular-ruta-de-las-norias-2026/",
+    "links": [
+     [
+      "Resultados",
+      "https://www.alcanzatumeta.es/xix-carrera-popular-ruta-de-las-norias-2026/resultados"
+     ],
+     [
+      "Resultados",
+      "https://www.alcanzatumeta.es/xix-carrera-popular-ruta-de-las-norias-2026/resultados-express.php?e=1239406&p=1239409"
+     ],
+     [
+      "Resultados",
+      "https://www.alcanzatumeta.es/xix-carrera-popular-ruta-de-las-norias-2026/resultados-express.php?e=1239406&p=1239410"
+     ],
+     [
+      "10K",
+      "https://www.alcanzatumeta.es/xix-carrera-popular-ruta-de-las-norias-2026/resultados-express.php?e=1068981&p=1068984"
+     ],
+     [
+      "5K",
+      "https://www.alcanzatumeta.es/xix-carrera-popular-ruta-de-las-norias-2026/resultados-express.php?e=1068981&p=1068985"
+     ],
+     [
+      "10K",
+      "https://www.alcanzatumeta.es/xix-carrera-popular-ruta-de-las-norias-2026/resultados-express.php?e=922153&p=922154"
+     ],
+     [
+      "5K",
+      "https://www.alcanzatumeta.es/xix-carrera-popular-ruta-de-las-norias-2026/resultados-express.php?e=922153&p=922155"
+     ],
+     [
+      "8K",
+      "https://www.alcanzatumeta.es/xix-carrera-popular-ruta-de-las-norias-2026/resultados-express.php?e=804829&p=804831"
+     ],
+     [
+      "DEBUTANTES MASCULINIO Y FEMENINO",
+      "https://www.alcanzatumeta.es/xix-carrera-popular-ruta-de-las-norias-2026/resultados-express.php?e=679934&p=679938"
+     ],
+     [
+      "BENJAMIN MASCULINIO Y FEMENINO",
+      "https://www.alcanzatumeta.es/xix-carrera-popular-ruta-de-las-norias-2026/resultados-express.php?e=679934&p=679939"
+     ],
+     [
+      "ALEVIN MASCULINIO Y FEMENINO",
+      "https://www.alcanzatumeta.es/xix-carrera-popular-ruta-de-las-norias-2026/resultados-express.php?e=679934&p=679940"
+     ],
+     [
+      "INFANTIL MASCULINIO Y FEMENINO",
+      "https://www.alcanzatumeta.es/xix-carrera-popular-ruta-de-las-norias-2026/resultados-express.php?e=679934&p=679941"
+     ],
+     [
+      "8K",
+      "https://www.alcanzatumeta.es/xix-carrera-popular-ruta-de-las-norias-2026/resultados-express.php?e=679934&p=679936"
+     ],
+     [
+      "Clasificación (PDF)",
+      "https://alcanzatumeta.es/uploads/resultados/b7b98628698e484c859320786978d111.pdf"
+     ],
+     [
+      "7.6K CARRERA ABSOLUTA",
+      "https://www.alcanzatumeta.es/xix-carrera-popular-ruta-de-las-norias-2026/resultados-express.php?e=599206&p=602133"
+     ]
+    ],
+    "txt": [
+     "rias 2026 · Alcanza tu Meta Ir al contenido Menú Calendario Resultados Consultar inscripción Organizadores ← Calendario OCT 2026",
+     "ERACIONES Del 22/07/2026 al 25/10/2026 · Finalizada 15,00 € Resultados 10:00 salida 5K 5K Cuotas finalizadas · desde 11,00 € Ver",
+     "ERACIONES Del 22/07/2026 al 25/10/2026 · Finalizada 13,00 € Resultados 11:30 salida CADETE Y JUVENIL 3.000 m 11:45 salida ALEVIN",
+     "VIN MASCULINIO Y FEMENINO INFANTIL MASCULINIO Y FEMENINO 8K Clasificación (PDF) 2021 24/10 XIV Carrera Popular Ruta de las Norias 7"
+    ]
+   },
+   {
+    "u": "https://running.life/en/event/carrera-popular-ruta-de-las-norias",
+    "links": [],
+    "txt": []
+   }
+  ]
+ },
+ {
+  "name": "Carrera Solidaria Ruta 091 Badajoz",
+  "date": "2026-10-25",
+  "pages": [
+   {
+    "u": "https://ruta091.es/carrera/carrera-solidaria-ruta-091-badajoz-2026",
+    "links": [
+     [
+      "Resultados",
+      "https://ruta091.es/resultados"
+     ]
+    ],
+    "txt": [
+     "Solidaria Ruta 091 Badajoz 2026 Ruta 091 Home Carreras R091 Resultados Galería Noticias Contacto Carrera Solidaria Ruta 091 Bada"
+    ]
+   },
+   {
+    "u": "https://running.life/en/event/carrera-solidaria-ruta-091-badajoz",
+    "links": [],
+    "txt": []
+   }
+  ]
+ },
+ {
+  "name": "Carrera de la Logística",
+  "date": "2026-10-25",
+  "pages": [
+   {
+    "u": "https://unionatleticacoslada.com/agenda-deportiva-union-atletica-coslada/",
+    "links": [],
+    "txt": []
+   },
+   {
+    "u": "https://running.life/es/carrera/carrera-de-la-logistica",
+    "links": [],
+    "txt": []
+   },
+   {
+    "u": "https://running.life/en/event/carrera-de-la-logistica",
+    "links": [],
+    "txt": []
+   }
+  ]
+ },
+ {
+  "name": "Cursa Solidària Pau Dinarès - Terrassa",
+  "date": "2026-10-25",
+  "pages": [
+   {
+    "u": "https://dina35.org/activitat/cursa-solidaria-dina35/",
+    "links": [],
+    "txt": [
+     "ativa de la prova. Descarregar el reglament (PDF) Resultats Classificacions oficials via ChampionChip . L'enllaç s'activarà en final"
+    ]
+   },
+   {
+    "u": "https://running.life/en/event/cursa-solidaria-pau-dinares-terrassa",
+    "links": [],
+    "txt": []
+   }
+  ]
+ }
+]
