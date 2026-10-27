@@ -403,6 +403,8 @@ def registrations(db: dict, today: date, changes: dict) -> int:
         st = parse.registration_status(html, platform)
         touch(r)
         r["inscripcionAt"] = today.isoformat()
+        if not st and "inscripcion" in (r.get("ia") or []):
+            continue   # el robot no lo ve, pero la IA lo leyó en la web: se mantiene hasta que el robot vea algo claro
         if st != r.get("inscripcion"):
             if st:
                 r["inscripcion"] = st
