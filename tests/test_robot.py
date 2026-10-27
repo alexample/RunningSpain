@@ -486,5 +486,26 @@ class LimpiezaTests(unittest.TestCase):
         self.assertFalse(any(r.get("banner") for r in db["races"]))
 
 
+class IATests(unittest.TestCase):
+    def test_solo_excepcional_y_validado(self):
+        from scraper import ia
+        hoy = date(2026, 10, 27)
+        base = {"name": "10K de Prueba", "city": "X", "region": "Y", "official": True, "url": "https://x.es/"}
+        db = {"races": [
+            dict(base, id="vieja", date="2026-11-05", addedAt="2026-10-20"),                       # sí: publicada hace días, próxima
+            dict(base, id="nueva", date="2026-11-05", addedAt="2026-10-26"),                       # no: el robot aún tiene tiempo
+            dict(base, id="lejos", date="2027-01-10", addedAt="2026-10-01"),                       # no: no es próxima
+            dict(base, id="hecha", date="2026-11-05", addedAt="2026-10-01", banner="b", km="10 km", route="r", inscripcion="abierta"),
+            dict(base, id="preguntada", date="2026-11-05", addedAt="2026-10-01", iaAt="2026-10-25"),
+        ]}
+        self.assertEqual([r["id"] for r in ia.candidatas(db, hoy)], ["vieja"])
+        r = dict(db["races"][0])
+        mat = {"imagenes": [{"u": "https://x.es/cartel.jpg", "alt": ""}], "enlaces": [{"u": "https://x.es/recorrido.gpx", "t": "Track"}]}
+        puesto = ia._aplica(r, {"km": "10 km", "inscripcion": "abierta", "cartel": 0, "recorrido": 0}, mat, hoy)
+        self.assertEqual(sorted(puesto), ["banner", "inscripcion", "km", "route"])
+        r2 = dict(db["races"][0])
+        self.assertEqual(ia._aplica(r2, {"km": "27 km · 22 km · 16 km · 3 km", "inscripcion": "quizás", "cartel": 7, "recorrido": None}, mat, hoy), [])
+
+
 if __name__ == "__main__":
     unittest.main()

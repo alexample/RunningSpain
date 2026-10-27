@@ -11,6 +11,7 @@ on:
 
 permissions:
   contents: write
+  id-token: write   # token firmado por GitHub para la lectura con IA del worker (sin claves guardadas)
 
 concurrency:
   group: actualizar-carreras

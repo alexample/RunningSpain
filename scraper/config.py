@@ -164,6 +164,12 @@ SLUG_REGION = {
 }
 
 # Modelo opcional para leer reglamentos (solo si existe el secreto ANTHROPIC_API_KEY).
+# IA como último recurso (Workers AI del worker de Cloudflare; gratis, con tope diario en el worker)
+IA_ACTIVA = True
+IA_MIN_DIAS_PUBLICADA = 3      # la ficha lleva al menos estos días publicada y el robot no lo ha encontrado
+IA_PROXIMA_DIAS = 21           # solo carreras próximas
+IA_REINTENTO_DIAS = 7          # cada carrera, como mucho una vez por semana
+IA_MAX_POR_EJECUCION = 12      # y como mucho estas por vuelta (2 vueltas al día)
 LLM_MODEL = "claude-haiku-5-5"
 LLM_MAX_CALLS = 120
 
