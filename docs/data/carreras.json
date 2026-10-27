@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-27T01:58:29+00:00",
+ "updatedAt": "2026-10-27T03:17:30+00:00",
  "count": 912,
  "races": [
   {
@@ -3331,7 +3331,7 @@
    "inscripcionAt": "2026-10-27",
    "mediaChecked": "2026-10-23",
    "route": "https://www.behrepubliky.cz/templates/assets/img/route/banner/img1.png",
-   "revisada": "2026-10-27T01:37+00:00"
+   "revisada": "2026-10-27T03:07+00:00"
   },
   {
    "name": "Carrera Solidaria Ruta 091 Torremolinos",
@@ -3383,7 +3383,7 @@
    "banner": "https://www.carreraspopulares.com/biblioteca/ED057601/6a78643765bab.png",
    "bannerScore": 4,
    "mediaChecked": "2026-10-23",
-   "revisada": "2026-10-27T01:37+00:00",
+   "revisada": "2026-10-27T03:07+00:00",
    "km": "8,2 km",
    "changedAt": "2026-10-24"
   },
@@ -3415,7 +3415,7 @@
    "regChecked": "2026-10-23",
    "route": "https://vueltasalacabeza.es/wp-content/uploads/2026/10/ultra-de-los-castillos-100k.gpx",
    "changedAt": "2026-10-23",
-   "revisada": "2026-10-27T01:37+00:00"
+   "revisada": "2026-10-27T03:07+00:00"
   },
   {
    "name": "Minze Dark Horse",
@@ -3442,7 +3442,7 @@
    "inscripcionAt": "2026-10-27",
    "inscripcion": "cerrada",
    "mediaChecked": "2026-10-23",
-   "revisada": "2026-10-27T01:37+00:00",
+   "revisada": "2026-10-27T03:07+00:00",
    "regulation": "https://rtsfiles.blob.core.windows.net/documentos/c07fc5de-5df1-4d45-928f-4a4d741cad6a.pdf",
    "regResolved": "2026-10-24",
    "regChecked": "2026-10-24",
@@ -5670,7 +5670,7 @@
    "alt": [
     "https://running.life/en/event/palma-beach-running-course"
    ],
-   "revisada": "2026-10-27T01:37+00:00",
+   "revisada": "2026-10-27T03:07+00:00",
    "mediaChecked": "2026-10-27",
    "route": "https://elitechip.blob.core.windows.net/zw-media-cache/2470bd4ee1ec899e591fdecac437bfa0.jpg"
   },
@@ -5849,7 +5849,7 @@
    "inscripcionAt": "2026-10-27",
    "regResolved": "2026-10-23",
    "regChecked": "2026-10-23",
-   "revisada": "2026-10-27T01:37+00:00",
+   "revisada": "2026-10-27T03:07+00:00",
    "banner": "https://carrerasciudadreal.es/wp-content/uploads/2026/10/Cartel-de-La-Solana-2026-scaled.jpg",
    "bannerScore": 10,
    "changedAt": "2026-10-25",
@@ -7786,7 +7786,7 @@
     "https://running.life/en/event/media-maraton-de-jaen"
    ],
    "mediaChecked": "2026-10-23",
-   "revisada": "2026-10-27T01:37+00:00",
+   "revisada": "2026-10-27T03:07+00:00",
    "checkedAt": "2026-10-27",
    "time": "03:12"
   },
@@ -8117,7 +8117,7 @@
    "inscripcionAt": "2026-10-27",
    "regResolved": "2026-10-23",
    "regChecked": "2026-10-23",
-   "revisada": "2026-10-27T01:37+00:00",
+   "revisada": "2026-10-27T03:07+00:00",
    "mediaChecked": "2026-10-27",
    "route": "https://www.elitechip.net/system/public/download/c2efa9586fd039ba255d33e102e9a940.pdf"
   },
@@ -9160,7 +9160,7 @@
    "alt": [
     "https://running.life/en/event/cursa-solidaria-autoritat-portuaria-de-balears"
    ],
-   "revisada": "2026-10-27T01:37+00:00",
+   "revisada": "2026-10-27T03:07+00:00",
    "banner": "https://sportplan.es/es/opengraph-image",
    "bannerScore": 4,
    "mediaChecked": "2026-10-27",
@@ -9762,7 +9762,7 @@
    "inscripcionAt": "2026-10-27",
    "inscripcion": "abierta",
    "regChecked": "2026-10-23",
-   "revisada": "2026-10-27T01:37+00:00",
+   "revisada": "2026-10-27T03:07+00:00",
    "route": "https://cursafosca.com/img/photos/route-trail-night-1440.jpg",
    "checkedAt": "2026-10-27",
    "time": "03:45"
@@ -10791,7 +10791,7 @@
    "inscripcionAt": "2026-10-27",
    "regResolved": "2026-10-23",
    "regChecked": "2026-10-23",
-   "revisada": "2026-10-27T01:37+00:00",
+   "revisada": "2026-10-27T03:07+00:00",
    "mediaChecked": "2026-10-27",
    "route": "https://carrerasciudadreal.es/evento/media-maraton-rural-miguelturra-2026/"
   },
@@ -11340,7 +11340,7 @@
    "inscripcionAt": "2026-10-27",
    "regResolved": "2026-10-23",
    "regChecked": "2026-10-23",
-   "revisada": "2026-10-27T01:37+00:00",
+   "revisada": "2026-10-27T03:07+00:00",
    "mediaChecked": "2026-10-27",
    "route": "https://www.chiplevante.com/files/documentacion/dipticcarrera2026.pdf"
   },
@@ -13170,7 +13170,7 @@
    "inscripcionAt": "2026-10-23",
    "inscripcion": "abierta",
    "regChecked": "2026-10-23",
-   "revisada": "2026-10-27T01:37+00:00",
+   "revisada": "2026-10-27T03:07+00:00",
    "changedAt": "2026-10-27",
    "mediaChecked": "2026-10-23",
    "checkedAt": "2026-10-27",
@@ -22556,20 +22556,8 @@
   }
  ],
  "lastRun": {
-  "at": "2026-10-27T01:58:29+00:00",
-  "added": [
-   "maraton-y-media-maraton-popular-ciudad-de-don-benito-2027-0214",
-   "mitja-marato-barcelona-2027-0214",
-   "media-maraton-de-fuencarral-el-pardo-2027-0214",
-   "marato-bp-castello-2027-0214",
-   "carrera-monumental-ciudad-de-segovia-2027-0214",
-   "10k-facsa-castello-2027-0214",
-   "10km-gimnastica-ulia-2027-0214",
-   "cursa-pare-noel-barcelona-2026-1220",
-   "carrera-de-la-primavera-2027-0214",
-   "carrera-por-parejas-el-campello-2027-0214",
-   "escarpes-del-tormes-2027-0214"
-  ],
+  "at": "2026-10-27T03:17:30+00:00",
+  "added": [],
   "updated": {
    "media-maraton-de-jaen-2026-1115": [
     "time"
@@ -22597,12 +22585,6 @@
    ],
    "carrera-y-marcha-contra-el-cancer-de-mama-2026-1122": [
     "route"
-   ],
-   "el-tast-de-la-mitja-2026-1031": [
-    "inscripcion"
-   ],
-   "carrera-nocturna-guimarera-2026-1107": [
-    "inscripcion"
    ]
   },
   "removed": 0
