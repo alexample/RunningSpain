@@ -1,23 +1,1796 @@
 {
- "voto4": [
-  200,
-  "{\"k\":\"zz-prueba\",\"v\":[4,1]}"
- ],
- "cambia5": [
-  200,
-  "{\"k\":\"zz-prueba\",\"v\":[5,1]}"
- ],
- "invalido": [
-  400,
-  "{\"error\":\"Voto no válido.\"}"
- ],
- "otro_origen": [
-  403,
-  "{\"error\":\"Origen no permitido.\"}"
- ],
- "lectura": [
-  200,
-  "{\"zz-prueba\":[5,1]}",
-  "https://alexample.github.io"
- ]
+ "fechas": {
+  "https://running.life/en/event/media-maraton-de-cordoba": {
+   "final": "https://running.life/en/event/media-maraton-de-cordoba",
+   "ld": [
+    {
+     "name": "Media Maratón de Córdoba",
+     "startDate": "2026-12-13",
+     "endDate": "2026-12-13",
+     "eventStatus": "https://schema.org/EventScheduled",
+     "url": "https://running.life/en/event/media-maraton-de-cordoba"
+    }
+   ],
+   "trozos": [
+    "Media Maratón de Córdoba, 13 Dec 2026 Calendar United States United Kingdom Australia Canada New Zealand South Africa",
+    "n de Córdoba Website Edit www.cruzandolameta.es Media Maratón de Córdoba DEC 13 2026 The 40th Media Maratón de Córdoba will take place in Córdoba on 13 December 202",
+    "026 The 40th Media Maratón de Córdoba will take place in Córdoba on 13 December 2026 after a date change; registrations were full and a waiting list is active. Sun ",
+    "a date change; registrations were full and a waiting list is active. Sun 13 Dec 2026 Córdoba , Andalucia Website Registration Edit Half Marathon Always double-check",
+    "La 40th edition of the Media Maratón de Córdoba is scheduled in Córdoba in late 2026. The event is organized by the Ayuntamiento de Córdoba and the municipal sports",
+    "oba and the municipal sports institute IMDECO. The original date of 29 November 2026 was moved to 13 December 2026 because the initial date coincided with national ",
+    "nstitute IMDECO. The original date of 29 November 2026 was moved to 13 December 2026 because the initial date coincided with national general elections; the change ",
+    "km from Córdoba 11 km More events near Córdoba www.cruzandolameta.es Sun 13 Dec 2026 Córdoba , Andalucia , Spain Website Registration Articles The 10 Most Common Ma"
+   ],
+   "estim": [],
+   "inicio": "Media Maratón de Córdoba, 13 Dec 2026 Calendar United States United Kingdom Australia Canada New Zealand South Africa Ireland United Arab Emirates Indonesia Jersey Marathons in Europe Half Marathons in Europe All Countries Home Articles Pace Calculator Contact plus-circle-outline Event Home Articles Pace Calculator Contact United States United Kingdom Australia Canada New Zealand South Africa Ireland United Arab Emirates Indonesia Jersey Marathons in Europe Half Marathons in Europe All Countries Córdoba Spain / Andalucia / Córdoba / Media Maratón de Córdoba Website Edit www.cruzandolameta.es Media Maratón de Córdoba DEC 13 2026 The 40th Media Maratón de Córdoba will take place in Córdoba on 13 December 2026 after a date change; registrations were full and a waiting list is active. Sun 13 Dec 2026 Córdoba , Andalucia Website Registration Edit Half Marathon Always double-check with the organizer's website! This page may contain affiliate links. About the race La 40th edition of the Media Maratón de Córdoba is scheduled in Córdoba in late 2026. The event is organized by the Ayuntamiento de Córdoba and the municipal sports institute IMDECO. The original date of 29 November 2026 was moved to 13 December 2026 because the initial date coincided with national general elections; the change was made to ensure availability of security and service personnel. Registrations had reached capacity and a waiting list is available for places that free up. The organizers opened a window for full"
+  },
+  "https://running.life/en/event/cursa-popular-vila-de-sant-boi": {
+   "final": "https://running.life/en/event/cursa-popular-vila-de-sant-boi",
+   "ld": [
+    {
+     "name": "Cursa Popular Vila de Sant Boi",
+     "startDate": "2026-11-15",
+     "endDate": "2026-11-15",
+     "eventStatus": "https://schema.org/EventScheduled",
+     "url": "https://running.life/en/event/cursa-popular-vila-de-sant-boi"
+    }
+   ],
+   "trozos": [
+    "Cursa Popular Vila de Sant Boi - Sant Boi de Llobregat, 15 Nov 2026 Calendar United States United Kingdom Australia Canada New Zealand South Africa",
+    "ant Boi Website Edit web.rockthesport.com Cursa Popular Vila de Sant Boi NOV 15 2026 Read all about the Cursa Popular Vila de Sant Boi on 15 Nov 2026 in Sant Boi de",
+    "ant Boi NOV 15 2026 Read all about the Cursa Popular Vila de Sant Boi on 15 Nov 2026 in Sant Boi de Llobregat. Sun 15 Nov 2026 Sant Boi de Llobregat , Cataluña Webs",
+    "sa Popular Vila de Sant Boi on 15 Nov 2026 in Sant Boi de Llobregat. Sun 15 Nov 2026 Sant Boi de Llobregat , Cataluña Website Registration Edit 10 kilometers 5 kilo",
+    "Vila de Sant Boi will take place in Sant Boi de Llobregat on Sunday 15 November 2026 . You can run between 5 and 10 kilometers. Visit the organization's website for",
+    " km 5 km More events near Sant Boi de Llobregat web.rockthesport.com Sun 15 Nov 2026 Sant Boi de Llobregat , Cataluña , Spain Website Registration Articles The 10 M",
+    "g - The simplest tool for training better without being a slave to your watch © 2026 running.life - All Rights Reserved. · About us · Contact · Privacy Policy runni"
+   ],
+   "estim": [],
+   "inicio": "Cursa Popular Vila de Sant Boi - Sant Boi de Llobregat, 15 Nov 2026 Calendar United States United Kingdom Australia Canada New Zealand South Africa Ireland United Arab Emirates Indonesia Jersey Marathons in Europe Half Marathons in Europe All Countries Home Articles Pace Calculator Contact plus-circle-outline Event Home Articles Pace Calculator Contact United States United Kingdom Australia Canada New Zealand South Africa Ireland United Arab Emirates Indonesia Jersey Marathons in Europe Half Marathons in Europe All Countries Sant Boi de Llobregat Spain / Cataluña / Sant Boi de Llobregat / Cursa Popular Vila de Sant Boi Website Edit web.rockthesport.com Cursa Popular Vila de Sant Boi NOV 15 2026 Read all about the Cursa Popular Vila de Sant Boi on 15 Nov 2026 in Sant Boi de Llobregat. Sun 15 Nov 2026 Sant Boi de Llobregat , Cataluña Website Registration Edit 10 kilometers 5 kilometers Always double-check with the organizer's website! This page may contain affiliate links. About the race The Cursa Popular Vila de Sant Boi will take place in Sant Boi de Llobregat on Sunday 15 November 2026 . You can run between 5 and 10 kilometers. Visit the organization's website for the most recent information. 10 km Popular 10k 5 km Caminada Popular 5k 5 km Popular 5k Family Race Curses Kids Events nearby Nov 1 Su Montjuïc Tibidabo Barcelona | 12 km from Sant Boi de Llobregat Trail Run 10 km Nov 1 Su Cursa de les Caves Lavern | 22 km from Sant Boi de Llobregat Trail Run 5 km 10 km 18 km Nov 7"
+  },
+  "https://running.life/en/event/mitja-marato-internacional-vila-de-santa-pola": {
+   "final": "https://running.life/en/event/mitja-marato-internacional-vila-de-santa-pola",
+   "ld": [
+    {
+     "name": "Mitja Marató Internacional Vila de Santa Pola",
+     "startDate": "2027-01-23",
+     "endDate": "2027-01-24",
+     "eventStatus": "https://schema.org/EventScheduled",
+     "url": "https://running.life/en/event/mitja-marato-internacional-vila-de-santa-pola"
+    }
+   ],
+   "trozos": [
+    "Mitja Marató Internacional Vila de Santa Pola, 23-24 Jan 2027 Calendar United States United Kingdom Australia Canada New Zealand South Africa",
+    "Santa Pola Website Edit Mitja Marató Internacional Vila de Santa Pola JAN 23-24 2027 A certified road race in Santa Pola, Spain offering 21 km and 10 km distances w",
+    "stances with an expo, participant services, and a homologated course. 23-24 Jan 2027 Santa Pola , Valencia Website Registration Edit Half Marathon 10 kilometers Alw",
+    "s a road running event in Santa Pola, Alicante, Spain, scheduled for 24 January 2027. The event offers two race distances and a measured, certified course with an a",
+    " Derramador | 13 km from Santa Pola 10 km More events near Santa Pola 23-24 Jan 2027 Santa Pola , Valencia , Spain Website Registration Articles The 10 Most Common ",
+    "g - The simplest tool for training better without being a slave to your watch © 2026 running.life - All Rights Reserved. · About us · Contact · Privacy Policy runni"
+   ],
+   "estim": [],
+   "inicio": "Mitja Marató Internacional Vila de Santa Pola, 23-24 Jan 2027 Calendar United States United Kingdom Australia Canada New Zealand South Africa Ireland United Arab Emirates Indonesia Jersey Marathons in Europe Half Marathons in Europe All Countries Home Articles Pace Calculator Contact plus-circle-outline Event Home Articles Pace Calculator Contact United States United Kingdom Australia Canada New Zealand South Africa Ireland United Arab Emirates Indonesia Jersey Marathons in Europe Half Marathons in Europe All Countries Santa Pola Spain / Valencia / Santa Pola / Mitja Marató Internacional Vila de Santa Pola Website Edit Mitja Marató Internacional Vila de Santa Pola JAN 23-24 2027 A certified road race in Santa Pola, Spain offering 21 km and 10 km distances with an expo, participant services, and a homologated course. 23-24 Jan 2027 Santa Pola , Valencia Website Registration Edit Half Marathon 10 kilometers Always double-check with the organizer's website! This page may contain affiliate links. Mitja Marató Internacional Vila de Santa Pola The Mitja Marató Internacional Vila de Santa Pola is a road running event in Santa Pola, Alicante, Spain, scheduled for 24 January 2027. The event offers two race distances and a measured, certified course with an available homologation certificate. Distances: 21 km 10 km The event includes a runner expo (feria del corredor), animation points along the route, and a volunteer network. Organizers provide services for participants such as a club"
+  },
+  "https://running.life/es/carrera/mitja-marato-internacional-vila-de-santa-pola": {
+   "final": "https://running.life/es/carrera/mitja-marato-internacional-vila-de-santa-pola",
+   "ld": [
+    {
+     "name": "Mitja Marató Internacional Vila de Santa Pola",
+     "startDate": "2027-01-23",
+     "endDate": "2027-01-24",
+     "eventStatus": "https://schema.org/EventScheduled",
+     "url": "https://running.life/es/carrera/mitja-marato-internacional-vila-de-santa-pola"
+    }
+   ],
+   "trozos": [
+    "Mitja Marató Internacional Vila de Santa Pola, 23-24 ene 2027 Calendario España México Portugal Maratones en Europa Medias maratones en Europ",
+    "a Pola Sitio web Editar Mitja Marató Internacional Vila de Santa Pola JAN 23-24 2027 Prueba de ruta homologada en Santa Pola con 21 km y 10 km , feria del corredor ",
+    " 10 km , feria del corredor y servicios completos para participantes. 23-24 ene 2027 Santa Pola , Valencia Sitio web Inscripción Editar Media maratón 10 kilómetros ",
+    "prueba de ruta en Santa Pola, Alicante, España, prevista para el 24 de enero de 2027. El recorrido cuenta con certificado de homologación disponible. Distancias: 21",
+    "erramador | 13 km de Santa Pola 10 km Más eventos cerca de Santa Pola 23-24 ene 2027 Santa Pola , Valencia , España Sitio web Inscripción Artículos Los 10 errores m",
+    "s - La herramienta más simple para entrenar mejor sin vivir esclavo del reloj © 2026 running.life - All Rights Reserved. · Sobre nosotros · Contacto · Privacy Polic"
+   ],
+   "estim": [],
+   "inicio": "Mitja Marató Internacional Vila de Santa Pola, 23-24 ene 2027 Calendario España México Portugal Maratones en Europa Medias maratones en Europa Todos los países Home Artículos Calculadora de Ritmo Contacto plus-circle-outline Evento Home Artículos Calculadora de Ritmo Contacto España México Portugal Maratones en Europa Medias maratones en Europa Todos los países Santa Pola España / Valencia / Santa Pola / Mitja Marató Internacional Vila de Santa Pola Sitio web Editar Mitja Marató Internacional Vila de Santa Pola JAN 23-24 2027 Prueba de ruta homologada en Santa Pola con 21 km y 10 km , feria del corredor y servicios completos para participantes. 23-24 ene 2027 Santa Pola , Valencia Sitio web Inscripción Editar Media maratón 10 kilómetros Visita siempre la web del organizador para la información más reciente. Mitja Marató Internacional Vila de Santa Pola La Mitja Marató Internacional Vila de Santa Pola es una prueba de ruta en Santa Pola, Alicante, España, prevista para el 24 de enero de 2027. El recorrido cuenta con certificado de homologación disponible. Distancias: 21 km 10 km La organización ofrece feria del corredor, puntos de animación a lo largo del recorrido y un equipo de voluntarios. Entre los servicios para participantes se incluyen zona de clubes, gran bolsa del corredor, app oficial, imperdibles imán para el dorsal, premios en metálico, fotos oficiales de la carrera, grabación de medallas y gestión de alojamiento. Los planos de situación indican salida/meta, guarda"
+  },
+  "https://running.life/en/event/media-maraton-de-guadalajara": {
+   "final": "https://running.life/en/event/media-maraton-de-guadalajara",
+   "ld": [
+    {
+     "name": "Media Maratón de Guadalajara",
+     "startDate": "2026-11-28",
+     "endDate": "2026-11-28",
+     "eventStatus": "https://schema.org/EventScheduled",
+     "url": "https://running.life/en/event/media-maraton-de-guadalajara"
+    }
+   ],
+   "trozos": [
+    "Media Maratón de Guadalajara, 28 Nov 2026 Calendar United States United Kingdom Australia Canada New Zealand South Africa",
+    "ebsite Edit www.clubatletismolaesperanza.es Media Maratón de Guadalajara NOV 28 2026 Read all about the Media Maratón de Guadalajara on 28 Nov 2026 in Guadalajara. ",
+    "adalajara NOV 28 2026 Read all about the Media Maratón de Guadalajara on 28 Nov 2026 in Guadalajara. Sat 28 Nov 2026 Guadalajara , Castilla-La Mancha Website Regist",
+    "bout the Media Maratón de Guadalajara on 28 Nov 2026 in Guadalajara. Sat 28 Nov 2026 Guadalajara , Castilla-La Mancha Website Registration Edit Half Marathon 11 kil",
+    "a Maratón de Guadalajara will take place in Guadalajara on Saturday 28 November 2026 . You can run between 11 and 21 kilometers. Visit the organization's website fo",
+    "ra 6 km More events near Guadalajara www.clubatletismolaesperanza.es Sat 28 Nov 2026 Guadalajara , Castilla-La Mancha , Spain Website Registration Articles The 10 M",
+    "g - The simplest tool for training better without being a slave to your watch © 2026 running.life - All Rights Reserved. · About us · Contact · Privacy Policy runni"
+   ],
+   "estim": [],
+   "inicio": "Media Maratón de Guadalajara, 28 Nov 2026 Calendar United States United Kingdom Australia Canada New Zealand South Africa Ireland United Arab Emirates Indonesia Jersey Marathons in Europe Half Marathons in Europe All Countries Home Articles Pace Calculator Contact plus-circle-outline Event Home Articles Pace Calculator Contact United States United Kingdom Australia Canada New Zealand South Africa Ireland United Arab Emirates Indonesia Jersey Marathons in Europe Half Marathons in Europe All Countries Guadalajara Spain / Castilla-La Mancha / Guadalajara / Media Maratón de Guadalajara Website Edit www.clubatletismolaesperanza.es Media Maratón de Guadalajara NOV 28 2026 Read all about the Media Maratón de Guadalajara on 28 Nov 2026 in Guadalajara. Sat 28 Nov 2026 Guadalajara , Castilla-La Mancha Website Registration Edit Half Marathon 11 kilometers Always double-check with the organizer's website! This page may contain affiliate links. About the race The Media Maratón de Guadalajara will take place in Guadalajara on Saturday 28 November 2026 . You can run between 11 and 21 kilometers. Visit the organization's website for the most recent information. Half Marathon Media Maratón 11 km 11k Witzenmann Events nearby Nov 8 Su Carrera Popular Villa de Daganzo Daganzo de Arriba | 27 km from Guadalajara 5 km 10 km Nov 14 Sa Maratón Alcarria Alovera | 8 km from Guadalajara 11 km Half Marathon Marathon Nov 15 Su Carrera Alcalá de Henares En Marcha Contra el Cáncer Alcalá de Henares | 24 km "
+  },
+  "https://running.life/es/carrera/media-maraton-de-guadalajara": {
+   "final": "https://running.life/es/carrera/media-maraton-de-guadalajara",
+   "ld": [
+    {
+     "name": "Media Maratón de Guadalajara",
+     "startDate": "2026-11-28",
+     "endDate": "2026-11-28",
+     "eventStatus": "https://schema.org/EventScheduled",
+     "url": "https://running.life/es/carrera/media-maraton-de-guadalajara"
+    }
+   ],
+   "trozos": [
+    "Media Maratón de Guadalajara, 28 nov 2026 Calendario España México Portugal Maratones en Europa Medias maratones en Europ",
+    " web Editar www.clubatletismolaesperanza.es Media Maratón de Guadalajara NOV 28 2026 Carrera urbana en Guadalajara con Media Maratón de 21,096 m y 11 km, salida y m",
+    "el Complejo Deportivo Fuente de la Niña y límite de 1.500 dorsales. sáb. 28 nov 2026 Guadalajara , Castilla-La Mancha Sitio web Inscripción Editar Media maratón 11 ",
+    "scripciones y límites: la apertura de inscripciones se realiza el 29 de mayo de 2026 a través de la plataforma Youevent y permanece abierta hasta el 22 de noviembre",
+    "ravés de la plataforma Youevent y permanece abierta hasta el 22 de noviembre de 2026 o hasta completar 1.500 dorsales. No se admitirán inscripciones el día de la pr",
+    "km Más eventos cerca de Guadalajara www.clubatletismolaesperanza.es sáb. 28 nov 2026 Guadalajara , Castilla-La Mancha , España Sitio web Inscripción Artículos Los 1",
+    "s - La herramienta más simple para entrenar mejor sin vivir esclavo del reloj © 2026 running.life - All Rights Reserved. · Sobre nosotros · Contacto · Privacy Polic"
+   ],
+   "estim": [],
+   "inicio": "Media Maratón de Guadalajara, 28 nov 2026 Calendario España México Portugal Maratones en Europa Medias maratones en Europa Todos los países Home Artículos Calculadora de Ritmo Contacto plus-circle-outline Evento Home Artículos Calculadora de Ritmo Contacto España México Portugal Maratones en Europa Medias maratones en Europa Todos los países Guadalajara España / Castilla-La Mancha / Guadalajara / Media Maratón de Guadalajara Sitio web Editar www.clubatletismolaesperanza.es Media Maratón de Guadalajara NOV 28 2026 Carrera urbana en Guadalajara con Media Maratón de 21,096 m y 11 km, salida y meta en el Complejo Deportivo Fuente de la Niña y límite de 1.500 dorsales. sáb. 28 nov 2026 Guadalajara , Castilla-La Mancha Sitio web Inscripción Editar Media maratón 11 kilómetros Visita siempre la web del organizador para la información más reciente. Media Maratón de Guadalajara y 11 Km Witzenmann La prueba está organizada por el Club Atletismo La Esperanza y cuenta con el patrocinio del Excmo. Ayuntamiento de Guadalajara. Es una competición no federada y el circuito no está homologado. La salida y la meta se sitúan en el Complejo Deportivo Fuente de la Niña, en un circuito urbano diseñado a dos vueltas para la distancia larga. Hábitos de la prueba y servicios: habrá un punto de avituallamiento aproximado en el km 5,5 y otro en el paso de la segunda vuelta frente a la puerta de las pistas de atletismo. El control de tiempos se realizará con chip por la empresa contratada y el personal d"
+  },
+  "https://running.life/en/event/san-pintena": {
+   "final": "https://running.life/en/event/san-pintena",
+   "ld": [
+    {
+     "name": "San Pinteña",
+     "startDate": "2026-12-20",
+     "endDate": "2026-12-20",
+     "eventStatus": "https://schema.org/EventScheduled",
+     "url": "https://running.life/en/event/san-pintena"
+    }
+   ],
+   "trozos": [
+    "San Pinteña - Pinto, 20 Dec 2026 Calendar United States United Kingdom Australia Canada New Zealand South Africa",
+    "ries Pinto Spain / Madrid / Pinto / San Pinteña Website Edit San Pinteña DEC 20 2026 Read all about the San Pinteña on 20 Dec 2026 in Pinto. Sun 20 Dec 2026 Pinto ,",
+    "a Website Edit San Pinteña DEC 20 2026 Read all about the San Pinteña on 20 Dec 2026 in Pinto. Sun 20 Dec 2026 Pinto , Madrid Website Registration Edit 10 kilometer",
+    " DEC 20 2026 Read all about the San Pinteña on 20 Dec 2026 in Pinto. Sun 20 Dec 2026 Pinto , Madrid Website Registration Edit 10 kilometers 5 kilometers Always doub",
+    ". About the race The San Pinteña will take place in Pinto on Sunday 20 December 2026 . You can run between 5 and 10 kilometers. Visit the organization's website for",
+    "arrera Popular Running Pinto Pinto 5 km 10 km More events near Pinto Sun 20 Dec 2026 Pinto , Madrid , Spain Website Registration Articles The 10 Most Common Maratho",
+    "g - The simplest tool for training better without being a slave to your watch © 2026 running.life - All Rights Reserved. · About us · Contact · Privacy Policy runni"
+   ],
+   "estim": [],
+   "inicio": "San Pinteña - Pinto, 20 Dec 2026 Calendar United States United Kingdom Australia Canada New Zealand South Africa Ireland United Arab Emirates Indonesia Jersey Marathons in Europe Half Marathons in Europe All Countries Home Articles Pace Calculator Contact plus-circle-outline Event Home Articles Pace Calculator Contact United States United Kingdom Australia Canada New Zealand South Africa Ireland United Arab Emirates Indonesia Jersey Marathons in Europe Half Marathons in Europe All Countries Pinto Spain / Madrid / Pinto / San Pinteña Website Edit San Pinteña DEC 20 2026 Read all about the San Pinteña on 20 Dec 2026 in Pinto. Sun 20 Dec 2026 Pinto , Madrid Website Registration Edit 10 kilometers 5 kilometers Always double-check with the organizer's website! This page may contain affiliate links. About the race The San Pinteña will take place in Pinto on Sunday 20 December 2026 . You can run between 5 and 10 kilometers. Visit the organization's website for the most recent information. 10 km 10k 5 km Events nearby Nov 8 Su Legua Urbana de Yuncos Yuncos | 22 km from Pinto 5 km Nov 14 Sa Media Maratón Nocturna \"Ciudad de Móstoles\" Móstoles | 17 km from Pinto 10 km Half Marathon Nov 15 Su Carrera Muévete por la Diabetes Argüelles | 21 km from Pinto 5 km 10 km Nov 15 Su Carrera Popular Running Pinto Pinto 5 km 10 km More events near Pinto Sun 20 Dec 2026 Pinto , Madrid , Spain Website Registration Articles The 10 Most Common Marathon Training Mistakes - And how to avoid them so you a"
+  },
+  "https://running.life/en/event/10k-de-sarinena": {
+   "final": "https://running.life/en/event/10k-de-sarinena",
+   "ld": [
+    {
+     "name": "10K de Sariñena",
+     "startDate": "2026-11-21",
+     "endDate": "2026-11-21",
+     "eventStatus": "https://schema.org/EventScheduled",
+     "url": "https://running.life/en/event/10k-de-sarinena"
+    }
+   ],
+   "trozos": [
+    "10K de Sariñena, 21 Nov 2026 Calendar United States United Kingdom Australia Canada New Zealand South Africa",
+    "ñena / 10K de Sariñena Website Edit web.rockthesport.com 10K de Sariñena NOV 21 2026 Read all about the 10K de Sariñena on 21 Nov 2026 in Sariñena. Sat 21 Nov 2026 ",
+    "rt.com 10K de Sariñena NOV 21 2026 Read all about the 10K de Sariñena on 21 Nov 2026 in Sariñena. Sat 21 Nov 2026 Sariñena , Aragon Website Edit 10 kilometers 5 kil",
+    " 2026 Read all about the 10K de Sariñena on 21 Nov 2026 in Sariñena. Sat 21 Nov 2026 Sariñena , Aragon Website Edit 10 kilometers 5 kilometers Always double-check w",
+    "he race The 10K de Sariñena will take place in Sariñena on Saturday 21 November 2026 . You can run between 5 and 10 kilometers. Visit the organization's website for",
+    "0k 5 km Events nearby More events near Sariñena web.rockthesport.com Sat 21 Nov 2026 Sariñena , Aragon , Spain Website Registration Articles The 10 Most Common Mara",
+    "g - The simplest tool for training better without being a slave to your watch © 2026 running.life - All Rights Reserved. · About us · Contact · Privacy Policy runni"
+   ],
+   "estim": [],
+   "inicio": "10K de Sariñena, 21 Nov 2026 Calendar United States United Kingdom Australia Canada New Zealand South Africa Ireland United Arab Emirates Indonesia Jersey Marathons in Europe Half Marathons in Europe All Countries Home Articles Pace Calculator Contact plus-circle-outline Event Home Articles Pace Calculator Contact United States United Kingdom Australia Canada New Zealand South Africa Ireland United Arab Emirates Indonesia Jersey Marathons in Europe Half Marathons in Europe All Countries Sariñena Spain / Aragon / Sariñena / 10K de Sariñena Website Edit web.rockthesport.com 10K de Sariñena NOV 21 2026 Read all about the 10K de Sariñena on 21 Nov 2026 in Sariñena. Sat 21 Nov 2026 Sariñena , Aragon Website Edit 10 kilometers 5 kilometers Always double-check with the organizer's website! This page may contain affiliate links. About the race The 10K de Sariñena will take place in Sariñena on Saturday 21 November 2026 . You can run between 5 and 10 kilometers. Visit the organization's website for the most recent information. 10 km 10k 5 km Events nearby More events near Sariñena web.rockthesport.com Sat 21 Nov 2026 Sariñena , Aragon , Spain Website Registration Articles The 10 Most Common Marathon Training Mistakes - And how to avoid them so you arrive on race day properly prepared Running by Feel: How to Use RPE in Your Training - The simplest tool for training better without being a slave to your watch © 2026 running.life - All Rights Reserved. · About us · Contact · Privacy Polic"
+  }
+ },
+ "km": {
+  "https://running.life/en/event/cursa-antiracista-solsona": {
+   "len": 2120,
+   "hits": [
+    [
+     1045,
+     "rs. Visit the organization's website for the most recent information. 5 km Cursa 5 Km Cursa 1 Km Events "
+    ],
+    [
+     1056,
+     "he organization's website for the most recent information. 5 km Cursa 5 Km Cursa 1 Km Events nearby Nov "
+    ],
+    [
+     1067,
+     "tion's website for the most recent information. 5 km Cursa 5 Km Cursa 1 Km Events nearby Nov 14 Sa Noctu"
+    ],
+    [
+     1119,
+     " Cursa 5 Km Cursa 1 Km Events nearby Nov 14 Sa Nocturna d'Avià Avià | 27 km from Solsona Trail Run 5 km N"
+    ],
+    [
+     1148,
+     " nearby Nov 14 Sa Nocturna d'Avià Avià | 27 km from Solsona Trail Run 5 km Nov 15 Su Volta a la Maria Av"
+    ],
+    [
+     1187,
+     "| 27 km from Solsona Trail Run 5 km Nov 15 Su Volta a la Maria Avià | 27 km from Solsona Trail Run 18 km "
+    ],
+    [
+     1216,
+     "n 5 km Nov 15 Su Volta a la Maria Avià | 27 km from Solsona Trail Run 18 km Nov 28 Sa Cursa del Tractor C"
+    ],
+    [
+     1262,
+     " from Solsona Trail Run 18 km Nov 28 Sa Cursa del Tractor Casserres | 27 km from Solsona Backyard Ultra D"
+    ],
+    [
+     1338,
+     "from Solsona Backyard Ultra Dec 31 Th Sant Silvestre de Berga Berga | 30 km from Solsona 5 km More events"
+    ],
+    [
+     1357,
+     "rd Ultra Dec 31 Th Sant Silvestre de Berga Berga | 30 km from Solsona 5 km More events near Solsona Sat "
+    ],
+    [
+     1884,
+     "ng.life Add Event Help us complete the calendar! Distance is at least 5 km Event has a website or Facebo"
+    ]
+   ]
+  },
+  "https://running.life/en/event/escaldada": {
+   "len": 2101,
+   "hits": [
+    [
+     1009,
+     "ebsite for the most recent information. Half Marathon Escaldada Trail 21k 10 km Escaldada 10k Popular E"
+    ],
+    [
+     1013,
+     "te for the most recent information. Half Marathon Escaldada Trail 21k 10 km Escaldada 10k Popular Events "
+    ],
+    [
+     1029,
+     "recent information. Half Marathon Escaldada Trail 21k 10 km Escaldada 10k Popular Events nearby Nov 1 S"
+    ],
+    [
+     1086,
+     "km Escaldada 10k Popular Events nearby Nov 1 Su Trenca 3 Pics Navás | 13 km from Súria Trail Run 5 km Hal"
+    ],
+    [
+     1113,
+     "ents nearby Nov 1 Su Trenca 3 Pics Navás | 13 km from Súria Trail Run 5 km Half Marathon Nov 7 Sa Cursa "
+    ],
+    [
+     1170,
+     "ia Trail Run 5 km Half Marathon Nov 7 Sa Cursa de Muntanya MTR Mura | 24 km from Súria Trail Run 15 km No"
+    ],
+    [
+     1197,
+     "thon Nov 7 Sa Cursa de Muntanya MTR Mura | 24 km from Súria Trail Run 15 km Nov 8 Su Carenes del Cogulló "
+    ],
+    [
+     1243,
+     "km from Súria Trail Run 15 km Nov 8 Su Carenes del Cogulló Rajadell | 12 km from Súria Trail Run 11 km 18"
+    ],
+    [
+     1270,
+     "km Nov 8 Su Carenes del Cogulló Rajadell | 12 km from Súria Trail Run 11 km 18 km Nov 14 Sa Nocturna d'Av"
+    ],
+    [
+     1276,
+     " 8 Su Carenes del Cogulló Rajadell | 12 km from Súria Trail Run 11 km 18 km Nov 14 Sa Nocturna d'Avià Avi"
+    ],
+    [
+     1315,
+     " km from Súria Trail Run 11 km 18 km Nov 14 Sa Nocturna d'Avià Avià | 28 km from Súria Trail Run 5 km Mor"
+    ],
+    [
+     1342,
+     " km 18 km Nov 14 Sa Nocturna d'Avià Avià | 28 km from Súria Trail Run 5 km More events near Súria Sun 25"
+    ],
+    [
+     1865,
+     "ng.life Add Event Help us complete the calendar! Distance is at least 5 km Event has a website or Facebo"
+    ]
+   ]
+  },
+  "https://running.life/es/carrera/desafio-bomberos-san-sebastian-de-los-reyes": {
+   "len": 4213,
+   "hits": [
+    [
+     2759,
+     " Eventos cercanos oct 31 sá Ecodumad Cross San Agustín del Guadalix | 13 km de San Sebastián de los Reyes"
+    ],
+    [
+     2837,
+     " San Sebastián de los Reyes Dúatlón Cross Relevos de 3 Talentos 0.5 2 0.25 km Relevos de 3 Absoluto 1.5 7 1"
+    ],
+    [
+     2873,
+     "Cross Relevos de 3 Talentos 0.5 2 0.25 km Relevos de 3 Absoluto 1.5 7 1 km Súper sprint 1.5 7 1 km Contr"
+    ],
+    [
+     2897,
+     "tos 0.5 2 0.25 km Relevos de 3 Absoluto 1.5 7 1 km Súper sprint 1.5 7 1 km Contrarreloj por Equipos... 2"
+    ],
+    [
+     2934,
+     "to 1.5 7 1 km Súper sprint 1.5 7 1 km Contrarreloj por Equipos... 2 7 1 km nov 1 do Cross 3 Refugios Man"
+    ],
+    [
+     2986,
+     "or Equipos... 2 7 1 km nov 1 do Cross 3 Refugios Manzanares el Real | 27 km de San Sebastián de los Reyes"
+    ],
+    [
+     3039,
+     "anares el Real | 27 km de San Sebastián de los Reyes Carrera de trail 24 km nov 7 sá Bee Backyard Trail L"
+    ],
+    [
+     3112,
+     "km nov 7 sá Bee Backyard Trail Los Berrocales Paracuellos de Jarama | 10 km de San Sebastián de los Reyes"
+    ],
+    [
+     3163,
+     "uellos de Jarama | 10 km de San Sebastián de los Reyes Backyard Ultra 7 km nov 8 do Media Maratón Popula"
+    ],
+    [
+     3221,
+     "kyard Ultra 7 km nov 8 do Media Maratón Popular de Moratalaz Madrid | 13 km de San Sebastián de los Reyes"
+    ],
+    [
+     3257,
+     "tón Popular de Moratalaz Madrid | 13 km de San Sebastián de los Reyes 3 km 10 km Media maratón Más event"
+    ],
+    [
+     3262,
+     "opular de Moratalaz Madrid | 13 km de San Sebastián de los Reyes 3 km 10 km Media maratón Más eventos cer"
+    ],
+    [
+     3917,
+     "Evento ¡Ayúdanos a completar el calendario! La distancia mínima es de 5 km El evento tiene un sitio web "
+    ]
+   ]
+  },
+  "https://www.runnink.com/evento/media-maraton-y-10k-rural-villanueva-de-la-torre": "sin acceso",
+  "https://www.udat.es/": {
+   "len": 2968,
+   "hits": [
+    [
+     1375,
+     "E) PISTA DE ATLETISMO DE TALAVERA DE LA REINA ⇒REGLAMENTO ⇒RESULTADOS 10K TALAVERA 2026 udattalavera No"
+    ],
+    [
+     1605,
+     "nto con la Unión Deportiva Atlética Talavera (UDAT), organizan el XVI 10km “Ciudad de la Cerámica” – Gra"
+    ],
+    [
+     1720,
+     "ixaBank. La prueba también será Campeonato de Castilla – La Mancha de 10K en Ruta Absoluto y Máster, In"
+    ],
+    [
+     1875,
+     "NDAS udattalavera Galería de Fotos ⇒FOTOS (J. MATEOS) gallery FOTOS – 10K TALAVERA 2026 udattalavera Ga"
+    ],
+    [
+     2055,
+     "025 udattalavera Galería de Fotos ⇒FOTOS (RUN ONLINE) gallery FOTOS – 10K TALAVERA 2025 udattalavera Ga"
+    ],
+    [
+     2526,
+     "00 a 14:00) Email Media Maratón: mediamaratontalavera@gmail.com Email 10K Talavera: 10k.talavera@gmail."
+    ],
+    [
+     2540,
+     "ail Media Maratón: mediamaratontalavera@gmail.com Email 10K Talavera: 10k.talavera@gmail.com Facebook U"
+    ]
+   ]
+  },
+  "https://www.derbidelasaficiones.com/": {
+   "len": 2548,
+   "hits": [
+    [
+     306,
+     "po a la victoria. Ver clasificaciones 2026 VS 25 octubre 2026 · 09:00 10 KILÓMETROS HOMOLOGADOS – DEL BERNABÉU AL"
+    ],
+    [
+     369,
+     " 09:00 10 KILÓMETROS HOMOLOGADOS – DEL BERNABÉU AL ANTIGUO CALDERÓN - 10 KILÓMETROS HOMOLOGADOS – DEL BERNABÉU AL"
+    ],
+    [
+     640,
+     " tu corazón. 02 MADRID COMO ESTADIO Del Bernabéu al antiguo Calderón, 10 kilómetros homologados frenéticos para c"
+    ],
+    [
+     975,
+     " tu equipo para ver tu clasificación. Soy Indio Soy Vikingo Recorrido 10 KILÓMETROS PARA VOLAR HACIA LA MEJOR MAR"
+    ],
+    [
+     1060,
+     "ARA VOLAR HACIA LA MEJOR MARCA Desde el Bernabéu al antiguo Calderón, 10 kilómetros homologados por la RFEA con p"
+    ],
+    [
+     1773,
+     "MPERADOR CARLOS V RONDA DE VALENCIA PASEO DE PONTONES CIBELES NEPTUNO 05 KM AVITUALLAMIENTO 01 KM 02 KM 0"
+    ],
+    [
+     1795,
+     "A DE VALENCIA PASEO DE PONTONES CIBELES NEPTUNO 05 KM AVITUALLAMIENTO 01 KM 02 KM 03 KM 04 KM 06 KM 07 KM"
+    ],
+    [
+     1801,
+     "ALENCIA PASEO DE PONTONES CIBELES NEPTUNO 05 KM AVITUALLAMIENTO 01 KM 02 KM 03 KM 04 KM 06 KM 07 KM 08 KM"
+    ],
+    [
+     1807,
+     "A PASEO DE PONTONES CIBELES NEPTUNO 05 KM AVITUALLAMIENTO 01 KM 02 KM 03 KM 04 KM 06 KM 07 KM 08 KM 09 KM"
+    ],
+    [
+     1813,
+     "O DE PONTONES CIBELES NEPTUNO 05 KM AVITUALLAMIENTO 01 KM 02 KM 03 KM 04 KM 06 KM 07 KM 08 KM 09 KM Reviv"
+    ],
+    [
+     1819,
+     "ONTONES CIBELES NEPTUNO 05 KM AVITUALLAMIENTO 01 KM 02 KM 03 KM 04 KM 06 KM 07 KM 08 KM 09 KM Revive el d"
+    ],
+    [
+     1825,
+     "S CIBELES NEPTUNO 05 KM AVITUALLAMIENTO 01 KM 02 KM 03 KM 04 KM 06 KM 07 KM 08 KM 09 KM Revive el derbi G"
+    ],
+    [
+     1831,
+     "LES NEPTUNO 05 KM AVITUALLAMIENTO 01 KM 02 KM 03 KM 04 KM 06 KM 07 KM 08 KM 09 KM Revive el derbi Galería"
+    ],
+    [
+     1837,
+     "PTUNO 05 KM AVITUALLAMIENTO 01 KM 02 KM 03 KM 04 KM 06 KM 07 KM 08 KM 09 KM Revive el derbi Galería de fo"
+    ],
+    [
+     2305,
+     " Madrid. Clasificación Indios Clasificación Vikingos Galería Fotos 25 10K homologado 11.000+ corredores"
+    ]
+   ]
+  },
+  "https://inscripcion.kirolprobak.com/inscripcion/10k-halloweenrun-zorroza-bilbao": {
+   "len": 1315,
+   "hits": [
+    [
+     0,
+     "10K HALLOWEENRUN ZORROZA BILBAO 1"
+    ],
+    [
+     32,
+     "10K HALLOWEENRUN ZORROZA BILBAO 10K HALLOWEENRUN ZORROZA-BILBAO e"
+    ],
+    [
+     288,
+     "ía Buscar alojamiento Contactar Español Español Català Galego Euskara 10K HALLOWEENRUN ZORROZA-BILBAO E"
+    ],
+    [
+     1022,
+     "eteorológica Actualizado el: 25/10/2026 06:00 Lun. 26/10 ☁️ 25° 15° 💨 9.5 km/h Mar. 27/10 🌦️ 21° 14° 💨 19 "
+    ],
+    [
+     1055,
+     "0/2026 06:00 Lun. 26/10 ☁️ 25° 15° 💨 9.5 km/h Mar. 27/10 🌦️ 21° 14° 💨 19 km/h Mié. 28/10 🌦️ 19° 12° 💨 12."
+    ],
+    [
+     1087,
+     "5° 💨 9.5 km/h Mar. 27/10 🌦️ 21° 14° 💨 19 km/h Mié. 28/10 🌦️ 19° 12° 💨 12.2 km/h Jue. 29/10 🌫️ 22° 9° 💨 8.6 "
+    ],
+    [
+     1120,
+     "4° 💨 19 km/h Mié. 28/10 🌦️ 19° 12° 💨 12.2 km/h Jue. 29/10 🌫️ 22° 9° 💨 8.6 km/h Vie. 30/10 🌫️ 22° 11° 💨 7.1"
+    ],
+    [
+     1153,
+     "° 💨 12.2 km/h Jue. 29/10 🌫️ 22° 9° 💨 8.6 km/h Vie. 30/10 🌫️ 22° 11° 💨 7.1 km/h Sáb. 31/10 🌦️ 18° 12° 💨 7.6"
+    ],
+    [
+     1186,
+     "° 💨 8.6 km/h Vie. 30/10 🌫️ 22° 11° 💨 7.1 km/h Sáb. 31/10 🌦️ 18° 12° 💨 7.6 km/h Dom. 1/11 🌦️ 18° 12° 💨 8.9 "
+    ],
+    [
+     1218,
+     "1° 💨 7.1 km/h Sáb. 31/10 🌦️ 18° 12° 💨 7.6 km/h Dom. 1/11 🌦️ 18° 12° 💨 8.9 km/h Ver detalles y mapa de vien"
+    ]
+   ]
+  }
+ },
+ "img": {
+  "https://running.life/en/event/wolf-race-perdiguera": {
+   "final": "https://running.life/en/event/wolf-race-perdiguera",
+   "best": [
+    null,
+    0
+   ],
+   "metas": {
+    "og:image": null,
+    "twitter:image": null
+   },
+   "ld_img": [
+    null
+   ],
+   "imgs": [
+    [
+     "/img/favicon/running-life-white/apple-touch-icon.png",
+     "logo",
+     null,
+     null,
+     "h-9 min-w-9 w-9"
+    ],
+    [
+     "/img/logo-white.svg",
+     "logo",
+     null,
+     null,
+     "h-9 min-w-[82px]"
+    ],
+    [
+     "/img/flags/esp.svg",
+     "flag",
+     null,
+     null,
+     "w-4 h-3 rounded-[2px] object-cover inlin"
+    ],
+    [
+     "https://deporticket.blob.core.windows.net/awebs/carrera-de-la-mujer/logo-carrera-mujer-900.png",
+     "Carrera de la Mujer - Zaragoza",
+     null,
+     null,
+     "event-card-thumb"
+    ],
+    [
+     "/img/flags/esp.svg",
+     "flag",
+     null,
+     null,
+     "w-4 h-3 rounded-[2px] object-cover inlin"
+    ],
+    [
+     "https://fartlecksport.com/wp-content/uploads/2026/06/Cartel-Carrera-Hibervida-2026-web-scaled.jpg",
+     "Carrera Ebro Vida la Cartuja",
+     null,
+     null,
+     "event-card-thumb"
+    ],
+    [
+     "/img/flags/esp.svg",
+     "flag",
+     null,
+     null,
+     "w-4 h-3 rounded-[2px] object-cover inlin"
+    ],
+    [
+     "https://fartlecksport.com/wp-content/uploads/2026/07/Cartel_Villanueva-de-Gallego_Contra-la-violencia-genero_2026_web-scaled.jpg",
+     "Carrera contra la Violencia de Género - Villanueva de Gálleg",
+     null,
+     null,
+     "event-card-thumb"
+    ],
+    [
+     "/img/flags/esp.svg",
+     "flag",
+     null,
+     null,
+     "w-4 h-3 rounded-[2px] object-cover inlin"
+    ],
+    [
+     "https://carrera.diabeteszaragoza.org/wp-content/uploads/2026/09/Diabeticos-Banner-Web.jpg",
+     "Carrera y Caminata Unidos por la Diabetes - Zaragoza",
+     null,
+     null,
+     "event-card-thumb"
+    ],
+    [
+     "/article-images/errores-maraton-carrera-malaga_800.webp",
+     "",
+     null,
+     null,
+     "rl-media-card-image"
+    ],
+    [
+     "/article-images/rpe-corredora-competicion_800.webp",
+     "",
+     null,
+     null,
+     "rl-media-card-image"
+    ]
+   ],
+   "bg": []
+  },
+  "https://running.life/en/event/cursa-de-les-caves": {
+   "final": "https://running.life/en/event/cursa-de-les-caves",
+   "best": [
+    null,
+    0
+   ],
+   "metas": {
+    "og:image": null,
+    "twitter:image": null
+   },
+   "ld_img": [
+    null
+   ],
+   "imgs": [
+    [
+     "/img/favicon/running-life-white/apple-touch-icon.png",
+     "logo",
+     null,
+     null,
+     "h-9 min-w-9 w-9"
+    ],
+    [
+     "/img/logo-white.svg",
+     "logo",
+     null,
+     null,
+     "h-9 min-w-[82px]"
+    ],
+    [
+     "/img/flags/esp.svg",
+     "flag",
+     null,
+     null,
+     "w-4 h-3 rounded-[2px] object-cover inlin"
+    ],
+    [
+     "https://www.athleticevents.net/imagenes/eventos/537.jpeg",
+     "Cursa i Marxa contra el Càncer - L'Arboç",
+     null,
+     null,
+     "event-card-thumb"
+    ],
+    [
+     "/img/flags/esp.svg",
+     "flag",
+     null,
+     null,
+     "w-4 h-3 rounded-[2px] object-cover inlin"
+    ],
+    [
+     "/img/flags/esp.svg",
+     "flag",
+     null,
+     null,
+     "w-4 h-3 rounded-[2px] object-cover inlin"
+    ],
+    [
+     "/img/flags/esp.svg",
+     "flag",
+     null,
+     null,
+     "w-4 h-3 rounded-[2px] object-cover inlin"
+    ],
+    [
+     "/article-images/errores-maraton-carrera-malaga_800.webp",
+     "",
+     null,
+     null,
+     "rl-media-card-image"
+    ],
+    [
+     "/article-images/rpe-corredora-competicion_800.webp",
+     "",
+     null,
+     null,
+     "rl-media-card-image"
+    ]
+   ],
+   "bg": []
+  },
+  "https://www.carreraspopulares.com/carrera/cursa-de-les-caves": {
+   "final": "https://www.carreraspopulares.com/carrera/cursa-de-les-caves",
+   "best": [
+    "https://www.carreraspopulares.com/calendario/carteles_def/cartel_def_3.jpg",
+    8
+   ],
+   "metas": {
+    "og:image": "https://www.carreraspopulares.com/calendario/carteles_def/cartel_def_3.jpg",
+    "twitter:image": null
+   },
+   "ld_img": [
+    [
+     "https://www.carreraspopulares.com/calendario/carteles_def/cartel_def_3.jpg"
+    ]
+   ],
+   "imgs": [
+    [
+     "https://www.facebook.com/tr?id=1286170181410716&ev=PageView&noscript=1",
+     "",
+     "1",
+     "1",
+     ""
+    ],
+    [
+     "https://www.carreraspopulares.com/img/logoCortoBlanco.png",
+     "",
+     null,
+     null,
+     ""
+    ],
+    [
+     "https://www.carreraspopulares.com/img/logoLargoBlanco.png",
+     "",
+     null,
+     null,
+     ""
+    ],
+    [
+     "https://www.carreraspopulares.com/img/logo-header.png",
+     "",
+     null,
+     null,
+     ""
+    ],
+    [
+     "https://www.carreraspopulares.com/img/logoLargoBlanco.png",
+     "Brand",
+     null,
+     null,
+     ""
+    ],
+    [
+     "https://www.carreraspopulares.com/img/logoCortoBlanco.png",
+     "Brand",
+     null,
+     null,
+     ""
+    ],
+    [
+     "https://www.carreraspopulares.com/calendario/carteles_def/cartel_def_3.jpg",
+     "",
+     null,
+     null,
+     "imgEntera"
+    ],
+    [
+     "https://www.carreraspopulares.com/calendario/logoCalendar.png",
+     "Añade este evento en tu calendario",
+     null,
+     null,
+     ""
+    ],
+    [
+     "https://www.carreraspopulares.com/images/icons/calculadora.png",
+     "",
+     null,
+     null,
+     "featured-icon_extended"
+    ],
+    [
+     "",
+     "{{ datoValor.titulo }}",
+     null,
+     null,
+     "imgEnteraConTope"
+    ],
+    [
+     "",
+     "{{ datoValor.titulo }}",
+     null,
+     null,
+     ""
+    ],
+    [
+     "",
+     "{{ datoValor.titulo }}",
+     null,
+     null,
+     ""
+    ],
+    [
+     "",
+     "{{ datoValor.titulo }}",
+     null,
+     null,
+     ""
+    ],
+    [
+     "https://www.carreraspopulares.com/biblioteca/ED057671/6a8d6adcc4af4.jpg",
+     "",
+     null,
+     null,
+     "imgEntera"
+    ],
+    [
+     "https://www.carreraspopulares.com/biblioteca/ED057724/6ac533044b4e2.jpg",
+     "",
+     null,
+     null,
+     "imgEntera"
+    ],
+    [
+     "https://www.carreraspopulares.com/biblioteca/ED057674/6a8d7b3223be8.jpg",
+     "",
+     null,
+     null,
+     "imgEntera"
+    ],
+    [
+     "https://www.carreraspopulares.com/biblioteca/ED057718/6acfc0a831d20.jpg",
+     "",
+     null,
+     null,
+     "imgEntera"
+    ],
+    [
+     "https://www.carreraspopulares.com/biblioteca/ED057754/6adce1f357e6b.jpg",
+     "",
+     null,
+     null,
+     "imgEntera"
+    ],
+    [
+     "https://www.carreraspopulares.com/biblioteca/ED057755/6adfed058e405.jpg",
+     "",
+     null,
+     null,
+     "imgEntera"
+    ],
+    [
+     "https://www.carreraspopulares.com/images/icons/calculadora.png",
+     "",
+     null,
+     null,
+     "featured-icon_extended"
+    ],
+    [
+     "https://www.carreraspopulares.com/images/icons/calculadora.png",
+     "",
+     null,
+     null,
+     "featured-icon_extended"
+    ],
+    [
+     "https://www.carreraspopulares.com/img/calendario/WRiconoscalendario/buscador.png",
+     "",
+     null,
+     null,
+     "featured-icon_extended"
+    ],
+    [
+     "https://www.carreraspopulares.com/img/calendario/WRiconoscalendario/buscador.png",
+     "",
+     null,
+     null,
+     "featured-icon_extended"
+    ],
+    [
+     "https://www.carreraspopulares.com/img/calendario/WRiconoscalendario/espana.png",
+     "",
+     null,
+     null,
+     "featured-icon_extended"
+    ],
+    [
+     "https://www.carreraspopulares.com/fotos_noticias/V1Foto_012539_10.JPG",
+     "",
+     null,
+     null,
+     "featured-image"
+    ],
+    [
+     "https://www.carreraspopulares.com/fotos_noticias/V1Foto_007043_10.JPG",
+     "",
+     null,
+     null,
+     "featured-image"
+    ],
+    [
+     "https://panel.carreraspopulares.com/imagesRV/O/2110/616568abd56ee.JPG",
+     "",
+     null,
+     null,
+     "featured-image"
+    ],
+    [
+     "https://panel.carreraspopulares.com/imagesRV/O/2110/6158e5535ddc5.JPG",
+     "",
+     null,
+     null,
+     "featured-image"
+    ],
+    [
+     "https://www.carreraspopulares.com/fotos_noticias/V1Foto_012809_10.JPG",
+     "",
+     null,
+     null,
+     "featured-image"
+    ],
+    [
+     "https://panel.carreraspopulares.com/imagesRV/O/2110/616a9533d2a44.JPG",
+     "",
+     null,
+     null,
+     "featured-image"
+    ]
+   ],
+   "bg": []
+  },
+  "https://www.lineadesalida.net/carreras/iv-carrera-cofrade-cuatro-millas": {
+   "final": "https://www.lineadesalida.net/carreras/iv-carrera-cofrade-cuatro-millas",
+   "best": [
+    "https://lineadesalida.net/storage/miniaturas/1788369384minCuatroMillas.jpg",
+    5
+   ],
+   "metas": {
+    "og:image": null,
+    "twitter:image": null
+   },
+   "ld_img": [],
+   "imgs": [
+    [
+     "/img/Logo.png",
+     "logo Linea De Salida",
+     null,
+     null,
+     "ancho_logo"
+    ],
+    [
+     "https://lineadesalida.net/storage/miniaturas/1788369384minCuatroMillas.jpg",
+     "Cartel carrera",
+     null,
+     null,
+     "img-fluid rounded"
+    ],
+    [
+     "https://lineadesalida.net/icons/correr.png",
+     "",
+     null,
+     null,
+     "p-1"
+    ],
+    [
+     "https://lineadesalida.net/storage/carteles/1788369384cartelCuatroMillas26.jpg",
+     "...",
+     null,
+     null,
+     "img-fluid rounded"
+    ],
+    [
+     "https://lineadesalida.net/storage/miniaturas/1767810963miniaturaCarthagoMountainLeague26.jpg",
+     "Cartel I Carthago Mountain League",
+     null,
+     null,
+     "rounded-2"
+    ],
+    [
+     "https://lineadesalida.net/storage/miniaturas/1767810498miniaturaCarthagoRunningLeague26.jpg",
+     "Cartel II Carthago Running League",
+     null,
+     null,
+     "rounded-2"
+    ],
+    [
+     "https://lineadesalida.net/storage/miniaturas/1768846844minLigaLaUnion.png",
+     "Cartel I La Union Running League",
+     null,
+     null,
+     "rounded-2"
+    ],
+    [
+     "https://lineadesalida.net/storage/miniaturas/1775053621minLigaMarchaNordica.png",
+     "Cartel Liga Marcha Nordica 2026",
+     null,
+     null,
+     "rounded-2"
+    ],
+    [
+     "https://lineadesalida.net/storage/miniaturas/1785145323minLigaMontaña.png",
+     "Cartel Liga de Carreras Por Montaña FMRM 2026",
+     null,
+     null,
+     "rounded-2"
+    ],
+    [
+     "https://lineadesalida.net/storage/miniaturas/1790414705miniaturaLIGA.jpeg",
+     "Cartel LIGA ANIMAL 2027",
+     null,
+     null,
+     "rounded-2"
+    ],
+    [
+     "https://lineadesalida.net/icons/up-arrow.png",
+     "",
+     null,
+     null,
+     ""
+    ],
+    [
+     "https://lineadesalida.net/icons/up-arrow.png",
+     "",
+     null,
+     null,
+     ""
+    ],
+    [
+     "https://lineadesalida.net/storage/complementos/Guia_Tallas_Horus_Manga_Corta_UNISEX.jpg",
+     "Guía de tallas",
+     null,
+     null,
+     "img-fluid rounded modal-guia-tallas-img"
+    ]
+   ],
+   "bg": [
+    "\"data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e\""
+   ]
+  },
+  "https://eltast.lamitja.cat/": {
+   "final": "https://eltast.lamitja.cat/",
+   "best": [
+    null,
+    0
+   ],
+   "metas": {
+    "og:image": "https://eltast.lamitja.cat/assets/images/el-tast-mitja-2026-social.jpg",
+    "twitter:image": null
+   },
+   "ld_img": [
+    [
+     "https://eltast.lamitja.cat/assets/images/el-tast-mitja-2026-social.jpg"
+    ]
+   ],
+   "imgs": [
+    [
+     "/assets/images/el-tast-logo.svg",
+     "El Tast de la Mitja",
+     "255",
+     "179",
+     "el-svg site-logo"
+    ],
+    [
+     "/assets/images/flags/ca.svg",
+     "",
+     "24",
+     "16",
+     "language-flag"
+    ],
+    [
+     "/assets/images/flags/es.svg",
+     "",
+     "24",
+     "16",
+     "language-flag"
+    ],
+    [
+     "/assets/images/flags/en.svg",
+     "",
+     "24",
+     "16",
+     "language-flag"
+    ],
+    [
+     "/assets/images/flags/fr.svg",
+     "",
+     "24",
+     "16",
+     "language-flag"
+    ],
+    [
+     "/assets/images/el-tast-logo.svg",
+     "El Tast de la Mitja",
+     "255",
+     "179",
+     "el-svg site-logo"
+    ],
+    [
+     "/assets/images/responsive/fondo-el-tast-01-720.webp",
+     "Participants a El Tast de la Mitja",
+     "1600",
+     "1067",
+     "el-image css-filter size-full"
+    ],
+    [
+     "/assets/images/responsive/camiseta-maniqui-tast-2026-720.webp",
+     "Samarreta tècnica Mizuno d’El Tast de la Mitja 2026",
+     "1160",
+     "985",
+     "el-image css-filter size-full"
+    ],
+    [
+     "/assets/images/responsive/sagales-bus-720.webp",
+     "Autocar Sagalés per al servei de bus de la cursa",
+     "1000",
+     "1000",
+     "el-image css-filter size-full"
+    ],
+    [
+     "/assets/images/responsive/rodalies-barcelona-720.webp",
+     "Tren de Rodalies de Barcelona",
+     "1000",
+     "1000",
+     "el-image css-filter size-full"
+    ],
+    [
+     "/assets/images/responsive/voluntaris-720.webp",
+     "Equip de voluntaris",
+     "1000",
+     "1000",
+     "el-image css-filter size-full"
+    ],
+    [
+     "/assets/images/responsive/avituallaments-720.webp",
+     "Avituallament amb gots d’aigua per als corredors",
+     "1000",
+     "1000",
+     "el-image css-filter size-full"
+    ],
+    [
+     "/assets/images/responsive/vestuaris-720.webp",
+     "Taquilles per al servei de guarda-roba",
+     "1000",
+     "1000",
+     "el-image css-filter size-full"
+    ],
+    [
+     "/assets/images/2026/04/logo-kh7.webp",
+     "KH-7",
+     "375",
+     "300",
+     "el-image css-filter size-full"
+    ],
+    [
+     "/assets/images/2026/04/logo-agora.webp",
+     "Àgora",
+     "300",
+     "240",
+     "el-image css-filter size-full"
+    ],
+    [
+     "/assets/images/2026/04/logo-smurfitkappa.webp",
+     "Smurfit Kappa",
+     "300",
+     "240",
+     "el-image css-filter size-full"
+    ],
+    [
+     "/assets/images/2026/04/logo-la-mutua-granollers.webp",
+     "La Mútua de Granollers",
+     "300",
+     "240",
+     "el-image css-filter size-full"
+    ],
+    [
+     "/assets/images/2026/04/logo-estabanell.webp",
+     "Estabanell",
+     "300",
+     "240",
+     "el-image css-filter size-full"
+    ],
+    [
+     "/assets/images/2026/04/logo-aj-granollers.webp",
+     "Ajuntament de Granollers",
+     "300",
+     "240",
+     "el-image imagen-galeria-logos css-filter"
+    ],
+    [
+     "/assets/images/2026/04/logo-aj-canovelles.webp",
+     "Ajuntament de Canovelles",
+     "300",
+     "240",
+     "el-image imagen-galeria-logos css-filter"
+    ],
+    [
+     "/assets/images/2026/04/logo-aj-lesfranqueses.webp",
+     "Ajuntament de les Franqueses",
+     "300",
+     "240",
+     "el-image imagen-galeria-logos css-filter"
+    ],
+    [
+     "/assets/images/2026/04/logo-aj-garriga.webp",
+     "Ajuntament de la Garriga",
+     "300",
+     "240",
+     "el-image imagen-galeria-logos css-filter"
+    ],
+    [
+     "/assets/images/2026/04/logo-consell.webp",
+     "Consell Comarcal del Vallès Oriental",
+     "300",
+     "240",
+     "el-image imagen-galeria-logos css-filter"
+    ],
+    [
+     "/assets/images/2026/04/logo-gencat.webp",
+     "Generalitat de Catalunya",
+     "300",
+     "240",
+     "el-image imagen-galeria-logos css-filter"
+    ],
+    [
+     "/assets/images/2026/04/logo-dipu.webp",
+     "Diputació de Barcelona",
+     "300",
+     "240",
+     "el-image imagen-galeria-logos css-filter"
+    ],
+    [
+     "/assets/images/2026/04/logo-rodalies-renfe.webp",
+     "Rodalies de Catalunya · Renfe",
+     "300",
+     "240",
+     "el-image imagen-galeria-logos css-filter"
+    ],
+    [
+     "/assets/images/2026/04/logo-gasp.webp",
+     "GASP",
+     "300",
+     "240",
+     "el-image imagen-galeria-logos css-filter"
+    ],
+    [
+     "/assets/images/2026/04/logo-coca-cola.webp",
+     "Coca-Cola",
+     "300",
+     "240",
+     "el-image imagen-galeria-logos css-filter"
+    ],
+    [
+     "/assets/images/2026/04/logo-coaliment.webp",
+     "Coaliment",
+     "300",
+     "240",
+     "el-image imagen-galeria-logos css-filter"
+    ],
+    [
+     "/assets/images/2026/10/logo-finisher-26.webp",
+     "Finisher",
+     "300",
+     "240",
+     "el-image imagen-galeria-logos css-filter"
+    ]
+   ],
+   "bg": []
+  },
+  "https://www.laconquistadelaalmendra.com/": {
+   "final": "https://www.laconquistadelaalmendra.com/",
+   "best": [
+    null,
+    0
+   ],
+   "metas": {
+    "og:image": "",
+    "twitter:image": null
+   },
+   "ld_img": [],
+   "imgs": [
+    [
+     "https://www.buscametas.com/webs/88/logo_portada.png",
+     "",
+     null,
+     null,
+     "col-12 col-sm-12"
+    ],
+    [
+     "https://www.buscametas.com/webs/88/patrocinador_26_20240718_142622.png",
+     "",
+     null,
+     null,
+     "w-100 d-flex"
+    ],
+    [
+     "https://www.buscametas.com/webs/88/patrocinador_25_20240731_162553.png",
+     "",
+     null,
+     null,
+     "w-100 d-flex"
+    ],
+    [
+     "https://www.buscametas.com/webs/88/patrocinador_24_20240718_105810.png",
+     "",
+     null,
+     null,
+     "w-100 d-flex"
+    ],
+    [
+     "https://www.buscametas.com/webs/88/patrocinador_57_20260417_122552.png",
+     "",
+     null,
+     null,
+     "w-100 d-flex"
+    ],
+    [
+     "https://www.buscametas.com/webs/88/patrocinador_31_20240731_112002.png",
+     "",
+     null,
+     null,
+     "w-100 d-flex"
+    ],
+    [
+     "https://www.buscametas.com/webs/88/presentacion__20261005_084003.jpg",
+     "",
+     null,
+     null,
+     ""
+    ],
+    [
+     "https://www.buscametas.com/webs/88/noticia_22_20261020_140823.png",
+     "",
+     null,
+     null,
+     ""
+    ],
+    [
+     "https://www.buscametas.com/webs/88/noticia_21_20261016_101127.png",
+     "",
+     null,
+     null,
+     ""
+    ],
+    [
+     "https://www.buscametas.com/webs/88/noticia_20_20260720_055703.png",
+     "",
+     null,
+     null,
+     ""
+    ],
+    [
+     "https://www.buscametas.com/webs/88/patrocinador_16_20240712_112047.png",
+     "",
+     null,
+     null,
+     ""
+    ],
+    [
+     "https://www.buscametas.com/webs/88/patrocinador_50_20250506_155955.png",
+     "",
+     null,
+     null,
+     ""
+    ],
+    [
+     "https://www.buscametas.com/webs/88/patrocinador_13_20240712_112005.png",
+     "",
+     null,
+     null,
+     ""
+    ],
+    [
+     "https://www.buscametas.com/webs/88/patrocinador_14_20240731_162612.png",
+     "",
+     null,
+     null,
+     ""
+    ],
+    [
+     "https://www.buscametas.com/webs/88/patrocinador_15_20240712_112022.png",
+     "",
+     null,
+     null,
+     ""
+    ],
+    [
+     "https://www.buscametas.com/webs/88/patrocinador_17_20240712_112130.png",
+     "",
+     null,
+     null,
+     ""
+    ],
+    [
+     "https://www.buscametas.com/webs/88/patrocinador_18_20241018_090420.png",
+     "",
+     null,
+     null,
+     ""
+    ],
+    [
+     "https://www.buscametas.com/webs/88/patrocinador_20_20240712_112220.png",
+     "",
+     null,
+     null,
+     ""
+    ],
+    [
+     "https://www.buscametas.com/webs/88/patrocinador_37_20240925_101820.png",
+     "",
+     null,
+     null,
+     ""
+    ],
+    [
+     "https://www.buscametas.com/webs/88/patrocinador_42_20241010_090201.png",
+     "",
+     null,
+     null,
+     ""
+    ],
+    [
+     "https://www.buscametas.com/webs/88/patrocinador_43_20250506_115504.jpg",
+     "",
+     null,
+     null,
+     ""
+    ],
+    [
+     "https://www.buscametas.com/webs/88/patrocinador_44_20250506_115547.png",
+     "",
+     null,
+     null,
+     ""
+    ],
+    [
+     "https://www.buscametas.com/webs/88/patrocinador_49_20250530_120201.png",
+     "",
+     null,
+     null,
+     ""
+    ],
+    [
+     "https://www.buscametas.com/webs/88/patrocinador_48_20250701_170709.png",
+     "",
+     null,
+     null,
+     ""
+    ],
+    [
+     "https://www.buscametas.com/webs/88/patrocinador_54_20251002_115343.png",
+     "",
+     null,
+     null,
+     ""
+    ],
+    [
+     "https://www.buscametas.com/webs/88/patrocinador_47_20250701_170741.png",
+     "",
+     null,
+     null,
+     ""
+    ],
+    [
+     "https://www.buscametas.com/webs/88/patrocinador_58_20260610_083524.png",
+     "",
+     null,
+     null,
+     ""
+    ],
+    [
+     "https://www.buscametas.com/webs/88/patrocinador_56_20251008_114839.png",
+     "",
+     null,
+     null,
+     ""
+    ],
+    [
+     "https://www.buscametas.com/webs/88/patrocinador_55_20251007_162631.png",
+     "",
+     null,
+     null,
+     ""
+    ],
+    [
+     "https://www.buscametas.com/webs/88/patrocinador_40_20240925_102115.png",
+     "",
+     null,
+     null,
+     ""
+    ]
+   ],
+   "bg": [
+    "https://www.buscametas.com/webs/88/portada_20240612_141836.jpg"
+   ]
+  },
+  "https://runnersporthuelva.com/21k/": {
+   "final": "https://runnersporthuelva.com/21k/",
+   "best": [
+    null,
+    0
+   ],
+   "metas": {
+    "og:image": null,
+    "twitter:image": null
+   },
+   "ld_img": [],
+   "imgs": [
+    [
+     "logo/light.png",
+     "",
+     null,
+     null,
+     "default-logo"
+    ],
+    [
+     "logo/dark.png",
+     "Runner Sport Huelva",
+     null,
+     null,
+     "alt-logo"
+    ],
+    [
+     "logo/dark.png",
+     "Runner Sport Huelva",
+     null,
+     null,
+     "mobile-logo"
+    ],
+    [
+     "ficheros/slider_21k/21k-huelva_1.jpg",
+     "21K Huelva",
+     null,
+     null,
+     "mb-30px rounded-10px shadow-lg d-none d-"
+    ],
+    [
+     "ficheros/introduccion_21k/una-21k-pensada-para-correr-rapido-y-disfrutar-huelva_1.jpg",
+     "Salida de la 21K Huelva",
+     null,
+     null,
+     "border-radius-10px"
+    ],
+    [
+     "ficheros/recorrido_inicio_21k/un-circuito-rapido-urbano-y-pensado-para-disfrutar-cada-kilometro_1.jpg",
+     "21k Huelva",
+     null,
+     null,
+     "w-100 border-radius-10px"
+    ],
+    [
+     "ficheros/patrocinadores/ayuntamiento-huelva-blanco_29.png",
+     "Ayuntamiento de Huelva",
+     null,
+     null,
+     "img-fluid w-100"
+    ],
+    [
+     "ficheros/patrocinadores/huelva-deporte_36.png",
+     "Huelva deporte",
+     null,
+     null,
+     "img-fluid"
+    ],
+    [
+     "ficheros/patrocinadores/diputacion-provincial-de-huelva_13.png",
+     "Diputacion",
+     null,
+     null,
+     "img-fluid"
+    ],
+    [
+     "ficheros/patrocinadores/caixabank_18.png",
+     "Caixa",
+     null,
+     null,
+     "img-fluid"
+    ],
+    [
+     "ficheros/patrocinadores/hyndai-syrluz_7.jpg",
+     "Hyndai SYRLUZ",
+     null,
+     null,
+     "img-fluid"
+    ],
+    [
+     "ficheros/patrocinadores/hospital-quiron-salud-huelva_8.png",
+     "Hospital Quiron salud Huelva",
+     null,
+     null,
+     "img-fluid"
+    ],
+    [
+     "ficheros/patrocinadores/patriso-confort_5.jpg",
+     "Patrisdo confort",
+     null,
+     null,
+     "img-fluid"
+    ],
+    [
+     "ficheros/patrocinadores/avantlex_6.jpg",
+     "Avantlex",
+     null,
+     null,
+     "img-fluid"
+    ],
+    [
+     "ficheros/patrocinadores/avatel_2.png",
+     "Avatel",
+     null,
+     null,
+     "img-fluid"
+    ],
+    [
+     "ficheros/patrocinadores/gatea-soluciones_10.png",
+     "Gatea soluciones",
+     null,
+     null,
+     "img-fluid"
+    ],
+    [
+     "ficheros/patrocinadores/idisur_25.png",
+     "Idisur",
+     null,
+     null,
+     "img-fluid"
+    ],
+    [
+     "ficheros/patrocinadores/glup_37.png",
+     "Glup",
+     null,
+     null,
+     "img-fluid"
+    ],
+    [
+     "ficheros/alojamientos_21k/hotel-nh-luz-huelva_1.jpg",
+     "Hotel NH Luz Huelva",
+     null,
+     null,
+     "w-100"
+    ],
+    [
+     "ficheros/alojamientos_21k/hotel-exe-tartessos_2.jpg",
+     "Hotel EXE Tartessos",
+     null,
+     null,
+     "w-100"
+    ],
+    [
+     "ficheros/alojamientos_21k/ac-hotel-by-marriott_3.jpg",
+     "AC Hotel by Marriott",
+     null,
+     null,
+     "w-100"
+    ],
+    [
+     "images/demo-modern-business-object-blur-01.jpg",
+     "",
+     null,
+     null,
+     "position-absolute left-minus-100px botto"
+    ],
+    [
+     "images/demo-modern-business-bg-01.png",
+     "",
+     null,
+     null,
+     "position-absolute z-index-1 left-0px top"
+    ],
+    [
+     "ficheros/clasificaciones_21k/clasificacion-21k-huelva-2025_1.jpg",
+     "Clasificacion 21K Huelva 2025",
+     null,
+     null,
+     ""
+    ],
+    [
+     "images/demo-modern-business-object-blur-01.jpg",
+     "",
+     null,
+     null,
+     "position-absolute left-minus-100px botto"
+    ],
+    [
+     "images/demo-modern-business-bg-01.png",
+     "",
+     null,
+     null,
+     "position-absolute z-index-1 left-0px top"
+    ],
+    [
+     "ficheros/clasificaciones_21k/clasificacion-21k-huelva-2024_2.jpg",
+     "Clasificacion 21K Huelva 2024",
+     null,
+     null,
+     ""
+    ],
+    [
+     "images/demo-modern-business-object-blur-01.jpg",
+     "",
+     null,
+     null,
+     "position-absolute left-minus-100px botto"
+    ],
+    [
+     "images/demo-modern-business-bg-01.png",
+     "",
+     null,
+     null,
+     "position-absolute z-index-1 left-0px top"
+    ],
+    [
+     "ficheros/clasificaciones_21k/clasificacion-21k-huelva-2023_3.jpg",
+     "Clasificacion 21K Huelva 2023",
+     null,
+     null,
+     ""
+    ]
+   ],
+   "bg": [
+    "'ficheros/slider_21k/21k-huelva_B_1.png'",
+    "'ficheros/banner_21k/haz-crecer-tu-marca-con-la-21k_1.jpg'",
+    "'images/demo-modern-business-gradient-bg-01.jpg'",
+    "'images/demo-modern-business-gradient-bg-01.jpg'",
+    "'images/demo-modern-business-gradient-bg-01.jpg'"
+   ]
+  },
+  "https://sportmaniacs.com/es/races/21k-ciudad-de-huelva-26": {
+   "final": "https://sportmaniacs.com/es/services/inscription/21k-ciudad-de-huelva-26",
+   "best": [
+    null,
+    0
+   ],
+   "metas": {
+    "og:image": null,
+    "twitter:image": null
+   },
+   "ld_img": [
+    "https://s3.eu-west-1.amazonaws.com/sm-fotos.sportmaniacs.com/back/resize/1920x410x0_default_dark.jpg"
+   ],
+   "imgs": [
+    [
+     "//sportmaniacs.com/images/logo.mini.svg",
+     "sportmaniacs logo",
+     "50",
+     "50",
+     ""
+    ]
+   ],
+   "bg": [
+    "'https://s3.eu-west-1.amazonaws.com/sm-fotos.sportmaniacs.com/back/resize/320x75x0_default_dark.jpg'"
+   ]
+  },
+  "https://cursasantgalderic.blogspot.com/": {
+   "final": "https://cursasantgalderic.blogspot.com/",
+   "best": [
+    null,
+    0
+   ],
+   "metas": {
+    "og:image": null,
+    "twitter:image": null
+   },
+   "ld_img": [],
+   "imgs": [
+    [
+     "//2.bp.blogspot.com/_p1CsSp5HIe0/SrD004loqEI/AAAAAAAAAA8/D6UHPSRyQt4/S226/escut+tavernoles.jpg",
+     "Organitza:",
+     "84",
+     "135",
+     ""
+    ],
+    [
+     "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGMNGaInzYx50kJuZq-3VcVk-BHhMjFFQHBeGx3m_dvSYq3cCGXWIaNdR80_llz72RMzAqC6f9XXCiMUGlySL9QKL-bhRNW3oKSMt",
+     "Amb el suport de:",
+     "150",
+     "72",
+     ""
+    ],
+    [
+     "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_H_gGVYYqOupjAc71Ji5rvJbazmlOmbywW-T1QXTPeq5qMGiW3UnCdCN2G5FNmZWuBBBEN638i8L_L4YwHsV-wXP-yp1DEBur-Af",
+     "",
+     "226",
+     "56",
+     ""
+    ],
+    [
+     "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRe5R7LhYZguLVa6YR8dCNyvDMqcQGdCPydUyZs3DZHW2X1rULqvJothDlAU5XrdsyxFocr8Awfp8EyB2CKh_AVSpp4GFl4WMcC1u",
+     ".",
+     "153",
+     "108",
+     ""
+    ],
+    [
+     "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhAX5B2keP37PD0wAd7efwmdBo790Nf7K0ZP5r9NwY4OVJsl0VxOqGo2_NW39BCuqs5lfoIgoqZ83_y95g2S3nCyw0sgdTM1gWxSl",
+     "Col·labora:",
+     "153",
+     "49",
+     ""
+    ],
+    [
+     "//3.bp.blogspot.com/_p1CsSp5HIe0/SrEA_MjP15I/AAAAAAAAABc/1tjA0mPuGI0/S226/lolgo+2.gif",
+     "",
+     "150",
+     "50",
+     ""
+    ]
+   ],
+   "bg": [
+    "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB9sLFwMeCjjhcOMAAAD+SURBVDjLtZSvTgNBEIe/WRRnm3U8RC1neQdsm1zSBIU9VVF1FkUguQQsD9ITmD7ECZIJSE4OZo9stoVjC/zc7ky+zH9hXwVwDpTAWWLrgS3QAe8AZgaAJI5zYAmc8r0G4AHYHQKVwII8PZrZFsBFkeRCABYiMh9BRUhnSkPTNCtVXYXURi1FpBDgArj8QU1eVXUzfnjv7yP7kwu1mYrkWlU33vs1QNu2qU8pwN0UpKoqokjWwCztrMuBhEhmh8bD5UDqur75asbcX0BGUB9/HAMB+r32hznJgXy2v0sGLBcyAJ1EK3LFcbo1s91JeLwAbwGYu7TP/3ZGfnXYPgAVNngtqatUNgAAAABJRU5ErkJggg==",
+    "\\/\\/themes.googleusercontent.com\\/image?id=1o3rYOP4CoJi2d4tsMr33qA6N4TvK7Nq3V2bJSXol8oFG_GQGGE100Oo98qN27bOvpkce",
+    "\\/\\/themes.googleusercontent.com\\/image?id=1o3rYOP4CoJi2d4tsMr33qA6N4TvK7Nq3V2bJSXol8oFG_GQGGE100Oo98qN27bOvpkce&options=w200",
+    "\\/\\/themes.googleusercontent.com\\/image?id=1o3rYOP4CoJi2d4tsMr33qA6N4TvK7Nq3V2bJSXol8oFG_GQGGE100Oo98qN27bOvpkce&options=w400",
+    "\\/\\/themes.googleusercontent.com\\/image?id=1o3rYOP4CoJi2d4tsMr33qA6N4TvK7Nq3V2bJSXol8oFG_GQGGE100Oo98qN27bOvpkce&options=w800",
+    "\\/\\/themes.googleusercontent.com\\/image?id=1o3rYOP4CoJi2d4tsMr33qA6N4TvK7Nq3V2bJSXol8oFG_GQGGE100Oo98qN27bOvpkce&options=w1200",
+    "\\/\\/themes.googleusercontent.com\\/image?id=1o3rYOP4CoJi2d4tsMr33qA6N4TvK7Nq3V2bJSXol8oFG_GQGGE100Oo98qN27bOvpkce&options=w1600"
+   ]
+  },
+  "https://running.life/en/search?q=daganzo": "sin acceso",
+  "https://running.life/es/buscar?q=daganzo": "sin acceso"
+ }
 }
