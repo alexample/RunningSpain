@@ -175,6 +175,10 @@ input[type=search]{flex:1 1 180px}
 .up:hover{color:var(--ink);border-color:var(--muted)}
 .up:disabled{cursor:default;opacity:.7}
 .upd:disabled{cursor:default}
+.note.warn{color:var(--ink);background:color-mix(in srgb,#f2b100 16%,transparent);border-radius:8px;padding:6px 10px}
+.mas{display:flex;flex-direction:column;align-items:center;gap:2px;margin:24px auto 8px;padding:12px 28px;border:1px solid var(--line);border-radius:999px;background:var(--surface);color:inherit;font:inherit;font-weight:600;cursor:pointer}
+.mas small{font-weight:400;color:var(--muted);font-size:12px}
+.mas:hover{border-color:currentColor}
 .empty{padding:40px 20px;text-align:center;color:var(--muted);border:1px dashed var(--line);border-radius:12px;margin-top:24px}
 footer{margin-top:40px;font-size:13px;color:var(--muted);max-width:70ch}
 @media (prefers-reduced-motion:no-preference){.race{transition:transform .15s}.race:hover{transform:translateY(-2px)}}
@@ -242,6 +246,7 @@ function favBtn(r){const b=el("button",{class:"fav",type:"button","aria-pressed"
   return b}
 const NEW_DAYS=7; // la pestaña "Carreras nuevas" muestra las añadidas en los últimos 7 días
 let tab="all";
+const PAGINA=30;let mostrar=PAGINA,firmaLista="",verId=null;
 let races=[], meta=null, dist="all", region="", q="", onlyNews=false, news={added:new Set(),updated:{}};
 const FLAG={"Andalucía": "andalucia", "Aragón": "aragon", "Asturias": "asturias", "Islas Baleares": "islas-baleares", "Canarias": "canarias", "Cantabria": "cantabria", "Castilla y León": "castilla-y-leon", "Castilla-La Mancha": "castilla-la-mancha", "Cataluña": "cataluna", "Comunidad Valenciana": "comunidad-valenciana", "Extremadura": "extremadura", "Galicia": "galicia", "Comunidad de Madrid": "comunidad-de-madrid", "Región de Murcia": "region-de-murcia", "Navarra": "navarra", "País Vasco": "pais-vasco", "La Rioja": "la-rioja", "Ceuta": "ceuta", "Melilla": "melilla"};
 function flag(region){const f=FLAG[region];if(!f)return null;
@@ -353,6 +358,9 @@ function el(tag,attrs={},...kids){const e=document.createElement(tag);
   for(const[k,v]of Object.entries(attrs)){if(k==="class")e.className=v;else if(k==="style")e.setAttribute("style",v);else e.setAttribute(k,v)}
   for(const c of kids){if(c==null)continue;e.append(c.nodeType?c:document.createTextNode(c))}return e}
 
+// dos calendarios con fechas distintas para la misma carrera: se enseña la otra para que se confirme
+function otraFecha(r){if(!r.otraFecha)return null;const d=parseDate(r.otraFecha);
+  return el("p",{class:"note warn"},"⚠️ Otra fuente indica el "+DAYS[d.getDay()]+" "+d.getDate()+" de "+MONTHS[d.getMonth()]+". Confírmalo en la web oficial.")}
 function card(r){
   const k=kind(r), d=parseDate(r.date);
   const bib=el("div",{class:"bib",style:"--kc:"+kcolor(k)});
@@ -383,7 +391,7 @@ function card(r){
   if(news.added.has(r.id))badge=el("span",{class:"badge new"},"Nueva");
   else if(news.updated[r.id])badge=el("span",{class:"badge chg"},"Actualizada: "+news.updated[r.id].map(f=>FIELD[f]||f).join(", "));
   return el("article",{class:"race",id:"c-"+r.id,style:"--kc:"+kcolor(k)},bib,
-    el("div",{class:"info"},badge,el("div",{class:"ttl"},el("h3",{},r.name),favBtn(r)),tags,dl,r.note?el("p",{class:"note"},r.note):null,actions,
+    el("div",{class:"info"},badge,el("div",{class:"ttl"},el("h3",{},r.name),favBtn(r)),tags,dl,r.note?el("p",{class:"note"},r.note):null,otraFecha(r),actions,
       revisada(r),el("div",{class:"foot"},stars(r),shareBtn(r))));
 }
 
@@ -417,14 +425,22 @@ function render(){
     ?"Ninguna de tus carreras coincide con estos filtros."
     :"Toca la ☆ de una carrera para guardarla aquí."+(window.AndroidApp?" La app te recordará la víspera, si la inscripción sigue abierta una semana antes y si cambia la fecha o la hora.":"")));return}
   if(!list.length){main.append(el("div",{class:"empty"},"Ninguna carrera coincide con estos filtros. Prueba con otra distancia o comunidad."));return}
-  if(tab==="new"){renderNew(main,list);return}
+  // paginación: se pintan PAGINA carreras y un botón para ver más (con muchas, la página iba muy pesada)
+  const firma=tab+"|"+dist+"|"+region+"|"+nq+"|"+onlyNews;
+  if(firma!==firmaLista){firmaLista=firma;mostrar=PAGINA}
+  if(verId){const i=list.findIndex(x=>x.id===verId);if(i>=mostrar)mostrar=Math.ceil((i+1)/PAGINA)*PAGINA;verId=null}
+  const vis=list.slice(0,mostrar);
+  const mas=()=>{const quedan=list.length-vis.length;if(quedan<=0)return;
+    const b=el("button",{type:"button",class:"mas"},"Mostrar "+Math.min(PAGINA,quedan)+" más",el("small",{},"Ves "+vis.length+" de "+list.length));
+    b.onclick=()=>{mostrar+=PAGINA;const y=window.scrollY;render();window.scrollTo(0,y)};main.append(b)};
+  if(tab==="new"){renderNew(main,vis,list);mas();return}
   let cur=null,grid=null;
-  for(const r of list){const d=parseDate(r.date),key=d.getFullYear()+"-"+d.getMonth();
+  for(const r of vis){const d=parseDate(r.date),key=d.getFullYear()+"-"+d.getMonth();
     if(key!==cur){cur=key;const n=list.filter(x=>{const y=parseDate(x.date);return y.getFullYear()===d.getFullYear()&&y.getMonth()===d.getMonth()}).length;
       grid=el("div",{class:"grid"});
       main.append(el("section",{class:"month"},el("h2",{},MONTHS[d.getMonth()]+" "+d.getFullYear(),el("small",{},n+(n===1?" carrera":" carreras"))),grid))}
     grid.append(card(r))}
-}
+  mas()}
 
 // #nuevas, #mis o #c-<id> (una carrera concreta: se muestra, se resalta y se lleva a la vista)
 function abrirHash(){
@@ -435,7 +451,7 @@ function abrirHash(){
   if(h.startsWith("#c-")){
     const id=h.slice(3);
     if(!races.some(r=>r.id===id))return render();
-    dist="all";region="";q="";onlyNews=false;
+    dist="all";region="";q="";onlyNews=false;verId=id;
     document.querySelectorAll(".chip").forEach(c=>c.setAttribute("aria-pressed",String(c.dataset.d==="all")));
     document.getElementById("region").value="";document.getElementById("q").value="";
     setTab("all",false);
@@ -448,12 +464,12 @@ function iso(d){return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0"
 function newSince(){const d=new Date();d.setHours(0,0,0,0);d.setDate(d.getDate()-NEW_DAYS);return iso(d)}
 function addedLabel(a){const t=new Date();t.setHours(0,0,0,0);const d=parseDate(a),diff=Math.round((t-d)/864e5);
   return diff<=0?"Añadidas hoy":diff===1?"Añadidas ayer":"Añadidas el "+DAYS[d.getDay()]+" "+d.getDate()+" de "+MONTHS[d.getMonth()]}
-function renderNew(main,list){
-  const groups=new Map();
+function renderNew(main,list,todas){
+  const groups=new Map(),tot=new Map();(todas||list).forEach(r=>tot.set(r.addedAt,(tot.get(r.addedAt)||0)+1));
   [...list].sort((a,b)=>b.addedAt.localeCompare(a.addedAt)||(a.date+(a.time||"99")).localeCompare(b.date+(b.time||"99")))
     .forEach(r=>{if(!groups.has(r.addedAt))groups.set(r.addedAt,[]);groups.get(r.addedAt).push(r)});
   for(const[a,rs]of groups){const grid=el("div",{class:"grid"});rs.forEach(r=>grid.append(card(r)));
-    main.append(el("section",{class:"month"},el("h2",{},el("span",{class:"added"},addedLabel(a)),el("small",{},rs.length+(rs.length===1?" carrera":" carreras"))),grid))}
+    main.append(el("section",{class:"month"},el("h2",{},el("span",{class:"added"},addedLabel(a)),el("small",{},tot.get(a)+(tot.get(a)===1?" carrera":" carreras"))),grid))}
 }
 function setTab(t,push){tab=t;if(t==="new")onlyNews=false;
   document.querySelectorAll(".tab").forEach(b=>b.setAttribute("aria-selected",String(b.dataset.tab===t)));
@@ -513,7 +529,10 @@ async function cargarDatos(){
     races=data.races||[];
     meta={updatedAt:data.updatedAt,lastRun:data.lastRun||null};
     if(data.lastRun)news={added:new Set(data.lastRun.added||[]),updated:data.lastRun.updated||{}};
-    loadFavs();fillRegions();setStatus();countNew();countFav();
+    loadFavs();
+    // fichas repetidas que el robot juntó en una: la favorita pasa a la ficha que queda
+    {let mv=false;for(const r of races)for(const i of(r.ids||[]))if(favs.has(i)&&!favs.has(r.id)){favs.add(r.id);mv=true}if(mv)saveFavs()}
+    fillRegions();setStatus();countNew();countFav();
     if(offline)document.getElementById("list").before(el("div",{class:"news"},"Sin conexión: se muestran los últimos datos descargados."));
     abrirHash();
     window.addEventListener("hashchange",abrirHash);

@@ -256,7 +256,7 @@ class MediaTests(unittest.TestCase):
     def test_tags_follow_km(self):
         self.assertEqual(parse.tags_from_km("21,097 km · 10 km"), ["21K", "10K"])
         self.assertEqual(parse.tags_from_km("7,5 km"), ["7,5K"])
-        db = {"races": [{"id": "a", "name": "Media Maratón de X", "date": "2026-11-01", "km": "10 km", "distances": ["21K"]}]}
+        db = {"kmV2": "x", "races": [{"id": "a", "name": "Carrera de X", "date": "2026-11-01", "km": "10 km", "distances": ["21K"]}]}
         main.tidy(db)
         self.assertEqual(db["races"][0]["distances"], ["10K"])
 
@@ -406,7 +406,8 @@ class ShareTests(unittest.TestCase):
         code = share.short_code(r["id"])
         self.assertLessEqual(len(code), 7)
         self.assertEqual(share.share_url(r), f"https://alexample.github.io/RunningSpain/c/{code}.html")
-        self.assertIn(share.share_url(r), xpost.compose(r, con_enlace=True))
+        with mock.patch("scraper.shorten.load", return_value={}):
+            self.assertIn(share.share_url(r), xpost.compose(r, con_enlace=True))
         self.assertIn('content="https://alexample.github.io/RunningSpain/#c-carrera-popular-aesan-2026-1024"', share.page(r).replace("url=", 'content="'))
 
 
@@ -423,6 +424,66 @@ class ShortenTests(unittest.TestCase):
             shorten.ensure(races, limit=5, log=lambda m: None)
             self.assertEqual(sh.call_count, 2)             # «b» no se vuelve a acortar
             self.assertIn(shorten.load()["a"], xpost.compose(races[1], con_enlace=True))
+
+
+class LimpiezaTests(unittest.TestCase):
+    """Duplicadas, km y carteles (octubre 2026)."""
+
+    def test_km_ignora_avituallamientos_y_otras_carreras(self):
+        ex = parse.extract_km
+        self.assertEqual(ex("10 KILÓMETROS HOMOLOGADOS 05 KM AVITUALLAMIENTO 01 KM 02 KM 03 KM 04 KM", "Derbi"), "10 km")
+        self.assertEqual(ex("x" * 300 + " 5 km Cursa Events nearby Nov 14 Avià | 27 km from Solsona Trail Run 18 km", "Cursa X"), "5 km")
+        self.assertEqual(ex("Distancia de 21,097 km. Avituallamientos en el km 5, 10 y 15.", "Media Maratón de T"), "21,097 km")
+        self.assertEqual(ex("Viento 9.5 km/h, 19 km/h", "10K Halloween"), "10 km")
+        self.assertEqual(ex("Un recorrido de 7,5 km. Avituallamiento a los 4 km. Situado a 2 km del centro.", "Carrera X"), "7,5 km")
+        self.assertTrue(parse.km_dudosos("27 km · 22 km · 16 km · 10 km", "10K de Carabanchel"))
+        self.assertTrue(parse.km_dudosos("10 km", "Media Maratón de Talavera"))
+        self.assertFalse(parse.km_dudosos("21,097 km · 10 km", "Media Maratón de X"))
+
+    def test_misma_carrera_con_fechas_distintas(self):
+        a = {"id": "a", "name": "Cursa Popular Vila de Sant Boi", "city": "Sant Boi de Llobregat", "date": "2026-11-15",
+             "source": "https://running.life/en/event/x"}
+        b = {"id": "b", "name": "Cursa Popular Vila de Sant Boi", "city": "Sant Boi de Llobregat", "date": "2026-11-22",
+             "source": "https://sportplan.es/es/events/x", "banner": "https://x.es/cartel.jpg"}
+        c = {"id": "c", "name": "5K de Sant Boi", "city": "Sant Boi de Llobregat", "date": "2026-12-05", "source": "https://y"}
+        d = {"id": "d", "name": "10K de Sant Boi", "city": "Sant Boi de Llobregat", "date": "2026-12-05", "source": "https://z"}
+        self.assertTrue(main.same_race_loose(a, b))
+        self.assertFalse(main.same_race_loose(c, d))
+        db = {"races": [a, b, c, d]}
+        self.assertEqual(main.merge_dups(db, {"added": [], "updated": {}}), 1)
+        self.assertEqual(len(db["races"]), 3)
+        kept = db["races"][0] if db["races"][0]["id"] in ("a", "b") else next(r for r in db["races"] if r["id"] in ("a", "b"))
+        self.assertEqual(kept["date"], "2026-11-15")          # Sportplan ya no se revisa: gana running.life
+        self.assertEqual(kept["otraFecha"], "2026-11-22")
+        self.assertEqual(kept["banner"], "https://x.es/cartel.jpg")
+
+    def test_la_web_oficial_decide_la_fecha(self):
+        a = {"id": "a", "name": "La Palauenca", "city": "Palau", "date": "2026-11-15", "official": True, "url": "https://palauenca.cat/",
+             "source": "https://running.life/en/event/p"}
+        b = {"id": "b", "name": "La Palauenca", "city": "Palau", "date": "2026-11-22", "source": "https://sportplan.es/es/events/p"}
+        db = {"races": [a, b]}
+        with mock.patch.object(enrich, "fetch_text", return_value=("Diumenge 22 de novembre de 2026, sortida a les 10h", None, "")):
+            main.merge_dups(db)
+        self.assertEqual(db["races"][0]["date"], "2026-11-22")
+        self.assertTrue(db["races"][0]["fechaOk"])
+        self.assertFalse(db["races"][0].get("otraFecha"))
+        self.assertTrue(parse.date_in_text("2026-11-22", "NOV 22 2026"))
+        self.assertFalse(parse.date_in_text("2026-11-15", "domingo 22 de noviembre"))
+
+    def test_carteles(self):
+        h = ('<img src="https://l.net/storage/miniaturas/1min.jpg" alt="Cartel carrera">'
+             '<img src="https://l.net/storage/carteles/1cartelCuatroMillas26.jpg" alt="...">')
+        self.assertEqual(parse.best_image(h, "https://l.net/c", "Cuatro Millas")[0], "https://l.net/storage/carteles/1cartelCuatroMillas26.jpg")
+        self.assertEqual(parse.best_image('<meta property="og:image" content="https://e.cat/img/tast-2026-social.jpg">', "https://e.cat/")[0],
+                         "https://e.cat/img/tast-2026-social.jpg")
+        self.assertEqual(parse.best_image('<meta property="og:image" content="https://www.carreraspopulares.com/calendario/carteles_def/cartel_def_3.jpg">'
+                                          '<img class="event-card-thumb" src="https://x.com/Cartel-otra.jpg">', "https://r.life/e"), (None, 0))
+        self.assertEqual(parse.best_image('<img src="f/21k-huelva_1.jpg" alt="21K Huelva">', "https://h.com/21k/", "21K Ciudad de Huelva")[0],
+                         "https://h.com/21k/f/21k-huelva_1.jpg")
+        db = {"races": [{"id": str(i), "name": f"Carrera {i}", "date": "2026-11-01",
+                         "banner": "https://sportmaniacs.com/images/share/sportmaniacs-race.jpg"} for i in range(2)]}
+        main.tidy(db)
+        self.assertFalse(any(r.get("banner") for r in db["races"]))
 
 
 if __name__ == "__main__":

@@ -164,7 +164,7 @@ def read_event_page(cand: dict, today: date) -> dict | None:
         return None
     events = parse.jsonld_events(html)
     f = parse.event_fields(events[0]) if events else {}
-    text = parse.page_text(html)[:6000]
+    text = parse.own_part(parse.page_text(html))[:6000]
     h1 = parse.soup(html).find("h1")
     h1 = h1.get_text(" ", strip=True) if h1 else ""
     hint = cand.get("name_hint") or ""
@@ -214,10 +214,10 @@ def read_event_page(cand: dict, today: date) -> dict | None:
     }
 
 
-def _media(html: str, final: str) -> dict:
+def _media(html: str, final: str, name: str = "") -> dict:
     """Cartel y recorrido que aparezcan en la página."""
     out = {}
-    img, score = parse.best_image(html, final)
+    img, score = parse.best_image(html, final, name)
     if img:
         out["banner"], out["bannerScore"] = img, score
     # en webs de calendarios solo valen enlaces claros (Strava, Wikiloc, GPX…): sus «ruta» son otras carreras
@@ -227,6 +227,6 @@ def _media(html: str, final: str) -> dict:
     return out
 
 
-def read_media(url: str) -> dict:
+def read_media(url: str, name: str = "") -> dict:
     html, final, _ = net.get(url)
-    return _media(html, final) if html else {}
+    return _media(html, final, name) if html and not isinstance(html, bytes) else {}

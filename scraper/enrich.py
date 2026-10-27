@@ -112,7 +112,7 @@ def needs_work(r: dict, today: date) -> bool:
     if r.get("locked"):
         return False
     complete = (r.get("official") and r.get("price") and r.get("time") and r.get("regulation")
-                and r.get("banner") and r.get("km"))
+                and r.get("banner") and r.get("km") and not r.get("otraFecha") and not r.get("kmRevisar"))
     if complete:
         return False
     last = r.get("checkedAt")
@@ -152,15 +152,26 @@ def from_sources(r: dict) -> dict:
         g = parse.guess_official(html, final)
         if g:
             found["official"].append(g)
-        text = parse.page_text(html)[:8000]
+        text = parse.own_part(parse.page_text(html))[:8000]
         found["time"] = found["time"] or parse.local_time(f.get("start", ""), r.get("region", "")) or parse.extract_time(text)
         found["price"] = found["price"] or f.get("price") or parse.extract_price(text)
-        found["km"] = found["km"] or parse.extract_km(text[:4000])
+        found["km"] = found["km"] or parse.extract_km(text[:4000], r.get("name", ""))
     return found
 
 
 def enrich(r: dict, today: date) -> dict:
     """Devuelve los campos nuevos que se han podido confirmar para la carrera r."""
+    if not r.get("kmRevisar"):
+        return _enrich(r, today)
+    # km leídos con la regla antigua: se vuelven a leer con la nueva; si no sale nada, se quedan los que había
+    upd = _enrich({k: v for k, v in r.items() if k != "km"}, today)
+    upd["kmRevisar"] = ""
+    if not upd.get("km"):
+        upd["km"] = r.get("km")
+    return upd
+
+
+def _enrich(r: dict, today: date) -> dict:
     upd = {"checkedAt": today.isoformat()}
     src = from_sources(r) if (not r.get("official") or not r.get("time") or not r.get("price") or not r.get("km")) else None
     url = r.get("url") if r.get("official") else None
@@ -178,6 +189,12 @@ def enrich(r: dict, today: date) -> dict:
     if not text and not html:
         _fill(upd, r, src)
         return upd
+    if r.get("otraFecha") and text:   # dos fuentes con fechas distintas: decide la web oficial si dice una sola
+        esta, otra = parse.date_in_text(r["date"], text), parse.date_in_text(r["otraFecha"], text)
+        if esta != otra:
+            if otra:
+                upd["date"] = r["otraFecha"]
+            upd["fechaOk"], upd["otraFecha"] = True, ""
     if not r.get("official"):
         upd.update({"url": final, "official": True, "nosite": False})
         if parse.is_signup_platform(final):
@@ -190,7 +207,7 @@ def enrich(r: dict, today: date) -> dict:
             upd["regulation"] = regulation
         upd["regResolved"] = upd["regChecked"] = today.isoformat()
     if html:
-        img, score = parse.best_image(html, final)
+        img, score = parse.best_image(html, final, r.get("name", ""))
         # el cartel de la web oficial gana si puntúa igual o mejor que el que ya hubiera
         if img and (not r.get("banner") or score >= (r.get("bannerScore") or 0)) and img != r.get("banner"):
             upd["banner"], upd["bannerScore"] = img, score
@@ -208,7 +225,7 @@ def enrich(r: dict, today: date) -> dict:
     full = (text + " " + reg_text)[:60000]
     price = r.get("price") or parse.extract_price(full)
     time_ = r.get("time") or parse.extract_time(full)
-    km = r.get("km") or parse.extract_km(text[:5000] + " " + reg_text[:5000])
+    km = r.get("km") or parse.extract_km(parse.own_part(text)[:5000] + " · " + reg_text[:5000], r.get("name", ""))
 
     if (not price or not time_) and full:
         ai = ask_llm(r.get("name", ""), r.get("date", ""), reg_text or text)

@@ -252,24 +252,36 @@ def og_image(html: str, base: str) -> str | None:
     return None
 
 
-_IMG_BAD = re.compile(r"logo|icon|favicon|sprite|avatar|default|placeholder|blank|pixel|loading|spinner|"
-                      r"share|social|og-image|og_image|banner-web|header-bg|bandera|flag|sponsor|patrocin|"
-                      r"\.svg|\.gif|\.ico|gravatar|emoji|badge|app-store|google-play|qr", re.I)
+_IMG_BAD_SOFT = re.compile(r"logo|icon|favicon|sprite|avatar|default|placeholder|blank|pixel|loading|spinner|bandera|flag|"
+                           r"sponsor|patrocin|\.svg|\.gif|\.ico|gravatar|emoji|badge|app-store|google-play|qr", re.I)
+_IMG_BAD = re.compile(_IMG_BAD_SOFT.pattern + r"|share|social|og-image|og_image|banner-web|header-bg", re.I)
+# imágenes genéricas de las plataformas (las mismas para cualquier carrera): nunca son el cartel
+IMG_GENERIC = re.compile(r"carteles_def|cartel_def|/images/share/|img-rrss|/default/|default_dark|sportmaniacs-race|"
+                         r"no-image|noimage|sin-imagen|sin_imagen|imagen-no-disponible", re.I)
 _IMG_POSTER = re.compile(r"cartel|cartell|poster|afiche|flyer|affiche|kartel", re.I)
+_IMG_GENERIC_WORDS = {"carrera", "cursa", "carreira", "popular", "media", "maraton", "marato", "mitja", "solidaria", "solidari",
+                      "ciudad", "ciutat", "villa", "vila", "contra", "cancer", "nocturna", "urbana", "race", "running", "trail",
+                      "edicion", "2026", "2027", "san", "sant", "santa", "memorial", "trofeo", "gran", "premio", "circuito"}
 
 
-def best_image(html: str, base: str) -> tuple[str | None, int]:
+def _name_words(name: str) -> set[str]:
+    return {w for w in re.findall(r"[a-z0-9]+", norm(name or "")) if len(w) >= 4 and w not in _IMG_GENERIC_WORDS}
+
+
+def best_image(html: str, base: str, name: str = "") -> tuple[str | None, int]:
     """El mejor cartel de una página y su puntuación (0 = ninguno).
-    Prefiere imágenes llamadas «cartel/poster»; luego la imagen del evento (JSON-LD); luego og:image."""
+    Enlaces «Ver cartel» > imágenes llamadas «cartel/poster» > imagen del evento (JSON-LD) > imagen con el nombre
+    de la carrera > og:image. Nunca logos, patrocinadores ni las imágenes genéricas de las plataformas."""
     base = page_base(html, base)
     s = soup(html)
     cands: dict[str, int] = {}
+    words = _name_words(name)
 
-    def add(url, score):
+    def add(url, score, soft=False):
         if not url or not isinstance(url, str):
             return
-        url = abs_url(base, url)
-        if not url.startswith("http") or _IMG_BAD.search(url):
+        url = abs_url(base, url.strip().strip("'\""))
+        if not url.startswith("http") or IMG_GENERIC.search(url) or (_IMG_BAD_SOFT if soft else _IMG_BAD).search(url):
             return
         if _IMG_POSTER.search(url):
             score += 4
@@ -278,19 +290,31 @@ def best_image(html: str, base: str) -> tuple[str | None, int]:
     for ev in jsonld_events(html):
         img = ev.get("image")
         for i in (img if isinstance(img, list) else [img]):
-            add(i.get("url") if isinstance(i, dict) else i, 4)
+            add(i.get("url") if isinstance(i, dict) else i, 4, soft=True)
     for prop in ("og:image", "twitter:image", "og:image:url"):
         m = s.find("meta", attrs={"property": prop}) or s.find("meta", attrs={"name": prop})
         if m and m.get("content"):
-            add(m["content"], 2)
+            add(m["content"], 2, soft=True)
     for img in s.find_all("img"):
-        src = img.get("data-src") or img.get("data-lazy-src") or img.get("src")
-        label = " ".join(str(img.get(k) or "") for k in ("alt", "title", "class", "id"))
-        if _IMG_POSTER.search(label):
+        src = img.get("data-src") or img.get("data-lazy-src") or img.get("data-original") or img.get("src") or ""
+        if not src and img.get("srcset"):
+            src = img["srcset"].split(",")[-1].strip().split(" ")[0]
+        cls = " ".join(img.get("class") or [])
+        if re.search(r"event-card|card-thumb|related|thumb", cls, re.I):   # miniaturas de OTRAS carreras del calendario
+            continue
+        label = " ".join(str(img.get(k) or "") for k in ("alt", "title", "id")) + " " + cls
+        if _IMG_POSTER.search(label) or _IMG_POSTER.search(src):
             add(src, 5)
+        elif words:
+            hit = words & _name_words(label + " " + src.rsplit("/", 1)[-1].replace("-", " ").replace("_", " "))
+            if len(hit) >= min(2, len(words)):
+                add(src, 3)
     for a in s.find_all("a", href=True):   # enlaces directos al cartel («Ver cartel»)
         if re.search(r"\.(jpe?g|png|webp)(\?|$)", a["href"], re.I) and _IMG_POSTER.search(a.get_text(" ") + " " + a["href"]):
             add(a["href"], 6)
+    for u in re.findall(r"background(?:-image)?\s*:\s*url\(([^)]+)\)", html or ""):
+        if _IMG_POSTER.search(u):
+            add(u, 5)
     if not cands:
         return None, 0
     url = max(cands, key=cands.get)
@@ -523,22 +547,119 @@ def extract_time(text: str) -> str | None:
     return f"{int(m.group(1)):02d}:{m.group(2)}" if m else None
 
 
-KM_RE = re.compile(r"\b(\d{1,2}(?:[.,]\d{1,3})?)\s?(?:km|kms|kilómetros|kilometros|k)\b", re.I)
+KM_RE = re.compile(r"\b(\d{1,2}(?:[.,]\d{1,3})?)\s?(?:km|kms|kilómetros|kilometros|kilòmetres|kilometres|kilometers|k)\b", re.I)
+# contexto que delata que el número NO es la distancia de la carrera
+_KM_ANTES_MAL = re.compile(r"(avituall|hidrataci|puesto|punto|paso\b|pasos|marca|control|pk\b|cada|a los|en el|hasta el|desde el|al\b|"
+                           r"situad|a unos|a tan solo|a solo|aprox\w* a|parking|aparcamiento|a menos de|velocidad|viento|"
+                           r"desnivel|subida|bajada|tramo|vuelta|vueltas|primer|últim|ultim|repechos?|cuesta|meta en|giro|dorsal)\W*$", re.I)
+_KM_DESPUES_MAL = re.compile(r"^\W{0,3}(/\s?h|por hora|from|de distancia|del centro|de la ciudad|de [A-ZÁÉÍÓÚ][a-záéíóúñ]+ ?[|·]|aprox|de desnivel|"
+                             r"de subida|de bajada)", re.I)
+_KM_BIEN = re.compile(r"(distancia|distància|recorrido|recorregut|modalidad|modalitat|prueba|proba|circuito|carrera de|cursa de|"
+                      r"homologad|absolut|categor|competici|caminata|marcha|andarines|ruta de|ibilbide|kilometros? de|"
+                      r"\bde\s*$|\bsobre\s*$|\bkm\s*:|:\s*$|\bdistances?\b|\bdistancias\b)", re.I)
+_KM_STD = (5, 10, 15, 21, 21.097, 21.0975, 21.1, 42, 42.195, 42.2, 7, 8, 3, 6, 12)
+# en las páginas de calendario, lo que viene después de esto son OTRAS carreras («Eventos cercanos … | 27 km de Solsona»)
+_OTRAS = re.compile(r"\b(events nearby|eventos cercanos|esdeveniments propers|more events near|más eventos cerca|"
+                    r"otras carreras|carreras similares|carreras relacionadas|también te puede interesar|próximas carreras|"
+                    r"proximas carreras|add event|añadir evento)\b", re.I)
 
 
-def extract_km(text: str) -> str | None:
-    seen = []
-    for m in KM_RE.finditer(text or ""):
+def own_part(text: str) -> str:
+    """El trozo de la página que habla de esta carrera (corta los bloques de «carreras cercanas»)."""
+    m = _OTRAS.search(text or "", 300)
+    return text[:m.start()] if m else (text or "")
+
+
+def _km_val(v: float) -> float:
+    return 21.097 if 21 <= v <= 21.2 else 42.195 if 42 <= v <= 42.3 else v
+
+
+def km_from_name(name: str) -> list[float]:
+    out = []
+    for t in distances_from(name or ""):
+        v = {"42K": 42.195, "21K": 21.097}.get(t) or float(t[:-1].replace(",", "."))
+        out.append(v)
+    return out
+
+
+def _marcas(hits, i) -> bool:
+    """¿Es parte de una ristra de puntos kilométricos («1 km 2 km 3 km…»)? Tres valores enteros seguidos de uno en uno."""
+    def val(h):
         try:
-            v = float(m.group(1).replace(",", "."))
+            return float(h.group(1).replace(",", "."))
+        except ValueError:
+            return None
+    for a in range(max(0, i - 2), i + 1):
+        tramo = hits[a:a + 3]
+        if len(tramo) == 3 and tramo[-1].start() - tramo[0].start() < 60:
+            vs = [val(h) for h in tramo]
+            if None not in vs and all(abs(vs[j + 1] - vs[j]) == 1 for j in range(2)):
+                return True
+    return False
+
+
+def extract_km(text: str, name: str = "") -> str | None:
+    """Distancias de la carrera en un texto, descartando avituallamientos, puntos kilométricos, «a 27 km de…»,
+    velocidades del viento, marcas «01 KM 02 KM…» y bloques de otras carreras."""
+    text = own_part(text or "")
+    cands: dict[float, int] = {}
+    veces: dict[float, int] = {}
+    hits = list(KM_RE.finditer(text))
+    for i, m in enumerate(hits):
+        raw = m.group(1)
+        try:
+            v = float(raw.replace(",", "."))
         except ValueError:
             continue
-        if 3 <= v <= 50 and v not in seen:
-            seen.append(v)
-    if not seen:
+        if not 3 <= v <= 50 or (raw.startswith("0") and len(raw) > 1 and raw[1].isdigit()):
+            continue
+        antes, despues = text[max(0, m.start() - 40): m.start()], text[m.end(): m.end() + 30]
+        if _KM_ANTES_MAL.search(antes) or _KM_DESPUES_MAL.search(despues):
+            continue
+        # «1 km 2 km 3 km 4 km…» (marcas del recorrido): tres seguidas muy juntas
+        if _marcas(hits, i):
+            continue
+        score = 1 if any(abs(v - s) < 0.01 for s in _KM_STD) else 0
+        if _KM_BIEN.search(antes[-30:]) or _KM_BIEN.search(despues[:15]):
+            score += 2
+        v = _km_val(v)
+        veces[v] = veces.get(v, 0) + 1
+        cands[v] = max(cands.get(v, -1), score)
+    for v in cands:   # repetida varias veces en la página: casi seguro es una distancia de la carrera
+        if veces[v] >= 2 and cands[v] < 1:
+            cands[v] = 1
+    nombre = km_from_name(name)
+    if nombre:   # el nombre manda («10K de…», «Media Maratón…»); del texto solo lo que viene con contexto claro
+        vals = list(nombre) + [v for v, s in cands.items() if s >= 2 and all(abs(v - n) > 0.3 for n in nombre)]
+    else:
+        vals = [v for v, s in sorted(cands.items(), key=lambda kv: (-kv[1], -kv[0])) if s >= 1]
+    vals = sorted(dict.fromkeys(vals), reverse=True)[:3]
+    if not vals:
         return None
-    seen = sorted(seen, reverse=True)[:4]
-    return " · ".join((f"{v:g}".replace(".", ",")) + " km" for v in seen)
+    return " · ".join((f"{v:g}".replace(".", ",")) + " km" for v in vals)
+
+
+def km_dudosos(km: str, name: str) -> bool:
+    """¿Los km guardados pintan mal? (4 o más distancias, o ninguna coincide con la del nombre)"""
+    vals = [float(x.replace(",", ".")) for x in re.findall(r"(\d+(?:[.,]\d+)?)\s*km", km or "")]
+    if len(vals) >= 4:
+        return True
+    nombre = km_from_name(name)
+    return bool(nombre and vals and not any(abs(_km_val(v) - n) <= 0.3 for v in vals for n in nombre))
+
+
+_MES = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"]
+_MES_CA = ["gener", "febrer", "marc", "abril", "maig", "juny", "juliol", "agost", "setembre", "octubre", "novembre", "desembre"]
+
+
+def date_in_text(d: str, text: str) -> bool:
+    """¿Aparece la fecha d (AAAA-MM-DD) en el texto? «22 de noviembre», «22 novembre», «22/11/2026», «22-11», «22.11.26»…"""
+    y, m, dd = int(d[:4]), int(d[5:7]), int(d[8:10])
+    t = norm(text or "")
+    pats = [rf"\b0?{dd}\s*(de\s+|d')?({_MES[m-1]}|{_MES_CA[m-1]})\b",
+            rf"\b0?{dd}[/.-]0?{m}[/.-]({y}|{y % 100})\b",
+            rf"\b({_MES[m-1][:3]}|{_MES_CA[m-1][:3]})\w*\.?\s+0?{dd}\b"]
+    return any(re.search(p, t) for p in pats)
 
 
 DATE_IN_SLUG = re.compile(r"(20\d{2})-(\d{2})-(\d{2})")

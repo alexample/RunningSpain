@@ -44,8 +44,118 @@ def key(name: str, city: str) -> set[str]:
 def same_race(a: dict, b: dict) -> bool:
     if a["date"] != b["date"]:
         return False
+    da, db_ = set(parse.distances_from(a["name"])), set(parse.distances_from(b["name"]))
+    if da and db_ and not (da & db_):   # «5K de X» y «10K de X» el mismo día: carreras distintas
+        return False
     ka, kb = key(a["name"], a.get("city", "")), key(b["name"], b.get("city", ""))
     return bool(ka and kb) and len(ka & kb) / min(len(ka), len(kb)) >= 0.6
+
+
+# ---------------------------------------------------------------- duplicadas
+_STOP = {"de", "del", "la", "el", "los", "las", "y", "i", "a", "en", "d", "l", "edicion", "edicio", "2026", "2027", "2028"}
+_SOFT = {"carrera", "cursa", "carreira", "lasterketa", "popular", "solidaria", "solidari", "solidaria", "sant", "san"}
+
+
+def _words(name: str) -> set[str]:
+    return {t for t in re.findall(r"[a-z0-9]+", parse.norm(name))
+            if (t not in _STOP and not re.fullmatch(r"[ivxlc]+|\d+(a|o|th)?", t)) or re.fullmatch(r"\d+k", t)}
+
+
+def _city(r: dict) -> str:
+    return " ".join(re.findall(r"[a-z0-9]+", parse.norm(re.sub(r"\(.*?\)", "", r.get("city") or ""))))
+
+
+def same_race_loose(a: dict, b: dict) -> bool:
+    """La misma carrera aunque las fuentes den fechas distintas (hasta 5 semanas): mismo pueblo y casi el mismo nombre."""
+    if a is b:
+        return False
+    try:
+        gap = abs((date.fromisoformat(a["date"]) - date.fromisoformat(b["date"])).days)
+    except ValueError:
+        return False
+    ca, cb = _city(a), _city(b)
+    if gap > 35 or not ca or not cb or not (ca == cb or ca in cb or cb in ca):
+        return False
+    wa, wb = _words(a["name"]), _words(b["name"])
+    if not wa or not wb or {t for t in wa ^ wb if re.fullmatch(r"\d+k", t)}:   # «10K de X» y «5K de X» no son la misma
+        return False
+    da, db_ = (wa - _SOFT) or wa, (wb - _SOFT) or wb
+    j = len(da & db_) / len(da | db_)
+    return j >= 0.75 or (gap == 0 and len(wa & wb) / min(len(wa), len(wb)) >= 0.8)
+
+
+def _rank(r: dict) -> int:
+    """Confianza en la fecha según de dónde salió: confirmada en la web oficial > calendarios vivos > Sportplan (ya no se revisa)."""
+    if r.get("fechaOk"):
+        return 9
+    src = r.get("source") or ""
+    return 0 if "sportplan.es" in src else 1 if "running.life" in src else 2
+
+
+def _official_text(r: dict) -> str:
+    u = r.get("url") if r.get("official") else None
+    if not u:
+        return ""
+    text, _, _ = enrich.fetch_text(u)
+    return parse.own_part(text or "")[:20000]
+
+
+def _info(r: dict) -> int:
+    return (3 * bool(r.get("official")) + sum(bool(r.get(k)) for k in ("banner", "regulation", "km", "price", "time", "route", "inscripcion"))
+            + bool(r.get("addedAt") and r.get("addedAt") < "2026-10-20"))
+
+
+def merge_dups(db: dict, changes: dict | None = None) -> int:
+    """Junta en una sola ficha la misma carrera que vino de dos calendarios (a veces con fechas distintas).
+    La fecha buena: la que diga la web oficial; si no lo dice, la de la fuente más fiable, avisando de la otra."""
+    races = db["races"]
+    gone, merged = set(), 0
+    for i, a in enumerate(races):
+        if a["id"] in gone:
+            continue
+        for b in races[i + 1:]:
+            if b["id"] in gone or not (same_race(a, b) or same_race_loose(a, b)):
+                continue
+            keep, drop = (a, b) if _info(a) >= _info(b) else (b, a)
+            if a["date"] != b["date"]:
+                fechas = {a["date"]: a, b["date"]: b}
+                texto = _official_text(keep) or _official_text(drop)
+                vistas = [d for d in fechas if texto and parse.date_in_text(d, texto)]
+                if len(vistas) == 1:
+                    buena, ok = vistas[0], True
+                else:
+                    buena, ok = max(fechas, key=lambda d: (_rank(fechas[d]), d == keep["date"])), False
+                otra = next(d for d in fechas if d != buena)
+                if keep["date"] != buena:
+                    keep["date"] = buena
+                    keep["changedAt"] = date.today().isoformat()
+                    if changes is not None:
+                        changes["updated"].setdefault(keep["id"], []).append("date")
+                if ok:
+                    keep["fechaOk"] = True
+                    keep.pop("otraFecha", None)
+                elif not keep.get("fechaOk"):
+                    keep["otraFecha"] = otra
+                log(f"  duplicada: «{drop['name']}» {drop['date']} → «{keep['name']}» {keep['date']}"
+                    + (" (confirmada en la web oficial)" if ok else f" (otra fuente: {otra})"))
+            for k, v in drop.items():   # lo que solo sabía la otra ficha
+                if k not in ("id", "alt", "source", "date", "otraFecha") and v and not keep.get(k):
+                    keep[k] = v
+            alt = keep.setdefault("alt", [])
+            for u in [drop.get("source")] + list(drop.get("alt") or []):
+                if u and u != keep.get("source") and u not in alt:
+                    alt.append(u)
+            keep["alt"] = alt[:8]
+            if drop.get("addedAt") and (not keep.get("addedAt") or drop["addedAt"] < keep["addedAt"]):
+                keep["addedAt"] = drop["addedAt"]
+            keep.setdefault("ids", [])
+            keep["ids"] = list(dict.fromkeys(keep["ids"] + [drop["id"]] + drop.get("ids", [])))[:6]
+            gone.add(drop["id"])
+            merged += 1
+            if drop is a:
+                break
+    db["races"] = [r for r in races if r["id"] not in gone]
+    return merged
 
 
 def load() -> dict:
@@ -104,7 +214,7 @@ def discover(db: dict, today: date, changes: dict) -> int:
             cands += fn(today, log)
         except Exception as e:  # una fuente rota no debe parar el robot
             log(f"  error en {fn.__name__}: {e}")
-    known_sources = {r.get("source") for r in db["races"]}
+    known_sources = {u for r in db["races"] for u in [r.get("source")] + list(r.get("alt") or [])}
     total = len(cands)
     cands = [c for c in cands if c["source_url"] not in known_sources and not skip_seen(seen.get(c["source_url"]), today)]
     # primero las de fecha conocida (más próximas antes); después las de Runedia, con su propio tope
@@ -118,7 +228,7 @@ def discover(db: dict, today: date, changes: dict) -> int:
         r = sources.read_event_page(c, today)
         motivo = c.get("motivo", "sin_acceso")
         if r:
-            dup = next((x for x in db["races"] if same_race(x, r)), None)
+            dup = next((x for x in db["races"] if same_race(x, r)), None) or next((x for x in db["races"] if same_race_loose(x, r)), None)
             if dup:
                 motivo = "duplicada"
                 for k in ("time", "city", "region"):
@@ -132,6 +242,12 @@ def discover(db: dict, today: date, changes: dict) -> int:
                 if c["source_url"] != dup.get("source") and c["source_url"] not in alt and len(alt) < 5:
                     alt.append(c["source_url"])
                 dup.setdefault("official_guess", r.get("official_guess"))
+                if r["date"] != dup["date"] and not dup.get("fechaOk"):   # otra fuente da otra fecha: se avisa en la ficha
+                    if _rank(r | {"source": c["source_url"]}) > _rank(dup):
+                        dup["otraFecha"], dup["date"] = dup["date"], r["date"]
+                        changes["updated"].setdefault(dup["id"], []).append("date")
+                    else:
+                        dup["otraFecha"] = r["date"]
                 touch(dup)
             else:
                 motivo = "añadida"
@@ -181,6 +297,11 @@ def media(db: dict, today: date, changes: dict) -> int:
             if not r.get("route"):
                 r.pop("mediaChecked", None)
         db["rutasV2"] = today.isoformat()
+    if not db.get("cartelesV3"):   # una vez: volver a buscar cartel (ahora también en otros calendarios y en la web oficial)
+        for r in db["races"]:
+            if not r.get("banner"):
+                r.pop("mediaChecked", None)
+        db["cartelesV3"] = today.isoformat()
     # reglamentos: llegar al PDF si era una página, y comprobar cada semana que el enlace sigue abriendo
     week = (today - timedelta(days=7)).isoformat()
     regs = [r for r in db["races"] if r["date"] >= today.isoformat() and r.get("regulation")
@@ -210,13 +331,23 @@ def media(db: dict, today: date, changes: dict) -> int:
             if "regulation" not in lst:
                 lst.append("regulation")
     log(f"Reglamentos revisados: {min(len(regs), config.MAX_MEDIA)} · {better} cambiados por un enlace que funciona · {broken} quitados por no abrir")
-    todo = [r for r in db["races"] if r["date"] >= today.isoformat() and r.get("source")
+    todo = [r for r in db["races"] if r["date"] >= today.isoformat() and (r.get("source") or r.get("url"))
             and (not r.get("banner") or not r.get("route")) and (r.get("mediaChecked") or "") < limit]
     todo.sort(key=lambda r: r["date"])
     log(f"Carteles y recorridos: {len(todo)} pendientes, se revisan {min(len(todo), config.MAX_MEDIA)}")
     found = 0
     for r in todo[: config.MAX_MEDIA]:
-        got = sources.read_media(r["source"])
+        got = {}
+        # el cartel: la ficha principal, las de otros calendarios y la web oficial (hasta dar con uno claro)
+        pages = enrich.source_pages(r) + ([r["url"]] if r.get("official") and r.get("url") else [])
+        for u in pages[:4]:
+            g = sources.read_media(u, r.get("name", ""))
+            if g.get("banner") and g["bannerScore"] > got.get("bannerScore", 0):
+                got["banner"], got["bannerScore"] = g["banner"], g["bannerScore"]
+            if g.get("route") and not got.get("route"):
+                got["route"] = g["route"]
+            if got.get("bannerScore", 0) >= 6 and (got.get("route") or r.get("route")):
+                break
         touch(r)
         # el recorrido, primero en la web de la carrera (portada o página «Recorrido»)
         if not r.get("route") and r.get("official") and r.get("url"):
@@ -294,10 +425,38 @@ def tidy(db: dict) -> int:
         if r.get("time") and "00:30" <= r["time"] <= "05:59" and not r.get("locked"):
             r.pop("time")
             r.pop("checkedAt", None)
+    usos = {}
+    for r in db["races"]:
+        if r.get("banner"):
+            usos[r["banner"]] = usos.get(r["banner"], 0) + 1
+    for r in db["races"]:   # carteles genéricos de las plataformas (o la misma imagen en 4+ carreras): fuera, y se vuelve a buscar
+        b = r.get("banner")
+        if b and (parse.IMG_GENERIC.search(b) or usos[b] >= 4 or re.search(r"/images/share/|share\.(jpe?g|png)", b)):
+            r.pop("banner")
+            r.pop("bannerScore", None)
+            r.pop("mediaChecked", None)
     for r in db["races"]:   # recorridos que no superan el filtro actual: fuera, y se vuelve a buscar
         if r.get("route") and not parse.is_route_url(r["route"]):
             r.pop("route")
             r.pop("mediaChecked", None)
+    if not db.get("kmV2"):   # una vez: los km se leían mal (avituallamientos, «a 27 km de…», otras carreras); se vuelven a buscar
+        n = 0
+        for r in db["races"]:
+            if not r.get("km") or r.get("locked"):
+                continue
+            solo_sportplan = "sportplan.es" in (r.get("source") or "") and not r.get("official") and not any(
+                "sportplan.es" not in u for u in r.get("alt") or [])
+            if parse.km_dudosos(r["km"], r["name"]):        # mal seguro: fuera
+                r.pop("km")
+                r["distances"] = parse.distances_from(r["name"])
+                r.pop("checkedAt", None)
+                n += 1
+            elif not solo_sportplan:                          # parecen bien: se quedan, pero se vuelven a leer
+                r["kmRevisar"] = True
+                r.pop("checkedAt", None)
+                n += 1
+        db["kmV2"] = datetime.now(timezone.utc).date().isoformat()
+        log(f"Km que se vuelven a buscar: {n}")
     for r in db["races"]:   # las etiquetas de distancia, iguales que los km de la ficha
         tags = parse.tags_from_km(r.get("km", ""))
         if tags:
@@ -325,6 +484,8 @@ def main(argv: list[str]) -> None:
     db = load()
     removed = prune(db, today) + tidy(db)
     changes = {"added": [], "updated": {}}
+    log("Buscando carreras repetidas…")
+    log(f"Fichas repetidas juntadas: {merge_dups(db, changes)}")
     added = 0 if "--enrich-only" in argv else discover(db, today, changes)
     save(db)
     completed = complete(db, today, changes)
