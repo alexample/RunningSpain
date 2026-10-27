@@ -1,4 +1,5 @@
-"""Publica en X cada carrera nueva que encuentra el robot.
+"""Publica en X cada carrera nueva que encuentra el robot y los cambios importantes de las próximas
+(inscripciones abiertas, dorsales agotados, cambio de fecha). El tuit empieza diciendo el motivo.
 
 Uso:  python -m scraper.xpost            (publica, si hay claves)
       python -m scraper.xpost --prueba   (solo muestra los textos)
@@ -18,7 +19,7 @@ import secrets
 import sys
 import time
 import unicodedata
-from datetime import date
+from datetime import date, timedelta
 from pathlib import Path
 from urllib.parse import quote
 
@@ -43,6 +44,10 @@ REGION_TAG = {
 }
 
 
+MOTIVOS = {"nueva": "🏃 Nueva carrera", "abierta": "✅ Inscripciones abiertas", "agotada": "🚫 Dorsales agotados",
+           "fecha": "📆 Cambio de fecha"}
+
+
 def x_len(text: str) -> int:
     """Longitud según X: casi todo cuenta 1, emojis y CJK cuentan 2, un enlace cuenta 23."""
     n = 0
@@ -64,7 +69,11 @@ def compose(r: dict, con_enlace: bool | None = None) -> str:
     if r.get("region") and r["region"] != place:
         place = f"{place} ({r['region']})" if place else r["region"]
     dist = r.get("km") or " · ".join(r.get("distances") or [])
-    lines = [f"🏃 Nueva carrera: {r['name']}", f"📅 {when}"]
+    motivo = r.get("_motivo", "nueva")
+    lines = [f"{MOTIVOS[motivo]}: {r['name']}", f"📅 {when}"]
+    if motivo == "fecha" and r.get("_antes"):
+        ya, ma, da = map(int, r["_antes"].split("-"))
+        lines.append(f"↩️ Antes: {DAYS[date(ya, ma, da).weekday()]} {da} de {MONTHS[ma - 1]}")
     if place:
         lines.append(f"📍 {place}")
     if dist:
@@ -117,13 +126,48 @@ def save_state(st: dict) -> None:
     STATE.write_text(json.dumps(st, ensure_ascii=False, indent=1, sort_keys=True), encoding="utf-8")
 
 
+def avisos(races: list, st: dict, today: date) -> list:
+    """Cambios importantes de carreras próximas (60 días) detectados en los últimos 3 días, sin tuitear aún."""
+    hecho = st.setdefault("avisos", {})
+    desde = (today - timedelta(days=3)).isoformat()
+    hasta = (today + timedelta(days=60)).isoformat()
+    out = []
+    for r in races:
+        c = r.get("cambio") or {}
+        if not (today.isoformat() <= r["date"] <= hasta) or (c.get("t") or "")[:10] < desde or "nueva" in c.get("c", []):
+            continue
+        motivo, antes = None, None
+        if "inscripcion" in c.get("c", []):
+            if r.get("inscripcion") == "abierta" and c.get("inscAntes") in ("proximamente", "cerrada"):
+                motivo = "abierta"
+            elif r.get("inscripcion") == "agotada" and c.get("inscAntes") == "abierta":
+                motivo = "agotada"
+        if not motivo and "date" in c.get("c", []) and c.get("fechaAntes") and c["fechaAntes"] != r["date"]:
+            motivo, antes = "fecha", c["fechaAntes"]
+        if not motivo:
+            continue
+        clave = f"{r['id']}:{motivo}:{r['date'] if motivo == 'fecha' else r.get('inscripcion')}"
+        if clave in hecho:
+            continue
+        out.append({**r, "_motivo": motivo, "_antes": antes, "_clave": clave})
+    return sorted(out, key=lambda r: (r["date"], r.get("time") or "99"))
+
+
 def pending(races: list, st: dict, today: date) -> list:
     done = st["publicadas"]
     todo = [r for r in races
             if r.get("addedAt") and r["addedAt"] >= config.X_DESDE
             and r["date"] >= today.isoformat() and r["id"] not in done]
     # Orden de envío: primero las añadidas antes; dentro del mismo día, por fecha de la carrera (la más próxima primero)
-    return sorted(todo, key=lambda r: (r["addedAt"], r["date"], r.get("time") or "99", r["name"]))
+    nuevas = sorted(todo, key=lambda r: (r["addedAt"], r["date"], r.get("time") or "99", r["name"]))
+    return nuevas + avisos(races, st, today)
+
+
+def marcar(st: dict, r: dict, via: str) -> None:
+    if r.get("_clave"):
+        st.setdefault("avisos", {})[r["_clave"]] = date.today().isoformat()
+    else:
+        st["publicadas"][r["id"]] = via
 
 
 def ntfy_topic(hook: str) -> str:
@@ -144,7 +188,7 @@ def send_ntfy(topic: str, todo: list, st: dict, guardar: bool = True) -> int:
             print(f"ntfy: error de red con «{r['name']}»: {e}")
             break
         if resp.ok:
-            st["publicadas"][r["id"]] = "ntfy"
+            marcar(st, r, "ntfy")
             if guardar:
                 save_state(st)
             sent += 1
@@ -183,7 +227,7 @@ def send_macrodroid(hook: str, todo: list, st: dict, guardar: bool = True) -> in
             print(f"MacroDroid: error de red con «{r['name']}»: {e}")
             break
         if resp.ok:
-            st["publicadas"][r["id"]] = "macrodroid"
+            marcar(st, r, "macrodroid")
             if guardar:
                 save_state(st)
             sent += 1
@@ -200,7 +244,8 @@ def main(argv: list[str]) -> int:
     races = json.loads(DATA.read_text(encoding="utf-8"))["races"]
     st = load_state()
     todo = pending(races, st, today)
-    print(f"X: {len(todo)} carreras nuevas sin publicar (tope {config.X_MAX_POR_EJECUCION} por ejecución)")
+    n_av = sum(1 for r in todo if r.get("_motivo"))
+    print(f"X: {len(todo) - n_av} carreras nuevas y {n_av} avisos sin publicar (tope {config.X_MAX_POR_EJECUCION} por ejecución)")
     if "--prueba-macro" in argv:
         # Envía UNA carrera real a MacroDroid sin anotarla como publicada (para probar la macro)
         hook = os.environ.get("MACRODROID_WEBHOOK", "").strip().rstrip(".,;")
@@ -238,7 +283,7 @@ def main(argv: list[str]) -> int:
         resp = requests.post(URL, json={"text": text}, timeout=30,
                              headers={"Authorization": oauth_header("POST", URL, keys), "Content-Type": "application/json"})
         if resp.status_code == 201:
-            st["publicadas"][r["id"]] = resp.json().get("data", {}).get("id", "")
+            marcar(st, r, resp.json().get("data", {}).get("id", ""))
             save_state(st)
             sent += 1
             print(f"X: publicada «{r['name']}»")
@@ -246,7 +291,7 @@ def main(argv: list[str]) -> int:
             continue
         print(f"X: error {resp.status_code} con «{r['name']}»: {resp.text[:300]}")
         if resp.status_code == 403 and "duplicate" in resp.text.lower():
-            st["publicadas"][r["id"]] = "duplicada"   # ya estaba publicada: no reintentar
+            marcar(st, r, "duplicada")   # ya estaba publicada: no reintentar
             save_state(st)
             continue
         break   # sin saldo (402), límite (429), claves mal (401/403): se reintenta en la próxima ejecución

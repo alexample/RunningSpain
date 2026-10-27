@@ -1,7 +1,7 @@
 """Pruebas sin conexión: python -m unittest discover -s tests"""
 import unittest
 from pathlib import Path
-from datetime import date
+from datetime import date, timedelta
 from unittest import mock
 
 from scraper import enrich, main, parse, sources
@@ -484,6 +484,38 @@ class LimpiezaTests(unittest.TestCase):
                          "banner": "https://sportmaniacs.com/images/share/sportmaniacs-race.jpg"} for i in range(2)]}
         main.tidy(db)
         self.assertFalse(any(r.get("banner") for r in db["races"]))
+
+
+class MotivoTests(unittest.TestCase):
+    def test_tuits_con_motivo_y_ultimo_cambio(self):
+        from scraper import xpost
+        hoy = date.today()
+        d = (hoy + timedelta(days=10)).isoformat()
+        r = {"id": "x", "name": "10K de Prueba", "date": d, "city": "X", "region": "Y", "km": "10 km",
+             "inscripcion": "abierta", "addedAt": "2026-01-01"}
+        db = {"races": [dict(r)]}
+        main.apuntar_cambios(db, {"added": [], "updated": {"x": ["inscripcion", "banner"]}}, {"x": {"date": d, "inscripcion": "proximamente"}})
+        rr = db["races"][0]
+        self.assertEqual(rr["cambio"]["c"], ["inscripcion", "banner"])
+        st = {"publicadas": {}}
+        todo = xpost.pending([rr], st, hoy)
+        self.assertEqual([t["_motivo"] for t in todo], ["abierta"])
+        self.assertTrue(xpost.compose(todo[0], con_enlace=False).startswith("✅ Inscripciones abiertas: 10K de Prueba"))
+        xpost.marcar(st, todo[0], "macrodroid")
+        self.assertEqual(xpost.pending([rr], st, hoy), [])           # no se repite
+        # primera vez que se ve el estado (None → abierta): no es una apertura, no se tuitea
+        db2 = {"races": [dict(r)]}
+        main.apuntar_cambios(db2, {"added": [], "updated": {"x": ["inscripcion"]}}, {"x": {"date": d, "inscripcion": None}})
+        self.assertEqual(xpost.avisos(db2["races"], {"publicadas": {}}, hoy), [])
+        # cambio de fecha
+        nueva = (hoy + timedelta(days=17)).isoformat()
+        db3 = {"races": [dict(r, date=nueva)]}
+        main.apuntar_cambios(db3, {"added": [], "updated": {"x": ["date"]}}, {"x": {"date": d, "inscripcion": "abierta"}})
+        t = xpost.avisos(db3["races"], {"publicadas": {}}, hoy)
+        self.assertEqual(t[0]["_motivo"], "fecha")
+        self.assertIn("↩️ Antes:", xpost.compose(t[0], con_enlace=False))
+        nuevo = dict(r, id="n", addedAt=hoy.isoformat())
+        self.assertTrue(xpost.compose(nuevo, con_enlace=False).startswith("🏃 Nueva carrera:"))
 
 
 class TarjetaTests(unittest.TestCase):

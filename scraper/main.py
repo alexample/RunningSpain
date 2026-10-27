@@ -480,11 +480,31 @@ def prune(db: dict, today: date) -> int:
     return before - len(db["races"])
 
 
+def apuntar_cambios(db: dict, changes: dict, antes: dict) -> None:
+    """Guarda en cada ficha lo último que cambió en esta vuelta (se enseña en la web y da el motivo de los tuits)."""
+    by_id = {r["id"]: r for r in db["races"]}
+    for rid in changes["added"]:
+        if rid in by_id:
+            by_id[rid]["cambio"] = {"t": RUN_AT, "c": ["nueva"]}
+    for rid, campos in changes["updated"].items():
+        r = by_id.get(rid)
+        if not r or rid in changes["added"] or not campos:
+            continue
+        c = {"t": RUN_AT, "c": list(dict.fromkeys(campos))}
+        prev = antes.get(rid) or {}
+        if "date" in campos and prev.get("date") and prev["date"] != r.get("date"):
+            c["fechaAntes"] = prev["date"]
+        if "inscripcion" in campos and prev.get("inscripcion") != r.get("inscripcion"):
+            c["inscAntes"] = prev.get("inscripcion") or ""
+        r["cambio"] = c
+
+
 def main(argv: list[str]) -> None:
     t0 = time.time()
     today = date.today()
     db = load()
     removed = prune(db, today) + tidy(db)
+    antes = {r["id"]: {"date": r.get("date"), "inscripcion": r.get("inscripcion")} for r in db["races"]}
     changes = {"added": [], "updated": {}}
     log("Buscando carreras repetidas…")
     log(f"Fichas repetidas juntadas: {merge_dups(db, changes)}")
@@ -508,6 +528,7 @@ def main(argv: list[str]) -> None:
     except Exception as e:   # el acortador nunca debe parar el robot
         log(f"Enlaces cortos: error {e}")
     ids = {r["id"] for r in db["races"]}
+    apuntar_cambios(db, changes, antes)
     db["lastRun"] = {
         "at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "added": [i for i in changes["added"] if i in ids],
