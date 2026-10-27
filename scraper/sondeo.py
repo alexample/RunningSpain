@@ -1,80 +1,32 @@
-"""Sondeo: fechas de running.life (en/event vs es/carrera), km en páginas y carteles. Escribe estado/sondeo.json."""
+"""Sondeo: prueba de la lectura con IA del worker (sin guardar nada en los datos). Escribe estado/sondeo.json."""
 import json
-import re
+from datetime import date
 from pathlib import Path
-from . import net, parse
+import requests
+from . import ia, main
 
-res = {"fechas": {}, "km": {}, "img": {}}
-FECHAS = [
-    "https://running.life/en/event/media-maraton-de-cordoba",
-    "https://running.life/en/event/cursa-popular-vila-de-sant-boi",
-    "https://running.life/en/event/mitja-marato-internacional-vila-de-santa-pola",
-    "https://running.life/es/carrera/mitja-marato-internacional-vila-de-santa-pola",
-    "https://running.life/en/event/media-maraton-de-guadalajara",
-    "https://running.life/es/carrera/media-maraton-de-guadalajara",
-    "https://running.life/en/event/san-pintena",
-    "https://running.life/en/event/10k-de-sarinena",
-]
-for u in FECHAS:
-    html, final, _ = net.get(u)
-    if not html:
-        res["fechas"][u] = "sin acceso"
-        continue
-    evs = parse.jsonld_events(html)
-    txt = parse.page_text(html)
-    res["fechas"][u] = {
-        "final": final,
-        "ld": [{k: e.get(k) for k in ("name", "startDate", "endDate", "eventStatus", "url")} for e in evs][:4],
-        "trozos": [txt[max(0, m.start() - 80): m.end() + 80] for m in re.finditer(r"20(26|27)", txt)][:8],
-        "estim": [txt[max(0, m.start() - 80): m.end() + 80] for m in re.finditer(r"estimat|tentativ|to be confirmed|por confirmar|pendiente|previous|last edition|edición anterior", txt, re.I)][:5],
-        "inicio": txt[:1500],
-    }
-
-KM = [
-    "https://running.life/en/event/cursa-antiracista-solsona",
-    "https://running.life/en/event/escaldada",
-    "https://running.life/es/carrera/desafio-bomberos-san-sebastian-de-los-reyes",
-    "https://www.runnink.com/evento/media-maraton-y-10k-rural-villanueva-de-la-torre",
-    "https://www.udat.es/",
-    "https://www.derbidelasaficiones.com/",
-    "https://inscripcion.kirolprobak.com/inscripcion/10k-halloweenrun-zorroza-bilbao",
-]
-for u in KM:
-    html, final, _ = net.get(u)
-    if not html or isinstance(html, bytes):
-        res["km"][u] = "sin acceso"
-        continue
-    txt = parse.page_text(html)
-    res["km"][u] = {"len": len(txt), "hits": [[m.start(), txt[max(0, m.start() - 70): m.end() + 30]] for m in parse.KM_RE.finditer(txt)][:25]}
-
-IMG = [
-    "https://running.life/en/event/wolf-race-perdiguera",
-    "https://running.life/en/event/cursa-de-les-caves",
-    "https://www.carreraspopulares.com/carrera/cursa-de-les-caves",
-    "https://www.lineadesalida.net/carreras/iv-carrera-cofrade-cuatro-millas",
-    "https://eltast.lamitja.cat/",
-    "https://www.laconquistadelaalmendra.com/",
-    "https://runnersporthuelva.com/21k/",
-    "https://sportmaniacs.com/es/races/21k-ciudad-de-huelva-26",
-    "https://cursasantgalderic.blogspot.com/",
-    "https://running.life/en/search?q=daganzo",
-    "https://running.life/es/buscar?q=daganzo",
-]
-for u in IMG:
-    html, final, _ = net.get(u)
-    if not html or isinstance(html, bytes):
-        res["img"][u] = "sin acceso"
-        continue
-    s = parse.soup(html)
-    imgs = []
-    for im in s.find_all("img"):
-        src = im.get("data-src") or im.get("data-lazy-src") or im.get("src") or ""
-        imgs.append([src[:160], (im.get("alt") or "")[:60], im.get("width"), im.get("height"), " ".join(im.get("class") or [])[:40]])
-    metas = {p: (s.find("meta", attrs={"property": p}) or {}).get("content") if s.find("meta", attrs={"property": p}) else None for p in ("og:image", "twitter:image")}
-    res["img"][u] = {"final": final, "best": parse.best_image(html, final), "metas": metas,
-                     "ld_img": [e.get("image") for e in parse.jsonld_events(html)][:3], "imgs": imgs[:30],
-                     "bg": re.findall(r"background(?:-image)?\s*:\s*url\(([^)]+)\)", html)[:8]}
-
+res = {}
+r = requests.post(ia.ENDPOINT, json={}, timeout=30)
+res["sin_token"] = [r.status_code, r.text[:120]]
+r = requests.post(ia.ENDPOINT, json={}, headers={"Authorization": "Bearer a.b.c"}, timeout=30)
+res["token_falso"] = [r.status_code, r.text[:120]]
+tok = ia._token()
+res["token_github"] = bool(tok)
+db = main.load()
+cands = ia.candidatas(db, date.today())
+res["candidatas"] = len(cands)
+res["pruebas"] = []
+for c in cands[:3]:
+    mat = ia._material(c)
+    faltan = [ia.FALTAN[k] for k in ia.FALTAN if not c.get(k)]
+    resp = requests.post(ia.ENDPOINT, headers={"Authorization": f"Bearer {tok}"}, timeout=90,
+                         json={"nombre": c["name"], "fecha": c["date"], "lugar": c.get("city", ""), "faltan": faltan, **mat})
+    out = resp.json() if resp.headers.get("content-type", "").startswith("application/json") else resp.text[:200]
+    copia = dict(c)
+    puesto = ia._aplica(copia, out if isinstance(out, dict) else {}, mat, date.today()) if resp.status_code == 200 else []
+    res["pruebas"].append({"carrera": c["name"], "fecha": c["date"], "faltan": faltan, "status": resp.status_code, "respuesta": out,
+                           "aplicaria": {k: copia.get(k) for k in puesto}, "n_img": len(mat["imagenes"]), "n_links": len(mat["enlaces"]),
+                           "len_texto": len(mat["texto"])})
 Path("estado").mkdir(exist_ok=True)
 Path("estado/sondeo.json").write_text(json.dumps(res, ensure_ascii=False, indent=1), encoding="utf-8")
-print("ok")
+print(json.dumps(res, ensure_ascii=False, indent=1)[:3000])
