@@ -468,7 +468,7 @@ function render(){
     (dist!=="all"||region||nq)?"Ninguna carrera nueva coincide con estos filtros.":"No se han añadido carreras en los últimos "+NEW_DAYS+" días. El robot busca nuevas cada día."));return}
   if(tab==="fav"&&!list.length){main.append(el("div",{class:"empty"},favs.size&&(dist!=="all"||region||nq)
     ?"Ninguna de tus carreras coincide con estos filtros."
-    :"Toca la ☆ de una carrera para guardarla aquí."+(window.AndroidApp?" La app te recordará la víspera, si la inscripción sigue abierta una semana antes y si cambia la fecha o la hora.":"")));return}
+    :"Toca la ☆ de una carrera para guardarla aquí."+(window.AndroidApp?" La app te avisará de cualquier novedad (cambio de fecha u hora, inscripción, cartel, reglamento, precio, recorrido…), te lo recordará la víspera y te dirá cuándo salen los resultados.":"")));return}
   if(!list.length){main.append(el("div",{class:"empty"},"Ninguna carrera coincide con estos filtros. Prueba con otra distancia o comunidad."));return}
   // paginación: se pintan PAGINA carreras y un botón para ver más (con muchas, la página iba muy pesada)
   const firma=tab+"|"+dist+"|"+region+"|"+nq+"|"+onlyNews;
@@ -643,7 +643,7 @@ function abrirAvisos(){
   const cerrar=el("button",{class:"mini",type:"button"},"Cerrar");
   const sheet=el("div",{class:"sheet"},el("div",{class:"box"},
     el("div",{class:"row"},el("h2",{},"Avisos"),cerrar),
-    el("div",{class:"row"},el("span",{},"⭐ Recordatorios de mis carreras",el("br"),el("small",{class:"note"},"La víspera, si la inscripción sigue abierta una semana antes, si se agota y si cambia la fecha o la hora.")),el("label",{class:"switch"},fv,el("span"))),
+    el("div",{class:"row"},el("span",{},"⭐ Avisos de mis carreras",el("br"),el("small",{class:"note"},"Cualquier novedad (fecha, hora, inscripción, cartel, reglamento, precio, recorrido…), la víspera, una semana antes si la inscripción sigue abierta y cuando salen los resultados.")),el("label",{class:"switch"},fv,el("span"))),
     el("h3",{style:"margin-top:6px"},"Carreras nuevas"),
     el("div",{class:"row"},el("span",{},"Avisarme de carreras nuevas"),el("label",{class:"switch"},sw,el("span"))),
     perm,

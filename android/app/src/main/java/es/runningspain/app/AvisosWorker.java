@@ -210,7 +210,9 @@ public class AvisosWorker extends Worker {
                 }
                 continue;
             }
-            try { nuevo.put(id, new JSONObject().put("date", fecha).put("time", hr).put("insc", insc)); } catch (Exception ignored) { }
+            JSONObject cambio = r.optJSONObject("cambio");
+            String cambioT = cambio != null ? cambio.optString("t", "") : "";
+            try { nuevo.put(id, new JSONObject().put("date", fecha).put("time", hr).put("insc", insc).put("cambio", cambioT)); } catch (Exception ignored) { }
             JSONObject antes = snap.optJSONObject(id);
             if (!puede) continue;
             if (antes != null) {
@@ -223,6 +225,12 @@ public class AvisosWorker extends Worker {
                 if (!i0.equals(insc) && ("agotada".equals(insc) || "cerrada".equals(insc))) {
                     avisoMis(c, r, ("agotada".equals(insc) ? "🔴 Inscripciones agotadas: " : "🔴 Inscripciones cerradas: ")
                             + r.optString("name"), cuando(r) + " · " + lugar(r), 2);
+                }
+                // cualquier otra novedad que haya apuntado el robot (cartel, reglamento, precio, km, recorrido, web…)
+                String c0 = antes.optString("cambio", "");
+                if (!cambioT.isEmpty() && !cambioT.equals(c0) && cambio != null) {
+                    String que = novedades(cambio.optJSONArray("c"), insc);
+                    if (!que.isEmpty()) avisoMis(c, r, "📝 Novedades en " + r.optString("name"), que + " · " + cuando(r), 6);
                 }
             }
             // la víspera (a partir de las 9 de la mañana, una sola vez)
@@ -239,6 +247,32 @@ public class AvisosWorker extends Worker {
             }
         }
         ed.putString("favSnap", nuevo.toString()).apply();
+    }
+
+    /** «Nuevo cartel, reglamento y precio». Fecha, hora e inscripción cerrada/agotada ya tienen su propio aviso. */
+    private static String novedades(JSONArray campos, String insc) {
+        if (campos == null) return "";
+        java.util.List<String> out = new java.util.ArrayList<>();
+        for (int i = 0; i < campos.length(); i++) {
+            String k = campos.optString(i), t = null;
+            switch (k) {
+                case "banner": t = "cartel"; break;
+                case "regulation": t = "reglamento"; break;
+                case "price": t = "precio"; break;
+                case "km": t = "distancias"; break;
+                case "route": t = "recorrido"; break;
+                case "url": t = "web oficial"; break;
+                case "inscripcion":
+                    if ("abierta".equals(insc)) t = "inscripción abierta";
+                    else if ("proximamente".equals(insc)) t = "inscripción próximamente";
+                    break;
+                default: break;
+            }
+            if (t != null && !out.contains(t)) out.add(t);
+        }
+        if (out.isEmpty()) return "";
+        String txt = out.size() == 1 ? out.get(0) : android.text.TextUtils.join(", ", out.subList(0, out.size() - 1)) + " y " + out.get(out.size() - 1);
+        return "Nuevo: " + txt;
     }
 
     /** Aviso de una carrera favorita. Tocarlo abre su ficha en la app (o la inscripción, si el aviso es de inscribirse). */
