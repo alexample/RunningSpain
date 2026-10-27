@@ -201,7 +201,15 @@ public class AvisosWorker extends Worker {
             if (r == null || !favs.contains(r.optString("id"))) continue;
             String id = r.optString("id"), fecha = r.optString("date"), hr = r.optString("time", ""),
                     insc = r.optString("inscripcion", "");
-            if (fecha.compareTo(hoy) < 0) continue;
+            if (fecha.compareTo(hoy) < 0) {
+                // carrera ya disputada: aviso cuando el robot encuentra los resultados (una sola vez)
+                String res = r.optString("resultados", "");
+                if (puede && !res.isEmpty() && !res.equals(p.getString("res_" + id, ""))) {
+                    avisoMis(c, r, "🏁 Resultados: " + r.optString("name"), "Ya están publicadas las clasificaciones. Toca para verlas.", 5);
+                    ed.putString("res_" + id, res);
+                }
+                continue;
+            }
             try { nuevo.put(id, new JSONObject().put("date", fecha).put("time", hr).put("insc", insc)); } catch (Exception ignored) { }
             JSONObject antes = snap.optJSONObject(id);
             if (!puede) continue;
@@ -241,7 +249,8 @@ public class AvisosWorker extends Worker {
                 .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_SINGLE_TOP);
         PendingIntent pi = PendingIntent.getActivity(c, nid, abrir, PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE);
         String url = r.optString("url", "");
-        if (tipo == 4 && r.optBoolean("official") && !url.isEmpty()) {
+        if (tipo == 5 && !r.optString("resultados", "").isEmpty()) url = r.optString("resultados");
+        if ((tipo == 4 && r.optBoolean("official") || tipo == 5) && !url.isEmpty()) {
             pi = PendingIntent.getActivity(c, nid, new Intent(Intent.ACTION_VIEW, Uri.parse(url)).setFlags(Intent.FLAG_ACTIVITY_NEW_TASK),
                     PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE);
         }

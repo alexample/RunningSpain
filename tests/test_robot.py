@@ -535,6 +535,36 @@ class TarjetaTests(unittest.TestCase):
             self.assertEqual(tarjeta.asegurar([r], date(2026, 10, 27), log=lambda *_: None, short_code=share.short_code), 0)   # sin cambios
 
 
+class ResultadosTests(unittest.TestCase):
+    R = {"id": "x", "name": "Carrera Popular AESAN", "date": "2026-10-24", "city": "Madrid"}
+
+    def mejor(self, html, final, r=None):
+        from scraper import resultados
+        c = resultados.candidatos(html, final, r or self.R)
+        return c[0][:2] if c else None
+
+    def test_enlaces_a_resultados(self):
+        from scraper import resultados
+        sc, h = self.mejor('<a href="/wp-content/uploads/2026/10/01_5_KM_catCarrera_v01.pdf">Consulta los resultados aquí</a>', "https://carrerapopularaesan.com/")
+        self.assertGreaterEqual(sc, 4)
+        el = ('<a href="index.php?zwshow=results">Resultados</a>'
+              '<a href="index.php?zwshow=compdet&idcomp=7380188&compsec=clas">Clasificación</a>')
+        sc, h = self.mejor(el, "https://www.elitechip.net/index.php?zwshow=compdet&idcomp=7380188")
+        self.assertIn("compsec=clas", h)
+        self.assertGreaterEqual(sc, 4)
+        cm = ('<a href="https://www.cruzandolameta.es/carreras/finalizadas/">Clasificaciones</a>'
+              '<a href="https://rankings.cruzandolameta.es/pulpi-circuito-2026-absoluta">VER</a>')
+        sc, h = self.mejor(cm, "https://www.cruzandolameta.es/clasificaciones/v2/pulpi", dict(self.R, name="Pulpí Circuito"))
+        self.assertIn("rankings.", h)
+        # enlaces genéricos o de inscripción: nunca
+        self.assertIsNone(self.mejor('<a href="https://sportmaniacs.com/es/results">Clasificaciones</a><a href="/inscripcion">Inscripción y resultados</a>', "https://x.es/"))
+        # Sportmaniacs: solo cuando ya hay «Ver clasificaciones»
+        self.assertIsNone(resultados.sportmaniacs('<a>Pendiente de Clasificación</a>', "https://sportmaniacs.com/es/races/wineland26"))
+        self.assertEqual(resultados.sportmaniacs('<a href="https://sportmaniacs.com/es/races/a-media-do-camino/6ad/rankings">Ver clasificaciones</a>',
+                                                 "https://sportmaniacs.com/es/races/a-media-do-camino"),
+                         "https://sportmaniacs.com/es/races/a-media-do-camino#results")
+
+
 class IATests(unittest.TestCase):
     def test_solo_excepcional_y_validado(self):
         from scraper import ia

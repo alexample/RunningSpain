@@ -10,7 +10,7 @@ import time
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
-from . import config, enrich, ia, net, parse, share, shorten, sources, tarjeta
+from . import config, enrich, ia, net, parse, resultados, share, shorten, sources, tarjeta
 
 DATA = Path(__file__).resolve().parent.parent / "docs" / "data" / "carreras.json"
 SEEN = Path(__file__).resolve().parent.parent / "estado" / "vistos.json"
@@ -21,7 +21,7 @@ GENERIC = {"san", "sant", "silvestre", "media", "maraton", "medio", "mitja", "ma
            "las", "y", "i", "a", "en", "carrera", "cursa", "carreira", "popular", "ciudad", "ciutat",
            "villa", "vila", "2026", "2027", "2028", "edicion"}
 # Campos cuyo cambio se anuncia en la web como "actualizada"
-TRACKED = ("url", "regulation", "banner", "price", "time", "km", "date", "route", "inscripcion")
+TRACKED = ("url", "regulation", "banner", "price", "time", "km", "date", "route", "inscripcion", "resultados")
 
 
 RUN_AT = datetime.now(timezone.utc).isoformat(timespec="minutes")
@@ -515,6 +515,10 @@ def main(argv: list[str]) -> None:
     media(db, today, changes)
     save(db)
     registrations(db, today, changes)
+    try:   # clasificaciones de las carreras de los últimos días
+        resultados.pasada(db, today, changes, log)
+    except Exception as e:
+        log(f"Resultados: error {e}")
     try:   # último recurso, solo para lo que el robot no ha podido en varios días
         ia.pasada(db, today, changes, log)
     except Exception as e:

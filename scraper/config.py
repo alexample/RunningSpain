@@ -170,6 +170,9 @@ IA_MIN_DIAS_PUBLICADA = 3      # la ficha lleva al menos estos días publicada y
 IA_PROXIMA_DIAS = 21           # solo carreras próximas
 IA_REINTENTO_DIAS = 7          # cada carrera, como mucho una vez por semana
 IA_MAX_POR_EJECUCION = 12      # y como mucho estas por vuelta (2 vueltas al día)
+# Resultados: se buscan durante estos días tras la carrera; la IA solo el último día y como mucho estas por vuelta
+RESULTADOS_DIAS = 2
+RESULTADOS_IA_MAX = 10
 LLM_MODEL = "claude-haiku-5-5"
 LLM_MAX_CALLS = 120
 
