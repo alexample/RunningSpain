@@ -558,6 +558,11 @@ class ResultadosTests(unittest.TestCase):
         self.assertIn("rankings.", h)
         # enlaces genéricos o de inscripción: nunca
         self.assertIsNone(self.mejor('<a href="https://sportmaniacs.com/es/results">Clasificaciones</a><a href="/inscripcion">Inscripción y resultados</a>', "https://x.es/"))
+        r = dict(self.R, date="2026-10-25")
+        for mala in ("https://carreraspopulares.com/calculadora_de_tiempos/0", "https://runedia.mundodeportivo.com/buscador-resultados-carreras",
+                     "https://carrerasciudadreal.es/clasificacion/", "https://deportime.es/wp-content/uploads/2026/09/CLASIFICACION-X.pdf"):
+            self.assertFalse(resultados.valido(mala, r), mala)
+        self.assertTrue(resultados.valido("https://pulsaciones.net/wp-content/uploads/2026/10/CLASIFICACION-GENERAL.pdf", r))
         # Sportmaniacs: solo cuando ya hay «Ver clasificaciones»
         self.assertIsNone(resultados.sportmaniacs('<a>Pendiente de Clasificación</a>', "https://sportmaniacs.com/es/races/wineland26"))
         self.assertEqual(resultados.sportmaniacs('<a href="https://sportmaniacs.com/es/races/a-media-do-camino/6ad/rankings">Ver clasificaciones</a>',

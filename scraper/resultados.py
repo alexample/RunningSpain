@@ -16,7 +16,8 @@ _FUERTE = re.compile(r"\b(ver|consulta|descarga|view|veure)\b.*\b(resultad|clasi
                      r"^\s*(resultados|clasificaci[oó]n(es)?|classificaci[oó](ns)?|results|rankings?|sailkapenak?)\s*(20\d\d)?\s*$", re.I)
 # enlaces genéricos de las plataformas o de la web (listados de todas las carreras, directo, servicios…)
 _GENERICO = re.compile(r"/(results|resultados|clasificaciones|classificacions)/?$|zwshow=results$|carreras/finalizadas|carreras-live|"
-                       r"/informacion|#servicio|pendiente|pending|live-?timing|/live/?$|inscrip|inscription|facebook|instagram|twitter|youtube", re.I)
+                       r"/informacion|#servicio|pendiente|pending|live-?timing|/live/?$|inscrip|inscription|facebook|instagram|twitter|youtube|"
+                       r"calculadora|buscador|/search|/buscar|/clasificacion/?$|/resultat/?$|/resultats/?$|/rankings?/?$", re.I)
 _PLATAFORMA = re.compile(r"/rankings?\b|compsec=clas|rankings\.|/clasificaciones/v2/|/clasificacion/|/classificacio|/results/\d|"
                          r"resultados\.php|clasificaciones\.php|/resultats", re.I)
 
@@ -35,7 +36,7 @@ def candidatos(html: str, final: str, r: dict) -> list[tuple[int, str, str]]:
     for a in s.find_all("a", href=True):
         t = a.get_text(" ", strip=True)[:90]
         h = parse.abs_url(base, a["href"]).split("#")[0] if "#results" not in a["href"] else parse.abs_url(base, a["href"])
-        if not h.startswith("http") or not _PAL.search(t + " " + h) or _GENERICO.search(h) or _GENERICO.search(t):
+        if not h.startswith("http") or not _PAL.search(t + " " + h) or _GENERICO.search(h) or _GENERICO.search(t) or not valido(h, r):
             continue
         score = 1
         if _FUERTE.search(t):
@@ -48,6 +49,16 @@ def candidatos(html: str, final: str, r: dict) -> list[tuple[int, str, str]]:
             score += 1
         out[h] = max(out.get(h, (0, ""))[0], score), t
     return sorted(((sc, h, t) for h, (sc, t) in out.items()), reverse=True)
+
+
+def valido(url: str, r: dict) -> bool:
+    """Un enlace guardado sigue valiendo: no es genérico ni un archivo subido antes de la carrera (sería de otra edición)."""
+    if not url or _GENERICO.search(url.split("#")[0]):
+        return False
+    m = re.search(r"/uploads/(20\d\d)/(\d\d)/", url)
+    if m and f"{m.group(1)}-{m.group(2)}" < r["date"][:7]:
+        return False
+    return True
 
 
 def sportmaniacs(html: str, final: str) -> str | None:
@@ -96,6 +107,11 @@ def _ia(r: dict, cands: list[dict], tok: str) -> str | None:
 
 def pasada(db: dict, today: date, changes: dict, log) -> int:
     desde = (today - timedelta(days=config.RESULTADOS_DIAS)).isoformat()
+    for r in db["races"]:   # enlaces que ya no pasan el filtro (genéricos, de otra edición): fuera
+        if r.get("resultados") and not valido(r["resultados"], r):
+            log(f"  fuera resultados de {r['name']}: {r['resultados']}")
+            r.pop("resultados")
+            r["ia"] = [k for k in r.get("ia") or [] if k != "resultados"]
     todo = [r for r in db["races"] if desde <= r["date"] <= today.isoformat() and not r.get("resultados")]
     log(f"Resultados: {len(todo)} carreras disputadas en los últimos {config.RESULTADOS_DIAS} días sin resultados todavía")
     hallados, por_ia, tok = 0, 0, None
