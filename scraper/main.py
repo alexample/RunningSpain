@@ -10,7 +10,7 @@ import time
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
-from . import config, enrich, ia, net, parse, share, shorten, sources
+from . import config, enrich, ia, net, parse, share, shorten, sources, tarjeta
 
 DATA = Path(__file__).resolve().parent.parent / "docs" / "data" / "carreras.json"
 SEEN = Path(__file__).resolve().parent.parent / "estado" / "vistos.json"
@@ -499,6 +499,10 @@ def main(argv: list[str]) -> None:
         ia.pasada(db, today, changes, log)
     except Exception as e:
         log(f"IA: error {e}")
+    try:   # imagen de vista previa propia (X no siempre puede bajar el cartel de la web del organizador)
+        tarjeta.asegurar(db["races"], today, log=log, short_code=share.short_code)
+    except Exception as e:
+        log(f"Tarjetas: error {e}")
     try:
         shorten.ensure([r for r in db["races"] if r["date"] >= today.isoformat()], log=log)
     except Exception as e:   # el acortador nunca debe parar el robot

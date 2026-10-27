@@ -55,8 +55,11 @@ def page(r: dict) -> str:
     when, rest = describe(r)
     target = f"{SITE}#c-{r['id']}"
     self_url = share_url(r)
-    img = r.get("banner") or SITE + "logo.png"
+    from . import tarjeta
+    rel = tarjeta.url_relativa(short_code(r["id"]))
+    img = f"{SITE}c/{rel}" if rel else (r.get("banner") or SITE + "logo.png")
     desc = when + (" · " + rest if rest else "")
+    size = '\n<meta property="og:image:width" content="1200">\n<meta property="og:image:height" content="630">' if rel else ""
     return f"""<!doctype html>
 <html lang="es"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -67,11 +70,14 @@ def page(r: dict) -> str:
 <meta property="og:title" content="{e(r['name'])}">
 <meta property="og:description" content="{e(desc)}">
 <meta property="og:image" content="{e(img)}">
+<meta property="og:image:alt" content="{e(r['name'])}">{size}
 <meta property="og:url" content="{e(self_url)}">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{e(r['name'])}">
+<meta name="twitter:description" content="{e(desc)}">
+<meta name="twitter:image" content="{e(img)}">
 <link rel="icon" href="../logo.svg">
 <link rel="canonical" href="{e(self_url)}">
-<meta http-equiv="refresh" content="0; url={e(target)}">
 <script>location.replace({target!r});</script>
 </head><body style="font-family:system-ui,sans-serif;padding:24px">
 <p><a href="{e(target)}">{e(r['name'])}</a> · {e(desc)}</p>

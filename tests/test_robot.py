@@ -408,7 +408,7 @@ class ShareTests(unittest.TestCase):
         self.assertEqual(share.share_url(r), f"https://alexample.github.io/RunningSpain/c/{code}.html")
         with mock.patch("scraper.shorten.load", return_value={}):
             self.assertIn(share.share_url(r), xpost.compose(r, con_enlace=True))
-        self.assertIn('content="https://alexample.github.io/RunningSpain/#c-carrera-popular-aesan-2026-1024"', share.page(r).replace("url=", 'content="'))
+        self.assertIn('href="https://alexample.github.io/RunningSpain/#c-carrera-popular-aesan-2026-1024"', share.page(r))
 
 
 class ShortenTests(unittest.TestCase):
@@ -484,6 +484,23 @@ class LimpiezaTests(unittest.TestCase):
                          "banner": "https://sportmaniacs.com/images/share/sportmaniacs-race.jpg"} for i in range(2)]}
         main.tidy(db)
         self.assertFalse(any(r.get("banner") for r in db["races"]))
+
+
+class TarjetaTests(unittest.TestCase):
+    def test_tarjeta_propia_para_x(self):
+        import tempfile
+        from scraper import share, tarjeta
+        r = {"id": "cursa-x-2026-1101", "name": "Cursa de les Caves", "date": "2026-11-01", "time": "10:00", "city": "Lavern",
+             "region": "Cataluña", "km": "10 km", "distances": ["10K"], "addedAt": "2026-10-27"}
+        with tempfile.TemporaryDirectory() as d, mock.patch.object(tarjeta, "OUT", Path(d)), mock.patch.object(tarjeta, "INDICE", Path(d) / "i.json"):
+            self.assertEqual(tarjeta.asegurar([r], date(2026, 10, 27), log=lambda *_: None, short_code=share.short_code), 1)
+            code = share.short_code(r["id"])
+            self.assertTrue((Path(d) / f"{code}.jpg").exists())
+            pagina = share.page(r)
+            self.assertIn(f'content="https://alexample.github.io/RunningSpain/c/img/{code}.jpg"', pagina)
+            self.assertIn('name="twitter:image"', pagina)
+            self.assertNotIn("http-equiv=\"refresh\"", pagina)
+            self.assertEqual(tarjeta.asegurar([r], date(2026, 10, 27), log=lambda *_: None, short_code=share.short_code), 0)   # sin cambios
 
 
 class IATests(unittest.TestCase):
