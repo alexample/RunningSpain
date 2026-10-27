@@ -1,4 +1,5 @@
 {
+ "avisos": {},
  "publicadas": {
   "1-edicion-hunting-teguise-003-2026-1114": "macrodroid",
   "10-k-2026-1115": "macrodroid",
@@ -10,6 +11,7 @@
   "28e-cros-ciutat-de-sant-cugat-2026-1108": "macrodroid",
   "360-the-challenge-gran-canaria-2026-1104": "macrodroid",
   "40-volta-a-la-foia-2026-1115": "macrodroid",
+  "42-bieg-sylwestrowy-2026-1231": "macrodroid",
   "48a-cursa-popular-igualada-2026-1025": "macrodroid",
   "5-km-sin-alcohol-2026-1115": "macrodroid",
   "5000-la-charca-grande-2026-1121": "macrodroid",
@@ -112,9 +114,11 @@
   "ivtrail-salvatrail-salvatierra-de-los-barros-2026-1108": "macrodroid",
   "la-cursa-del-tractor-2026-1128": "macrodroid",
   "la-nocturna-trinxavambes-2026-1129": "macrodroid",
+  "lazkaoko-san-silbestrea-2026-1231": "macrodroid",
   "legua-urbana-de-yuncos-2026-1108": "macrodroid",
   "lia-assurex-let-039-s-run-for-my-beirut-2026-1108": "macrodroid",
   "liga-de-barrios-novelda-2026-1219": "macrodroid",
+  "lillo-christmas-race-walk-2026-1231": "macrodroid",
   "lizuniako-egoera-2026-1024": "macrodroid",
   "llano-del-camello-2026-1206": "macrodroid",
   "los-alcazares-en-marcha-contra-el-cancer-2026-los-alcazares-25-10-2026-2026-1025": "macrodroid",
@@ -137,6 +141,7 @@
   "oboncross-x-2026-1031": "macrodroid",
   "ocean-lava-lanzarote-2026-1024": "macrodroid",
   "open-maxxis-marathon-sant-sadurni-d-039-anoia-2026-1025": "macrodroid",
+  "orioko-san-silbestrea-2026-1231": "macrodroid",
   "pozo-estrecho-y-la-palma-en-marcha-contra-el-cancer-2026-1025": "macrodroid",
   "puerto-serrano-en-marcha-contra-el-cancer-2026-1025": "macrodroid",
   "pulpi-circuito-de-carreras-populares-diputacion-de-almeria-2026-1024": "macrodroid",
@@ -147,7 +152,10 @@
   "san-juan-de-los-terreros-2026-1024": "macrodroid",
   "san-silvestre-2026-les-alqueries-2026-1220": "macrodroid",
   "san-silvestre-benidorm-2026-1220": "macrodroid",
+  "san-silvestre-de-mohedas-de-la-jara-2026-1231": "macrodroid",
   "san-silvestre-del-masnou-2026-1226": "macrodroid",
+  "san-silvestre-garachico-2026-1231": "macrodroid",
+  "san-silvestre-las-palmas-de-gran-canaria-2026-1231": "macrodroid",
   "san-silvestre-muradana-2026-1226": "macrodroid",
   "san-silvestre-pacense-badajoz-2026-1227": "macrodroid",
   "san-silvestre-sevillana-2026-1227": "macrodroid",
@@ -157,6 +165,7 @@
   "san-silvestre-valencia-2026-1230": "macrodroid",
   "sanitas-marca-running-series-madrid-2026-1025": "macrodroid",
   "sant-antoni-camina-amb-el-cancer-2026-1108": "macrodroid",
+  "sant-silvestre-de-berga-2026-1231": "macrodroid",
   "sant-silvestre-del-vendrell-2026-1226": "macrodroid",
   "sant-silvestre-llorencina-2026-1231": "macrodroid",
   "social-sunset-run-palma-2026-1107": "macrodroid",
@@ -191,6 +200,7 @@
   "xii-timoncap-costa-calida-2026-cabo-de-palos-24-10-2026-2026-1024": "macrodroid",
   "xiii-bieg-uliczny-sw-marcina-o-puchar-burmistrza-miasta-i-gminy-kepno-bieg-s-uzb-2026-1111": "macrodroid",
   "xiii-edicio-curses-serra-de-tramuntana-2026-1024": "macrodroid",
+  "xiii-san-silvestre-quot-villa-del-esgrafiado-quot-valdefuentes-2026-1231": "macrodroid",
   "xiv-carrera-contra-la-violencia-de-genero-lanzarote-2026-1121": "macrodroid",
   "xlvi-carrera-popular-villa-de-grazalema-2026-1108": "macrodroid",
   "xlviii-carrera-popular-villaviciosa-de-odon-2026-1025": "macrodroid",
@@ -203,6 +213,7 @@
   "xxix-vuelta-a-pie-nocturna-tous-2026-1212": "macrodroid",
   "xxvii-carrera-popular-valle-de-santa-ana-2026-1025": "macrodroid",
   "xxx-memorial-miguel-angel-gomez-campuzano-2026-1115": "macrodroid",
-  "xxxvii-erandioko-herri-krosa-2026-1108": "macrodroid"
+  "xxxvii-erandioko-herri-krosa-2026-1108": "macrodroid",
+  "zegamako-san-silbestrea-2026-1231": "macrodroid"
  }
 }
