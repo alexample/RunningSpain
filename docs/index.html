@@ -10,8 +10,7 @@
 <meta property="og:image" content="https://alexample.github.io/RunningSpain/logo.png">
 <link rel="icon" type="image/svg+xml" href="logo.svg">
 <link rel="apple-touch-icon" href="logo.svg">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@600;700;800&family=Figtree:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="fuentes/fuentes.css">
 <style>
 *{box-sizing:border-box}html{color-scheme:light}body{margin:0}img{max-width:100%}[hidden]{display:none!important}
 :root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
@@ -176,6 +175,13 @@ input[type=search]{flex:1 1 180px}
 .up:disabled{cursor:default;opacity:.7}
 .upd:disabled{cursor:default}
 .note.warn{color:var(--ink);background:color-mix(in srgb,#f2b100 16%,transparent);border-radius:8px;padding:6px 10px}
+.aviso-priv{position:fixed;left:0;right:0;bottom:0;z-index:50;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px 16px;
+  padding:12px max(16px,env(safe-area-inset-right)) calc(12px + env(safe-area-inset-bottom)) max(16px,env(safe-area-inset-left));
+  background:var(--surface);border-top:1px solid var(--line);box-shadow:0 -6px 20px rgba(0,0,0,.08);font-size:14px}
+.aviso-priv p{margin:0;max-width:62ch}
+.aviso-priv a{color:var(--accent)}
+.aviso-priv button{font:inherit;font-weight:600;padding:8px 18px;border-radius:999px;border:0;background:var(--accent);color:var(--accent-ink);cursor:pointer}
+footer a{color:inherit}
 .mas{display:flex;flex-direction:column;align-items:center;gap:2px;margin:24px auto 8px;padding:12px 28px;border:1px solid var(--line);border-radius:999px;background:var(--surface);color:inherit;font:inherit;font-weight:600;cursor:pointer}
 .mas small{font-weight:400;color:var(--muted);font-size:12px}
 .mas:hover{border-color:currentColor}
@@ -223,7 +229,12 @@ footer{margin-top:40px;font-size:13px;color:var(--muted);max-width:70ch}
     <div class="empty">Cargando las carreras…</div>
   </main>
 
-  <footer>Fechas y horarios recopilados de webs de organizadores, ayuntamientos y calendarios. Confirma siempre en la web de la carrera antes de inscribirte. Solo se enlazan webs de los organizadores y sus reglamentos. Las carreras marcadas “Web oficial en búsqueda” se completan cada día.</footer>
+  <footer>Fechas y horarios recopilados de webs de organizadores, ayuntamientos y calendarios. Confirma siempre en la web de la carrera antes de inscribirte. Solo se enlazan webs de los organizadores y sus reglamentos. Las carreras marcadas “Web oficial en búsqueda” se completan cada día.
+    <br><a href="legal.html">Aviso legal, privacidad y cookies</a></footer>
+  <div id="aviso-priv" class="aviso-priv" role="region" aria-label="Aviso de privacidad" hidden>
+    <p>🍪 Sin cookies de seguimiento ni publicidad. Solo guardamos en tu dispositivo tus favoritas y tus valoraciones. <a href="legal.html#cookies">Más información</a></p>
+    <button type="button" id="aviso-ok">Entendido</button>
+  </div>
 </div>
 
 <script>
@@ -268,6 +279,20 @@ function wikilocTerms(r){
   return [core||(dist?(dist==="42K"?"maraton":dist==="21K"?"media maraton":dist):"carrera"),town].join(" ").trim();
 }
 // «Revisada el 23 oct a las 18:40»: última vez que el robot miró esta carrera
+// lo último que cambió en la ficha (lo apunta el robot en r.cambio)
+const CAMPO={nueva:"añadida al calendario",url:"web oficial",regulation:"reglamento",banner:"cartel",price:"precio",time:"hora",
+  km:"distancia",date:"fecha",route:"recorrido",inscripcion:"inscripción"};
+const INSC_TXT={abierta:"abierta",cerrada:"cerrada",agotada:"agotada",proximamente:"próximamente"};
+function cuando(t){const hoy=new Date();hoy.setHours(0,0,0,0);const d=new Date(t);d.setHours(0,0,0,0);
+  const n=Math.round((hoy-d)/864e5);return n<=0?"hoy":n===1?"ayer":n<7?"hace "+n+" días":"el "+d.getDate()+" "+MONTHS[d.getMonth()].slice(0,3)}
+function ultimoCambio(r){const c=r.cambio;
+  if(!c||!c.t||!(c.c||[]).length)return r.changedAt?"Datos actualizados "+cuando(parseDate(r.changedAt)):null;
+  const t=new Date(c.t);if(isNaN(t))return null;
+  const qs=c.c.filter(k=>CAMPO[k]).map(k=>k==="inscripcion"&&INSC_TXT[r.inscripcion]?"inscripción "+INSC_TXT[r.inscripcion]
+    :k==="date"&&c.fechaAntes?"fecha (antes "+parseDate(c.fechaAntes).getDate()+" "+MONTHS[parseDate(c.fechaAntes).getMonth()].slice(0,3)+")":CAMPO[k]);
+  if(!qs.length)return null;
+  const txt=qs.length>1?qs.slice(0,-1).join(", ")+" y "+qs[qs.length-1]:qs[0];
+  return (c.c[0]==="nueva"?"Añadida al calendario ":"Último cambio: "+txt+" · ")+cuando(t)}
 function revisada(r){
   let t=null,conHora=false;
   if(r.revisada){t=new Date(r.revisada);conHora=true}
@@ -278,7 +303,9 @@ function revisada(r){
   const diff=Math.round((hoy-dia)/864e5);
   const fecha=diff===0?"hoy":diff===1?"ayer":"el "+t.getDate()+" "+MONTHS[t.getMonth()].slice(0,3);
   const hora=conHora?" a las "+String(t.getHours()).padStart(2,"0")+":"+String(t.getMinutes()).padStart(2,"0"):"";
-  return el("p",{class:"rev"},"Revisada "+fecha+hora);
+  const p=el("p",{class:"rev"},"Revisada "+fecha+hora);
+  const u=ultimoCambio(r);if(u)p.append(el("br"),u);
+  return p;
 }
 // ---- compartir una carrera: texto + enlace a su página (vista previa con cartel en WhatsApp)
 const SITE="https://alexample.github.io/RunningSpain/";
@@ -523,6 +550,10 @@ async function cargarDatos(){
     return {data:JSON.parse(txt),offline:true};
   }
 }
+// aviso informativo de privacidad (una vez; no hay cookies que aceptar: solo almacenamiento técnico)
+(()=>{let visto=false;try{visto=localStorage.getItem("rs-aviso")==="1"}catch(e){visto=true}
+  if(visto)return;const a=document.getElementById("aviso-priv");a.hidden=false;
+  document.getElementById("aviso-ok").onclick=()=>{a.hidden=true;try{localStorage.setItem("rs-aviso","1")}catch(e){}}})();
 (async()=>{
   try{
     const {data,offline}=await cargarDatos();

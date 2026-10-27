@@ -9,6 +9,7 @@ on:
       - "android/**"
       - "docs/index.html"
       - "docs/logo.svg"
+      - "docs/legal.html"
       - ".github/workflows/apk.yml"
   workflow_dispatch:
 
@@ -36,6 +37,8 @@ jobs:
           rm -rf "$A" && mkdir -p "$A/data"
           cp ../docs/index.html ../docs/logo.svg ../docs/logo.png "$A/"
           cp -r ../docs/flags "$A/flags"
+          cp ../docs/legal.html "$A/"
+          cp -r ../docs/fuentes "$A/fuentes"
           cp ../docs/data/carreras.json "$A/data/carreras.json"   # datos de partida para el primer arranque sin conexión
           ls -la "$A"
 
