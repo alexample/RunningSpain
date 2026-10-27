@@ -211,12 +211,12 @@ def _enrich(r: dict, today: date) -> dict:
         # el cartel de la web oficial gana si puntúa igual o mejor que el que ya hubiera
         if img and (not r.get("banner") or score >= (r.get("bannerScore") or 0)) and img != r.get("banner"):
             upd["banner"], upd["bannerScore"] = img, score
-        if not r.get("route"):
+        if not r.get("route") or r.get("routeFrom") == "calendario":   # el de la web oficial manda
             route = parse.find_route(html, final)
             if route and net.domain(route) == net.domain(final) and parse.find_route_media(html, final)[0] is None:
                 route = route_from_site(final) or route     # página «Recorrido»: entrar a por el mapa
-            if route:
-                upd["route"] = route
+            if route and route != r.get("route"):
+                upd["route"], upd["routeFrom"] = route, "oficial"
 
     reg_text = ""
     if regulation and (not r.get("price") or not r.get("time")):

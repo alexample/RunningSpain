@@ -267,8 +267,15 @@ class MediaTests(unittest.TestCase):
             main.media(db, today, {"added": [], "updated": {}})
         r = db["races"][0]
         self.assertEqual(r["banner"], "https://cal.es/up/2026/cartel-10k.jpg")
-        self.assertEqual(r["route"], "https://www.strava.com/routes/123")
+        self.assertNotIn("route", r)          # el recorrido ya no se toma de los calendarios: solo de la web oficial
         self.assertEqual(r["mediaChecked"], "2026-10-23")
+        # con web oficial: el recorrido sale de ella, y sustituye al que vino de un calendario
+        db = {"rutasV3": "x", "races": [{"id": "b", "name": "10K X", "date": "2026-11-01", "source": "https://cal.es/a", "official": True,
+                                          "url": "https://10kx.es/", "route": "https://cal.es/mapa.jpg", "routeFrom": "calendario"}]}
+        with mock.patch("scraper.net.get", return_value=(self.PAGE, "https://10kx.es/", "text/html")):
+            main.media(db, today, {"added": [], "updated": {}})
+        r = db["races"][0]
+        self.assertEqual((r["route"], r["routeFrom"]), ("https://www.strava.com/routes/123", "oficial"))
 
 
 class RegulationTests(unittest.TestCase):

@@ -331,8 +331,17 @@ def media(db: dict, today: date, changes: dict) -> int:
             if "regulation" not in lst:
                 lst.append("regulation")
     log(f"Reglamentos revisados: {min(len(regs), config.MAX_MEDIA)} · {better} cambiados por un enlace que funciona · {broken} quitados por no abrir")
+    if not db.get("rutasV3"):   # una vez: el recorrido, primero de la web oficial; los sacados de calendarios se vuelven a buscar allí
+        for r in db["races"]:
+            if r.get("route") and not r.get("routeFrom"):
+                oficial = r.get("official") and r.get("url") and net.domain(r["route"]) == net.domain(r["url"])
+                r["routeFrom"] = "oficial" if oficial else "calendario"
+                if not oficial:
+                    r.pop("mediaChecked", None)
+        db["rutasV3"] = today.isoformat()
+    falta_ruta = lambda r: not r.get("route") or r.get("routeFrom") == "calendario"
     todo = [r for r in db["races"] if r["date"] >= today.isoformat() and (r.get("source") or r.get("url"))
-            and (not r.get("banner") or not r.get("route")) and (r.get("mediaChecked") or "") < limit]
+            and (not r.get("banner") or falta_ruta(r)) and (r.get("mediaChecked") or "") < limit]
     todo.sort(key=lambda r: r["date"])
     log(f"Carteles y recorridos: {len(todo)} pendientes, se revisan {min(len(todo), config.MAX_MEDIA)}")
     found = 0
@@ -344,13 +353,12 @@ def media(db: dict, today: date, changes: dict) -> int:
             g = sources.read_media(u, r.get("name", ""))
             if g.get("banner") and g["bannerScore"] > got.get("bannerScore", 0):
                 got["banner"], got["bannerScore"] = g["banner"], g["bannerScore"]
-            if g.get("route") and not got.get("route"):
-                got["route"] = g["route"]
-            if got.get("bannerScore", 0) >= 6 and (got.get("route") or r.get("route")):
+            if got.get("bannerScore", 0) >= 6:
                 break
         touch(r)
-        # el recorrido, primero en la web de la carrera (portada o página «Recorrido»)
-        if not r.get("route") and r.get("official") and r.get("url"):
+        # el recorrido: SOLO de la web oficial (portada o página «Recorrido»). Si el robot no lo encuentra, lo intenta
+        # la IA (ia.py) y, como última opción, la ficha ofrece buscarlo en Wikiloc.
+        if falta_ruta(r) and r.get("official") and r.get("url"):
             own = enrich.route_from_site(r["url"])
             if own:
                 got["route"] = own
@@ -359,8 +367,8 @@ def media(db: dict, today: date, changes: dict) -> int:
         if got.get("banner") and (not r.get("banner") or got["bannerScore"] > (r.get("bannerScore") or 0)):
             r["banner"], r["bannerScore"] = got["banner"], got["bannerScore"]
             changed.append("banner")
-        if got.get("route") and not r.get("route"):
-            r["route"] = got["route"]
+        if got.get("route") and falta_ruta(r) and got["route"] != r.get("route"):
+            r["route"], r["routeFrom"] = got["route"], "oficial"
             changed.append("route")
         if changed:
             found += 1

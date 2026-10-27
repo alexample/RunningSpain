@@ -34,6 +34,11 @@ def _token() -> str | None:
         return None
 
 
+def faltan(r: dict) -> list[str]:
+    """Lo que falta (un recorrido sacado de un calendario cuenta como que falta: se busca el de la web oficial)."""
+    return [k for k in FALTAN if not r.get(k) or (k == "route" and r.get("routeFrom") == "calendario")]
+
+
 def candidatas(db: dict, today: date) -> list[dict]:
     hasta = (today + timedelta(days=config.IA_PROXIMA_DIAS)).isoformat()
     publicada = (today - timedelta(days=config.IA_MIN_DIAS_PUBLICADA)).isoformat()
@@ -44,7 +49,7 @@ def candidatas(db: dict, today: date) -> list[dict]:
             continue
         if (r.get("addedAt") or "2000-01-01") > publicada or (r.get("iaAt") or "") > reintento:
             continue
-        if not [k for k in FALTAN if not r.get(k)]:
+        if not faltan(r):
             continue
         if not (r.get("official") and r.get("url")) and not enrich.source_pages(r):
             continue
@@ -55,9 +60,10 @@ def candidatas(db: dict, today: date) -> list[dict]:
 
 def _material(r: dict) -> dict:
     """Texto, imágenes y enlaces de la web oficial, el reglamento y las fichas de calendario."""
-    pages = ([r["url"]] if r.get("official") and r.get("url") else []) + enrich.source_pages(r)
+    oficial = r["url"] if r.get("official") and r.get("url") else None
+    pages = ([oficial] if oficial else []) + enrich.source_pages(r)
     texto, imgs, links, vistos = [], [], [], set()
-    for u in pages[:3]:
+    for n, u in enumerate(pages[:3]):
         html, final, _ = net.get(u)
         if not html or isinstance(html, bytes):
             continue
@@ -77,7 +83,8 @@ def _material(r: dict) -> dict:
         for a in s.find_all("a", href=True):
             href = parse.abs_url(base, a["href"])
             t = a.get_text(" ", strip=True)[:80]
-            if href.startswith("http") and href not in vistos and _ROUTE_LINK.search(href + " " + t):
+            # recorrido: solo enlaces de la web oficial (en los calendarios suelen ser mapas de otras carreras)
+            if oficial and n == 0 and href.startswith("http") and href not in vistos and _ROUTE_LINK.search(href + " " + t):
                 vistos.add(href)
                 links.append({"u": href, "t": t})
     if r.get("regulation"):
@@ -107,10 +114,10 @@ def _aplica(r: dict, res: dict, mat: dict, today: date) -> list[str]:
         r["banner"], r["bannerScore"] = mat["imagenes"][i]["u"], 3
         puesto.append("banner")
     i = res.get("recorrido")
-    if not r.get("route") and isinstance(i, int) and 0 <= i < len(mat["enlaces"]):
+    if (not r.get("route") or r.get("routeFrom") == "calendario") and isinstance(i, int) and 0 <= i < len(mat["enlaces"]):
         u = mat["enlaces"][i]["u"]
         if parse.is_route_url(u) or re.search(r"\.(gpx|kml|kmz|pdf|jpe?g|png)(\?|$)", u, re.I):
-            r["route"] = u
+            r["route"], r["routeFrom"] = u, "ia"
             puesto.append("route")
     return puesto
 
@@ -133,11 +140,11 @@ def pasada(db: dict, today: date, changes: dict, log) -> int:
         r["iaAt"] = today.isoformat()
         if not mat["texto"] and not mat["imagenes"]:
             continue
-        faltan = [FALTAN[k] for k in FALTAN if not r.get(k)]
+        que = [FALTAN[k] for k in faltan(r)]
         try:
             resp = requests.post(ENDPOINT, headers={"Authorization": f"Bearer {tok}"}, timeout=90,
                                  json={"nombre": r["name"], "fecha": r["date"], "lugar": f"{r.get('city', '')} ({r.get('region', '')})",
-                                       "faltan": faltan, **mat})
+                                       "faltan": que, **mat})
         except Exception as e:
             log(f"  IA: error de conexión {e}")
             break
