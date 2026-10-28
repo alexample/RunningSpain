@@ -155,6 +155,9 @@ public class AvisosWorker extends Worker {
             if (seAbre && aperturas && !primera && encajaFiltros(r, hoy, fDesde, fHasta, regiones, dist)) abiertas.add(r);
             if (vistas.contains(id) || primera || !activo) continue;
             if (r.optString("date").compareTo(hoy) < 0) continue;
+            // solo las que la web muestra en «Nuevas» (añadidas en los últimos 7 días), igual que los tuits
+            String hace7 = new SimpleDateFormat("yyyy-MM-dd", Locale.ROOT).format(new Date(System.currentTimeMillis() - 7 * 86400000L));
+            if (r.optString("addedAt", "").compareTo(hace7) < 0) continue;
             String fecha = r.optString("date");
             if (!fDesde.isEmpty() && fecha.compareTo(fDesde) < 0) continue;
             if (!fHasta.isEmpty() && fecha.compareTo(fHasta) > 0) continue;

@@ -155,12 +155,16 @@ def avisos(races: list, st: dict, today: date) -> list:
 
 def pending(races: list, st: dict, today: date) -> list:
     done = st["publicadas"]
+    # solo las que la web enseña en «Nuevas» (añadidas en los últimos 7 días); las más viejas ya no se anuncian
+    reciente = max(config.X_DESDE, (today - timedelta(days=7)).isoformat())
     todo = [r for r in races
-            if r.get("addedAt") and r["addedAt"] >= config.X_DESDE
+            if r.get("addedAt") and r["addedAt"] >= reciente
             and r["date"] >= today.isoformat() and r["id"] not in done]
     # Orden de envío: primero las añadidas antes; dentro del mismo día, por fecha de la carrera (la más próxima primero)
     nuevas = sorted(todo, key=lambda r: (r["addedAt"], r["date"], r.get("time") or "99", r["name"]))
-    return nuevas + avisos(races, st, today)
+    # los avisos (inscripciones abiertas, agotadas, cambio de fecha) van primero: caducan antes y si no, el tope
+    # de cada vuelta se lo comían siempre las carreras nuevas
+    return avisos(races, st, today) + nuevas
 
 
 def marcar(st: dict, r: dict, via: str) -> None:

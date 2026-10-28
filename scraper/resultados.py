@@ -5,7 +5,7 @@ plataformas (Sportmaniacs, Elitechip, Cruzando la Meta…) por si ya hay clasifi
 no las ha encontrado, y solo entonces, pregunta a la IA, que únicamente puede elegir uno de los enlaces vistos.
 """
 import re
-from datetime import date, timedelta
+from datetime import date, datetime, timedelta, timezone
 
 import requests
 
@@ -118,6 +118,7 @@ def pasada(db: dict, today: date, changes: dict, log) -> int:
     for r in todo:
         url, cands = buscar(r)
         r["resultadosAt"] = today.isoformat()
+        r["revisada"] = datetime.now(timezone.utc).isoformat(timespec="minutes")
         ultimo = r["date"] == desde      # último día del plazo: si el robot no los ha visto, último recurso
         if not url and ultimo and config.IA_ACTIVA and cands and por_ia < config.RESULTADOS_IA_MAX:
             tok = tok or ia._token()

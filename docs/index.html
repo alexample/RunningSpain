@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>RunningSpain</title>
-<meta name="description" content="Carreras de asfalto en España: maratones, medias, 10K y populares de los próximos tres meses, con web oficial, precio y reglamento.">
+<meta name="description" content="Carreras de asfalto en España: maratones, medias, 10K y populares de los próximos cuatro meses, con web oficial, precio y reglamento.">
 <meta property="og:title" content="RunningSpain">
 <meta property="og:description" content="Calendario de carreras de asfalto de toda España, actualizado cada día.">
 <meta property="og:image" content="https://alexample.github.io/RunningSpain/logo.png">
@@ -200,7 +200,7 @@ footer{margin-top:40px;font-size:13px;color:var(--muted);max-width:70ch}
   <header>
     <div>
       <h1><img class="logo" src="logo.svg" alt="" width="44" height="44"><span class="t">Running<span>Spain</span></span></h1>
-      <p class="sub">Maratones, medias, 10K y populares de toda España en los próximos tres meses. Se actualiza cada día.</p>
+      <p class="sub">Maratones, medias, 10K y populares de toda España en los próximos cuatro meses. Se actualiza cada día.</p>
     </div>
     <div class="hbtns">
     <button class="upd" id="upd" type="button" aria-pressed="false" hidden>
@@ -285,16 +285,17 @@ function wikilocTerms(r){
 // «Revisada el 23 oct a las 18:40»: última vez que el robot miró esta carrera
 // lo último que cambió en la ficha (lo apunta el robot en r.cambio)
 const CAMPO={nueva:"añadida al calendario",url:"web oficial",regulation:"reglamento",banner:"cartel",price:"precio",time:"hora",
-  km:"distancia",date:"fecha",route:"recorrido",inscripcion:"inscripción"};
+  km:"distancia",date:"fecha",route:"recorrido",inscripcion:"inscripción",resultados:"resultados publicados"};
 const INSC_TXT={abierta:"abierta",cerrada:"cerrada",agotada:"agotada",proximamente:"próximamente"};
 function cuando(t){const hoy=new Date();hoy.setHours(0,0,0,0);const d=new Date(t);d.setHours(0,0,0,0);
   const n=Math.round((hoy-d)/864e5);return n<=0?"hoy":n===1?"ayer":n<7?"hace "+n+" días":"el "+d.getDate()+" "+MONTHS[d.getMonth()].slice(0,3)}
 function ultimoCambio(r){const c=r.cambio;
-  if(!c||!c.t||!(c.c||[]).length)return r.changedAt?"Datos actualizados "+cuando(parseDate(r.changedAt)):null;
+  const sinDetalle=()=>r.changedAt?"Datos actualizados "+cuando(parseDate(r.changedAt)):null;
+  if(!c||!c.t||!(c.c||[]).length)return sinDetalle();
   const t=new Date(c.t);if(isNaN(t))return null;
   const qs=c.c.filter(k=>CAMPO[k]).map(k=>k==="inscripcion"&&INSC_TXT[r.inscripcion]?"inscripción "+INSC_TXT[r.inscripcion]
     :k==="date"&&c.fechaAntes?"fecha (antes "+parseDate(c.fechaAntes).getDate()+" "+MONTHS[parseDate(c.fechaAntes).getMonth()].slice(0,3)+")":CAMPO[k]);
-  if(!qs.length)return null;
+  if(!qs.length)return sinDetalle();
   const txt=qs.length>1?qs.slice(0,-1).join(", ")+" y "+qs[qs.length-1]:qs[0];
   return (c.c[0]==="nueva"?"Añadida al calendario ":"Último cambio: "+txt+" · ")+cuando(t)}
 function revisada(r){
@@ -432,7 +433,7 @@ function card(r){
 
 function render(){
   const today=new Date();today.setHours(0,0,0,0);
-  const end=new Date(today);end.setMonth(end.getMonth()+3);
+  const end=new Date(today);end.setMonth(end.getMonth()+4);
   const norm=s=>(s||"").normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase();
   const nq=norm(q);
   const since=newSince();
@@ -521,7 +522,7 @@ function setTab(t,push){tab=t;if(t==="new")onlyNews=false;
   document.getElementById("upd").setAttribute("aria-pressed",String(onlyNews));
   if(push){try{history.replaceState(null,"",t==="new"?"#nuevas":t==="fav"?"#mis":location.pathname+location.search)}catch(e){}}
   render()}
-function countNew(){const since=newSince(),t=new Date(),today=iso(t);t.setMonth(t.getMonth()+3);const end=iso(t);
+function countNew(){const since=newSince(),t=new Date(),today=iso(t);t.setMonth(t.getMonth()+4);const end=iso(t);
   const n=races.filter(r=>r.addedAt&&r.addedAt>=since&&r.date>=today&&r.date<=end).length;
   document.getElementById("new-n").textContent=n?String(n):""}
 document.querySelectorAll(".tab").forEach(b=>b.addEventListener("click",()=>setTab(b.dataset.tab,true)));
