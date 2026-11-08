@@ -1,6 +1,6 @@
 {
- "updatedAt": "2026-11-08T02:21:44+00:00",
- "count": 845,
+ "updatedAt": "2026-11-08T03:25:02+00:00",
+ "count": 848,
  "races": [
   {
    "name": "Montjuïc Tibidabo",
@@ -718,7 +718,7 @@
    "url": "https://www.runatica.com/event/marato-dements-eslida-mitja-ain-2026",
    "addedAt": "2026-10-23",
    "nosite": false,
-   "revisada": "2026-11-08T02:18+00:00",
+   "revisada": "2026-11-08T03:22+00:00",
    "changedAt": "2026-11-04",
    "checkedAt": "2026-10-30",
    "km": "42,5 km · 42,195 km",
@@ -771,7 +771,7 @@
    "inscripcionAt": "2026-11-07",
    "inscripcion": "cerrada",
    "mediaChecked": "2026-11-07",
-   "revisada": "2026-11-08T02:18+00:00",
+   "revisada": "2026-11-08T03:22+00:00",
    "regulation": "https://rtsfiles.blob.core.windows.net/documentos/25716889-3579-4235-9548-9c73db5f5dd7.pdf",
    "regResolved": "2026-11-01",
    "regChecked": "2026-11-01",
@@ -855,7 +855,7 @@
    "addedAt": "2026-10-23",
    "nosite": false,
    "mediaChecked": "2026-10-23",
-   "revisada": "2026-11-08T02:18+00:00",
+   "revisada": "2026-11-08T03:22+00:00",
    "changedAt": "2026-10-28",
    "route": "https://crecerconfuturo.org/wp-content/uploads/2026/10/Mapa-carrera-senalizado-768x512.jpg",
    "inscripcionAt": "2026-11-07",
@@ -952,7 +952,7 @@
    "inscripcionAt": "2026-11-07",
    "regChecked": "2026-10-31",
    "mediaChecked": "2026-11-07",
-   "revisada": "2026-11-08T02:18+00:00",
+   "revisada": "2026-11-08T03:22+00:00",
    "kmRevisar": "",
    "checkedAt": "2026-11-07",
    "iaAt": "2026-11-04",
@@ -993,7 +993,7 @@
    "regResolved": "2026-10-31",
    "inscripcionAt": "2026-11-07",
    "regChecked": "2026-10-31",
-   "revisada": "2026-11-08T02:18+00:00",
+   "revisada": "2026-11-08T03:23+00:00",
    "mediaChecked": "2026-11-07",
    "kmRevisar": "",
    "checkedAt": "2026-10-27",
@@ -1117,7 +1117,7 @@
    "km": "4,5 km",
    "inscripcionAt": "2026-11-07",
    "mediaChecked": "2026-10-23",
-   "revisada": "2026-11-08T02:18+00:00",
+   "revisada": "2026-11-08T03:23+00:00",
    "banner": "https://elitechip.twic.pics/image/5706006?twic=v1/cover=1200x630",
    "bannerScore": 4,
    "changedAt": "2026-11-05",
@@ -1166,7 +1166,7 @@
    "regResolved": "2026-10-31",
    "regChecked": "2026-10-31",
    "mediaChecked": "2026-11-07",
-   "revisada": "2026-11-08T02:18+00:00",
+   "revisada": "2026-11-08T03:23+00:00",
    "kmRevisar": "",
    "checkedAt": "2026-10-27",
    "iaAt": "2026-11-04",
@@ -1210,7 +1210,7 @@
     "https://www.carreraspopulares.com/carrera/binter-nightrun-las-palmas-de-gran-canaria"
    ],
    "mediaChecked": "2026-11-07",
-   "revisada": "2026-11-08T02:18+00:00",
+   "revisada": "2026-11-08T03:23+00:00",
    "regulation": "https://rtsfiles.blob.core.windows.net/documentos/6e6dd958-71d7-4280-8521-4006defc69e7.pdf",
    "regResolved": "2026-11-01",
    "regChecked": "2026-11-01",
@@ -1248,7 +1248,7 @@
    "banner": "https://deporticket.blob.core.windows.net/deporticket/26-cartel/261107-i-carrera-de-las-ciudades-contra-el-cancer-de-pancreas-vigo-cartel.jpg",
    "bannerScore": 9,
    "mediaChecked": "2026-11-07",
-   "revisada": "2026-11-08T02:18+00:00",
+   "revisada": "2026-11-08T03:23+00:00",
    "changedAt": "2026-10-27",
    "checkedAt": "2026-11-07",
    "km": "10 km · 5 km",
@@ -1281,7 +1281,7 @@
     "https://running.life/en/event/nocturna-guimarera"
    ],
    "mediaChecked": "2026-11-07",
-   "revisada": "2026-11-08T02:18+00:00",
+   "revisada": "2026-11-08T03:23+00:00",
    "signup": true,
    "banner": "https://rtsfiles.blob.core.windows.net/manager/543/library/root/db5ef974-e39b-40db-9cc1-9cb481280135.jpeg",
    "bannerScore": 4,
@@ -1315,7 +1315,7 @@
    "source": "https://sportplan.es/es/events/carrera-popular-de-aguas-nuevas-aguas-nuevas-albacete-es-2026-11-07",
    "checkedAt": "2026-11-07",
    "nosite": true,
-   "revisada": "2026-11-08T02:18+00:00",
+   "revisada": "2026-11-08T03:23+00:00",
    "mediaChecked": "2026-10-27",
    "resultadosAt": "2026-11-08"
   },
@@ -1335,7 +1335,7 @@
    "official": false,
    "url": "",
    "addedAt": "2026-10-23",
-   "revisada": "2026-11-08T02:18+00:00",
+   "revisada": "2026-11-08T03:23+00:00",
    "changedAt": "2026-10-27",
    "checkedAt": "2026-11-07",
    "km": "5 km",
@@ -1406,7 +1406,7 @@
    "addedAt": "2026-10-23",
    "nosite": false,
    "inscripcionAt": "2026-11-07",
-   "revisada": "2026-11-08T02:18+00:00",
+   "revisada": "2026-11-08T03:23+00:00",
    "changedAt": "2026-10-28",
    "checkedAt": "2026-11-07",
    "km": "5 km",
@@ -1441,7 +1441,7 @@
    "official": false,
    "url": "",
    "addedAt": "2026-10-23",
-   "revisada": "2026-11-08T02:18+00:00",
+   "revisada": "2026-11-08T03:23+00:00",
    "changedAt": "2026-10-27",
    "checkedAt": "2026-11-07",
    "km": "5 km",
@@ -1512,7 +1512,7 @@
    "official": false,
    "url": "",
    "addedAt": "2026-10-23",
-   "revisada": "2026-11-08T02:18+00:00",
+   "revisada": "2026-11-08T03:23+00:00",
    "changedAt": "2026-11-04",
    "checkedAt": "2026-11-07",
    "km": "7 km · 5 km",
@@ -1594,7 +1594,7 @@
    "banner": "https://rtsfiles.blob.core.windows.net/manager/4700/custom/root/5bed52de-2077-43f8-9b45-9c395561a769_custom1.png",
    "inscripcionAt": "2026-11-07",
    "mediaChecked": "2026-11-07",
-   "revisada": "2026-11-08T02:18+00:00",
+   "revisada": "2026-11-08T03:23+00:00",
    "regulation": "https://rtsfiles.blob.core.windows.net/documentos/df1eb539-f23b-469b-9810-c6bc22d89dd8.pdf",
    "regResolved": "2026-11-01",
    "regChecked": "2026-11-01",
@@ -1805,7 +1805,7 @@
    "regResolved": "2026-10-31",
    "inscripcionAt": "2026-11-07",
    "regChecked": "2026-10-31",
-   "revisada": "2026-11-08T02:18+00:00",
+   "revisada": "2026-11-08T03:23+00:00",
    "kmRevisar": "",
    "checkedAt": "2026-11-07",
    "mediaChecked": "2026-10-27",
@@ -1838,7 +1838,7 @@
    "source": "https://sportplan.es/es/events/volta-a-peu-de-sedavi-sedavi-valencia-es-2026-11-07",
    "checkedAt": "2026-11-07",
    "nosite": true,
-   "revisada": "2026-11-08T02:18+00:00",
+   "revisada": "2026-11-08T03:23+00:00",
    "mediaChecked": "2026-10-27",
    "resultadosAt": "2026-11-08"
   },
@@ -1906,7 +1906,7 @@
    "regResolved": "2026-11-08",
    "inscripcionAt": "2026-11-08",
    "regChecked": "2026-11-08",
-   "revisada": "2026-11-08T02:18+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "kmRevisar": "",
    "checkedAt": "2026-11-08",
    "banner": "https://s3.eu-west-1.amazonaws.com/sm-fotos.sportmaniacs.com/back/resize/960x0x0_App_letsRun_raceCartel.jpg",
@@ -1949,7 +1949,7 @@
    "inscripcionAt": "2026-11-08",
    "regResolved": "2026-11-08",
    "regChecked": "2026-11-08",
-   "revisada": "2026-11-08T02:18+00:00",
+   "revisada": "2026-11-08T03:23+00:00",
    "kmRevisar": "",
    "checkedAt": "2026-11-08",
    "changedAt": "2026-10-28",
@@ -1992,7 +1992,7 @@
    "inscripcionAt": "2026-11-08",
    "regResolved": "2026-11-08",
    "regChecked": "2026-11-08",
-   "revisada": "2026-11-08T02:18+00:00",
+   "revisada": "2026-11-08T03:23+00:00",
    "route": "https://es.wikiloc.com/wikiloc/view.do?id=285797408",
    "changedAt": "2026-10-28",
    "kmRevisar": "",
@@ -2039,7 +2039,7 @@
     "https://running.life/en/event/generali-maraton-malaga",
     "https://sportmaniacs.com/es/races/generali-maraton-malaga-2026"
    ],
-   "revisada": "2026-11-08T02:18+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "route": "https://www.generalimaratonmalaga.com/recorrido-generali-maraton-malaga/",
    "changedAt": "2026-10-28",
    "kmRevisar": "",
@@ -2129,7 +2129,7 @@
    "inscripcionAt": "2026-11-08",
    "inscripcion": "cerrada",
    "route": "https://es.wikiloc.com/rutas-carrera/10k-nutrinovex-castellon-292123437",
-   "revisada": "2026-11-08T02:18+00:00",
+   "revisada": "2026-11-08T03:23+00:00",
    "kmRevisar": "",
    "checkedAt": "2026-11-08",
    "routeFrom": "ia",
@@ -2175,7 +2175,7 @@
    ],
    "mediaChecked": "2026-10-23",
    "route": "https://www.fdmvalencia.es/wp-content/uploads/2024/12/circuito_carreras_2025_footer.jpg",
-   "revisada": "2026-11-08T02:18+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "kmRevisar": "",
    "checkedAt": "2026-11-08",
    "routeFrom": "oficial",
@@ -2261,7 +2261,7 @@
    "regResolved": "2026-11-08",
    "inscripcionAt": "2026-11-08",
    "regChecked": "2026-11-08",
-   "revisada": "2026-11-08T02:19+00:00",
+   "revisada": "2026-11-08T03:23+00:00",
    "route": "https://www.behobia-sansebastian.com/images/home/circuito-nacional-running-platano-canarias.png",
    "price": "6–55 €",
    "kmRevisar": "",
@@ -2354,7 +2354,7 @@
     "https://sportmaniacs.com/es/races/xxxviii-media-maratn-ldquociudad-de-talaverardquo-memorial-anbal-arvalo"
    ],
    "mediaChecked": "2026-11-07",
-   "revisada": "2026-11-08T02:19+00:00",
+   "revisada": "2026-11-08T03:23+00:00",
    "price": "15–20 €",
    "checkedAt": "2026-11-08",
    "km": "21,097 km · 10 km",
@@ -2402,7 +2402,7 @@
     "https://running.life/en/event/media-maraton-de-fuengirola"
    ],
    "mediaChecked": "2026-11-07",
-   "revisada": "2026-11-08T02:19+00:00",
+   "revisada": "2026-11-08T03:23+00:00",
    "checkedAt": "2026-10-27",
    "km": "21,097 km · 5 km",
    "iaAt": "2026-11-05",
@@ -2435,7 +2435,7 @@
     "https://www.carreraspopulares.com/carrera/grabacion-medalla-finisher-mitja-gandia"
    ],
    "mediaChecked": "2026-11-07",
-   "revisada": "2026-11-08T02:19+00:00",
+   "revisada": "2026-11-08T03:23+00:00",
    "checkedAt": "2026-11-08",
    "km": "21,097 km",
    "iaAt": "2026-11-05",
@@ -2480,7 +2480,7 @@
     "https://running.life/en/event/murcia-en-marcha-contra-el-cancer"
    ],
    "mediaChecked": "2026-11-07",
-   "revisada": "2026-11-08T02:19+00:00",
+   "revisada": "2026-11-08T03:23+00:00",
    "bannerScore": 4,
    "kmRevisar": "",
    "checkedAt": "2026-11-08",
@@ -2543,6 +2543,53 @@
    "resultados": "https://sportmaniacs.com/es/races/carrera-de-la-mujer-zaragoza-2026#results"
   },
   {
+   "name": "Carrera Urbana Universidad Ciudad de Granada",
+   "date": "2026-11-08",
+   "time": "10:00",
+   "city": "Granada",
+   "region": "Andalucía",
+   "distances": [
+    "10K"
+   ],
+   "url": "https://www.global-tempo.com/carreras.php?id=3295",
+   "official": true,
+   "note": "",
+   "id": "carrera-urbana-universidad-ciudad-de-granada-2026-1108",
+   "source": "https://sportplan.es/es/events/carrera-urbana-universidad-granada-granada-es-2026-11-08",
+   "official_guess": "https://www.global-tempo.com/carreras.php?id=3295",
+   "nosite": false,
+   "signup": true,
+   "regulation": "https://www.global-tempo.com/documentos/6adf88d996a00_555d61e.pdf",
+   "km": "10 km",
+   "changedAt": "2026-11-08",
+   "inscripcionAt": "2026-11-08",
+   "regResolved": "2026-11-08",
+   "regChecked": "2026-11-08",
+   "alt": [
+    "https://running.life/en/event/carrera-urbana-universidad-ciudad-de-granada"
+   ],
+   "mediaChecked": "2026-11-07",
+   "revisada": "2026-11-08T03:23+00:00",
+   "kmRevisar": "",
+   "checkedAt": "2026-11-08",
+   "banner": "https://www.global-tempo.com/banner/AF%20CARTEL%20DEPORTE%20A3.jpg",
+   "bannerScore": 9,
+   "iaAt": "2026-11-06",
+   "cambio": {
+    "t": "2026-11-08T03:07+00:00",
+    "c": [
+     "price",
+     "time"
+    ]
+   },
+   "inscripcion": "agotada",
+   "ia": [
+    "inscripcion"
+   ],
+   "resultadosAt": "2026-11-08",
+   "price": "6–200 €"
+  },
+  {
    "name": "Carrera y Marcha Solidaria Día Mundial del Cáncer de Mama",
    "date": "2026-11-08",
    "time": "10:00",
@@ -2558,7 +2605,7 @@
    "official": true,
    "url": "https://www.chiplevante.com/es/prueba/carrera-y-marcha-solidaria-dia-mundial-del-cancer-de-mama-1045-2026",
    "addedAt": "2026-10-27",
-   "revisada": "2026-11-08T02:19+00:00",
+   "revisada": "2026-11-08T03:23+00:00",
    "checkedAt": "2026-11-08",
    "nosite": false,
    "regulation": "https://www.chiplevante.com/files/documentacion/REGLAMENTOCORREPORMIORIHUELA2026.pdf",
@@ -2612,7 +2659,7 @@
    "alt": [
     "https://running.life/en/event/palma-beach-running-course"
    ],
-   "revisada": "2026-11-08T02:19+00:00",
+   "revisada": "2026-11-08T03:23+00:00",
    "kmRevisar": "",
    "checkedAt": "2026-10-27",
    "cambio": {
@@ -2657,7 +2704,7 @@
    "regResolved": "2026-11-08",
    "regChecked": "2026-11-08",
    "mediaChecked": "2026-11-07",
-   "revisada": "2026-11-08T02:19+00:00",
+   "revisada": "2026-11-08T03:23+00:00",
    "kmRevisar": "",
    "checkedAt": "2026-10-27",
    "iaAt": "2026-11-05",
@@ -2778,7 +2825,7 @@
    "official": true,
    "url": "https://curses.cat/blanescamina2026/",
    "addedAt": "2026-10-25",
-   "revisada": "2026-11-08T02:19+00:00",
+   "revisada": "2026-11-08T03:23+00:00",
    "nosite": false,
    "regulation": "https://curses.cat/blanescamina2026/reglament.pdf",
    "regResolved": "2026-11-02",
@@ -2825,7 +2872,7 @@
     "https://runedia.mundodeportivo.com/carrera/10k-de-moratalaz-2026/202637410/",
     "https://runedia.mundodeportivo.com/carrera/49-media-maraton-popular-de-moratalaz-2026/202637409/"
    ],
-   "revisada": "2026-11-08T02:19+00:00",
+   "revisada": "2026-11-08T03:23+00:00",
    "price": "15 €",
    "changedAt": "2026-10-27",
    "checkedAt": "2026-11-08",
@@ -2865,7 +2912,7 @@
     "https://running.life/en/event/media-maraton-avila-monumental",
     "https://www.carreraspopulares.com/carrera/media-maraton-avila-monumental"
    ],
-   "revisada": "2026-11-08T02:19+00:00",
+   "revisada": "2026-11-08T03:23+00:00",
    "kmRevisar": "",
    "checkedAt": "2026-10-27",
    "mediaChecked": "2026-10-27",
@@ -2907,14 +2954,14 @@
    "inscripcionAt": "2026-11-08",
    "regResolved": "2026-11-08",
    "regChecked": "2026-11-08",
-   "revisada": "2026-11-08T02:19+00:00",
+   "revisada": "2026-11-08T03:23+00:00",
    "banner": "https://carrerasciudadreal.es/wp-content/uploads/2026/10/Cartel-de-La-Solana-2026-scaled.jpg",
    "bannerScore": 10,
    "changedAt": "2026-10-29",
    "kmRevisar": "",
    "checkedAt": "2026-10-27",
    "cambio": {
-    "t": "2026-11-08T01:48+00:00",
+    "t": "2026-11-08T03:07+00:00",
     "c": [
      "route"
     ]
@@ -2925,9 +2972,9 @@
    "ia": [
     "inscripcion"
    ],
+   "resultadosAt": "2026-11-08",
    "mediaChecked": "2026-11-08",
-   "route": "https://carrerasciudadreal.es/evento/10k-la-solana-2026/",
-   "resultadosAt": "2026-11-08"
+   "route": "https://carrerasciudadreal.es/evento/10k-la-solana-2026/"
   },
   {
    "name": "Carrera por la Salud",
@@ -2952,7 +2999,7 @@
    "inscripcionAt": "2026-11-08",
    "inscripcion": "cerrada",
    "mediaChecked": "2026-11-07",
-   "revisada": "2026-11-08T02:19+00:00",
+   "revisada": "2026-11-08T03:23+00:00",
    "bannerScore": 4,
    "changedAt": "2026-10-25",
    "kmRevisar": "",
@@ -2990,7 +3037,7 @@
    "regResolved": "2026-11-08",
    "regChecked": "2026-11-08",
    "mediaChecked": "2026-11-07",
-   "revisada": "2026-11-08T02:19+00:00",
+   "revisada": "2026-11-08T03:23+00:00",
    "kmRevisar": "",
    "checkedAt": "2026-10-27",
    "banner": "https://ruta091.es/storage/app/uploads/public/6ab/cfe/788/6abcfe78803c4086104746.webp",
@@ -3026,7 +3073,7 @@
    "official": true,
    "url": "https://web.rockthesport.com/es/event/5k5v-contra-la-violencia-de-genero-en-comarca-cinco-villas-2026",
    "addedAt": "2026-11-01",
-   "revisada": "2026-11-08T02:19+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "checkedAt": "2026-11-08",
    "nosite": false,
    "signup": true,
@@ -3079,7 +3126,7 @@
    "alt": [
     "https://running.life/en/event/media-maraton-ciudad-de-cadiz"
    ],
-   "revisada": "2026-11-08T02:19+00:00",
+   "revisada": "2026-11-08T03:23+00:00",
    "kmRevisar": "",
    "checkedAt": "2026-11-04",
    "banner": "https://www.cronofinisher.com/images/biblioteca_eventos/704/cartel-ia-media-jpeg.jpg",
@@ -3153,7 +3200,7 @@
    "official": false,
    "url": "",
    "addedAt": "2026-10-23",
-   "revisada": "2026-11-08T02:19+00:00",
+   "revisada": "2026-11-08T03:23+00:00",
    "changedAt": "2026-10-27",
    "checkedAt": "2026-11-08",
    "km": "42,195 km",
@@ -3185,7 +3232,7 @@
     "https://running.life/en/event/10k-ciudad-de-merida"
    ],
    "mediaChecked": "2026-11-07",
-   "revisada": "2026-11-08T02:19+00:00",
+   "revisada": "2026-11-08T03:23+00:00",
    "bannerScore": 10,
    "kmRevisar": "",
    "checkedAt": "2026-11-08",
@@ -3219,7 +3266,7 @@
    "official": true,
    "url": "https://inscripciones.cronorunner.com/evento/i-10k-ciutat-de-xirivella",
    "addedAt": "2026-10-25",
-   "revisada": "2026-11-08T02:19+00:00",
+   "revisada": "2026-11-08T03:23+00:00",
    "nosite": false,
    "inscripcionAt": "2026-11-08",
    "checkedAt": "2026-11-08",
@@ -3250,7 +3297,7 @@
     "https://sportmaniacs.com/es/races/10k-nutrinovex"
    ],
    "mediaChecked": "2026-11-07",
-   "revisada": "2026-11-08T02:19+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "signup": true,
    "regulation": "https://sportmaniacs.com/es/services/inscription/10k-nutrinovex#rules",
    "regResolved": "2026-11-02",
@@ -3293,7 +3340,7 @@
    "source": "https://sportplan.es/es/events/10k-solidarios-de-sesena-sesena-toledo-es-2026-11-08",
    "checkedAt": "2026-11-08",
    "nosite": true,
-   "revisada": "2026-11-08T02:19+00:00",
+   "revisada": "2026-11-08T03:23+00:00",
    "mediaChecked": "2026-10-27",
    "resultadosAt": "2026-11-08"
   },
@@ -3314,7 +3361,7 @@
    "source": "https://sportplan.es/es/events/10k-y-5k-san-antonio-de-benageber-san-antonio-de-benageber-valencia-es-2026-11-08",
    "checkedAt": "2026-11-08",
    "nosite": true,
-   "revisada": "2026-11-08T02:19+00:00",
+   "revisada": "2026-11-08T03:23+00:00",
    "mediaChecked": "2026-10-27",
    "resultadosAt": "2026-11-08"
   },
@@ -3344,7 +3391,7 @@
    "inscripcionAt": "2026-11-08",
    "regChecked": "2026-11-08",
    "mediaChecked": "2026-11-07",
-   "revisada": "2026-11-08T02:19+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "kmRevisar": "",
    "checkedAt": "2026-11-08",
    "changedAt": "2026-10-29",
@@ -3378,7 +3425,7 @@
    "source": "https://sportplan.es/es/events/8k-burjasot-burjassot-valencia-es-2026-11-08",
    "checkedAt": "2026-11-08",
    "nosite": true,
-   "revisada": "2026-11-08T02:19+00:00",
+   "revisada": "2026-11-08T03:23+00:00",
    "mediaChecked": "2026-10-27",
    "resultadosAt": "2026-11-08"
   },
@@ -3401,7 +3448,7 @@
    "alt": [
     "https://sportmaniacs.com/es/races/runcancer-alfafar-2026"
    ],
-   "revisada": "2026-11-08T02:19+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "signup": true,
    "regulation": "https://sportmaniacs.com/es/services/inscription/runcancer-alfafar-2026#rules",
    "regResolved": "2026-11-02",
@@ -3440,7 +3487,7 @@
    "source": "https://sportplan.es/es/events/benemerita-urban-evtgc-alcantarilla-alcantarilla-murcia-es-2026-11-08",
    "checkedAt": "2026-11-08",
    "nosite": true,
-   "revisada": "2026-11-08T02:19+00:00",
+   "revisada": "2026-11-08T03:23+00:00",
    "mediaChecked": "2026-10-27",
    "resultadosAt": "2026-11-08"
   },
@@ -3466,7 +3513,7 @@
    "alt": [
     "https://running.life/en/event/carreira-pedestre-popular-do-san-martino"
    ],
-   "revisada": "2026-11-08T02:20+00:00",
+   "revisada": "2026-11-08T03:23+00:00",
    "price": "5–7 €",
    "checkedAt": "2026-11-08",
    "km": "10 km · 5 km",
@@ -3512,7 +3559,7 @@
    "regChecked": "2026-11-08",
    "mediaChecked": "2026-10-23",
    "route": "https://masatletismo.com/wp-content/uploads/2026/10/circuitos-2026.pdf",
-   "revisada": "2026-11-08T02:20+00:00",
+   "revisada": "2026-11-08T03:23+00:00",
    "kmRevisar": "",
    "checkedAt": "2026-11-08",
    "changedAt": "2026-10-29",
@@ -3545,7 +3592,7 @@
    "source": "https://sportplan.es/es/events/carrera-popular-ciudad-de-parquesol-valladolid-es-2026-11-08",
    "checkedAt": "2026-11-08",
    "nosite": true,
-   "revisada": "2026-11-08T02:20+00:00",
+   "revisada": "2026-11-08T03:23+00:00",
    "mediaChecked": "2026-10-27",
    "resultadosAt": "2026-11-08"
   },
@@ -3574,7 +3621,7 @@
    "inscripcionAt": "2026-11-08",
    "regChecked": "2026-11-08",
    "mediaChecked": "2026-11-07",
-   "revisada": "2026-11-08T02:20+00:00",
+   "revisada": "2026-11-08T03:23+00:00",
    "changedAt": "2026-10-29",
    "otraFecha": "2026-11-01",
    "checkedAt": "2026-11-08",
@@ -3621,7 +3668,7 @@
    "bannerScore": 4,
    "inscripcionAt": "2026-11-08",
    "mediaChecked": "2026-11-07",
-   "revisada": "2026-11-08T02:20+00:00",
+   "revisada": "2026-11-08T03:23+00:00",
    "changedAt": "2026-10-27",
    "checkedAt": "2026-11-08",
    "km": "10 km · 5 km",
@@ -3646,7 +3693,7 @@
    "official": true,
    "url": "https://www.runatica.com/event/carrera-solidaria-caritas-santo-sepulcro-alzira-2026",
    "addedAt": "2026-10-28",
-   "revisada": "2026-11-08T02:20+00:00",
+   "revisada": "2026-11-08T03:24+00:00",
    "checkedAt": "2026-11-08",
    "nosite": false,
    "signup": true,
@@ -3685,7 +3732,7 @@
    "source": "https://sportplan.es/es/events/carrera-solidaria-terra-mitica-park-benidorm-alicante-es-2026-11-08",
    "checkedAt": "2026-11-08",
    "nosite": true,
-   "revisada": "2026-11-08T02:20+00:00",
+   "revisada": "2026-11-08T03:24+00:00",
    "mediaChecked": "2026-10-27",
    "resultadosAt": "2026-11-08"
   },
@@ -3712,7 +3759,7 @@
    "bannerScore": 9,
    "inscripcionAt": "2026-11-08",
    "mediaChecked": "2026-11-07",
-   "revisada": "2026-11-08T02:20+00:00",
+   "revisada": "2026-11-08T03:24+00:00",
    "kmRevisar": "",
    "checkedAt": "2026-11-08",
    "iaAt": "2026-11-05",
@@ -3747,7 +3794,7 @@
    "official": true,
    "url": "https://inscripciones.tecnocrono.com/inscripcion/v-carrera-solidaria-por-la-diabetes/",
    "addedAt": "2026-11-03",
-   "revisada": "2026-11-08T02:20+00:00",
+   "revisada": "2026-11-08T03:24+00:00",
    "checkedAt": "2026-11-08",
    "nosite": false,
    "regulation": "https://inscripciones.tecnocrono.com/inscripcion/v-carrera-solidaria-por-la-diabetes/reglamento/",
@@ -3769,51 +3816,6 @@
     "inscripcion"
    ],
    "changedAt": "2026-11-06",
-   "resultadosAt": "2026-11-08"
-  },
-  {
-   "name": "Carrera Urbana Universidad Ciudad de Granada",
-   "date": "2026-11-08",
-   "time": "",
-   "city": "Granada",
-   "region": "Andalucía",
-   "distances": [
-    "10K"
-   ],
-   "url": "https://www.global-tempo.com/carreras.php?id=3295",
-   "official": true,
-   "note": "",
-   "id": "carrera-urbana-universidad-ciudad-de-granada-2026-1108",
-   "source": "https://sportplan.es/es/events/carrera-urbana-universidad-granada-granada-es-2026-11-08",
-   "official_guess": "https://www.global-tempo.com/carreras.php?id=3295",
-   "nosite": false,
-   "signup": true,
-   "regulation": "https://www.global-tempo.com/documentos/6adf88d996a00_555d61e.pdf",
-   "km": "10 km",
-   "changedAt": "2026-11-06",
-   "inscripcionAt": "2026-11-08",
-   "regResolved": "2026-11-08",
-   "regChecked": "2026-11-08",
-   "alt": [
-    "https://running.life/en/event/carrera-urbana-universidad-ciudad-de-granada"
-   ],
-   "mediaChecked": "2026-11-07",
-   "revisada": "2026-11-08T02:20+00:00",
-   "kmRevisar": "",
-   "checkedAt": "2026-11-08",
-   "banner": "https://www.global-tempo.com/banner/AF%20CARTEL%20DEPORTE%20A3.jpg",
-   "bannerScore": 9,
-   "iaAt": "2026-11-06",
-   "cambio": {
-    "t": "2026-11-08T01:48+00:00",
-    "c": [
-     "regulation"
-    ]
-   },
-   "inscripcion": "agotada",
-   "ia": [
-    "inscripcion"
-   ],
    "resultadosAt": "2026-11-08"
   },
   {
@@ -3839,7 +3841,7 @@
    "inscripcionAt": "2026-11-08",
    "regResolved": "2026-11-08",
    "regChecked": "2026-11-08",
-   "revisada": "2026-11-08T02:20+00:00",
+   "revisada": "2026-11-08T03:24+00:00",
    "kmRevisar": "",
    "checkedAt": "2026-11-08",
    "mediaChecked": "2026-10-27",
@@ -3871,7 +3873,7 @@
    "source": "https://sportplan.es/es/events/carrera-por-la-ciencia-zaragoza-es-2026-11-08",
    "checkedAt": "2026-11-08",
    "nosite": true,
-   "revisada": "2026-11-08T02:20+00:00",
+   "revisada": "2026-11-08T03:24+00:00",
    "mediaChecked": "2026-10-27",
    "resultadosAt": "2026-11-08"
   },
@@ -3896,7 +3898,7 @@
    "regResolved": "2026-11-08",
    "inscripcionAt": "2026-11-08",
    "regChecked": "2026-11-08",
-   "revisada": "2026-11-08T02:20+00:00",
+   "revisada": "2026-11-08T03:24+00:00",
    "mediaChecked": "2026-10-27",
    "iaAt": "2026-11-06",
    "inscripcion": "abierta",
@@ -3905,13 +3907,13 @@
    ],
    "changedAt": "2026-10-29",
    "cambio": {
-    "t": "2026-10-29T14:07+00:00",
+    "t": "2026-11-08T03:07+00:00",
     "c": [
-     "inscripcion"
-    ],
-    "inscAntes": ""
+     "resultados"
+    ]
    },
-   "resultadosAt": "2026-11-08"
+   "resultadosAt": "2026-11-08",
+   "resultados": "https://sportmaniacs.com/es/races/corremos-por-la-vida-2026#results"
   },
   {
    "name": "Corrida Familiar Recoleta",
@@ -3936,7 +3938,7 @@
    "regResolved": "2026-11-08",
    "inscripcionAt": "2026-11-08",
    "regChecked": "2026-11-08",
-   "revisada": "2026-11-08T02:20+00:00",
+   "revisada": "2026-11-08T03:24+00:00",
    "kmRevisar": "",
    "checkedAt": "2026-11-08",
    "mediaChecked": "2026-10-27",
@@ -3947,13 +3949,13 @@
    ],
    "changedAt": "2026-10-29",
    "cambio": {
-    "t": "2026-10-29T14:07+00:00",
+    "t": "2026-11-08T03:07+00:00",
     "c": [
-     "inscripcion"
-    ],
-    "inscAntes": ""
+     "resultados"
+    ]
    },
-   "resultadosAt": "2026-11-08"
+   "resultadosAt": "2026-11-08",
+   "resultados": "https://sportmaniacs.com/es/races/corrida-familiar-recoleta-2026#results"
   },
   {
    "name": "Cros de Granollers",
@@ -3975,7 +3977,7 @@
    "km": "10 km",
    "inscripcionAt": "2026-11-08",
    "mediaChecked": "2026-11-07",
-   "revisada": "2026-11-08T02:20+00:00",
+   "revisada": "2026-11-08T03:24+00:00",
    "kmRevisar": "",
    "checkedAt": "2026-11-08",
    "banner": "https://cagranollers.com/wp-content/uploads/2026/09/img-cartell-2026.webp",
@@ -4002,7 +4004,7 @@
    "official": false,
    "url": "",
    "addedAt": "2026-10-21",
-   "revisada": "2026-11-08T02:20+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "changedAt": "2026-11-06",
    "checkedAt": "2026-11-08",
    "km": "21,097 km · 15 km · 14 km",
@@ -4039,7 +4041,7 @@
    "source": "https://sportplan.es/es/events/cursa-solidaria-els-lluisos-vila-real-castellon-es-2026-11-08",
    "checkedAt": "2026-11-08",
    "nosite": true,
-   "revisada": "2026-11-08T02:20+00:00",
+   "revisada": "2026-11-08T03:24+00:00",
    "mediaChecked": "2026-10-27",
    "resultadosAt": "2026-11-08"
   },
@@ -4060,7 +4062,7 @@
    "official": true,
    "url": "https://sportmaniacs.com/es/services/inscription/cursarroca-2026",
    "addedAt": "2026-11-04",
-   "revisada": "2026-11-08T02:20+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "checkedAt": "2026-11-08",
    "nosite": false,
    "signup": true,
@@ -4103,7 +4105,7 @@
    "source": "https://sportplan.es/es/events/el-corte-ingles-5k-y-10k-castellon-es-2026-11-08",
    "checkedAt": "2026-11-08",
    "nosite": true,
-   "revisada": "2026-11-08T02:20+00:00",
+   "revisada": "2026-11-08T03:24+00:00",
    "mediaChecked": "2026-10-27",
    "resultadosAt": "2026-11-08"
   },
@@ -4124,7 +4126,7 @@
    "official": true,
    "url": "https://sportmaniacs.com/es/services/inscription/el-trbol-de-gredos-sur-2026",
    "addedAt": "2026-11-06",
-   "revisada": "2026-11-08T02:20+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "checkedAt": "2026-11-08",
    "nosite": false,
    "signup": true,
@@ -4157,7 +4159,7 @@
    "source": "https://sportplan.es/es/events/espada-toledana-toledo-es-2026-11-08",
    "checkedAt": "2026-11-08",
    "nosite": true,
-   "revisada": "2026-11-08T02:20+00:00",
+   "revisada": "2026-11-08T03:24+00:00",
    "mediaChecked": "2026-10-27",
    "resultadosAt": "2026-11-08"
   },
@@ -4179,7 +4181,7 @@
    "addedAt": "2026-10-23",
    "nosite": false,
    "inscripcionAt": "2026-11-08",
-   "revisada": "2026-11-08T02:20+00:00",
+   "revisada": "2026-11-08T03:24+00:00",
    "changedAt": "2026-10-27",
    "checkedAt": "2026-11-08",
    "km": "5 km",
@@ -4208,7 +4210,7 @@
     "https://sportmaniacs.com/es/races/la-pota-roja-cervello-2026"
    ],
    "mediaChecked": "2026-11-07",
-   "revisada": "2026-11-08T02:20+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "signup": true,
    "regulation": "https://rtsfiles.blob.core.windows.net/documentos/43b4de10-9c8d-4be6-8a23-87bd8e0a1643.pdf",
    "regResolved": "2026-11-02",
@@ -4259,7 +4261,7 @@
     "https://sportmaniacs.com/es/races/ii-legua-urbana-de-yuncos"
    ],
    "mediaChecked": "2026-11-07",
-   "revisada": "2026-11-08T02:20+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "changedAt": "2026-10-30",
    "kmRevisar": "",
    "checkedAt": "2026-11-08",
@@ -4302,7 +4304,7 @@
    "alt": [
     "https://running.life/en/event/media-maraton-de-hellin"
    ],
-   "revisada": "2026-11-08T02:20+00:00",
+   "revisada": "2026-11-08T03:24+00:00",
    "price": "13–16 €",
    "kmRevisar": "",
    "checkedAt": "2026-11-08",
@@ -4337,7 +4339,7 @@
    "source": "https://sportplan.es/es/events/medio-marat-n-ciudad-de-salamanca-2026-salamanca-2026-11-08",
    "checkedAt": "2026-11-08",
    "nosite": true,
-   "revisada": "2026-11-08T02:20+00:00",
+   "revisada": "2026-11-08T03:24+00:00",
    "mediaChecked": "2026-10-27",
    "resultadosAt": "2026-11-08"
   },
@@ -4368,7 +4370,7 @@
     "https://sportmaniacs.com/es/races/35a-mitja-marat-i-10-k-ldquociudad-de-tarragonardquo-2026"
    ],
    "mediaChecked": "2026-11-07",
-   "revisada": "2026-11-08T02:20+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "price": "5 €",
    "checkedAt": "2026-11-08",
    "km": "21,097 km",
@@ -4400,7 +4402,7 @@
    "official": true,
    "url": "https://www.nonstoprun.com/pinkrun/index.php",
    "addedAt": "2026-10-26",
-   "revisada": "2026-11-08T02:20+00:00",
+   "revisada": "2026-11-08T03:24+00:00",
    "nosite": false,
    "regulation": "https://nonstoprun.com/pinkrun/AutoritzacioMenor.pdf",
    "regResolved": "2026-11-03",
@@ -4450,7 +4452,7 @@
    "inscripcionAt": "2026-11-08",
    "inscripcion": "cerrada",
    "mediaChecked": "2026-11-07",
-   "revisada": "2026-11-08T02:20+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "regulation": "https://rtsfiles.blob.core.windows.net/documentos/54b4ecc7-da4f-4cf9-b195-5d4afad65f31.pdf",
    "regResolved": "2026-11-02",
    "regChecked": "2026-11-02",
@@ -4491,7 +4493,7 @@
    "official": true,
    "url": "https://sportmaniacs.com/es/services/inscription/superat-2026",
    "addedAt": "2026-10-29",
-   "revisada": "2026-11-08T02:20+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "checkedAt": "2026-11-08",
    "nosite": false,
    "signup": true,
@@ -4540,7 +4542,7 @@
    "inscripcionAt": "2026-11-08",
    "regResolved": "2026-11-08",
    "regChecked": "2026-11-08",
-   "revisada": "2026-11-08T02:20+00:00",
+   "revisada": "2026-11-08T03:24+00:00",
    "kmRevisar": "",
    "checkedAt": "2026-11-08",
    "banner": "https://s3.eu-west-1.amazonaws.com/sm-fotos.sportmaniacs.com/back/resize/960x0x0_cartel%20olias%20transplantes.jpg",
@@ -4587,7 +4589,7 @@
    "regResolved": "2026-11-08",
    "regChecked": "2026-11-08",
    "mediaChecked": "2026-11-07",
-   "revisada": "2026-11-08T02:20+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "kmRevisar": "",
    "checkedAt": "2026-11-08",
    "changedAt": "2026-10-27",
@@ -4624,7 +4626,7 @@
    "regResolved": "2026-11-08",
    "inscripcionAt": "2026-11-08",
    "regChecked": "2026-11-08",
-   "revisada": "2026-11-08T02:20+00:00",
+   "revisada": "2026-11-08T03:24+00:00",
    "route": "https://static.wixstatic.com/media/86eef3_f9b35b220c11489d93f9e3bce6c6523d~mv2.jpg/v1/fill/w_600,h_306,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/MAPA_1_JPG.jpg",
    "kmRevisar": "",
    "checkedAt": "2026-11-08",
@@ -4663,7 +4665,7 @@
    "official": true,
    "url": "https://sportmaniacs.com/es/services/inscription/xiii-carrera-popular-muevete-por-la-esclerosis-multiple",
    "addedAt": "2026-11-05",
-   "revisada": "2026-11-08T02:20+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "checkedAt": "2026-11-08",
    "nosite": false,
    "signup": true,
@@ -4706,7 +4708,7 @@
    "official": true,
    "url": "https://sportmaniacs.com/es/services/inscription/xiv-cursa-de-la-ratafia-2026",
    "addedAt": "2026-11-06",
-   "revisada": "2026-11-08T02:20+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "checkedAt": "2026-11-08",
    "nosite": false,
    "signup": true,
@@ -4752,7 +4754,7 @@
    "inscripcionAt": "2026-11-08",
    "regChecked": "2026-11-08",
    "mediaChecked": "2026-11-07",
-   "revisada": "2026-11-08T02:20+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "kmRevisar": "",
    "checkedAt": "2026-11-08",
    "changedAt": "2026-11-06",
@@ -4796,7 +4798,7 @@
    "regResolved": "2026-11-08",
    "regChecked": "2026-11-08",
    "mediaChecked": "2026-11-07",
-   "revisada": "2026-11-08T02:20+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "kmRevisar": "",
    "checkedAt": "2026-11-08",
    "changedAt": "2026-10-27",
@@ -4835,7 +4837,7 @@
    "regResolved": "2026-11-08",
    "inscripcionAt": "2026-11-08",
    "regChecked": "2026-11-08",
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "kmRevisar": "",
    "checkedAt": "2026-11-08",
    "mediaChecked": "2026-10-27",
@@ -4877,7 +4879,7 @@
    "inscripcionAt": "2026-11-08",
    "inscripcion": "abierta",
    "regChecked": "2026-11-08",
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "kmRevisar": "",
    "checkedAt": "2026-11-08",
    "iaAt": "2026-11-06",
@@ -4920,7 +4922,7 @@
    "regResolved": "2026-11-08",
    "inscripcionAt": "2026-11-08",
    "regChecked": "2026-11-08",
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "kmRevisar": "",
    "checkedAt": "2026-11-08",
    "mediaChecked": "2026-10-27",
@@ -5009,22 +5011,22 @@
    "inscripcion": "abierta",
    "regResolved": "2026-11-08",
    "regChecked": "2026-11-08",
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "route": "https://es.wikiloc.com/wikiloc/view.do?id=119440932",
    "kmRevisar": "",
    "checkedAt": "2026-11-08",
    "changedAt": "2026-11-08",
    "cambio": {
-    "t": "2026-11-08T01:48+00:00",
+    "t": "2026-11-08T03:07+00:00",
     "c": [
      "banner"
     ]
    },
    "routeFrom": "calendario",
    "iaAt": "2026-11-07",
+   "mediaChecked": "2026-11-08",
    "banner": "https://youevent.es/sport/banners/Cartel_20261117_KmSolidario26_w180.png",
-   "bannerScore": 9,
-   "mediaChecked": "2026-11-08"
+   "bannerScore": 9
   },
   {
    "name": "Volta a Peu Port de Catarroja",
@@ -5795,10 +5797,10 @@
     "https://running.life/en/event/media-maraton-de-jaen"
    ],
    "mediaChecked": "2026-11-07",
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "km": "21,097 km · 10 km",
    "cambio": {
-    "t": "2026-11-08T01:48+00:00",
+    "t": "2026-11-08T03:07+00:00",
     "c": [
      "time"
     ]
@@ -7020,14 +7022,14 @@
    "banner": "https://5k10kvic.cat/wp-content/uploads/2026/09/cartell-5k10kVIC-723x1024.png",
    "km": "10 km · 5 km",
    "changedAt": "2026-10-31",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "regResolved": "2026-11-08",
    "regChecked": "2026-11-08",
    "alt": [
     "https://runedia.mundodeportivo.com/carrera/5k10k-vic-2026/202637460/",
     "https://runedia.mundodeportivo.com/carrera/5k10k-vic-2026/202637459/"
    ],
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "route": "https://es.wikiloc.com/rutas-carrera/10k-vic-213503941",
    "kmRevisar": "",
    "checkedAt": "2026-10-27",
@@ -7070,12 +7072,12 @@
    "regulation": "https://inscripciones.cronorunner.com/rgpd",
    "changedAt": "2026-10-31",
    "regResolved": "2026-11-08",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "regChecked": "2026-11-08",
    "alt": [
     "https://running.life/en/event/mislata-10k"
    ],
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-10-27",
    "banner": "https://inscripciones.cronorunner.com/api/events/editions/70/description-images/1791464272725_154mz8.jpg",
    "bannerScore": 4,
@@ -7114,9 +7116,9 @@
    "regulation": "https://inscripciones.cronorunner.com/rgpd",
    "changedAt": "2026-10-29",
    "regResolved": "2026-11-08",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "regChecked": "2026-11-08",
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "otraFecha": "2026-11-01",
    "alt": [
     "https://sportplan.es/es/events/10k-solidaria-marines-marines-valencia-es-2026-11-01"
@@ -7134,7 +7136,7 @@
      "km"
     ]
    },
-   "iaAt": "2026-10-31"
+   "iaAt": "2026-11-08"
   },
   {
    "name": "15K Valencia Divina Pastora",
@@ -7166,7 +7168,7 @@
      "km"
     ]
    },
-   "iaAt": "2026-10-31"
+   "iaAt": "2026-11-08"
   },
   {
    "name": "30K Ciutat de Sagunt",
@@ -7192,13 +7194,13 @@
    "km": "30 km · 21,097 km · 10 km",
    "changedAt": "2026-10-31",
    "regResolved": "2026-11-08",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "regChecked": "2026-11-08",
    "alt": [
     "https://running.life/en/event/30k-ciutat-de-sagunt",
     "https://sportmaniacs.com/es/races/30k---21k---10k-ciutat-de-sagunt-2026"
    ],
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "kmRevisar": "",
    "checkedAt": "2026-11-08",
    "banner": "https://s3.eu-west-1.amazonaws.com/sm-fotos.sportmaniacs.com/back/resize/1920x410x0_header_6937cb52-f4d0-46be-ae41-457fac1f14a1.png",
@@ -7243,13 +7245,13 @@
    "km": "5 km",
    "bannerScore": 9,
    "regResolved": "2026-11-08",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "regChecked": "2026-11-08",
    "mediaChecked": "2026-11-07",
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "kmRevisar": "",
    "checkedAt": "2026-11-08",
-   "iaAt": "2026-11-01",
+   "iaAt": "2026-11-08",
    "inscripcion": "cerrada",
    "ia": [
     "inscripcion"
@@ -7284,13 +7286,13 @@
    "km": "5 km",
    "bannerScore": 9,
    "regResolved": "2026-11-08",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "regChecked": "2026-11-08",
    "mediaChecked": "2026-11-07",
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "kmRevisar": "",
    "checkedAt": "2026-11-08",
-   "iaAt": "2026-11-01",
+   "iaAt": "2026-11-08",
    "inscripcion": "abierta",
    "ia": [
     "inscripcion"
@@ -7321,8 +7323,8 @@
    "addedAt": "2026-10-23",
    "checkedAt": "2026-11-08",
    "nosite": false,
-   "inscripcionAt": "2026-11-07",
-   "revisada": "2026-11-08T01:48+00:00",
+   "inscripcionAt": "2026-11-08",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-10-27",
    "km": "5 km",
    "changedAt": "2026-11-01",
@@ -7332,7 +7334,7 @@
      "banner"
     ]
    },
-   "iaAt": "2026-11-01",
+   "iaAt": "2026-11-08",
    "banner": "https://hj-crono.es/hj-files/evento/79410/cartel.jpg",
    "bannerScore": 3,
    "ia": [
@@ -7360,10 +7362,10 @@
    "km": "10 km",
    "changedAt": "2026-11-01",
    "regResolved": "2026-11-08",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "regChecked": "2026-11-08",
    "route": "https://www.herrikrosa.es/es/informacion#recorrido",
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "kmRevisar": "",
    "checkedAt": "2026-11-08",
    "banner": "https://www.herrikrosa.es/comun/img/cartel-herrikrosa-2026.jpg",
@@ -7428,17 +7430,17 @@
    "km": "10 km · 5 km",
    "changedAt": "2026-11-01",
    "bannerScore": 4,
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "regResolved": "2026-11-08",
    "regChecked": "2026-11-08",
    "alt": [
     "https://sportmaniacs.com/es/races/carreira-popular-da-valenza-2026"
    ],
    "mediaChecked": "2026-11-07",
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "kmRevisar": "",
    "checkedAt": "2026-11-08",
-   "iaAt": "2026-11-01",
+   "iaAt": "2026-11-08",
    "inscripcion": "abierta",
    "ia": [
     "inscripcion"
@@ -7471,14 +7473,14 @@
    "alt": [
     "https://running.life/en/event/carrera-alcala-de-henares-contra-el-cancer"
    ],
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-10-27",
    "signup": true,
    "banner": "https://rtsfiles.blob.core.windows.net/manager/9545/library/root/e7fd38ce-636e-44e2-aac3-7157e242ab78.png",
    "bannerScore": 4,
    "km": "5 km",
    "changedAt": "2026-11-01",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "inscripcion": "abierta",
    "cambio": {
     "t": "2026-11-01T01:27+00:00",
@@ -7486,7 +7488,7 @@
      "banner"
     ]
    },
-   "iaAt": "2026-11-01"
+   "iaAt": "2026-11-08"
   },
   {
    "name": "Carrera Inclusiva Metasport",
@@ -7518,7 +7520,7 @@
      "km"
     ]
    },
-   "iaAt": "2026-11-01"
+   "iaAt": "2026-11-08"
   },
   {
    "name": "Carrera Muévete por la Diabetes",
@@ -7552,7 +7554,7 @@
      "banner"
     ]
    },
-   "iaAt": "2026-11-01",
+   "iaAt": "2026-11-08",
    "inscripcion": "abierta",
    "inscripcionAt": "2026-11-01",
    "ia": [
@@ -7581,21 +7583,21 @@
    "signup": true,
    "banner": "https://rockthesportv2.blob.core.windows.net/manager/328/library/root/05b11765-9e5d-4f06-b530-3d04b3af864a.png",
    "changedAt": "2026-10-27",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "inscripcion": "abierta",
    "alt": [
     "https://running.life/en/event/ponle-freno-madrid",
     "https://sportmaniacs.com/es/races/ponle-freno-madrid-2026"
    ],
    "mediaChecked": "2026-11-07",
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "kmRevisar": "",
    "checkedAt": "2026-11-08",
    "regulation": "https://rtsfiles.blob.core.windows.net/documentos/90d7683c-f6c8-48a8-854b-70958fec9a9d.pdf",
    "regResolved": "2026-11-04",
    "regChecked": "2026-11-04",
    "bannerScore": 4,
-   "iaAt": "2026-11-01"
+   "iaAt": "2026-11-08"
   },
   {
    "name": "Carrera Popular Los Molinos",
@@ -7653,20 +7655,20 @@
    "price": "10–12 €",
    "km": "10 km · 5 km",
    "changedAt": "2026-10-27",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "inscripcion": "abierta",
    "alt": [
     "https://running.life/en/event/carrera-popular-running-pinto"
    ],
    "mediaChecked": "2026-11-07",
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "kmRevisar": "",
    "checkedAt": "2026-11-08",
    "regulation": "https://rtsfiles.blob.core.windows.net/documentos/e77006ea-5b4c-47b6-bfeb-40bbf7a6d5d2.pdf",
    "regResolved": "2026-11-04",
    "regChecked": "2026-11-04",
    "bannerScore": 4,
-   "iaAt": "2026-11-01"
+   "iaAt": "2026-11-08"
   },
   {
    "name": "Carrera Popular de Amimet",
@@ -7686,7 +7688,7 @@
    "official": true,
    "url": "https://web.rockthesport.com/es/event/carrera-popular-amimet-2026",
    "addedAt": "2026-11-01",
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "checkedAt": "2026-11-08",
    "nosite": false,
    "signup": true,
@@ -7695,7 +7697,7 @@
    "regChecked": "2026-11-01",
    "km": "5 km",
    "mediaChecked": "2026-11-01",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "inscripcion": "abierta",
    "cambio": {
     "t": "2026-11-01T14:07+00:00",
@@ -7743,14 +7745,14 @@
    "banner": "https://inscripciones.croniussport.es/fileserver.php?name=/images/eventos/rol/9153_evento_31175_cartel.jpg&type=public&v=1790014936",
    "regResolved": "2026-11-08",
    "bannerScore": 9,
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "regChecked": "2026-11-08",
    "mediaChecked": "2026-11-07",
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "checkedAt": "2026-11-08",
    "km": "5 km",
    "changedAt": "2026-11-01",
-   "iaAt": "2026-11-01",
+   "iaAt": "2026-11-08",
    "inscripcion": "cerrada",
    "ia": [
     "inscripcion"
@@ -7783,13 +7785,13 @@
    "banner": "https://inscripciones.tecnocrono.com/fileserver.php?name=/images/eventos/rol/9947_evento_31284_cartel.jpg&type=public&v=1791212420",
    "changedAt": "2026-11-01",
    "regResolved": "2026-11-08",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "regChecked": "2026-11-08",
    "alt": [
     "https://running.life/en/event/carrera-urbana-rafael-de-riego"
    ],
    "mediaChecked": "2026-11-07",
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "checkedAt": "2026-11-08",
    "bannerScore": 9,
    "km": "10 km · 5 km",
@@ -7826,12 +7828,12 @@
    "alt": [
     "https://running.life/en/event/carrera-cruz-roja-granada"
    ],
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-10-27",
    "signup": true,
    "km": "5 km",
    "changedAt": "2026-11-01",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "cambio": {
     "t": "2026-11-01T03:07+00:00",
     "c": [
@@ -7883,13 +7885,13 @@
    "banner": "https://rtsfiles.blob.core.windows.net/manager/2548/custom/root/f19a657d-1bcc-4185-a31d-0b1578f1a592_custom1.png",
    "km": "10 km · 5 km",
    "changedAt": "2026-11-01",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "inscripcion": "abierta",
    "alt": [
     "https://running.life/en/event/carrerae-del-telefono-de-la-esperanza"
    ],
    "mediaChecked": "2026-11-07",
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "kmRevisar": "",
    "checkedAt": "2026-11-08",
    "regulation": "https://rtsfiles.blob.core.windows.net/documentos/7aecf651-17c7-411a-83ae-1734bb82530f.pdf",
@@ -7955,10 +7957,10 @@
    "nosite": false,
    "regulation": "https://www.babelsport.com/userfiles/2e9e_Reglamento%20Quiero%20Crecer%202027.pdf",
    "km": "10 km · 5 km",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "regResolved": "2026-11-08",
    "regChecked": "2026-11-08",
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-11-07",
    "kmRevisar": "",
    "checkedAt": "2026-11-08",
@@ -8000,9 +8002,9 @@
    "km": "5 km",
    "regResolved": "2026-11-08",
    "bannerScore": 9,
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "regChecked": "2026-11-08",
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-11-07",
    "kmRevisar": "",
    "checkedAt": "2026-11-08",
@@ -8042,12 +8044,12 @@
    "km": "5 km",
    "regResolved": "2026-11-08",
    "bannerScore": 9,
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "regChecked": "2026-11-08",
    "alt": [
     "https://sportmaniacs.com/es/races/cursa-antirracista-de-sabadell"
    ],
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-11-07",
    "kmRevisar": "",
    "checkedAt": "2026-11-08",
@@ -8088,9 +8090,9 @@
    "km": "10 km · 5 km",
    "changedAt": "2026-10-22",
    "bannerScore": 4,
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "inscripcion": "abierta",
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-11-07",
    "kmRevisar": "",
    "fechaOk": true,
@@ -8165,7 +8167,7 @@
    "source": "https://sportplan.es/es/events/els-10k-de-les-franqueses-les-franqueses-del-valles-barcelona-es-2026-11-15",
    "checkedAt": "2026-11-08",
    "nosite": false,
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-10-27",
    "alt": [
     "https://running.life/en/event/els-10-de-les-franqueses"
@@ -8173,7 +8175,7 @@
    "official_guess": "http://www.els10delesfranqueses.cat/reglament.htm",
    "km": "10 km",
    "changedAt": "2026-10-29",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "cambio": {
     "t": "2026-10-29T01:56+00:00",
     "c": [
@@ -8204,9 +8206,9 @@
    "signup": true,
    "banner": "https://rtsfiles.blob.core.windows.net/manager/10247/library/root/bf0be8be-5e83-4eaa-8e6e-69f5a3e1fec6.png",
    "bannerScore": 4,
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "inscripcion": "cerrada",
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-11-07",
    "km": "5 km",
    "changedAt": "2026-10-30",
@@ -8244,13 +8246,13 @@
    "changedAt": "2026-11-01",
    "regResolved": "2026-11-08",
    "bannerScore": 9,
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "regChecked": "2026-11-08",
    "alt": [
     "https://sportmaniacs.com/es/races/la-palauenca-2026",
     "https://sportplan.es/es/events/la-palauenca-palau-solita-i-plegamans-barcelona-es-2026-11-22"
    ],
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-11-07",
    "kmRevisar": "",
    "fechaOk": true,
@@ -8306,8 +8308,8 @@
    "nosite": false,
    "banner": "https://mitjalleida.com/wp-content/uploads/2026/05/33MITJALL.avif",
    "changedAt": "2026-11-01",
-   "inscripcionAt": "2026-11-07",
-   "revisada": "2026-11-08T01:48+00:00",
+   "inscripcionAt": "2026-11-08",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-10-23",
    "route": "https://mitjalleida.com/informacio-recorregut/",
    "checkedAt": "2026-11-08",
@@ -8346,11 +8348,11 @@
    "banner": "https://faa-media.s3.eu-south-2.amazonaws.com/marchenaparadas26.18243.jpg",
    "changedAt": "2026-11-01",
    "bannerScore": 4,
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "alt": [
     "https://running.life/en/event/media-maraton-marchena-paradas"
    ],
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-11-07",
    "km": "21,097 km",
    "price": "18–21 €",
@@ -8386,11 +8388,11 @@
    "nosite": false,
    "banner": "https://deporticket.blob.core.windows.net/deporticket/26-cartel/261115-37o-medio-maraton-elvas-badajoz-cartel.jpg",
    "changedAt": "2026-11-01",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "alt": [
     "https://running.life/en/event/medio-maraton-elvas-badajoz"
    ],
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-11-07",
    "bannerScore": 10,
    "km": "21,097 km",
@@ -8467,12 +8469,12 @@
    "regulation": "https://inscripciones.cronorunner.com/rgpd",
    "changedAt": "2026-10-29",
    "regResolved": "2026-11-08",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "regChecked": "2026-11-08",
    "alt": [
     "https://running.life/en/event/mitja-marato-roquette-benifaio"
    ],
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-10-27",
    "km": "21,097 km",
    "cambio": {
@@ -8504,8 +8506,8 @@
    "signup": true,
    "banner": "https://rtsfiles.blob.core.windows.net/manager/2048/custom/root/79e8a466-a00e-45e3-95e1-f6c80ce94c95_custom1.jpeg",
    "bannerScore": 5,
-   "inscripcionAt": "2026-11-07",
-   "revisada": "2026-11-08T01:48+00:00",
+   "inscripcionAt": "2026-11-08",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-11-07",
    "km": "5 km",
    "changedAt": "2026-11-01",
@@ -8542,9 +8544,9 @@
    "regulation": "https://sportmaniacs.com/es/services/inscription/runcancer-lolleria-2026#rules",
    "km": "5 km",
    "regResolved": "2026-11-08",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "regChecked": "2026-11-08",
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "kmRevisar": "",
    "checkedAt": "2026-11-08",
    "mediaChecked": "2026-10-27",
@@ -8616,11 +8618,11 @@
    "banner": "https://s3.eu-west-1.amazonaws.com/sm-fotos.sportmaniacs.com/back/resize/960x0x0_WhatsApp%20Image%202026-09-28%20at%2016.29.40%20CARTEL%20CARRERA.jpeg",
    "km": "4 km",
    "bannerScore": 9,
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "inscripcion": "abierta",
    "regResolved": "2026-11-08",
    "regChecked": "2026-11-08",
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-11-07",
    "kmRevisar": "",
    "checkedAt": "2026-11-08",
@@ -8644,7 +8646,7 @@
    "official": true,
    "url": "https://sportmaniacs.com/es/services/inscription/vi-canicros-de-reus",
    "addedAt": "2026-10-28",
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "checkedAt": "2026-11-08",
    "nosite": false,
    "signup": true,
@@ -8652,7 +8654,7 @@
    "regResolved": "2026-11-05",
    "regChecked": "2026-11-05",
    "mediaChecked": "2026-10-28",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "cambio": {
     "t": "2026-11-01T14:07+00:00",
     "c": [
@@ -8688,7 +8690,7 @@
    "official": true,
    "url": "https://sportmaniacs.com/es/services/inscription/13a-vandekames---2026",
    "addedAt": "2026-10-28",
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "checkedAt": "2026-11-08",
    "nosite": false,
    "signup": true,
@@ -8696,7 +8698,7 @@
    "regResolved": "2026-11-05",
    "regChecked": "2026-11-05",
    "mediaChecked": "2026-10-28",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "cambio": {
     "t": "2026-11-01T14:07+00:00",
     "c": [
@@ -8738,9 +8740,9 @@
    "changedAt": "2026-11-02",
    "regResolved": "2026-11-08",
    "bannerScore": 9,
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "regChecked": "2026-11-08",
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-11-07",
    "kmRevisar": "",
    "checkedAt": "2026-11-08",
@@ -8778,9 +8780,9 @@
    "regulation": "https://sportmaniacs.com/es/services/inscription/xi-desafio-sierra-de-villaluenga#rules",
    "km": "24 km · 15 km",
    "regResolved": "2026-11-08",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "regChecked": "2026-11-08",
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "kmRevisar": "",
    "checkedAt": "2026-11-08",
    "mediaChecked": "2026-10-27",
@@ -8832,7 +8834,7 @@
    "official": true,
    "url": "https://trailrunninggirona.com/cims-de-girona/presentacio",
    "addedAt": "2026-10-31",
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "checkedAt": "2026-11-08",
    "nosite": false,
    "regulation": "https://trailrunninggirona.com/images/cims_girona/reglamentcims_2026.pdf",
@@ -8840,7 +8842,7 @@
    "regChecked": "2026-11-08",
    "km": "7 km · 5 km",
    "mediaChecked": "2026-10-31",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "cambio": {
     "t": "2026-11-03T03:07+00:00",
     "c": [
@@ -8882,9 +8884,9 @@
    "km": "29 km",
    "regResolved": "2026-11-08",
    "bannerScore": 9,
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "regChecked": "2026-11-08",
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-11-07",
    "kmRevisar": "",
    "checkedAt": "2026-11-08",
@@ -8925,14 +8927,14 @@
    "changedAt": "2026-11-08",
    "regResolved": "2026-11-08",
    "bannerScore": 9,
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "inscripcion": "abierta",
    "regChecked": "2026-11-08",
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "route": "https://cursafosca.com/img/photos/route-trail-night-1440.jpg",
    "km": "30 km · 22 km · 15 km",
    "cambio": {
-    "t": "2026-11-08T01:48+00:00",
+    "t": "2026-11-08T03:07+00:00",
     "c": [
      "time"
     ]
@@ -8961,10 +8963,10 @@
    "nosite": false,
    "regulation": "https://www.babelsport.com/userfiles/2408_reglamento%20carrera%202026%20CEIP%20Los%20Rosales.pdf",
    "km": "10 km · 5 km",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "regResolved": "2026-11-08",
    "regChecked": "2026-11-08",
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-11-07",
    "kmRevisar": "",
    "checkedAt": "2026-11-03",
@@ -9003,10 +9005,10 @@
    "checkedAt": "2026-10-30",
    "nosite": false,
    "regulation": "https://www.cronofinisher.com/images/biblioteca_eventos/760/reglamento-2026-5000-charca-grande.pdf",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "regResolved": "2026-11-08",
    "regChecked": "2026-11-08",
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "route": "https://www.cronofinisher.com/images/biblioteca_eventos/760/reglamento-xii-circuito-runnavideno-vegas-bajas-2026-2027.pdf",
    "mediaChecked": "2026-10-27",
    "banner": "https://www.cronofinisher.com/images/biblioteca_eventos/760/cartel-xii-circuito-runnavideno-50.jpg",
@@ -9046,9 +9048,9 @@
    "signup": true,
    "regulation": "https://sportmaniacs.com/es/services/inscription/xiv-carrera-contra-la-violencia-de-gnero-lanzarote-2026#rules",
    "regResolved": "2026-11-08",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "regChecked": "2026-11-08",
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-10-27",
    "banner": "https://s3.eu-west-1.amazonaws.com/sm-fotos.sportmaniacs.com/back/resize/1920x410x0_header_6ad9be46-c148-4e88-be2b-6228ac1f1d6b.png",
    "bannerScore": 4,
@@ -9088,14 +9090,14 @@
    "signup": true,
    "regulation": "https://lineadesalida.net/storage/reglamentos/1787765514reglamento10kcpc26.pdf",
    "changedAt": "2026-10-27",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "inscripcion": "abierta",
    "regResolved": "2026-11-08",
    "regChecked": "2026-11-08",
    "alt": [
     "https://www.lineadesalida.net/carreras/xi-carrera-solidaria-puerto-de-cartagena-10kcpc"
    ],
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-11-07",
    "checkedAt": "2026-10-27",
    "banner": "https://lineadesalida.net/storage/carteles/1792477818cartel10kCPC.jpeg",
@@ -9125,13 +9127,13 @@
    "km": "21,097 km",
    "changedAt": "2026-11-02",
    "regResolved": "2026-11-08",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "regChecked": "2026-11-08",
    "alt": [
     "https://running.life/en/event/cursa-de-sa-sobrassada-semimarato-por-relleus",
     "https://sportmaniacs.com/es/races/xviii-cursa-de-sa-sobrassada-semimarat-per-relleus-2026"
    ],
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "kmRevisar": "",
    "checkedAt": "2026-11-08",
    "mediaChecked": "2026-10-27",
@@ -9170,10 +9172,10 @@
    "changedAt": "2026-11-02",
    "banner": "https://magmasports.es/storage/LKFkTq111B4DgZwXroiDT3Qxe8FVWfjEp0ScckVu.png",
    "bannerScore": 4,
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "regResolved": "2026-11-08",
    "regChecked": "2026-11-08",
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-11-07",
    "kmRevisar": "",
    "checkedAt": "2026-10-27",
@@ -9212,9 +9214,9 @@
    "km": "10 km",
    "changedAt": "2026-10-29",
    "bannerScore": 4,
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "inscripcion": "abierta",
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-11-07",
    "kmRevisar": "",
    "fechaOk": true,
@@ -9254,8 +9256,8 @@
    "banner": "https://www.herrikrosa.eus/carteles/cartel_azkoitia_raka.jpg",
    "changedAt": "2026-11-02",
    "bannerScore": 9,
-   "inscripcionAt": "2026-11-07",
-   "revisada": "2026-11-08T01:48+00:00",
+   "inscripcionAt": "2026-11-08",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-11-07",
    "km": "10 km",
    "cambio": {
@@ -9295,12 +9297,12 @@
    "changedAt": "2026-11-02",
    "regResolved": "2026-11-08",
    "bannerScore": 9,
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "regChecked": "2026-11-08",
    "alt": [
     "https://sportmaniacs.com/es/races/bkt-larrabetzu-2026"
    ],
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-11-07",
    "kmRevisar": "",
    "checkedAt": "2026-11-08",
@@ -9338,12 +9340,12 @@
    "km": "21,097 km · 10 km",
    "changedAt": "2026-10-27",
    "bannerScore": 4,
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "inscripcion": "abierta",
    "alt": [
     "https://running.life/en/event/benidorm-half"
    ],
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-11-07",
    "kmRevisar": "",
    "checkedAt": "2026-11-08",
@@ -9366,9 +9368,9 @@
    "official": true,
    "url": "https://www.carreirasgalegas.com/events/iii-carreira-caminos-da-via-verde-deputacion-da-coruna/a9ako7lB",
    "addedAt": "2026-10-24",
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "nosite": false,
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "checkedAt": "2026-11-08",
    "km": "10 km · 5 km",
    "changedAt": "2026-10-27",
@@ -9400,9 +9402,9 @@
    "km": "15 km · 10 km · 5 km",
    "regResolved": "2026-11-08",
    "bannerScore": 4,
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "regChecked": "2026-11-08",
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-11-07",
    "kmRevisar": "",
    "checkedAt": "2026-11-08",
@@ -9511,10 +9513,10 @@
    "regulation": "https://www.atcerdanyola.com/curses/milles-cerdanyola/_/docs/reglament-milles-2026.pdf",
    "banner": "https://www.atcerdanyola.com/curses/milles-cerdanyola/_/img/social/social-facebook-2026.png",
    "km": "5 km",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "regResolved": "2026-11-08",
    "regChecked": "2026-11-08",
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "route": "https://www.google.com/maps/d/u/0/edit?mid=1rkiKNhy50nSKOfbvN59LlgyZF8O_l-Y&usp=sharing",
    "kmRevisar": "",
    "checkedAt": "2026-11-08",
@@ -9581,8 +9583,8 @@
    "addedAt": "2026-10-23",
    "checkedAt": "2026-11-08",
    "nosite": false,
-   "inscripcionAt": "2026-11-07",
-   "revisada": "2026-11-08T01:48+00:00",
+   "inscripcionAt": "2026-11-08",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-10-27",
    "km": "16 km · 5 km",
    "changedAt": "2026-10-30",
@@ -9617,14 +9619,14 @@
    "price": "2 €",
    "km": "21,097 km · 10 km · 5 km",
    "changedAt": "2026-11-02",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "regResolved": "2026-11-08",
    "regChecked": "2026-11-08",
    "alt": [
     "https://running.life/en/event/la-mitja-del-maresme",
     "https://runedia.mundodeportivo.com/carrera/la-mitja-dani-del-maresme-2026-2026/202637474/"
    ],
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-11-07",
    "kmRevisar": "",
    "checkedAt": "2026-10-27",
@@ -9663,9 +9665,9 @@
    "regulation": "https://xtsportevents.com/reglament-ca-marxa-jocart-bovera/#content",
    "changedAt": "2026-11-02",
    "regResolved": "2026-11-08",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "regChecked": "2026-11-08",
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "route": "https://es.wikiloc.com/rutas-carrera/on-deu-va-perdre-lespardenya-bovera-2026-10k-285184216",
    "checkedAt": "2026-11-08",
    "km": "14 km · 10 km · 5,5 km",
@@ -9700,9 +9702,9 @@
    "official": true,
    "url": "https://www.alcanzatumeta.es/xxiv-media-maraton-solidaria-bajo-almanzora/",
    "addedAt": "2026-10-25",
-   "revisada": "2026-11-07T02:21+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "nosite": false,
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "mediaChecked": "2026-10-27",
    "banner": "https://alcanzatumeta.es/uploads/Cartel/b5a332e8e2c9d4b033b3e814aa50e03c7d033c541525a948.jpg",
    "bannerScore": 9,
@@ -9745,12 +9747,12 @@
    "km": "10 km · 5 km",
    "changedAt": "2026-11-03",
    "bannerScore": 4,
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "inscripcion": "abierta",
    "alt": [
     "https://sportmaniacs.com/es/races/10k-montbri-del-camp-2026"
    ],
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-11-07",
    "kmRevisar": "",
    "checkedAt": "2026-11-08",
@@ -9789,11 +9791,11 @@
    "alt": [
     "https://running.life/en/event/corre-por-un-mundo-sostenible"
    ],
-   "revisada": "2026-11-07T02:21+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-10-23",
    "kmRevisar": "",
    "checkedAt": "2026-11-03",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "iaAt": "2026-11-02",
    "inscripcion": "abierta",
    "route": "https://correporunmundosostenible.es/recorridos/",
@@ -9870,7 +9872,7 @@
    "id": "maraton-donostia-2026",
    "official_guess": "https://web.rockthesport.com/es/event/zurich-maraton-donostia-san-sebastian-2026",
    "regResolved": "2026-11-08",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "inscripcion": "agotada",
    "regChecked": "2026-11-08",
    "alt": [
@@ -9878,7 +9880,7 @@
     "https://www.carreraspopulares.com/carrera/zurich-maraton-donostia-san-sebastian",
     "https://sportmaniacs.com/es/races/zurich-maraton-de-san-sebastian-2026"
    ],
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "kmRevisar": "",
    "checkedAt": "2026-11-08",
    "route": "https://zurichmaratonsansebastian.com/wp-content/uploads/2026/04/recorrido-ZMSS-1024x836.webp",
@@ -9910,14 +9912,14 @@
    "changedAt": "2026-10-27",
    "banner": "https://alcanzatumeta.es/uploads/Cartel/7ad44194d89d323259c079a9cbf81f0e.jpeg",
    "bannerScore": 9,
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "regResolved": "2026-11-08",
    "regChecked": "2026-11-08",
    "alt": [
     "https://running.life/en/event/carrera-popular-bahabonela-y-marcha-solidaria-a-favor-del-ela",
     "https://running.life/en/event/carrera-solidaria-a-favor-de-acodip"
    ],
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-11-07",
    "kmRevisar": "",
    "checkedAt": "2026-10-27",
@@ -9952,11 +9954,11 @@
    "km": "21,097 km",
    "changedAt": "2026-10-27",
    "bannerScore": 4,
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "alt": [
     "https://running.life/en/event/media-maraton-ciudad-de-roquetas"
    ],
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-11-07",
    "kmRevisar": "",
    "checkedAt": "2026-11-08",
@@ -9979,7 +9981,7 @@
    "official": true,
    "url": "http://www.cexblanes.net/index.php/ix-passafred/ix-passafred",
    "addedAt": "2026-10-26",
-   "revisada": "2026-11-07T02:21+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-10-27",
    "checkedAt": "2026-10-27",
    "nosite": false,
@@ -9990,7 +9992,7 @@
    "bannerScore": 3,
    "km": "21,097 km · 13 km",
    "changedAt": "2026-10-27",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "iaAt": "2026-11-02"
   },
   {
@@ -10012,14 +10014,14 @@
    "official": true,
    "url": "https://www.alcanzatumeta.es/xv-10k-5k-marcha-los-montesinos-2026/",
    "addedAt": "2026-10-25",
-   "revisada": "2026-11-07T02:21+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "nosite": false,
    "regulation": "https://www.alcanzatumeta.es/uploads/Reglamento/8b9028403364d3c34db340e1a7db3f3b.pdf",
    "regResolved": "2026-11-02",
    "regChecked": "2026-11-02",
    "km": "10 km · 5 km",
    "mediaChecked": "2026-10-25",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "kmRevisar": "",
    "checkedAt": "2026-10-27",
    "changedAt": "2026-10-27",
@@ -10055,10 +10057,10 @@
    "banner": "https://carreracancerpancreas.es/wp-content/uploads/2025/10/Logo-Nuestro-Reto-La-esperanza-Blanco.jpg",
    "km": "10 km · 5 km",
    "changedAt": "2026-11-02",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "regResolved": "2026-11-08",
    "regChecked": "2026-11-08",
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-10-23",
    "route": "https://carreracancerpancreas.es/wp-content/uploads/2024/09/recorrido_carrera_solidaria_JUAN_CARLOS_I_plano_carrera.jpeg",
    "kmRevisar": "",
@@ -10099,8 +10101,8 @@
    "km": "21,097 km · 10 km",
    "changedAt": "2026-11-02",
    "bannerScore": 9,
-   "inscripcionAt": "2026-11-07",
-   "revisada": "2026-11-08T01:48+00:00",
+   "inscripcionAt": "2026-11-08",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-11-07",
    "kmRevisar": "",
    "checkedAt": "2026-11-08",
@@ -10175,14 +10177,14 @@
    "source": "https://sportplan.es/es/events/carrera-san-jose-de-calasanz-getafe-madrid-es-2026-11-29",
    "checkedAt": "2026-11-08",
    "nosite": false,
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "alt": [
     "https://running.life/en/event/carrera-san-jose-de-calasanz"
    ],
    "official_guess": "https://youevent.es/sport/Tabla_FichaEventoDeportivo.asp?id_competicion=8972",
    "otraFecha": "2026-11-29",
    "cambio": {
-    "t": "2026-11-08T01:48+00:00",
+    "t": "2026-11-08T03:07+00:00",
     "c": [
      "banner"
     ]
@@ -10196,12 +10198,13 @@
    "price": "8 €",
    "km": "5 km",
    "changedAt": "2026-11-08",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "iaAt": "2026-11-02",
    "inscripcion": "abierta",
    "ia": [
     "inscripcion"
    ],
+   "mediaChecked": "2026-11-08",
    "banner": "https://youevent.es/sport/banners/Cartel_20261117_KmSolidario26_w180.png",
    "bannerScore": 9
   },
@@ -10228,13 +10231,13 @@
    "changedAt": "2026-10-27",
    "banner": "https://alcanzatumeta.es/uploads/Cartel/ead502d0197dcc8a0eca84fd74da6e44.jpg",
    "bannerScore": 9,
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "regResolved": "2026-11-08",
    "regChecked": "2026-11-08",
    "alt": [
     "https://www.lineadesalida.net/carreras/v-carrera-solidaria-auxiliar-conservera"
    ],
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-11-07",
    "kmRevisar": "",
    "checkedAt": "2026-10-27",
@@ -10264,7 +10267,7 @@
    "source": "https://sportplan.es/es/events/carrera-solidaria-ruta-091-cordoba-cordoba-es-2026-11-22",
    "checkedAt": "2026-11-08",
    "nosite": false,
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-10-27",
    "alt": [
     "https://running.life/en/event/carrera-solidaria-ruta-091-ecija"
@@ -10276,7 +10279,7 @@
    "price": "8–12 €",
    "km": "5 km",
    "changedAt": "2026-11-02",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "cambio": {
     "t": "2026-11-02T14:07+00:00",
     "c": [
@@ -10312,7 +10315,7 @@
    "alt": [
     "https://running.life/en/event/carrera-contra-el-cancer-de-pancreas-alicante"
    ],
-   "revisada": "2026-11-07T02:21+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-10-27",
    "banner": "https://grupobrotons.com/wp-content/uploads/2026/07/AF-CARTEL-ALICANTE-2026-1-724x1024.jpg",
    "bannerScore": 10,
@@ -10324,7 +10327,7 @@
    "price": "6–16 €",
    "km": "7,5 km · 7 km · 5 km",
    "changedAt": "2026-11-03",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "cambio": {
     "t": "2026-11-03T03:07+00:00",
     "c": [
@@ -10359,10 +10362,10 @@
    "banner": "https://olarivers.com/wp-content/uploads/2026/07/cartel-cerebro-no-es-gris-724x1024.jpeg",
    "km": "5 km",
    "bannerScore": 9,
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "regResolved": "2026-11-08",
    "regChecked": "2026-11-08",
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-11-07",
    "kmRevisar": "",
    "checkedAt": "2026-10-27",
@@ -10395,10 +10398,10 @@
    "official": true,
    "url": "https://carrera.diabeteszaragoza.org/",
    "addedAt": "2026-10-25",
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "nosite": false,
    "km": "5 km",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "kmRevisar": "",
    "mediaChecked": "2026-10-27",
    "banner": "https://carrera.diabeteszaragoza.org/wp-content/uploads/2026/09/Diabeticos-Banner-Web.jpg",
@@ -10438,11 +10441,11 @@
    "signup": true,
    "regulation": "https://s3-eu-west-1.amazonaws.com/sm-fotos.sportmaniacs.com/back/Reglamento_Carrera_Empresas_Huelva24_borrador_v1.pdf",
    "km": "7 km",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "inscripcion": "abierta",
    "regResolved": "2026-11-08",
    "regChecked": "2026-11-08",
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "kmRevisar": "",
    "mediaChecked": "2026-10-27",
    "checkedAt": "2026-10-27",
@@ -10481,13 +10484,13 @@
    "changedAt": "2026-10-27",
    "banner": "https://alcanzatumeta.es/uploads/Cartel/82007d4083dd862924b29877ad6f6331.jpeg",
    "bannerScore": 9,
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "regResolved": "2026-11-08",
    "regChecked": "2026-11-08",
    "alt": [
     "https://running.life/en/event/media-maraton-jumilla-ciudad-del-vino"
    ],
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-11-07",
    "checkedAt": "2026-10-27",
    "km": "21,097 km",
@@ -10521,11 +10524,11 @@
    "signup": true,
    "banner": "https://rtsfiles.blob.core.windows.net/manager/2048/custom/root/c1901fc6-4ce1-4715-a003-0d4d98e4af3b_custom1.jpeg",
    "changedAt": "2026-11-03",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "alt": [
     "https://running.life/en/event/mitja-marato-samaruc"
    ],
-   "revisada": "2026-11-07T02:21+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-11-07",
    "regulation": "https://rtsfiles.blob.core.windows.net/documentos/dd8b446c-0606-446d-bcf5-127ca247200e.pdf",
    "regResolved": "2026-11-06",
@@ -10566,13 +10569,13 @@
    "price": "13–25 €",
    "km": "21,097 km · 10 km",
    "changedAt": "2026-10-22",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "regResolved": "2026-11-08",
    "regChecked": "2026-11-08",
    "alt": [
     "https://running.life/en/event/mitja-marato-de-porreres"
    ],
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "kmRevisar": "",
    "mediaChecked": "2026-10-27",
    "banner": "https://www.elitechip.net/media.php?zwimg=5494724&zwh=50&zww=50&zwrt=4&zwrot=0",
@@ -10641,9 +10644,9 @@
    "banner": "https://rtsfiles.blob.core.windows.net/manager/1367/library/root/214294d8-a5c3-4b3a-b9da-2833545a4217.jpeg",
    "km": "5 km",
    "bannerScore": 4,
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "inscripcion": "abierta",
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-11-07",
    "kmRevisar": "",
    "checkedAt": "2026-11-08",
@@ -10760,13 +10763,13 @@
    "price": "12 €",
    "km": "10 km",
    "changedAt": "2026-11-03",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "regResolved": "2026-11-08",
    "regChecked": "2026-11-08",
    "alt": [
     "https://running.life/en/event/carrera-de-fondo-peligros-suena"
    ],
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "kmRevisar": "",
    "mediaChecked": "2026-10-27",
    "banner": "https://www.global-tempo.com/banner/AF%20CARTEL%20DEPORTE%20A3.jpg",
@@ -10806,13 +10809,13 @@
    "km": "5 km",
    "banner": "https://alcanzatumeta.es/uploads/Cartel/f79e288ce724ee6613e84fc3f2f7498e.jpeg",
    "bannerScore": 9,
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "regResolved": "2026-11-08",
    "regChecked": "2026-11-08",
    "alt": [
     "https://www.lineadesalida.net/carreras/viii-carrera-y-marcha-urbana-mueve-la-vida"
    ],
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-11-07",
    "kmRevisar": "",
    "checkedAt": "2026-10-27",
@@ -10846,16 +10849,16 @@
    "nosite": false,
    "regulation": "https://carrerasciudadreal.es/wp-content/uploads/2026/10/Reglamento-Miguelturra-2026.pdf",
    "changedAt": "2026-11-03",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "regResolved": "2026-11-08",
    "regChecked": "2026-11-08",
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "banner": "https://carrerasciudadreal.es/wp-content/uploads/2026/10/Cartel-Miguelturra-2026-scaled.jpg",
    "bannerScore": 10,
    "checkedAt": "2026-10-27",
    "km": "21,097 km",
    "cambio": {
-    "t": "2026-11-08T01:48+00:00",
+    "t": "2026-11-08T03:07+00:00",
     "c": [
      "route"
     ]
@@ -10891,8 +10894,8 @@
    "changedAt": "2026-11-08",
    "banner": "https://elitechip.twic.pics/image/5705803?twic=v1/cover=1200x630",
    "bannerScore": 4,
-   "inscripcionAt": "2026-11-07",
-   "revisada": "2026-11-08T01:48+00:00",
+   "inscripcionAt": "2026-11-08",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-11-07",
    "kmRevisar": "",
    "checkedAt": "2026-11-08",
@@ -10930,13 +10933,13 @@
    "banner": "https://rtsfiles.blob.core.windows.net/manager/10765/library/root/7283454b-83d9-4b31-a114-25493a38351e.png",
    "price": "26 €",
    "changedAt": "2026-10-27",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "inscripcion": "abierta",
    "alt": [
     "https://running.life/en/event/mitja-marato-espirall",
     "https://runedia.mundodeportivo.com/carrera/mitja-marato-espirall-vilafranca-2026/202637475/"
    ],
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-11-07",
    "checkedAt": "2026-11-08",
    "bannerScore": 4,
@@ -10966,9 +10969,9 @@
    "banner": "https://web.rockthesport.com/images/home-banner.jpg",
    "bannerScore": 2,
    "km": "15 km · 10 km · 5 km",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "inscripcion": "cerrada",
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-11-07",
    "kmRevisar": "",
    "checkedAt": "2026-11-08",
@@ -10997,8 +11000,8 @@
    "km": "10 km · 5 km",
    "changedAt": "2026-11-03",
    "bannerScore": 10,
-   "inscripcionAt": "2026-11-07",
-   "revisada": "2026-11-08T01:48+00:00",
+   "inscripcionAt": "2026-11-08",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-11-07",
    "kmRevisar": "",
    "checkedAt": "2026-11-08",
@@ -11037,10 +11040,10 @@
    "km": "12 km",
    "regResolved": "2026-11-08",
    "bannerScore": 9,
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "inscripcion": "abierta",
    "regChecked": "2026-11-08",
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-11-07",
    "kmRevisar": "",
    "checkedAt": "2026-11-08",
@@ -11061,9 +11064,9 @@
    "note": "",
    "id": "barbano-corre-8k-2026-1122",
    "source": "https://sportplan.es/es/events/barbano-corre-8k-barbano-badajoz-es-2026-11-22",
-   "checkedAt": "2026-11-05",
+   "checkedAt": "2026-11-08",
    "nosite": true,
-   "revisada": "2026-11-05T03:15+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-10-27"
   },
   {
@@ -11087,15 +11090,15 @@
    "price": "23 €",
    "km": "10 km · 5 km · 3 km",
    "changedAt": "2026-11-03",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "alt": [
     "https://running.life/en/event/barbie-run-alcobendas-madrid",
     "https://sportmaniacs.com/es/races/barbie-run-alcobendas-2026"
    ],
-   "revisada": "2026-11-07T02:21+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "kmRevisar": "",
    "mediaChecked": "2026-10-27",
-   "checkedAt": "2026-11-03",
+   "checkedAt": "2026-11-08",
    "iaAt": "2026-11-03",
    "inscripcion": "agotada",
    "ia": [
@@ -11125,11 +11128,11 @@
    "official": true,
    "url": "https://www.carreirasgalegas.com/events/xi-carreira-pedestre-de-ribadavia/Ll7x8YmO",
    "addedAt": "2026-10-21",
-   "checkedAt": "2026-11-05",
+   "checkedAt": "2026-11-08",
    "nosite": false,
    "changedAt": "2026-10-29",
-   "inscripcionAt": "2026-11-07",
-   "revisada": "2026-11-07T02:21+00:00",
+   "inscripcionAt": "2026-11-08",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-10-27",
    "km": "10 km",
    "cambio": {
@@ -11146,20 +11149,42 @@
    "time": "",
    "city": "A Coruña",
    "region": "Galicia",
-   "distances": [],
-   "url": "",
-   "official": false,
+   "distances": [
+    "5K"
+   ],
+   "url": "https://corunacorre.com/",
+   "official": true,
    "note": "",
    "id": "carreira-popular-novo-mesoiro-2026-1122",
    "source": "https://sportplan.es/es/events/carrera-popular-novo-mesoiro-a-coruna-es-2026-11-22",
-   "checkedAt": "2026-11-05",
-   "nosite": true,
-   "revisada": "2026-11-06T14:07+00:00",
+   "checkedAt": "2026-11-08",
+   "nosite": false,
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-10-27",
    "alt": [
     "https://running.life/en/event/carreira-popular-novo-mesoiro"
    ],
-   "official_guess": "https://corunacorre.com/"
+   "official_guess": "https://corunacorre.com/",
+   "regulation": "https://ccnorte.com/uploads/eventos/liga-reglamento-69a1a19e9c6f3.pdf",
+   "regResolved": "2026-11-08",
+   "regChecked": "2026-11-08",
+   "banner": "https://corunacorre.com/media/cache/17/1a/171a6d1b4af63ab81c1d7ddcf448dcb8.png",
+   "bannerScore": 3,
+   "route": "https://corunacorre.com/page/lopd-circuito",
+   "routeFrom": "oficial",
+   "km": "5 km",
+   "changedAt": "2026-11-08",
+   "inscripcionAt": "2026-11-08",
+   "cambio": {
+    "t": "2026-11-08T03:07+00:00",
+    "c": [
+     "url",
+     "regulation",
+     "banner",
+     "km",
+     "route"
+    ]
+   }
   },
   {
    "name": "Carreira Popular dos Santiños",
@@ -11177,11 +11202,11 @@
    "official": true,
    "url": "https://www.carreirasgalegas.com/events/xviii-carreira-popular-dos-santinos/6lZJBvl1",
    "addedAt": "2026-10-24",
-   "revisada": "2026-11-07T02:21+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "nosite": false,
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "mediaChecked": "2026-10-27",
-   "checkedAt": "2026-11-03",
+   "checkedAt": "2026-11-08",
    "km": "5 km",
    "changedAt": "2026-10-27",
    "iaAt": "2026-11-03"
@@ -11202,12 +11227,12 @@
    "official": true,
    "url": "https://www.carreirasgalegas.com/events/vii-carrera-e-andaina-contra-a-violencia-machista/VjK3RXjJ",
    "addedAt": "2026-10-31",
-   "revisada": "2026-11-07T03:07+00:00",
-   "checkedAt": "2026-11-07",
+   "revisada": "2026-11-08T03:07+00:00",
+   "checkedAt": "2026-11-08",
    "nosite": false,
    "km": "5 km",
    "mediaChecked": "2026-10-31",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "cambio": {
     "t": "2026-10-31T14:07+00:00",
     "c": [
@@ -11232,10 +11257,10 @@
    "official": false,
    "url": "",
    "addedAt": "2026-10-23",
-   "checkedAt": "2026-11-06",
+   "checkedAt": "2026-11-08",
    "banner": "https://deporticket.blob.core.windows.net/deporticket/26-cartel/261122-ii-carrera-corre-segura-cartel.jpg",
    "bannerScore": 9,
-   "revisada": "2026-11-07T02:21+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-11-07",
    "km": "5 km",
    "changedAt": "2026-10-30",
@@ -11259,9 +11284,9 @@
    "note": "",
    "id": "carrera-fundacion-jose-luis-martin-lopez-2026-1122",
    "source": "https://sportplan.es/es/events/carrera-fundacion-jose-luis-martin-lopez-linares-jaen-es-2026-11-22",
-   "checkedAt": "2026-11-05",
+   "checkedAt": "2026-11-08",
    "nosite": true,
-   "revisada": "2026-11-05T03:15+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-10-27"
   },
   {
@@ -11276,9 +11301,9 @@
    "note": "",
    "id": "carrera-poligono-san-cristobal-2026-1122",
    "source": "https://sportplan.es/es/events/carrera-poligono-san-cristobal-valladolid-es-2026-11-22",
-   "checkedAt": "2026-11-05",
+   "checkedAt": "2026-11-08",
    "nosite": true,
-   "revisada": "2026-11-05T03:15+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-10-27"
   },
   {
@@ -11301,16 +11326,16 @@
    "nosite": false,
    "regulation": "https://www.cronofinisher.com/images/biblioteca_eventos/738/reglamento-carrera-contra-la-droga-navalmoral-de-la-mata-2026-def(1).pdf",
    "km": "5 km · 3 km",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "regResolved": "2026-11-08",
    "regChecked": "2026-11-08",
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "route": "https://www.cronofinisher.com/images/biblioteca_eventos/738/recorridos-y-direccion-carrera-29-de-noviembre.pdf",
    "kmRevisar": "",
    "mediaChecked": "2026-10-27",
    "banner": "https://www.cronofinisher.com/images/biblioteca_eventos/738/cartel-22-noviembre-2026-jpg-jpeg.jpg",
    "bannerScore": 9,
-   "checkedAt": "2026-11-03",
+   "checkedAt": "2026-11-08",
    "routeFrom": "oficial",
    "iaAt": "2026-11-03",
    "inscripcion": "cerrada",
@@ -11348,13 +11373,13 @@
    "km": "10 km",
    "changedAt": "2026-11-03",
    "regResolved": "2026-11-08",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "regChecked": "2026-11-08",
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "route": "https://www.orycronsport.com/pix-admin/ficheros/52156/recorrido-carrera-2.jpeg",
    "kmRevisar": "",
    "mediaChecked": "2026-10-27",
-   "checkedAt": "2026-11-03",
+   "checkedAt": "2026-11-08",
    "routeFrom": "oficial",
    "iaAt": "2026-11-03",
    "inscripcion": "abierta",
@@ -11385,9 +11410,9 @@
    "note": "",
    "id": "carrera-popular-jamon-veloz-2026-1122",
    "source": "https://sportplan.es/es/events/carrera-popular-jamon-veloz-guijuelo-salamanca-es-2026-11-22",
-   "checkedAt": "2026-11-05",
+   "checkedAt": "2026-11-08",
    "nosite": true,
-   "revisada": "2026-11-05T14:07+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-10-27"
   },
   {
@@ -11406,9 +11431,9 @@
    "official": false,
    "url": "",
    "addedAt": "2026-10-21",
-   "checkedAt": "2026-11-05",
+   "checkedAt": "2026-11-08",
    "nosite": true,
-   "revisada": "2026-11-05T14:07+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "otraFecha": "2026-11-29",
    "alt": [
     "https://sportplan.es/es/events/carrera-popular-santiponce-santiponce-sevilla-es-2026-11-29"
@@ -11450,12 +11475,12 @@
    "km": "5 km",
    "regResolved": "2026-11-08",
    "bannerScore": 9,
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "regChecked": "2026-11-08",
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-11-07",
    "kmRevisar": "",
-   "checkedAt": "2026-11-03",
+   "checkedAt": "2026-11-08",
    "iaAt": "2026-11-03",
    "inscripcion": "cerrada",
    "ia": [
@@ -11481,9 +11506,9 @@
    "note": "",
    "id": "carrera-urbana-velez-malaga-2026-1122",
    "source": "https://sportplan.es/es/events/carrera-urbana-velez-malaga-velez-malaga-malaga-es-2026-11-22",
-   "checkedAt": "2026-11-05",
+   "checkedAt": "2026-11-08",
    "nosite": true,
-   "revisada": "2026-11-05T14:07+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-10-27"
   },
   {
@@ -11506,13 +11531,13 @@
    "nosite": true,
    "regulation": "https://www.chiplevante.com/files/documentacion/Reglamento2026amacmec.pdf",
    "km": "10 km · 5,5 km",
-   "changedAt": "2026-11-05",
-   "inscripcionAt": "2026-11-07",
+   "changedAt": "2026-11-08",
+   "inscripcionAt": "2026-11-08",
    "regResolved": "2026-11-08",
    "regChecked": "2026-11-08",
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "kmRevisar": "",
-   "checkedAt": "2026-11-05",
+   "checkedAt": "2026-11-08",
    "alt": [
     "https://sportplan.es/es/events/carrera-contra-el-cancer-de-mama-elche-alicante-es-2026-11-22"
    ],
@@ -11520,7 +11545,7 @@
     "carrera-contra-el-cancer-de-mama-elche-2026-1122"
    ],
    "cambio": {
-    "t": "2026-11-08T01:48+00:00",
+    "t": "2026-11-08T03:07+00:00",
     "c": [
      "route"
     ]
@@ -11531,8 +11556,8 @@
    "ia": [
     "inscripcion"
    ],
-   "mediaChecked": "2026-11-08",
-   "route": "https://www.chiplevante.com/files/documentacion/dipticcarrera2026.pdf"
+   "route": "https://www.chiplevante.com/files/documentacion/dipticcarrera2026.pdf",
+   "mediaChecked": "2026-11-08"
   },
   {
    "name": "Carrera en Marcha contra el Cáncer Cádiz",
@@ -11546,9 +11571,9 @@
    "note": "",
    "id": "carrera-en-marcha-contra-el-cancer-cadiz-2026-1122",
    "source": "https://sportplan.es/es/events/carrera-en-marcha-contra-el-cancer-cadiz-cadiz-es-2026-11-22",
-   "checkedAt": "2026-11-05",
+   "checkedAt": "2026-11-08",
    "nosite": true,
-   "revisada": "2026-11-05T14:07+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-10-27"
   },
   {
@@ -11572,12 +11597,12 @@
    "banner": "https://rtsfiles.blob.core.windows.net/manager/1160/custom/root/b23325c7-231a-4521-a69d-3a4b564bbab9_custom1.jpg",
    "km": "5 km",
    "bannerScore": 4,
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "inscripcion": "abierta",
-   "revisada": "2026-11-07T02:21+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-11-07",
    "kmRevisar": "",
-   "checkedAt": "2026-11-03",
+   "checkedAt": "2026-11-08",
    "regulation": "https://rtsfiles.blob.core.windows.net/documentos/c5749c5e-d160-44b5-8d37-23739d65d02e.pdf",
    "regResolved": "2026-11-04",
    "regChecked": "2026-11-04",
@@ -11605,15 +11630,15 @@
    "regulation": "https://sportmaniacs.com/en/services/inscription/viii-cros-antoni-amoros#rules",
    "km": "4,925 km",
    "regResolved": "2026-11-08",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "regChecked": "2026-11-08",
    "alt": [
     "https://sportmaniacs.com/es/races/viii-cros-antoni-amoros"
    ],
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "kmRevisar": "",
    "mediaChecked": "2026-10-27",
-   "checkedAt": "2026-11-03",
+   "checkedAt": "2026-11-08",
    "iaAt": "2026-11-03",
    "inscripcion": "abierta",
    "ia": [
@@ -11649,12 +11674,12 @@
    "banner": "https://rtsfiles.blob.core.windows.net/manager/11687/library/root/e2fa4aeb-7a75-4eea-94f3-7c58c5b12a60.jpg",
    "km": "10 km",
    "changedAt": "2026-10-27",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "inscripcion": "cerrada",
-   "revisada": "2026-11-07T02:21+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-11-07",
    "kmRevisar": "",
-   "checkedAt": "2026-11-03",
+   "checkedAt": "2026-11-08",
    "bannerScore": 4,
    "iaAt": "2026-11-03"
   },
@@ -11680,17 +11705,17 @@
    "price": "6–18 €",
    "km": "10 km · 5 km",
    "changedAt": "2026-11-03",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "regResolved": "2026-11-08",
    "regChecked": "2026-11-08",
    "alt": [
     "https://running.life/en/event/cursa-solidaria-per-a-la-infancia",
     "https://sportmaniacs.com/es/races/xi-cursa-solidria-per-a-la-infncia"
    ],
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "kmRevisar": "",
    "mediaChecked": "2026-10-27",
-   "checkedAt": "2026-11-03",
+   "checkedAt": "2026-11-08",
    "iaAt": "2026-11-03",
    "inscripcion": "abierta",
    "ia": [
@@ -11726,12 +11751,12 @@
    "km": "10 km · 5 km",
    "changedAt": "2026-11-03",
    "bannerScore": 5,
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "inscripcion": "abierta",
-   "revisada": "2026-11-07T02:21+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "route": "https://es.wikiloc.com/rutas-carrera/parets-del-valles-114687915",
    "kmRevisar": "",
-   "checkedAt": "2026-11-03",
+   "checkedAt": "2026-11-08",
    "routeFrom": "ia",
    "mediaChecked": "2026-10-27",
    "iaAt": "2026-11-03",
@@ -11763,14 +11788,14 @@
    "official": true,
    "url": "https://atleticmontblanc.cat/cursa-de-la-dona-2026/",
    "addedAt": "2026-10-25",
-   "revisada": "2026-11-07T02:21+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "nosite": false,
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "mediaChecked": "2026-10-27",
    "banner": "https://atleticmontblanc.cat/wp-content/uploads/2026/10/cartell-curs-dona-26-ok-724x1024.jpg",
    "bannerScore": 9,
    "route": "https://atleticmontblanc.cat/wp-content/uploads/2024/11/recorregut24.jpg",
-   "checkedAt": "2026-11-03",
+   "checkedAt": "2026-11-08",
    "regulation": "https://atleticmontblanc.cat/cursa-de-la-dona-2026/#reglament",
    "regResolved": "2026-11-04",
    "regChecked": "2026-11-04",
@@ -11808,8 +11833,8 @@
    "official": false,
    "url": "",
    "addedAt": "2026-10-21",
-   "checkedAt": "2026-11-05",
-   "revisada": "2026-11-05T14:07+00:00",
+   "checkedAt": "2026-11-08",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-10-27",
    "km": "15 km · 10 km · 6 km",
    "changedAt": "2026-10-29",
@@ -11843,12 +11868,12 @@
    "regulation": "https://sportmaniacs.com/es/services/inscription/desafo-entre-cafetales--dec--santo-toms#rules",
    "km": "30 km · 20 km",
    "regResolved": "2026-11-08",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "regChecked": "2026-11-08",
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "kmRevisar": "",
    "mediaChecked": "2026-10-27",
-   "checkedAt": "2026-11-03",
+   "checkedAt": "2026-11-08",
    "iaAt": "2026-11-04",
    "inscripcion": "cerrada",
    "ia": [
@@ -11884,13 +11909,13 @@
    "km": "8 km · 5 km",
    "banner": "https://crono4sports.com/storage/posters/01M08HASXG33Q6Y9SZJ1G71AP5.jpg",
    "bannerScore": 8,
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "inscripcion": "abierta",
-   "revisada": "2026-11-07T02:21+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-10-23",
    "route": "https://crono4sports.com/circuitos",
    "kmRevisar": "",
-   "checkedAt": "2026-11-03",
+   "checkedAt": "2026-11-08",
    "routeFrom": "oficial"
   },
   {
@@ -11909,14 +11934,14 @@
    "official": true,
    "url": "https://inscripciones.cronorunner.com/evento/xi-10k-y-5k-dinosauris-moncada",
    "addedAt": "2026-10-21",
-   "checkedAt": "2026-11-05",
+   "checkedAt": "2026-11-08",
    "nosite": false,
    "regulation": "https://inscripciones.cronorunner.com/rgpd",
    "changedAt": "2026-10-29",
    "regResolved": "2026-11-08",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "regChecked": "2026-11-08",
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-10-27",
    "km": "10 km",
    "cambio": {
@@ -11945,8 +11970,8 @@
    "official": false,
    "url": "",
    "addedAt": "2026-10-30",
-   "revisada": "2026-11-06T03:26+00:00",
-   "checkedAt": "2026-11-06",
+   "revisada": "2026-11-08T03:07+00:00",
+   "checkedAt": "2026-11-08",
    "km": "5 km",
    "mediaChecked": "2026-10-30",
    "cambio": {
@@ -11975,13 +12000,13 @@
    "official": true,
    "url": "https://www.321go.es/Carrera/Detail/595-entrepontes2026xornada510kpontevedra",
    "addedAt": "2026-11-06",
-   "revisada": "2026-11-07T02:21+00:00",
-   "checkedAt": "2026-11-06",
+   "revisada": "2026-11-08T03:07+00:00",
+   "checkedAt": "2026-11-08",
    "nosite": false,
    "signup": true,
    "km": "10 km",
    "mediaChecked": "2026-11-06",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "inscripcion": "abierta",
    "cambio": {
     "t": "2026-11-06T14:07+00:00",
@@ -12004,15 +12029,15 @@
    "official": true,
    "url": "https://sportmaniacs.com/es/services/inscription/evento-gordako-utiel-2026",
    "addedAt": "2026-10-23",
-   "checkedAt": "2026-11-06",
+   "checkedAt": "2026-11-08",
    "nosite": false,
    "signup": true,
    "regulation": "https://sportmaniacs.com/es/services/inscription/evento-gordako-utiel-2026#rules",
    "regResolved": "2026-11-08",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "inscripcion": "abierta",
    "regChecked": "2026-11-08",
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-10-27"
   },
   {
@@ -12031,14 +12056,14 @@
    "official": true,
    "url": "https://web.rockthesport.com/es/event/1785915050",
    "addedAt": "2026-10-23",
-   "checkedAt": "2026-11-06",
+   "checkedAt": "2026-11-08",
    "nosite": false,
    "signup": true,
    "banner": "https://rtsfiles.blob.core.windows.net/manager/14468/library/root/1226ff71-1cd3-4098-9a45-538b6f14ddb8.jpeg",
    "bannerScore": 4,
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "inscripcion": "abierta",
-   "revisada": "2026-11-07T02:21+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-11-07",
    "regulation": "https://web.rockthesport.com/es/event/1785915050",
    "regResolved": "2026-11-07",
@@ -12074,10 +12099,10 @@
    "nosite": false,
    "regulation": "https://www.mistiemposconchip.com/sites/default/files/eventos/REGLAMENTO%20XXXIV%20MEDIA%20MARAT%C3%93N%20CIUDAD%20DE%20CEUTA%20XX%20MEDIA%20MARAT%C3%93N%20JUNIOR.pdf",
    "changedAt": "2026-10-27",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "regResolved": "2026-11-08",
    "regChecked": "2026-11-08",
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-10-27",
    "checkedAt": "2026-11-08",
    "km": "21,097 km · 10 km · 3 km"
@@ -12101,11 +12126,11 @@
    "signup": true,
    "km": "21,097 km",
    "changedAt": "2026-10-27",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "alt": [
     "https://running.life/en/event/holiday-world-a-favor-de-proyecto-hombre"
    ],
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "kmRevisar": "",
    "mediaChecked": "2026-10-27",
    "checkedAt": "2026-11-08"
@@ -12132,8 +12157,8 @@
    "km": "21,097 km · 10 km",
    "changedAt": "2026-10-27",
    "bannerScore": 9,
-   "inscripcionAt": "2026-11-07",
-   "revisada": "2026-11-08T01:48+00:00",
+   "inscripcionAt": "2026-11-08",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-11-07",
    "kmRevisar": "",
    "checkedAt": "2026-11-08",
@@ -12160,8 +12185,8 @@
    "official": true,
    "url": "https://sportmaniacs.com/es/services/inscription/runcancer-valencia-2026",
    "addedAt": "2026-10-28",
-   "revisada": "2026-11-07T02:21+00:00",
-   "checkedAt": "2026-11-04",
+   "revisada": "2026-11-08T03:07+00:00",
+   "checkedAt": "2026-11-08",
    "nosite": false,
    "signup": true,
    "regulation": "https://sportmaniacs.com/es/services/inscription/runcancer-valencia-2026#rules",
@@ -12169,7 +12194,7 @@
    "regChecked": "2026-11-05",
    "km": "6 km",
    "mediaChecked": "2026-10-28",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "cambio": {
     "t": "2026-10-28T14:07+00:00",
     "c": [
@@ -12199,15 +12224,15 @@
    "price": "5–10 €",
    "km": "10 km · 5 km",
    "changedAt": "2026-10-27",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "inscripcion": "abierta",
    "alt": [
     "https://running.life/en/event/tarraco-health-race"
    ],
-   "revisada": "2026-11-07T02:21+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-11-07",
    "kmRevisar": "",
-   "checkedAt": "2026-11-03",
+   "checkedAt": "2026-11-08",
    "bannerScore": 4
   },
   {
@@ -12232,12 +12257,12 @@
    "regulation": "https://sportmaniacs.com/es/services/inscription/vilarnau-correcava-2026#rules",
    "km": "12 km · 8 km",
    "regResolved": "2026-11-08",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "regChecked": "2026-11-08",
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "kmRevisar": "",
    "mediaChecked": "2026-10-27",
-   "checkedAt": "2026-11-03"
+   "checkedAt": "2026-11-08"
   },
   {
    "name": "Women Race El Corte Inglés",
@@ -12257,12 +12282,12 @@
    "official": true,
    "url": "https://womenrace.cat/",
    "addedAt": "2026-11-02",
-   "revisada": "2026-11-07T02:21+00:00",
-   "checkedAt": "2026-11-02",
+   "revisada": "2026-11-08T03:07+00:00",
+   "checkedAt": "2026-11-08",
    "nosite": false,
    "km": "5 km",
    "mediaChecked": "2026-11-02",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "cambio": {
     "t": "2026-11-02T14:07+00:00",
     "c": [
@@ -12290,16 +12315,16 @@
    "signup": true,
    "regulation": "https://sportmaniacs.com/es/services/inscription/x-carrera-popular-xi-marcha-solidaria-por-la-diabetes",
    "km": "7,4 km",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "inscripcion": "abierta",
    "regResolved": "2026-11-08",
    "regChecked": "2026-11-08",
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "kmRevisar": "",
    "mediaChecked": "2026-10-27",
    "banner": "https://s3.eu-west-1.amazonaws.com/sm-fotos.sportmaniacs.com/back/resize/960x0x0_Cartel%20Carrera%20Diabetes%2020026.jpg",
    "bannerScore": 9,
-   "checkedAt": "2026-11-03"
+   "checkedAt": "2026-11-08"
   },
   {
    "name": "XVI Cursa i Caminada Solidaria Contra la Violència de Gènere",
@@ -12317,15 +12342,15 @@
    "official": true,
    "url": "https://sportmaniacs.com/es/services/inscription/xvi-cursa-i-caminada-solidaria-contra-la-violencia-de-genere",
    "addedAt": "2026-10-23",
-   "checkedAt": "2026-11-06",
+   "checkedAt": "2026-11-08",
    "nosite": false,
    "signup": true,
    "regulation": "https://sportmaniacs.com/es/services/inscription/xvi-cursa-i-caminada-solidaria-contra-la-violencia-de-genere#rules",
    "regResolved": "2026-11-08",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "inscripcion": "abierta",
    "regChecked": "2026-11-08",
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-11-07"
   },
   {
@@ -12443,9 +12468,9 @@
    "km": "10 km",
    "changedAt": "2026-10-27",
    "bannerScore": 4,
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "inscripcion": "abierta",
-   "revisada": "2026-11-07T02:21+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-11-07",
    "kmRevisar": "",
    "checkedAt": "2026-11-03"
@@ -12472,8 +12497,8 @@
    "regulation": "https://youevent.es/sport/.%5Cmultimedia%5Creglamentos%5CReglamentoXXVIIMEDIAMARATONGUADALAJARAY11KMWITZENMANN.pdf",
    "regResolved": "2026-11-08",
    "regChecked": "2026-11-08",
-   "inscripcionAt": "2026-11-07",
-   "revisada": "2026-11-08T01:48+00:00",
+   "inscripcionAt": "2026-11-08",
+   "revisada": "2026-11-08T03:07+00:00",
    "otraFecha": "2026-11-29",
    "changedAt": "2026-11-03",
    "alt": [
@@ -12485,7 +12510,7 @@
    "checkedAt": "2026-11-03",
    "km": "21,097 km · 11 km",
    "cambio": {
-    "t": "2026-11-08T01:48+00:00",
+    "t": "2026-11-08T03:07+00:00",
     "c": [
      "banner"
     ]
@@ -12512,11 +12537,11 @@
    "official": true,
    "url": "https://www.alcanzatumeta.es/xlviii-subida-al-castillo-de-lorca-2026/",
    "addedAt": "2026-10-25",
-   "revisada": "2026-11-07T02:21+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "nosite": false,
    "km": "4,5 km",
    "mediaChecked": "2026-10-25",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "kmRevisar": "",
    "checkedAt": "2026-10-27",
    "regulation": "https://alcanzatumeta.es/uploads/resultados/3a7cdb37fbc9e47c6e9636657fde5196.pdf",
@@ -12553,10 +12578,10 @@
    "regulation": "https://www.alcanzatumeta.es/uploads/Reglamento/8952f1f560ccbe3a139530f9ef09c6ed.pdf",
    "banner": "https://alcanzatumeta.es/uploads/Cartel/97feac9da4cd968f320d7c66347d5f05.jpeg",
    "bannerScore": 9,
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "regResolved": "2026-11-08",
    "regChecked": "2026-11-08",
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-11-07",
    "inscripcion": "abierta",
    "cambio": {
@@ -12622,9 +12647,9 @@
    "bannerScore": 9,
    "km": "5 km",
    "regResolved": "2026-11-08",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "regChecked": "2026-11-08",
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-11-07",
    "kmRevisar": "",
    "checkedAt": "2026-10-27"
@@ -12649,13 +12674,13 @@
    "regulation": "https://inscripciones.cronorunner.com/rgpd",
    "changedAt": "2026-10-29",
    "regResolved": "2026-11-08",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "inscripcion": "cerrada",
    "regChecked": "2026-11-08",
    "alt": [
     "https://running.life/en/event/10k-dulces-de-casinos"
    ],
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-10-27",
    "km": "10 km",
    "cambio": {
@@ -12721,8 +12746,8 @@
    "nosite": false,
    "banner": "https://faa-media.s3.eu-south-2.amazonaws.com/IMG-20261015-WA0006.18556.jpg",
    "bannerScore": 4,
-   "inscripcionAt": "2026-11-07",
-   "revisada": "2026-11-07T03:07+00:00",
+   "inscripcionAt": "2026-11-08",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-11-07",
    "km": "5 km",
    "changedAt": "2026-10-30",
@@ -12754,9 +12779,9 @@
    "signup": true,
    "banner": "https://rtsfiles.blob.core.windows.net/manager/10247/library/root/ffe832eb-0802-472a-ad61-1428642aa875.png",
    "bannerScore": 4,
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "inscripcion": "abierta",
-   "revisada": "2026-11-07T03:07+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-11-07",
    "km": "5 km",
    "changedAt": "2026-10-30",
@@ -12791,9 +12816,9 @@
    "km": "12 km · 3 km",
    "regResolved": "2026-11-08",
    "bannerScore": 9,
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "regChecked": "2026-11-08",
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-11-07",
    "kmRevisar": "",
    "checkedAt": "2026-11-03",
@@ -12859,9 +12884,9 @@
    "km": "10 km · 5 km",
    "changedAt": "2026-10-22",
    "bannerScore": 4,
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "inscripcion": "abierta",
-   "revisada": "2026-11-07T03:07+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-11-07",
    "kmRevisar": "",
    "checkedAt": "2026-11-03"
@@ -12885,7 +12910,7 @@
    "official": true,
    "url": "https://magmasports.es/es/evento/erguete-e-corre-2026",
    "addedAt": "2026-11-02",
-   "revisada": "2026-11-07T03:07+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "checkedAt": "2026-11-02",
    "nosite": false,
    "regulation": "https://magmasports.es/storage/CXzqevml0nYr9mtJyP1Jq9MUS3PSRpUdNrsi0fmW.pdf",
@@ -12894,7 +12919,7 @@
    "route": "https://magmasports.es/photos/37/recorridoerguete2026.png",
    "routeFrom": "oficial",
    "km": "10 km · 5 km",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "cambio": {
     "t": "2026-11-02T14:07+00:00",
     "c": [
@@ -12923,14 +12948,14 @@
    "km": "10 km · 5 km",
    "changedAt": "2026-10-27",
    "regResolved": "2026-11-08",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "regChecked": "2026-11-08",
    "alt": [
     "https://running.life/en/event/jean-bouin",
     "https://www.carreraspopulares.com/carrera/jean-bouin"
    ],
    "kmRevisar": "",
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "bannerScore": 4,
    "checkedAt": "2026-10-27",
    "cambio": {
@@ -12964,15 +12989,15 @@
    "regulation": "https://youevent.es/sport/.\\multimedia\\reglamentos\\ReglamentoXVMARCHAPOPULARSOLIDARIACERROMARMOTA.pdf",
    "km": "20 km · 10 km",
    "changedAt": "2026-11-03",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "regResolved": "2026-11-08",
    "regChecked": "2026-11-08",
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "route": "https://es.wikiloc.com/wikiloc/view.do?id=235092238",
    "kmRevisar": "",
    "checkedAt": "2026-11-03",
    "cambio": {
-    "t": "2026-11-08T01:48+00:00",
+    "t": "2026-11-08T03:07+00:00",
     "c": [
      "banner"
     ]
@@ -13003,8 +13028,8 @@
    "km": "11 km · 5 km",
    "banner": "https://www.todofondo.net/media/competiciones/CARTEL_kxZipfb.jpeg",
    "bannerScore": 8,
-   "inscripcionAt": "2026-11-07",
-   "revisada": "2026-11-07T03:07+00:00",
+   "inscripcionAt": "2026-11-08",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-10-23",
    "kmRevisar": "",
    "checkedAt": "2026-11-03",
@@ -13045,9 +13070,9 @@
    "banner": "https://rtsfiles.blob.core.windows.net/manager/11136/library/root/b009599a-892f-4175-9d06-48b692b39d79.jpg",
    "km": "5 km",
    "bannerScore": 4,
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "inscripcion": "abierta",
-   "revisada": "2026-11-07T03:07+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-11-07",
    "kmRevisar": "",
    "checkedAt": "2026-11-03",
@@ -13084,7 +13109,7 @@
    "banner": "https://rtsfiles.blob.core.windows.net/manager/11688/library/root/5de9c88e-23bf-4558-b25d-241953adec64.jpg",
    "changedAt": "2026-10-27",
    "bannerScore": 4,
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "inscripcion": "abierta",
    "regResolved": "2026-11-08",
    "regChecked": "2026-11-08",
@@ -13093,7 +13118,7 @@
     "https://runedia.mundodeportivo.com/carrera/mitja-marato-union-alcoyana-seguros-2026/202637431/",
     "https://www.carreraspopulares.com/carrera/media-maraton-union-alcoyana-seguros-2022"
    ],
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-11-07",
    "checkedAt": "2026-10-27",
    "km": "21,097 km",
@@ -13126,10 +13151,10 @@
    "banner": "https://s3.eu-west-1.amazonaws.com/sm-fotos.sportmaniacs.com/back/resize/960x0x0_6ab10a23-f474-44d5-b833-5257ac1f0ca4-cartel%202026.jpeg",
    "regResolved": "2026-11-08",
    "bannerScore": 9,
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "inscripcion": "abierta",
    "regChecked": "2026-11-08",
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-11-07",
    "changedAt": "2026-10-30",
    "cambio": {
@@ -13176,12 +13201,12 @@
    "official": true,
    "url": "https://www.campionatmaqui.cat/cursa-bell-race/",
    "addedAt": "2026-10-25",
-   "revisada": "2026-11-07T03:07+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "nosite": false,
    "regulation": "https://www.campionatmaqui.cat/reglament/",
    "regResolved": "2026-11-02",
    "regChecked": "2026-11-02",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "mediaChecked": "2026-10-27",
    "banner": "https://www.campionatmaqui.cat/wp-content/uploads/2025/11/480726168_971129534994988_1058894813758007295_n.jpg",
    "bannerScore": 3,
@@ -13345,10 +13370,10 @@
    "regulation": "https://desafiosarrio.com/wp-content/uploads/2026/09/Reglamento-DESAFIO-SARRIO.pdf",
    "km": "10 km",
    "changedAt": "2026-10-22",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "regResolved": "2026-11-08",
    "regChecked": "2026-11-08",
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "kmRevisar": "",
    "mediaChecked": "2026-10-27",
    "banner": "https://desafiosarrio.com/wp-content/uploads/2026/09/CARTEL-e1790335701942.jpg",
@@ -13407,12 +13432,12 @@
    "price": "8–17 €",
    "changedAt": "2026-10-29",
    "bannerScore": 4,
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "inscripcion": "abierta",
    "alt": [
     "https://running.life/en/event/marato-i-mitja-marato-relleus-vinyols"
    ],
-   "revisada": "2026-11-07T03:07+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-11-07",
    "km": "42,195 km",
    "cambio": {
@@ -13444,9 +13469,9 @@
    "banner": "https://rockthesportv2.blob.core.windows.net/manager/328/library/root/05b11765-9e5d-4f06-b530-3d04b3af864a.png",
    "km": "10 km · 5 km",
    "changedAt": "2026-10-27",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "inscripcion": "abierta",
-   "revisada": "2026-11-07T03:07+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-11-07",
    "kmRevisar": "",
    "checkedAt": "2026-11-03",
@@ -13494,9 +13519,9 @@
    "regulation": "https://www.k42canarias.com/nueva/reglamento/",
    "changedAt": "2026-10-27",
    "regResolved": "2026-11-08",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "regChecked": "2026-11-08",
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-10-27",
    "banner": "https://www.k42canarias.com/nueva/wp-content/uploads/2026/10/Cartel-3-724x1024.jpeg",
    "bannerScore": 10,
@@ -13521,6 +13546,44 @@
    "mediaChecked": "2026-10-27"
   },
   {
+   "name": "Bunt Mikołajów",
+   "date": "2026-12-05",
+   "city": "Niepołomice",
+   "region": "",
+   "distances": [
+    "5K"
+   ],
+   "price": "100 €",
+   "source": "https://sportmaniacs.com/es/races/bunt-mikolajow-2026",
+   "official_guess": "https://sportmaniacs.com/es/races/bunt-mikolajow-2026",
+   "id": "bunt-miko-ajow-2026-1205",
+   "official": true,
+   "url": "https://sportmaniacs.com/es/services/inscription/bunt-mikolajow-2026",
+   "addedAt": "2026-10-23",
+   "nosite": false,
+   "signup": true,
+   "regulation": "https://sportmaniacs.com/es/services/inscription/bunt-mikolajow-2026#rules",
+   "banner": "https://s3.eu-west-1.amazonaws.com/sm-fotos.sportmaniacs.com/back/resize/1920x410x0_header_695148ff-0468-424e-8300-45a0ac1f1805.png",
+   "km": "5 km",
+   "regResolved": "2026-11-08",
+   "bannerScore": 4,
+   "inscripcionAt": "2026-11-08",
+   "inscripcion": "abierta",
+   "regChecked": "2026-11-08",
+   "revisada": "2026-11-08T03:07+00:00",
+   "changedAt": "2026-11-08",
+   "mediaChecked": "2026-11-07",
+   "kmRevisar": "",
+   "cambio": {
+    "t": "2026-11-08T03:07+00:00",
+    "c": [
+     "time"
+    ]
+   },
+   "checkedAt": "2026-11-08",
+   "time": "03:12"
+  },
+  {
    "name": "Font Vella Lanzarote International Marathon",
    "date": "2026-12-05",
    "time": "08:00",
@@ -13543,12 +13606,12 @@
    "signup": true,
    "banner": "https://rtsfiles.blob.core.windows.net/manager/13768/library/root/4be34e1e-3163-4eb8-9cf9-d0ee9065a52f.png",
    "changedAt": "2026-10-27",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "inscripcion": "abierta",
    "alt": [
     "https://running.life/en/event/lanzarote-international-marathon"
    ],
-   "revisada": "2026-11-07T03:07+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-11-07",
    "kmRevisar": "",
    "checkedAt": "2026-11-03",
@@ -13576,11 +13639,11 @@
    "km": "13,4 km",
    "regResolved": "2026-11-08",
    "route": "https://es.wikiloc.com/rutas-carrera-por-montana/volta-vall-dalba-2025-3-pujades-a-lermita-234057641",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "inscripcion": "abierta",
    "regChecked": "2026-11-08",
    "kmRevisar": "",
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "checkedAt": "2026-11-03",
    "routeFrom": "calendario",
    "mediaChecked": "2026-10-27"
@@ -13601,7 +13664,7 @@
    "official": true,
    "url": "https://www.321go.es/Carrera/Detail/596-los5kmdeloscallos2026",
    "addedAt": "2026-11-06",
-   "revisada": "2026-11-07T03:07+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-11-06",
    "cambio": {
     "t": "2026-11-07T03:07+00:00",
@@ -13620,7 +13683,7 @@
    "bannerScore": 3,
    "km": "5 km",
    "changedAt": "2026-11-06",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "inscripcion": "abierta"
   },
   {
@@ -13640,7 +13703,7 @@
    "official": true,
    "url": "https://www.babelsport.com/evento/zeneta-2026/Reglamento/",
    "addedAt": "2026-11-03",
-   "revisada": "2026-11-07T03:07+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "checkedAt": "2026-11-03",
    "nosite": false,
    "regulation": "https://www.babelsport.com/userfiles/bd1f_REGLAMENTO%20MODIFICADO%20POR%20LA%20LLUVIA%20VI%20Recorre%20Zeneta%202026.pdf",
@@ -13650,7 +13713,7 @@
    "bannerScore": 10,
    "km": "10 km · 5 km",
    "mediaChecked": "2026-11-03",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "cambio": {
     "t": "2026-11-06T14:07+00:00",
     "c": [
@@ -13676,7 +13739,7 @@
    "source": "https://sportplan.es/es/events/carrera-solidaria-sta-barbara-reforesta-gijon-asturias-es-2026-12-05",
    "checkedAt": "2026-11-05",
    "nosite": false,
-   "revisada": "2026-11-07T03:07+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-10-27",
    "alt": [
     "https://running.life/en/event/carrera-popular-sta-barbara-reforesta"
@@ -13691,7 +13754,7 @@
    "price": "4 €",
    "km": "5 km",
    "changedAt": "2026-11-05",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "inscripcion": "abierta",
    "cambio": {
     "t": "2026-11-05T14:07+00:00",
@@ -13705,42 +13768,6 @@
      "inscripcion"
     ],
     "inscAntes": ""
-   }
-  },
-  {
-   "name": "Bunt Mikołajów",
-   "date": "2026-12-05",
-   "city": "Niepołomice",
-   "region": "",
-   "distances": [
-    "5K"
-   ],
-   "price": "100 €",
-   "source": "https://sportmaniacs.com/es/races/bunt-mikolajow-2026",
-   "official_guess": "https://sportmaniacs.com/es/races/bunt-mikolajow-2026",
-   "id": "bunt-miko-ajow-2026-1205",
-   "official": true,
-   "url": "https://sportmaniacs.com/es/services/inscription/bunt-mikolajow-2026",
-   "addedAt": "2026-10-23",
-   "nosite": false,
-   "signup": true,
-   "regulation": "https://sportmaniacs.com/es/services/inscription/bunt-mikolajow-2026#rules",
-   "banner": "https://s3.eu-west-1.amazonaws.com/sm-fotos.sportmaniacs.com/back/resize/1920x410x0_header_695148ff-0468-424e-8300-45a0ac1f1805.png",
-   "km": "5 km",
-   "regResolved": "2026-11-08",
-   "bannerScore": 4,
-   "inscripcionAt": "2026-11-07",
-   "inscripcion": "abierta",
-   "regChecked": "2026-11-08",
-   "revisada": "2026-11-08T01:48+00:00",
-   "changedAt": "2026-11-07",
-   "mediaChecked": "2026-11-07",
-   "kmRevisar": "",
-   "cambio": {
-    "t": "2026-11-07T14:07+00:00",
-    "c": [
-     "time"
-    ]
    }
   },
   {
@@ -13761,10 +13788,10 @@
    "official": true,
    "url": "https://www.carreirasgalegas.com/events/i-carreira-das-empresas-santiago-de-compostela/qjyNkklK",
    "addedAt": "2026-10-24",
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "nosite": false,
    "mediaChecked": "2026-11-08",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "checkedAt": "2026-11-03",
    "km": "5 km",
    "changedAt": "2026-10-27"
@@ -13826,10 +13853,10 @@
    "changedAt": "2026-10-27",
    "banner": "https://alcanzatumeta.es/uploads/Cartel/1c5c0686276b8bdffa300c1b42155785.jpg",
    "bannerScore": 9,
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "regResolved": "2026-11-08",
    "regChecked": "2026-11-08",
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-11-07",
    "kmRevisar": "",
    "checkedAt": "2026-10-27",
@@ -13862,13 +13889,13 @@
    "banner": "https://www.valenciaciudaddelrunning.com/wp-content/uploads/2014/05/42k_salida-01.jpg",
    "changedAt": "2026-10-22",
    "regResolved": "2026-11-08",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "regChecked": "2026-11-08",
    "alt": [
     "https://running.life/en/event/maraton-valencia"
    ],
    "kmRevisar": "",
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "bannerScore": 4,
    "route": "https://www.google.com/maps/d/viewer?mid=1BEeuxU3kRDyxewR7Pp4Rqu_7Knajvxo",
    "checkedAt": "2026-10-27",
@@ -13897,7 +13924,7 @@
    "source": "https://sportplan.es/es/events/cursa-de-sant-andreu-sant-andreu-barcelona-es-2026-12-06",
    "checkedAt": "2026-11-05",
    "nosite": false,
-   "revisada": "2026-11-07T03:07+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-10-27",
    "alt": [
     "https://running.life/en/event/cursa-de-sant-andreu-barcelona"
@@ -13912,7 +13939,7 @@
    "routeFrom": "oficial",
    "km": "5 km",
    "changedAt": "2026-11-05",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "cambio": {
     "t": "2026-11-05T14:07+00:00",
     "c": [
@@ -13941,12 +13968,12 @@
    "banner": "https://rtsfiles.blob.core.windows.net/manager/318/library/root/76488e7c-a630-4e40-8ca3-5196dbaa3d2b.png",
    "km": "10 km · 5 km",
    "changedAt": "2026-10-27",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "inscripcion": "abierta",
    "alt": [
     "https://running.life/en/event/trofeo-akiles"
    ],
-   "revisada": "2026-11-07T03:07+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-11-07",
    "kmRevisar": "",
    "checkedAt": "2026-10-27",
@@ -13977,13 +14004,13 @@
    "changedAt": "2026-10-27",
    "banner": "https://alcanzatumeta.es/uploads/Cartel/2c61e63e4ea4ac7daffe37e4caa06ed3.jpg",
    "bannerScore": 9,
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "regResolved": "2026-11-08",
    "regChecked": "2026-11-08",
    "alt": [
     "https://running.life/en/event/media-maraton-villa-de-torre-pacheco"
    ],
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-11-07",
    "checkedAt": "2026-10-27",
    "km": "21,097 km",
@@ -14019,14 +14046,14 @@
    "changedAt": "2026-10-27",
    "official_guess": "https://sportmaniacs.com/es/races/x-mitja-marato-de-figueres-i-10-km-de-figueres",
    "bannerScore": 9,
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "regResolved": "2026-11-08",
    "regChecked": "2026-11-08",
    "alt": [
     "https://sportmaniacs.com/es/races/x-mitja-marato-de-figueres-i-10-km-de-figueres",
     "https://www.carreraspopulares.com/carrera/mitja-marato-figueres"
    ],
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-11-07",
    "kmRevisar": "",
    "checkedAt": "2026-11-03",
@@ -14056,9 +14083,9 @@
    "official": true,
    "url": "https://sportmaniacs.com/es/services/inscription/xii-carrera-popular-isla-redonda---la-acetildeuela-2026",
    "addedAt": "2026-10-27",
-   "revisada": "2026-11-07T03:07+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-10-27",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "inscripcion": "abierta",
    "checkedAt": "2026-10-27",
    "nosite": false,
@@ -14088,12 +14115,12 @@
    "banner": "https://www.avaibooksports.com/fileserver.php?name=/images/eventos/rol/10446_evento_28647_cartel.jpg&type=public&v=1766974445",
    "km": "10 km",
    "changedAt": "2026-10-22",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "alt": [
     "https://running.life/en/event/10km-de-laviana",
     "https://runedia.mundodeportivo.com/carrera/10k-de-laviana-2026/202619960/"
    ],
-   "revisada": "2026-11-07T03:07+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-11-07",
    "kmRevisar": "",
    "checkedAt": "2026-11-03",
@@ -14126,8 +14153,8 @@
    "changedAt": "2026-10-29",
    "banner": "https://hj-crono.es/hj-files/evento/79405/cartel.jpg",
    "bannerScore": 9,
-   "inscripcionAt": "2026-11-07",
-   "revisada": "2026-11-07T03:07+00:00",
+   "inscripcionAt": "2026-11-08",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-11-07",
    "km": "10 km",
    "cambio": {
@@ -14227,9 +14254,9 @@
    "banner": "https://rtsfiles.blob.core.windows.net/manager/2000/library/root/03c85994-a1f7-4877-90f6-997af739800c.jpg",
    "changedAt": "2026-10-29",
    "bannerScore": 4,
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "inscripcion": "abierta",
-   "revisada": "2026-11-07T03:07+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-11-07",
    "km": "21,097 km",
    "cambio": {
@@ -14263,10 +14290,10 @@
    "km": "21,097 km · 10 km",
    "changedAt": "2026-10-27",
    "bannerScore": 9,
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "regResolved": "2026-11-08",
    "regChecked": "2026-11-08",
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-11-07",
    "kmRevisar": "",
    "checkedAt": "2026-11-03",
@@ -14315,9 +14342,9 @@
    "banner": "https://rtsfiles.blob.core.windows.net/manager/543/library/root/d40b964a-1c7d-4fce-9783-c7252226196b.jpeg",
    "km": "5 km",
    "bannerScore": 4,
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "inscripcion": "abierta",
-   "revisada": "2026-11-07T03:07+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-11-07",
    "kmRevisar": "",
    "checkedAt": "2026-11-03",
@@ -14340,9 +14367,9 @@
    "official": true,
    "url": "https://sportmaniacs.com/es/services/inscription/xxxiv-carrera-popular-de-el-cuervo-de-sevilla",
    "addedAt": "2026-10-27",
-   "revisada": "2026-11-07T03:07+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "mediaChecked": "2026-10-27",
-   "inscripcionAt": "2026-11-07",
+   "inscripcionAt": "2026-11-08",
    "inscripcion": "abierta",
    "checkedAt": "2026-11-03",
    "nosite": false,
@@ -15470,7 +15497,7 @@
    "official": true,
    "url": "https://carrerasciudadreal.es/evento/10k-translogistica-daimiel-2026/",
    "addedAt": "2026-11-01",
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "checkedAt": "2026-11-01",
    "nosite": false,
    "regulation": "https://carrerasciudadreal.es/wp-content/uploads/2026/10/Reglamento-Daimiel-2026.pdf",
@@ -15482,7 +15509,7 @@
    "km": "10 km",
    "inscripcionAt": "2026-11-01",
    "cambio": {
-    "t": "2026-11-08T01:48+00:00",
+    "t": "2026-11-08T03:07+00:00",
     "c": [
      "route"
     ]
@@ -16520,7 +16547,7 @@
    "inscripcionAt": "2026-11-08",
    "regResolved": "2026-11-08",
    "regChecked": "2026-11-08",
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "route": "https://es.wikiloc.com/wikiloc/view.do?id=291061369",
    "alt": [
     "https://running.life/en/event/carrera-popular-de-navidad-de-soto-del-real"
@@ -16528,7 +16555,7 @@
    "checkedAt": "2026-11-03",
    "km": "11 km · 10 km",
    "cambio": {
-    "t": "2026-11-08T01:48+00:00",
+    "t": "2026-11-08T03:07+00:00",
     "c": [
      "banner"
     ]
@@ -16984,8 +17011,8 @@
    "official": true,
    "url": "https://web.rockthesport.com/es/event/san-silvestre-de-amieva-2026",
    "addedAt": "2026-11-01",
-   "revisada": "2026-11-01T14:07+00:00",
-   "checkedAt": "2026-11-01",
+   "revisada": "2026-11-08T03:07+00:00",
+   "checkedAt": "2026-11-08",
    "nosite": false,
    "signup": true,
    "km": "5 km",
@@ -19297,7 +19324,7 @@
    "official": true,
    "url": "https://youevent.es/sport/Tabla_FichaEventoDeportivo.asp?id_competicion=8985",
    "addedAt": "2026-11-03",
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "checkedAt": "2026-11-03",
    "nosite": false,
    "signup": true,
@@ -19307,7 +19334,7 @@
    "km": "5 km",
    "inscripcionAt": "2026-11-03",
    "cambio": {
-    "t": "2026-11-08T01:48+00:00",
+    "t": "2026-11-08T03:07+00:00",
     "c": [
      "banner"
     ]
@@ -19334,14 +19361,14 @@
    "official": true,
    "url": "https://youevent.es/sport/Tabla_FichaEventoDeportivo.asp?id_competicion=8976",
    "addedAt": "2026-10-27",
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "checkedAt": "2026-11-03",
    "nosite": false,
    "signup": true,
    "km": "10 km · 5 km · 4 km",
    "inscripcionAt": "2026-11-04",
    "cambio": {
-    "t": "2026-11-08T01:48+00:00",
+    "t": "2026-11-08T03:07+00:00",
     "c": [
      "banner"
     ]
@@ -20311,6 +20338,34 @@
    "mediaChecked": "2026-10-27"
   },
   {
+   "name": "Sant Silvestre Vilafranquina",
+   "date": "2026-12-27",
+   "time": "",
+   "city": "Vilafranca del Penedès",
+   "region": "",
+   "distances": [
+    "10K",
+    "5K"
+   ],
+   "price": "",
+   "source": "https://running.life/en/event/cursa-atletica-sant-silvestre-vilafranquina",
+   "official_guess": "https://www.weevens.com/esdeveniments/xxv-sant-silvestre-muntanya-penedes/",
+   "id": "sant-silvestre-vilafranquina-2026-1227",
+   "official": false,
+   "url": "",
+   "addedAt": "2026-11-08",
+   "revisada": "2026-11-08T03:07+00:00",
+   "checkedAt": "2026-11-08",
+   "km": "10 km · 5 km",
+   "mediaChecked": "2026-11-08",
+   "cambio": {
+    "t": "2026-11-08T03:07+00:00",
+    "c": [
+     "nueva"
+    ]
+   }
+  },
+  {
    "name": "X San Silvestre de Torremolinos",
    "date": "2026-12-27",
    "time": "",
@@ -20668,6 +20723,43 @@
    "mediaChecked": "2026-10-27"
   },
   {
+   "name": "San Silvestre Toledana",
+   "date": "2026-12-31",
+   "city": "Toledo",
+   "region": "Castilla-La Mancha",
+   "distances": [
+    "8K"
+   ],
+   "url": "https://sansilvestretoledana.es/",
+   "official": true,
+   "note": "Por el casco histórico.",
+   "id": "san-silvestre-toledana-2026",
+   "source": "https://www.festivalesdeespana.com/festival/san-silvestre-toledana-toledo",
+   "nosite": false,
+   "regulation": "https://sansilvestretoledana.es/reglamento-sst/",
+   "banner": "https://www.festivalesdeespana.com/images/image_hero.webp",
+   "price": "2–17 €",
+   "km": "8 km",
+   "changedAt": "2026-11-08",
+   "regResolved": "2026-11-08",
+   "bannerScore": 4,
+   "inscripcionAt": "2026-11-08",
+   "regChecked": "2026-11-08",
+   "revisada": "2026-11-08T03:07+00:00",
+   "mediaChecked": "2026-10-24",
+   "route": "https://sansilvestretoledana.es/wp-content/uploads/2025/08/Plano-recorrido-1030x957.jpg",
+   "kmRevisar": "",
+   "cambio": {
+    "t": "2026-11-08T03:07+00:00",
+    "c": [
+     "time"
+    ]
+   },
+   "routeFrom": "oficial",
+   "checkedAt": "2026-11-08",
+   "time": "01:00"
+  },
+  {
    "name": "San Silvestre Manzanares el Real",
    "date": "2026-12-31",
    "time": "10:00",
@@ -20689,7 +20781,7 @@
    "alt": [
     "https://running.life/en/event/san-silvestre-manzanares-el-real"
    ],
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "signup": true,
    "regulation": "https://youevent.es/sport/.%5Cmultimedia%5Creglamentos%5CReglamentoXIISanSilvestreManzanareselReal.pdf",
    "regResolved": "2026-11-06",
@@ -20701,7 +20793,7 @@
    "changedAt": "2026-11-06",
    "inscripcionAt": "2026-11-06",
    "cambio": {
-    "t": "2026-11-08T01:48+00:00",
+    "t": "2026-11-08T03:07+00:00",
     "c": [
      "banner"
     ]
@@ -20980,6 +21072,43 @@
    "mediaChecked": "2026-10-27",
    "inscripcionAt": "2026-11-04",
    "routeFrom": "oficial"
+  },
+  {
+   "name": "San Silvestre Marchamalo",
+   "date": "2026-12-31",
+   "time": "17:00",
+   "city": "Marchamalo",
+   "region": "",
+   "distances": [
+    "10K",
+    "5K"
+   ],
+   "price": "3–13 €",
+   "source": "https://running.life/en/event/san-silvestre-marchamalo",
+   "official_guess": "https://web.rockthesport.com/es/event/vi-san-silvestre-marchamalo-2026",
+   "banner": "https://rtsfiles.blob.core.windows.net/manager/2893/library/root/2098dea0-8ebb-40eb-b0a3-beed79cff3f0.jpeg",
+   "bannerScore": 4,
+   "id": "san-silvestre-marchamalo-2026-1231",
+   "official": true,
+   "url": "https://web.rockthesport.com/es/event/vi-san-silvestre-marchamalo-2026",
+   "addedAt": "2026-11-08",
+   "revisada": "2026-11-08T03:07+00:00",
+   "checkedAt": "2026-11-08",
+   "nosite": false,
+   "signup": true,
+   "regulation": "https://rtsfiles.blob.core.windows.net/documentos/3680dca3-d148-45b8-bde6-437d78949c69.pdf",
+   "regResolved": "2026-11-08",
+   "regChecked": "2026-11-08",
+   "km": "10 km · 5 km",
+   "mediaChecked": "2026-11-08",
+   "inscripcionAt": "2026-11-08",
+   "inscripcion": "abierta",
+   "cambio": {
+    "t": "2026-11-08T03:07+00:00",
+    "c": [
+     "nueva"
+    ]
+   }
   },
   {
    "name": "San Silvestre de Albacete",
@@ -21308,6 +21437,38 @@
    "inscripcion": "abierta",
    "cambio": {
     "t": "2026-11-02T14:07+00:00",
+    "c": [
+     "nueva"
+    ]
+   }
+  },
+  {
+   "name": "La Més Freda",
+   "date": "2026-12-31",
+   "time": "",
+   "city": "El Pont de Suert",
+   "region": "",
+   "distances": [
+    "5K"
+   ],
+   "price": "",
+   "source": "https://running.life/en/event/la-mes-freda",
+   "official_guess": "https://web.rockthesport.com/es/event/la-mes-freda-2026",
+   "banner": "https://rtsfiles.blob.core.windows.net/manager/9659/library/root/9064bd38-092e-4f02-9cab-7234a46d7401.png",
+   "bannerScore": 4,
+   "id": "la-mes-freda-2026-1231",
+   "official": true,
+   "url": "https://web.rockthesport.com/es/event/la-mes-freda-2026",
+   "addedAt": "2026-11-08",
+   "revisada": "2026-11-08T03:07+00:00",
+   "checkedAt": "2026-11-08",
+   "nosite": false,
+   "signup": true,
+   "km": "5 km",
+   "mediaChecked": "2026-11-08",
+   "inscripcionAt": "2026-11-08",
+   "cambio": {
+    "t": "2026-11-08T03:07+00:00",
     "c": [
      "nueva"
     ]
@@ -22325,41 +22486,6 @@
    "nosite": true,
    "revisada": "2026-11-07T03:07+00:00",
    "mediaChecked": "2026-10-27"
-  },
-  {
-   "name": "San Silvestre Toledana",
-   "date": "2026-12-31",
-   "city": "Toledo",
-   "region": "Castilla-La Mancha",
-   "distances": [
-    "8K"
-   ],
-   "url": "https://sansilvestretoledana.es/",
-   "official": true,
-   "note": "Por el casco histórico.",
-   "id": "san-silvestre-toledana-2026",
-   "source": "https://www.festivalesdeespana.com/festival/san-silvestre-toledana-toledo",
-   "nosite": false,
-   "regulation": "https://sansilvestretoledana.es/reglamento-sst/",
-   "banner": "https://www.festivalesdeespana.com/images/image_hero.webp",
-   "price": "2–17 €",
-   "km": "8 km",
-   "changedAt": "2026-11-07",
-   "regResolved": "2026-11-08",
-   "bannerScore": 4,
-   "inscripcionAt": "2026-11-08",
-   "regChecked": "2026-11-08",
-   "revisada": "2026-11-08T01:48+00:00",
-   "mediaChecked": "2026-10-24",
-   "route": "https://sansilvestretoledana.es/wp-content/uploads/2025/08/Plano-recorrido-1030x957.jpg",
-   "kmRevisar": "",
-   "cambio": {
-    "t": "2026-11-07T14:07+00:00",
-    "c": [
-     "time"
-    ]
-   },
-   "routeFrom": "oficial"
   },
   {
    "name": "San Silvestre Valle de Egüés",
@@ -24297,8 +24423,12 @@
    "source": "https://sportplan.es/es/events/vuelta-pedestre-a-tres-cantos-tres-cantos-madrid-es-2027-01-10",
    "checkedAt": "2026-11-07",
    "nosite": true,
-   "revisada": "2026-11-07T14:07+00:00",
-   "mediaChecked": "2026-10-27"
+   "revisada": "2026-11-08T03:07+00:00",
+   "mediaChecked": "2026-10-27",
+   "alt": [
+    "https://running.life/en/event/vuelta-pedestre-a-tres-cantos"
+   ],
+   "official_guess": "https://web.rockthesport.com/es/event/-xxxi-vuelta-pedestre-a-tres-cantos-"
   },
   {
    "name": "Carrera Urbana Internacional Noche de San Antón",
@@ -25477,8 +25607,8 @@
    "official": true,
    "url": "https://web.rockthesport.com/es/event/46-idiazabalgo-herri-krosa-2027",
    "addedAt": "2026-11-01",
-   "revisada": "2026-11-01T03:07+00:00",
-   "checkedAt": "2026-11-01",
+   "revisada": "2026-11-08T03:07+00:00",
+   "checkedAt": "2026-11-08",
    "nosite": false,
    "signup": true,
    "km": "10 km",
@@ -25784,12 +25914,12 @@
    "km": "10 km · 5 km",
    "changedAt": "2026-11-03",
    "inscripcionAt": "2026-11-08",
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "route": "https://es.wikiloc.com/wikiloc/view.do?id=241038100",
    "kmRevisar": "",
    "checkedAt": "2026-11-03",
    "cambio": {
-    "t": "2026-11-08T01:48+00:00",
+    "t": "2026-11-08T03:07+00:00",
     "c": [
      "banner"
     ]
@@ -26014,11 +26144,11 @@
    "bannerScore": 4,
    "inscripcionAt": "2026-11-08",
    "regChecked": "2026-11-08",
-   "revisada": "2026-11-08T01:48+00:00",
+   "revisada": "2026-11-08T03:07+00:00",
    "kmRevisar": "",
    "checkedAt": "2026-11-03",
    "cambio": {
-    "t": "2026-11-08T01:48+00:00",
+    "t": "2026-11-08T03:07+00:00",
     "c": [
      "route"
     ]
@@ -26116,19 +26246,22 @@
    "official": true,
    "url": "https://web.rockthesport.com/es/event/xv-carrera-solidaria-por-la-salud-mental",
    "addedAt": "2026-11-01",
-   "revisada": "2026-11-01T14:07+00:00",
-   "checkedAt": "2026-11-01",
+   "revisada": "2026-11-08T03:07+00:00",
+   "checkedAt": "2026-11-08",
    "nosite": false,
    "signup": true,
    "km": "10 km · 5 km",
    "mediaChecked": "2026-11-01",
    "inscripcionAt": "2026-11-01",
    "cambio": {
-    "t": "2026-11-01T14:07+00:00",
+    "t": "2026-11-08T03:07+00:00",
     "c": [
-     "nueva"
+     "banner"
     ]
-   }
+   },
+   "banner": "https://rtsfiles.blob.core.windows.net/manager/1768/library/root/76bcf6db-6727-4fd6-a87e-5dc447c05211.jpeg",
+   "bannerScore": 4,
+   "changedAt": "2026-11-08"
   },
   {
    "name": "Media Maraton Internacional de Torremolinos",
@@ -27117,14 +27250,16 @@
   }
  ],
  "lastRun": {
-  "at": "2026-11-08T02:21:44+00:00",
-  "added": [],
+  "at": "2026-11-08T03:25:02+00:00",
+  "added": [
+   "sant-silvestre-vilafranquina-2026-1227",
+   "la-mes-freda-2026-1231",
+   "san-silvestre-marchamalo-2026-1231"
+  ],
   "updated": {
-   "la-mitja-figueres-2026-1206": [
+   "carrera-urbana-universidad-ciudad-de-granada-2026-1108": [
+    "price",
     "time"
-   ],
-   "moraltrail-race-2026-1114": [
-    "banner"
    ],
    "media-maraton-de-jaen-2026-1115": [
     "time"
@@ -27132,33 +27267,35 @@
    "cursa-fosca-2026-1121": [
     "time"
    ],
-   "carrera-san-jose-de-calasanz-2026-1129": [
-    "banner"
-   ],
-   "cursa-festa-de-l-esport-son-fusteret-2026-1122": [
-    "banner"
-   ],
-   "maraton-malaga-2026": [
+   "carreira-popular-novo-mesoiro-2026-1122": [
+    "url",
     "regulation",
-    "resultados"
+    "banner",
+    "km",
+    "route"
    ],
-   "carrera-urbana-universidad-ciudad-de-granada-2026-1108": [
-    "regulation"
+   "carrera-y-marcha-contra-el-cancer-de-mama-2026-1122": [
+    "route"
    ],
-   "natural-greatness-wild-race-campeonato-autonomico-mushing-tierra-comunidad-valen-2026-1212": [
-    "regulation",
-    "inscripcion"
+   "bunt-miko-ajow-2026-1205": [
+    "time"
    ],
-   "mar-menor-running-challenge-2026-1213": [
-    "regulation"
+   "san-silvestre-toledana-2026": [
+    "time"
+   ],
+   "carrera-solidaria-por-la-salud-mental-2027-0207": [
+    "banner"
    ],
    "10k-antonio-serrano-la-solana-2026-1108": [
     "route"
    ],
-   "media-maraton-villa-de-miguelturra-2026-1122": [
-    "route"
+   "moraltrail-race-2026-1114": [
+    "banner"
    ],
-   "carrera-y-marcha-contra-el-cancer-de-mama-2026-1122": [
+   "carrera-san-jose-de-calasanz-2026-1129": [
+    "banner"
+   ],
+   "media-maraton-villa-de-miguelturra-2026-1122": [
     "route"
    ],
    "media-maraton-de-guadalajara-2026-1128": [
@@ -27173,40 +27310,13 @@
    "carrera-de-navidad-de-soto-del-real-2026-1219": [
     "banner"
    ],
-   "animal-conquest-2026-1219": [
-    "banner"
-   ],
-   "san-silvestre-muradana-2026-1226": [
-    "banner"
-   ],
    "san-silvestre-casarena-2026-1227": [
     "banner"
    ],
    "san-silvestre-de-buitrago-del-lozoya-2026-1227": [
     "banner"
    ],
-   "san-silvestre-sevillana-2026-1227": [
-    "banner"
-   ],
    "san-silvestre-manzanares-el-real-2026-1231": [
-    "banner"
-   ],
-   "lillo-christmas-race-walk-2026-1231": [
-    "banner"
-   ],
-   "5k-ibiza-platja-d-en-bossa-2027-0110": [
-    "route"
-   ],
-   "torunos-running-series-2027-0110": [
-    "banner"
-   ],
-   "media-maraton-entreparques-la-rinconada-2027-0124": [
-    "banner"
-   ],
-   "maraton-de-almagro-2027-0130": [
-    "banner"
-   ],
-   "mitja-marato-ciutat-d-alzira-2027-0131": [
     "banner"
    ],
    "carrera-pedestre-vega-de-cantimpalos-2027-0206": [
@@ -27215,115 +27325,14 @@
    "10k-ibiza-platja-d-en-bossa-2027-0207": [
     "route"
    ],
-   "ruta-del-lago-guadajoz-2027-0207": [
-    "banner"
-   ],
-   "lazkaoko-san-silbestrea-2026-1231": [
-    "inscripcion"
-   ],
-   "carrera-de-s-hostal-de-montuiri-2026-1208": [
-    "inscripcion"
-   ],
-   "carrera-popular-la-tercia-memorial-la-huella-de-carolina-2026-1208": [
-    "inscripcion"
-   ],
-   "liga-de-barrios-novelda-2026-1219": [
-    "inscripcion"
-   ],
-   "cursa-snip-marina-portitxol-2027-0124": [
-    "inscripcion"
-   ],
-   "murcia-en-marcha-contra-el-cancer-2026-1108": [
-    "inscripcion"
-   ],
-   "sant-antoni-camina-amb-el-cancer-2026-1108": [
-    "inscripcion"
-   ],
-   "mitja-marato-ciutat-de-tarragona-2026-1108": [
-    "inscripcion",
+   "corremos-por-la-vida-2026-1108": [
     "resultados"
    ],
-   "paleotrail-loarre-2026-1114": [
-    "inscripcion"
-   ],
-   "lia-assurex-let-039-s-run-for-my-beirut-2026-1108": [
-    "resultados"
-   ],
-   "cursa-bombers-2026": [
-    "resultados"
-   ],
-   "carrera-por-la-solidaridad-valencia-2026-1108": [
-    "resultados"
-   ],
-   "gran-carrera-mediterraneo-2026": [
-    "resultados"
-   ],
-   "ivtrail-salvatrail-salvatierra-de-los-barros-2026-1108": [
-    "resultados"
-   ],
-   "carrera-popular-ibercaja-zaragoza-2026-1108": [
-    "resultados"
-   ],
-   "xlvi-carrera-popular-villa-de-grazalema-2026-1108": [
-    "resultados"
-   ],
-   "5-5-solidarios-alcanzando-metas-2026-1108": [
-    "resultados"
-   ],
-   "5k5v-contra-la-violencia-de-genero-en-comarca-cinco-villas-2026-1108": [
-    "resultados"
-   ],
-   "media-maraton-pilar-de-la-horadada-2026-1108": [
-    "resultados"
-   ],
-   "10k-nutrinovex-castello-2026-1108": [
-    "resultados"
-   ],
-   "28e-cros-ciutat-de-sant-cugat-2026-1108": [
-    "resultados"
-   ],
-   "alfafar-contra-el-cancer-2026-1108": [
-    "resultados"
-   ],
-   "cursa-montanyans-2026-1108": [
-    "resultados"
-   ],
-   "cursarroca-2026-1108": [
-    "resultados"
-   ],
-   "el-trebol-de-gredos-sur-2026-1108": [
-    "resultados"
-   ],
-   "la-pota-roja-cervello-2026-1108": [
-    "resultados"
-   ],
-   "legua-urbana-de-yuncos-2026-1108": [
-    "resultados"
-   ],
-   "superfast-innoporc-5k-2026-1108": [
-    "resultados"
-   ],
-   "supera-039-t-2026-1108": [
-    "resultados"
-   ],
-   "v-gincana-ibiza-amp-formentera-preservation-2026-1108": [
-    "resultados"
-   ],
-   "xiii-carrera-popular-muevete-por-la-esclerosis-multiple-2026-1108": [
-    "resultados",
-    "inscripcion"
-   ],
-   "xiv-cursa-de-la-ratafia-2026-1108": [
-    "resultados"
-   ],
-   "xx-andaina-outono-o-barco-de-valdeorras-2026-1108": [
-    "resultados"
-   ],
-   "xxxvii-erandioko-herri-krosa-2026-1108": [
+   "corrida-familiar-recoleta-2026-1108": [
     "resultados"
    ]
   },
-  "removed": 16
+  "removed": 0
  },
  "rutasV2": "2026-10-23",
  "kmV2": "2026-10-27",
