@@ -149,6 +149,7 @@ a.bib:focus-visible{outline:3px solid var(--accent);outline-offset:-3px}
 .fav:focus-visible{outline:2px solid var(--accent)}
 .race.hl{box-shadow:0 0 0 3px var(--accent)}
 .foot{display:flex;align-items:center;justify-content:flex-end;gap:6px;margin-top:2px}
+.vistas{margin-right:auto;font-size:13px;color:var(--muted);white-space:nowrap}
 .stars{display:flex;align-items:center;gap:0}
 .stars .st{border:0;background:none;padding:2px;font-size:22px;line-height:1;color:var(--line);cursor:pointer}
 .stars .st.on{color:#f2b100}
@@ -363,6 +364,30 @@ async function votar(r,e,box){
   catch(_){toast("Sin conexión: no se pudo guardar la valoración")}}
 fetch(VAL_URL,{cache:"no-cache"}).then(r=>r.ok?r.json():{}).then(d=>{VALS=d||{};document.querySelectorAll(".race").forEach(c=>{
   const box=c.querySelector(".stars"),r=races.find(x=>"c-"+x.id===c.id);if(box&&r)pintarStars(box,r)})}).catch(()=>{});
+// ---- visitas: cuántas veces se ha visto cada ficha (contador anónimo; una por dispositivo, ficha y día)
+// Cuenta cuando la ficha está a la vista al menos 1,5 s, o cuando se abre con un enlace directo.
+const VIS_URL="https://dondeloechan-ia.alexample.workers.dev/visitas";
+let VISTAS={};const visPend=new Set();
+function vistosHoy(){const hoy=iso(new Date());let v={d:hoy,ks:[]};
+  try{const g=JSON.parse(localStorage.getItem("rs-vistos")||"null");if(g&&g.d===hoy&&Array.isArray(g.ks))v=g}catch(e){}return v}
+function fmtVistas(n){return n>=1e4?Math.round(n/1e3)+" mil":n>=1e3?(n/1e3).toFixed(1).replace(".",",")+" mil":String(n)}
+function pintarVistas(box,id){const n=VISTAS[id]||0;box.hidden=!n;
+  box.textContent="👁 "+fmtVistas(n);box.title=n===1?"1 visita":n.toLocaleString("es-ES")+" visitas"}
+function vista(id){const v=vistosHoy();if(v.ks.includes(id))return;v.ks.push(id);
+  try{localStorage.setItem("rs-vistos",JSON.stringify(v))}catch(e){}
+  visPend.add(id);VISTAS[id]=(VISTAS[id]||0)+1;
+  const box=document.querySelector("#c-"+CSS.escape(id)+" .vistas");if(box)pintarVistas(box,id)}
+function enviarVistas(){if(!visPend.size)return;const ks=[...visPend].slice(0,40);ks.forEach(k=>visPend.delete(k));
+  fetch(VIS_URL,{method:"POST",keepalive:true,headers:{"Content-Type":"application/json"},body:JSON.stringify({ks})}).catch(()=>{})}
+setInterval(enviarVistas,8000);
+document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="hidden")enviarVistas()});
+const visTimers=new Map();
+const visObs="IntersectionObserver" in window?new IntersectionObserver(es=>es.forEach(e=>{const id=e.target.id.slice(2);
+  if(e.isIntersecting){if(!visTimers.has(id))visTimers.set(id,setTimeout(()=>{visTimers.delete(id);vista(id)},1500))}
+  else{clearTimeout(visTimers.get(id));visTimers.delete(id)}}),{threshold:.6}):null;
+function vistasBox(r){const b=el("span",{class:"vistas"});pintarVistas(b,r.id);return b}
+fetch(VIS_URL).then(r=>r.ok?r.json():{}).then(d=>{VISTAS=Object.assign(d||{},...[...visPend].map(k=>({[k]:(d&&d[k]||0)+1})));
+  document.querySelectorAll(".race .vistas").forEach(b=>pintarVistas(b,b.closest(".race").id.slice(2)))}).catch(()=>{});
 function toast(msg){const t=el("div",{class:"toast"},msg);document.body.append(t);setTimeout(()=>t.remove(),2200)}
 async function compartir(r){
   const text=shareText(r),url=shareUrl(r);
@@ -426,9 +451,11 @@ function card(r){
   let badge=null;
   if(news.added.has(r.id))badge=el("span",{class:"badge new"},"Nueva");
   else if(news.updated[r.id])badge=el("span",{class:"badge chg"},"Actualizada: "+news.updated[r.id].map(f=>FIELD[f]||f).join(", "));
-  return el("article",{class:"race",id:"c-"+r.id,style:"--kc:"+kcolor(k)},bib,
+  const art=el("article",{class:"race",id:"c-"+r.id,style:"--kc:"+kcolor(k)},bib,
     el("div",{class:"info"},badge,el("div",{class:"ttl"},el("h3",{},r.name),favBtn(r)),tags,dl,r.note?el("p",{class:"note"},r.note):null,otraFecha(r),actions,
-      revisada(r),el("div",{class:"foot"},stars(r),shareBtn(r))));
+      revisada(r),el("div",{class:"foot"},vistasBox(r),stars(r),shareBtn(r))));
+  if(visObs)visObs.observe(art);
+  return art;
 }
 
 function render(){

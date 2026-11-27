@@ -37,7 +37,7 @@ button:hover{border-color:var(--accent)}
 </head><body><main>
 <a class="volver" href="index.html">← Volver al calendario</a>
 <h1>Aviso legal, privacidad y cookies</h1>
-<p class="sub">Última actualización: 27 de octubre de 2026</p>
+<p class="sub">Última actualización: 27 de noviembre de 2026</p>
 <nav class="indice"><a href="#aviso">Aviso legal</a><a href="#privacidad">Privacidad</a><a href="#cookies">Cookies</a></nav>
 
 <h2 id="aviso">Aviso legal</h2>
@@ -61,6 +61,7 @@ button:hover{border-color:var(--accent)}
 <p>RunningSpain no pide registro, nombre, correo ni ningún otro dato para usar el calendario. Solo hay estos tratamientos:</p>
 <ul>
   <li><strong>Valoraciones con estrellas.</strong> Cuando valoras una carrera se guardan la puntuación y un identificador aleatorio creado en tu dispositivo, que sirve para que cada dispositivo vote una sola vez y pueda cambiar su voto. Ese identificador no permite saber quién eres. Tu dirección IP se usa en el momento para limitar abusos (como mucho, unos pocos votos por minuto) y no se guarda junto al voto. <em>Base jurídica:</em> interés legítimo en ofrecer valoraciones fiables (art. 6.1.f RGPD). <em>Conservación:</em> mientras siga el servicio de valoraciones.</li>
+  <li><strong>Visitas de cada carrera.</strong> Para enseñar cuántas veces se ha visto una ficha, la web suma una visita cuando la ficha está a la vista un momento (como mucho una por dispositivo, ficha y día). Solo se guarda el número total de cada carrera, sin ningún dato tuyo; tu dirección IP se usa en el momento para limitar abusos y no se guarda. <em>Base jurídica:</em> interés legítimo en mostrar qué carreras interesan más.</li>
   <li><strong>Alojamiento.</strong> La web está alojada en GitHub Pages (GitHub, Inc.) y las valoraciones se guardan en Cloudflare (Cloudflare, Inc.). Como cualquier servidor web, pueden registrar la dirección IP y el navegador en sus registros técnicos por seguridad. <em>Base jurídica:</em> interés legítimo en que la web funcione y sea segura.</li>
   <li><strong>Carteles.</strong> Algunos carteles se cargan directamente desde la web del organizador. En ese caso tu navegador se conecta a esa web, que puede ver tu IP. No le decimos desde qué página vienes.</li>
   <li><strong>App para Android.</strong> Tus favoritas, ajustes de avisos y la copia del calendario para usarlo sin conexión se guardan solo en tu móvil. Las notificaciones se generan en tu propio móvil al comparar el calendario descargado con tus ajustes. No enviamos tus favoritas ni tus ajustes a ningún servidor.</li>
@@ -80,6 +81,7 @@ button:hover{border-color:var(--accent)}
     <tr><td><code>rs-favs</code></td><td>Tus carreras guardadas en «Mis carreras».</td><td>Hasta que la borres</td></tr>
     <tr><td><code>rs-votos</code></td><td>Las estrellas que has dado, para enseñártelas.</td><td>Hasta que la borres</td></tr>
     <tr><td><code>rs-dev</code></td><td>Identificador aleatorio del dispositivo: un voto por dispositivo.</td><td>Hasta que la borres</td></tr>
+    <tr><td><code>rs-vistos</code></td><td>Las fichas que ya has visto hoy, para contar tu visita solo una vez al día.</td><td>Se renueva cada día</td></tr>
     <tr><td><code>rs-aviso</code></td><td>Recuerda que ya has visto el aviso de privacidad.</td><td>Hasta que la borres</td></tr>
     <tr><td><code>rs-data</code></td><td>Solo en la app: copia del calendario para usarlo sin conexión.</td><td>Se renueva con cada descarga</td></tr>
   </tbody>
@@ -91,7 +93,7 @@ button:hover{border-color:var(--accent)}
 <script>
 try{document.getElementById("dev").textContent=localStorage.getItem("rs-dev")||"(todavía no has valorado ninguna carrera)"}catch(e){}
 document.getElementById("borrar").onclick=()=>{
-  try{["rs-favs","rs-votos","rs-dev","rs-aviso","rs-data"].forEach(k=>localStorage.removeItem(k))}catch(e){}
+  try{["rs-favs","rs-votos","rs-dev","rs-aviso","rs-data","rs-vistos"].forEach(k=>localStorage.removeItem(k))}catch(e){}
   document.getElementById("dev").textContent="(borrado)";
   document.getElementById("borrado").textContent="Hecho. En la app, tus favoritas se borran desde Ajustes del móvil › Apps › RunningSpain › Borrar datos.";
 };
